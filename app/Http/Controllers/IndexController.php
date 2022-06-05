@@ -23,7 +23,7 @@ use Artisan;
 // use Redirect;
 use OneSignal;
 
-class DashboardController extends Controller
+class IndexController extends Controller
 {
     /**
      * Create a new controller instance.
