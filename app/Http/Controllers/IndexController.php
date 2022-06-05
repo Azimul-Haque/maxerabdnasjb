@@ -44,7 +44,7 @@ class DashboardController extends Controller
     {
         
 
-        return view('dashboard');
+        return view('welcome');
     }
 
     // clear configs, routes and serve
