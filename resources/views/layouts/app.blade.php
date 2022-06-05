@@ -36,7 +36,7 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link" href="{{ route('index.index') }}"  target="_blank">
-              <i class="far fa-bell"></i>
+              <i class="fas fa-globe"></i>
             </a>
           </li>
           <li class="nav-item dropdown">
