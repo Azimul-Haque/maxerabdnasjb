@@ -46,28 +46,28 @@ class DashboardController extends Controller
     {
         // if user is a manager, redirect him to his profile
         // if user is a manager, redirect him to his profile
-        if(Auth::user()->role != 'admin' && Auth::user()->role != 'accountant') {
-            return redirect()->route('dashboard.users.single', Auth::user()->id);
-        } elseif (Auth::user()->role == 'accountant') {
-            return redirect()->route('dashboard.balance');
-        }
+        // if(Auth::user()->role != 'admin' && Auth::user()->role != 'accountant') {
+        //     return redirect()->route('dashboard.users.single', Auth::user()->id);
+        // } elseif (Auth::user()->role == 'accountant') {
+        //     return redirect()->route('dashboard.balance');
+        // }
 
-        $totalsites = Site::count();
-        $totalusers = User::count();
+        // $totalsites = Site::count();
+        // $totalusers = User::count();
 
-        $totalbalance = Balance::sum('amount');
-        $totalexpense = Expense::sum('amount');
+        // $totalbalance = Balance::sum('amount');
+        // $totalexpense = Expense::sum('amount');
 
-        $todaystotalexpense = DB::table('expenses')
-                                ->select(DB::raw("DATE_FORMAT(created_at, '%Y-%m-%d') as created_at"), DB::raw('SUM(amount) as totalamount'))
-                                ->where(DB::raw("DATE_FORMAT(created_at, '%Y-%m-%d')"), "=", Carbon::now()->format('Y-m-d'))
-                                ->groupBy(DB::raw("DATE_FORMAT(created_at, '%Y-%m-%d')"))
-                                ->first();
-        $todaystotaldeposit = DB::table('balances')
-                                ->select(DB::raw("DATE_FORMAT(created_at, '%Y-%m-%d') as created_at"), DB::raw('SUM(amount) as totalamount'))
-                                ->where(DB::raw("DATE_FORMAT(created_at, '%Y-%m-%d')"), "=", Carbon::now()->format('Y-m-d'))
-                                ->groupBy(DB::raw("DATE_FORMAT(created_at, '%Y-%m-%d')"))
-                                ->first();
+        // $todaystotalexpense = DB::table('expenses')
+        //                         ->select(DB::raw("DATE_FORMAT(created_at, '%Y-%m-%d') as created_at"), DB::raw('SUM(amount) as totalamount'))
+        //                         ->where(DB::raw("DATE_FORMAT(created_at, '%Y-%m-%d')"), "=", Carbon::now()->format('Y-m-d'))
+        //                         ->groupBy(DB::raw("DATE_FORMAT(created_at, '%Y-%m-%d')"))
+        //                         ->first();
+        // $todaystotaldeposit = DB::table('balances')
+        //                         ->select(DB::raw("DATE_FORMAT(created_at, '%Y-%m-%d') as created_at"), DB::raw('SUM(amount) as totalamount'))
+        //                         ->where(DB::raw("DATE_FORMAT(created_at, '%Y-%m-%d')"), "=", Carbon::now()->format('Y-m-d'))
+        //                         ->groupBy(DB::raw("DATE_FORMAT(created_at, '%Y-%m-%d')"))
+        //                         ->first();
 
         return view('dashboard')
                     ->withTotalsites($totalsites)
