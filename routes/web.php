@@ -15,6 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'IndexController@index')->name('index.index');
 
+// Clear Route
+Route::get('/clear', ['as'=>'clear','uses'=>'IndexController@clear']);
+
 Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard.index');
@@ -65,6 +68,3 @@ Route::get('/dashboard/deposit/{transactiondate}/{user}', 'ExpenseController@get
 
 // COMPONENTS
 Route::get('/dashboard/components', 'DashboardController@getComponents')->name('dashboard.components');
-
-// Clear Route
-Route::get('/clear', ['as'=>'clear','uses'=>'DashboardController@clear']);
