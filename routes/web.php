@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () { return redirect()->route('index.index'); });
+Route::get('/', function () { return redirect()->route('index'); });
 
 Auth::routes();
 
