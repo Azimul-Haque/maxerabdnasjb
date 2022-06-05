@@ -76,7 +76,7 @@
 
               <div class="info-box-content">
                 <span class="info-box-text">দৈনিক জমা</span>
-                <span class="info-box-number">৳ {{ $todaystotaldeposit ? $todaystotaldeposit->totalamount : 0 }}</span>
+                <span class="info-box-number">৳ {{ 0 }}</span>
               </div>
             </a>
           </div>
@@ -86,7 +86,7 @@
 
               <div class="info-box-content">
                 <span class="info-box-text">দৈনিক খরচ</span>
-                <span class="info-box-number">৳ {{ $todaystotalexpense ? $todaystotalexpense->totalamount : 0 }}</span>
+                <span class="info-box-number">৳ {{ 0 }}</span>
               </div>
             </a>
           </div>
