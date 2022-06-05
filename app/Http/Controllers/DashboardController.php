@@ -69,7 +69,7 @@ class DashboardController extends Controller
         //                         ->groupBy(DB::raw("DATE_FORMAT(created_at, '%Y-%m-%d')"))
         //                         ->first();
 
-        return view('dashboard');
+        return view('dashboard.index');
                     // ->withTotalsites($totalsites)
                     // ->withTotalusers($totalusers)
                     // ->withTotalbalance($totalbalance)
