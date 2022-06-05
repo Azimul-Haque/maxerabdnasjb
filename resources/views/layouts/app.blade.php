@@ -35,7 +35,7 @@
         <!-- Right navbar links -->
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('dashboard.expense.index') }}">
+            <a class="nav-link" href="{{ route('index.index') }}"  target="_blank">
               <i class="fas fa-hand-holding-usd"></i>
             </a>
           </li>
