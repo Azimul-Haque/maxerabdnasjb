@@ -39,7 +39,7 @@
               <i class="fas fa-hand-holding-usd"></i>
             </a>
           </li>
-          {{-- <li class="nav-item dropdown">
+          <li class="nav-item dropdown">
             <a class="nav-link" data-toggle="dropdown" href="#">
               <i class="far fa-bell"></i>
               <span class="badge badge-warning navbar-badge">15</span>
@@ -68,7 +68,7 @@
           {{-- <li class="nav-item">
             <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button"><i
                 class="fas fa-th-large"></i></a>
-          </li> --}}
+          </li>
         </ul>
 
         <ul class="navbar-nav">
