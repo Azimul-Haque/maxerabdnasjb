@@ -13,7 +13,7 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h4>{{ $totalbalance - $totalexpense }}<sup style="font-size: 20px">৳</sup></h4>
+                <h4>{{ 0 }}<sup style="font-size: 20px">৳</sup></h4>
 
                 <p>বর্তমান ব্যালেন্স</p>
               </div>
