@@ -53,7 +53,7 @@ class DashboardController extends Controller
         // }
 
         // $totalsites = Site::count();
-        // $totalusers = User::count();
+        $totalusers = User::count();
 
         // $totalbalance = Balance::sum('amount');
         // $totalexpense = Expense::sum('amount');
@@ -69,9 +69,9 @@ class DashboardController extends Controller
         //                         ->groupBy(DB::raw("DATE_FORMAT(created_at, '%Y-%m-%d')"))
         //                         ->first();
 
-        return view('dashboard.index');
+        return view('dashboard.index')->withTotalusers($totalusers);
                     // ->withTotalsites($totalsites)
-                    // ->withTotalusers($totalusers)
+                    // 
                     // ->withTotalbalance($totalbalance)
                     // ->withTotalexpense($totalexpense)
                     // ->withTodaystotalexpense($todaystotalexpense)
