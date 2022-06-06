@@ -96,15 +96,6 @@
             				                        <div class="input-group-text"><span class="fas fa-user-secret"></span></div>
             				                    </div>
             				                </div>
-                                      @if($user->role != 'accountant')
-                                            <p><label style="float: left;">এই ব্যবহারকারীর সাইট সিলেক্ট করুন</label></p><br/>
-                                            {{-- @foreach($sites as $site)
-                                                <div class="icheck-primary icheck-inline" style="float: left;">
-                                                    <input type="checkbox" id="chb{{ $user->mobile }}{{ $site->id }}" name="sitecheck[]" value="{{ $site->id }}" @if(in_array($site->id, explode(',', $user->sites))) checked="" @endif />
-                                                    <label for="chb{{ $user->mobile }}{{ $site->id }}">{{ $site->name }}</label>
-                                                </div>
-                                            @endforeach --}}
-                                      @endif
                                             <br/><br/>
 
             				                <div class="input-group mb-3">
