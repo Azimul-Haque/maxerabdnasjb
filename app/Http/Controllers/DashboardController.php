@@ -81,7 +81,7 @@ class DashboardController extends Controller
     public function getUsers()
     {
         $users = User::where('name', '!=', null)->paginate(10);
-        $sites = Site::all();
+        // $sites = Site::all();
         return view('users.index')
                     ->withUsers($users)
                     ->withSites($sites);
