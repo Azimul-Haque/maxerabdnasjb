@@ -97,7 +97,6 @@
             				                        <div class="input-group-text"><span class="fas fa-user-secret"></span></div>
             				                    </div>
             				                </div>
-                                            <br/><br/>
 
             				                <div class="input-group mb-3">
             				                    <input type="password"
