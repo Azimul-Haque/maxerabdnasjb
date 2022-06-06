@@ -90,8 +90,8 @@
             				                		<option disabled="" value="">ধরন নির্ধারণ করুন</option>
             				                		<option value="admin" @if($user->role == 'admin') selected="" @endif>এডমিন</option>
 													<option value="user" @if($user->role == 'user') selected="" @endif>ব্যবহারকারী</option>
-            				                		<option value="manager" @if($user->role == 'manager') selected="" @endif>ম্যানেজার</option>
-                                        <option value="accountant" @if($user->role == 'accountant') selected="" @endif>একাউন্টেন্ট</option>
+            				                		{{-- <option value="manager" @if($user->role == 'manager') selected="" @endif>ম্যানেজার</option>
+                                        			<option value="accountant" @if($user->role == 'accountant') selected="" @endif>একাউন্টেন্ট</option> --}}
             				                	</select>
             				                    <div class="input-group-append">
             				                        <div class="input-group-text"><span class="fas fa-user-secret"></span></div>
@@ -209,8 +209,8 @@
 	                		<option selected="" disabled="" value="">ধরন</option>
 	                		<option value="admin">এডমিন</option>
 	                		<option value="user">ব্যবহারকারী</option>
-	                		<option value="manager">ম্যানেজার</option>
-                            <option value="accountant">একাউন্টেন্ট</option>
+	                		{{-- <option value="manager">ম্যানেজার</option>
+                            <option value="accountant">একাউন্টেন্ট</option> --}}
 	                	</select>
 	                    <div class="input-group-append">
 	                        <div class="input-group-text"><span class="fas fa-user-secret"></span></div>
