@@ -207,6 +207,7 @@
 	                	<select name="role" id="adduserrole" class="form-control" required>
 	                		<option selected="" disabled="" value="">ধরন</option>
 	                		<option value="admin">এডমিন</option>
+	                		<option value="user">ব্যবহারকারী</option>
 	                		<option value="manager">ম্যানেজার</option>
                             <option value="accountant">একাউন্টেন্ট</option>
 	                	</select>
