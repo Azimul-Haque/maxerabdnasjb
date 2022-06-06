@@ -10,6 +10,5 @@ class QuestionController extends Controller
     {
         $this->middleware('auth')->except('clear');
         $this->middleware(['admin'])->only('getUsers');
-
     }
 }
