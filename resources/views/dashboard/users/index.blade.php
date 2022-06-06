@@ -217,11 +217,6 @@
 	                    </div>
 	                </div>
 
-                    <div id="ifaccountant">
-                        <label>এই ব্যবহারকারীর সাইট সিলেক্ট করুন</label><br/>
-                        
-                        <br/><br/>
-                    </div>
 
 	                <div class="input-group mb-3">
 	                    <input type="password"
