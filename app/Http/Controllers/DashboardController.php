@@ -76,7 +76,7 @@ class DashboardController extends Controller
     {
         $users = User::where('name', '!=', null)->paginate(10);
         // $sites = Site::all();
-        return view('users.index')
+        return view('dashboard.users.index')
                     ->withUsers($users);
     }
 
@@ -117,7 +117,7 @@ class DashboardController extends Controller
         
         // dd($totaldeposit);
 
-        return view('users.single')
+        return view('dashboard.dashboard.users.single')
                     ->withUser($user)
                     ->withBalances($balances)
                     ->withTodaystotalexpense($todaystotalexpense)
@@ -165,7 +165,7 @@ class DashboardController extends Controller
         $totaldeposit = Balance::where('receiver_id', $id)->sum('amount');
         // dd($totalexpense);
 
-        return view('users.singleother')
+        return view('dashboard.users.singleother')
                     ->withUser($user)
                     ->withExpenses($expenses)
                     ->withTodaystotalexpense($todaystotalexpense)
