@@ -217,12 +217,7 @@
 
                     <div id="ifaccountant">
                         <label>এই ব্যবহারকারীর সাইট সিলেক্ট করুন</label><br/>
-                        {{-- @foreach($sites as $site)
-                            <div class="icheck-primary icheck-inline">
-                                <input type="checkbox" id="chb{{ $site->id }}" name="sitecheck[]" value="{{ $site->id }}" />
-                                <label for="chb{{ $site->id }}">{{ $site->name }}</label>
-                            </div>
-                        @endforeach --}}
+                        
                         <br/><br/>
                     </div>
 
