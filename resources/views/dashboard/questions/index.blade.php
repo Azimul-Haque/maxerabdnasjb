@@ -2,8 +2,6 @@
 @section('title') ড্যাশবোর্ড | প্রশ্নব্যাংক @endsection
 
 @section('third_party_stylesheets')
-    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/summernote/summernote.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/summernote/summernote-bs4.css') }}">
 @endsection
 
 @section('content')
@@ -429,8 +427,7 @@
 
 @section('third_party_scripts')
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="{{ asset('vendor/summernote/summernote.min.js') }}"></script>
-<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
+<script src="https://cdn.ckeditor.com/ckeditor5/34.1.0/classic/ckeditor.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script>
     // $('.summernote').summernote({
