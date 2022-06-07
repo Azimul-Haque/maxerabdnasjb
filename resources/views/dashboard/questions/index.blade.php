@@ -160,7 +160,7 @@
                       <h3 class="card-title">টপিকসমূহ</h3>
           
                       <div class="card-tools">
-                          <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addQuesitonModal">
+                          <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addTopicModal">
                               <i class="fas fa-plus-circle"></i> নতুন টপিক
                           </button>
                       </div>
@@ -347,7 +347,7 @@
 {{-- Add Question Modal Code --}}
 {{-- Add Question Modal Code --}}
 <!-- Modal -->
-<div class="modal fade" id="addQuesitonModal" tabindex="-1" role="dialog" aria-labelledby="addQuesitonModalLabel" aria-hidden="true" data-backdrop="static">
+<div class="modal fade" id="addTopicModal" tabindex="-1" role="dialog" aria-labelledby="addTopicModalLabel" aria-hidden="true" data-backdrop="static">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header bg-success">
