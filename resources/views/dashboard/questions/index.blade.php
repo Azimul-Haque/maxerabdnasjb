@@ -302,17 +302,12 @@
                     </div>
                     <div class="row">
                         <div class="col-md-4">
-                            <div class="input-group mb-3">
-                                <input type="text"
-                                       name="option1"
-                                       value="{{ old('option1') }}"
-                                       autocomplete="off"
-                                       class="form-control"
-                                       placeholder="অপশন ১" required>
-                                <div class="input-group-append">
-                                    <div class="input-group-text"><span class="fas fa-clipboard-list"></span></div>
-                                </div>
-                            </div>
+                            <input type="text"
+                               name="option1"
+                               value="{{ old('option1') }}"
+                               autocomplete="off"
+                               class="form-control"
+                               placeholder="অপশন ১" required>
                         </div>
                     </div>
                     <div class="input-group mb-3">
