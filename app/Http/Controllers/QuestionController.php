@@ -20,7 +20,7 @@ class QuestionController extends Controller
         if(!(Auth::user()->role == 'admin' || Auth::user()->role == 'manager')) {
             abort(403, 'Access Denied');
         }
-        // $questions = Questions::get();
+        // $questions = Questions::paginate(10);
         // $topics = Topic::all();
 
         // return view('dashboard.questions.index')
