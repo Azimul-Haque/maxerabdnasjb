@@ -21,26 +21,26 @@
           <!-- /.card-header -->
           <div class="card-body p-0">
             <table class="table">
-            <thead>
-                <tr>
-                    <th>Question</th>
-                    <th>Answer</th>
-                    <th>Options</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-              <tbody>
-                {{-- <tr>
-                  <td>1.</td>
-                  <td>Update software</td>
-                  <td>
-                    <div class="progress progress-xs">
-                      <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
-                    </div>
-                  </td>
-                  <td><span class="badge bg-danger">55%</span></td>
-                </tr> --}}
+                <thead>
+                    <tr>
+                        <th>Question</th>
+                        <th>Answer</th>
+                        <th>Options</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
                 @foreach($users as $user)
+                    <tr>
+                        <td>1.</td>
+                        <td>Update software</td>
+                        <td>
+                        <div class="progress progress-xs">
+                            <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
+                        </div>
+                        </td>
+                        <td><span class="badge bg-danger">55%</span></td>
+                    </tr>
                     <tr>
                         <td>
                             <a href="{{ route('dashboard.users.single', $user->id) }}">{{ $user->name }}</a>
@@ -57,25 +57,25 @@
                             {{-- Edit User Modal Code --}}
                             <!-- Modal -->
                             <div class="modal fade" id="editUserModal{{ $user->id }}" tabindex="-1" role="dialog" aria-labelledby="editUserModalLabel" aria-hidden="true" data-backdrop="static">
-                              <div class="modal-dialog" role="document">
+                                <div class="modal-dialog" role="document">
                                 <div class="modal-content">
-                                  <div class="modal-header bg-primary">
+                                    <div class="modal-header bg-primary">
                                     <h5 class="modal-title" id="editUserModalLabel">ব্যবহারকারী তথ্য হালনাগাদ</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
+                                        <span aria-hidden="true">&times;</span>
                                     </button>
-                                  </div>
-                                  <form method="post" action="{{ route('dashboard.users.update', $user->id) }}">
-                                      <div class="modal-body">
-            				            
+                                    </div>
+                                    <form method="post" action="{{ route('dashboard.users.update', $user->id) }}">
+                                        <div class="modal-body">
+                                        
                                             @csrf
 
                                             <div class="input-group mb-3">
                                                 <input type="text"
-                                                       name="name"
-                                                       class="form-control"
-                                                       value="{{ $user->name }}"
-                                                       placeholder="নাম" required>
+                                                        name="name"
+                                                        class="form-control"
+                                                        value="{{ $user->name }}"
+                                                        placeholder="নাম" required>
                                                 <div class="input-group-append">
                                                     <div class="input-group-text"><span class="fas fa-user"></span></div>
                                                 </div>
@@ -83,11 +83,11 @@
 
                                             <div class="input-group mb-3">
                                                 <input type="text"
-                                                       name="mobile"
-                                                       value="{{ $user->mobile }}"
-                                                       autocomplete="off"
-                                                       class="form-control"
-                                                       placeholder="মোবাইল নম্বর (১১ ডিজিট)" required>
+                                                        name="mobile"
+                                                        value="{{ $user->mobile }}"
+                                                        autocomplete="off"
+                                                        class="form-control"
+                                                        placeholder="মোবাইল নম্বর (১১ ডিজিট)" required>
                                                 <div class="input-group-append">
                                                     <div class="input-group-text"><span class="fas fa-phone"></span></div>
                                                 </div>
@@ -108,23 +108,23 @@
 
                                             <div class="input-group mb-3">
                                                 <input type="password"
-                                                       name="password"
-                                                       class="form-control"
-                                                       autocomplete="off"
-                                                       placeholder="পাসওয়ার্ড (ঐচ্ছিক)">
+                                                        name="password"
+                                                        class="form-control"
+                                                        autocomplete="off"
+                                                        placeholder="পাসওয়ার্ড (ঐচ্ছিক)">
                                                 <div class="input-group-append">
                                                     <div class="input-group-text"><span class="fas fa-lock"></span></div>
                                                 </div>
                                             </div>
-            				            
-                                      </div>
-                                      <div class="modal-footer">
+                                        
+                                        </div>
+                                        <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
                                         <button type="submit" class="btn btn-primary">দাখিল করুন</button>
-                                      </div>
-                                  </form>
+                                        </div>
+                                    </form>
                                 </div>
-                              </div>
+                                </div>
                             </div>
                             {{-- Edit User Modal Code --}}
                             {{-- Edit User Modal Code --}}
@@ -137,33 +137,33 @@
                         {{-- Delete User Modal Code --}}
                         <!-- Modal -->
                         <div class="modal fade" id="deleteUserModal{{ $user->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteUserModalLabel" aria-hidden="true" data-backdrop="static">
-                          <div class="modal-dialog" role="document">
+                            <div class="modal-dialog" role="document">
                             <div class="modal-content">
-                              <div class="modal-header bg-danger">
+                                <div class="modal-header bg-danger">
                                 <h5 class="modal-title" id="deleteUserModalLabel">ব্যবহারকারী ডিলেট</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
+                                    <span aria-hidden="true">&times;</span>
                                 </button>
-                              </div>
-                              <div class="modal-body">
+                                </div>
+                                <div class="modal-body">
                                 আপনি কি নিশ্চিতভাবে এই ব্যবহারকারীকে ডিলেট করতে চান?<br/>
                                 <center>
                                     <big><b>{{ $user->name }}</b></big><br/>
                                     <small><i class="fas fa-phone"></i> {{ $user->mobile }}</small>
                                 </center>
-                              </div>
-                              <div class="modal-footer">
+                                </div>
+                                <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
                                 <a href="{{ route('dashboard.users.delete', $user->id) }}" class="btn btn-danger">ডিলেট করুন</a>
-                              </div>
+                                </div>
                             </div>
-                          </div>
+                            </div>
                         </div>
                         {{-- Delete User Modal Code --}}
                         {{-- Delete User Modal Code --}}
                     </tr>
                 @endforeach
-              </tbody>
+                </tbody>
             </table>
           </div>
           <!-- /.card-body -->
