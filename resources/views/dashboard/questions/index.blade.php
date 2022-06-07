@@ -299,6 +299,12 @@
                         <div class="col-md-4">
                             <input type="text" name="option1" value="{{ old('option1') }}" autocomplete="off" class="form-control mb-3" placeholder="অপশন ১" required>
                         </div>
+                        <div class="col-md-4">
+                            <input type="text" name="option2" value="{{ old('option2') }}" autocomplete="off" class="form-control mb-3" placeholder="অপশন ২" required>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" name="option3" value="{{ old('option3') }}" autocomplete="off" class="form-control mb-3" placeholder="অপশন ৩" required>
+                        </div>
                     </div>
                     <div class="input-group mb-3">
                         <input type="text" name="answer" value="{{ old('answer') }}" autocomplete="off" class="form-control" placeholder="সঠিক উত্তর" required>
