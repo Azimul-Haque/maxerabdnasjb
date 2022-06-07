@@ -6,5 +6,23 @@ use Illuminate\Http\Request;
 
 class ExamController extends Controller
 {
-    //
+    public function __construct()
+    {
+        $this->middleware('auth')->except('clear');
+        $this->middleware(['admin'])->only('getQuestions', 'storeQuestionsTopic');
+    }
+
+    public function getQuestions()
+    {
+        if(!(Auth::user()->role == 'admin' || Auth::user()->role == 'manager')) {
+            abort(403, 'Access Denied');
+        }
+        
+        $questions = Question::paginate(10);
+        $topics = Topic::all();
+
+        return view('dashboard.questions.index')
+                    ->withQuestions($questions)
+                    ->withTopics($topics);
+    }
 }
