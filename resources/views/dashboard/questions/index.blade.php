@@ -334,7 +334,7 @@
                                 <label for="image">ছবি (প্রয়োজনে)</label>
                                 <input type="file" id="image" name="image">
                             </div>
-                            <img src="{{ asset('images/600x315.png')}}" id='img-upload' style="height: 200px; width: auto; padding: 5px;" class="img-responsive" />
+                            <img src="{{ asset('images/placeholder.png')}}" id='img-upload' style="height: 200px; width: auto; padding: 5px;" class="img-responsive" />
                         </div>
                     </div>
               </div>
