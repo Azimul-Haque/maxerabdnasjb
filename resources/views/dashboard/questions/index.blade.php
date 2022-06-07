@@ -128,7 +128,7 @@
                                                                         $currentimage = asset('images/placeholder.png');
                                                                     }
                                                                   @endphp
-                                                                  <img src="$currentimage" id='img-upload{{ $question->id }}' style="width: 250px; height: auto;" class="img-responsive" />
+                                                                  <img src="{{ $currentimage }}" id='img-upload{{ $question->id }}' style="width: 250px; height: auto;" class="img-responsive" />
                                                               </center>
                                                           </div>
                                                           <div class="col-md-6">
