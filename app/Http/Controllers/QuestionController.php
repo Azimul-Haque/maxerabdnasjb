@@ -126,7 +126,7 @@ class QuestionController extends Controller
         return redirect()->route('dashboard.questions');
     }
 
-    public function updateeQuestion(Request $request, $id)
+    public function updateQuestion(Request $request, $id)
     {
         // dd($request->file('image'));
         $this->validate($request,array(
