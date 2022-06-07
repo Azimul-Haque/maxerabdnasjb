@@ -101,7 +101,7 @@ class QuestionController extends Controller
         $question->option2 = $request->option2;
         $question->option3 = $request->option3;
         $question->difficulty = $request->difficulty;
-        
+        $question->save();
 
         // image upload
         if($request->hasFile('image')) {
@@ -115,7 +115,7 @@ class QuestionController extends Controller
         if($request->explanation) {
             $question->questionexplanation->explanation = $request->explanation;
         }
-        $question->push();
+        
 
         Session::flash('success', 'Question created successfully!');
         return redirect()->route('dashboard.questions');
