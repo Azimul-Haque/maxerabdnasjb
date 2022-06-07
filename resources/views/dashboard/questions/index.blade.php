@@ -308,7 +308,7 @@
                                class="form-control"
                                placeholder="অপশন ১" required>
                         <div class="input-group-append">
-                            <div class="input-group-text"><span class="fal fa-clipboard-list"></span></div>
+                            <div class="input-group-text"><span class="fas fa-clipboard-list"></span></div>
                         </div>
                     </div>
                     <div class="input-group mb-3">
