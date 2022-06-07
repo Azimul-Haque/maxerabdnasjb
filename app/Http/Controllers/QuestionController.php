@@ -117,6 +117,7 @@ class QuestionController extends Controller
         if($request->explanation) {
             $questionexplanation = new Questionimage;
             $questionexplanation->explanation = $request->explanation;
+            $questionexplanation->save();
         }
         
 
