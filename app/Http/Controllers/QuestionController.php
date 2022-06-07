@@ -88,7 +88,7 @@ class QuestionController extends Controller
             'option2'    => 'required|string|max:191',
             'option3'    => 'required|string|max:191',
             'difficulty' => 'required|string|max:191',
-            'image' => 'sometimes|string|max:191',
+            'image' => 'sometimes|image|max:191',
             'explanation' => 'sometimes|string|max:191',
         ));
 
