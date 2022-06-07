@@ -394,16 +394,8 @@
 @endsection
 
 @section('third_party_scripts')
-    {{-- {{-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> --}}
-    <script type="text/javascript">
-        $('#adduserrole').change(function () {
-            if($('#adduserrole').val() == 'accountant') {
-                $('#ifaccountant').hide();
-            } else {
-                $('#ifaccountant').show();
-            }
-        });
-    </script> --}}
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 <script type="text/javascript">
     $(document).ready( function() {
       $(document).on('change', '.btn-file :file', function() {
