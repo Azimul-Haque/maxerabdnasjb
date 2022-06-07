@@ -22,15 +22,10 @@ class QuestionController extends Controller
         }
         // $questions = Questions::get();
         // $topics = Topic::all();
-        // $totalexpense = Expense::sum('amount');
-
-        // $balances = Balance::where('amount', '>', 0)
-        //                    ->orderBy('id', 'desc')
-        //                    ->paginate(5);
 
         // return view('dashboard.questions.index')
-        //             ->withUsers($users)
-        //             ->withBalances($balances)
+        //             ->withUsers($questions)
+        //             ->withBalances($topics)
         //             ->withTotalbalance($totalbalance)
         //             ->withTotalexpense($totalexpense);
     }
