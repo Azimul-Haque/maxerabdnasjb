@@ -105,6 +105,7 @@ class QuestionController extends Controller
         // image upload
         
         if($request->hasFile('image')) {
+            dd($request->file('image'));
             $image      = $request->file('image');
             $filename   = random_string(5) . time() .'.' . "jpg";
             $location   = public_path('images/questions/'. $filename);
