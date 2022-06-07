@@ -78,7 +78,7 @@ class QuestionController extends Controller
         return redirect()->route('dashboard.questions');
     }
 
-    public function storeQuestions(Request $request)
+    public function storeQuestion(Request $request)
     {
         // dd($request->file('image'));
         $this->validate($request,array(
@@ -126,7 +126,7 @@ class QuestionController extends Controller
         return redirect()->route('dashboard.questions');
     }
 
-    public function updateeQuestions(Request $request)
+    public function updateeQuestion(Request $request, $id)
     {
         // dd($request->file('image'));
         $this->validate($request,array(
@@ -141,7 +141,7 @@ class QuestionController extends Controller
             'explanation' => 'sometimes|max:2048',
         ));
 
-        $question = new Question;
+        $question = Question;
         $question->topic_id = $request->topic_id;
         $question->question = $request->question;
         $question->answer = $request->answer;
