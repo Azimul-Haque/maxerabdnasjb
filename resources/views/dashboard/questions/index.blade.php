@@ -339,7 +339,7 @@
                             </center>
                         </div>
                         <div class="col-md-6">
-                            <label for="explanation">ব্যাখ্যা (প্রয়োজনে)</label>
+                            <label for="explanation">ব্যাখ্যা (প্রয়োজনে)</label><br/>
                             <textarea name="explanation" id="explanation" placeholder="sadas"></textarea>
                         </div>
                     </div>
