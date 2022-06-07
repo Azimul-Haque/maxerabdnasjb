@@ -374,7 +374,7 @@
                         </div>
                         <div class="col-md-6">
                             <label for="explanation">ব্যাখ্যা (প্রয়োজনে)</label><br/>
-                            <textarea class="form-control summernote" name="explanation" id="explanation" placeholder="ব্যাখ্যা" style="width: 100%; height: 220px;"></textarea>
+                            <textarea class="form-control summernote" name="explanation" id="summernote" placeholder="ব্যাখ্যা" style="width: 100%; height: 220px;"></textarea>
                         </div>
                     </div>
               </div>
@@ -432,12 +432,12 @@
 <script type="text/javascript" src="{{ asset('vendor/summernote/summernote.min.js') }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script>
-    $('.summernote').summernote({
-        placeholder: 'ব্যাখ্যা',
-        tabsize: 2,
-        height: 200,
-        dialogsInBody: true
-    });
+    // $('.summernote').summernote({
+    //     placeholder: 'ব্যাখ্যা',
+    //     tabsize: 2,
+    //     height: 200,
+    //     dialogsInBody: true
+    // });
     $(document).ready(function() {
         $('#summernote').summernote();
     });
