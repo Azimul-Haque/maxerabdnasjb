@@ -299,7 +299,6 @@
                     <!-- /.card-body -->
                   </div>
                   {{ $questions->links() }}
-              
             </div>
         </div>
 
