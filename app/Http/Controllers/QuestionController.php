@@ -73,6 +73,6 @@ class QuestionController extends Controller
         $topic->delete();
 
         Session::flash('success', 'Topic deleted successfully!');
-        return redirect()->route('dashboard.users');
+        return redirect()->route('dashboard.questions');
     }
 }
