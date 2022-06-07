@@ -19,7 +19,7 @@
 <li class="nav-item">
     <a href="{{ route('dashboard.questions') }}" class="nav-link {{ Request::is('dashboard/questions') ? 'active' : '' }}">
         <i class="nav-icon far fa-folder-open"></i>
-        <p>প্রশ্নসমূহ</p>
+        <p>প্রশ্নব্যাংক</p>
     </a>
 </li>
 @endif
