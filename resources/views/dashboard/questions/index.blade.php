@@ -36,7 +36,7 @@
                                   <td>
                                       {{ $question->question }}<br/>
                                       <span class="badge bg-success">{{ $question->topic->name }}</span>
-                                      <span class="badge bg-info">{{ $question->difficulty = 1 ? 'সহজ' : $question->difficulty = 2 ? 'মধ্যম' : $question->difficulty = 3 ? 'কঠিন' :}}</span>
+                                      <span class="badge bg-info">{{ $question->difficulty = 1 ? 'সহজ' : $question->difficulty = 2 ? 'মধ্যম' : 'কঠিন' }}</span>
                                   </td>
                                   <td>{{ $question->answer }}</td>
                                   <td>{{ $question->option1 }}, {{ $question->option2 }}, {{ $question->option3 }}</td>
