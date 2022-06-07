@@ -108,7 +108,7 @@ class QuestionController extends Controller
             $filename   = random_string(5) . time() .'.' . "jpg";
             $location   = public_path('images/questions/'. $filename);
             // Image::make($image)->resize(300, null, function ($constraint) { $constraint->aspectRatio(); })->save($location);
-            Image::make($location)->encode('webp', 75);
+            Image::make($image)->encode('webp', 75)->save($location);
             // $question->questionimage->image = $filename;
             // $question->save();
         }
