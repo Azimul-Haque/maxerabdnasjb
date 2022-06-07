@@ -330,7 +330,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="form-group no-margin-bottom mb-3">
+                            <div class="form-group mb-3">
                                 <label><strong>Featured Image (750 X 430 &amp; 300Kb Max): (Optional)</strong></label>
                                 <input type="file" id="image" name="featured_image">
                             </div>
