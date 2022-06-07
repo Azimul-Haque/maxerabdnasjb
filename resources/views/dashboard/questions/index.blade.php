@@ -53,11 +53,11 @@
                                       {{-- Edit Question Modal Code --}}
                                       {{-- Edit Question Modal Code --}}
                                       <!-- Modal -->
-                                      <div class="modal fade" id="editQuestionModal{{ $question->id }}" tabindex="-1" role="dialog" aria-labelledby="editUserModalLabel" aria-hidden="true" data-backdrop="static">
+                                      <div class="modal fade" id="editQuestionModal{{ $question->id }}" tabindex="-1" role="dialog" aria-labelledby="editQuestionModalLabel" aria-hidden="true" data-backdrop="static">
                                           <div class="modal-dialog" role="document">
                                           <div class="modal-content">
                                               <div class="modal-header bg-primary">
-                                              <h5 class="modal-title" id="editUserModalLabel">প্রশ্ন হালনাগাদ</h5>
+                                              <h5 class="modal-title" id="editQuestionModalLabel">প্রশ্ন হালনাগাদ</h5>
                                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                   <span aria-hidden="true">&times;</span>
                                               </button>
