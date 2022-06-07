@@ -188,6 +188,8 @@ class QuestionController extends Controller
     public function deleteQuestion($id)
     {
         $question = Question::find($id);
+        $question->questionexplanation->delete();
+        $question->questionexplanation->delete();
         $question->delete();
 
         Session::flash('success', 'User deleted successfully!');
