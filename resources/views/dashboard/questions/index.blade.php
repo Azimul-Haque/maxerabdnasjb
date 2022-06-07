@@ -107,7 +107,7 @@
                                                                   <select name="topic_id" class="form-control" required>
                                                                       <option selected="" disabled="" value="">টপিক (বিষয়)</option>
                                                                       @foreach ($topics as $topic)
-                                                                          <option value="{{ $topic->id }}">{{ $topic->name }}</option>
+                                                                          <option value="{{ $topic->id }}" @if($question->topic_id = $topic->id) selected @endif>{{ $topic->name }}</option>
                                                                       @endforeach
                                                                   </select>
                                                                   <div class="input-group-append">
