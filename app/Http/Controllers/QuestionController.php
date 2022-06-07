@@ -7,6 +7,16 @@ use Illuminate\Http\Request;
 use App\Question;
 use App\Topic;
 
+use Carbon\Carbon;
+use DB;
+use Hash;
+use Auth;
+use Image;
+use File;
+use Session;
+use Artisan;
+use OneSignal;
+
 class QuestionController extends Controller
 {
     public function __construct()
@@ -21,7 +31,7 @@ class QuestionController extends Controller
             abort(403, 'Access Denied');
         }
         
-        $questions = Questions::paginate(10);
+        $questions = Question::paginate(10);
         $topics = Topic::all();
 
         return view('dashboard.questions.index')
