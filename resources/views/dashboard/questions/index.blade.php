@@ -121,13 +121,13 @@
                                                                   <input type="file" id="image{{ $question->id }}" name="image" accept="image/*">
                                                               </div>
                                                               <center>
-                                                                  @php
+                                                                  <?php
                                                                     if($question->questionimage->image) {
                                                                         $currentimage = asset('images/questions/' . $question->questionimage->image)
                                                                     } else {
                                                                         $currentimage = asset('images/placeholder.png');
                                                                     }
-                                                                  @endphp
+                                                                  ?>
                                                                   <img src="{{ $currentimage }}" id='img-upload{{ $question->id }}' style="width: 250px; height: auto;" class="img-responsive" />
                                                               </center>
                                                           </div>
