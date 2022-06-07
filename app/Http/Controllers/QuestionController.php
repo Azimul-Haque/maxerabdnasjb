@@ -76,7 +76,7 @@ class QuestionController extends Controller
         return redirect()->route('dashboard.questions');
     }
 
-    public function storeQuestionsTopic(Request $request)
+    public function storeQuestions(Request $request)
     {
         $this->validate($request,array(
             'name'        => 'required|string|max:191',
