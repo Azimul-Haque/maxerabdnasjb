@@ -224,14 +224,14 @@
                                       {{-- Edit Topic Modal Code --}}
                                       {{-- Edit Topic Modal Code --}}
           
-                                      <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteUserModal{{ $question->id }}">
+                                      <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteTopicModal{{ $question->id }}">
                                           <i class="fas fa-user-minus"></i>
                                       </button>
                                   </td>
                                   {{-- Delete Topic Modal Code --}}
                                   {{-- Delete Topic Modal Code --}}
                                   <!-- Modal -->
-                                  <div class="modal fade" id="deleteUserModal{{ $topic->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteUserModalLabel" aria-hidden="true" data-backdrop="static">
+                                  <div class="modal fade" id="deleteTopicModal{{ $topic->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteUserModalLabel" aria-hidden="true" data-backdrop="static">
                                       <div class="modal-dialog" role="document">
                                       <div class="modal-content">
                                           <div class="modal-header bg-danger">
