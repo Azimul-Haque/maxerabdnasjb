@@ -103,6 +103,7 @@ class QuestionController extends Controller
         // $question->save();
 
         // image upload
+        
         if($request->hasFile('image')) {
             $image      = $request->file('image');
             $filename   = random_string(5) . time() .'.' . "jpg";
