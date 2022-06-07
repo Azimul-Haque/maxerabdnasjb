@@ -286,7 +286,7 @@
                                value="{{ old('name') }}"
                                placeholder="প্রশ্ন" required>
                         <div class="input-group-append">
-                            <div class="input-group-text"><span class="far fa-user"></span></div>
+                            <div class="input-group-text"><span class="<i class="far fa-question-circle"></i>"></span></div>
                         </div>
                     </div>
 
