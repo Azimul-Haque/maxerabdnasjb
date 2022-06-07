@@ -330,9 +330,16 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="input-group mb-3">
-                                <label for="image">ছবি (প্রয়োজনে)</label>
-                                <input type="file" class="form-control-file" id="image">
+                            <div class="row mb-3">
+                                <div class="col-md-8">
+                                    <div class="form-group no-margin-bottom">
+                                        <label><strong>Featured Image (750 X 430 &amp; 300Kb Max): (Optional)</strong></label>
+                                        <input type="file" id="image" name="featured_image">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                  <img src="{{ asset('images/600x315.png')}}" id='img-upload' style="height: 200px; width: auto; padding: 5px;" class="img-responsive" />
+                                </div>
                             </div>
                         </div>
                     </div>
