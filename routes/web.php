@@ -33,6 +33,10 @@ Route::get('/dashboard/questions', 'QuestionController@getQuestions')->name('das
 Route::post('/dashboard/questions/store', 'QuestionController@storeQuestions')->name('dashboard.questions.store');
 Route::get('/dashboard/questions/{id}/delete', 'QuestionController@deleteQuestions')->name('dashboard.questions.delete');
 
+Route::get('/dashboard/questions', 'QuestionController@getQuestions')->name('dashboard.questions.topic');
+Route::post('/dashboard/questions/store', 'QuestionController@storeQuestions')->name('dashboard.questions.topic.store');
+Route::get('/dashboard/questions/{id}/delete', 'QuestionController@deleteQuestions')->name('dashboard.questions.topic.delete');
+
 // Route::get('/dashboard/balance', 'DashboardController@getBalance')->name('dashboard.balance');
 // Route::post('/dashboard/balance/store', 'DashboardController@storeBalance')->name('dashboard.balance.store');
 // Route::get('/dashboard/balance/{id}/delete', 'DashboardController@deleteBalance')->name('dashboard.balance.delete');
