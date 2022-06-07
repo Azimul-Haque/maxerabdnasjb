@@ -175,19 +175,11 @@
                               </tr>
                           </thead>
                           <tbody>
-                          @foreach($questions as $question)
+                          @foreach($topics as $topic)
                               <tr>
                                   <td>
-                                      {{ $question->question }}<br/>
-                                      <span class="badge bg-success">{{ $question->topic->name }}</span>
+                                      {{ $topic->name }}<br/>
                                   </td>
-                                  <td>{{ $question->answer }}</td>
-                                  <td>{{ $question->opntion1 }}, {{ $question->opntion2 }}, {{ $question->opntion3 }}</td>
-                                  {{-- <td>
-                                      <div class="progress progress-xs">
-                                          <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
-                                      </div>
-                                  </td> --}}
                               
                                   <td align="right" width="40%">
                                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editQuestionModal{{ $question->id }}">
