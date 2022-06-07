@@ -123,12 +123,12 @@
                                                               <center>
                                                                   @php
                                                                     if($question->questionimage->image) {
-                                                                        $currentimage = $question->questionimage->image;
+                                                                        $currentimage = asset('images/questions/' . $question->questionimage->image)
                                                                     } else {
                                                                         $currentimage = asset('images/placeholder.png');
                                                                     }
                                                                   @endphp
-                                                                  <img src="@if($question->questionimage->image) {{ asset('images/questions/' . $question->questionimage->image) }} @else {{ asset('images/placeholder.png') }} @endif" id='img-upload{{ $question->id }}' style="width: 250px; height: auto;" class="img-responsive" />
+                                                                  <img src="$currentimage" id='img-upload{{ $question->id }}' style="width: 250px; height: auto;" class="img-responsive" />
                                                               </center>
                                                           </div>
                                                           <div class="col-md-6">
