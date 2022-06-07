@@ -338,6 +338,9 @@
                                 <img src="{{ asset('images/placeholder.png')}}" id='img-upload' style="height: 200px; width: auto; padding: 5px;" class="img-responsive" />
                             </center>
                         </div>
+                        <div class="col-md-6">
+                            <textarea name="explanation" id="" cols="30" rows="10" placeholder="sadas"></textarea>
+                        </div>
                     </div>
               </div>
               <div class="modal-footer">
