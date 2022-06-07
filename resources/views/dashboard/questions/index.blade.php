@@ -302,11 +302,11 @@
                     </div>
                     <div class="input-group mb-3">
                         <input type="text"
-                               name="answer"
-                               value="{{ old('answer') }}"
+                               name="option1"
+                               value="{{ old('option1') }}"
                                autocomplete="off"
                                class="form-control"
-                               placeholder="সঠিক উত্তর" required>
+                               placeholder="অপশন ১" required>
                         <div class="input-group-append">
                             <div class="input-group-text"><span class="<i class="fal fa-clipboard-list"></i>"></span></div>
                         </div>
