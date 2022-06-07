@@ -331,7 +331,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="input-group mb-3">
-                                <label for="image"></label>
+                                <label for="image">ছবি (প্রয়োজনে)</label>
                                 <input type="file" class="form-control-file" id="image">
                             </div>
                         </div>
