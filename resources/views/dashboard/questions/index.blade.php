@@ -325,7 +325,7 @@
                                     @endforeach
                                 </select>
                                 <div class="input-group-append">
-                                    <div class="input-group-text"><span class="fas fa-star-half-alt"></span></div>
+                                    <div class="input-group-text"><span class="fas fa-bookmark"></span></div>
                                 </div>
                             </div>
                         </div>
