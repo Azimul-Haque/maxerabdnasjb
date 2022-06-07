@@ -26,7 +26,7 @@
                     <th>Question</th>
                     <th>Answer</th>
                     <th>Options</th>
-                    <th>Options</th>
+                    <th>Action</th>
                 </tr>
             </thead>
               <tbody>
