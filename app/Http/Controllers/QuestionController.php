@@ -21,7 +21,7 @@ class QuestionController extends Controller
             abort(403, 'Access Denied');
         }
         // $questions = Questions::get();
-        // $totalbalance = Balance::sum('amount');
+        // $topics = Topic::all();
         // $totalexpense = Expense::sum('amount');
 
         // $balances = Balance::where('amount', '>', 0)
