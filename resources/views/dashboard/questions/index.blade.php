@@ -30,10 +30,9 @@
                     </tr>
                 </thead>
                 <tbody>
-                @foreach($users as $user)
+                @foreach($questions as $question)
                     <tr>
-                        <td>1.</td>
-                        <td>Update software</td>
+                        <td>{{ $question->question }}</td>
                         <td>
                         <div class="progress progress-xs">
                             <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
