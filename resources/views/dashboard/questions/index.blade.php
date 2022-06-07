@@ -2,7 +2,8 @@
 @section('title') ড্যাশবোর্ড | প্রশ্নব্যাংক @endsection
 
 @section('third_party_stylesheets')
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/icheck-bootstrap@3.0.1/icheck-bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/summernote/summernote.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/summernote/summernote-bs3.css') }}">
 @endsection
 
 @section('content')
