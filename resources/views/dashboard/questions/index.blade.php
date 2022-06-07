@@ -428,9 +428,13 @@
           if(filesize > 300) {
             $("#image").val('');
             toastr.warning('File size is: '+filesize+' Kb. try uploading less than 300Kb', 'WARNING').css('width', '400px;');
-              setTimeout(function() {
-                $("#img-upload").attr('src', '{{ asset('images/600x315.png') }}');
-              }, 1000);
+            Toast.fire({
+                icon: 'warning',
+                title: '{{ session('warning') }}'
+            })
+            setTimeout(function() {
+            $("#img-upload").attr('src', '{{ asset('images/600x315.png') }}');
+            }, 1000);
           }
       });
 
