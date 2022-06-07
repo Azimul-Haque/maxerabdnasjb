@@ -46,7 +46,7 @@
                                       </div>
                                   </td> --}}
                               
-                                  <td align="right" width="40%">
+                                  <td align="right">
                                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editQuestionModal{{ $question->id }}">
                                           <i class="fas fa-user-edit"></i>
                                       </button>
