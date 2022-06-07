@@ -100,6 +100,15 @@ class QuestionController extends Controller
         $question->difficulty = $request->difficulty;
         $question->save();
 
+        // image upload
+        if($request->hasFile('image')) {
+            $image      = $request->file('image');
+            $filename   = str_replace(['?',':', '\\', '/', '*', ' '], '_',$request->title).time() .'.' . $image->getClientOriginalExtension();
+            $location   = public_path('images/blogs/'. $filename);
+            Image::make($image)->resize(600, null, function ($constraint) { $constraint->aspectRatio(); })->save($location);
+            $blog->featured_image = $filename;
+        }
+
         Session::flash('success', 'Question created successfully!');
         return redirect()->route('dashboard.questions');
     }
