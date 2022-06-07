@@ -431,8 +431,19 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="{{ asset('vendor/summernote/summernote.min.js') }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-
+<script>
+    $(document).ready(function(){
+        $('.summernote').summernote({
+            placeholder: 'Write Blog Post',
+            tabsize: 2,
+            height: 200,
+            dialogsInBody: true
+        });
+        $('div.note-group-select-from-files').remove();
+    });
+</script>
 <script type="text/javascript">
+
     $(document).ready( function() {
       $(document).on('change', '.btn-file :file', function() {
         var input = $(this),
