@@ -3,7 +3,9 @@
 
 @section('third_party_stylesheets')
     <link rel="stylesheet" type="text/css" href="{{ asset('vendor/summernote/summernote.css') }}">
-    {{-- <link rel="stylesheet" type="text/css" href="{{ asset('vendor/summernote/summernote-bs4.css') }}"> --}}
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/summernote/summernote-bs4.css') }}">
+
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
 @endsection
 
 @section('content')
