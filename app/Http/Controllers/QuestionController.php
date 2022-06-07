@@ -91,7 +91,7 @@ class QuestionController extends Controller
         ));
 
         $question = new Question;
-        $question->name = $request->name;
+        $question->topic_id = $request->topic_id;
         $question->save();
 
         Session::flash('success', 'Question created successfully!');
