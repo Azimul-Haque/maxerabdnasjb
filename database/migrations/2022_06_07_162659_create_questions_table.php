@@ -17,6 +17,10 @@ class CreateQuestionsTable extends Migration
             $table->id();
             $table->string('question');
             $table->string('answer');
+            $table->string('option1');
+            $table->string('option2');
+            $table->string('option3');
+            $table->string('option3');
             $table->timestamps();
         });
     }
