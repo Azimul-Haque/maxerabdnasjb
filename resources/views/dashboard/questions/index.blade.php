@@ -297,13 +297,13 @@
                     </div>
                     <div class="row">
                         <div class="col-md-4">
-                            <input type="text" name="option1" value="{{ old('option1') }}" autocomplete="off" class="form-control mb-3" placeholder="অপশন ১" required>
+                            <input type="text" name="option1" value="{{ old('option1') }}" class="form-control mb-3" placeholder="অপশন ১" required>
                         </div>
                         <div class="col-md-4">
-                            <input type="text" name="option2" value="{{ old('option2') }}" autocomplete="off" class="form-control mb-3" placeholder="অপশন ২" required>
+                            <input type="text" name="option2" value="{{ old('option2') }}" class="form-control mb-3" placeholder="অপশন ২" required>
                         </div>
                         <div class="col-md-4">
-                            <input type="text" name="option3" value="{{ old('option3') }}" autocomplete="off" class="form-control mb-3" placeholder="অপশন ৩" required>
+                            <input type="text" name="option3" value="{{ old('option3') }}" class="form-control mb-3" placeholder="অপশন ৩" required>
                         </div>
                     </div>
                     <div class="input-group mb-3">
