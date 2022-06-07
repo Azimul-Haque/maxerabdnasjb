@@ -79,7 +79,9 @@ class QuestionController extends Controller
     public function storeQuestions(Request $request)
     {
         $this->validate($request,array(
-            'name'        => 'required|string|max:191',
+            'question'        => 'required|string|max:191',
+            'answer'        => 'required|string|max:191',
+            'answer'        => 'required|string|max:191',
         ));
 
         $topic = new Topic;
