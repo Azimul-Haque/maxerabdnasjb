@@ -310,7 +310,7 @@
                     </div>
                     <div class="input-group mb-3">
                         <select name="difficulty" class="form-control" required>
-                            <option selected="" disabled="" value="">ধরন</option>
+                            <option selected="" disabled="" value="">সিলেক্ট করুন</option>
                             <option value="admin">এডমিন</option>
                             <option value="manager">ম্যানেজার</option>
                             <option value="user">ব্যবহারকারী</option>
