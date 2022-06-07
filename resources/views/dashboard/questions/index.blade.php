@@ -117,7 +117,7 @@
                                                           </div>
                                                           <div class="col-md-6">
                                                               <div class="form-group ">
-                                                                  <label for="image">ছবি (প্রয়োজনে)</label>
+                                                                  <label for="image">ছবি (প্রয়োজনে) {{ $question->questionimage->image ? $question->questionimage->image : '' }}</label>
                                                                   <input type="file" id="image{{ $question->id }}" name="image" accept="image/*">
                                                               </div>
                                                               <center>
