@@ -331,8 +331,8 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group mb-3">
-                                <label><strong>Featured Image (750 X 430 &amp; 300Kb Max): (Optional)</strong></label>
-                                <input type="file" id="image" name="featured_image">
+                                <label for="image">ছবি (প্রয়োজনে)</label>
+                                <input type="file" id="image" name="image">
                             </div>
                             <img src="{{ asset('images/600x315.png')}}" id='img-upload' style="height: 200px; width: auto; padding: 5px;" class="img-responsive" />
                         </div>
