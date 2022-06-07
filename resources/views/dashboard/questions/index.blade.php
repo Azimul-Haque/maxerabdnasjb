@@ -290,24 +290,14 @@
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text"
-                               name="answer"
-                               value="{{ old('answer') }}"
-                               autocomplete="off"
-                               class="form-control"
-                               placeholder="সঠিক উত্তর" required>
+                        <input type="text" name="answer" value="{{ old('answer') }}" autocomplete="off" class="form-control" placeholder="সঠিক উত্তর" required>
                         <div class="input-group-append">
                             <div class="input-group-text"><span class="far fa-check-circle"></span></div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4">
-                            <input type="text"
-                               name="option1"
-                               value="{{ old('option1') }}"
-                               autocomplete="off"
-                               class="form-control"
-                               placeholder="অপশন ১" required>
+                            <input type="text" name="option1" value="{{ old('option1') }}" autocomplete="off" class="form-control mb-3" placeholder="অপশন ১" required>
                         </div>
                     </div>
                     <div class="input-group mb-3">
