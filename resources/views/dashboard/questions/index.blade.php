@@ -36,6 +36,7 @@
                                   <td>
                                       {{ $question->question }}<br/>
                                       <span class="badge bg-success">{{ $question->topic->name }}</span>
+                                      <span class="badge bg-info">{{ $question->topic->name }}</span>
                                   </td>
                                   <td>{{ $question->answer }}</td>
                                   <td>{{ $question->option1 }}, {{ $question->option2 }}, {{ $question->option3 }}</td>
