@@ -194,7 +194,7 @@ class QuestionController extends Controller
             if(File::exists($image_path)) {
                 File::delete($image_path);
             }
-            $question->questionexplanation->delete();
+            $question->questionimage->delete();
         }
         $question->questionexplanation->delete();
         $question->delete();
