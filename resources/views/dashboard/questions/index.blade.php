@@ -276,7 +276,7 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <form method="post" action="{{ route('dashboard.users.store') }}" accept="">
+          <form method="post" action="{{ route('dashboard.users.store') }}" >
               <div class="modal-body">
                     @csrf
                     <div class="input-group mb-3">
