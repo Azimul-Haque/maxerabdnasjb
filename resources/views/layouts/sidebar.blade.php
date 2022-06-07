@@ -1,4 +1,4 @@
-<aside class="main-sidebar sidebar-light-warning elevation-1">
+<aside class="main-sidebar sidebar-light-success elevation-2">
     <a href="{{ route('dashboard.index') }}" class="brand-link">
         <img src="{{ asset('images/icon.png') }}"
              alt="AdminLTE Logo"
