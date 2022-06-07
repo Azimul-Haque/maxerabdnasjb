@@ -104,7 +104,7 @@ class QuestionController extends Controller
         if($request->hasFile('image')) {
             $image      = $request->file('image');
             $filename   = random_string(5) . time() .'.' . "webp";
-            $location   = public_path('images/blogs/'. $filename);
+            $location   = public_path('images/questions/'. $filename);
             Image::make($image)->resize(600, null, function ($constraint) { $constraint->aspectRatio(); })->save($location);
             $blog->featured_image = $filename;
         }
