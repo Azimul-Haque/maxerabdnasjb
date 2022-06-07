@@ -311,10 +311,9 @@
                     <div class="input-group mb-3">
                         <select name="difficulty" class="form-control" required>
                             <option selected="" disabled="" value="">সিলেক্ট করুন</option>
-                            <option value="admin">এডমিন</option>
-                            <option value="manager">ম্যানেজার</option>
-                            <option value="user">ব্যবহারকারী</option>
-                            {{-- <option value="accountant">একাউন্টেন্ট</option> --}}
+                            <option value="1">সহজ</option>
+                            <option value="2">ম্যানেজার</option>
+                            <option value="3">কঠিন</option>
                         </select>
                         <div class="input-group-append">
                             <div class="input-group-text"><span class="fas fa-user-secret"></span></div>
