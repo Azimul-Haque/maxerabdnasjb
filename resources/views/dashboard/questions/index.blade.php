@@ -93,9 +93,9 @@
                                                               <div class="input-group mb-3">
                                                                   <select name="difficulty" class="form-control" required>
                                                                       <option selected="" disabled="" value="">ডিফিকাল্টি লেভেল</option>
-                                                                      <option value="1">সহজ</option>
-                                                                      <option value="2">মধ্যম</option>
-                                                                      <option value="3">কঠিন</option>
+                                                                      <option value="1" @if($question->difficulty = 1) selected @endif>সহজ</option>
+                                                                      <option value="2" @if($question->difficulty = 2) selected @endif>মধ্যম</option>
+                                                                      <option value="3" @if($question->difficulty = 3) selected @endif>কঠিন</option>
                                                                   </select>
                                                                   <div class="input-group-append">
                                                                       <div class="input-group-text"><span class="fas fa-star-half-alt"></span></div>
