@@ -271,7 +271,7 @@
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header bg-success">
-            <h5 class="modal-title" id="addQuesitonModalLabel">নতুন ব্যবহারকারী যোগ</h5>
+            <h5 class="modal-title" id="addQuesitonModalLabel">নতুন প্রশ্ন যোগ</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -281,10 +281,10 @@
                     @csrf
                     <div class="input-group mb-3">
                         <input type="text"
-                               name="name"
+                               name="question"
                                class="form-control"
                                value="{{ old('name') }}"
-                               placeholder="নাম" required>
+                               placeholder="প্রশ্ন" required>
                         <div class="input-group-append">
                             <div class="input-group-text"><span class="fas fa-user"></span></div>
                         </div>
