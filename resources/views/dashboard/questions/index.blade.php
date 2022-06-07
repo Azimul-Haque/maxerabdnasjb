@@ -431,7 +431,7 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script>
     ClassicEditor
-            .create( document.querySelector( '#summernote' ) )
+            .create( document.querySelector( '.summernote' ) )
             .then( editor => {
                     console.log( editor );
             } )
