@@ -183,7 +183,7 @@
                               
                                   <td align="right" width="40%">
                                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editTopicModal{{ $topic->id }}">
-                                          <i class="fas fa-user-edit"></i>
+                                          <i class="far fa-edit"></i>
                                       </button>
                                       {{-- Edit Topic Modal Code --}}
                                       {{-- Edit Topic Modal Code --}}
