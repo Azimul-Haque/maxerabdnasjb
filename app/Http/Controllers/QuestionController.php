@@ -93,15 +93,15 @@ class QuestionController extends Controller
             'explanation' => 'sometimes|max:1000',
         ));
 
-        // $question = new Question;
-        // $question->topic_id = $request->topic_id;
-        // $question->question = $request->question;
-        // $question->answer = $request->answer;
-        // $question->option1 = $request->option1;
-        // $question->option2 = $request->option2;
-        // $question->option3 = $request->option3;
-        // $question->difficulty = $request->difficulty;
-        // $question->save();
+        $question = new Question;
+        $question->topic_id = $request->topic_id;
+        $question->question = $request->question;
+        $question->answer = $request->answer;
+        $question->option1 = $request->option1;
+        $question->option2 = $request->option2;
+        $question->option3 = $request->option3;
+        $question->difficulty = $request->difficulty;
+        $question->save();
 
         // image upload
         
@@ -110,8 +110,17 @@ class QuestionController extends Controller
             $filename   = random_string(5) . time() .'.' . "webp";
             $location   = public_path('images/questions/'. $filename);
             Image::make($image)->resize(350, null, function ($constraint) { $constraint->aspectRatio(); })->save($location);
-            // $question->questionimage->image = $filename;
-            // $question->save();
+            $question->questionimage->image = $filename;
+            $question->save();
+        }
+
+        if($request->hasFile('image')) {
+            $image      = $request->file('image');
+            $filename   = random_string(5) . time() .'.' . "webp";
+            $location   = public_path('images/questions/'. $filename);
+            Image::make($image)->resize(350, null, function ($constraint) { $constraint->aspectRatio(); })->save($location);
+            $question->questionimage->image = $filename;
+            $question->save();
         }
 
         Session::flash('success', 'Question created successfully!');
