@@ -339,7 +339,7 @@
                             </center>
                         </div>
                         <div class="col-md-6">
-                            <textarea name="explanation" id="" cols="30" rows="10" placeholder="sadas"></textarea>
+                            <textarea name="explanation" id="" placeholder="sadas"></textarea>
                         </div>
                     </div>
               </div>
