@@ -183,7 +183,7 @@
               reader.readAsDataURL(input.files[0]);
           }
       }
-      $("#image").change(function(){
+      $("#image{{ $question->id }}").change(function(){
           readURL(this);
           var filesize = parseInt((this.files[0].size)/1024);
           if(filesize > 10000) {
@@ -194,7 +194,7 @@
                 title: 'File size is: '+filesize+' Kb. try uploading less than 300Kb'
             })
             setTimeout(function() {
-            $("#img-upload").attr('src', '{{ asset('images/placeholder.png') }}');
+            $("#img-upload{{ $question->id }}").attr('src', '{{ asset('images/placeholder.png') }}');
             }, 1000);
           }
       });
