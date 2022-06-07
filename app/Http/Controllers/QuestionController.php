@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Question;
+use App\Questionimage;
+use App\Questionexplanation;
 use App\Topic;
 
 use Carbon\Carbon;
@@ -106,7 +108,7 @@ class QuestionController extends Controller
             $filename   = random_string(5) . time() .'.' . "webp";
             $location   = public_path('images/questions/'. $filename);
             Image::make($image)->resize(300, null, function ($constraint) { $constraint->aspectRatio(); })->save($location);
-            $blog->featured_image = $filename;
+            $question->questionimage->image = $filename;
         }
 
         Session::flash('success', 'Question created successfully!');
