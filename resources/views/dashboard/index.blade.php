@@ -30,7 +30,7 @@
               <div class="inner">
                 <h4>{{ 0 }}<sup style="font-size: 20px">৳</sup></h4>
 
-                <p>মাসিক আয় ({{ date('F d, Y') }})</p>
+                <p>মাসিক আয় ({{ date('F Y') }})</p>
               </div>
               <div class="icon">
                 <i class="ion ion-stats-bars"></i>
