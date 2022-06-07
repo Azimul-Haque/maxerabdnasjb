@@ -356,11 +356,9 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <form method="post" action="{{ route('dashboard.users.store') }}">
+        <form method="post" action="{{ route('dashboard.questions.topic.store') }}">
             <div class="modal-body">
-                  
                   @csrf
-  
                   <div class="input-group mb-3">
                       <input type="text"
                              name="name"
@@ -371,44 +369,6 @@
                           <div class="input-group-text"><span class="fas fa-user"></span></div>
                       </div>
                   </div>
-  
-                  <div class="input-group mb-3">
-                      <input type="text"
-                             name="mobile"
-                             value="{{ old('mobile') }}"
-                             autocomplete="off"
-                             class="form-control"
-                             placeholder="মোবাইল নম্বর (১১ ডিজিট)" required>
-                      <div class="input-group-append">
-                          <div class="input-group-text"><span class="fas fa-phone"></span></div>
-                      </div>
-                  </div>
-  
-                  <div class="input-group mb-3">
-                      <select name="role" id="adduserrole" class="form-control" required>
-                          <option selected="" disabled="" value="">ধরন</option>
-                          <option value="admin">এডমিন</option>
-                          <option value="manager">ম্যানেজার</option>
-                          <option value="user">ব্যবহারকারী</option>
-                          {{-- <option value="accountant">একাউন্টেন্ট</option> --}}
-                      </select>
-                      <div class="input-group-append">
-                          <div class="input-group-text"><span class="fas fa-user-secret"></span></div>
-                      </div>
-                  </div>
-  
-  
-                  <div class="input-group mb-3">
-                      <input type="password"
-                             name="password"
-                             class="form-control"
-                             autocomplete="off"
-                             placeholder="পাসওয়ার্ড" required>
-                      <div class="input-group-append">
-                          <div class="input-group-text"><span class="fas fa-lock"></span></div>
-                      </div>
-                  </div>
-                  
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
