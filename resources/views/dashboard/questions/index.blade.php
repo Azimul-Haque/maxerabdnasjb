@@ -157,11 +157,11 @@
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-header">
-                      <h3 class="card-title">প্রশ্নব্যাংক</h3>
+                      <h3 class="card-title">টপিক</h3>
           
                       <div class="card-tools">
                           <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addQuesitonModal">
-                              <i class="fas fa-plus-circle"></i> নতুন প্রশ্ন যোগ
+                              <i class="fas fa-plus-circle"></i> নতুন টপিক
                           </button>
                       </div>
                     </div>
