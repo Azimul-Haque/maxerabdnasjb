@@ -97,6 +97,7 @@ class QuestionController extends Controller
         $question->option1 = $request->option1;
         $question->option2 = $request->option2;
         $question->option3 = $request->option3;
+        $question->difficulty = $request->difficulty;
         $question->save();
 
         Session::flash('success', 'Question created successfully!');
