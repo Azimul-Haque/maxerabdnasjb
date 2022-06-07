@@ -293,7 +293,7 @@
                     <div class="input-group mb-3">
                         <input type="text"
                                name="mobile"
-                               value="{{ old('mobile') }}"
+                               value="{{ old('answer') }}"
                                autocomplete="off"
                                class="form-control"
                                placeholder="সঠিক উত্তর" required>
