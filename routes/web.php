@@ -29,9 +29,13 @@ Route::post('/dashboard/users/store', 'DashboardController@storeUser')->name('da
 Route::post('/dashboard/users/{id}/update', 'DashboardController@updateUser')->name('dashboard.users.update');
 Route::get('/dashboard/users/{id}/delete', 'DashboardController@deleteUser')->name('dashboard.users.delete');
 
-Route::get('/dashboard/balance', 'DashboardController@getBalance')->name('dashboard.balance');
-Route::post('/dashboard/balance/store', 'DashboardController@storeBalance')->name('dashboard.balance.store');
-Route::get('/dashboard/balance/{id}/delete', 'DashboardController@deleteBalance')->name('dashboard.balance.delete');
+Route::get('/dashboard/questions', 'QuestionController@getQuestions')->name('dashboard.questions');
+Route::post('/dashboard/questions/store', 'QuestionController@storeQuestions')->name('dashboard.questions.store');
+Route::get('/dashboard/questions/{id}/delete', 'QuestionController@deleteQuestions')->name('dashboard.questions.delete');
+
+// Route::get('/dashboard/balance', 'DashboardController@getBalance')->name('dashboard.balance');
+// Route::post('/dashboard/balance/store', 'DashboardController@storeBalance')->name('dashboard.balance.store');
+// Route::get('/dashboard/balance/{id}/delete', 'DashboardController@deleteBalance')->name('dashboard.balance.delete');
 
 Route::get('/dashboard/sites', 'DashboardController@getSites')->name('dashboard.sites');
 Route::post('/dashboard/sites/store', 'DashboardController@storeSite')->name('dashboard.sites.store');

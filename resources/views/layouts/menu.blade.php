@@ -15,48 +15,15 @@
 </li>
 @endif
 
-@if(Auth::user()->role == 'admin' || Auth::user()->role == 'accountant')
+@if(Auth::user()->role == 'admin' || Auth::user()->role == 'manager')
 <li class="nav-item">
-    <a href="{{ route('dashboard.balance') }}" class="nav-link {{ Request::is('dashboard/balance') ? 'active' : '' }}">
-        <i class="nav-icon fas fa-funnel-dollar"></i>
-        <p>ব্যালেন্স</p>
+    <a href="{{ route('dashboard.questions') }}" class="nav-link {{ Request::is('dashboard/balance') ? 'active' : '' }}">
+        <i class="nav-icon far fa-folder-open"></i>
+        <p>প্রশ্নসমূহ</p>
     </a>
 </li>
 @endif
 
-@if(Auth::user()->role != 'accountant')
-<li class="nav-item">
-    <a href="{{ route('dashboard.sites') }}" class="nav-link {{ Request::is('dashboard/sites') ? 'active' : '' }} {{ Request::is('dashboard/sites/*') ? 'active' : '' }}">
-        <i class="nav-icon fas fa-briefcase"></i>
-        <p>সাইটসমূহ</p>
-    </a>
-</li>
-
-<li class="nav-item">
-    <a href="{{ route('dashboard.categories') }}" class="nav-link {{ Request::is('dashboard/categories') ? 'active' : '' }}">
-        <i class="nav-icon fas fa-tags"></i>
-        <p>খাতসমূহ</p>
-    </a>
-</li>
-@endif
-
-@if(Auth::user()->role == 'admin')
-<li class="nav-item">
-    <a href="{{ route('dashboard.monthly') }}" class="nav-link {{ Request::is('dashboard/monthly') ? 'active' : '' }} {{ Request::is('dashboard/monthly/*') ? 'active' : '' }}">
-        <i class="nav-icon fas fa-calendar-alt"></i>
-        <p>মাসভিত্তিক জমা-খরচ</p>
-    </a>
-</li>
-@endif
-
-@if(Auth::user()->role == 'admin')
-<li class="nav-item">
-    <a href="{{ route('dashboard.creditors') }}" class="nav-link {{ Request::is('dashboard/creditors') ? 'active' : '' }} {{ Request::is('dashboard/creditors/*') ? 'active' : '' }}">
-        <i class="nav-icon fas fa-user-clock"></i>
-        <p>পাওনাদারের হিসাব</p>
-    </a>
-</li>
-@endif
 {{-- <li class="nav-item">
     <a href="{{ route('dashboard.components') }}" class="nav-link {{ Request::is('dashboard/components') ? 'active' : '' }}">
         <i class="nav-icon fas fa-laptop-code"></i>
