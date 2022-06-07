@@ -34,6 +34,7 @@
                     <tr>
                         <td>{{ $question->question }}</td>
                         <td>{{ $question->answer }}</td>
+                        <td>{{ $question->opntion1 }}, {{ $question->opntion2 }}, {{ $question->opntion3 }}</td>
                         <td>
                         <div class="progress progress-xs">
                             <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
