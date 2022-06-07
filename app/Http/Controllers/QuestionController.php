@@ -24,7 +24,7 @@ class QuestionController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
-        $this->middleware(['admin'])->only('getQuestions', 'storeQuestionsTopic');
+        $this->middleware(['admin'])->only('storeQuestionsTopic');
     }
 
     public function getQuestions()
