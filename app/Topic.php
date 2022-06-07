@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Topic extends Model
 {
     public function questions(){
-        return $this->hasMany('App\Balance');
+        return $this->hasMany('App\Question');
     }
 }
