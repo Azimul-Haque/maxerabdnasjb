@@ -122,7 +122,7 @@
                                                               </div>
                                                               <center>
                                                                   <?php
-                                                                  dd($question->questionsimage);
+                                                                  dd($question->questionimages);
                                                                     if($question->questionimage->image) {
                                                                         // $currentimage = asset('images/questions/' . $question->questionimage->image);
                                                                         $currentimage = asset('images/placeholder.png');
