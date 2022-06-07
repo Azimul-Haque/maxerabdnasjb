@@ -224,7 +224,7 @@
                                       {{-- Edit Topic Modal Code --}}
                                       {{-- Edit Topic Modal Code --}}
           
-                                      <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteTopicModal{{ $question->id }}">
+                                      <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteTopicModal{{ $topic->id }}">
                                           <i class="fas fa-user-minus"></i>
                                       </button>
                                   </td>
