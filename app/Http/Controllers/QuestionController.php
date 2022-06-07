@@ -50,6 +50,6 @@ class QuestionController extends Controller
         $topic->save();
 
         Session::flash('success', 'User created successfully!');
-        return redirect()->route('dashboard.question');
+        return redirect()->route('dashboard.questions');
     }
 }
