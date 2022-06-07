@@ -192,12 +192,12 @@
                                           <div class="modal-dialog" role="document">
                                           <div class="modal-content">
                                               <div class="modal-header bg-primary">
-                                              <h5 class="modal-title" id="editUserModalLabel">প্রশ্ন হালনাগাদ</h5>
+                                              <h5 class="modal-title" id="editUserModalLabel">টপিক হালনাগাদ</h5>
                                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                   <span aria-hidden="true">&times;</span>
                                               </button>
                                               </div>
-                                              <form method="post" action="{{ route('dashboard.users.update', $question->id) }}">
+                                              <form method="post" action="{{ route('dashboard.users.update', $topic->id) }}">
                                                   <div class="modal-body">
                                                   
                                                       @csrf
@@ -206,7 +206,7 @@
                                                           <input type="text"
                                                                   name="name"
                                                                   class="form-control"
-                                                                  value="{{ $question->name }}"
+                                                                  value="{{ $topic->name }}"
                                                                   placeholder="নাম" required>
                                                           <div class="input-group-append">
                                                               <div class="input-group-text"><span class="fas fa-user"></span></div>
