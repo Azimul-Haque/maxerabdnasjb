@@ -45,7 +45,7 @@
 @endif
 
 @if(session('warning'))
-    <script type="text/javascript">
+  <script type="text/javascript">
     Toast.fire({
       icon: 'warning',
       title: '{{ session('warning') }}'
