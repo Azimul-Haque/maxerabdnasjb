@@ -40,6 +40,7 @@ return array(
     'App\\Providers\\EventServiceProvider' => $baseDir . '/app/Providers/EventServiceProvider.php',
     'App\\Providers\\RouteServiceProvider' => $baseDir . '/app/Providers/RouteServiceProvider.php',
     'App\\Question' => $baseDir . '/app/Question.php',
+    'App\\Questionimage' => $baseDir . '/app/Questionimage.php',
     'App\\Site' => $baseDir . '/app/Site.php',
     'App\\Topic' => $baseDir . '/app/Topic.php',
     'App\\User' => $baseDir . '/app/User.php',
