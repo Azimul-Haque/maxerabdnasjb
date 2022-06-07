@@ -302,15 +302,19 @@
                             <input type="text" name="option3" value="{{ old('option3') }}" class="form-control mb-3" placeholder="অপশন ৩" required>
                         </div>
                     </div>
-                    <div class="input-group mb-3">
-                        <select name="difficulty" class="form-control" required>
-                            <option selected="" disabled="" value="">সিলেক্ট করুন</option>
-                            <option value="1">সহজ</option>
-                            <option value="2">মধ্যম</option>
-                            <option value="3">কঠিন</option>
-                        </select>
-                        <div class="input-group-append">
-                            <div class="input-group-text"><span class="fas fa-star-half-alt"></span></div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="input-group mb-3">
+                                <select name="difficulty" class="form-control" required>
+                                    <option selected="" disabled="" value="">সিলেক্ট করুন</option>
+                                    <option value="1">সহজ</option>
+                                    <option value="2">মধ্যম</option>
+                                    <option value="3">কঠিন</option>
+                                </select>
+                                <div class="input-group-append">
+                                    <div class="input-group-text"><span class="fas fa-star-half-alt"></span></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="input-group mb-3">
