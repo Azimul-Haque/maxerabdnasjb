@@ -12,7 +12,7 @@ class ExamController extends Controller
         $this->middleware(['admin'])->only('getQuestions', 'storeQuestionsTopic');
     }
 
-    public function getQuestions()
+    public function getExams()
     {
         if(!(Auth::user()->role == 'admin' || Auth::user()->role == 'manager')) {
             abort(403, 'Access Denied');
