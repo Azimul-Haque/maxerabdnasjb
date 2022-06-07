@@ -92,15 +92,15 @@ class QuestionController extends Controller
             'explanation' => 'sometimes|string|max:191',
         ));
 
-        $question = new Question;
-        $question->topic_id = $request->topic_id;
-        $question->question = $request->question;
-        $question->answer = $request->answer;
-        $question->option1 = $request->option1;
-        $question->option2 = $request->option2;
-        $question->option3 = $request->option3;
-        $question->difficulty = $request->difficulty;
-        $question->save();
+        // $question = new Question;
+        // $question->topic_id = $request->topic_id;
+        // $question->question = $request->question;
+        // $question->answer = $request->answer;
+        // $question->option1 = $request->option1;
+        // $question->option2 = $request->option2;
+        // $question->option3 = $request->option3;
+        // $question->difficulty = $request->difficulty;
+        // $question->save();
 
         // image upload
         if($request->hasFile('image')) {
