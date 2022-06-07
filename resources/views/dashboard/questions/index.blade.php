@@ -115,8 +115,8 @@
                                 <i class="fas fa-user-minus"></i>
                             </button>
                         </td>
-                        {{-- Delete User Modal Code --}}
-                        {{-- Delete User Modal Code --}}
+                        {{-- Delete Question Modal Code --}}
+                        {{-- Delete Question Modal Code --}}
                         <!-- Modal -->
                         <div class="modal fade" id="deleteUserModal{{ $user->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteUserModalLabel" aria-hidden="true" data-backdrop="static">
                             <div class="modal-dialog" role="document">
@@ -141,8 +141,8 @@
                             </div>
                             </div>
                         </div>
-                        {{-- Delete User Modal Code --}}
-                        {{-- Delete User Modal Code --}}
+                        {{-- Delete Question Modal Code --}}
+                        {{-- Delete Question Modal Code --}}
                     </tr>
                 @endforeach
                 </tbody>
