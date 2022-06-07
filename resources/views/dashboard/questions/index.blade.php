@@ -111,14 +111,14 @@
                             {{-- Edit Question Modal Code --}}
                             {{-- Edit Question Modal Code --}}
 
-                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteUserModal{{ $user->id }}">
+                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteUserModal{{ $question->id }}">
                                 <i class="fas fa-user-minus"></i>
                             </button>
                         </td>
                         {{-- Delete Question Modal Code --}}
                         {{-- Delete Question Modal Code --}}
                         <!-- Modal -->
-                        <div class="modal fade" id="deleteUserModal{{ $user->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteUserModalLabel" aria-hidden="true" data-backdrop="static">
+                        <div class="modal fade" id="deleteUserModal{{ $question->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteUserModalLabel" aria-hidden="true" data-backdrop="static">
                             <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header bg-danger">
@@ -130,13 +130,13 @@
                                 <div class="modal-body">
                                 আপনি কি নিশ্চিতভাবে এই ব্যবহারকারীকে ডিলেট করতে চান?<br/>
                                 <center>
-                                    <big><b>{{ $user->name }}</b></big><br/>
-                                    <small><i class="fas fa-phone"></i> {{ $user->mobile }}</small>
+                                    <big><b>{{ $question->name }}</b></big><br/>
+                                    <small><i class="fas fa-phone"></i> {{ $question->mobile }}</small>
                                 </center>
                                 </div>
                                 <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-                                <a href="{{ route('dashboard.users.delete', $user->id) }}" class="btn btn-danger">ডিলেট করুন</a>
+                                <a href="{{ route('dashboard.users.delete', $question->id) }}" class="btn btn-danger">ডিলেট করুন</a>
                                 </div>
                             </div>
                             </div>
@@ -150,7 +150,7 @@
           </div>
           <!-- /.card-body -->
         </div>
-        {{ $users->links() }}
+        {{ $questions->links() }}
     </div>
 
     {{-- Add User Modal Code --}}
