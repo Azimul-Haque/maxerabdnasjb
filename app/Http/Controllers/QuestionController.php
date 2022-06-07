@@ -44,20 +44,13 @@ class QuestionController extends Controller
         // dd(serialize($request->sitecheck));
         $this->validate($request,array(
             'name'        => 'required|string|max:191',
-            'password'    => 'required|string|min:8|max:191',
         ));
 
-        $user = new User;
-        $user->name = $request->name;
-        $user->mobile = $request->mobile;
-        $user->role = $request->role;
-        // if(!empty($request->sitecheck)) {
-        //     $user->sites = implode(',', $request->sitecheck);
-        // }
-        $user->password = Hash::make($request->password);
-        $user->save();
+        $topic = new Topic;
+        $topic->name = $request->name;
+        $topic->save();
 
         Session::flash('success', 'User created successfully!');
-        return redirect()->route('dashboard.users');
+        return redirect()->route('dashboard.question');
     }
 }
