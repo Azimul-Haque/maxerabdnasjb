@@ -25,6 +25,7 @@
                 <tr>
                     <th>Question</th>
                     <th>Answer</th>
+                    <th>Options</th>
                 </tr>
             </thead>
               <tbody>
