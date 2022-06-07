@@ -184,4 +184,13 @@ class QuestionController extends Controller
         Session::flash('success', 'Question updated successfully!');
         return redirect()->route('dashboard.questions');
     }
+
+    public function deleteUser($id)
+    {
+        $user = User::find($id);
+        $user->delete();
+
+        Session::flash('success', 'User deleted successfully!');
+        return redirect()->route('dashboard.users');
+    }
 }
