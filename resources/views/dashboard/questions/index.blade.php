@@ -171,8 +171,6 @@
                           <thead>
                               <tr>
                                   <th>Topic</th>
-                                  <th>Answer</th>
-                                  <th>Options</th>
                                   <th>Action</th>
                               </tr>
                           </thead>
