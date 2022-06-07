@@ -121,7 +121,7 @@
                                                                   <input type="file" id="image{{ $question->id }}" name="image" accept="image/*">
                                                               </div>
                                                               <center>
-                                                                  <img src="{{ asset('images/questions/D343P1654630770.webp') }}" id='img-upload{{ $question->id }}' style="width: 250px; height: auto;" class="img-responsive" />
+                                                                  <img src="@if($question->questionimage->image) {{ asset('images/questions/' . $question->questionimage->image) }} @else {{ asset('images/placeholder.png')}} @endif" id='img-upload{{ $question->id }}' style="width: 250px; height: auto;" class="img-responsive" />
                                                               </center>
                                                           </div>
                                                           <div class="col-md-6">
