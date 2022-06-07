@@ -153,8 +153,8 @@
         {{ $questions->links() }}
     </div>
 
-    {{-- Add User Modal Code --}}
-    {{-- Add User Modal Code --}}
+    {{-- Add Question Modal Code --}}
+    {{-- Add Question Modal Code --}}
     <!-- Modal -->
     <div class="modal fade" id="addUserModal" tabindex="-1" role="dialog" aria-labelledby="addUserModalLabel" aria-hidden="true" data-backdrop="static">
       <div class="modal-dialog" role="document">
@@ -227,8 +227,8 @@
         </div>
       </div>
     </div>
-    {{-- Add User Modal Code --}}
-    {{-- Add User Modal Code --}}
+    {{-- Add Question Modal Code --}}
+    {{-- Add Question Modal Code --}}
 @endsection
 
 @section('third_party_scripts')
