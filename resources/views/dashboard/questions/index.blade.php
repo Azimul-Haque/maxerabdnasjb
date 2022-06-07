@@ -432,15 +432,13 @@
 <script type="text/javascript" src="{{ asset('vendor/summernote/summernote.min.js') }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script>
-    $(document).ready(function(){
-        $('.summernote').summernote({
-            placeholder: 'ব্যাখ্যা',
-            tabsize: 2,
-            height: 200,
-            dialogsInBody: true
-        });
-        $('div.note-group-select-from-files').remove();
+    $('.summernote').summernote({
+        placeholder: 'ব্যাখ্যা',
+        tabsize: 2,
+        height: 200,
+        dialogsInBody: true
     });
+    $('div.note-group-select-from-files').remove();
 </script>
 <script type="text/javascript">
 
