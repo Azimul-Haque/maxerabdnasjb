@@ -17,7 +17,7 @@ class QuestionController extends Controller
 
     public function getQuestions()
     {
-        if(!(Auth::user()->role == 'admin' || Auth::user()->role == 'accountant')) {
+        if(!(Auth::user()->role == 'admin' || Auth::user()->role == 'manager')) {
             abort(403, 'Access Denied');
         }
         // $users = User::whereNotIn('mobile', ['01751398392', '01837409842'])->get();
