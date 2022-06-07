@@ -199,9 +199,7 @@
                                               </div>
                                               <form method="post" action="{{ route('dashboard.users.update', $topic->id) }}">
                                                   <div class="modal-body">
-                                                  
                                                       @csrf
-          
                                                       <div class="input-group mb-3">
                                                           <input type="text"
                                                                   name="name"
