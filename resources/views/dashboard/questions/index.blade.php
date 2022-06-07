@@ -88,7 +88,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="input-group mb-3">
+                                            {{-- <div class="input-group mb-3">
                                                 <select name="role" class="form-control" required>
                                                     <option disabled="" value="">ধরন নির্ধারণ করুন</option>
                                                     <option value="admin" @if($question->role == 'admin') selected="" @endif>এডমিন</option>
@@ -99,7 +99,7 @@
                                                 <div class="input-group-append">
                                                     <div class="input-group-text"><span class="fas fa-user-secret"></span></div>
                                                 </div>
-                                            </div>
+                                            </div> --}}
 
                                             <div class="input-group mb-3">
                                                 <input type="password"
