@@ -298,7 +298,7 @@
                                class="form-control"
                                placeholder="সঠিক উত্তর" required>
                         <div class="input-group-append">
-                            <div class="input-group-text"><span class="fas fa-phone"></span></div>
+                            <div class="input-group-text"><span class="far fa-check-circle"></span></div>
                         </div>
                     </div>
 
