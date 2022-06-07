@@ -121,7 +121,6 @@ class QuestionController extends Controller
             $questionexplanation->explanation = $request->explanation;
             $questionexplanation->save();
         }
-        
 
         Session::flash('success', 'Question created successfully!');
         return redirect()->route('dashboard.questions');
