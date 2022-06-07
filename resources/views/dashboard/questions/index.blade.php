@@ -57,56 +57,84 @@
                                           <div class="modal-dialog" role="document">
                                           <div class="modal-content">
                                               <div class="modal-header bg-primary">
-                                              <h5 class="modal-title" id="editQuestionModalLabel">প্রশ্ন হালনাগাদ</h5>
-                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                  <span aria-hidden="true">&times;</span>
-                                              </button>
+                                                <h5 class="modal-title" id="editQuestionModalLabel">প্রশ্ন হালনাগাদ</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
                                               </div>
-                                              <form method="post" action="{{ route('dashboard.users.update', $question->id) }}">
-                                                  <div class="modal-body">
-                                                  
+                                              <form method="post" action="{{ route('dashboard.questions.store') }}" enctype='multipart/form-data'>
+                                                <div class="modal-body">
                                                       @csrf
-          
                                                       <div class="input-group mb-3">
-                                                          <input type="text"
-                                                                  name="name"
-                                                                  class="form-control"
-                                                                  value="{{ $question->name }}"
-                                                                  placeholder="নাম" required>
+                                                          <input type="text" name="question" class="form-control" value="{{ old('question') }}" placeholder="প্রশ্ন" required>
                                                           <div class="input-group-append">
-                                                              <div class="input-group-text"><span class="fas fa-user"></span></div>
+                                                              <div class="input-group-text"><span class="far fa-question-circle"></span></div>
                                                           </div>
                                                       </div>
-          
                                                       <div class="input-group mb-3">
-                                                          <input type="text"
-                                                                  name="mobile"
-                                                                  value="{{ $question->mobile }}"
-                                                                  autocomplete="off"
-                                                                  class="form-control"
-                                                                  placeholder="মোবাইল নম্বর (১১ ডিজিট)" required>
+                                                          <input type="text" name="answer" value="{{ old('answer') }}" class="form-control" placeholder="সঠিক উত্তর" required>
                                                           <div class="input-group-append">
-                                                              <div class="input-group-text"><span class="fas fa-phone"></span></div>
+                                                              <div class="input-group-text"><span class="far fa-check-circle"></span></div>
                                                           </div>
                                                       </div>
-          
-                                                      {{-- <div class="input-group mb-3">
-                                                          <select name="role" class="form-control" required>
-                                                              <option disabled="" value="">ধরন নির্ধারণ করুন</option>
-                                                              <option value="admin" @if($question->role == 'admin') selected="" @endif>এডমিন</option>
-                                                              <option value="manager" @if($question->role == 'manager') selected="" @endif>ম্যানেজার</option>
-                                                              <option value="user" @if($question->role == 'user') selected="" @endif>ব্যবহারকারী</option>
-                                                          </select>
-                                                          <div class="input-group-append">
-                                                              <div class="input-group-text"><span class="fas fa-user-secret"></span></div>
+                                                      <div class="row">
+                                                          <div class="col-md-4">
+                                                              <input type="text" name="option1" value="{{ old('option1') }}" class="form-control mb-3" placeholder="অপশন ১" required>
                                                           </div>
-                                                      </div> --}}
-                                                  </div>
-                                                  <div class="modal-footer">
+                                                          <div class="col-md-4">
+                                                              <input type="text" name="option2" value="{{ old('option2') }}" class="form-control mb-3" placeholder="অপশন ২" required>
+                                                          </div>
+                                                          <div class="col-md-4">
+                                                              <input type="text" name="option3" value="{{ old('option3') }}" class="form-control mb-3" placeholder="অপশন ৩" required>
+                                                          </div>
+                                                      </div>
+                                                      <div class="row">
+                                                          <div class="col-md-6">
+                                                              <div class="input-group mb-3">
+                                                                  <select name="difficulty" class="form-control" required>
+                                                                      <option selected="" disabled="" value="">ডিফিকাল্টি লেভেল</option>
+                                                                      <option value="1">সহজ</option>
+                                                                      <option value="2">মধ্যম</option>
+                                                                      <option value="3">কঠিন</option>
+                                                                  </select>
+                                                                  <div class="input-group-append">
+                                                                      <div class="input-group-text"><span class="fas fa-star-half-alt"></span></div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="col-md-6">
+                                                              <div class="input-group mb-3">
+                                                                  <select name="topic_id" class="form-control" required>
+                                                                      <option selected="" disabled="" value="">টপিক (বিষয়)</option>
+                                                                      @foreach ($topics as $topic)
+                                                                          <option value="{{ $topic->id }}">{{ $topic->name }}</option>
+                                                                      @endforeach
+                                                                  </select>
+                                                                  <div class="input-group-append">
+                                                                      <div class="input-group-text"><span class="fas fa-bookmark"></span></div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="col-md-6">
+                                                              <div class="form-group ">
+                                                                  <label for="image">ছবি (প্রয়োজনে)</label>
+                                                                  <input type="file" id="image" name="image" accept="image/*">
+                                                              </div>
+                                                              <center>
+                                                                  <img src="{{ asset('images/placeholder.png')}}" id='img-upload' style="width: 250px; height: auto;" class="img-responsive" />
+                                                              </center>
+                                                          </div>
+                                                          <div class="col-md-6">
+                                                              <label for="explanation">ব্যাখ্যা (প্রয়োজনে)</label><br/>
+                                                              <textarea class="form-control" name="explanation" id="explanation" placeholder="ব্যাখ্যা" style="width: 100%; height: 220px;"></textarea>
+                                                          </div>
+                                                      </div>
+                                                </div>
+                                                <div class="modal-footer">
                                                   <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-                                                  <button type="submit" class="btn btn-primary">দাখিল করুন</button>
-                                                  </div>
-                                              </form>
+                                                  <button type="submit" class="btn btn-success">দাখিল করুন</button>
+                                                </div>
+                                            </form>
                                           </div>
                                           </div>
                                       </div>
