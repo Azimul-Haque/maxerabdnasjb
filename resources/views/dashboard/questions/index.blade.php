@@ -1,20 +1,20 @@
 @extends('layouts.app')
-@section('title') ড্যাশবোর্ড | প্রশ্ন ব্যাংক @endsection
+@section('title') ড্যাশবোর্ড | প্রশ্নব্যাংক @endsection
 
 @section('third_party_stylesheets')
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/icheck-bootstrap@3.0.1/icheck-bootstrap.min.css">
 @endsection
 
 @section('content')
-    @section('page-header') ব্যবহারকারীগণ @endsection
+    @section('page-header') প্রশ্নব্যাংক @endsection
     <div class="container-fluid">
         <div class="card">
           <div class="card-header">
-            <h3 class="card-title">ব্যবহারকারীগণ</h3>
+            <h3 class="card-title">প্রশ্নব্যাংক</h3>
 
             <div class="card-tools">
                 <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addUserModal">
-                    <i class="fas fa-user-plus"></i> নতুন
+                    <i class="fas fa-user-plus"></i> নতুন প্রশ্ন যোগ
                 </button>
             </div>
           </div>
