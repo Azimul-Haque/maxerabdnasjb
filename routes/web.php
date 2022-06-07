@@ -38,7 +38,7 @@ Route::post('/dashboard/questions/topic/store', 'QuestionController@storeQuestio
 Route::post('/dashboard/questions/topic/{id}/update', 'QuestionController@updateQuestionsTopic')->name('dashboard.questions.topic.update');
 Route::get('/dashboard/questions/topic/{id}/delete', 'QuestionController@deleteQuestionsTopic')->name('dashboard.questions.topic.delete');
 
-Route::get('/dashboard/exams', 'EaxmController@getExams')->name('dashboard.exams');
+Route::get('/dashboard/exams', 'ExamController@getExams')->name('dashboard.exams');
 
 // Route::get('/dashboard/balance', 'DashboardController@getBalance')->name('dashboard.balance');
 // Route::post('/dashboard/balance/store', 'DashboardController@storeBalance')->name('dashboard.balance.store');
