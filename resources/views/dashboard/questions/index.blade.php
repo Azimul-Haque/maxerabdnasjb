@@ -292,7 +292,7 @@
 
                     <div class="input-group mb-3">
                         <input type="text"
-                               name="mobile"
+                               name="answer"
                                value="{{ old('answer') }}"
                                autocomplete="off"
                                class="form-control"
