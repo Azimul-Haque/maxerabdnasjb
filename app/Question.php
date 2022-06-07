@@ -9,4 +9,8 @@ class Question extends Model
     public function topic(){
         return $this->belongsTo('App\Topic');
     }
+
+    public function questions(){
+        return $this->hasMany('App\Question');
+    }
 }
