@@ -331,7 +331,8 @@
                         </div>
                         <div class="col-md-6">
                             <div class="input-group mb-3">
-                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                <label for="image"></label>
+                                <input type="file" class="form-control-file" id="image">
                             </div>
                         </div>
                     </div>
