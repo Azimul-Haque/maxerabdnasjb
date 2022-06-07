@@ -130,11 +130,11 @@
                                           </button>
                                           </div>
                                           <div class="modal-body">
-                                          আপনি কি নিশ্চিতভাবে এই ব্যবহারকারীকে ডিলেট করতে চান?<br/>
-                                          <center>
-                                              <big><b>{{ $question->name }}</b></big><br/>
-                                              <small><i class="fas fa-phone"></i> {{ $question->mobile }}</small>
-                                          </center>
+                                            আপনি কি নিশ্চিতভাবে এই প্রশ্নটি ডিলেট করতে চান?<br/>
+                                            <center>
+                                                <big><b>{{ $question->question }}</b></big><br/>
+                                                <small><i class="fas fa-phone"></i> {{ $question->mobile }}</small>
+                                            </center>
                                           </div>
                                           <div class="modal-footer">
                                           <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
