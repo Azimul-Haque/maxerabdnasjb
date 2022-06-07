@@ -15,6 +15,7 @@ class CreateQuestionexplanationsTable extends Migration
     {
         Schema::create('questionexplanations', function (Blueprint $table) {
             $table->id();
+            $table->integer('question_id');
             $table->timestamps();
         });
     }
