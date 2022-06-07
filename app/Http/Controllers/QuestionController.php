@@ -165,8 +165,8 @@ class QuestionController extends Controller
             Image::make($image)->resize(350, null, function ($constraint) { $constraint->aspectRatio(); })->save($location);
             $questionimage = new Questionimage;
             $questionimage->question_id = $question->id;
-            $question->questionimage->image = $filename;
-            $question->questionimage->save();
+            $questionimage->image = $filename;
+            $questionimage->save();
         }
 
         if($request->explanation) {
