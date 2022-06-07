@@ -52,4 +52,18 @@ class QuestionController extends Controller
         Session::flash('success', 'User created successfully!');
         return redirect()->route('dashboard.questions');
     }
+
+    public function updateQuestionsTopic(Request $request)
+    {
+        $this->validate($request,array(
+            'name'        => 'required|string|max:191',
+        ));
+
+        $topic = new Topic;
+        $topic->name = $request->name;
+        $topic->save();
+
+        Session::flash('success', 'User created successfully!');
+        return redirect()->route('dashboard.questions');
+    }
 }
