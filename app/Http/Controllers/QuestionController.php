@@ -22,7 +22,7 @@ class QuestionController extends Controller
     public function __construct()
     {
         $this->middleware('auth')->except('clear');
-        $this->middleware(['admin'])->only('getQuestions');
+        $this->middleware(['admin'])->only('getQuestions', 'storeQuestionsTopic');
     }
 
     public function getQuestions()
@@ -44,9 +44,6 @@ class QuestionController extends Controller
         // dd(serialize($request->sitecheck));
         $this->validate($request,array(
             'name'        => 'required|string|max:191',
-            'mobile'      => 'required|string|max:191|unique:users,mobile',
-            'role'        => 'required',
-            // 'sitecheck'   => 'sometimes',
             'password'    => 'required|string|min:8|max:191',
         ));
 
