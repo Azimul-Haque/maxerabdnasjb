@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Question;
+use App\Topic;
+
 class QuestionController extends Controller
 {
     public function __construct()
