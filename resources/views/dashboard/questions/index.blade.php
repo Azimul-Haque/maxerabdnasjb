@@ -62,7 +62,7 @@
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
                                               </div>
-                                              <form method="post" action="{{ route('dashboard.questions.update', $question->) }}" enctype='multipart/form-data'>
+                                              <form method="post" action="{{ route('dashboard.questions.update', $question->id) }}" enctype='multipart/form-data'>
                                                 <div class="modal-body">
                                                       @csrf
                                                       <div class="input-group mb-3">
