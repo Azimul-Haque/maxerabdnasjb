@@ -80,6 +80,8 @@ class QuestionController extends Controller
 
     public function storeQuestions(Request $request)
     {
+        ini_set('post_max_size', '20M');
+        ini_set('upload_max_filesize', '20M');
         dd($request->file('image'));
         $this->validate($request,array(
             'topic_id'    => 'required|string|max:191',
