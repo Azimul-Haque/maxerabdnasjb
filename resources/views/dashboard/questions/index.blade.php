@@ -40,7 +40,6 @@
                                 <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
                             </div>
                         </td> --}}
-                        <td><span class="badge bg-danger">55%</span></td>
                     </tr>
                     <tr>
                         <td>
