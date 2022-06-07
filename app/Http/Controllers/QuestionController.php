@@ -161,18 +161,16 @@ class QuestionController extends Controller
             $filename   = random_string(5) . time() .'.' . "webp";
             $location   = public_path('images/questions/'. $filename);
             Image::make($image)->resize(350, null, function ($constraint) { $constraint->aspectRatio(); })->save($location);
-            $question->questionimage->question_id = $question->id;
             $question->questionimage->image = $filename;
             $question->questionimage->save();
         }
 
         if($request->explanation) {
-            $question->questionexplanation->question_id = $question->id;
             $question->questionexplanation->explanation = $request->explanation;
             $question->questionexplanation->save();
         }
 
-        Session::flash('success', 'Question created successfully!');
+        Session::flash('success', 'Question updated successfully!');
         return redirect()->route('dashboard.questions');
     }
 }
