@@ -187,8 +187,8 @@ class QuestionController extends Controller
 
     public function deleteQuestion($id)
     {
-        $user = User::find($id);
-        $user->delete();
+        $question = Question::find($id);
+        $question->delete();
 
         Session::flash('success', 'User deleted successfully!');
         return redirect()->route('dashboard.users');
