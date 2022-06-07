@@ -173,8 +173,12 @@ class QuestionController extends Controller
             if($question->questionexplanation) {
                 $question->questionexplanation->explanation = $request->explanation;
                 $question->questionexplanation->save();
+            } else {
+                $questionexplanation = new Questionexplanation;
+                $questionexplanation->question_id = $question->id;
+                $questionexplanation->explanation = $request->explanation;
+                $questionexplanation->save();
             }
-            
         }
 
         Session::flash('success', 'Question updated successfully!');
