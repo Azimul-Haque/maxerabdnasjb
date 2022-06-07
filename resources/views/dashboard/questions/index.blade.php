@@ -434,7 +434,7 @@
 <script>
     $(document).ready(function(){
         $('.summernote').summernote({
-            placeholder: 'Write Blog Post',
+            placeholder: 'ব্যাখ্যা',
             tabsize: 2,
             height: 200,
             dialogsInBody: true
