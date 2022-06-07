@@ -141,7 +141,7 @@ class QuestionController extends Controller
             'explanation' => 'sometimes|max:2048',
         ));
 
-        $question = Question;
+        $question = Question::findOrFail($id);
         $question->topic_id = $request->topic_id;
         $question->question = $request->question;
         $question->answer = $request->answer;
