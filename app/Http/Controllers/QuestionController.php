@@ -49,7 +49,7 @@ class QuestionController extends Controller
         $topic->name = $request->name;
         $topic->save();
 
-        Session::flash('success', 'User created successfully!');
+        Session::flash('success', 'Topic created successfully!');
         return redirect()->route('dashboard.questions');
     }
 
@@ -63,7 +63,7 @@ class QuestionController extends Controller
         $topic->name = $request->name;
         $topic->save();
 
-        Session::flash('success', 'User created successfully!');
+        Session::flash('success', 'Topic updated successfully!');
         return redirect()->route('dashboard.questions');
     }
 }
