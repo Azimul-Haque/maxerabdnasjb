@@ -429,7 +429,7 @@
             $("#image").val('');
             // toastr.warning('File size is: '+filesize+' Kb. try uploading less than 300Kb', 'WARNING').css('width', '400px;');
             Toast.fire({
-                icon: 'warning',
+                icon: 'error',
                 title: 'File size is: '+filesize+' Kb. try uploading less than 300Kb'
             })
             setTimeout(function() {
