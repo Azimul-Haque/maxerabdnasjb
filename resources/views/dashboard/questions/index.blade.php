@@ -13,7 +13,7 @@
             <h3 class="card-title">প্রশ্নব্যাংক</h3>
 
             <div class="card-tools">
-                <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addUserModal">
+                <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addQuesitonModal">
                     <i class="fas fa-plus-circle"></i> নতুন প্রশ্ন যোগ
                 </button>
             </div>
@@ -156,11 +156,11 @@
     {{-- Add Question Modal Code --}}
     {{-- Add Question Modal Code --}}
     <!-- Modal -->
-    <div class="modal fade" id="addUserModal" tabindex="-1" role="dialog" aria-labelledby="addUserModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal fade" id="addQuesitonModal" tabindex="-1" role="dialog" aria-labelledby="addQuesitonModalLabel" aria-hidden="true" data-backdrop="static">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header bg-success">
-            <h5 class="modal-title" id="addUserModalLabel">নতুন ব্যবহারকারী যোগ</h5>
+            <h5 class="modal-title" id="addQuesitonModalLabel">নতুন ব্যবহারকারী যোগ</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
