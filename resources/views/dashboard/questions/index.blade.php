@@ -430,16 +430,14 @@
 <script src="https://cdn.ckeditor.com/ckeditor5/34.1.0/classic/ckeditor.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script>
-    // $('.summernote').summernote({
-    //     placeholder: 'ব্যাখ্যা',
-    //     tabsize: 2,
-    //     height: 200,
-    //     dialogsInBody: true
-    // });
-    $(document).ready(function() {
-        $('#summernote').summernote();
-    });
-    $('div.note-group-select-from-files').remove();
+    ClassicEditor
+            .create( document.querySelector( '#editor' ) )
+            .then( editor => {
+                    console.log( editor );
+            } )
+            .catch( error => {
+                    console.error( error );
+            } );
 </script>
 <script type="text/javascript">
 
