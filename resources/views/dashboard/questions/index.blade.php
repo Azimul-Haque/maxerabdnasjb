@@ -178,7 +178,7 @@
           if (input.files && input.files[0]) {
               var reader = new FileReader();
               reader.onload = function (e) {
-                  $('#img-upload').attr('src', e.target.result);
+                  $('#img-upload{{ $question->id }}').attr('src', e.target.result);
               }
               reader.readAsDataURL(input.files[0]);
           }
@@ -187,7 +187,7 @@
           readURL(this);
           var filesize = parseInt((this.files[0].size)/1024);
           if(filesize > 10000) {
-            $("#image").val('');
+            $("#image{{ $question->id }}").val('');
             // toastr.warning('File size is: '+filesize+' Kb. try uploading less than 300Kb', 'WARNING').css('width', '400px;');
             Toast.fire({
                 icon: 'warning',
