@@ -303,12 +303,6 @@
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" name="answer" value="{{ old('answer') }}" autocomplete="off" class="form-control" placeholder="সঠিক উত্তর" required>
-                        <div class="input-group-append">
-                            <div class="input-group-text"><span class="fas fa-star-half-alt"></span></div>
-                        </div>
-                    </div>
-                    <div class="input-group mb-3">
                         <select name="difficulty" class="form-control" required>
                             <option selected="" disabled="" value="">সিলেক্ট করুন</option>
                             <option value="1">সহজ</option>
@@ -316,7 +310,7 @@
                             <option value="3">কঠিন</option>
                         </select>
                         <div class="input-group-append">
-                            <div class="input-group-text"><span class="fas fa-user-secret"></span></div>
+                            <div class="input-group-text"><span class="fas fa-star-half-alt"></span></div>
                         </div>
                     </div>
                     <div class="input-group mb-3">
