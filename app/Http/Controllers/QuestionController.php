@@ -41,7 +41,6 @@ class QuestionController extends Controller
 
     public function storeQuestionsTopic(Request $request)
     {
-        // dd(serialize($request->sitecheck));
         $this->validate($request,array(
             'name'        => 'required|string|max:191',
         ));
