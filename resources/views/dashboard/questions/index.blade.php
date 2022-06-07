@@ -122,8 +122,13 @@
                                                               </div>
                                                               <center>
                                                                   <?php
-                                                                  dd($question->questionimage);
-                                                                    
+                                                                  dd($question->questionsimage);
+                                                                    if($question->questionimage->image) {
+                                                                        // $currentimage = asset('images/questions/' . $question->questionimage->image);
+                                                                        $currentimage = asset('images/placeholder.png');
+                                                                    } else {
+                                                                        $currentimage = asset('images/placeholder.png');
+                                                                    }
                                                                   ?>
                                                                   <img src="{{ $currentimage }}" id='img-upload{{ $question->id }}' style="width: 250px; height: auto;" class="img-responsive" />
                                                               </center>
