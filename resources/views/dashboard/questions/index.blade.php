@@ -121,7 +121,7 @@
                                                                   <input type="file" id="image" name="image" accept="image/*">
                                                               </div>
                                                               <center>
-                                                                  <img src="{{ asset('images/placeholder.png')}}" id='img-upload' style="width: 250px; height: auto;" class="img-responsive" />
+                                                                  <img src="{{ asset('images/placeholder.png')}}" id='img-upload{{ $question->id }}' style="width: 250px; height: auto;" class="img-responsive" />
                                                               </center>
                                                           </div>
                                                           <div class="col-md-6">
