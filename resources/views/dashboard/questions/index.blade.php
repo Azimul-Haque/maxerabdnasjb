@@ -433,7 +433,7 @@
                 title: 'File size is: '+filesize+' Kb. try uploading less than 300Kb'
             })
             setTimeout(function() {
-            $("#img-upload").attr('src', '{{ asset('images/600x315.png') }}');
+            $("#img-upload").attr('src', '{{ asset('images/placeholder.png') }}');
             }, 1000);
           }
       });
