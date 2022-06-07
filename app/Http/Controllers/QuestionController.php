@@ -56,7 +56,7 @@ class QuestionController extends Controller
     public function updateQuestionsTopic(Request $request, $id)
     {
         $this->validate($request,array(
-            'name'        => 'required|string|max:191',
+            'name' => 'required|string|max:191',
         ));
 
         $topic = Topic::find($id);;
@@ -69,10 +69,10 @@ class QuestionController extends Controller
 
     public function deleteQuestionsTopic($id)
     {
-        $user = User::find($id);
-        $user->delete();
+        $topic = Topic::find($id);
+        $topic->delete();
 
-        Session::flash('success', 'User deleted successfully!');
+        Session::flash('success', 'Topic deleted successfully!');
         return redirect()->route('dashboard.users');
     }
 }
