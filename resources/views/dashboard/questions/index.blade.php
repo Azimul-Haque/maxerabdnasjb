@@ -312,7 +312,7 @@
                         <select name="difficulty" class="form-control" required>
                             <option selected="" disabled="" value="">সিলেক্ট করুন</option>
                             <option value="1">সহজ</option>
-                            <option value="2">ম্যানেজার</option>
+                            <option value="2">মধ্যম</option>
                             <option value="3">কঠিন</option>
                         </select>
                         <div class="input-group-append">
