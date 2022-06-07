@@ -188,7 +188,13 @@ class QuestionController extends Controller
     public function deleteQuestion($id)
     {
         $question = Question::find($id);
-        $question->questionexplanation->delete();
+        if($question->questionimage) {
+            $image_path = public_path('images/questions/'. $question->questionimage->image);
+            if(File::exists($image_path)) {
+                File::delete($image_path);
+            }
+            $question->questionexplanation->delete();
+        }
         $question->questionexplanation->delete();
         $question->delete();
 
