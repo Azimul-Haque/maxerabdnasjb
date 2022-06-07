@@ -170,8 +170,11 @@ class QuestionController extends Controller
         }
 
         if($request->explanation) {
-            $question->questionexplanation->explanation = $request->explanation;
-            $question->questionexplanation->save();
+            if($question->questionexplanation) {
+                $question->questionexplanation->explanation = $request->explanation;
+                $question->questionexplanation->save();
+            }
+            
         }
 
         Session::flash('success', 'Question updated successfully!');
