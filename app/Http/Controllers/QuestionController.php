@@ -20,7 +20,7 @@ class QuestionController extends Controller
         if(!(Auth::user()->role == 'admin' || Auth::user()->role == 'manager')) {
             abort(403, 'Access Denied');
         }
-        // $users = User::whereNotIn('mobile', ['01751398392', '01837409842'])->get();
+        // $questions = Questions::get();
         // $totalbalance = Balance::sum('amount');
         // $totalexpense = Expense::sum('amount');
 
