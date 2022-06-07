@@ -30,9 +30,9 @@ Route::post('/dashboard/users/{id}/update', 'DashboardController@updateUser')->n
 Route::get('/dashboard/users/{id}/delete', 'DashboardController@deleteUser')->name('dashboard.users.delete');
 
 Route::get('/dashboard/questions', 'QuestionController@getQuestions')->name('dashboard.questions');
-Route::post('/dashboard/questions/store', 'QuestionController@storeQuestions')->name('dashboard.questions.store');
-Route::post('/dashboard/questions/{id}/update', 'QuestionController@updateQuestions')->name('dashboard.questions.update');
-Route::get('/dashboard/questions/{id}/delete', 'QuestionController@deleteQuestions')->name('dashboard.questions.delete');
+Route::post('/dashboard/questions/store', 'QuestionController@storeQuestion')->name('dashboard.questions.store');
+Route::post('/dashboard/questions/{id}/update', 'QuestionController@updateQuestion')->name('dashboard.questions.update');
+Route::get('/dashboard/questions/{id}/delete', 'QuestionController@deleteQuestion')->name('dashboard.questions.delete');
 
 Route::post('/dashboard/questions/topic/store', 'QuestionController@storeQuestionsTopic')->name('dashboard.questions.topic.store');
 Route::post('/dashboard/questions/topic/{id}/update', 'QuestionController@updateQuestionsTopic')->name('dashboard.questions.topic.update');
