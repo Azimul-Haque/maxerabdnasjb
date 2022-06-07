@@ -35,7 +35,7 @@ class QuestionController extends Controller
         $topics = Topic::all();
 
         return view('dashboard.questions.index')
-                    ->withUsers($questions)
-                    ->withBalances($topics);
+                    ->withQuestions($questions)
+                    ->withTopics($topics);
     }
 }
