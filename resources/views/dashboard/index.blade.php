@@ -13,14 +13,14 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h4>{{ 0 }}</h4>
+                <h4>{{ 0 }}<sup style="font-size: 20px">৳</sup></h4>
 
-                <p>বর্তমান ব্যালেন্স</p>
+                <p>মোট আয়</p>
               </div>
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
-              <a href="#" class="small-box-footer">ব্যালেন্স পাতা <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="{{ route('dashboard.balance') }}" class="small-box-footer">ব্যালেন্স পাতা <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           
@@ -28,7 +28,7 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h4>{{ 0 }} টি</h4>
+                <h4>{{ 0 }}<sup style="font-size: 20px">৳</sup></h4>
 
                 <p>মোট খরচ</p>
               </div>
