@@ -21,6 +21,12 @@
           <!-- /.card-header -->
           <div class="card-body p-0">
             <table class="table">
+            <thead>
+                <tr>
+                    <th>Question</th>
+                    <th>Answer</th>
+                </tr>
+            </thead>
               <tbody>
                 {{-- <tr>
                   <td>1.</td>
