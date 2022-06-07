@@ -28,7 +28,7 @@ class QuestionController extends Controller
         //                    ->orderBy('id', 'desc')
         //                    ->paginate(5);
 
-        // return view('balances.index')
+        // return view('dashboard.questions.index')
         //             ->withUsers($users)
         //             ->withBalances($balances)
         //             ->withTotalbalance($totalbalance)
