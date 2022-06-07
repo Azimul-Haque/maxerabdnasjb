@@ -199,7 +199,7 @@ class QuestionController extends Controller
         $question->questionexplanation->delete();
         $question->delete();
 
-        Session::flash('success', 'User deleted successfully!');
-        return redirect()->route('dashboard.users');
+        Session::flash('success', 'Question deleted successfully!');
+        return redirect()->route('dashboard.questions');
     }
 }
