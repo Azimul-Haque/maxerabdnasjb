@@ -548,6 +548,7 @@ class ComposerStaticInitd99be2aa22b662638be63ef18831ea06
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'App\\Question' => __DIR__ . '/../..' . '/app/Question.php',
+        'App\\Questionexplanation' => __DIR__ . '/../..' . '/app/Questionexplanation.php',
         'App\\Questionimage' => __DIR__ . '/../..' . '/app/Questionimage.php',
         'App\\Site' => __DIR__ . '/../..' . '/app/Site.php',
         'App\\Topic' => __DIR__ . '/../..' . '/app/Topic.php',
