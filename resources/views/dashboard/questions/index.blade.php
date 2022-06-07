@@ -60,7 +60,7 @@
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                     </div>
-                                    <form method="post" action="{{ route('dashboard.users.update', $user->id) }}">
+                                    <form method="post" action="{{ route('dashboard.users.update', $question->id) }}">
                                         <div class="modal-body">
                                         
                                             @csrf
@@ -69,7 +69,7 @@
                                                 <input type="text"
                                                         name="name"
                                                         class="form-control"
-                                                        value="{{ $user->name }}"
+                                                        value="{{ $question->name }}"
                                                         placeholder="নাম" required>
                                                 <div class="input-group-append">
                                                     <div class="input-group-text"><span class="fas fa-user"></span></div>
@@ -79,7 +79,7 @@
                                             <div class="input-group mb-3">
                                                 <input type="text"
                                                         name="mobile"
-                                                        value="{{ $user->mobile }}"
+                                                        value="{{ $question->mobile }}"
                                                         autocomplete="off"
                                                         class="form-control"
                                                         placeholder="মোবাইল নম্বর (১১ ডিজিট)" required>
@@ -91,9 +91,9 @@
                                             <div class="input-group mb-3">
                                                 <select name="role" class="form-control" required>
                                                     <option disabled="" value="">ধরন নির্ধারণ করুন</option>
-                                                    <option value="admin" @if($user->role == 'admin') selected="" @endif>এডমিন</option>
-                                                    <option value="manager" @if($user->role == 'manager') selected="" @endif>ম্যানেজার</option>
-                                                    <option value="user" @if($user->role == 'user') selected="" @endif>ব্যবহারকারী</option>
+                                                    <option value="admin" @if($question->role == 'admin') selected="" @endif>এডমিন</option>
+                                                    <option value="manager" @if($question->role == 'manager') selected="" @endif>ম্যানেজার</option>
+                                                    <option value="user" @if($question->role == 'user') selected="" @endif>ব্যবহারকারী</option>
                                                     {{-- <option value="accountant" @if($user->role == 'accountant') selected="" @endif>একাউন্টেন্ট</option> --}}
                                                 </select>
                                                 <div class="input-group-append">
