@@ -30,12 +30,12 @@
               <div class="inner">
                 <h4>{{ 0 }}<sup style="font-size: 20px">৳</sup></h4>
 
-                <p>মোট খরচ</p>
+                <p>মাসিক আয়</p>
               </div>
               <div class="icon">
                 <i class="ion ion-stats-bars"></i>
               </div>
-              <a href="{{ route('dashboard.expense.index') }}" class="small-box-footer">খরচ যোগ করুন <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="{{ route('dashboard.expense.index') }}" class="small-box-footer">মাসিক আয় পাতা <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
