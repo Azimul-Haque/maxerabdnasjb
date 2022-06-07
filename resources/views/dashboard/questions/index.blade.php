@@ -182,13 +182,13 @@
                                   </td>
                               
                                   <td align="right" width="40%">
-                                      <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editQuestionModal{{ $question->id }}">
+                                      <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editTopicModal{{ $topic->id }}">
                                           <i class="fas fa-user-edit"></i>
                                       </button>
-                                      {{-- Edit Question Modal Code --}}
-                                      {{-- Edit Question Modal Code --}}
+                                      {{-- Edit Topic Modal Code --}}
+                                      {{-- Edit Topic Modal Code --}}
                                       <!-- Modal -->
-                                      <div class="modal fade" id="editQuestionModal{{ $question->id }}" tabindex="-1" role="dialog" aria-labelledby="editUserModalLabel" aria-hidden="true" data-backdrop="static">
+                                      <div class="modal fade" id="editTopicModal{{ $topic->id }}" tabindex="-1" role="dialog" aria-labelledby="editUserModalLabel" aria-hidden="true" data-backdrop="static">
                                           <div class="modal-dialog" role="document">
                                           <div class="modal-content">
                                               <div class="modal-header bg-primary">
@@ -245,15 +245,15 @@
                                           </div>
                                           </div>
                                       </div>
-                                      {{-- Edit Question Modal Code --}}
-                                      {{-- Edit Question Modal Code --}}
+                                      {{-- Edit Topic Modal Code --}}
+                                      {{-- Edit Topic Modal Code --}}
           
                                       <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteUserModal{{ $question->id }}">
                                           <i class="fas fa-user-minus"></i>
                                       </button>
                                   </td>
-                                  {{-- Delete Question Modal Code --}}
-                                  {{-- Delete Question Modal Code --}}
+                                  {{-- Delete Topic Modal Code --}}
+                                  {{-- Delete Topic Modal Code --}}
                                   <!-- Modal -->
                                   <div class="modal fade" id="deleteUserModal{{ $question->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteUserModalLabel" aria-hidden="true" data-backdrop="static">
                                       <div class="modal-dialog" role="document">
@@ -278,8 +278,8 @@
                                       </div>
                                       </div>
                                   </div>
-                                  {{-- Delete Question Modal Code --}}
-                                  {{-- Delete Question Modal Code --}}
+                                  {{-- Delete Topic Modal Code --}}
+                                  {{-- Delete Topic Modal Code --}}
                               </tr>
                           @endforeach
                           </tbody>
