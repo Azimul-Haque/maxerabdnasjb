@@ -431,13 +431,13 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script>
     ClassicEditor
-            .create( document.querySelector( '.summernote' ) )
-            .then( editor => {
-                    console.log( editor );
-            } )
-            .catch( error => {
-                    console.error( error );
-            } );
+        .create( document.querySelector( '.summernote' ) )
+        .then( editor => {
+                console.log( editor );
+        } )
+        .catch( error => {
+                console.error( error );
+        } );
 </script>
 <script type="text/javascript">
 
