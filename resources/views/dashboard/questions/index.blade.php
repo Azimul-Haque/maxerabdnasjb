@@ -331,15 +331,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="input-group mb-3">
-                                <select name="difficulty" class="form-control" required>
-                                    <option selected="" disabled="" value="">টপিক (বিষয়)</option>
-                                    @foreach ($topics as $topic)
-                                        <option value="{{ $topic->id }}">{{ $topic->name }}</option>
-                                    @endforeach
-                                </select>
-                                <div class="input-group-append">
-                                    <div class="input-group-text"><span class="fas fa-bookmark"></span></div>
-                                </div>
+                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
                             </div>
                         </div>
                     </div>
