@@ -340,7 +340,7 @@
                         </div>
                         <div class="col-md-6">
                             <label for="explanation">ব্যাখ্যা (প্রয়োজনে)</label><br/>
-                            <textarea class="form-control" name="explanation" id="explanation" placeholder="ব্যাখ্যা" style="width: 100%; height: 200px;"></textarea>
+                            <textarea class="form-control" name="explanation" id="explanation" placeholder="ব্যাখ্যা" style="width: 100%; height: 220px;"></textarea>
                         </div>
                     </div>
               </div>
