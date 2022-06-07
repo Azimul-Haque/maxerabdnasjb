@@ -330,12 +330,12 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="form-group mb-3">
+                            <div class="form-group ">
                                 <label for="image">ছবি (প্রয়োজনে)</label>
                                 <input type="file" id="image" name="image">
                             </div>
                             <center>
-                                <img src="{{ asset('images/placeholder.png')}}" id='img-upload' style="height: 200px; width: auto; padding: 5px;" class="img-responsive" />
+                                <img src="{{ asset('images/placeholder.png')}}" id='img-upload' style="height: 180px; width: auto; padding: 5px;" class="img-responsive" />
                             </center>
                         </div>
                         <div class="col-md-6">
