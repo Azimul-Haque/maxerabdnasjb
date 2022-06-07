@@ -53,13 +53,13 @@ class QuestionController extends Controller
         return redirect()->route('dashboard.questions');
     }
 
-    public function updateQuestionsTopic(Request $request)
+    public function updateQuestionsTopic(Request $request, $id)
     {
         $this->validate($request,array(
             'name'        => 'required|string|max:191',
         ));
 
-        $topic = new Topic;
+        $topic = Topic::find($id);;
         $topic->name = $request->name;
         $topic->save();
 
