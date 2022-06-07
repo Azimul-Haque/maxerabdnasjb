@@ -9,7 +9,7 @@
     @section('page-header') প্রশ্নব্যাংক @endsection
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-9">
                 <div class="card">
                     <div class="card-header">
                       <h3 class="card-title">প্রশ্নব্যাংক</h3>
@@ -154,7 +154,7 @@
                   </div>
                   {{ $questions->links() }}
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="card">
                     <div class="card-header">
                       <h3 class="card-title">প্রশ্নব্যাংক</h3>
