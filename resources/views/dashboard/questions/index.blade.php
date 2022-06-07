@@ -32,7 +32,10 @@
                 <tbody>
                 @foreach($questions as $question)
                     <tr>
-                        <td>{{ $question->question }}</td>
+                        <td>
+                            {{ $question->question }}<br/>
+                            <span class="badge bg-success>{{ ucfirst($user->role) }}</span>
+                        </td>
                         <td>{{ $question->answer }}</td>
                         <td>{{ $question->opntion1 }}, {{ $question->opntion2 }}, {{ $question->opntion3 }}</td>
                         {{-- <td>
