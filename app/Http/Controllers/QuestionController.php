@@ -106,7 +106,6 @@ class QuestionController extends Controller
         // image upload
         
         if($request->hasFile('image')) {
-            
             $image      = $request->file('image');
             $filename   = random_string(5) . time() .'.' . "webp";
             $location   = public_path('images/questions/'. $filename);
