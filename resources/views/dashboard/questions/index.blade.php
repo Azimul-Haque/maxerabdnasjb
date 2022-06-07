@@ -33,6 +33,7 @@
                 @foreach($questions as $question)
                     <tr>
                         <td>{{ $question->question }}</td>
+                        <td>{{ $question->answer }}</td>
                         <td>
                         <div class="progress progress-xs">
                             <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
