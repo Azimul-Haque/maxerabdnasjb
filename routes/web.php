@@ -34,9 +34,9 @@ Route::post('/dashboard/questions/store', 'QuestionController@storeQuestions')->
 Route::post('/dashboard/questions/{id}/update', 'QuestionController@updateQuestions')->name('dashboard.questions.update');
 Route::get('/dashboard/questions/{id}/delete', 'QuestionController@deleteQuestions')->name('dashboard.questions.delete');
 
-Route::post('/dashboard/questions/store', 'QuestionController@storeQuestionsTopic')->name('dashboard.questions.topic.store');
-Route::post('/dashboard/questions/{id}/update', 'QuestionController@updateQuestions')->name('dashboard.questions.update');
-Route::get('/dashboard/questions/{id}/delete', 'QuestionController@deleteQuestionsTopic')->name('dashboard.questions.topic.delete');
+Route::post('/dashboard/questions/topic/store', 'QuestionController@storeQuestionsTopic')->name('dashboard.questions.topic.store');
+Route::post('/dashboard/questions/topic/{id}/update', 'QuestionController@updateQuestionsTopic')->name('dashboard.questions.topic.update');
+Route::get('/dashboard/questions/topic/{id}/delete', 'QuestionController@deleteQuestionsTopic')->name('dashboard.questions.topic.delete');
 
 // Route::get('/dashboard/balance', 'DashboardController@getBalance')->name('dashboard.balance');
 // Route::post('/dashboard/balance/store', 'DashboardController@storeBalance')->name('dashboard.balance.store');
