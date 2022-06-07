@@ -90,11 +90,11 @@ class QuestionController extends Controller
             'explanation' => 'sometimes|string|max:191',
         ));
 
-        $topic = new Topic;
-        $topic->name = $request->name;
-        $topic->save();
+        $question = new Question;
+        $question->name = $request->name;
+        $question->save();
 
-        Session::flash('success', 'Topic created successfully!');
+        Session::flash('success', 'Question created successfully!');
         return redirect()->route('dashboard.questions');
     }
 }
