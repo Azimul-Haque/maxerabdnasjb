@@ -109,6 +109,7 @@ class QuestionController extends Controller
             $location   = public_path('images/questions/'. $filename);
             Image::make($image)->resize(300, null, function ($constraint) { $constraint->aspectRatio(); })->save($location);
             $question->questionimage->image = $filename;
+            $question->save();
         }
 
         Session::flash('success', 'Question created successfully!');
