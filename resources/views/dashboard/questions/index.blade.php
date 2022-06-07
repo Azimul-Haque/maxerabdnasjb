@@ -34,7 +34,7 @@
                     <tr>
                         <td>
                             {{ $question->question }}<br/>
-                            <span class="badge bg-success>{{ $question->question->topic }}</span>
+                            <span class="badge bg-success">{{ $question->topic->name }}</span>
                         </td>
                         <td>{{ $question->answer }}</td>
                         <td>{{ $question->opntion1 }}, {{ $question->opntion2 }}, {{ $question->opntion3 }}</td>
