@@ -244,7 +244,6 @@
                                           আপনি কি নিশ্চিতভাবে এই টপিকটি ডিলেট করতে চান?<br/>
                                           <center>
                                               <big><b>{{ $topic->name }}</b></big><br/>
-                                              <small><i class="fas fa-phone"></i> {{ $topic->mobile }}</small>
                                           </center>
                                           </div>
                                           <div class="modal-footer">
