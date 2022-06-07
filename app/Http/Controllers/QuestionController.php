@@ -114,12 +114,8 @@ class QuestionController extends Controller
             $question->save();
         }
 
-        if($request->hasFile('image')) {
-            $image      = $request->file('image');
-            $filename   = random_string(5) . time() .'.' . "webp";
-            $location   = public_path('images/questions/'. $filename);
-            Image::make($image)->resize(350, null, function ($constraint) { $constraint->aspectRatio(); })->save($location);
-            $question->questionimage->image = $filename;
+        if($request->explanation) {
+            $question->questionexplanation->explanation = $filename;
             $question->save();
         }
 
