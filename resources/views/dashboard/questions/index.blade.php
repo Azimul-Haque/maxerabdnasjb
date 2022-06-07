@@ -330,15 +330,11 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="row mb-3">
-                                <div class="col-md-8">
-                                    <div class="form-group no-margin-bottom">
-                                        <label><strong>Featured Image (750 X 430 &amp; 300Kb Max): (Optional)</strong></label>
-                                        <input type="file" id="image" name="featured_image">
-                                    </div>
-                                    <img src="{{ asset('images/600x315.png')}}" id='img-upload' style="height: 200px; width: auto; padding: 5px;" class="img-responsive" />
-                                </div>
+                            <div class="form-group no-margin-bottom mb-3">
+                                <label><strong>Featured Image (750 X 430 &amp; 300Kb Max): (Optional)</strong></label>
+                                <input type="file" id="image" name="featured_image">
                             </div>
+                            <img src="{{ asset('images/600x315.png')}}" id='img-upload' style="height: 200px; width: auto; padding: 5px;" class="img-responsive" />
                         </div>
                     </div>
               </div>
