@@ -320,7 +320,7 @@
                             <div class="input-group mb-3">
                                 <select name="difficulty" class="form-control" required>
                                     <option selected="" disabled="" value="">টপিক (বিষয়)</option>
-                                    @foreach (@topics as $topic)
+                                    @foreach ($topics as $topic)
                                         <option value="{{ $topic->id }}">{{ $topic->name }}</option>
                                     @endforeach
                                 </select>
