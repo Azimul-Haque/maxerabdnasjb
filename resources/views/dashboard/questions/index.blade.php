@@ -335,7 +335,7 @@
                                 <input type="file" id="image" name="image">
                             </div>
                             <center>
-                                <img src="{{ asset('images/placeholder.png')}}" id='img-upload' style="height: 180px; width: auto; padding: 5px;" class="img-responsive" />
+                                <img src="{{ asset('images/placeholder.png')}}" id='img-upload' style="height: 180px; width: auto;" class="img-responsive" />
                             </center>
                         </div>
                         <div class="col-md-6">
