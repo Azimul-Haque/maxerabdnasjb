@@ -27,8 +27,8 @@
 @if(Auth::user()->role == 'admin' || Auth::user()->role == 'manager')
 <li class="nav-item">
     <a href="{{ route('dashboard.questions') }}" class="nav-link {{ Request::is('dashboard/questions') ? 'active' : '' }}">
-        <i class="fas fa-tasks"></i>
-        <p>প্রশ্নব্যাংক</p>
+        <i class="nav-icon  fas fa-tasks"></i>
+        <p>পরীক্ষাসমূহ</p>
     </a>
 </li>
 @endif
