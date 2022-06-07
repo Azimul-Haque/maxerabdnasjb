@@ -101,23 +101,21 @@ class QuestionController extends Controller
         $question->option2 = $request->option2;
         $question->option3 = $request->option3;
         $question->difficulty = $request->difficulty;
-        $question->save();
+        
 
         // image upload
-        
         if($request->hasFile('image')) {
             $image      = $request->file('image');
             $filename   = random_string(5) . time() .'.' . "webp";
             $location   = public_path('images/questions/'. $filename);
             Image::make($image)->resize(350, null, function ($constraint) { $constraint->aspectRatio(); })->save($location);
             $question->questionimage->image = $filename;
-            $question->questionimage->save();
         }
 
         if($request->explanation) {
             $question->questionexplanation->explanation = $request->explanation;
-            $question->questionexplanation->save();
         }
+        $question->push();
 
         Session::flash('success', 'Question created successfully!');
         return redirect()->route('dashboard.questions');
