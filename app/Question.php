@@ -11,6 +11,10 @@ class Question extends Model
     }
 
     public function questionexplanation(){
-        return $this->hasMany('App\Question');
+        return $this->hasMany('App\Questionexplanation');
+    }
+
+    public function questionimage(){
+        return $this->hasMany('App\Questionexplanation');
     }
 }
