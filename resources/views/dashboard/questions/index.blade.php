@@ -197,7 +197,7 @@
                                                   <span aria-hidden="true">&times;</span>
                                               </button>
                                               </div>
-                                              <form method="post" action="{{ route('dashboard.users.update', $topic->id) }}">
+                                              <form method="post" action="{{ route('dashboard.questions.topic.update', $topic->id) }}">
                                                   <div class="modal-body">
                                                       @csrf
                                                       <div class="input-group mb-3">
