@@ -90,7 +90,7 @@ class QuestionController extends Controller
             'option3'     => 'required|string|max:191',
             'difficulty'  => 'required|string|max:191',
             'image'       => 'sometimes|image|mimes:jpeg,png,jpg,gif,svg,webp|max:3000',
-            'explanation' => 'sometimes|max:1000',
+            'explanation' => 'sometimes|max:2048',
         ));
 
         $question = new Question;
