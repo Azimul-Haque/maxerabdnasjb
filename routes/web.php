@@ -31,6 +31,7 @@ Route::get('/dashboard/users/{id}/delete', 'DashboardController@deleteUser')->na
 
 Route::get('/dashboard/questions', 'QuestionController@getQuestions')->name('dashboard.questions');
 Route::post('/dashboard/questions/store', 'QuestionController@storeQuestions')->name('dashboard.questions.store');
+Route::post('/dashboard/questions/{id}/update', 'DashboardController@updateSite')->name('dashboard.sites.update');
 Route::get('/dashboard/questions/{id}/delete', 'QuestionController@deleteQuestions')->name('dashboard.questions.delete');
 
 Route::post('/dashboard/questions/store', 'QuestionController@storeQuestionsTopic')->name('dashboard.questions.topic.store');
