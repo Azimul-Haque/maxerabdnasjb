@@ -16,6 +16,7 @@ class CreateQuestionimagesTable extends Migration
         Schema::create('questionimages', function (Blueprint $table) {
             $table->id();
             $table->integer('question_id');
+            $table->string('image');
             $table->timestamps();
         });
     }
