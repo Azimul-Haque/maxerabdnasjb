@@ -81,15 +81,15 @@ class QuestionController extends Controller
     public function storeQuestions(Request $request)
     {
         $this->validate($request,array(
-            'topic_id'   => 'required|string|max:191',
-            'question'   => 'required|string|max:191',
-            'answer'     => 'required|string|max:191',
-            'option1'    => 'required|string|max:191',
-            'option2'    => 'required|string|max:191',
-            'option3'    => 'required|string|max:191',
-            'difficulty' => 'required|string|max:191',
-            'image' => 'sometimes|image|mimes:jpeg,png,jpg,gif,svg,webp|max:300',
-            'explanation' => 'sometimes|string|max:1000',
+            'topic_id'    => 'required|string|max:191',
+            'question'    => 'required|string|max:191',
+            'answer'      => 'required|string|max:191',
+            'option1'     => 'required|string|max:191',
+            'option2'     => 'required|string|max:191',
+            'option3'     => 'required|string|max:191',
+            'difficulty'  => 'required|string|max:191',
+            'image'       => 'sometimes|image|mimes:jpeg,png,jpg,gif,svg,webp|max:300',
+            'explanation' => 'sometimes|max:1000',
         ));
 
         // $question = new Question;
