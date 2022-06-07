@@ -21,7 +21,6 @@ class CreateQuestionsTable extends Migration
             $table->string('option1');
             $table->string('option2');
             $table->string('option3');
-            $table->string('option3');
             $table->timestamps();
         });
     }
