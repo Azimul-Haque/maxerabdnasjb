@@ -122,10 +122,8 @@
                                                               </div>
                                                               <center>
                                                                   <?php
-                                                                 
                                                                     if($question->questionimage->image) {
-                                                                        // $currentimage = asset('images/questions/' . $question->questionimage->image);
-                                                                        $currentimage = asset('images/placeholder.png');
+                                                                        $currentimage = asset('images/questions/' . $question->questionimage->image);
                                                                     } else {
                                                                         $currentimage = asset('images/placeholder.png');
                                                                     }
