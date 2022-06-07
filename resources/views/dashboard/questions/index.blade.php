@@ -241,15 +241,15 @@
                                           </button>
                                           </div>
                                           <div class="modal-body">
-                                          আপনি কি নিশ্চিতভাবে এই ব্যবহারকারীকে ডিলেট করতে চান?<br/>
+                                          আপনি কি নিশ্চিতভাবে এই টপিকটি ডিলেট করতে চান?<br/>
                                           <center>
-                                              <big><b>{{ $question->name }}</b></big><br/>
-                                              <small><i class="fas fa-phone"></i> {{ $question->mobile }}</small>
+                                              <big><b>{{ $topic->name }}</b></big><br/>
+                                              <small><i class="fas fa-phone"></i> {{ $topic->mobile }}</small>
                                           </center>
                                           </div>
                                           <div class="modal-footer">
                                           <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-                                          <a href="{{ route('dashboard.users.delete', $question->id) }}" class="btn btn-danger">ডিলেট করুন</a>
+                                          <a href="{{ route('dashboard.users.delete', $topic->id) }}" class="btn btn-danger">ডিলেট করুন</a>
                                           </div>
                                       </div>
                                       </div>
