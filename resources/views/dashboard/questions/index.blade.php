@@ -438,6 +438,9 @@
         height: 200,
         dialogsInBody: true
     });
+    $(document).ready(function() {
+        $('#summernote').summernote();
+    });
     $('div.note-group-select-from-files').remove();
 </script>
 <script type="text/javascript">
