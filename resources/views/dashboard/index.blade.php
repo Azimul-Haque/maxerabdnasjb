@@ -28,7 +28,7 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h4>{{ 0 }}<sup style="font-size: 20px">৳</sup></h4>
+                <h4>{{ 0 }} টি</h4>
 
                 <p>মোট খরচ</p>
               </div>
