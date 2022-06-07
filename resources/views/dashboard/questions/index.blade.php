@@ -146,17 +146,6 @@
                                           </div>
                                           </div>
                                       </div>
-
-<script>
-    // ClassicEditor
-    //     .create( document.querySelector( '.summernote' ) )
-    //     .then( editor => {
-    //             console.log( editor );
-    //     } )
-    //     .catch( error => {
-    //             console.error( error );
-    //     } );
-</script>
 <script type="text/javascript">
     $(document).ready( function() {
       $(document).on('change', '.btn-file :file', function() {
