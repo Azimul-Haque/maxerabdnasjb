@@ -43,8 +43,7 @@
                                 <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
                             </div>
                         </td> --}}
-                    </tr>
-                    <tr>
+                    
                         <td>
                             <a href="{{ route('dashboard.users.single', $user->id) }}">{{ $user->name }}</a>
                             <br/>
