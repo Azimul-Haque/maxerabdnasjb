@@ -185,7 +185,7 @@ class QuestionController extends Controller
         return redirect()->route('dashboard.questions');
     }
 
-    public function deleteUser($id)
+    public function deleteQuestion($id)
     {
         $user = User::find($id);
         $user->delete();
