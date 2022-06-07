@@ -280,17 +280,13 @@
               <div class="modal-body">
                     @csrf
                     <div class="input-group mb-3">
-                        <input type="text"
-                               name="question"
-                               class="form-control"
-                               value="{{ old('question') }}"
-                               placeholder="প্রশ্ন" required>
+                        <input type="text" name="question" class="form-control" value="{{ old('question') }}" placeholder="প্রশ্ন" required>
                         <div class="input-group-append">
                             <div class="input-group-text"><span class="far fa-question-circle"></span></div>
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" name="answer" value="{{ old('answer') }}" autocomplete="off" class="form-control" placeholder="সঠিক উত্তর" required>
+                        <input type="text" name="answer" value="{{ old('answer') }}" class="form-control" placeholder="সঠিক উত্তর" required>
                         <div class="input-group-append">
                             <div class="input-group-text"><span class="far fa-check-circle"></span></div>
                         </div>
@@ -324,19 +320,6 @@
                             <div class="input-group-text"><span class="fas fa-user-secret"></span></div>
                         </div>
                     </div>
-
-
-                    <div class="input-group mb-3">
-                        <input type="password"
-                               name="password"
-                               class="form-control"
-                               autocomplete="off"
-                               placeholder="পাসওয়ার্ড" required>
-                        <div class="input-group-append">
-                            <div class="input-group-text"><span class="fas fa-lock"></span></div>
-                        </div>
-                    </div>
-	            
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
