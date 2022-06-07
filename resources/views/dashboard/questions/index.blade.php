@@ -157,7 +157,7 @@
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-header">
-                      <h3 class="card-title">টপিক</h3>
+                      <h3 class="card-title">টপিকসমূহ</h3>
           
                       <div class="card-tools">
                           <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addQuesitonModal">
@@ -170,7 +170,7 @@
                       <table class="table">
                           <thead>
                               <tr>
-                                  <th>Question</th>
+                                  <th>Topic</th>
                                   <th>Answer</th>
                                   <th>Options</th>
                                   <th>Action</th>
