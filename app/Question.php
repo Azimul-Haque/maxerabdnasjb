@@ -10,7 +10,7 @@ class Question extends Model
         return $this->belongsTo('App\Topic');
     }
 
-    public function questions(){
+    public function questionexplanation(){
         return $this->hasMany('App\Question');
     }
 }
