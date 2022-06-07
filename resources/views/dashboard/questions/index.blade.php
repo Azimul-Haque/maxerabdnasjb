@@ -289,7 +289,6 @@
                             <div class="input-group-text"><span class="far fa-question-circle"></span></div>
                         </div>
                     </div>
-
                     <div class="input-group mb-3">
                         <input type="text"
                                name="answer"
@@ -301,7 +300,6 @@
                             <div class="input-group-text"><span class="far fa-check-circle"></span></div>
                         </div>
                     </div>
-
                     <div class="input-group mb-3">
                         <select name="role" id="adduserrole" class="form-control" required>
                             <option selected="" disabled="" value="">ধরন</option>
