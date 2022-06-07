@@ -116,7 +116,7 @@ class QuestionController extends Controller
         }
 
         if($request->explanation) {
-            $questionexplanation = new Questionimage;
+            $questionexplanation = new Questionexplanation;
             $questionexplanation->question_id = $question->id;
             $questionexplanation->explanation = $request->explanation;
             $questionexplanation->save();
