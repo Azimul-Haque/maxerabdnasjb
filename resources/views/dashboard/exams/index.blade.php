@@ -232,7 +232,7 @@
                                                   <span aria-hidden="true">&times;</span>
                                               </button>
                                               </div>
-                                              <form method="post" action="{{ route('dashboard.questions.topic.update', $category->id) }}">
+                                              <form method="post" action="{{ route('dashboard.exams.category.update', $category->id) }}">
                                                   <div class="modal-body">
                                                       @csrf
                                                       <div class="input-group mb-3">
@@ -281,7 +281,7 @@
                                           </div>
                                           <div class="modal-footer">
                                           <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-                                          <a href="{{ route('dashboard.questions.topic.delete', $category->id) }}" class="btn btn-danger">ডিলেট করুন</a>
+                                          <a href="{{ route('dashboard.exams.category.delete', $category->id) }}" class="btn btn-danger">ডিলেট করুন</a>
                                           </div>
                                       </div>
                                       </div>
