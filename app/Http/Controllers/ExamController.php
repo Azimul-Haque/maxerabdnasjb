@@ -101,18 +101,6 @@ class ExamController extends Controller
         $exam->available_to = $request->available_to;
         $exam->save();
 
-        // image upload
-        if($request->hasFile('image')) {
-            $image      = $request->file('image');
-            $filename   = random_string(5) . time() .'.' . "webp";
-            $location   = public_path('images/questions/'. $filename);
-            Image::make($image)->resize(350, null, function ($constraint) { $constraint->aspectRatio(); })->save($location);
-            $examimage = new Questionimage;
-            $questionimage->question_id = $question->id;
-            $questionimage->image = $filename;
-            $questionimage->save();
-        }
-
         if($request->explanation) {
             $questionexplanation = new Questionexplanation;
             $questionexplanation->question_id = $question->id;
