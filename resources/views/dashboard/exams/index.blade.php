@@ -74,7 +74,7 @@
                                                                 <select name="examcategory_id" class="form-control" required>
                                                                     <option selected="" disabled="" value="">পরীক্ষার ক্যাটাগরি</option>
                                                                     @foreach ($examcategories as $category)
-                                                                        <option value="{{ $category->id }}" @if($exam->examcategory->id == $category->id) @endif>{{ $category->name }}</option>
+                                                                        <option value="{{ $category->id }}" @if($exam->examcategory_id == $category->id) selected @endif>{{ $category->name }}</option>
                                                                     @endforeach
                                                                 </select>
                                                                 <div class="input-group-append">
