@@ -80,7 +80,7 @@ class ExamController extends Controller
     {
         // dd($request->file('image'));
         $this->validate($request,array(
-            'topic_id'    => 'required|string|max:191',
+            'examcategory_id'    => 'required|string|max:191',
             'question'    => 'required|string|max:191',
             'answer'      => 'required|string|max:191',
             'option1'     => 'required|string|max:191',
