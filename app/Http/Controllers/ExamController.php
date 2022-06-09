@@ -80,15 +80,15 @@ class ExamController extends Controller
     {
         // dd($request->file('image'));
         $this->validate($request,array(
-            'examcategory_id'    => 'required|string|max:191',
-            'question'    => 'required|string|max:191',
-            'answer'      => 'required|string|max:191',
-            'option1'     => 'required|string|max:191',
-            'option2'     => 'required|string|max:191',
-            'option3'     => 'required|string|max:191',
-            'difficulty'  => 'required|string|max:191',
-            'image'       => 'sometimes|image|mimes:jpeg,png,jpg,gif,svg,webp|max:3000',
-            'explanation' => 'sometimes|max:2048',
+            'examcategory_id' => 'required',
+            'name'        => 'required|string|max:191',
+            'answer'          => 'required|string|max:191',
+            'option1'         => 'required|string|max:191',
+            'option2'         => 'required|string|max:191',
+            'option3'         => 'required|string|max:191',
+            'difficulty'      => 'required|string|max:191',
+            'image'           => 'sometimes|image|mimes:jpeg,png,jpg,gif,svg,webp|max:3000',
+            'explanation'     => 'sometimes|max:2048',
         ));
 
         $question = new Question;
