@@ -26,7 +26,7 @@
                           <thead>
                               <tr>
                                   <th>পরীক্ষা</th>
-                                  <th>Answer</th>
+                                  <th>সময়কাল</th>
                                   <th>Options</th>
                                   <th>Action</th>
                               </tr>
