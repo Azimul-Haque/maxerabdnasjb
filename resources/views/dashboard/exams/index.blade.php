@@ -399,7 +399,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header bg-warning">
-          <h5 class="modal-title" id="addQuesitonModalLabel">নতুন টপিক যোগ</h5>
+          <h5 class="modal-title" id="addQuesitonModalLabel">নতুন ক্যাটাগরি যোগ</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
