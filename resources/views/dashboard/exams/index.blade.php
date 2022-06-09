@@ -313,6 +313,21 @@
           <form method="post" action="{{ route('dashboard.questions.store') }}" enctype='multipart/form-data'>
               <div class="modal-body">
                     @csrf
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="input-group mb-3">
+                                <select name="topic_id" class="form-control" required>
+                                    <option selected="" disabled="" value="">পরীক্ষার ক্যাটাগরি</option>
+                                    @foreach ($examcategories as $category)
+                                        <option value="{{ $category->id }}">{{ $category->name }}</option>
+                                    @endforeach
+                                </select>
+                                <div class="input-group-append">
+                                    <div class="input-group-text"><span class="fas fa-bookmark"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="input-group mb-3">
                         <input type="text" name="question" class="form-control" value="{{ old('question') }}" placeholder="প্রশ্ন" required>
                         <div class="input-group-append">
@@ -350,19 +365,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="input-group mb-3">
-                                <select name="topic_id" class="form-control" required>
-                                    <option selected="" disabled="" value="">পরীক্ষার ক্যাটাগরি</option>
-                                    @foreach ($examcategories as $category)
-                                        <option value="{{ $category->id }}">{{ $category->name }}</option>
-                                    @endforeach
-                                </select>
-                                <div class="input-group-append">
-                                    <div class="input-group-text"><span class="fas fa-bookmark"></span></div>
-                                </div>
-                            </div>
-                        </div>
+                        
                         <div class="col-md-6">
                             <div class="form-group ">
                                 <label for="image">ছবি (প্রয়োজনে)</label>
