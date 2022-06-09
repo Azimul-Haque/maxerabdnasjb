@@ -15,7 +15,7 @@ class CreateExamcategoriesTable extends Migration
     {
         Schema::create('examcategories', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('name');
         });
     }
 
