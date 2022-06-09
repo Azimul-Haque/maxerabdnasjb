@@ -381,7 +381,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="input-group mb-3">
-                                <input type="number" name="available_from" value="{{ old('available_from') }}" min="0" max="50" class="form-control" placeholder="নেগেটিভ মার্ক পারসেন্টেজ" required>
+                                <input type="number" name="available_from" value="{{ old('available_from') }}" min="0" max="50" class="form-control" placeholder="" required>
                                 <div class="input-group-append">
                                     <div class="input-group-text"><span class="fas fa-percent"></span></div>
                                 </div>
