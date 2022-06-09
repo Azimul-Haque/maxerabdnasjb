@@ -298,8 +298,8 @@
             </div>
         </div>
 
-    {{-- Add Question Modal Code --}}
-    {{-- Add Question Modal Code --}}
+    {{-- Add Exam Modal Code --}}
+    {{-- Add Exam Modal Code --}}
     <!-- Modal -->
     <div class="modal fade" id="addQuesitonModal" tabindex="-1" role="dialog" aria-labelledby="addQuesitonModalLabel" aria-hidden="true" data-backdrop="static">
       <div class="modal-dialog modal-lg" role="document">
@@ -389,8 +389,8 @@
         </div>
       </div>
     </div>
-    {{-- Add Question Modal Code --}}
-    {{-- Add Question Modal Code --}}
+    {{-- Add Exam Modal Code --}}
+    {{-- Add Exam Modal Code --}}
 
 {{-- Add Question Modal Code --}}
 {{-- Add Question Modal Code --}}
