@@ -329,7 +329,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="input-group mb-3">
-                                <input type="text" name="name" class="form-control" value="{{ old('name') }}" placeholder="প্রশ্ন" required>
+                                <input type="text" name="name" class="form-control" value="{{ old('name') }}" placeholder="পরীক্ষার নাম" required>
                                 <div class="input-group-append">
                                     <div class="input-group-text"><span class="far fa-question-circle"></span></div>
                                 </div>
