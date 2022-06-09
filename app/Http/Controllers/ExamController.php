@@ -39,7 +39,7 @@ class ExamController extends Controller
                     ->withExamcategories($examcategories);
     }
 
-    public function storeQuestionsTopic(Request $request)
+    public function storeExamCategory(Request $request)
     {
         $this->validate($request,array(
             'name'        => 'required|string|max:191',
@@ -53,7 +53,7 @@ class ExamController extends Controller
         return redirect()->route('dashboard.questions');
     }
 
-    public function updateQuestionsTopic(Request $request, $id)
+    public function updateExamCategory(Request $request, $id)
     {
         $this->validate($request,array(
             'name' => 'required|string|max:191',
@@ -76,7 +76,7 @@ class ExamController extends Controller
         return redirect()->route('dashboard.questions');
     }
 
-    public function storeQuestion(Request $request)
+    public function storeExam(Request $request)
     {
         // dd($request->file('image'));
         $this->validate($request,array(
@@ -124,7 +124,7 @@ class ExamController extends Controller
         return redirect()->route('dashboard.questions');
     }
 
-    public function updateQuestion(Request $request, $id)
+    public function updateExam(Request $request, $id)
     {
         // dd($request->file('image'));
         $this->validate($request,array(
@@ -184,7 +184,7 @@ class ExamController extends Controller
         return redirect()->route('dashboard.questions');
     }
 
-    public function deleteQuestion($id)
+    public function deleteExam($id)
     {
         $question = Question::find($id);
         if($question->questionimage) {
