@@ -337,7 +337,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="input-group mb-3">
-                                <input type="number" name="duration" value="{{ old('duration') }}" min="1" class="form-control" placeholder="সময় (ডিউরেশন, মিনিটে)" required>
+                                <input type="number" name="duration" value="{{ old('duration') }}" min="1" class="form-control" placeholder="সময়কাল (মিনিটে)" required>
                                 <div class="input-group-append">
                                     <div class="input-group-text"><span class="fas fa-stopwatch"></span></div>
                                 </div>
