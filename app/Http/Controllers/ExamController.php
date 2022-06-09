@@ -90,7 +90,7 @@ class ExamController extends Controller
             'available_to'       => 'required|string|max:191',
         ));
 
-        $question = new Question;
+        $question = new Exam;
         $question->topic_id = $request->topic_id;
         $question->question = $request->question;
         $question->answer = $request->answer;
