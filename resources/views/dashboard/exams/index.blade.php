@@ -67,78 +67,90 @@
                                               </div>
                                               <form method="post" action="{{ route('dashboard.exams.update', $exam->id) }}" enctype='multipart/form-data'>
                                                 <div class="modal-body">
-                                                      @csrf
-                                                      <div class="input-group mb-3">
-                                                          <input type="text" name="question" class="form-control" value="{{ $exam->question }}" placeholder="প্রশ্ন" required>
-                                                          <div class="input-group-append">
-                                                              <div class="input-group-text"><span class="far fa-question-circle"></span></div>
-                                                          </div>
-                                                      </div>
-                                                      <div class="input-group mb-3">
-                                                          <input type="text" name="answer" value="{{ $exam->answer }}" class="form-control" placeholder="সঠিক উত্তর" required>
-                                                          <div class="input-group-append">
-                                                              <div class="input-group-text"><span class="far fa-check-circle"></span></div>
-                                                          </div>
-                                                      </div>
-                                                      <div class="row">
-                                                          <div class="col-md-4">
-                                                              <input type="text" name="option1" value="{{ $exam->option1 }}" class="form-control mb-3" placeholder="অপশন ১" required>
-                                                          </div>
-                                                          <div class="col-md-4">
-                                                              <input type="text" name="option2" value="{{ $exam->option2 }}" class="form-control mb-3" placeholder="অপশন ২" required>
-                                                          </div>
-                                                          <div class="col-md-4">
-                                                              <input type="text" name="option3" value="{{ $exam->option3 }}" class="form-control mb-3" placeholder="অপশন ৩" required>
-                                                          </div>
-                                                      </div>
-                                                      <div class="row">
-                                                          <div class="col-md-6">
-                                                              <div class="input-group mb-3">
-                                                                  <select name="difficulty" class="form-control" required>
-                                                                      <option selected="" disabled="" value="">ডিফিকাল্টি লেভেল</option>
-                                                                      <option value="1" @if($exam->difficulty = 1) selected @endif>সহজ</option>
-                                                                      <option value="2" @if($exam->difficulty = 2) selected @endif>মধ্যম</option>
-                                                                      <option value="3" @if($exam->difficulty = 3) selected @endif>কঠিন</option>
-                                                                  </select>
-                                                                  <div class="input-group-append">
-                                                                      <div class="input-group-text"><span class="fas fa-star-half-alt"></span></div>
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                          <div class="col-md-6">
-                                                              <div class="input-group mb-3">
-                                                                  <select name="topic_id" class="form-control" required>
-                                                                      <option selected="" disabled="" value="">টপিক (বিষয়)</option>
-                                                                      @foreach ($examcategories as $category)
-                                                                          <option value="{{ $category->id }}" @if($exam->topic_id = $category->id) selected @endif>{{ $category->name }}</option>
-                                                                      @endforeach
-                                                                  </select>
-                                                                  <div class="input-group-append">
-                                                                      <div class="input-group-text"><span class="fas fa-bookmark"></span></div>
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                          <div class="col-md-6">
-                                                              <div class="form-group ">
-                                                                  <label for="image">ছবি (প্রয়োজনে)</label>
-                                                                  <input type="file" id="image{{ $exam->id }}" name="image" accept="image/*">
-                                                              </div>
-                                                              <center>
-                                                                  <?php
-                                                                    if($exam->questionimage) {
-                                                                        $currentimage = asset('images/questions/' . $exam->questionimage->image);
-                                                                    } else {
-                                                                        $currentimage = asset('images/placeholder.png');
-                                                                    }
-                                                                  ?>
-                                                                  <img src="{{ $currentimage }}" id='img-upload{{ $exam->id }}' style="width: 250px; height: auto;" class="img-responsive" />
-                                                              </center>
-                                                          </div>
-                                                          <div class="col-md-6">
-                                                              <label for="explanation">ব্যাখ্যা (প্রয়োজনে)</label><br/>
-                                                              <textarea class="form-control summernote" name="explanation" id="explanation" placeholder="ব্যাখ্যা" style="width: 100%; height: 220px;">{{ $exam->questionexplanation ? $exam->questionexplanation->explanation : '' }}</textarea>
-                                                          </div>
-                                                      </div>
+                                                    @csrf
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="input-group mb-3">
+                                                                <select name="examcategory_id" class="form-control" required>
+                                                                    <option selected="" disabled="" value="">পরীক্ষার ক্যাটাগরি</option>
+                                                                    @foreach ($examcategories as $category)
+                                                                        <option value="{{ $category->id }}">{{ $category->name }}</option>
+                                                                    @endforeach
+                                                                </select>
+                                                                <div class="input-group-append">
+                                                                    <div class="input-group-text"><span class="fas fa-bookmark"></span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-group mb-3">
+                                                                <input type="text" name="name" class="form-control" value="{{ old('name') }}" placeholder="পরীক্ষার নাম" required>
+                                                                <div class="input-group-append">
+                                                                    <div class="input-group-text"><span class="far fa-clipboard"></span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-group mb-3">
+                                                                <input type="number" name="duration" value="{{ old('duration') }}" min="1" class="form-control" placeholder="সময়কাল (মিনিটে)" required>
+                                                                <div class="input-group-append">
+                                                                    <div class="input-group-text"><span class="fas fa-stopwatch"></span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        {{-- <div class="col-md-6">
+                                                            <div class="input-group mb-3">
+                                                                <input type="number" name="total_questions" value="{{ old('total_questions') }}" min="1" class="form-control" placeholder="মোট প্রশ্ন সংখ্যা" required>
+                                                                <div class="input-group-append">
+                                                                    <div class="input-group-text"><span class="fas fa-sort-amount-up-alt"></span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div> --}}
+                                                        <div class="col-md-6">
+                                                            <div class="input-group mb-3">
+                                                                <input type="number" name="qsweight" value="{{ old('qsweight') }}" min="1" class="form-control" placeholder="প্রতি প্রশ্নের মান" required>
+                                                                <div class="input-group-append">
+                                                                    <div class="input-group-text"><span class="fas fa-sort-amount-up-alt"></span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-group mb-3">
+                                                                <input type="number" name="negativepercentage" value="{{ old('negativepercentage') }}" min="0" max="50" class="form-control" placeholder="নেগেটিভ মার্ক পারসেন্টেজ" required>
+                                                                <div class="input-group-append">
+                                                                    <div class="input-group-text"><span class="fas fa-percent"></span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-group mb-3">
+                                                                <select name="price_type" class="form-control" required>
+                                                                    <option selected="" disabled="" value="">মূল্য</option>
+                                                                    <option value="0">ফ্রি</option>
+                                                                    <option value="1">পেইড</option>
+                                                                </select>
+                                                                <div class="input-group-append">
+                                                                    <div class="input-group-text"><span class="fas fa-hand-holding-usd"></span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-group mb-3">
+                                                                <input type="text" name="available_from" id="available_from" value="{{ old('available_from') }}" class="form-control" autocomplete="off" placeholder="চালু হবে" required>
+                                                                <div class="input-group-append">
+                                                                    <div class="input-group-text"><span class="fas fa-calendar-check"></span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-group mb-3">
+                                                                <input type="text" name="available_to" id="available_to" value="{{ old('available_to') }}" class="form-control" autocomplete="off" placeholder="চালু থাকবে (পর্যন্ত)" required>
+                                                                <div class="input-group-append">
+                                                                    <div class="input-group-text"><span class="fas fa-calendar-minus"></span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <div class="modal-footer">
                                                   <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
