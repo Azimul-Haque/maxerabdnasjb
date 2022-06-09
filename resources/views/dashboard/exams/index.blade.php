@@ -164,6 +164,20 @@
                                           </div>
                                           </div>
                                       </div>
+<script>
+    $("#available_from{{ $exam->id }").datepicker({
+      format: 'MM dd, yyyy',
+      todayHighlight: true,
+      autoclose: true,
+      container:'#addExamModal',
+    });
+    $("#available_to{{ $exam->id }").datepicker({
+      format: 'MM dd, yyyy',
+      todayHighlight: true,
+      autoclose: true,
+      container:'#addExamModal',
+    });
+</script>
                                       {{-- Edit Exam Modal Code --}}
                                       {{-- Edit Exam Modal Code --}}
           
