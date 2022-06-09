@@ -55,7 +55,7 @@
                                   </td> --}}
                               
                                   <td>
-                                      <a href="" class="btn btn-warning btn-sm" rel="tooltip" title="প্রশ্ন যোগ করুন">
+                                      <a href="{{ route('dashboard.exams.add.question') }}" class="btn btn-warning btn-sm" rel="tooltip" title="প্রশ্ন যোগ করুন">
                                           <i class="fas fa-folder-plus"></i>
                                       </a>
                                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editExamModal{{ $exam->id }}">
