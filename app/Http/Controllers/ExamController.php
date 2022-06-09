@@ -93,7 +93,7 @@ class ExamController extends Controller
         $exam = new Exam;
         $exam->examcategory_id = $request->examcategory_id;
         $exam->name = $request->name;
-        $exam->answer = $request->answer;
+        $exam->duration = $request->duration;
         $exam->option1 = $request->option1;
         $exam->option2 = $request->option2;
         $exam->option3 = $request->option3;
