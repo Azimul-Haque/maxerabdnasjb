@@ -91,8 +91,8 @@ class ExamController extends Controller
         ));
 
         $exam = new Exam;
-        $exam->topic_id = $request->topic_id;
-        $exam->question = $request->question;
+        $exam->examcategory_id = $request->examcategory_id;
+        $exam->name = $request->name;
         $exam->answer = $request->answer;
         $exam->option1 = $request->option1;
         $exam->option2 = $request->option2;
