@@ -101,14 +101,7 @@ class ExamController extends Controller
         $exam->available_to = $request->available_to;
         $exam->save();
 
-        if($request->explanation) {
-            $questionexplanation = new Questionexplanation;
-            $questionexplanation->question_id = $question->id;
-            $questionexplanation->explanation = $request->explanation;
-            $questionexplanation->save();
-        }
-
-        Session::flash('success', 'Question created successfully!');
+        Session::flash('success', 'Exam created successfully!');
         return redirect()->route('dashboard.exams');
     }
 
