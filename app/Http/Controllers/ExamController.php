@@ -94,10 +94,11 @@ class ExamController extends Controller
         $exam->examcategory_id = $request->examcategory_id;
         $exam->name = $request->name;
         $exam->duration = $request->duration;
-        $exam->option1 = $request->option1;
-        $exam->option2 = $request->option2;
-        $exam->option3 = $request->option3;
-        $exam->difficulty = $request->difficulty;
+        $exam->qsweight = $request->qsweight;
+        $exam->negativepercentage = $request->negativepercentage;
+        $exam->price_type = $request->price_type;
+        $exam->available_from = $request->available_from;
+        $exam->available_to = $request->available_to;
         $exam->save();
 
         // image upload
