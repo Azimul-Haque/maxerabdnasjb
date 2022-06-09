@@ -143,24 +143,24 @@ class ExamController extends Controller
         // kaaj ache aro
         $exam->delete();
 
-        Session::flash('success', 'Question deleted successfully!');
+        Session::flash('success', 'Exam deleted successfully!');
         return redirect()->route('dashboard.exams');
     }
 
     public function addQuestionToExam($id)
     {
-        $question = Question::find($id);
-        if($question->questionimage) {
-            $image_path = public_path('images/questions/'. $question->questionimage->image);
-            if(File::exists($image_path)) {
-                File::delete($image_path);
-            }
-            $question->questionimage->delete();
-        }
-        $question->questionexplanation->delete();
-        $question->delete();
+        // $question = Question::find($id);
+        // if($question->questionimage) {
+        //     $image_path = public_path('images/questions/'. $question->questionimage->image);
+        //     if(File::exists($image_path)) {
+        //         File::delete($image_path);
+        //     }
+        //     $question->questionimage->delete();
+        // }
+        // $question->questionexplanation->delete();
+        // $question->delete();
 
-        Session::flash('success', 'Question deleted successfully!');
+        // Session::flash('success', 'Question deleted successfully!');
         return redirect()->route('dashboard.exams');
     }
 }
