@@ -97,8 +97,8 @@ class ExamController extends Controller
         $exam->qsweight = $request->qsweight;
         $exam->negativepercentage = $request->negativepercentage;
         $exam->price_type = $request->price_type;
-        $exam->available_from = $request->available_from;
-        $exam->available_to = $request->available_to;
+        $exam->available_from = Carbon::parse($request->available_from);
+        $exam->available_to = Carbon::parse($request->available_to);
         $exam->save();
 
         Session::flash('success', 'Exam created successfully!');
