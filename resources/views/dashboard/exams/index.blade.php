@@ -383,7 +383,7 @@
                             <div class="input-group mb-3">
                                 <input type="text" name="available_from" id="available_from" value="{{ old('available_from') }}" class="form-control" autocomplete="off" placeholder="চালু হবে" required>
                                 <div class="input-group-append">
-                                    <div class="input-group-text"><span class="fas fa-percent"></span></div>
+                                    <div class="input-group-text"><span class="fas fa-calendar-check"></span></div>
                                 </div>
                             </div>
                         </div>
