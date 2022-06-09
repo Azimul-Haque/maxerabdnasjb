@@ -459,6 +459,11 @@
       todayHighlight: true,
       autoclose: true,
     });
+    $("#available_to").datepicker({
+      format: 'MM dd, yyyy',
+      todayHighlight: true,
+      autoclose: true,
+    });
     // ClassicEditor
     //     .create( document.querySelector( '.summernote' ) )
     //     .then( editor => {
