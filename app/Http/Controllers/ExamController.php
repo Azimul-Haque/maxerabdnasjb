@@ -108,60 +108,33 @@ class ExamController extends Controller
     public function updateExam(Request $request, $id)
     {
         // dd($request->file('image'));
+        // dd($request->file('image'));
         $this->validate($request,array(
-            'topic_id'    => 'required|string|max:191',
-            'question'    => 'required|string|max:191',
-            'answer'      => 'required|string|max:191',
-            'option1'     => 'required|string|max:191',
-            'option2'     => 'required|string|max:191',
-            'option3'     => 'required|string|max:191',
-            'difficulty'  => 'required|string|max:191',
-            'image'       => 'sometimes|image|mimes:jpeg,png,jpg,gif,svg,webp|max:3000',
-            'explanation' => 'sometimes|max:2048',
+            'examcategory_id'    => 'required|string|max:191',
+            'name'               => 'required|string|max:191',
+            'duration'           => 'required|string|max:191',
+            'qsweight'           => 'required|string|max:191',
+            'negativepercentage' => 'required|string|max:191',
+            'price_type'         => 'required|string|max:191',
+            'available_from'     => 'required|string|max:191',
+            'available_to'       => 'required|string|max:191',
         ));
 
-        $question = Question::findOrFail($id);
-        $question->topic_id = $request->topic_id;
-        $question->question = $request->question;
-        $question->answer = $request->answer;
-        $question->option1 = $request->option1;
-        $question->option2 = $request->option2;
-        $question->option3 = $request->option3;
-        $question->difficulty = $request->difficulty;
-        $question->save();
+        $exam = Exam::find($id);
+        $exam->examcategory_id = $request->examcategory_id;
+        $exam->name = $request->name;
+        $exam->duration = $request->duration;
+        $exam->qsweight = $request->qsweight;
+        $exam->negativepercentage = $request->negativepercentage;
+        $exam->price_type = $request->price_type;
+        $exam->available_from = Carbon::parse($request->available_from);
+        $exam->available_to = Carbon::parse($request->available_to);
+        $exam->save();
 
-        // image upload
-        if($request->hasFile('image')) {
-            if($question->questionimage) {
-                $image_path = public_path('images/questions/'. $question->questionimage->image);
-                if(File::exists($image_path)) {
-                    File::delete($image_path);
-                }
-                $question->questionimage->delete();
-            }
-            $image      = $request->file('image');
-            $filename   = random_string(5) . time() .'.' . "webp";
-            $location   = public_path('images/questions/'. $filename);
-            Image::make($image)->resize(350, null, function ($constraint) { $constraint->aspectRatio(); })->save($location);
-            $questionimage = new Questionimage;
-            $questionimage->question_id = $question->id;
-            $questionimage->image = $filename;
-            $questionimage->save();
-        }
+        Session::flash('success', 'Exam created successfully!');
+        return redirect()->route('dashboard.exams');
 
-        if($request->explanation) {
-            if($question->questionexplanation) {
-                $question->questionexplanation->explanation = $request->explanation;
-                $question->questionexplanation->save();
-            } else {
-                $questionexplanation = new Questionexplanation;
-                $questionexplanation->question_id = $question->id;
-                $questionexplanation->explanation = $request->explanation;
-                $questionexplanation->save();
-            }
-        }
-
-        Session::flash('success', 'Question updated successfully!');
+        Session::flash('success', 'Exam updated successfully!');
         return redirect()->route('dashboard.exams');
     }
 
