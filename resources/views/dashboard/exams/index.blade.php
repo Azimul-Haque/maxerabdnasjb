@@ -204,7 +204,7 @@
                                           <div class="modal-body">
                                             আপনি কি নিশ্চিতভাবে এই পরীক্ষাটি ডিলেট করতে চান?<br/><br/>
                                             <center>
-                                                <big><b>{{ $exam->question }}</b></big>
+                                                <big><b>{{ $exam->name }}</b></big>
                                             </center>
                                           </div>
                                           <div class="modal-footer">
