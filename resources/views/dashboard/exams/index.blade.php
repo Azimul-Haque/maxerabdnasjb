@@ -38,7 +38,7 @@
                                   <td>
                                       {{ $exam->name }}<br/>
                                       <span class="badge bg-success">{{ $exam->examcategory->name }}</span>
-                                      <span class="badge bg-success">{{ $exam->examcategory->name }}</span>
+                                      <span class="badge bg-info">{{ $exam->price_type == 0 ? 'ফ্রি' : 'পেইড' }}</span>
                                   </td>
                                   <td>{{ $exam->duration }} মিনিট</td>
                                   <td>{{ $exam->qsweight }} (-{{ $exam->negativepercentage / 100 }} প্রতি ভুলের জন্য)</td>
