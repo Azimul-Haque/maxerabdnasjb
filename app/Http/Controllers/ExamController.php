@@ -86,9 +86,8 @@ class ExamController extends Controller
             'qsweight'         => 'required|string|max:191',
             'negativepercentage'         => 'required|string|max:191',
             'price_type'         => 'required|string|max:191',
-            'difficulty'      => 'required|string|max:191',
-            'image'           => 'sometimes|image|mimes:jpeg,png,jpg,gif,svg,webp|max:3000',
-            'explanation'     => 'sometimes|max:2048',
+            'available_from'      => 'required|string|max:191',
+            'available_to'      => 'required|string|max:191',
         ));
 
         $question = new Question;
