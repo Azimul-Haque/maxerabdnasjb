@@ -69,10 +69,10 @@ class ExamController extends Controller
 
     public function deleteQuestionsTopic($id)
     {
-        $topic = Topic::find($id);
-        $topic->delete();
+        $category = Examcategory::find($id);
+        $category->delete();
 
-        Session::flash('success', 'Topic deleted successfully!');
+        Session::flash('success', 'Category deleted successfully!');
         return redirect()->route('dashboard.exams');
     }
 
