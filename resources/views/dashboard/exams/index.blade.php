@@ -231,17 +231,17 @@
                                   </td>
                               
                                   <td align="right" width="40%">
-                                      <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editTopicModal{{ $category->id }}">
+                                      <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editCategoryModal{{ $category->id }}">
                                           <i class="far fa-edit"></i>
                                       </button>
                                       {{-- Edit Category Modal Code --}}
                                       {{-- Edit Category Modal Code --}}
                                       <!-- Modal -->
-                                      <div class="modal fade" id="editTopicModal{{ $category->id }}" tabindex="-1" role="dialog" aria-labelledby="editTopicModalLabel" aria-hidden="true" data-backdrop="static">
+                                      <div class="modal fade" id="editCategoryModal{{ $category->id }}" tabindex="-1" role="dialog" aria-labelledby="editCategoryModalLabel" aria-hidden="true" data-backdrop="static">
                                           <div class="modal-dialog" role="document">
                                           <div class="modal-content">
                                               <div class="modal-header bg-warning">
-                                              <h5 class="modal-title" id="editTopicModalLabel">ক্যাটাগরি হালনাগাদ</h5>
+                                              <h5 class="modal-title" id="editCategoryModalLabel">ক্যাটাগরি হালনাগাদ</h5>
                                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                   <span aria-hidden="true">&times;</span>
                                               </button>
@@ -271,18 +271,18 @@
                                       {{-- Edit Category Modal Code --}}
                                       {{-- Edit Category Modal Code --}}
           
-                                      <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteTopicModal{{ $category->id }}" disabled>
+                                      <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteCategoryModal{{ $category->id }}" disabled>
                                           <i class="far fa-trash-alt"></i>
                                       </button>
                                   </td>
                                   {{-- Delete Category Modal Code --}}
                                   {{-- Delete Category Modal Code --}}
                                   <!-- Modal -->
-                                  <div class="modal fade" id="deleteTopicModal{{ $category->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteTopicModalLabel" aria-hidden="true" data-backdrop="static">
+                                  <div class="modal fade" id="deleteCategoryModal{{ $category->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteCategoryModalLabel" aria-hidden="true" data-backdrop="static">
                                       <div class="modal-dialog" role="document">
                                       <div class="modal-content">
                                           <div class="modal-header bg-danger">
-                                          <h5 class="modal-title" id="deleteTopicModalLabel">ক্যাটাগরি ডিলেট</h5>
+                                          <h5 class="modal-title" id="deleteCategoryModalLabel">ক্যাটাগরি ডিলেট</h5>
                                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                               <span aria-hidden="true">&times;</span>
                                           </button>
