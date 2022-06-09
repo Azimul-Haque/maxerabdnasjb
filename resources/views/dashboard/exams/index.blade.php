@@ -381,7 +381,15 @@
                         </div>
                         <div class="col-md-6">
                             <div class="input-group mb-3">
-                                <input type="text" name="available_from" id="available_from" value="{{ old('available_from') }}" class="form-control" placeholder="চালু হবে" required>
+                                <input type="text" name="available_from" id="available_from" value="{{ old('available_from') }}" class="form-control" autocomplete="off" placeholder="চালু হবে" required>
+                                <div class="input-group-append">
+                                    <div class="input-group-text"><span class="fas fa-percent"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-group mb-3">
+                                <input type="text" name="available_to" id="available_to" value="{{ old('available_to') }}" class="form-control" autocomplete="off" placeholder="চালু হবে" required>
                                 <div class="input-group-append">
                                     <div class="input-group-text"><span class="fas fa-percent"></span></div>
                                 </div>
