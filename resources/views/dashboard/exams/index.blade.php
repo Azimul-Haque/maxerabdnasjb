@@ -107,7 +107,7 @@
                                                               <div class="input-group mb-3">
                                                                   <select name="topic_id" class="form-control" required>
                                                                       <option selected="" disabled="" value="">টপিক (বিষয়)</option>
-                                                                      @foreach ($categorys as $category)
+                                                                      @foreach ($examcategories as $category)
                                                                           <option value="{{ $category->id }}" @if($exam->topic_id = $category->id) selected @endif>{{ $category->name }}</option>
                                                                       @endforeach
                                                                   </select>
@@ -354,7 +354,7 @@
                             <div class="input-group mb-3">
                                 <select name="topic_id" class="form-control" required>
                                     <option selected="" disabled="" value="">টপিক (বিষয়)</option>
-                                    @foreach ($categorys as $category)
+                                    @foreach ($examcategories as $category)
                                         <option value="{{ $category->id }}">{{ $category->name }}</option>
                                     @endforeach
                                 </select>
