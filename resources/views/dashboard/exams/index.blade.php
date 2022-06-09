@@ -126,7 +126,7 @@
                                                             <div class="input-group mb-3">
                                                                 <select name="price_type" class="form-control" required>
                                                                     <option selected="" disabled="" value="">মূল্য</option>
-                                                                    <option value="0">ফ্রি</option>
+                                                                    <option value="0" @if($exam->price_type == $category->id) selected @endif>ফ্রি</option>
                                                                     <option value="1">পেইড</option>
                                                                 </select>
                                                                 <div class="input-group-append">
