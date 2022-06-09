@@ -56,6 +56,9 @@
                               
                                   <td>
                                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editExamModal{{ $exam->id }}">
+                                          <i class="fas fa-plus-square"></i>
+                                      </button>
+                                      <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editExamModal{{ $exam->id }}">
                                           <i class="far fa-edit"></i>
                                       </button>
                                       {{-- Edit Exam Modal Code --}}
