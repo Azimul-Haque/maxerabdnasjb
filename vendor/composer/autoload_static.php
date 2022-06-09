@@ -519,6 +519,7 @@ class ComposerStaticInitd99be2aa22b662638be63ef18831ea06
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Creditor' => __DIR__ . '/../..' . '/app/Creditor.php',
         'App\\Due' => __DIR__ . '/../..' . '/app/Due.php',
+        'App\\Exam' => __DIR__ . '/../..' . '/app/Exam.php',
         'App\\Examcategory' => __DIR__ . '/../..' . '/app/Examcategory.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Expense' => __DIR__ . '/../..' . '/app/Expense.php',
