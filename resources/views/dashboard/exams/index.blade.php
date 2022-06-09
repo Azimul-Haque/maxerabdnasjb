@@ -268,13 +268,13 @@
                                       <div class="modal-dialog" role="document">
                                       <div class="modal-content">
                                           <div class="modal-header bg-danger">
-                                          <h5 class="modal-title" id="deleteTopicModalLabel">টপিক ডিলেট</h5>
+                                          <h5 class="modal-title" id="deleteTopicModalLabel">ক্যাটাগরি ডিলেট</h5>
                                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                               <span aria-hidden="true">&times;</span>
                                           </button>
                                           </div>
                                           <div class="modal-body">
-                                          আপনি কি নিশ্চিতভাবে এই টী ডিলেট করতে চান?<br/>
+                                          আপনি কি নিশ্চিতভাবে এই ক্যাটাগরিটি ডিলেট করতে চান?<br/>
                                           <center>
                                               <big><b>{{ $category->name }}</b></big><br/>
                                           </center>
