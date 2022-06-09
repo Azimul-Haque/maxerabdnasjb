@@ -32,15 +32,15 @@
                               </tr>
                           </thead>
                           <tbody>
-                          @foreach($questions as $question)
+                          @foreach($exams as $exam)
                               <tr>
                                   <td>
-                                      {{ $question->question }}<br/>
-                                      <span class="badge bg-success">{{ $question->topic->name }}</span>
-                                      <span class="badge bg-info">{{ $question->difficulty == 1 ? 'সহজ' : ($question->difficulty == 2 ? 'মধ্যম' : 'কঠিন') }}</span>
+                                      {{ $exam->question }}<br/>
+                                      <span class="badge bg-success">{{ $exam->topic->name }}</span>
+                                      <span class="badge bg-info">{{ $exam->difficulty == 1 ? 'সহজ' : ($exam->difficulty == 2 ? 'মধ্যম' : 'কঠিন') }}</span>
                                   </td>
-                                  <td>{{ $question->answer }}</td>
-                                  <td>{{ $question->option1 }}, {{ $question->option2 }}, {{ $question->option3 }}</td>
+                                  <td>{{ $exam->answer }}</td>
+                                  <td>{{ $exam->option1 }}, {{ $exam->option2 }}, {{ $exam->option3 }}</td>
                                   {{-- <td>
                                       <div class="progress progress-xs">
                                           <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
@@ -48,13 +48,13 @@
                                   </td> --}}
                               
                                   <td>
-                                      <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editQuestionModal{{ $question->id }}">
+                                      <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editQuestionModal{{ $exam->id }}">
                                           <i class="far fa-edit"></i>
                                       </button>
                                       {{-- Edit Question Modal Code --}}
                                       {{-- Edit Question Modal Code --}}
                                       <!-- Modal -->
-                                      <div class="modal fade" id="editQuestionModal{{ $question->id }}" tabindex="-1" role="dialog" aria-labelledby="editQuestionModalLabel" aria-hidden="true" data-backdrop="static">
+                                      <div class="modal fade" id="editQuestionModal{{ $exam->id }}" tabindex="-1" role="dialog" aria-labelledby="editQuestionModalLabel" aria-hidden="true" data-backdrop="static">
                                           <div class="modal-dialog modal-lg" role="document">
                                           <div class="modal-content">
                                               <div class="modal-header bg-success">
@@ -63,30 +63,30 @@
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
                                               </div>
-                                              <form method="post" action="{{ route('dashboard.questions.update', $question->id) }}" enctype='multipart/form-data'>
+                                              <form method="post" action="{{ route('dashboard.questions.update', $exam->id) }}" enctype='multipart/form-data'>
                                                 <div class="modal-body">
                                                       @csrf
                                                       <div class="input-group mb-3">
-                                                          <input type="text" name="question" class="form-control" value="{{ $question->question }}" placeholder="প্রশ্ন" required>
+                                                          <input type="text" name="question" class="form-control" value="{{ $exam->question }}" placeholder="প্রশ্ন" required>
                                                           <div class="input-group-append">
                                                               <div class="input-group-text"><span class="far fa-question-circle"></span></div>
                                                           </div>
                                                       </div>
                                                       <div class="input-group mb-3">
-                                                          <input type="text" name="answer" value="{{ $question->answer }}" class="form-control" placeholder="সঠিক উত্তর" required>
+                                                          <input type="text" name="answer" value="{{ $exam->answer }}" class="form-control" placeholder="সঠিক উত্তর" required>
                                                           <div class="input-group-append">
                                                               <div class="input-group-text"><span class="far fa-check-circle"></span></div>
                                                           </div>
                                                       </div>
                                                       <div class="row">
                                                           <div class="col-md-4">
-                                                              <input type="text" name="option1" value="{{ $question->option1 }}" class="form-control mb-3" placeholder="অপশন ১" required>
+                                                              <input type="text" name="option1" value="{{ $exam->option1 }}" class="form-control mb-3" placeholder="অপশন ১" required>
                                                           </div>
                                                           <div class="col-md-4">
-                                                              <input type="text" name="option2" value="{{ $question->option2 }}" class="form-control mb-3" placeholder="অপশন ২" required>
+                                                              <input type="text" name="option2" value="{{ $exam->option2 }}" class="form-control mb-3" placeholder="অপশন ২" required>
                                                           </div>
                                                           <div class="col-md-4">
-                                                              <input type="text" name="option3" value="{{ $question->option3 }}" class="form-control mb-3" placeholder="অপশন ৩" required>
+                                                              <input type="text" name="option3" value="{{ $exam->option3 }}" class="form-control mb-3" placeholder="অপশন ৩" required>
                                                           </div>
                                                       </div>
                                                       <div class="row">
@@ -94,9 +94,9 @@
                                                               <div class="input-group mb-3">
                                                                   <select name="difficulty" class="form-control" required>
                                                                       <option selected="" disabled="" value="">ডিফিকাল্টি লেভেল</option>
-                                                                      <option value="1" @if($question->difficulty = 1) selected @endif>সহজ</option>
-                                                                      <option value="2" @if($question->difficulty = 2) selected @endif>মধ্যম</option>
-                                                                      <option value="3" @if($question->difficulty = 3) selected @endif>কঠিন</option>
+                                                                      <option value="1" @if($exam->difficulty = 1) selected @endif>সহজ</option>
+                                                                      <option value="2" @if($exam->difficulty = 2) selected @endif>মধ্যম</option>
+                                                                      <option value="3" @if($exam->difficulty = 3) selected @endif>কঠিন</option>
                                                                   </select>
                                                                   <div class="input-group-append">
                                                                       <div class="input-group-text"><span class="fas fa-star-half-alt"></span></div>
@@ -108,7 +108,7 @@
                                                                   <select name="topic_id" class="form-control" required>
                                                                       <option selected="" disabled="" value="">টপিক (বিষয়)</option>
                                                                       @foreach ($topics as $topic)
-                                                                          <option value="{{ $topic->id }}" @if($question->topic_id = $topic->id) selected @endif>{{ $topic->name }}</option>
+                                                                          <option value="{{ $topic->id }}" @if($exam->topic_id = $topic->id) selected @endif>{{ $topic->name }}</option>
                                                                       @endforeach
                                                                   </select>
                                                                   <div class="input-group-append">
@@ -119,22 +119,22 @@
                                                           <div class="col-md-6">
                                                               <div class="form-group ">
                                                                   <label for="image">ছবি (প্রয়োজনে)</label>
-                                                                  <input type="file" id="image{{ $question->id }}" name="image" accept="image/*">
+                                                                  <input type="file" id="image{{ $exam->id }}" name="image" accept="image/*">
                                                               </div>
                                                               <center>
                                                                   <?php
-                                                                    if($question->questionimage) {
-                                                                        $currentimage = asset('images/questions/' . $question->questionimage->image);
+                                                                    if($exam->questionimage) {
+                                                                        $currentimage = asset('images/questions/' . $exam->questionimage->image);
                                                                     } else {
                                                                         $currentimage = asset('images/placeholder.png');
                                                                     }
                                                                   ?>
-                                                                  <img src="{{ $currentimage }}" id='img-upload{{ $question->id }}' style="width: 250px; height: auto;" class="img-responsive" />
+                                                                  <img src="{{ $currentimage }}" id='img-upload{{ $exam->id }}' style="width: 250px; height: auto;" class="img-responsive" />
                                                               </center>
                                                           </div>
                                                           <div class="col-md-6">
                                                               <label for="explanation">ব্যাখ্যা (প্রয়োজনে)</label><br/>
-                                                              <textarea class="form-control summernote" name="explanation" id="explanation" placeholder="ব্যাখ্যা" style="width: 100%; height: 220px;">{{ $question->questionexplanation ? $question->questionexplanation->explanation : '' }}</textarea>
+                                                              <textarea class="form-control summernote" name="explanation" id="explanation" placeholder="ব্যাখ্যা" style="width: 100%; height: 220px;">{{ $exam->questionexplanation ? $exam->questionexplanation->explanation : '' }}</textarea>
                                                           </div>
                                                       </div>
                                                 </div>
@@ -167,23 +167,23 @@
           if (input.files && input.files[0]) {
               var reader = new FileReader();
               reader.onload = function (e) {
-                  $('#img-upload{{ $question->id }}').attr('src', e.target.result);
+                  $('#img-upload{{ $exam->id }}').attr('src', e.target.result);
               }
               reader.readAsDataURL(input.files[0]);
           }
       }
-      $("#image{{ $question->id }}").change(function(){
+      $("#image{{ $exam->id }}").change(function(){
           readURL(this);
           var filesize = parseInt((this.files[0].size)/1024);
           if(filesize > 10000) {
-            $("#image{{ $question->id }}").val('');
+            $("#image{{ $exam->id }}").val('');
             // toastr.warning('File size is: '+filesize+' Kb. try uploading less than 300Kb', 'WARNING').css('width', '400px;');
             Toast.fire({
                 icon: 'warning',
                 title: 'File size is: '+filesize+' Kb. try uploading less than 300Kb'
             })
             setTimeout(function() {
-            $("#img-upload{{ $question->id }}").attr('src', '{{ asset('images/placeholder.png') }}');
+            $("#img-upload{{ $exam->id }}").attr('src', '{{ asset('images/placeholder.png') }}');
             }, 1000);
           }
       });
@@ -193,14 +193,14 @@
                                       {{-- Edit Question Modal Code --}}
                                       {{-- Edit Question Modal Code --}}
           
-                                      <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteQuestionModal{{ $question->id }}">
+                                      <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteQuestionModal{{ $exam->id }}">
                                           <i class="far fa-trash-alt"></i>
                                       </button>
                                   </td>
                                   {{-- Delete Question Modal Code --}}
                                   {{-- Delete Question Modal Code --}}
                                   <!-- Modal -->
-                                  <div class="modal fade" id="deleteQuestionModal{{ $question->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteQuestionModalLabel" aria-hidden="true" data-backdrop="static">
+                                  <div class="modal fade" id="deleteQuestionModal{{ $exam->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteQuestionModalLabel" aria-hidden="true" data-backdrop="static">
                                       <div class="modal-dialog" role="document">
                                       <div class="modal-content">
                                           <div class="modal-header bg-danger">
@@ -212,12 +212,12 @@
                                           <div class="modal-body">
                                             আপনি কি নিশ্চিতভাবে এই প্রশ্নটি ডিলেট করতে চান?<br/><br/>
                                             <center>
-                                                <big><b>{{ $question->question }}</b></big>
+                                                <big><b>{{ $exam->question }}</b></big>
                                             </center>
                                           </div>
                                           <div class="modal-footer">
                                           <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-                                          <a href="{{ route('dashboard.questions.delete', $question->id) }}" class="btn btn-danger">ডিলেট করুন</a>
+                                          <a href="{{ route('dashboard.questions.delete', $exam->id) }}" class="btn btn-danger">ডিলেট করুন</a>
                                           </div>
                                       </div>
                                       </div>
@@ -231,7 +231,7 @@
                     </div>
                     <!-- /.card-body -->
                   </div>
-                  {{ $questions->links() }}
+                  {{ $exams->links() }}
             </div>
             <div class="col-md-3">
                 <div class="card">
