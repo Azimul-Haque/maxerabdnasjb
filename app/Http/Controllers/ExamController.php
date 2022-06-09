@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Exam;
+use App\Examcategory;
+
 use Carbon\Carbon;
 use DB;
 use Hash;
