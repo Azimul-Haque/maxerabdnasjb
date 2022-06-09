@@ -90,15 +90,15 @@ class ExamController extends Controller
             'available_to'       => 'required|string|max:191',
         ));
 
-        $question = new Exam;
-        $question->topic_id = $request->topic_id;
-        $question->question = $request->question;
-        $question->answer = $request->answer;
-        $question->option1 = $request->option1;
-        $question->option2 = $request->option2;
-        $question->option3 = $request->option3;
-        $question->difficulty = $request->difficulty;
-        $question->save();
+        $exam = new Exam;
+        $exam->topic_id = $request->topic_id;
+        $exam->question = $request->question;
+        $exam->answer = $request->answer;
+        $exam->option1 = $request->option1;
+        $exam->option2 = $request->option2;
+        $exam->option3 = $request->option3;
+        $exam->difficulty = $request->difficulty;
+        $exam->save();
 
         // image upload
         if($request->hasFile('image')) {
@@ -106,7 +106,7 @@ class ExamController extends Controller
             $filename   = random_string(5) . time() .'.' . "webp";
             $location   = public_path('images/questions/'. $filename);
             Image::make($image)->resize(350, null, function ($constraint) { $constraint->aspectRatio(); })->save($location);
-            $questionimage = new Questionimage;
+            $examimage = new Questionimage;
             $questionimage->question_id = $question->id;
             $questionimage->image = $filename;
             $questionimage->save();
