@@ -11,7 +11,7 @@
 @endsection
 
 @section('content')
-    @section('page-header') পরীক্ষাসমূহ @endsection
+    @section('page-header') {{ $exam->name }} @endsection
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-9">
