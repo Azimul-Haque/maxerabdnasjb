@@ -34,7 +34,7 @@ class ExamController extends Controller
         $exams = Exam::paginate(10);
         $examcategories = Examcategory::all();
 
-        return view('dashboard.questions.index')
+        return view('dashboard.exams.index')
                     ->withQuestions($questions)
                     ->withTopics($topics);
     }
