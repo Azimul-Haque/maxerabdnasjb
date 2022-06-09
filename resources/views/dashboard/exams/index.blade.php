@@ -185,7 +185,7 @@
                                       {{-- Edit Exam Modal Code --}}
                                       {{-- Edit Exam Modal Code --}}
           
-                                      <a href="{{ route("dashboard.exams.add.question") }}" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteQuestionModal{{ $exam->id }}" disabled>
+                                      <a href="{{ route('dashboard.exams.add.question') }}" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteQuestionModal{{ $exam->id }}" disabled>
                                           <i class="far fa-trash-alt"></i>
                                       </a>
                                   </td>
