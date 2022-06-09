@@ -84,7 +84,7 @@
                                                         </div>
                                                         <div class="col-md-6">
                                                             <div class="input-group mb-3">
-                                                                <input type="text" name="name" class="form-control" value="{{ old('name') }}" placeholder="পরীক্ষার নাম" required>
+                                                                <input type="text" name="name" class="form-control" value="{{ $exam->name }}" placeholder="পরীক্ষার নাম" required>
                                                                 <div class="input-group-append">
                                                                     <div class="input-group-text"><span class="far fa-clipboard"></span></div>
                                                                 </div>
@@ -92,7 +92,7 @@
                                                         </div>
                                                         <div class="col-md-6">
                                                             <div class="input-group mb-3">
-                                                                <input type="number" name="duration" value="{{ old('duration') }}" min="1" class="form-control" placeholder="সময়কাল (মিনিটে)" required>
+                                                                <input type="number" name="duration" value="{{ $exam->duration }}" min="1" class="form-control" placeholder="সময়কাল (মিনিটে)" required>
                                                                 <div class="input-group-append">
                                                                     <div class="input-group-text"><span class="fas fa-stopwatch"></span></div>
                                                                 </div>
