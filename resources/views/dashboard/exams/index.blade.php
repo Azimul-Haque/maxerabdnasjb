@@ -458,6 +458,7 @@
       format: 'MM dd, yyyy',
       todayHighlight: true,
       autoclose: true,
+      container:'#addQuesitonModal',
     });
     $("#available_to").datepicker({
       format: 'MM dd, yyyy',
