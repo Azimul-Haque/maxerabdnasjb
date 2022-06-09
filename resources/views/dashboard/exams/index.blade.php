@@ -392,8 +392,8 @@
     {{-- Add Exam Modal Code --}}
     {{-- Add Exam Modal Code --}}
 
-{{-- Add Question Modal Code --}}
-{{-- Add Question Modal Code --}}
+{{-- Add Category Modal Code --}}
+{{-- Add Category Modal Code --}}
 <!-- Modal -->
 <div class="modal fade" id="addTopicModal" tabindex="-1" role="dialog" aria-labelledby="addTopicModalLabel" aria-hidden="true" data-backdrop="static">
     <div class="modal-dialog" role="document">
@@ -426,8 +426,8 @@
       </div>
     </div>
   </div>
-  {{-- Add Question Modal Code --}}
-  {{-- Add Question Modal Code --}}
+  {{-- Add Category Modal Code --}}
+  {{-- Add Category Modal Code --}}
 @endsection
 
 @section('third_party_scripts')
