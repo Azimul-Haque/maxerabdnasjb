@@ -379,6 +379,14 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-6">
+                            <div class="input-group mb-3">
+                                <input type="number" name="negativepercentage" value="{{ old('negativepercentage') }}" min="0" max="50" class="form-control" placeholder="নেগেটিভ মার্ক পারসেন্টেজ" required>
+                                <div class="input-group-append">
+                                    <div class="input-group-text"><span class="fas fa-percent"></span></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
               </div>
               <div class="modal-footer">
