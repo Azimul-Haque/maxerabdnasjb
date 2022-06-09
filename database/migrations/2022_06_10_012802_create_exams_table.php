@@ -22,6 +22,8 @@ class CreateExamsTable extends Migration
             $table->string('qsweight', 10);
             $table->integer('negativepercentage');
             $table->integer('price_type');
+            $table->date('available_from');
+            $table->date('available_to');
             $table->timestamps();
         });
     }
