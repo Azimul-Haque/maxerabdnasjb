@@ -31,8 +31,8 @@ class ExamController extends Controller
             abort(403, 'Access Denied');
         }
         
-        $questions = Question::paginate(10);
-        $topics = Topic::all();
+        $exams = Exam::paginate(10);
+        $examcategories = Examcategory::all();
 
         return view('dashboard.questions.index')
                     ->withQuestions($questions)
