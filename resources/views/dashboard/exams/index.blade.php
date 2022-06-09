@@ -375,7 +375,7 @@
                                     <option value="1">পেইড</option>
                                 </select>
                                 <div class="input-group-append">
-                                    <div class="input-group-text"><span class="fad fa-hand-holding-usd"></span></div>
+                                    <div class="input-group-text"><span class="fas fa-hand-holding-usd"></span></div>
                                 </div>
                             </div>
                         </div>
