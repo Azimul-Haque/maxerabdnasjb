@@ -338,9 +338,9 @@
                     </div>
                     
                     <div class="input-group mb-3">
-                        <input type="text" name="answer" value="{{ old('answer') }}" class="form-control" placeholder="সঠিক উত্তর" required>
+                        <input type="text" name="duration" value="{{ old('duration') }}" class="form-control" placeholder="সময় (ডিউরেশন)" required>
                         <div class="input-group-append">
-                            <div class="input-group-text"><span class="far fa-check-circle"></span></div>
+                            <div class="input-group-text"><span class="fas fa-stopwatch"></span></div>
                         </div>
                     </div>
                     <div class="row">
