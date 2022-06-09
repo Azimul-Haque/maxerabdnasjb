@@ -196,13 +196,13 @@
                                       <div class="modal-dialog" role="document">
                                       <div class="modal-content">
                                           <div class="modal-header bg-danger">
-                                          <h5 class="modal-title" id="deleteQuestionModalLabel{{ $exam->id }}">প্রশ্ন ডিলেট</h5>
+                                          <h5 class="modal-title" id="deleteQuestionModalLabel{{ $exam->id }}">পরীক্ষা ডিলেট</h5>
                                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                               <span aria-hidden="true">&times;</span>
                                           </button>
                                           </div>
                                           <div class="modal-body">
-                                            আপনি কি নিশ্চিতভাবে এই প্রশ্নটি ডিলেট করতে চান?<br/><br/>
+                                            আপনি কি নিশ্চিতভাবে এই পরীক্ষাটি ডিলেট করতে চান?<br/><br/>
                                             <center>
                                                 <big><b>{{ $exam->question }}</b></big>
                                             </center>
