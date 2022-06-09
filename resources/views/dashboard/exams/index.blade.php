@@ -35,7 +35,7 @@
                           @foreach($exams as $exam)
                               <tr>
                                   <td>
-                                      {{ $exam->question }}<br/>
+                                      {{ $exam->name }}<br/>
                                       <span class="badge bg-success">{{ $exam->examcategory->name }}</span>
                                   </td>
                                   <td>{{ $exam->duration }} মিনিট</td>
