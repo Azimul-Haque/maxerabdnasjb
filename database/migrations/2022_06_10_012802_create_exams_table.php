@@ -17,6 +17,7 @@ class CreateExamsTable extends Migration
             $table->id();
             $table->integer('examcategory_id')->unsigned();
             $table->string('name');
+            $table->string('name');
             $table->timestamps();
         });
     }
