@@ -55,7 +55,7 @@
                                   </td> --}}
                               
                                   <td>
-                                      <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editExamModal{{ $exam->id }}" data-toggle="tooltip" rel="tooltip" title="প্রশ্ন যোগ করুন">
+                                      <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editExamModal{{ $exam->id }}" data-toggle="tooltip" rel="tooltip" title="প্রশ্ন যোগ করুন">
                                           <i class="fas fa-plus-square"></i>
                                       </button>
                                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editExamModal{{ $exam->id }}">
