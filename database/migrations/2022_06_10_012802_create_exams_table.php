@@ -15,7 +15,7 @@ class CreateExamsTable extends Migration
     {
         Schema::create('exams', function (Blueprint $table) {
             $table->id();
-            $table->integer('examcategory_id');
+            $table->integer('examcategory_id')->unsigned();
             $table->string('name');
             $table->timestamps();
         });
