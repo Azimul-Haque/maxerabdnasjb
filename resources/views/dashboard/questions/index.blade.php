@@ -107,8 +107,8 @@
                                                               <div class="input-group mb-3">
                                                                   <select name="topic_id" class="form-control" required>
                                                                       <option selected="" disabled="" value="">টপিক (বিষয়)</option>
-                                                                      @foreach ($topics as $topic)
-                                                                          <option value="{{ $topic->id }}" @if($exam->topic_id = $topic->id) selected @endif>{{ $topic->name }}</option>
+                                                                      @foreach ($categorys as $category)
+                                                                          <option value="{{ $category->id }}" @if($exam->topic_id = $category->id) selected @endif>{{ $category->name }}</option>
                                                                       @endforeach
                                                                   </select>
                                                                   <div class="input-group-append">
@@ -146,50 +146,6 @@
                                           </div>
                                           </div>
                                       </div>
-<script type="text/javascript">
-    $(document).ready( function() {
-      $(document).on('change', '.btn-file :file', function() {
-        var input = $(this),
-            label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
-        input.trigger('fileselect', [label]);
-      });
-
-      $('.btn-file :file').on('fileselect', function(event, label) {
-          var input = $(this).parents('.input-group').find(':text'),
-              log = label;
-          if( input.length ) {
-              input.val(log);
-          } else {
-              if( log ) alert(log);
-          }
-      });
-      function readURL(input) {
-          if (input.files && input.files[0]) {
-              var reader = new FileReader();
-              reader.onload = function (e) {
-                  $('#img-upload{{ $exam->id }}').attr('src', e.target.result);
-              }
-              reader.readAsDataURL(input.files[0]);
-          }
-      }
-      $("#image{{ $exam->id }}").change(function(){
-          readURL(this);
-          var filesize = parseInt((this.files[0].size)/1024);
-          if(filesize > 10000) {
-            $("#image{{ $exam->id }}").val('');
-            // toastr.warning('File size is: '+filesize+' Kb. try uploading less than 300Kb', 'WARNING').css('width', '400px;');
-            Toast.fire({
-                icon: 'warning',
-                title: 'File size is: '+filesize+' Kb. try uploading less than 300Kb'
-            })
-            setTimeout(function() {
-            $("#img-upload{{ $exam->id }}").attr('src', '{{ asset('images/placeholder.png') }}');
-            }, 1000);
-          }
-      });
-
-    });
-</script>
                                       {{-- Edit Question Modal Code --}}
                                       {{-- Edit Question Modal Code --}}
           
@@ -254,20 +210,20 @@
                               </tr>
                           </thead>
                           <tbody>
-                          @foreach($topics as $topic)
+                          @foreach($categories as $category)
                               <tr>
                                   <td>
-                                      {{ $topic->name }}<br/>
+                                      {{ $category->name }}<br/>
                                   </td>
                               
                                   <td align="right" width="40%">
-                                      <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editTopicModal{{ $topic->id }}">
+                                      <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editTopicModal{{ $category->id }}">
                                           <i class="far fa-edit"></i>
                                       </button>
                                       {{-- Edit Topic Modal Code --}}
                                       {{-- Edit Topic Modal Code --}}
                                       <!-- Modal -->
-                                      <div class="modal fade" id="editTopicModal{{ $topic->id }}" tabindex="-1" role="dialog" aria-labelledby="editTopicModalLabel" aria-hidden="true" data-backdrop="static">
+                                      <div class="modal fade" id="editTopicModal{{ $category->id }}" tabindex="-1" role="dialog" aria-labelledby="editTopicModalLabel" aria-hidden="true" data-backdrop="static">
                                           <div class="modal-dialog" role="document">
                                           <div class="modal-content">
                                               <div class="modal-header bg-warning">
@@ -276,14 +232,14 @@
                                                   <span aria-hidden="true">&times;</span>
                                               </button>
                                               </div>
-                                              <form method="post" action="{{ route('dashboard.questions.topic.update', $topic->id) }}">
+                                              <form method="post" action="{{ route('dashboard.questions.topic.update', $category->id) }}">
                                                   <div class="modal-body">
                                                       @csrf
                                                       <div class="input-group mb-3">
                                                           <input type="text"
                                                                   name="name"
                                                                   class="form-control"
-                                                                  value="{{ $topic->name }}"
+                                                                  value="{{ $category->name }}"
                                                                   placeholder="নাম" required>
                                                           <div class="input-group-append">
                                                               <div class="input-group-text"><span class="far fa-bookmark"></span></div>
@@ -301,14 +257,14 @@
                                       {{-- Edit Topic Modal Code --}}
                                       {{-- Edit Topic Modal Code --}}
           
-                                      <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteTopicModal{{ $topic->id }}" disabled>
+                                      <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteTopicModal{{ $category->id }}" disabled>
                                           <i class="far fa-trash-alt"></i>
                                       </button>
                                   </td>
                                   {{-- Delete Topic Modal Code --}}
                                   {{-- Delete Topic Modal Code --}}
                                   <!-- Modal -->
-                                  <div class="modal fade" id="deleteTopicModal{{ $topic->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteTopicModalLabel" aria-hidden="true" data-backdrop="static">
+                                  <div class="modal fade" id="deleteTopicModal{{ $category->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteTopicModalLabel" aria-hidden="true" data-backdrop="static">
                                       <div class="modal-dialog" role="document">
                                       <div class="modal-content">
                                           <div class="modal-header bg-danger">
@@ -320,12 +276,12 @@
                                           <div class="modal-body">
                                           আপনি কি নিশ্চিতভাবে এই টপিকটি ডিলেট করতে চান?<br/>
                                           <center>
-                                              <big><b>{{ $topic->name }}</b></big><br/>
+                                              <big><b>{{ $category->name }}</b></big><br/>
                                           </center>
                                           </div>
                                           <div class="modal-footer">
                                           <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-                                          <a href="{{ route('dashboard.questions.topic.delete', $topic->id) }}" class="btn btn-danger">ডিলেট করুন</a>
+                                          <a href="{{ route('dashboard.questions.topic.delete', $category->id) }}" class="btn btn-danger">ডিলেট করুন</a>
                                           </div>
                                       </div>
                                       </div>
@@ -398,8 +354,8 @@
                             <div class="input-group mb-3">
                                 <select name="topic_id" class="form-control" required>
                                     <option selected="" disabled="" value="">টপিক (বিষয়)</option>
-                                    @foreach ($topics as $topic)
-                                        <option value="{{ $topic->id }}">{{ $topic->name }}</option>
+                                    @foreach ($categorys as $category)
+                                        <option value="{{ $category->id }}">{{ $category->name }}</option>
                                     @endforeach
                                 </select>
                                 <div class="input-group-append">
