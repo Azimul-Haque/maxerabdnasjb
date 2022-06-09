@@ -15,7 +15,7 @@
                       <h3 class="card-title">পরীক্ষাসমূহ</h3>
           
                       <div class="card-tools">
-                          <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addQuesitonModal">
+                          <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addExamModal">
                               <i class="fas fa-plus-circle"></i> নতুন পরীক্ষা যোগ
                           </button>
                       </div>
@@ -315,11 +315,11 @@
     {{-- Add Exam Modal Code --}}
     {{-- Add Exam Modal Code --}}
     <!-- Modal -->
-    <div class="modal fade" id="addQuesitonModal" tabindex="-1" role="dialog" aria-labelledby="addQuesitonModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal fade" id="addExamModal" tabindex="-1" role="dialog" aria-labelledby="addExamModalLabel" aria-hidden="true" data-backdrop="static">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header bg-success">
-            <h5 class="modal-title" id="addQuesitonModalLabel">নতুন পরীক্ষা যোগ</h5>
+            <h5 class="modal-title" id="addExamModalLabel">নতুন পরীক্ষা যোগ</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -429,7 +429,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header bg-warning">
-          <h5 class="modal-title" id="addQuesitonModalLabel">নতুন ক্যাটাগরি যোগ</h5>
+          <h5 class="modal-title" id="addExamModalLabel">নতুন ক্যাটাগরি যোগ</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -472,13 +472,13 @@
       format: 'MM dd, yyyy',
       todayHighlight: true,
       autoclose: true,
-      container:'#addQuesitonModal',
+      container:'#addExamModal',
     });
     $("#available_to").datepicker({
       format: 'MM dd, yyyy',
       todayHighlight: true,
       autoclose: true,
-      container:'#addQuesitonModal',
+      container:'#addExamModal',
     });
     // ClassicEditor
     //     .create( document.querySelector( '.summernote' ) )
