@@ -39,7 +39,13 @@ Route::post('/dashboard/questions/topic/{id}/update', 'QuestionController@update
 Route::get('/dashboard/questions/topic/{id}/delete', 'QuestionController@deleteQuestionsTopic')->name('dashboard.questions.topic.delete');
 
 Route::get('/dashboard/exams', 'ExamController@getExams')->name('dashboard.exams');
+Route::post('/dashboard/exams/store', 'ExamController@storeExam')->name('dashboard.exams.store');
+Route::post('/dashboard/exams/{id}/update', 'ExamController@updateExam')->name('dashboard.exams.update');
+Route::get('/dashboard/exams/{id}/delete', 'ExamController@deleteExam')->name('dashboard.exams.delete');
 
+Route::post('/dashboard/exams/topic/store', 'ExamController@storeQuestionsTopic')->name('dashboard.questions.topic.store');
+Route::post('/dashboard/exams/topic/{id}/update', 'ExamController@updateQuestionsTopic')->name('dashboard.questions.topic.update');
+Route::get('/dashboard/exams/topic/{id}/delete', 'ExamController@deleteQuestionsTopic')->name('dashboard.questions.topic.delete');
 // Route::get('/dashboard/balance', 'DashboardController@getBalance')->name('dashboard.balance');
 // Route::post('/dashboard/balance/store', 'DashboardController@storeBalance')->name('dashboard.balance.store');
 // Route::get('/dashboard/balance/{id}/delete', 'DashboardController@deleteBalance')->name('dashboard.balance.delete');
