@@ -234,8 +234,8 @@
                                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editTopicModal{{ $category->id }}">
                                           <i class="far fa-edit"></i>
                                       </button>
-                                      {{-- Edit Topic Modal Code --}}
-                                      {{-- Edit Topic Modal Code --}}
+                                      {{-- Edit Category Modal Code --}}
+                                      {{-- Edit Category Modal Code --}}
                                       <!-- Modal -->
                                       <div class="modal fade" id="editTopicModal{{ $category->id }}" tabindex="-1" role="dialog" aria-labelledby="editTopicModalLabel" aria-hidden="true" data-backdrop="static">
                                           <div class="modal-dialog" role="document">
@@ -268,15 +268,15 @@
                                           </div>
                                           </div>
                                       </div>
-                                      {{-- Edit Topic Modal Code --}}
-                                      {{-- Edit Topic Modal Code --}}
+                                      {{-- Edit Category Modal Code --}}
+                                      {{-- Edit Category Modal Code --}}
           
                                       <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteTopicModal{{ $category->id }}" disabled>
                                           <i class="far fa-trash-alt"></i>
                                       </button>
                                   </td>
-                                  {{-- Delete Topic Modal Code --}}
-                                  {{-- Delete Topic Modal Code --}}
+                                  {{-- Delete Category Modal Code --}}
+                                  {{-- Delete Category Modal Code --}}
                                   <!-- Modal -->
                                   <div class="modal fade" id="deleteTopicModal{{ $category->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteTopicModalLabel" aria-hidden="true" data-backdrop="static">
                                       <div class="modal-dialog" role="document">
@@ -300,8 +300,8 @@
                                       </div>
                                       </div>
                                   </div>
-                                  {{-- Delete Topic Modal Code --}}
-                                  {{-- Delete Topic Modal Code --}}
+                                  {{-- Delete Category Modal Code --}}
+                                  {{-- Delete Category Modal Code --}}
                               </tr>
                           @endforeach
                           </tbody>
