@@ -1,22 +1,22 @@
 @extends('layouts.app')
-@section('title') ড্যাশবোর্ড | প্রশ্নব্যাংক @endsection
+@section('title') ড্যাশবোর্ড | পরীক্ষাসমূহ @endsection
 
 @section('third_party_stylesheets')
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 @endsection
 
 @section('content')
-    @section('page-header') প্রশ্নব্যাংক @endsection
+    @section('page-header') পরীক্ষাসমূহ @endsection
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-9">
                 <div class="card">
                     <div class="card-header">
-                      <h3 class="card-title">প্রশ্নব্যাংক</h3>
+                      <h3 class="card-title">পরীক্ষাসমূহ</h3>
           
                       <div class="card-tools">
                           <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addQuesitonModal">
-                              <i class="fas fa-plus-circle"></i> নতুন প্রশ্ন যোগ
+                              <i class="fas fa-plus-circle"></i> নতুন পরীক্ষা যোগ
                           </button>
                       </div>
                     </div>
