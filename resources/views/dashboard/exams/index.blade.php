@@ -490,6 +490,7 @@
 <script>
     $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip();
+        $("[rel='tooltip']").tooltip();
     });
     $("#available_from").datepicker({
       format: 'MM dd, yyyy',
