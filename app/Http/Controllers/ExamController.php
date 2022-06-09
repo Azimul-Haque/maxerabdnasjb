@@ -137,16 +137,11 @@ class ExamController extends Controller
 
     public function deleteExam($id)
     {
-        $question = Question::find($id);
-        if($question->questionimage) {
-            $image_path = public_path('images/questions/'. $question->questionimage->image);
-            if(File::exists($image_path)) {
-                File::delete($image_path);
-            }
-            $question->questionimage->delete();
-        }
-        $question->questionexplanation->delete();
-        $question->delete();
+        $exam = Exam::find($id);
+        // kaaj ache aro
+        // kaaj ache aro
+        // kaaj ache aro
+        $exam->delete();
 
         Session::flash('success', 'Question deleted successfully!');
         return redirect()->route('dashboard.exams');
