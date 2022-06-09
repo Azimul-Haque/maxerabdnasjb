@@ -363,7 +363,7 @@
                             <div class="input-group mb-3">
                                 <input type="number" name="negativepercentage" value="{{ old('negativepercentage') }}" min="0" class="form-control" placeholder="নেগেটিভ মার্ক পারসেন্টেজ" required>
                                 <div class="input-group-append">
-                                    <div class="input-group-text"><span class="fas fa-sort-amount-up-alt"></span></div>
+                                    <div class="input-group-text"><span class="fas fa-percent"></span></div>
                                 </div>
                             </div>
                         </div>
