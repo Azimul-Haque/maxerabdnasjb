@@ -192,11 +192,11 @@
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-header">
-                      <h3 class="card-title">টপিকসমূহ</h3>
+                      <h3 class="card-title">পরীক্ষার ক্যাটাগরি</h3>
           
                       <div class="card-tools">
                           <button type="button" class="btn btn-warning btn-sm"  data-toggle="modal" data-target="#addTopicModal">
-                              <i class="fas fa-plus-circle"></i> নতুন টপিক
+                              <i class="fas fa-plus-circle"></i> নতুন ক্যাটাগরি
                           </button>
                       </div>
                     </div>
@@ -205,7 +205,7 @@
                       <table class="table">
                           <thead>
                               <tr>
-                                  <th>Topic</th>
+                                  <th>Category</th>
                                   <th>Action</th>
                               </tr>
                           </thead>
