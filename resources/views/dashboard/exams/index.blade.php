@@ -61,11 +61,11 @@
                                       {{-- Edit Exam Modal Code --}}
                                       {{-- Edit Exam Modal Code --}}
                                       <!-- Modal -->
-                                      <div class="modal fade" id="editExamModal{{ $exam->id }}" tabindex="-1" role="dialog" aria-labelledby="editExamModalLabel" aria-hidden="true" data-backdrop="static">
+                                      <div class="modal fade" id="editExamModal{{ $exam->id }}" tabindex="-1" role="dialog" aria-labelledby="editExamModalLabel{{ $exam->id }}" aria-hidden="true" data-backdrop="static">
                                           <div class="modal-dialog modal-lg" role="document">
                                           <div class="modal-content">
                                               <div class="modal-header bg-success">
-                                                <h5 class="modal-title" id="editExamModalLabel">পরীক্ষা হালনাগাদ</h5>
+                                                <h5 class="modal-title" id="editExamModalLabel{{ $exam->id }}">পরীক্ষা হালনাগাদ</h5>
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
