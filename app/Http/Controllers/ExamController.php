@@ -9,7 +9,7 @@ class ExamController extends Controller
     public function __construct()
     {
         $this->middleware('auth')->except('clear');
-        $this->middleware(['admin'])->only('getQuestions', 'storeQuestionsTopic');
+        $this->middleware(['admin'])->only('getQuestions');
     }
 
     public function getExams()
