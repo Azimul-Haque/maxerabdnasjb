@@ -464,6 +464,7 @@
       format: 'MM dd, yyyy',
       todayHighlight: true,
       autoclose: true,
+      container:'#addQuesitonModal',
     });
     // ClassicEditor
     //     .create( document.querySelector( '.summernote' ) )
