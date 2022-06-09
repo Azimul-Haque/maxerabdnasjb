@@ -55,7 +55,7 @@
                                   </td> --}}
                               
                                   <td>
-                                      <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editExamModal{{ $exam->id }}" title="asd">
+                                      <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editExamModal{{ $exam->id }}" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
                                           <i class="fas fa-plus-square"></i>
                                       </button>
                                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editExamModal{{ $exam->id }}">
