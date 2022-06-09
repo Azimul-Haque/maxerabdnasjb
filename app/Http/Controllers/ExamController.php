@@ -4,7 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use Auth
+use Carbon\Carbon;
+use DB;
+use Hash;
+use Auth;
+use Image;
+use File;
+use Session;
+use Artisan;
+use OneSignal;
 
 class ExamController extends Controller
 {
