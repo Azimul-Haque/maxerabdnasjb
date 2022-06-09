@@ -38,7 +38,7 @@
                                       {{ $exam->question }}<br/>
                                       <span class="badge bg-success">{{ $exam->examcategory->name }}</span>
                                   </td>
-                                  <td>{{ $exam->answer }}</td>
+                                  <td>{{ $exam->duration }} মিনিট</td>
                                   <td>{{ $exam->option1 }}, {{ $exam->option2 }}, {{ $exam->option3 }}</td>
                                   {{-- <td>
                                       <div class="progress progress-xs">
