@@ -19,6 +19,7 @@ class CreateExamsTable extends Migration
             $table->string('name');
             $table->string('duration');
             $table->integer('total_questions');
+            $table->integer('total_questions');
             $table->integer('price_type');
             $table->timestamps();
         });
