@@ -335,10 +335,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="input-group mb-3">
-                            <input type="number" name="duration" value="{{ old('duration') }}" class="form-control" placeholder="সময় (ডিউরেশন)" required>
-                            <div class="input-group-append">
-                                <div class="input-group-text"><span class="fas fa-stopwatch"></span></div>
+                        <div class="col-md-6">
+                            <div class="input-group mb-3">
+                                <input type="number" name="duration" value="{{ old('duration') }}" class="form-control" placeholder="সময় (ডিউরেশন)" required>
+                                <div class="input-group-append">
+                                    <div class="input-group-text"><span class="fas fa-stopwatch"></span></div>
+                                </div>
                             </div>
                         </div>
                     </div>
