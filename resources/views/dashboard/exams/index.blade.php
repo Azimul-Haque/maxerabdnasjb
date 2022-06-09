@@ -27,7 +27,7 @@
                               <tr>
                                   <th>পরীক্ষা</th>
                                   <th>সময়কাল</th>
-                                  <th>Options</th>
+                                  <th>অন্যান্য তথ্য</th>
                                   <th>Action</th>
                               </tr>
                           </thead>
@@ -37,7 +37,6 @@
                                   <td>
                                       {{ $exam->question }}<br/>
                                       <span class="badge bg-success">{{ $exam->examcategory->name }}</span>
-                                      <span class="badge bg-info">{{ $exam->difficulty == 1 ? 'সহজ' : ($exam->difficulty == 2 ? 'মধ্যম' : 'কঠিন') }}</span>
                                   </td>
                                   <td>{{ $exam->answer }}</td>
                                   <td>{{ $exam->option1 }}, {{ $exam->option2 }}, {{ $exam->option3 }}</td>
