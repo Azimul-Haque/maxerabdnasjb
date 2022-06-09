@@ -404,7 +404,7 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <form method="post" action="{{ route('dashboard.questions.topic.store') }}">
+        <form method="post" action="{{ route('dashboard.exams.category.store') }}">
             <div class="modal-body">
                   @csrf
                   <div class="input-group mb-3">
