@@ -274,7 +274,7 @@
                                           </button>
                                           </div>
                                           <div class="modal-body">
-                                          আপনি কি নিশ্চিতভাবে এই টপিকটি ডিলেট করতে চান?<br/>
+                                          আপনি কি নিশ্চিতভাবে এই টী ডিলেট করতে চান?<br/>
                                           <center>
                                               <big><b>{{ $category->name }}</b></big><br/>
                                           </center>
