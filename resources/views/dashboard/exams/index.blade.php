@@ -370,10 +370,9 @@
                         <div class="col-md-6">
                             <div class="input-group mb-3">
                                 <select name="price_type" class="form-control" required>
-                                    <option selected="" disabled="" value="">পরীক্ষার ক্যাটাগরি</option>
-                                    @foreach ($examcategories as $category)
-                                        <option value="{{ $category->id }}">{{ $category->name }}</option>
-                                    @endforeach
+                                    <option selected="" disabled="" value="">মূল্য</option>
+                                    <option value="0">ফ্রি</option>
+                                    <option value="1">পেইড</option>
                                 </select>
                                 <div class="input-group-append">
                                     <div class="input-group-text"><span class="fas fa-bookmark"></span></div>
