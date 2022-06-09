@@ -45,9 +45,9 @@ class ExamController extends Controller
             'name'        => 'required|string|max:191',
         ));
 
-        $topic = new Topic;
-        $topic->name = $request->name;
-        $topic->save();
+        $category = new Examcategory;
+        $category->name = $request->name;
+        $category->save();
 
         Session::flash('success', 'Topic created successfully!');
         return redirect()->route('dashboard.exams');
