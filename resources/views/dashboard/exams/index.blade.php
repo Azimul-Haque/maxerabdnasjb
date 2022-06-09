@@ -38,6 +38,7 @@
                                   <td>
                                       {{ $exam->name }}<br/>
                                       <span class="badge bg-success">{{ $exam->examcategory->name }}</span>
+                                      <span class="badge bg-success">{{ $exam->examcategory->name }}</span>
                                   </td>
                                   <td>{{ $exam->duration }} মিনিট</td>
                                   <td>{{ $exam->qsweight }} (-{{ $exam->negativepercentage / 100 }} প্রতি ভুলের জন্য)</td>
