@@ -55,9 +55,9 @@
                                   </td> --}}
                               
                                   <td>
-                                      <button type="button" class="btn btn-warning btn-sm" rel="tooltip" title="প্রশ্ন যোগ করুন">
-                                          <i class="fas fa-plus-square"></i>
-                                      </button>
+                                      <a href="" class="btn btn-warning btn-sm" rel="tooltip" title="প্রশ্ন যোগ করুন">
+                                          <i class="fas fa-folder-plus"></i>
+                                      </a>
                                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editExamModal{{ $exam->id }}">
                                           <i class="far fa-edit"></i>
                                       </button>
@@ -185,9 +185,9 @@
                                       {{-- Edit Exam Modal Code --}}
                                       {{-- Edit Exam Modal Code --}}
           
-                                      <a href="{{ route('dashboard.exams.add.question') }}" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteQuestionModal{{ $exam->id }}" disabled>
+                                      <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteQuestionModal{{ $exam->id }}" disabled>
                                           <i class="far fa-trash-alt"></i>
-                                      </a>
+                                      </button>
                                   </td>
                                   {{-- Delete Exam Modal Code --}}
                                   {{-- Delete Exam Modal Code --}}
