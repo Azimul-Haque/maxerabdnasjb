@@ -50,7 +50,7 @@ class ExamController extends Controller
         $topic->save();
 
         Session::flash('success', 'Topic created successfully!');
-        return redirect()->route('dashboard.questions');
+        return redirect()->route('dashboard.exams');
     }
 
     public function updateExamCategory(Request $request, $id)
@@ -59,12 +59,12 @@ class ExamController extends Controller
             'name' => 'required|string|max:191',
         ));
 
-        $topic = Topic::find($id);;
-        $topic->name = $request->name;
-        $topic->save();
+        $category = Examcategory::find($id);;
+        $category->name = $request->name;
+        $category->save();
 
-        Session::flash('success', 'Topic updated successfully!');
-        return redirect()->route('dashboard.questions');
+        Session::flash('success', 'Category updated successfully!');
+        return redirect()->route('dashboard.exams');
     }
 
     public function deleteQuestionsTopic($id)
@@ -73,7 +73,7 @@ class ExamController extends Controller
         $topic->delete();
 
         Session::flash('success', 'Topic deleted successfully!');
-        return redirect()->route('dashboard.questions');
+        return redirect()->route('dashboard.exams');
     }
 
     public function storeExam(Request $request)
@@ -121,7 +121,7 @@ class ExamController extends Controller
         }
 
         Session::flash('success', 'Question created successfully!');
-        return redirect()->route('dashboard.questions');
+        return redirect()->route('dashboard.exams');
     }
 
     public function updateExam(Request $request, $id)
@@ -181,7 +181,7 @@ class ExamController extends Controller
         }
 
         Session::flash('success', 'Question updated successfully!');
-        return redirect()->route('dashboard.questions');
+        return redirect()->route('dashboard.exams');
     }
 
     public function deleteExam($id)
@@ -198,6 +198,6 @@ class ExamController extends Controller
         $question->delete();
 
         Session::flash('success', 'Question deleted successfully!');
-        return redirect()->route('dashboard.questions');
+        return redirect()->route('dashboard.exams');
     }
 }
