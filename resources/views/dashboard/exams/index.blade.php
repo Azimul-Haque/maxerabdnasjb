@@ -170,13 +170,13 @@
       format: 'MM dd, yyyy',
       todayHighlight: true,
       autoclose: true,
-      container:'#addExamModal',
+      container:'#editExamModal{{ $exam->id }}',
     });
     $("#available_to{{ $exam->id }}").datepicker({
       format: 'MM dd, yyyy',
       todayHighlight: true,
       autoclose: true,
-      container:'#addExamModal',
+      container:'#editExamModal{{ $exam->id }}',
     });
 </script>
                                       {{-- Edit Exam Modal Code --}}
