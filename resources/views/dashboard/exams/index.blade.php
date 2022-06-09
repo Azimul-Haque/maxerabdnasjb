@@ -210,7 +210,7 @@
                               </tr>
                           </thead>
                           <tbody>
-                          @foreach($categories as $category)
+                          @foreach($examcategories as $category)
                               <tr>
                                   <td>
                                       {{ $category->name }}<br/>
