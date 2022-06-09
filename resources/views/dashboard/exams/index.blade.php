@@ -25,7 +25,7 @@
                       <table class="table">
                           <thead>
                               <tr>
-                                  <th>Question</th>
+                                  <th>পরীক্ষা</th>
                                   <th>Answer</th>
                                   <th>Options</th>
                                   <th>Action</th>
