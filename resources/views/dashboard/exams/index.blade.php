@@ -359,6 +359,14 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-6">
+                            <div class="input-group mb-3">
+                                <input type="number" name="negativepercentage" value="{{ old('negativepercentage') }}" min="0" class="form-control" placeholder="প্রতি প্রশ্নের মান" required>
+                                <div class="input-group-append">
+                                    <div class="input-group-text"><span class="fas fa-sort-amount-up-alt"></span></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     
                     
