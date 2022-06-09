@@ -53,8 +53,8 @@
                                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editQuestionModal{{ $exam->id }}">
                                           <i class="far fa-edit"></i>
                                       </button>
-                                      {{-- Edit Question Modal Code --}}
-                                      {{-- Edit Question Modal Code --}}
+                                      {{-- Edit Exam Modal Code --}}
+                                      {{-- Edit Exam Modal Code --}}
                                       <!-- Modal -->
                                       <div class="modal fade" id="editQuestionModal{{ $exam->id }}" tabindex="-1" role="dialog" aria-labelledby="editQuestionModalLabel" aria-hidden="true" data-backdrop="static">
                                           <div class="modal-dialog modal-lg" role="document">
@@ -148,8 +148,8 @@
                                           </div>
                                           </div>
                                       </div>
-                                      {{-- Edit Question Modal Code --}}
-                                      {{-- Edit Question Modal Code --}}
+                                      {{-- Edit Exam Modal Code --}}
+                                      {{-- Edit Exam Modal Code --}}
           
                                       <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteQuestionModal{{ $exam->id }}">
                                           <i class="far fa-trash-alt"></i>
