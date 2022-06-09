@@ -42,7 +42,7 @@
                                   </td>
                                   <td>{{ $exam->duration }} মিনিট</td>
                                   <td>{{ $exam->qsweight }} (-{{ $exam->negativepercentage / 100 }} প্রতি ভুলের জন্য)</td>
-                                  <td>{{ date('F d, Y', strtotime($exam->available_from)) }}, {{ $exam->option2 }}, {{ $exam->option3 }}</td>
+                                  <td>{{ date('F d, Y', strtotime($exam->available_from)) }} থেকে {{ date('F d, Y', strtotime($exam->available_to)) }}</td>
                                   {{-- <td>
                                       <div class="progress progress-xs">
                                           <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
