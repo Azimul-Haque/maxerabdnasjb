@@ -189,11 +189,11 @@
                                   {{-- Delete Exam Modal Code --}}
                                   {{-- Delete Exam Modal Code --}}
                                   <!-- Modal -->
-                                  <div class="modal fade" id="deleteQuestionModal{{ $exam->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteQuestionModalLabel" aria-hidden="true" data-backdrop="static">
+                                  <div class="modal fade" id="deleteQuestionModal{{ $exam->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteQuestionModalLabel{{ $exam->id }}" aria-hidden="true" data-backdrop="static">
                                       <div class="modal-dialog" role="document">
                                       <div class="modal-content">
                                           <div class="modal-header bg-danger">
-                                          <h5 class="modal-title" id="deleteQuestionModalLabel">প্রশ্ন ডিলেট</h5>
+                                          <h5 class="modal-title" id="deleteQuestionModalLabel{{ $exam->id }}">প্রশ্ন ডিলেট</h5>
                                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                               <span aria-hidden="true">&times;</span>
                                           </button>
