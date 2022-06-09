@@ -18,7 +18,6 @@ class CreateExamsTable extends Migration
             $table->integer('examcategory_id')->unsigned();
             $table->string('name');
             $table->string('duration');
-            $table->integer('total_questions');
             $table->string('qsweight', 10);
             $table->integer('negativepercentage');
             $table->integer('price_type');
