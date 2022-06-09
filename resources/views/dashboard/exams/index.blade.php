@@ -126,8 +126,8 @@
                                                             <div class="input-group mb-3">
                                                                 <select name="price_type" class="form-control" required>
                                                                     <option selected="" disabled="" value="">মূল্য</option>
-                                                                    <option value="0" @if($exam->price_type == $category->id) selected @endif>ফ্রি</option>
-                                                                    <option value="1">পেইড</option>
+                                                                    <option value="0" @if($exam->price_type == 0) selected @endif>ফ্রি</option>
+                                                                    <option value="1" @if($exam->price_type == 1) selected @endif>পেইড</option>
                                                                 </select>
                                                                 <div class="input-group-append">
                                                                     <div class="input-group-text"><span class="fas fa-hand-holding-usd"></span></div>
