@@ -161,6 +161,6 @@ class ExamController extends Controller
         // $question->delete();
 
         // Session::flash('success', 'Question deleted successfully!');
-        return redirect()->route('dashboard.exams.addquestion');
+        return view('dashboard.exams.addquestion');
     }
 }
