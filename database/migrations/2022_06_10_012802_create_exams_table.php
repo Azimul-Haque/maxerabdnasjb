@@ -20,6 +20,7 @@ class CreateExamsTable extends Migration
             $table->string('duration');
             $table->integer('total_questions');
             $table->string('qsweight', 10);
+            $table->integer('negativepercentage');
             $table->integer('price_type');
             $table->timestamps();
         });
