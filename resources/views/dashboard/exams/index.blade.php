@@ -36,7 +36,7 @@
                               <tr>
                                   <td>
                                       {{ $exam->question }}<br/>
-                                      <span class="badge bg-success">{{ $exam->topic->name }}</span>
+                                      <span class="badge bg-success">{{ $exam->category->name }}</span>
                                       <span class="badge bg-info">{{ $exam->difficulty == 1 ? 'সহজ' : ($exam->difficulty == 2 ? 'মধ্যম' : 'কঠিন') }}</span>
                                   </td>
                                   <td>{{ $exam->answer }}</td>
