@@ -380,48 +380,6 @@
                             </div>
                         </div>
                     </div>
-                    
-                    
-                    <div class="row">
-                        <div class="col-md-4">
-                            <input type="text" name="option1" value="{{ old('option1') }}" class="form-control mb-3" placeholder="অপশন ১" required>
-                        </div>
-                        <div class="col-md-4">
-                            <input type="text" name="option2" value="{{ old('option2') }}" class="form-control mb-3" placeholder="অপশন ২" required>
-                        </div>
-                        <div class="col-md-4">
-                            <input type="text" name="option3" value="{{ old('option3') }}" class="form-control mb-3" placeholder="অপশন ৩" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="input-group mb-3">
-                                <select name="difficulty" class="form-control" required>
-                                    <option selected="" disabled="" value="">ডিফিকাল্টি লেভেল</option>
-                                    <option value="1">সহজ</option>
-                                    <option value="2">মধ্যম</option>
-                                    <option value="3">কঠিন</option>
-                                </select>
-                                <div class="input-group-append">
-                                    <div class="input-group-text"><span class="fas fa-star-half-alt"></span></div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-6">
-                            <div class="form-group ">
-                                <label for="image">ছবি (প্রয়োজনে)</label>
-                                <input type="file" id="image" name="image" accept="image/*">
-                            </div>
-                            <center>
-                                <img src="{{ asset('images/placeholder.png')}}" id='img-upload' style="width: 250px; height: auto;" class="img-responsive" />
-                            </center>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="explanation">ব্যাখ্যা (প্রয়োজনে)</label><br/>
-                            <textarea class="form-control summernote" name="explanation" id="explanation" placeholder="ব্যাখ্যা" style="width: 100%; height: 220px;"></textarea>
-                        </div>
-                    </div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
