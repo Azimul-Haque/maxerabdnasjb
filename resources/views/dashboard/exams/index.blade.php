@@ -353,7 +353,7 @@
                         <div class="col-md-6">
                             <div class="input-group mb-3">
                                 <select name="topic_id" class="form-control" required>
-                                    <option selected="" disabled="" value="">টপিক (বিষয়)</option>
+                                    <option selected="" disabled="" value="">পরীক্ষার ক্যাটাগরি</option>
                                     @foreach ($examcategories as $category)
                                         <option value="{{ $category->id }}">{{ $category->name }}</option>
                                     @endforeach
