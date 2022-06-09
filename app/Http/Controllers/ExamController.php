@@ -137,7 +137,7 @@ class ExamController extends Controller
 
     public function deleteExam($id)
     {
-        $exam = Exam::find($id);
+        $exam = Exam::findOrFail($id);
         // kaaj ache aro
         // kaaj ache aro
         // kaaj ache aro
@@ -149,6 +149,7 @@ class ExamController extends Controller
 
     public function addQuestionToExam($id)
     {
+        $exam = Exam::findOrFail($id);
         // $question = Question::find($id);
         // if($question->questionimage) {
         //     $image_path = public_path('images/questions/'. $question->questionimage->image);
@@ -161,6 +162,6 @@ class ExamController extends Controller
         // $question->delete();
 
         // Session::flash('success', 'Question deleted successfully!');
-        return view('dashboard.exams.addquestion');
+        return view('dashboard.exams.addquestion')->withExam($exam);
     }
 }
