@@ -165,13 +165,13 @@
                                           </div>
                                       </div>
 <script>
-    $("#available_from{{ $exam->id }").datepicker({
+    $("#available_from{{ $exam->id }}").datepicker({
       format: 'MM dd, yyyy',
       todayHighlight: true,
       autoclose: true,
       container:'#addExamModal',
     });
-    $("#available_to{{ $exam->id }").datepicker({
+    $("#available_to{{ $exam->id }}").datepicker({
       format: 'MM dd, yyyy',
       todayHighlight: true,
       autoclose: true,
