@@ -156,6 +156,10 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script>
     $(document).ready(function () {
+        $('#datatable').DataTable();
+    });
+    $(document).ready(function () {
+        
       $("#datatable").DataTable({
         "responsive": true, "lengthChange": false, "autoWidth": false,
         "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
