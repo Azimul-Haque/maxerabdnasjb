@@ -174,8 +174,9 @@
         "responsive": true, "lengthChange": true, "autoWidth": false, info: false, "pageLength": 10,
         "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
     });
-    
-    function checkboxquestion(id) {
+
+    $(document).ready(function(){
+        function checkboxquestion(id) {
         console.log("hi");
         if($(this).is(':checked')){
             var hiddencheckarray = $('#hiddencheckarray').val();
@@ -197,6 +198,9 @@
             // $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + array.length);
         }
     }
+    });
+    
+    
   </script>
 
 @endsection
