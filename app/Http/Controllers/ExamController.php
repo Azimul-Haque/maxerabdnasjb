@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Exam;
 use App\Examcategory;
+use App\Examquestion;
 use App\Question;
 
 use Carbon\Carbon;
@@ -151,6 +152,7 @@ class ExamController extends Controller
     public function addQuestionToExam($id)
     {
         $exam = Exam::findOrFail($id);
+        $examquestions = Examquestion::all();
         $questions = Question::all();
         
         return view('dashboard.exams.addquestion')
