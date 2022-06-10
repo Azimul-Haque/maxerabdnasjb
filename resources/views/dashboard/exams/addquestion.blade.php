@@ -177,27 +177,27 @@
 
     $(document).ready(function(){
         function checkboxquestion(id) {
-        console.log("hi");
-        if($(this).is(':checked')){
-            var hiddencheckarray = $('#hiddencheckarray').val();
-            console.log(hiddencheckarray);
-            var updatedvalue = hiddencheckarray + (!hiddencheckarray ? '' : ', ') + id;
-            $('#hiddencheckarray').val(updatedvalue);
-            console.log(updatedvalue);
-            var array = updatedvalue.split(',');
-            $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + array.length);
-        } else if($(this).is('not:checked')){
-            var hiddencheckarray = $('#hiddencheckarray').val();
-            var array = hiddencheckarray.split(',');
-            var updatedarray = _.without(array, id);
-            console.log(updatedarray);
-            // var updatedvalue = hiddencheckarray + (!hiddencheckarray ? '' : ', ') + id;
-            // $('#hiddencheckarray').val(updatedvalue);
-            // console.log(updatedvalue);
-            
-            // $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + array.length);
+            console.log("hi");
+            if($(this).is(':checked')){
+                var hiddencheckarray = $('#hiddencheckarray').val();
+                console.log(hiddencheckarray);
+                var updatedvalue = hiddencheckarray + (!hiddencheckarray ? '' : ', ') + id;
+                $('#hiddencheckarray').val(updatedvalue);
+                console.log(updatedvalue);
+                var array = updatedvalue.split(',');
+                $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + array.length);
+            } else if($(this).is('not:checked')){
+                var hiddencheckarray = $('#hiddencheckarray').val();
+                var array = hiddencheckarray.split(',');
+                var updatedarray = _.without(array, id);
+                console.log(updatedarray);
+                // var updatedvalue = hiddencheckarray + (!hiddencheckarray ? '' : ', ') + id;
+                // $('#hiddencheckarray').val(updatedvalue);
+                // console.log(updatedvalue);
+                
+                // $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + array.length);
+            }
         }
-    }
     });
     
     
