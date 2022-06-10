@@ -174,6 +174,9 @@
     });
     
     checkboxquestion(id) {
+        var arr = $('input[name="hiddencheckarray[]"]').map(function () {
+            return this.value; // $(this).val()
+        }).get();
         $('hiddencheckarray').val();
     }
   </script>
