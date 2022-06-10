@@ -129,7 +129,12 @@
                             <tbody>
                                 @foreach ($questions as $question)
                                 <tr>
-                                    <td></td>
+                                    <td>
+                                        <div class="icheck-primary icheck-inline" style="float: left;">
+                                            <input type="checkbox" id="chb{{ $user->mobile }}{{ $site->id }}" name="sitecheck[]" value="{{ $site->id }}" @if(in_array($site->id, explode(',', $user->sites))) checked="" @endif />
+                                            <label for="chb{{ $user->mobile }}{{ $site->id }}">{{ $site->name }}</label>
+                                        </div>
+                                    </td>
                                     <td>{{ $question->question }}</td>
                                     <td>{{ $question->answer }}</td>
                                 </tr>
