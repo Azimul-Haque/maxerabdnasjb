@@ -188,7 +188,7 @@
             console.log("ekhane");
             var hiddencheckarray = $('#hiddencheckarray').val();
             var array = hiddencheckarray.split(',');
-            var updatedarray = _.without(array, id);
+            var updatedarray = _..without(array, id);
             console.log(updatedarray);
             // var updatedvalue = hiddencheckarray + (!hiddencheckarray ? '' : ', ') + id;
             // $('#hiddencheckarray').val(updatedvalue);
