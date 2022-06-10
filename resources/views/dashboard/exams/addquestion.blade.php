@@ -135,7 +135,6 @@
                                             <input type="checkbox" id="check{{ $question->id }}" name="questioncheck[]" value="{{ $site->id }}" 
                                             {{-- @if(in_array($site->id, explode(',', $user->sites))) checked="" @endif --}}
                                             />
-                                            <label for="chb{{ $user->mobile }}{{ $site->id }}">{{ $site->name }}</label>
                                         </div>
                                     </td>
                                     <td>{{ $question->question }}</td>
