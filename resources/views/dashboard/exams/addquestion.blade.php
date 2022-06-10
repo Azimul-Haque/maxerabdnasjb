@@ -149,7 +149,6 @@
                                     </td>
                                     <td>{{ $question->answer }}</td>
                                 </tr>
-                                    
                                 @endforeach
                             </tbody>
                         </table>
