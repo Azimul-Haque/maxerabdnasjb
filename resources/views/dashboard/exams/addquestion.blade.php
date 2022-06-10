@@ -181,7 +181,7 @@
         console.log(updatedvalue);
         var array = updatedvalue.split(',');
         console.log(array.length);
-        ('#questionupdatingnumber').text(array.length);
+        ('#questionupdatingnumber').html(array.length);
     }
   </script>
 
