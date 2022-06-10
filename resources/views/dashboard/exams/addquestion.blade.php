@@ -21,7 +21,7 @@
           
                       <div class="card-tools">
                           <button type="button" class="btn btn-warning btn-sm"  data-toggle="modal" data-target="#addTopicModal">
-                              <i class="fas fa-plus-circle"></i> নতুন ক্যাটাগরি
+                              <i class="fas fa-plus-circle"></i> নতুন প্রশ্ন যোগ করুন
                           </button>
                       </div>
                     </div>
