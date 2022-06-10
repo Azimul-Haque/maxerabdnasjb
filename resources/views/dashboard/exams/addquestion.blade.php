@@ -190,9 +190,9 @@
             var uncheckedarray = hiddencheckarray.split(',');
             var updatedarray = _.without(uncheckedarray, id.toString());
             console.log(updatedarray);
-            // var updatedvalue = hiddencheckarray + (!hiddencheckarray ? '' : ', ') + id;
-            $('#hiddencheckarray').val(updatedvalue.toString());
-            // console.log(updatedvalue);
+            var newupdatedvalue = updatedvalue.toString();
+            $('#hiddencheckarray').val(newupdatedvalue);
+            console.log(newupdatedvalue);
             
             // $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + array.length);
         }
