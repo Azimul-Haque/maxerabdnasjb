@@ -249,7 +249,7 @@
                           @foreach($examcategories as $category)
                               <tr>
                                   <td>
-                                      {{ $category->name }}<br/>
+                                      {{ $category->name }}
                                   </td>
                               
                                   <td align="right" width="40%">
