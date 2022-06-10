@@ -135,7 +135,7 @@
                                 <tr>
                                     <td></td>
                                     <td>{{ $question->question }}</td>
-                                    <td>{{ $question->question }}</td>
+                                    <td>{{ $question->answer }}</td>
                                 </tr>
                                     
                                 @endforeach
