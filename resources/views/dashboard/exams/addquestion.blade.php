@@ -164,10 +164,13 @@
 <script type="text/javascript" src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script>
-      $("#datatablemodal").DataTable({
+    $("#datatablemodal").DataTable({
         "responsive": true, "lengthChange": true, "autoWidth": false, info: false, "pageLength": 10,
         "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
-      });
+    });
+    $('#form').on('submit', function(){
+        $('#datatablemodal').DataTable().search('').draw(false);
+    });
     //   $('#datatablemodal222').DataTable({
     //     "paging": true,
     //     "lengthChange": false,
