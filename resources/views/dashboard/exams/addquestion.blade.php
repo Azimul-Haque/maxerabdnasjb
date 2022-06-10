@@ -99,7 +99,7 @@
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body p-0">
-                      
+                      বিষয়ভিত্তিক মান বণ্টন
                     </div>
                     <!-- /.card-body -->
                   </div>   
