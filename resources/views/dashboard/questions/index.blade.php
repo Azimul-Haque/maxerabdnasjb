@@ -379,6 +379,9 @@
                         <div class="col-md-4">
                             <input type="text" name="option3" value="{{ old('option3') }}" class="form-control mb-3" placeholder="অপশন ৩" required>
                         </div>
+                        <div class="col-md-4">
+                            <input type="text" name="option4" value="{{ old('option4') }}" class="form-control mb-3" placeholder="অপশন ৪" required>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
