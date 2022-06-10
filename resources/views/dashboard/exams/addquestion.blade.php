@@ -171,10 +171,10 @@
     });
     
     function checkboxquestion(id) {
-        var hiddencheckarray = $('#hiddencheckarray').val();
-        $("#hiddencheckarray").append($("<li>").text(additem));
-        $(".Additem").text(($(".Additem").text() + ', ' + additem).replace(/^, /, ''));
-        $('hiddencheckarray').val(hiddencheckarray);
+        var arr = $('#hiddencheckarray').val();
+        console.log(arr);
+        arr.push(id);
+        $('#hiddencheckarray').val(arr);
     }
   </script>
 
