@@ -90,10 +90,10 @@
                                                         <div class="input-group mb-3">
                                                             <select name="answer" class="form-control" required>
                                                                 <option selected="" disabled="" value="">সঠিক উত্তর</option>
-                                                                <option value="1" @if($question->answer = 1) selected @endif>অপশন ১</option>
-                                                                <option value="2" @if($question->answer = 2) selected @endif>অপশন ২</option>
-                                                                <option value="3" @if($question->answer = 3) selected @endif>অপশন ৩</option>
-                                                                <option value="4" @if($question->answer = 4) selected @endif>অপশন ৪</option>
+                                                                <option value="1" @if($question->answer == 1) selected @endif>অপশন ১</option>
+                                                                <option value="2" @if($question->answer == 2) selected @endif>অপশন ২</option>
+                                                                <option value="3" @if($question->answer == 3) selected @endif>অপশন ৩</option>
+                                                                <option value="4" @if($question->answer == 4) selected @endif>অপশন ৪</option>
                                                             </select>
                                                             <div class="input-group-append">
                                                                 <div class="input-group-text"><span class="far fa-check-circle"></span></div>
@@ -105,9 +105,9 @@
                                                               <div class="input-group mb-3">
                                                                   <select name="difficulty" class="form-control" required>
                                                                       <option selected="" disabled="" value="">ডিফিকাল্টি লেভেল</option>
-                                                                      <option value="1" @if($question->difficulty = 1) selected @endif>সহজ</option>
-                                                                      <option value="2" @if($question->difficulty = 2) selected @endif>মধ্যম</option>
-                                                                      <option value="3" @if($question->difficulty = 3) selected @endif>কঠিন</option>
+                                                                      <option value="1" @if($question->difficulty == 1) selected @endif>সহজ</option>
+                                                                      <option value="2" @if($question->difficulty == 2) selected @endif>মধ্যম</option>
+                                                                      <option value="3" @if($question->difficulty == 3) selected @endif>কঠিন</option>
                                                                   </select>
                                                                   <div class="input-group-append">
                                                                       <div class="input-group-text"><span class="fas fa-star-half-alt"></span></div>
