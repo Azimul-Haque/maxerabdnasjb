@@ -175,13 +175,24 @@
     });
     
     function checkboxquestion(id) {
-        var hiddencheckarray = $('#hiddencheckarray').val();
-        // console.log(hiddencheckarray);
-        var updatedvalue = hiddencheckarray + (!hiddencheckarray ? '' : ', ') + id;
-        $('#hiddencheckarray').val(updatedvalue);
-        console.log(updatedvalue);
-        var array = updatedvalue.split(',');
-        $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + array.length);
+        if($(this).prop("checked") == true){
+            var hiddencheckarray = $('#hiddencheckarray').val();
+            // console.log(hiddencheckarray);
+            var updatedvalue = hiddencheckarray + (!hiddencheckarray ? '' : ', ') + id;
+            $('#hiddencheckarray').val(updatedvalue);
+            console.log(updatedvalue);
+            var array = updatedvalue.split(',');
+            $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + array.length);
+        }
+        else if($(this).prop("checked") == false){
+            var hiddencheckarray = $('#hiddencheckarray').val();
+            // console.log(hiddencheckarray);
+            var updatedvalue = hiddencheckarray + (!hiddencheckarray ? '' : ', ') + id;
+            $('#hiddencheckarray').val(updatedvalue);
+            console.log(updatedvalue);
+            var array = updatedvalue.split(',');
+            $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + array.length);
+        }
     }
   </script>
 
