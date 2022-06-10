@@ -156,9 +156,7 @@
 <script type="text/javascript" src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script>
-    $(document).ready( function () {
-        $('#myTable').DataTable();
-    } );
+    $('#myTable').DataTable();
     // $(document).ready(function () {
     //   $("#datatable").DataTable({
     //     "responsive": true, "lengthChange": false, "autoWidth": false,
