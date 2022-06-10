@@ -12,7 +12,7 @@
             <div class="col-md-9">
                 <div class="card">
                     <div class="card-header">
-                      <h3 class="card-title">প্রশ্নব্যাংক</h3>
+                      <h3 class="card-title">প্রশ্নব্যাংক (মোটঃ {{ $totalquestions }})</h3>
           
                       <div class="card-tools">
                           <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addQuesitonModal">
