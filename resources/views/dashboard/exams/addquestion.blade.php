@@ -177,7 +177,7 @@
         $('#hiddencheckarray').val(updatedvalue);
         console.log(updatedvalue);
         var array = updatedvalue.split(',');
-        console.log(array);
+        console.log(array.length);
     }
   </script>
 
