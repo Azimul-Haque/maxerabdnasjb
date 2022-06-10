@@ -122,7 +122,7 @@
                 <form method="post" id="addquestionform" action="{{ route('dashboard.exams.question.store') }}">
                     <div class="modal-body">
                         @csrf
-                        <input type="hidden" name="exam_id" value="{{ $exam->name }}">
+                        <input type="hidden" name="exam_id" value="{{ $exam->id }}">
                         <input type="hidden" id="hiddencheckarray" name="hiddencheckarray">
                         <table class="table table-condensed" id="datatablemodal">
                             <thead>
@@ -179,7 +179,7 @@
         // console.log(hiddencheckarray);
         var updatedvalue = hiddencheckarray + (!hiddencheckarray ? '' : ', ') + id;
         $('#hiddencheckarray').val(updatedvalue);
-        // console.log(updatedvalue);
+        console.log(updatedvalue);
         var array = updatedvalue.split(',');
         $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + array.length);
     }
