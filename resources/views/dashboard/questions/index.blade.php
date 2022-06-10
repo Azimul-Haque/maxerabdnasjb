@@ -387,7 +387,7 @@
                                 <option value="৪">অপশন ৪</option>
                             </select>
                             <div class="input-group-append">
-                                <div class="input-group-text"><span class="fas fa-star-half-alt"></span></div>
+                                <div class="input-group-text"><span class="far fa-check-circle"></span></div>
                             </div>
                         </div>
                     </div>
