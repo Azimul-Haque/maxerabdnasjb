@@ -159,7 +159,7 @@
       $("#datatablemodal").DataTable({
         "responsive": true, "lengthChange": false, "autoWidth": true,
         "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
-      }).buttons().container().appendTo('#datatablemodal_wrapper .col-md-6:eq(0)');
+      });
     //   $('#datatablemodal222').DataTable({
     //     "paging": true,
     //     "lengthChange": false,
