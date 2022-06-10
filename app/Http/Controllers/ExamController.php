@@ -177,8 +177,8 @@ class ExamController extends Controller
             $examquestion->question_id = $question_id;
             $examquestion->save();
         }
-        
-        Session::flash('success', 'Topic created successfully!');
+
+        Session::flash('success', 'Question updated successfully!');
         return redirect()->route('dashboard.exams');
     }
 }
