@@ -23,7 +23,7 @@
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body p-0">
-                      <table class="table" id="example111">
+                      <table class="table" id="datatable">
                           <thead>
                               <tr>
                                   <th>প্রশ্ন</th>
@@ -157,7 +157,7 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script>
     $(document).ready(function () {
-        $('#example111').DataTable();
+        $('#datatable').DataTable();
     });
     // $(document).ready(function () {
     //   $("#datatable").DataTable({
