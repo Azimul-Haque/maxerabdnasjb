@@ -171,11 +171,7 @@
     });
     
     function checkboxquestion(id) {
-        var arr = $('#hiddencheckarray').map(function () {
-            return this.value; // $(this)
-        }).get();
-        console.log(arr);
-        arr.push(id);
+        var hiddencheckarray = $('#hiddencheckarray').val();
         $('#hiddencheckarray').val(arr);
     }
   </script>
