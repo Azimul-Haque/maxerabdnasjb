@@ -167,7 +167,7 @@ class ExamController extends Controller
             'questioncheck'        => 'required',
         ));
 
-        dd($questioncheck);
+        dd($request->questioncheck);
         // $category = new Examcategory;
         // $category->name = $request->name;
         // $category->save();
