@@ -123,7 +123,7 @@
                     <div class="modal-body">
                         @csrf
                         @foreach ($questions as $question)
-                            
+                            {{ $question->question }}
                         @endforeach
                     </div>
                     <div class="modal-footer">
