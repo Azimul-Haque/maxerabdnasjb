@@ -8,7 +8,12 @@
 <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
 <link href="https://nightly.datatables.net/css/jquery.dataTables.css" rel="stylesheet" type="text/css" />
 <script src="https://nightly.datatables.net/js/jquery.dataTables.js"></script>
+<script>
+    $(document).ready( function () {
+      var table = $('#example').DataTable();
+    } );
 
+</script>
 @endsection
 
 @section('content')
@@ -28,7 +33,7 @@
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body p-0">
-                      <table class="table" id="myTable">
+                      <table class="table" id="example">
                           <thead>
                               <tr>
                                   <th>প্রশ্ন</th>
