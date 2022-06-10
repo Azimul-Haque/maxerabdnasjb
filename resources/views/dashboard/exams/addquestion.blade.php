@@ -179,7 +179,7 @@
         if($('#check' + id)[0].checked){
             var hiddencheckarray = $('#hiddencheckarray').val();
             // console.log(hiddencheckarray);
-            var updatedvalue = hiddencheckarray + (!hiddencheckarray ? '' : ', ') + id;
+            var updatedvalue = hiddencheckarray + (!hiddencheckarray ? '' : ',') + id;
             $('#hiddencheckarray').val(updatedvalue);
             console.log(updatedvalue);
             var array = updatedvalue.split(',');
@@ -188,7 +188,7 @@
             console.log("ekhane");
             var hiddencheckarray = $('#hiddencheckarray').val();
             var uncheckedarray = hiddencheckarray.split(',');
-            var updatedarray = _.without(uncheckedarray, 2);
+            var updatedarray = _.without(uncheckedarray, id);
             console.log(updatedarray);
             // var updatedvalue = hiddencheckarray + (!hiddencheckarray ? '' : ', ') + id;
             // $('#hiddencheckarray').val(updatedvalue);
