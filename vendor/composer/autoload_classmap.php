@@ -13,6 +13,7 @@ return array(
     'App\\Due' => $baseDir . '/app/Due.php',
     'App\\Exam' => $baseDir . '/app/Exam.php',
     'App\\Examcategory' => $baseDir . '/app/Examcategory.php',
+    'App\\Examquestion' => $baseDir . '/app/Examquestion.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Expense' => $baseDir . '/app/Expense.php',
     'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
