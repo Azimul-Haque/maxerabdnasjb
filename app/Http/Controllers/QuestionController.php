@@ -94,31 +94,31 @@ class QuestionController extends Controller
             'explanation' => 'sometimes|max:2048',
         ));
 
-        $question = new Question;
-        $question->topic_id = $request->topic_id;
-        $question->question = $request->question;
-        $question->option1 = $request->option1;
-        $question->option2 = $request->option2;
-        $question->option3 = $request->option3;
-        $question->option4 = $request->option4;
-        $question->answer = $request->answer;
+        $question             = new Question;
+        $question->topic_id   = $request->topic_id;
+        $question->question   = $request->question;
+        $question->option1    = $request->option1;
+        $question->option2    = $request->option2;
+        $question->option3    = $request->option3;
+        $question->option4    = $request->option4;
+        $question->answer     = $request->answer;
         $question->difficulty = $request->difficulty;
         $question->save();
 
         // image upload
         if($request->hasFile('image')) {
-            $image      = $request->file('image');
-            $filename   = random_string(5) . time() .'.' . "webp";
-            $location   = public_path('images/questions/'. $filename);
+            $image    = $request->file('image');
+            $filename = random_string(5) . time() .'.' . "webp";
+            $location = public_path('images/questions/'. $filename);
             Image::make($image)->resize(350, null, function ($constraint) { $constraint->aspectRatio(); })->save($location);
-            $questionimage = new Questionimage;
+            $questionimage              = new Questionimage;
             $questionimage->question_id = $question->id;
-            $questionimage->image = $filename;
+            $questionimage->image       = $filename;
             $questionimage->save();
         }
 
         if($request->explanation) {
-            $questionexplanation = new Questionexplanation;
+            $questionexplanation              = new Questionexplanation;
             $questionexplanation->question_id = $question->id;
             $questionexplanation->explanation = $request->explanation;
             $questionexplanation->save();
@@ -144,14 +144,14 @@ class QuestionController extends Controller
             'explanation' => 'sometimes|max:2048',
         ));
 
-        $question = Question::findOrFail($id);
-        $question->topic_id = $request->topic_id;
-        $question->question = $request->question;
-        $question->option1 = $request->option1;
-        $question->option2 = $request->option2;
-        $question->option3 = $request->option3;
-        $question->option4 = $request->option4;
-        $question->answer = $request->answer;
+        $question             = Question::findOrFail($id);
+        $question->topic_id   = $request->topic_id;
+        $question->question   = $request->question;
+        $question->option1    = $request->option1;
+        $question->option2    = $request->option2;
+        $question->option3    = $request->option3;
+        $question->option4    = $request->option4;
+        $question->answer     = $request->answer;
         $question->difficulty = $request->difficulty;
         $question->save();
 
