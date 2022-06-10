@@ -43,47 +43,11 @@
                                   </td>
                               
                                   <td align="right" width="40%">
-                                      <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editCategoryModal{{ $category->id }}">
+                                      <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editCategoryModal{{ $examquestion->id }}">
                                           <i class="far fa-edit"></i>
                                       </button>
-                                      {{-- Edit Category Modal Code --}}
-                                      {{-- Edit Category Modal Code --}}
-                                      <!-- Modal -->
-                                      <div class="modal fade" id="editCategoryModal{{ $category->id }}" tabindex="-1" role="dialog" aria-labelledby="editCategoryModalLabel" aria-hidden="true" data-backdrop="static">
-                                          <div class="modal-dialog" role="document">
-                                          <div class="modal-content">
-                                              <div class="modal-header bg-warning">
-                                              <h5 class="modal-title" id="editCategoryModalLabel">ক্যাটাগরি হালনাগাদ</h5>
-                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                  <span aria-hidden="true">&times;</span>
-                                              </button>
-                                              </div>
-                                              <form method="post" action="{{ route('dashboard.exams.category.update', $category->id) }}">
-                                                  <div class="modal-body">
-                                                      @csrf
-                                                      <div class="input-group mb-3">
-                                                          <input type="text"
-                                                                  name="name"
-                                                                  class="form-control"
-                                                                  value="{{ $category->name }}"
-                                                                  placeholder="নাম" required>
-                                                          <div class="input-group-append">
-                                                              <div class="input-group-text"><span class="far fa-bookmark"></span></div>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                                  <div class="modal-footer">
-                                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-                                                  <button type="submit" class="btn btn-warning">দাখিল করুন</button>
-                                                  </div>
-                                              </form>
-                                          </div>
-                                          </div>
-                                      </div>
-                                      {{-- Edit Category Modal Code --}}
-                                      {{-- Edit Category Modal Code --}}
           
-                                      <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteCategoryModal{{ $category->id }}" disabled>
+                                      <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteCategoryModal{{ $examquestion->id }}" disabled>
                                           <i class="far fa-trash-alt"></i>
                                       </button>
                                   </td>
