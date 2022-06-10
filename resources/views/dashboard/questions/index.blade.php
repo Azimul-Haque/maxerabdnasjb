@@ -93,7 +93,7 @@
                                                                 <option value="1" @if($question->answer = 1) selected @endif>অপশন ১</option>
                                                                 <option value="2" @if($question->answer = 2) selected @endif>অপশন ২</option>
                                                                 <option value="3" @if($question->answer = 3) selected @endif>অপশন ৩</option>
-                                                                <option value="৪" @if($question->answer = 4) selected @endif>অপশন ৪</option>
+                                                                <option value="4" @if($question->answer = 4) selected @endif>অপশন ৪</option>
                                                             </select>
                                                             <div class="input-group-append">
                                                                 <div class="input-group-text"><span class="far fa-check-circle"></span></div>
@@ -395,7 +395,7 @@
                                 <option value="1">অপশন ১</option>
                                 <option value="2">অপশন ২</option>
                                 <option value="3">অপশন ৩</option>
-                                <option value="৪">অপশন ৪</option>
+                                <option value="4">অপশন ৪</option>
                             </select>
                             <div class="input-group-append">
                                 <div class="input-group-text"><span class="far fa-check-circle"></span></div>
