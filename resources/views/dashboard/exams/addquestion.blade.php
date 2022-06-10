@@ -14,6 +14,11 @@
           background-color: #fff;
         }
     </style>
+    <script>
+        $(document).ready( function () {
+          var table = $('#example').DataTable();
+        } );
+    </script>
     <meta charset=utf-8 />
     <title>DataTables - JS Bin</title>
   </head>
