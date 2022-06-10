@@ -139,9 +139,6 @@
                     <!-- /.card-body -->
                   </div>   
             </div>
-            <div class="col-md-4">
-                B   
-            </div>
         </div>
     </div>
 @endsection
