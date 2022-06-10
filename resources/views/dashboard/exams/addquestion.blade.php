@@ -174,7 +174,7 @@
         var hiddencheckarray = $('#hiddencheckarray').val();
         var updatedvalue = !hiddencheckarray ? '' : ', ' + id;
         $('#hiddencheckarray').val(updatedvalue);
-        console.log($('#hiddencheckarray').val());
+        console.log($(updatedvalue);
     }
   </script>
 
