@@ -190,7 +190,7 @@
             var uncheckedarray = hiddencheckarray.split(',');
             var updatedarray = _.without(uncheckedarray, id.toString());
             console.log(updatedarray);
-            var newupdatedvalue = document.write(updatedvalue.join(","));
+            var newupdatedvalue = document.write(updatedvalue.join());
             $('#hiddencheckarray').val(newupdatedvalue);
             console.log(newupdatedvalue);
             
