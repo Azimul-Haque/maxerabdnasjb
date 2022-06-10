@@ -136,7 +136,7 @@
                                 @php
                                     $examquestionidarray = [];
                                     foreach ($examquestions as $examquestion) {
-                                        $examquestionidarray[] = $examquestion->question_id
+                                        $examquestionidarray[] = $examquestion->question_id;
                                     }
                                 @endphp
                                 @foreach ($questions as $question)
