@@ -5,7 +5,15 @@
 
     <link href="https://nightly.datatables.net/css/jquery.dataTables.css" rel="stylesheet" type="text/css" />
     <script src="https://nightly.datatables.net/js/jquery.dataTables.js"></script>
-
+    <style>
+        body {
+          font: 90%/1.45em "Helvetica Neue", HelveticaNeue, Verdana, Arial, Helvetica, sans-serif;
+          margin: 0;
+          padding: 0;
+          color: #333;
+          background-color: #fff;
+        }
+    </style>
     <meta charset=utf-8 />
     <title>DataTables - JS Bin</title>
   </head>
