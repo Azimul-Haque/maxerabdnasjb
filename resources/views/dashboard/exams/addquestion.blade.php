@@ -30,7 +30,7 @@
                       <table class="table">
                           <thead>
                               <tr>
-                                  <th>Category</th>
+                                  <th>প্রশ্ন</th>
                                   <th>Action</th>
                               </tr>
                           </thead>
