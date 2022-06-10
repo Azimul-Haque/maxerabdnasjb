@@ -39,6 +39,7 @@
                               <tr>
                                   <td>
                                       {{ $examquestion->question->question }}<br/>
+                                      <span class="badge bg-success">{{ $examquestion->question->topic->name }}</span>
                                   </td>
                               
                                   <td align="right" width="40%">
