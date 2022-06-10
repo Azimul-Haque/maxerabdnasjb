@@ -35,7 +35,7 @@
                               </tr>
                           </thead>
                           <tbody>
-                          @foreach($examcategories as $category)
+                          @foreach($examquestions as $examquestion)
                               <tr>
                                   <td>
                                       {{ $category->name }}<br/>

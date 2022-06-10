@@ -152,11 +152,12 @@ class ExamController extends Controller
     public function addQuestionToExam($id)
     {
         $exam = Exam::findOrFail($id);
-        $examquestions = Examquestion::where('exam_id', $exam->id)->get();
+        $examquestions = Examquestion::where('exam_id', $exam->id)->paginate(10);
         $questions = Question::all();
         
         return view('dashboard.exams.addquestion')
                                     ->withExam($exam)
+                                    ->withExamquestions($examquestions)
                                     ->withQuestions($questions);
     }
 }
