@@ -23,7 +23,7 @@
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body p-0">
-                      <table class="table" id="datatable">
+                      <table class="table" id="myTable">
                           <thead>
                               <tr>
                                   <th>প্রশ্ন</th>
@@ -156,9 +156,9 @@
 <script type="text/javascript" src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script>
-    $(document).ready(function () {
-        $('#datatable').DataTable();
-    });
+    $(document).ready( function () {
+        $('#myTable').DataTable();
+    } );
     // $(document).ready(function () {
     //   $("#datatable").DataTable({
     //     "responsive": true, "lengthChange": false, "autoWidth": false,
