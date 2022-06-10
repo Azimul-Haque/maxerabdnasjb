@@ -124,7 +124,12 @@
                         @csrf
                         @foreach ($questions as $question)
                             <table class="table">
-                                <thead></thead>
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>প্রশ্ন</th>
+                                    </tr>
+                                </thead>
                             </table>
                             {{ $question->question }}
                         @endforeach
