@@ -40,7 +40,7 @@
                                       <span class="badge bg-info">{{ $question->difficulty == 1 ? 'সহজ' : ($question->difficulty == 2 ? 'মধ্যম' : 'কঠিন') }}</span>
                                   </td>
                                   <td>{{ $question->answer }}</td>
-                                  <td>{{ $question->option1 }}, {{ $question->option2 }}, {{ $question->option3 }}</td>
+                                  <td>{{ $question->option1 }}, {{ $question->option2 }}, {{ $question->option3 }}, {{ $question->option4 }}</td>
                                   {{-- <td>
                                       <div class="progress progress-xs">
                                           <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
