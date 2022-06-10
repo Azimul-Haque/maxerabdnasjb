@@ -188,12 +188,12 @@
             var hiddencheckarray = $('#hiddencheckarray').val();
             var array = hiddencheckarray.split(',');
             var updatedarray = _.without(array, id);
-            // console.log(hiddencheckarray);
-            var updatedvalue = hiddencheckarray + (!hiddencheckarray ? '' : ', ') + id;
-            $('#hiddencheckarray').val(updatedvalue);
-            console.log(updatedvalue);
+            console.log(updatedarray);
+            // var updatedvalue = hiddencheckarray + (!hiddencheckarray ? '' : ', ') + id;
+            // $('#hiddencheckarray').val(updatedvalue);
+            // console.log(updatedvalue);
             
-            $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + array.length);
+            // $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + array.length);
         }
     }
   </script>
