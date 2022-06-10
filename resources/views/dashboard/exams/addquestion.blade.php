@@ -122,18 +122,26 @@
                 <form method="post" action="{{ route('dashboard.exams.category.store') }}">
                     <div class="modal-body">
                         @csrf
-                        @foreach ($questions as $question)
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>#</th>
-                                        <th>প্রশ্ন</th>
-                                        <th>উত্তর</th>
-                                    </tr>
-                                </thead>
-                            </table>
-                            {{ $question->question }}
-                        @endforeach
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>প্রশ্ন</th>
+                                    <th>উত্তর</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach ($questions as $question)
+                                <tr>
+                                    <td></td>
+                                    <td>{{ $question->question }}</td>
+                                    <td>{{ $question->question }}</td>
+                                </tr>
+                                    
+                                @endforeach
+                            </tbody>
+                        </table>
+                        
                     </div>
                     <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
