@@ -132,10 +132,19 @@
                                 <tr>
                                     <td>
                                         <div class="icheck-primary icheck-inline" style="float: left;">
-                                            <input type="checkbox" id="check{{ $question->id }}" name="questioncheck[]" value="{{ $question->id }}" 
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox" id="check{{ $question->id }}" name="questioncheck[]" value="{{ $question->id }}" 
                                             {{-- @if(in_array($site->id, explode(',', $user->sites))) checked="" @endif --}}
                                             />
-                                            <label for="check{{ $question->id }}"> </label>
+                                           
+                                                    </td>
+                                                    <td>
+                                                        <label for="check{{ $question->id }}"> </label>
+                                                    </td>
+                                                </tr>
+                                            </table>
                                         </div>
                                     </td>
                                     <td>{{ $question->question }}</td>
