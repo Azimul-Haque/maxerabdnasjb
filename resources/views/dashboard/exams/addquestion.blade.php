@@ -185,6 +185,7 @@
             var array = updatedvalue.split(',');
             $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + array.length);
         } else {
+            console.log("ekhane");
             var hiddencheckarray = $('#hiddencheckarray').val();
             var array = hiddencheckarray.split(',');
             var updatedarray = _.without(array, id);
