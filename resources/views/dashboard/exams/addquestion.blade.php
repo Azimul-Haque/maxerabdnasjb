@@ -129,7 +129,7 @@
                                 <tr>
                                     <th>#</th>
                                     <th>প্রশ্ন</th>
-                                    <th>উত্তর</th>
+                                    <th>টপি ক</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -144,10 +144,9 @@
                                         </div>
                                     </td>
                                     <td>
-                                        {{ $question->question }}<br/>
-                                        <span class="badge bg-success">{{ $question->topic->name }}</span>
+                                        {{ $question->question }}
                                     </td>
-                                    <td>{{ $question->answer }}</td>
+                                    <td><span class="badge bg-success">{{ $question->topic->name }}</span></td>
                                 </tr>
                                 @endforeach
                             </tbody>
