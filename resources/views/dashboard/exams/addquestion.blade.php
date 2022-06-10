@@ -107,8 +107,8 @@
         </div>
     </div>
 
-    {{-- Add Category Modal Code --}}
-    {{-- Add Category Modal Code --}}
+    {{-- Add Exam Question Modal Code --}}
+    {{-- Add Exam Question Modal Code --}}
     <!-- Modal -->
     <div class="modal fade" id="addTopicModal" tabindex="-1" role="dialog" aria-labelledby="addTopicModalLabel" aria-hidden="true" data-backdrop="static">
         <div class="modal-dialog" role="document">
@@ -141,8 +141,8 @@
         </div>
         </div>
     </div>
-    {{-- Add Category Modal Code --}}
-    {{-- Add Category Modal Code --}}
+    {{-- Add Exam Question Modal Code --}}
+    {{-- Add Exam Question Modal Code --}}
 @endsection
 
 @section('third_party_scripts')
