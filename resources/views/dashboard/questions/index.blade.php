@@ -378,13 +378,9 @@
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" name="answer" value="{{ old('answer') }}" class="form-control" placeholder="সঠিক উত্তর" required>
-                        <div class="input-group-append">
-                            <div class="input-group-text"><span class="far fa-check-circle"></span></div>
-                        </div>
                         <div class="input-group mb-3">
                             <select name="answer" class="form-control" required>
-                                <option selected="" disabled="" value="">ডিফিকাল্টি লেভেল</option>
+                                <option selected="" disabled="" value="">সঠিক উত্তর</option>
                                 <option value="1">অপশন ১</option>
                                 <option value="2">অপশন ২</option>
                                 <option value="3">অপশন ৩</option>
