@@ -172,8 +172,7 @@
     
     function checkboxquestion(id) {
         var hiddencheckarray = $('#hiddencheckarray').val();
-        $("#list").append($("<li>").text(additem));
-        $(".Additem").text(($(".Additem").text() + ', ' + additem).replace(/^, /, ''));
+        !hiddencheckarray ? '' : 
         $('#hiddencheckarray').val(arr);
     }
   </script>
