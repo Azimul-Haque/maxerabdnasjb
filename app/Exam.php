@@ -10,7 +10,7 @@ class Exam extends Model
         return $this->belongsTo('App\Examcategory');
     }
 
-    public function exams(){
-        return $this->hasMany('App\Exam');
+    public function examquestions(){
+        return $this->hasMany('App\Examquestion');
     }
 }
