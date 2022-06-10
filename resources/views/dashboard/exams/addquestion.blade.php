@@ -178,6 +178,7 @@
             return this.value; // $(this).val()
         }).get();
         console.log(arr);
+        arr.push(4);
         $('hiddencheckarray').val();
     }
   </script>
