@@ -17,4 +17,8 @@ class Question extends Model
     public function questionimage(){
         return $this->hasOne('App\Questionimage');
     }
+
+    public function examquestion(){
+        return $this->hasOne('App\Examquestion');
+    }
 }
