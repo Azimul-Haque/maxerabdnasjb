@@ -177,7 +177,7 @@
 
     function checkboxquestion(id) {
         console.log("hi");
-        var status = $('#check' + id)[0].checked;
+        var status = $(this)[0].checked;
         console.log(status);
         if($(this).is(':checked')){
             var hiddencheckarray = $('#hiddencheckarray').val();
