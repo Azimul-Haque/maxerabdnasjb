@@ -129,7 +129,7 @@
                                 <tr>
                                     <th>#</th>
                                     <th>প্রশ্ন</th>
-                                    <th>টপি ক</th>
+                                    <th>টপিক</th>
                                 </tr>
                             </thead>
                             <tbody>
