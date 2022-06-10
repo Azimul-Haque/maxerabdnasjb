@@ -196,8 +196,7 @@
             };
             $('#hiddencheckarray').val(newupdatedvalue);
             console.log(newupdatedvalue);
-            
-            $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + array.length);
+            $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + updatedarray.length);
         }
     }
     
