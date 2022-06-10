@@ -157,8 +157,7 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script>
       $("#datatablemodal").DataTable({
-        "responsive": true, "lengthChange": false, "autoWidth": true,
-        "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+        
       });
     //   $('#datatablemodal222').DataTable({
     //     "paging": true,
