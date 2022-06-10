@@ -100,7 +100,7 @@ class QuestionController extends Controller
         $question->option1 = $request->option1;
         $question->option2 = $request->option2;
         $question->option3 = $request->option3;
-        $question->option4 = $request->option3;
+        $question->option4 = $request->option4;
         $question->answer = $request->answer;
         $question->difficulty = $request->difficulty;
         $question->save();
@@ -134,10 +134,11 @@ class QuestionController extends Controller
         $this->validate($request,array(
             'topic_id'    => 'required|string|max:191',
             'question'    => 'required|string|max:191',
-            'answer'      => 'required|string|max:191',
             'option1'     => 'required|string|max:191',
             'option2'     => 'required|string|max:191',
             'option3'     => 'required|string|max:191',
+            'option4'     => 'required|string|max:191',
+            'answer'      => 'required',
             'difficulty'  => 'required|string|max:191',
             'image'       => 'sometimes|image|mimes:jpeg,png,jpg,gif,svg,webp|max:3000',
             'explanation' => 'sometimes|max:2048',
@@ -149,7 +150,7 @@ class QuestionController extends Controller
         $question->option1 = $request->option1;
         $question->option2 = $request->option2;
         $question->option3 = $request->option3;
-        $question->option4 = $request->option3;
+        $question->option4 = $request->option4;
         $question->answer = $request->answer;
         $question->difficulty = $request->difficulty;
         $question->save();
