@@ -170,7 +170,7 @@
         "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
     });
     
-    checkboxquestion(id) {
+    function checkboxquestion(id) {
         var arr = $('input[name="hiddencheckarray[]"]').map(function () {
             return this.value; // $(this).val()
         }).get();
