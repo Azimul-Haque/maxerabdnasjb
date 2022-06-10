@@ -4,6 +4,7 @@
 @section('third_party_stylesheets')
 <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap4.min.css">
+<script type="text/javascript" src="https://adminlte.io/themes/v3/plugins/jquery/jquery.min.js"></script>
 @endsection
 
 @section('content')
@@ -152,7 +153,7 @@
 @endsection
 
 @section('third_party_scripts')
-<script type="text/javascript" src="https://adminlte.io/themes/v3/plugins/jquery/jquery.min.js"></script>
+
 <script type="text/javascript" src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script>
