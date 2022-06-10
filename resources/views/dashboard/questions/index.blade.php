@@ -88,6 +88,9 @@
                                                           <div class="col-md-4">
                                                               <input type="text" name="option3" value="{{ $question->option3 }}" class="form-control mb-3" placeholder="অপশন ৩" required>
                                                           </div>
+                                                          <div class="col-md-4">
+                                                              <input type="text" name="option4" value="{{ $question->option4 }}" class="form-control mb-3" placeholder="অপশন ৪" required>
+                                                          </div>
                                                       </div>
                                                       <div class="input-group mb-3">
                                                         <div class="input-group mb-3">
