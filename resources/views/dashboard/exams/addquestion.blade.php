@@ -58,13 +58,13 @@
                                       <div class="modal-dialog" role="document">
                                       <div class="modal-content">
                                           <div class="modal-header bg-danger">
-                                          <h5 class="modal-title" id="deleteCategoryModalLabel">ক্যাটাগরি ডিলেট</h5>
+                                          <h5 class="modal-title" id="deleteCategoryModalLabel">প্রশ্ন অপসারণ</h5>
                                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                               <span aria-hidden="true">&times;</span>
                                           </button>
                                           </div>
                                           <div class="modal-body">
-                                          আপনি কি নিশ্চিতভাবে এই ক্যাটাগরিটি ডিলেট করতে চান?<br/>
+                                          আপনি কি নিশ্চিতভাবে এই প্রশ্নটি অপসারণ করতে চান?<br/>
                                           <center>
                                               <big><b>{{ $examquestion->name }}</b></big><br/>
                                           </center>
