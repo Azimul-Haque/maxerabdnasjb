@@ -117,7 +117,7 @@
                 <form method="post" action="{{ route('dashboard.exams.category.store') }}">
                     <div class="modal-body">
                         @csrf
-                        <table class="table" id="datatable">
+                        <table class="table" id="">
                             <thead>
                                 <tr>
                                     <th>#</th>
