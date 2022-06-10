@@ -172,8 +172,8 @@
         $('#datatablemodal').DataTable().search('').draw(false);
     });
     
-    checkboxquestion() {
-
+    checkboxquestion(id) {
+        
     }
   </script>
 
