@@ -92,7 +92,7 @@
                       <h3 class="card-title">স্বয়ংক্রিয় প্রশ্ন প্রণয়ন</h3>
           
                       <div class="card-tools">
-                          <button type="button" class="btn btn-warning btn-sm"  data-toggle="modal" data-target="#addTopicModal">
+                          <button type="button" class="btn btn-warning btn-sm"  data-toggle="modal" data-target="#automaticQuestionSet">
                               <i class="fas fa-plus-circle"></i> প্রশ্ন প্রণয়ন
                           </button>
                       </div>
