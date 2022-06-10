@@ -171,12 +171,10 @@
     });
     
     function checkboxquestion(id) {
-        var arr = $('input[name="hiddencheckarray[]"]').map(function () {
-            return this.value; // $(this).val()
-        }).get();
+        var arr = $('#hiddencheckarray').val();
         console.log(arr);
-        arr.push(id);
-        $('hiddencheckarray').val(arr);
+        // arr.push(id);
+        // $('hiddencheckarray').val(arr);
     }
   </script>
 
