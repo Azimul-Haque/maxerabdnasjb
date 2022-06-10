@@ -171,6 +171,11 @@ class ExamController extends Controller
 
         $hiddencheckarray = explode(',', $request->hiddencheckarray);
 
+        foreach($hiddencheckarray as $question_id) {
+            $examquestion = new Examcategory;
+            $examquestion->name = $request->name;
+            $examquestion->save();
+        }
         // dd($hiddencheckarray);
         // $category = new Examcategory;
         // $category->name = $request->name;
