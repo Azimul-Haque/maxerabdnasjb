@@ -194,8 +194,8 @@
             $.each(updatedarray, function(i, value) {
                 var updatedvalue = value + (!value ? '' : ',') + id;
             });
-            $('#hiddencheckarray').val(newupdatedvalue);
-            console.log(newupdatedvalue);
+            $('#hiddencheckarray').val(updatedvalue);
+            console.log(updatedvalue);
             
             // $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + array.length);
         }
