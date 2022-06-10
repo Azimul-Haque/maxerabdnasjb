@@ -168,7 +168,7 @@
         "responsive": true, "lengthChange": true, "autoWidth": false, info: false, "pageLength": 10,
         "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
     });
-    $('#form').on('submit', function(){
+    $('#addquestionform').on('submit', function(){
         $('#datatablemodal').DataTable().search('').draw(false);
     });
     //   $('#datatablemodal222').DataTable({
