@@ -160,4 +160,18 @@ class ExamController extends Controller
                                     ->withExamquestions($examquestions)
                                     ->withQuestions($questions);
     }
+
+    public function storeExamQuestion(Request $request)
+    {
+        $this->validate($request,array(
+            'name'        => 'required|string|max:191',
+        ));
+
+        $category = new Examcategory;
+        $category->name = $request->name;
+        $category->save();
+
+        Session::flash('success', 'Topic created successfully!');
+        return redirect()->route('dashboard.exams');
+    }
 }
