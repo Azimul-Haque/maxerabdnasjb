@@ -192,7 +192,7 @@
             console.log(updatedarray);
             var updatedvalue = '';
             $.each(updatedarray, function(i, value) {
-                var updatedvalue = value + (!value ? '' : ',') + id;
+                updatedvalue = value + (!value ? '' : ',') + id;
             });
             $('#hiddencheckarray').val(updatedvalue);
             console.log(updatedvalue);
