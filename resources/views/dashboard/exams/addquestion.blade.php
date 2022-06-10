@@ -123,6 +123,9 @@
                     <div class="modal-body">
                         @csrf
                         @foreach ($questions as $question)
+                            <table class="table">
+                                <thead></thead>
+                            </table>
                             {{ $question->question }}
                         @endforeach
                     </div>
