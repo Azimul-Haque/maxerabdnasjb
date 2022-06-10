@@ -22,7 +22,7 @@
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body p-0">
-                      <table class="table">
+                      <table class="table" id="datatable">
                           <thead>
                               <tr>
                                   <th>প্রশ্ন</th>
