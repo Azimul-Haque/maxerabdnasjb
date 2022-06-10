@@ -164,11 +164,13 @@ class ExamController extends Controller
     public function storeExamQuestion(Request $request)
     {
         $this->validate($request,array(
-            'questioncheck'        => 'required',
+            'exam_id'          => 'required',
+            'hiddencheckarray' => 'required',
+            'questioncheck'    => 'required',
         ));
 
         $hiddencheckarray = explode(',', $request->hiddencheckarray);
-        
+
         // dd($hiddencheckarray);
         // $category = new Examcategory;
         // $category->name = $request->name;
