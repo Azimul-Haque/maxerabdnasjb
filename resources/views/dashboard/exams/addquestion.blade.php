@@ -189,7 +189,7 @@
             var hiddencheckarray = $('#hiddencheckarray').val();
             var uncheckedarray = hiddencheckarray.split(',');
             var updatedarray = _.without(uncheckedarray, id.toString());
-            console.log(updatedarray);
+            // console.log(updatedarray);
             var newupdatedvalue = '';
             for(var i=0; i<updatedarray.length; i++) {
                 newupdatedvalue = newupdatedvalue + (!newupdatedvalue ? '' : ',') + updatedarray[i];
