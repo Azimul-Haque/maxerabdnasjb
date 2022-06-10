@@ -20,7 +20,7 @@
                       <h3 class="card-title">প্রশ্নসমূহ</h3>
           
                       <div class="card-tools">
-                          <button type="button" class="btn btn-warning btn-sm"  data-toggle="modal" data-target="#addExamQuestionModal">
+                          <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addExamQuestionModal">
                               <i class="fas fa-plus-circle"></i> নতুন প্রশ্ন যোগ করুন
                           </button>
                       </div>
