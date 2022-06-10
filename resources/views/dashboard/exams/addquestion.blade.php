@@ -185,7 +185,7 @@
             console.log(updatedvalue);
             var array = updatedvalue.split(',');
             $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + array.length);
-        } else if($(this).prop('checked')==false){
+        } else if($(this).is("not:checked")){
             var hiddencheckarray = $('#hiddencheckarray').val();
             var array = hiddencheckarray.split(',');
             var updatedarray = _.without(array, id);
