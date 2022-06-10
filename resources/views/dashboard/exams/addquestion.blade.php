@@ -119,7 +119,7 @@
                 <form method="post" action="{{ route('dashboard.exams.question.store') }}">
                     <div class="modal-body">
                         @csrf
-                        <table class="table" id="datatablemodal">
+                        <table class="table table-condensed" id="datatablemodal">
                             <thead>
                                 <tr>
                                     <th>#</th>
