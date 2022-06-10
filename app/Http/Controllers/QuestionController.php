@@ -146,10 +146,11 @@ class QuestionController extends Controller
         $question = Question::findOrFail($id);
         $question->topic_id = $request->topic_id;
         $question->question = $request->question;
-        $question->answer = $request->answer;
         $question->option1 = $request->option1;
         $question->option2 = $request->option2;
         $question->option3 = $request->option3;
+        $question->option4 = $request->option3;
+        $question->answer = $request->answer;
         $question->difficulty = $request->difficulty;
         $question->save();
 
