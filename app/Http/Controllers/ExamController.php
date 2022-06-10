@@ -152,17 +152,7 @@ class ExamController extends Controller
     {
         $exam = Exam::findOrFail($id);
         $questions = Question::all();
-        // if($question->questionimage) {
-        //     $image_path = public_path('images/questions/'. $question->questionimage->image);
-        //     if(File::exists($image_path)) {
-        //         File::delete($image_path);
-        //     }
-        //     $question->questionimage->delete();
-        // }
-        // $question->questionexplanation->delete();
-        // $question->delete();
-
-        // Session::flash('success', 'Question deleted successfully!');
+        
         return view('dashboard.exams.addquestion')
                                     ->withExam($exam)
                                     ->withQuestions($questions);
