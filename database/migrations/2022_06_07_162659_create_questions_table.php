@@ -17,10 +17,11 @@ class CreateQuestionsTable extends Migration
             $table->id();
             $table->integer('topic_id')->unsigned();
             $table->string('question');
-            $table->string('answer');
             $table->string('option1');
             $table->string('option2');
             $table->string('option3');
+            $table->string('option4');
+            $table->integer('answer');
             $table->integer('difficulty');
             $table->timestamps();
         });
