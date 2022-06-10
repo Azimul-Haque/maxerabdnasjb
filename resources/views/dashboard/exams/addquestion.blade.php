@@ -178,9 +178,8 @@
         // console.log(hiddencheckarray);
         var updatedvalue = hiddencheckarray + (!hiddencheckarray ? '' : ', ') + id;
         $('#hiddencheckarray').val(updatedvalue);
-        console.log(updatedvalue);
+        // console.log(updatedvalue);
         var array = updatedvalue.split(',');
-        console.log(array.length);
         $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + array.length);
     }
   </script>
