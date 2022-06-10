@@ -38,7 +38,7 @@
                           @foreach($examquestions as $examquestion)
                               <tr>
                                   <td>
-                                      {{ $category->name }}<br/>
+                                      {{ $examquestion->question->question }}<br/>
                                   </td>
                               
                                   <td align="right" width="40%">
