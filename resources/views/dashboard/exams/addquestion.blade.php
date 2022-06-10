@@ -116,7 +116,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
                 </div>
-                <form method="post" action="{{ route('dashboard.exams.question.store') }}">
+                <form method="post" id="addquestionform" action="{{ route('dashboard.exams.question.store') }}">
                     <div class="modal-body">
                         @csrf
                         <table class="table table-condensed" id="datatablemodal">
