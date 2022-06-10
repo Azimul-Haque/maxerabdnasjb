@@ -18,7 +18,22 @@
                 
             </div>
             <div class="col-md-4">
-                B   
+                <div class="card">
+                    <div class="card-header">
+                      <h3 class="card-title">পরীক্ষার ক্যাটাগরি</h3>
+          
+                      <div class="card-tools">
+                          <button type="button" class="btn btn-warning btn-sm"  data-toggle="modal" data-target="#addTopicModal">
+                              <i class="fas fa-plus-circle"></i> নতুন ক্যাটাগরি
+                          </button>
+                      </div>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body p-0">
+                      Test
+                    </div>
+                    <!-- /.card-body -->
+                  </div>   
             </div>
             <div class="col-md-4">
                 B   
