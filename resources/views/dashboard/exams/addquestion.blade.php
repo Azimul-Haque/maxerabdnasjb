@@ -191,8 +191,8 @@
             var updatedarray = _.without(uncheckedarray, id.toString());
             console.log(updatedarray);
             // var updatedvalue = hiddencheckarray + (!hiddencheckarray ? '' : ', ') + id;
-            // $('#hiddencheckarray').val(updatedvalue);
-            // console.log(updatedvalue);
+            $('#hiddencheckarray').val(updatedvalue.toString());
+            console.log(updatedvalue);
             
             // $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + array.length);
         }
