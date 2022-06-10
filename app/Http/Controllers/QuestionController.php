@@ -33,12 +33,14 @@ class QuestionController extends Controller
             abort(403, 'Access Denied');
         }
         
+        $totalquestions = Question::count();
         $questions = Question::paginate(10);
         $topics = Topic::all();
 
         return view('dashboard.questions.index')
                     ->withQuestions($questions)
-                    ->withTopics($topics);
+                    ->withTopics($topics)
+                    ->withTotalquestions($totalquestions);
     }
 
     public function storeQuestionsTopic(Request $request)
