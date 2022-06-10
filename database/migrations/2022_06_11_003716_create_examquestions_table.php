@@ -15,8 +15,8 @@ class CreateExamquestionsTable extends Migration
     {
         Schema::create('examquestions', function (Blueprint $table) {
             $table->id();
-            $table->integer('exam_id')->unsigned();
-            $table->integer('question_id')->unsigned();
+            $table->foreignId('exam_id')->unsigned();
+            $table->foreignId('question_id')->unsigned();
             $table->timestamps();
         });
     }
