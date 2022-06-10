@@ -119,7 +119,7 @@
                 <form method="post" action="{{ route('dashboard.exams.question.store') }}">
                     <div class="modal-body">
                         @csrf
-                        <table class="table table-" id="datatablemodal">
+                        <table class="table table-condensed" id="datatablemodal">
                             <thead>
                                 <tr>
                                     <th>#</th>
@@ -131,7 +131,12 @@
                                 @foreach ($questions as $question)
                                 <tr>
                                     <td>
-                                        
+                                        <div class="icheck-primary icheck-inline" style="float: left;">
+                                            <input type="checkbox" id="check{{ $question->id }}" name="questioncheck[]" value="{{ $question->id }}" 
+                                            {{-- @if(in_array($site->id, explode(',', $user->sites))) checked="" @endif --}}
+                                            />
+                                            <label for="check{{ $question->id }}"> </label>
+                                        </div>
                                     </td>
                                     <td>{{ $question->question }}</td>
                                     <td>{{ $question->answer }}</td>
