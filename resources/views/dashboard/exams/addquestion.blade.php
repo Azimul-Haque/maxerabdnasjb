@@ -23,7 +23,7 @@
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body p-0">
-                      <table class="table" id="datatable">
+                      <table class="table" id="myTable">
                           <thead>
                               <tr>
                                   <th>প্রশ্ন</th>
@@ -118,7 +118,7 @@
                 <form method="post" action="{{ route('dashboard.exams.category.store') }}">
                     <div class="modal-body">
                         @csrf
-                        <table class="table" id="">
+                        <table class="table" id="datatable">
                             <thead>
                                 <tr>
                                     <th>#</th>
