@@ -79,16 +79,16 @@
                                                           </div>
                                                       </div>
                                                       <div class="row">
-                                                          <div class="col-md-4">
+                                                          <div class="col-md-6">
                                                               <input type="text" name="option1" value="{{ $question->option1 }}" class="form-control mb-3" placeholder="অপশন ১" required>
                                                           </div>
-                                                          <div class="col-md-4">
+                                                          <div class="col-md-6">
                                                               <input type="text" name="option2" value="{{ $question->option2 }}" class="form-control mb-3" placeholder="অপশন ২" required>
                                                           </div>
-                                                          <div class="col-md-4">
+                                                          <div class="col-md-6">
                                                               <input type="text" name="option3" value="{{ $question->option3 }}" class="form-control mb-3" placeholder="অপশন ৩" required>
                                                           </div>
-                                                          <div class="col-md-4">
+                                                          <div class="col-md-6">
                                                               <input type="text" name="option4" value="{{ $question->option4 }}" class="form-control mb-3" placeholder="অপশন ৪" required>
                                                           </div>
                                                       </div>
