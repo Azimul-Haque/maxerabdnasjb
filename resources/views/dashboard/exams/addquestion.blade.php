@@ -176,6 +176,8 @@
         var updatedvalue = hiddencheckarray + (!hiddencheckarray ? '' : ', ') + id;
         $('#hiddencheckarray').val(updatedvalue);
         console.log(updatedvalue);
+        var array = updatedvalue.split(',');
+        console.log(array);
     }
   </script>
 
