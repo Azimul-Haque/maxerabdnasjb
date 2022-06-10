@@ -172,7 +172,7 @@
     
     function checkboxquestion(id) {
         var hiddencheckarray = $('#hiddencheckarray').val();
-        !hiddencheckarray ? '' : 
+        !hiddencheckarray ? '' : ', ' + id
         $('#hiddencheckarray').val(arr);
     }
   </script>
