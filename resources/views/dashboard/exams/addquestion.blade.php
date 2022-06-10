@@ -176,10 +176,7 @@
     });
 
     function checkboxquestion(id) {
-        console.log("hi");
-        var status = $(this)[0].checked;
-        console.log(status);
-        if($(this).is(':checked')){
+        if($('#check' + id)[0].checked){
             var hiddencheckarray = $('#hiddencheckarray').val();
             console.log(hiddencheckarray);
             var updatedvalue = hiddencheckarray + (!hiddencheckarray ? '' : ', ') + id;
@@ -187,7 +184,7 @@
             console.log(updatedvalue);
             var array = updatedvalue.split(',');
             $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + array.length);
-        } else if($(this).is('not:checked')){
+        } else {
             var hiddencheckarray = $('#hiddencheckarray').val();
             var array = hiddencheckarray.split(',');
             var updatedarray = _.without(array, id);
