@@ -176,9 +176,10 @@
     });
     
     function checkboxquestion(id) {
+        console.log("hi");
         if($(this).prop("checked") == true){
             var hiddencheckarray = $('#hiddencheckarray').val();
-            // console.log(hiddencheckarray);
+            console.log(hiddencheckarray);
             var updatedvalue = hiddencheckarray + (!hiddencheckarray ? '' : ', ') + id;
             $('#hiddencheckarray').val(updatedvalue);
             console.log(updatedvalue);
