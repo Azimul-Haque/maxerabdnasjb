@@ -134,8 +134,9 @@
                             </thead>
                             <tbody>
                                 @php
-                                    foreach ($examquestions as $examquestions) {
-                                        # code...
+                                    $examquestionidarray = [];
+                                    foreach ($examquestions as $examquestion) {
+                                        $examquestionidarray[] = $examquestion->question_id
                                     }
                                 @endphp
                                 @foreach ($questions as $question)
