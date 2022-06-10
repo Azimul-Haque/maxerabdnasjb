@@ -143,7 +143,10 @@
                                             <label for="check{{ $question->id }}"> </label>
                                         </div>
                                     </td>
-                                    <td>{{ $question->question }}</td>
+                                    <td>
+                                        {{ $question->question }}<br/>
+                                        <span class="badge bg-success">{{ $question->topic->name }}</span>
+                                    </td>
                                     <td>{{ $question->answer }}</td>
                                 </tr>
                                     
