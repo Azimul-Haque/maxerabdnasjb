@@ -93,13 +93,13 @@
           
                       <div class="card-tools">
                           <button type="button" class="btn btn-warning btn-sm"  data-toggle="modal" data-target="#addTopicModal">
-                              <i class="fas fa-plus-circle"></i> নতুন ক্যাটাগরি
+                              <i class="fas fa-plus-circle"></i> প্রশ্ন প্রণয়ন
                           </button>
                       </div>
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body p-0">
-                      Test
+                      
                     </div>
                     <!-- /.card-body -->
                   </div>   
