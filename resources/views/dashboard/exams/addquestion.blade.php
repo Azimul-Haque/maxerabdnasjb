@@ -128,6 +128,7 @@
                                     <tr>
                                         <th>#</th>
                                         <th>প্রশ্ন</th>
+                                        <th>উত্তর</th>
                                     </tr>
                                 </thead>
                             </table>
