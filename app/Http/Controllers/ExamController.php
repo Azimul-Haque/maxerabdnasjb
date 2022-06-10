@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Exam;
 use App\Examcategory;
+use App\Question;
 
 use Carbon\Carbon;
 use DB;
@@ -150,7 +151,7 @@ class ExamController extends Controller
     public function addQuestionToExam($id)
     {
         $exam = Exam::findOrFail($id);
-        // $question = Question::find($id);
+        $questions = Question::all();
         // if($question->questionimage) {
         //     $image_path = public_path('images/questions/'. $question->questionimage->image);
         //     if(File::exists($image_path)) {
@@ -162,6 +163,8 @@ class ExamController extends Controller
         // $question->delete();
 
         // Session::flash('success', 'Question deleted successfully!');
-        return view('dashboard.exams.addquestion')->withExam($exam);
+        return view('dashboard.exams.addquestion')
+                                    ->withExam($exam)
+                                    ->withQuestions($questions);
     }
 }
