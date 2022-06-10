@@ -190,12 +190,12 @@
             var uncheckedarray = hiddencheckarray.split(',');
             var updatedarray = _.without(uncheckedarray, id.toString());
             console.log(updatedarray);
-            var updatedvalue = '';
+            var newupdatedvalue = '';
             for(var i=0; i<updatedarray.length; i++) {
-                updatedvalue = updatedarray[i] + (!updatedarray[i] ? '' : ',') + id;
+                newupdatedvalue = updatedarray[i] + (!updatedarray[i] ? '' : ',') + id;
             };
-            $('#hiddencheckarray').val(updatedvalue);
-            console.log(updatedvalue);
+            $('#hiddencheckarray').val(newupdatedvalue);
+            console.log(newupdatedvalue);
             
             // $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + array.length);
         }
