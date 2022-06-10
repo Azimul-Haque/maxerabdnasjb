@@ -382,6 +382,18 @@
                         <div class="input-group-append">
                             <div class="input-group-text"><span class="far fa-check-circle"></span></div>
                         </div>
+                        <div class="input-group mb-3">
+                            <select name="answer" class="form-control" required>
+                                <option selected="" disabled="" value="">ডিফিকাল্টি লেভেল</option>
+                                <option value="1">অপশন ১</option>
+                                <option value="2">অপশন ২</option>
+                                <option value="3">অপশন ৩</option>
+                                <option value="৪">অপশন ৪</option>
+                            </select>
+                            <div class="input-group-append">
+                                <div class="input-group-text"><span class="fas fa-star-half-alt"></span></div>
+                            </div>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
