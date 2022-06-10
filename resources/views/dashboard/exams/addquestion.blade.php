@@ -187,6 +187,7 @@
         } else if($(this).prop("checked") == false){
             var hiddencheckarray = $('#hiddencheckarray').val();
             var array = hiddencheckarray.split(',');
+            var updatedarray = _.without(array, id);
             // console.log(hiddencheckarray);
             var updatedvalue = hiddencheckarray + (!hiddencheckarray ? '' : ', ') + id;
             $('#hiddencheckarray').val(updatedvalue);
