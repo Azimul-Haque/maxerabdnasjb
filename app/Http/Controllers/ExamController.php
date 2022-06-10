@@ -166,8 +166,10 @@ class ExamController extends Controller
         $this->validate($request,array(
             'questioncheck'        => 'required',
         ));
+
         $hiddencheckarray = explode(',', $request->hiddencheckarray);
-        dd($hiddencheckarray);
+        
+        // dd($hiddencheckarray);
         // $category = new Examcategory;
         // $category->name = $request->name;
         // $category->save();
