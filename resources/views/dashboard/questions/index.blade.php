@@ -89,6 +89,20 @@
                                                               <input type="text" name="option3" value="{{ $question->option3 }}" class="form-control mb-3" placeholder="অপশন ৩" required>
                                                           </div>
                                                       </div>
+                                                      <div class="input-group mb-3">
+                                                        <div class="input-group mb-3">
+                                                            <select name="answer" class="form-control" required>
+                                                                <option selected="" disabled="" value="">সঠিক উত্তর</option>
+                                                                <option value="1">অপশন ১</option>
+                                                                <option value="2">অপশন ২</option>
+                                                                <option value="3">অপশন ৩</option>
+                                                                <option value="৪">অপশন ৪</option>
+                                                            </select>
+                                                            <div class="input-group-append">
+                                                                <div class="input-group-text"><span class="far fa-check-circle"></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                       <div class="row">
                                                           <div class="col-md-6">
                                                               <div class="input-group mb-3">
