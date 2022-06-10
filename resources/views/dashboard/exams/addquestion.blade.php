@@ -172,8 +172,8 @@
     
     function checkboxquestion(id) {
         var hiddencheckarray = $('#hiddencheckarray').val();
-        !hiddencheckarray ? '' : ', ' + id
-        $('#hiddencheckarray').val(arr);
+        var updatedvalue = !hiddencheckarray ? '' : ', ' + id;
+        $('#hiddencheckarray').val(updatedvalue);
     }
   </script>
 
