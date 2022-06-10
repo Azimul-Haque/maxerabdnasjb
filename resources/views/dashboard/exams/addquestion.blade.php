@@ -175,8 +175,8 @@
             return this.value; // $(this).val()
         }).get();
         console.log(arr);
-        // arr.push(id);
-        // $('hiddencheckarray').val(arr);
+        arr.push(id);
+        $('hiddencheckarray').val(arr);
     }
   </script>
 
