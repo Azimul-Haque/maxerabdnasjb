@@ -173,15 +173,12 @@ class ExamController extends Controller
 
         foreach($hiddencheckarray as $question_id) {
             $examquestion = new Examquestion;
-            $examquestion->name = $request->name;
+            $examquestion->exam_id = $request->exam_id;
+            $examquestion->question_id = $question_id;
             $examquestion->save();
         }
-        // dd($hiddencheckarray);
-        // $category = new Examcategory;
-        // $category->name = $request->name;
-        // $category->save();
-
-        // Session::flash('success', 'Topic created successfully!');
-        // return redirect()->route('dashboard.exams');
+        
+        Session::flash('success', 'Topic created successfully!');
+        return redirect()->route('dashboard.exams');
     }
 }
