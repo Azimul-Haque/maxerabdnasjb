@@ -167,11 +167,12 @@ class ExamController extends Controller
             'questioncheck'        => 'required',
         ));
 
-        $category = new Examcategory;
-        $category->name = $request->name;
-        $category->save();
+        dd($questioncheck);
+        // $category = new Examcategory;
+        // $category->name = $request->name;
+        // $category->save();
 
-        Session::flash('success', 'Topic created successfully!');
-        return redirect()->route('dashboard.exams');
+        // Session::flash('success', 'Topic created successfully!');
+        // return redirect()->route('dashboard.exams');
     }
 }
