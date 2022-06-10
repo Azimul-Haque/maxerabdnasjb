@@ -174,7 +174,7 @@
     });
     
     checkboxquestion(id) {
-
+        hiddencheckarray
     }
   </script>
 
