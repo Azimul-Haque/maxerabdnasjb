@@ -192,7 +192,7 @@
             console.log(updatedarray);
             // var updatedvalue = hiddencheckarray + (!hiddencheckarray ? '' : ', ') + id;
             $('#hiddencheckarray').val(updatedvalue.toString());
-            console.log(updatedvalue);
+            // console.log(updatedvalue);
             
             // $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + array.length);
         }
