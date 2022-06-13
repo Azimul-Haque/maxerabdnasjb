@@ -210,11 +210,13 @@ class ExamController extends Controller
         foreach($topics as $topic) {
             $topicname = 'topic' . $topic->id;
             $quantity = 'quantity' . $topic->id;
+            $quantitycheck = 0;
             if($request[$topicname] == $topic->id && $request[$quantity] > 0) {
                 // dd($request[$topicname]);
                 $topicquestions = Question::where('topic_id', $request[$topicname])->get();
                 dd($topicquestions);
             }
+            $quantitycheck = $quantitycheck + $request[$quantity];
         }
 
         // $hiddencheckarray = explode(',', $request->hiddencheckarray);
