@@ -228,15 +228,6 @@ class ExamController extends Controller
         } else {
             Session::flash('success', 'Question updated successfully!');
         }
-
-        // $hiddencheckarray = explode(',', $request->hiddencheckarray);
-        // // dd($hiddencheckarray);
-        // foreach($hiddencheckarray as $question_id) {
-        //     $examquestion = new Examquestion;
-        //     $examquestion->exam_id = $request->exam_id;
-        //     $examquestion->question_id = $question_id;
-        //     $examquestion->save();
-        // }
         return redirect()->route('dashboard.exams.add.question', $request->exam_id);
     }
 }
