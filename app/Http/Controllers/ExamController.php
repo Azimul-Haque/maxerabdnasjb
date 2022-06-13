@@ -217,6 +217,7 @@ class ExamController extends Controller
                 dd($topicquestions);
             }
             $quantitycheck = $quantitycheck + $request[$quantity];
+            dd($quantitycheck);
         }
 
         // $hiddencheckarray = explode(',', $request->hiddencheckarray);
