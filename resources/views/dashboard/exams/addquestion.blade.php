@@ -107,6 +107,10 @@
                         <tbody>
                             @foreach ($topics as $topic)
                                 <tr><td>{{ $topic->name }}</td></tr>
+                                @php
+                                    
+                                @endphp
+                                <tr><td>{{ $topic->name }}</td></tr>
                             @endforeach
                         </tbody>
                       </table>
