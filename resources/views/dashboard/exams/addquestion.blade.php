@@ -101,6 +101,7 @@
                         <thead>
                             <tr>
                                 <th>টপিক</th>
+                                <th>মোট প্রশ্ন সংখ্যা</th>
                             </tr>
                         </thead>
                       </table>
