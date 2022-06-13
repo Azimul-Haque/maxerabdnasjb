@@ -160,8 +160,8 @@ class ExamController extends Controller
 
         foreach($oldexam->examquestions as $oldexamquestion) {
             $examquestion = new Examquestion;
-            $examquestion->exam_id = $request->exam_id;
-            $examquestion->question_id = $question_id;
+            $examquestion->exam_id = $exam->id;
+            $examquestion->question_id = $oldexamquestion->id;
             $examquestion->save();
         }
 
