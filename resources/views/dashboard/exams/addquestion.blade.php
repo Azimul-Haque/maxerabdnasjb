@@ -222,7 +222,7 @@
                                         <td width="50%">{{ $topic->name }}</td>
                                         <td>
                                             <input type="hidden" name="topic{{ $topic->id }}" value="{{ $topic->id }}">
-                                            <input type="number" name="quantity{{ $topic->id }}" class="form-control" value="" placeholder="প্রশ্নের পরিমাণ">
+                                            <input type="number" name="quantity{{ $topic->id }}" min="0" class="form-control" value="" placeholder="প্রশ্নের পরিমাণ">
                                         </td>
                                     </tr>
                                 @endforeach
