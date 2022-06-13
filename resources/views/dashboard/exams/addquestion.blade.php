@@ -24,7 +24,7 @@
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
-                      <table class="table" id="" >
+                      <table class="table" id="datatable">
                           <thead>
                               <tr>
                                   <th>প্রশ্ন</th>
