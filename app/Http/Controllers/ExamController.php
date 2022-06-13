@@ -207,10 +207,10 @@ class ExamController extends Controller
         }
 
         $topics = Topic::all();
+        $quantitycheck = 0;
         foreach($topics as $topic) {
             $topicname = 'topic' . $topic->id;
             $quantity = 'quantity' . $topic->id;
-            $quantitycheck = 0;
             if($request[$topicname] == $topic->id && $request[$quantity] > 0) {
                 $topicquestions = Question::where('topic_id', $request[$topicname])->take($request[$quantity]);
                 foreach($topicquestions as $topicquestion) {
@@ -221,7 +221,7 @@ class ExamController extends Controller
                 }
             }
             $quantitycheck = $quantitycheck + $request[$quantity];
-            dd($quantitycheck);
+            // dd($quantitycheck);
         }
         if($quantitycheck == 0) {
             Session::flash('info', 'At leaset one topic is required!');
