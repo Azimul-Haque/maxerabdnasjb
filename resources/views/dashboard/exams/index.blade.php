@@ -43,8 +43,8 @@
                                   <td>
                                     @php
                                         $currentDate = date('Y-m-d');  
-                                        $startDate = date('Y-m-d', strtotime("01/09/2019"));
-                                        $endDate = date('Y-m-d', strtotime("01/10/2019"));   
+                                        $startDate = date('Y-m-d', strtotime($exam->available_from));
+                                        $endDate = date('Y-m-d', strtotime($exam->available_to));   
                                         if (($currentDate >= $startDate) && ($currentDate <= $endDate)){   
                                         echo "Current date is between two dates";
                                         }else{    
