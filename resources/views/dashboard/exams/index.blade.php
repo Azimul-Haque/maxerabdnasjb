@@ -47,7 +47,7 @@
                                         $endDate = date('Y-m-d', strtotime($exam->available_to));
                                         $isCurrent = false;
                                         if (($currentDate >= $startDate) && ($currentDate <= $endDate)) {   
-                                            $isCurrent = !$isCurrent;
+                                            $isCurrent = true;
                                         }
                                     @endphp
                                     <a href="{{ route('dashboard.exams.add.question', $exam->id) }}" rel="tooltip" title="প্রশ্ন যোগ করুন">{{ $exam->name }}</a>
