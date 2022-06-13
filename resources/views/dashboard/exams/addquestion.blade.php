@@ -111,7 +111,7 @@
                                     @php
                                         $totalqs = 0;
                                         foreach ($examquestions as $examquestion) {
-                                            if($examquestion->topic_id == $topic->id) {
+                                            if($examquestion->question->topic_id == $topic->id) {
                                                 $totalqs++;
                                             }
                                         }
