@@ -150,9 +150,9 @@ class ExamController extends Controller
         $exam = new Exam();
         $exam->examcategory_id = $oldexam->examcategory_id;
         $exam->name = $request->name;
-        $exam->duration = $request->duration;
-        $exam->qsweight = $request->qsweight;
-        $exam->negativepercentage = $request->negativepercentage;
+        $exam->duration = $oldexam->duration;
+        $exam->qsweight = $oldexam->qsweight;
+        $exam->negativepercentage = $oldexam->negativepercentage;
         $exam->price_type = $request->price_type;
         $exam->available_from = Carbon::parse($request->available_from);
         $exam->available_to = Carbon::parse($request->available_to);
