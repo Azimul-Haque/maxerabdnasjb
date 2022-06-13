@@ -205,12 +205,7 @@ class ExamController extends Controller
                 $oldexamquestion->delete();
             }
         }
-        $oldexamquestions = Examquestion::where('exam_id', $request->exam_id)->get();
-        if(count($oldexamquestions) > 0) {
-            foreach($oldexamquestions as $oldexamquestion) {
-                $oldexamquestion->delete();
-            }
-        }
+        
         $hiddencheckarray = explode(',', $request->hiddencheckarray);
         // dd($hiddencheckarray);
         foreach($hiddencheckarray as $question_id) {
