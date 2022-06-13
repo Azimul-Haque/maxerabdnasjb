@@ -172,9 +172,9 @@ class ExamController extends Controller
     public function deleteExam($id)
     {
         $exam = Exam::findOrFail($id);
-        // kaaj ache aro
-        // kaaj ache aro
-        // kaaj ache aro
+        foreach($exam->examquestions as $examquestion) {
+            $examquestion->delete();
+        }
         $exam->delete();
 
         Session::flash('success', 'Exam deleted successfully!');
