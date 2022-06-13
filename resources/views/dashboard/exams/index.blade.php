@@ -60,6 +60,9 @@
                                           <i class="fas fa-folder-plus"></i>
                                       </a>
                                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editExamModal{{ $exam->id }}">
+                                          <i class="far fa-copy"></i>
+                                      </button>
+                                      <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editExamModal{{ $exam->id }}">
                                           <i class="far fa-edit"></i>
                                       </button>
                                       {{-- Edit Exam Modal Code --}}
