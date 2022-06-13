@@ -147,7 +147,6 @@ class ExamController extends Controller
         ));
 
         $oldexam = Exam::findOrFail($id);
-        dd($oldexam->examquestions);
         $exam = new Exam();
         $exam->examcategory_id = $oldexam->examcategory_id;
         $exam->name = $request->name;
@@ -159,9 +158,9 @@ class ExamController extends Controller
         $exam->available_to = Carbon::parse($oldexam->available_to);
         $exam->save();
 
-        // foreach( as $examquestion) {
+        foreach($oldexam->examquestions as $examquestion) {
 
-        // }
+        }
 
         Session::flash('success', 'Exam copied successfully!');
         return redirect()->route('dashboard.exams');
