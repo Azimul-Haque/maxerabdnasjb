@@ -246,7 +246,7 @@ class ExamController extends Controller
             $topicname = 'topic' . $topic->id;
             $quantity = 'quantity' . $topic->id;
             if($request[$topicname] == $topic->id && $request[$quantity] > 0) {
-                $topicquestions = Question::where('topic_id', $request[$topicname])->inRandomOrder()->limit($request[$quantity])->get();; //->take()->get();
+                $topicquestions = Question::where('topic_id', $request[$topicname])->take($request[$quantity])->get(); //->take()->get();
                 dd($topicquestions);
                 foreach($topicquestions as $topicquestion) {
                     $examquestion = new Examquestion;
