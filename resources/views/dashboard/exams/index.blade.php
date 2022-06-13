@@ -48,8 +48,8 @@
                                   </td>
                                   <td><span class="fas fa-stopwatch"></span> {{ $exam->duration }} মিনিট</td>
                                   <td>
-                                    <span class="badge bg-primary">{{ $exam->examquestions->count() }} টি প্রশ্ন<br/>
-                                    </span>{{ $exam->qsweight }} (-{{ $exam->negativepercentage / 100 }} প্রতি ভুলের জন্য)
+                                    <span class="badge bg-primary">{{ $exam->examquestions->count() }} টি প্রশ্ন</span><br/>
+                                    {{ $exam->qsweight }} (-{{ $exam->negativepercentage / 100 }} প্রতি ভুলের জন্য)
                                   </td>
                                   <td>{{ date('F d, Y', strtotime($exam->available_from)) }} থেকে {{ date('F d, Y', strtotime($exam->available_to)) }}</td>
                                   {{-- <td>
