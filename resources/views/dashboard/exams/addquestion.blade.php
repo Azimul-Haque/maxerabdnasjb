@@ -32,7 +32,7 @@
                               </tr>
                           </thead>
                           <tbody>
-                          @foreach($examquestions') as $examquestion)
+                          @foreach($examquestions->sortBy('question_id') as $examquestion)
                               <tr>
                                   <td>
                                       {{ $examquestion->question->question }}<br/>
