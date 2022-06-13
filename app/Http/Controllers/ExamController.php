@@ -184,7 +184,9 @@ class ExamController extends Controller
     public function addQuestionToExam($id)
     {
         $exam = Exam::findOrFail($id);
-        $examquestions = Examquestion::where('exam_id', $exam->id)->get();
+        $examquestions = Examquestion::where('exam_id', $exam->id)
+                                     ->orderBy('question_id', 'asc')
+                                     ->get();
         $topics = Topic::all();
         $questions = Question::all();
         
