@@ -62,8 +62,8 @@
                                       <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#editExamModal{{ $exam->id }}" rel="tooltip" title="কপি তৈরি করুন">
                                           <i class="far fa-copy"></i>
                                       </button>
-                                    {{-- Edit Exam Modal Code --}}
-                                      {{-- Edit Exam Modal Code --}}
+                                      {{-- Copy Exam Modal Code --}}
+                                      {{-- Copy Exam Modal Code --}}
                                       <!-- Modal -->
                                       <div class="modal fade" id="editExamModal{{ $exam->id }}" tabindex="-1" role="dialog" aria-labelledby="editExamModalLabel{{ $exam->id }}" aria-hidden="true" data-backdrop="static">
                                         <div class="modal-dialog modal-lg" role="document">
@@ -96,8 +96,8 @@
                                         </div>
                                         </div>
                                       </div>
-                                      {{-- Edit Exam Modal Code --}}
-                                      {{-- Edit Exam Modal Code --}}
+                                      {{-- Copy Exam Modal Code --}}
+                                      {{-- Copy Exam Modal Code --}}
 
                                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editExamModal{{ $exam->id }}">
                                           <i class="far fa-edit"></i>
