@@ -211,7 +211,7 @@ class ExamController extends Controller
             $topicname = 'topic' . $topic->id;
             $quantity = 'quantity' . $topic->id;
             if($request[$topicname] == $topic->id && $request[$quantity] > 0) {
-                dd($request[$topicname]);
+                // dd($request[$topicname]);
                 $topicquestions = Question::where('topic_id', $request[$topicname])->get();
                 dd($topicquestions);
             }
