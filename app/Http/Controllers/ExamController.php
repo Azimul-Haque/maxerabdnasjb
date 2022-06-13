@@ -217,6 +217,7 @@ class ExamController extends Controller
                     $examquestion = new Examquestion;
                     $examquestion->exam_id = $request->exam_id;
                     $examquestion->question_id = $topicquestion->id;
+                    $examquestion->save();
                 }
             }
             $quantitycheck = $quantitycheck + $request[$quantity];
