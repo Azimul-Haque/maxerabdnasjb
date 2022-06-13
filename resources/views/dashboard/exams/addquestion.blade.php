@@ -195,7 +195,7 @@
                             <tbody>
                                 @foreach ($topics as $topic)
                                     <tr>
-                                        <td>{{ $topic->name }}</td>
+                                        <td width="50%">{{ $topic->name }}</td>
                                         <td>
                                             <input type="number" name="name{{ $topic->id }}" class="form-control" value="" placeholder="প্রশ্নের পরিমাণ">
                                         </td>
