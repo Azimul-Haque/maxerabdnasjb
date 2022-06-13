@@ -68,7 +68,7 @@
                                       <div class="modal fade" id="copyExamModal{{ $exam->id }}" tabindex="-1" role="dialog" aria-labelledby="copyExamModalLabel{{ $exam->id }}" aria-hidden="true" data-backdrop="static">
                                         <div class="modal-dialog" role="document">
                                         <div class="modal-content">
-                                            <div class="modal-header bg-success">
+                                            <div class="modal-header bg-info">
                                               <h5 class="modal-title" id="copyExamModalLabel{{ $exam->id }}">পরীক্ষা হালনাগাদ</h5>
                                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                   <span aria-hidden="true">&times;</span>
@@ -77,14 +77,10 @@
                                             <form method="post" action="{{ route('dashboard.exams.update', $exam->id) }}" enctype='multipart/form-data'>
                                               <div class="modal-body">
                                                   @csrf
-                                                  <div class="row">
-                                                    <div class="col-md-6">
-                                                        <div class="input-group mb-3">
-                                                            <input type="text" name="name" class="form-control" value="{{ $exam->name }}" placeholder="পরীক্ষার নাম" required>
-                                                            <div class="input-group-append">
-                                                                <div class="input-group-text"><span class="far fa-clipboard"></span></div>
-                                                            </div>
-                                                        </div>
+                                                  <div class="input-group mb-3">
+                                                    <input type="text" name="name" class="form-control" value="{{ $exam->name }}" placeholder="পরীক্ষার নাম" required>
+                                                    <div class="input-group-append">
+                                                        <div class="input-group-text"><span class="far fa-clipboard"></span></div>
                                                     </div>
                                                   </div>
                                               </div>
