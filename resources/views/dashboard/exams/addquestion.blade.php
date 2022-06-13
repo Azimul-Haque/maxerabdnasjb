@@ -109,14 +109,14 @@
                                 <tr>
                                     <td>{{ $topic->name }}</td>
                                     @php
-                                    $totalqs = 0;
-                                    foreach ($examquestions as $examquestion) {
-                                        if($examquestion->topic_id == $topic->id) {
-                                            $totalqs++;
+                                        $totalqs = 0;
+                                        foreach ($examquestions as $examquestion) {
+                                            if($examquestion->topic_id == $topic->id) {
+                                                $totalqs++;
+                                            }
                                         }
-                                    }
+                                    @endphp
                                     <td>{{ $totalqs }}</td>
-                                @endphp
                                 </tr>
                             @endforeach
                         </tbody>
