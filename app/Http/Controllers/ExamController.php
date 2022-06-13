@@ -199,7 +199,12 @@ class ExamController extends Controller
         ));
 
         dd($request->all());
-        
+        $oldexamquestions = Examquestion::where('exam_id', $request->exam_id)->get();
+        if(count($oldexamquestions) > 0) {
+            foreach($oldexamquestions as $oldexamquestion) {
+                $oldexamquestion->delete();
+            }
+        }
         $oldexamquestions = Examquestion::where('exam_id', $request->exam_id)->get();
         if(count($oldexamquestions) > 0) {
             foreach($oldexamquestions as $oldexamquestion) {
