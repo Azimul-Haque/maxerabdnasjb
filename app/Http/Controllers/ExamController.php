@@ -160,6 +160,9 @@ class ExamController extends Controller
 
         foreach($oldexam->examquestions as $oldexamquestion) {
             $examquestion = new Examquestion;
+            $examquestion->exam_id = $request->exam_id;
+            $examquestion->question_id = $question_id;
+            $examquestion->save();
         }
 
         Session::flash('success', 'Exam copied successfully!');
