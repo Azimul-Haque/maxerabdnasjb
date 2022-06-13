@@ -45,7 +45,7 @@
                                     <br/>
                                     <span class="badge bg-success">{{ $exam->examcategory->name }}</span>
                                     <span class="badge bg-info">{{ $exam->price_type == 0 ? 'ফ্রি' : 'পেইড' }}</span>
-                                    <span class="badge bg-primary">{{ $exam->price_type == 0 ? 'ফ্রি' : 'পেইড' }}</span>
+                                    <span class="badge bg-primary">{{ $exam->examquestions->count() }} টি প্রশ্ন</span>
                                   </td>
                                   <td><span class="fas fa-stopwatch"></span> {{ $exam->duration }} মিনিট</td>
                                   <td>{{ $exam->qsweight }} (-{{ $exam->negativepercentage / 100 }} প্রতি ভুলের জন্য)</td>
