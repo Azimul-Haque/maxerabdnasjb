@@ -45,10 +45,8 @@
                                         $currentDate = date('Y-m-d');  
                                         $startDate = date('Y-m-d', strtotime($exam->available_from));
                                         $endDate = date('Y-m-d', strtotime($exam->available_to));   
-                                        if (($currentDate >= $startDate) && ($currentDate <= $endDate)){   
-                                        echo "Current date is between two dates";
-                                        }else{    
-                                        echo "Current date is not between two dates";  
+                                        if (($currentDate >= $startDate) && ($currentDate <= $endDate)) {   
+                                            echo "Current date is between two dates";
                                         }
                                     @endphp
                                     <a href="{{ route('dashboard.exams.add.question', $exam->id) }}" rel="tooltip" title="প্রশ্ন যোগ করুন">{{ $exam->name }}</a>
