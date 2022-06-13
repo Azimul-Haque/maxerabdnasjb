@@ -66,7 +66,7 @@
                                       {{-- Copy Exam Modal Code --}}
                                       <!-- Modal -->
                                       <div class="modal fade" id="copyExamModal{{ $exam->id }}" tabindex="-1" role="dialog" aria-labelledby="copyExamModalLabel{{ $exam->id }}" aria-hidden="true" data-backdrop="static">
-                                        <div class="modal-dialog modal-lg" role="document">
+                                        <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header bg-success">
                                               <h5 class="modal-title" id="copyExamModalLabel{{ $exam->id }}">পরীক্ষা হালনাগাদ</h5>
