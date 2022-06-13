@@ -187,7 +187,6 @@ class ExamController extends Controller
         $examquestions = Examquestion::where('exam_id', $exam->id)->get();
         $topics = Topic::all();
         $questions = Question::all();
-        dd($examquestions);
         
         return view('dashboard.exams.addquestion')
                                     ->withExam($exam)
