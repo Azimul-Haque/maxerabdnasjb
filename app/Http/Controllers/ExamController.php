@@ -146,6 +146,7 @@ class ExamController extends Controller
             'name'               => 'required|string|max:191',
         ));
 
+        $oldexam = Exam::findOrFail($id);
         $exam = Exam::find($id);
         $exam->examcategory_id = $request->examcategory_id;
         $exam->name = $request->name;
