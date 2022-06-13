@@ -158,6 +158,10 @@ class ExamController extends Controller
         $exam->available_to = Carbon::parse($oldexam->available_to);
         $exam->save();
 
+        foreach($oldexam->examquestions as $examquestion) {
+            
+        }
+
         Session::flash('success', 'Exam copied successfully!');
         return redirect()->route('dashboard.exams');
     }
