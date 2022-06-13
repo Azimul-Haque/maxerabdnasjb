@@ -115,7 +115,7 @@
                                         }
                                     }
                                 @endphp
-                                <tr><td>{{ $topic->name }}</td></tr>
+                                <tr><td>{{ $totalqs }}</td></tr>
                             @endforeach
                         </tbody>
                       </table>
