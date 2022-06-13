@@ -137,6 +137,36 @@ class ExamController extends Controller
         Session::flash('success', 'Exam updated successfully!');
         return redirect()->route('dashboard.exams');
     }
+    
+    public function copyExam(Request $request, $id)
+    {
+        // dd($request->file('image'));
+        // dd($request->file('image'));
+        $this->validate($request,array(
+            'examcategory_id'    => 'required|string|max:191',
+            'name'               => 'required|string|max:191',
+            'duration'           => 'required|string|max:191',
+            'qsweight'           => 'required|string|max:191',
+            'negativepercentage' => 'required|string|max:191',
+            'price_type'         => 'required|string|max:191',
+            'available_from'     => 'required|string|max:191',
+            'available_to'       => 'required|string|max:191',
+        ));
+
+        $exam = Exam::find($id);
+        $exam->examcategory_id = $request->examcategory_id;
+        $exam->name = $request->name;
+        $exam->duration = $request->duration;
+        $exam->qsweight = $request->qsweight;
+        $exam->negativepercentage = $request->negativepercentage;
+        $exam->price_type = $request->price_type;
+        $exam->available_from = Carbon::parse($request->available_from);
+        $exam->available_to = Carbon::parse($request->available_to);
+        $exam->save();
+
+        Session::flash('success', 'Exam updated successfully!');
+        return redirect()->route('dashboard.exams');
+    }
 
     public function deleteExam($id)
     {
