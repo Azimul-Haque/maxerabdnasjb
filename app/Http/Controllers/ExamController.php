@@ -220,7 +220,9 @@ class ExamController extends Controller
             // dd($quantitycheck);
         }
         if($quantitycheck == 0) {
-            
+            Session::flash('info', 'At leaset one topic is required!');
+        } else {
+            Session::flash('success', 'Question updated successfully!');
         }
 
         // $hiddencheckarray = explode(',', $request->hiddencheckarray);
@@ -231,8 +233,6 @@ class ExamController extends Controller
         //     $examquestion->question_id = $question_id;
         //     $examquestion->save();
         // }
-
-        Session::flash('success', 'Question updated successfully!');
         return redirect()->route('dashboard.exams.add.question', $request->exam_id);
     }
 }
