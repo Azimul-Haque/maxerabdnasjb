@@ -209,7 +209,7 @@ class ExamController extends Controller
         $topics = Topic::all();
         foreach($topics as $topic) {
             $topicname = 'topic' . $topic->id;
-            if($request[$topicname] == ) {
+            if($request[$topicname] == $topic->id) {
                 dd($request[$topicname]);
                 $topicquestions = Question::where('topic_id', $request[$topicname])->get();
                 dd($topicquestions);
