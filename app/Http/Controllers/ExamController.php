@@ -212,8 +212,9 @@ class ExamController extends Controller
             if($request[$topicname] > 0) {
                 // dd($request[$topicname]);
                 $topicquestions = Question::where('topic_id', $request[$topicname])->get();
-                dd($topicquestions);
+                
             }
+            dd($topicquestions);
         }
 
         $hiddencheckarray = explode(',', $request->hiddencheckarray);
