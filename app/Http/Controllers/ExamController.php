@@ -224,7 +224,7 @@ class ExamController extends Controller
             // dd($quantitycheck);
         }
         if($quantitycheck == 0) {
-            Session::flash('info', 'At leaset one topic is required!');
+            Session::flash('info', 'At least one topic is required!');
         } else {
             Session::flash('success', 'Question updated successfully!');
         }
