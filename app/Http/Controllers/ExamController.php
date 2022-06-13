@@ -210,7 +210,7 @@ class ExamController extends Controller
         foreach($topics as $topic) {
             $topicname = 'topic' . $topic->id;
             $quantity = 'quantity' . $topic->id;
-            if($request[$topicname] == $topic->id) {
+            if($request[$topicname] == $topic->id && $quantity > 0) {
                 dd($request[$topicname]);
                 $topicquestions = Question::where('topic_id', $request[$topicname])->get();
                 dd($topicquestions);
