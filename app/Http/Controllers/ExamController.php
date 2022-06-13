@@ -212,7 +212,7 @@ class ExamController extends Controller
             $topicname = 'topic' . $topic->id;
             $quantity = 'quantity' . $topic->id;
             if($request[$topicname] == $topic->id && $request[$quantity] > 0) {
-                $topicquestions = Question::where('topic_id', $request[$topicname])->take($request[$quantity]);
+                $topicquestions = Question::where('topic_id', $request[$topicname])->take($request[$quantity])->get();
                 foreach($topicquestions as $topicquestion) {
                     $examquestion = new Examquestion;
                     $examquestion->exam_id = $request->exam_id;
