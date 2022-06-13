@@ -211,8 +211,8 @@ class ExamController extends Controller
             }
         }
         $hiddencheckarray = explode(',', $request->hiddencheckarray);
-        sort($hiddencheckarray)
-        dd($hiddencheckarray);
+        sort($hiddencheckarray);
+        // dd($hiddencheckarray);
         foreach($hiddencheckarray as $question_id) {
             $examquestion = new Examquestion;
             $examquestion->exam_id = $request->exam_id;
