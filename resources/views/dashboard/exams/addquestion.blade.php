@@ -106,16 +106,18 @@
                         </thead>
                         <tbody>
                             @foreach ($topics as $topic)
-                                <tr><td>{{ $topic->name }}</td></tr>
-                                @php
+                                <tr>
+                                    <td>{{ $topic->name }}</td>
+                                    @php
                                     $totalqs = 0;
                                     foreach ($examquestions as $examquestion) {
                                         if($examquestion->topic_id == $topic->id) {
                                             $totalqs++;
                                         }
                                     }
+                                    <td>{{ $totalqs }}</td>
                                 @endphp
-                                <tr><td>{{ $totalqs }}</td></tr>
+                                </tr>
                             @endforeach
                         </tbody>
                       </table>
