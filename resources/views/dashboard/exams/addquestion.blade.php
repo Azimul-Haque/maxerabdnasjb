@@ -100,7 +100,7 @@
                       <table class="table">
                         <thead>
                             <tr>
-                                <th>বিষয়</th>
+                                <th>টপিক</th>
                             </tr>
                         </thead>
                       </table>
