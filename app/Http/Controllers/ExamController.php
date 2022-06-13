@@ -198,10 +198,7 @@ class ExamController extends Controller
             'exam_id'          => 'required',
         ));
 
-        if($quantitycheck == 0) {
-            Session::flash('info', 'At leaset one topic is required!');
-            return redirect()->route('dashboard.exams.add.question', $request->exam_id);
-        }
+        // dd($request->all());
         $oldexamquestions = Examquestion::where('exam_id', $request->exam_id)->get();
         if(count($oldexamquestions) > 0) {
             foreach($oldexamquestions as $oldexamquestion) {
@@ -226,8 +223,20 @@ class ExamController extends Controller
             $quantitycheck = $quantitycheck + $request[$quantity];
             // dd($quantitycheck);
         }
-        
-        Session::flash('success', 'Question updated successfully!');
+        if($quantitycheck == 0) {
+            Session::flash('info', 'At leaset one topic is required!');
+        } else {
+            Session::flash('success', 'Question updated successfully!');
+        }
+
+        // $hiddencheckarray = explode(',', $request->hiddencheckarray);
+        // // dd($hiddencheckarray);
+        // foreach($hiddencheckarray as $question_id) {
+        //     $examquestion = new Examquestion;
+        //     $examquestion->exam_id = $request->exam_id;
+        //     $examquestion->question_id = $question_id;
+        //     $examquestion->save();
+        // }
         return redirect()->route('dashboard.exams.add.question', $request->exam_id);
     }
 }
