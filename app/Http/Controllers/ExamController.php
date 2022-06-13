@@ -172,6 +172,7 @@ class ExamController extends Controller
     public function deleteExam($id)
     {
         $exam = Exam::findOrFail($id);
+        dd($exam);
         // kaaj ache aro
         // kaaj ache aro
         // kaaj ache aro
