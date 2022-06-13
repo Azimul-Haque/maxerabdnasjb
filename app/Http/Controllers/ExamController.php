@@ -158,8 +158,8 @@ class ExamController extends Controller
         $exam->available_to = Carbon::parse($oldexam->available_to);
         $exam->save();
 
-        foreach($oldexam->examquestions as $examquestion) {
-
+        foreach($oldexam->examquestions as $oldexamquestion) {
+            $examquestion = new Examquestion;
         }
 
         Session::flash('success', 'Exam copied successfully!');
