@@ -104,6 +104,11 @@
                                 <th>মোট প্রশ্ন সংখ্যা</th>
                             </tr>
                         </thead>
+                        <tbody>
+                            @foreach ($topics as $topic)
+                                <tr><td>{{ $topic->name }}</td></tr>
+                            @endforeach
+                        </tbody>
                       </table>
                     </div>
                     <!-- /.card-body -->
