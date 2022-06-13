@@ -35,7 +35,7 @@
                           @foreach($examquestions as $examquestion)
                               <tr>
                                   <td>
-                                      {{ $examquestion->question->question }}<br/>
+                                    {{ $examquestion->question->id }} {{ $examquestion->question->question }}<br/>
                                       <span class="badge bg-success">{{ $examquestion->question->topic->name }}</span>
                                   </td>
                               
