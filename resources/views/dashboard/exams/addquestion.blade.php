@@ -97,6 +97,13 @@
                     <!-- /.card-header -->
                     <div class="card-body">
                       বিষয়ভিত্তিক মান বণ্টন
+                      <table class="table">
+                        <thead>
+                            <tr>
+                                <th>বিষয়</th>
+                            </tr>
+                        </thead>
+                      </table>
                     </div>
                     <!-- /.card-body -->
                   </div>   
