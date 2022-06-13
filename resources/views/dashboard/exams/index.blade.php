@@ -41,6 +41,16 @@
                           @foreach($exams as $exam)
                               <tr>
                                   <td>
+                                    @php
+                                        $currentDate = date('Y-m-d');  
+                                        $startDate = date('Y-m-d', strtotime("01/09/2019"));
+                                        $endDate = date('Y-m-d', strtotime("01/10/2019"));   
+                                        if (($currentDate >= $startDate) && ($currentDate <= $endDate)){   
+                                        echo "Current date is between two dates";
+                                        }else{    
+                                        echo "Current date is not between two dates";  
+                                        }
+                                    @endphp
                                     <a href="{{ route('dashboard.exams.add.question', $exam->id) }}" rel="tooltip" title="প্রশ্ন যোগ করুন">{{ $exam->name }}</a>
                                     <br/>
                                     <span class="badge bg-success">{{ $exam->examcategory->name }}</span>
