@@ -59,17 +59,17 @@
                                       <a href="{{ route('dashboard.exams.add.question', $exam->id) }}" class="btn btn-warning btn-sm" rel="tooltip" title="প্রশ্ন যোগ করুন">
                                           <i class="fas fa-folder-plus"></i>
                                       </a>
-                                      <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#editExamModal{{ $exam->id }}" rel="tooltip" title="কপি তৈরি করুন">
+                                      <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#copyExamModal{{ $exam->id }}" rel="tooltip" title="কপি তৈরি করুন">
                                           <i class="far fa-copy"></i>
                                       </button>
                                       {{-- Copy Exam Modal Code --}}
                                       {{-- Copy Exam Modal Code --}}
                                       <!-- Modal -->
-                                      <div class="modal fade" id="editExamModal{{ $exam->id }}" tabindex="-1" role="dialog" aria-labelledby="editExamModalLabel{{ $exam->id }}" aria-hidden="true" data-backdrop="static">
+                                      <div class="modal fade" id="copyExamModal{{ $exam->id }}" tabindex="-1" role="dialog" aria-labelledby="copyExamModalLabel{{ $exam->id }}" aria-hidden="true" data-backdrop="static">
                                         <div class="modal-dialog modal-lg" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header bg-success">
-                                              <h5 class="modal-title" id="editExamModalLabel{{ $exam->id }}">পরীক্ষা হালনাগাদ</h5>
+                                              <h5 class="modal-title" id="copyExamModalLabel{{ $exam->id }}">পরীক্ষা হালনাগাদ</h5>
                                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                   <span aria-hidden="true">&times;</span>
                                               </button>
