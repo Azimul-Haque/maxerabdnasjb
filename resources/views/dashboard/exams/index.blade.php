@@ -62,6 +62,48 @@
                                       <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#editExamModal{{ $exam->id }}" rel="tooltip" title="কপি তৈরি করুন">
                                           <i class="far fa-copy"></i>
                                       </button>
+                                    {{-- Edit Exam Modal Code --}}
+                                      {{-- Edit Exam Modal Code --}}
+                                      <!-- Modal -->
+                                      <div class="modal fade" id="editExamModal{{ $exam->id }}" tabindex="-1" role="dialog" aria-labelledby="editExamModalLabel{{ $exam->id }}" aria-hidden="true" data-backdrop="static">
+                                        <div class="modal-dialog modal-lg" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header bg-success">
+                                              <h5 class="modal-title" id="editExamModalLabel{{ $exam->id }}">পরীক্ষা হালনাগাদ</h5>
+                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                              </button>
+                                            </div>
+                                            <form method="post" action="{{ route('dashboard.exams.update', $exam->id) }}" enctype='multipart/form-data'>
+                                              <div class="modal-body">
+                                                  @csrf
+                                                  <div class="row">
+                                                      <div class="col-md-6">
+                                                          <div class="input-group mb-3">
+                                                              <select name="examcategory_id" class="form-control" required>
+                                                                  <option selected="" disabled="" value="">পরীক্ষার ক্যাটাগরি</option>
+                                                                  @foreach ($examcategories as $category)
+                                                                      <option value="{{ $category->id }}" @if($exam->examcategory_id == $category->id) selected @endif>{{ $category->name }}</option>
+                                                                  @endforeach
+                                                              </select>
+                                                              <div class="input-group-append">
+                                                                  <div class="input-group-text"><span class="fas fa-bookmark"></span></div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
+                                                <button type="submit" class="btn btn-success">দাখিল করুন</button>
+                                              </div>
+                                          </form>
+                                        </div>
+                                        </div>
+                                      </div>
+                                      {{-- Edit Exam Modal Code --}}
+                                      {{-- Edit Exam Modal Code --}}
+
                                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editExamModal{{ $exam->id }}">
                                           <i class="far fa-edit"></i>
                                       </button>
