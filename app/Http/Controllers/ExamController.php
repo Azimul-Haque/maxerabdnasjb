@@ -161,7 +161,7 @@ class ExamController extends Controller
         foreach($oldexam->examquestions as $oldexamquestion) {
             $examquestion = new Examquestion;
             $examquestion->exam_id = $exam->id;
-            $examquestion->question_id = $oldexamquestion->id;
+            $examquestion->question_id = $oldexamquestion->question_id;
             $examquestion->save();
         }
 
