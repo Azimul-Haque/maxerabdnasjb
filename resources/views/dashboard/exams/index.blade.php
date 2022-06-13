@@ -50,6 +50,9 @@
                                             $isCurrent = true;
                                         }
                                     @endphp
+                                    @if($isCurrent == true)
+                                        
+                                    @endif
                                     <a href="{{ route('dashboard.exams.add.question', $exam->id) }}" rel="tooltip" title="প্রশ্ন যোগ করুন">{{ $exam->name }}</a>
                                     <br/>
                                     <span class="badge bg-success">{{ $exam->examcategory->name }}</span>
