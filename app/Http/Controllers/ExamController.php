@@ -205,7 +205,11 @@ class ExamController extends Controller
                 $oldexamquestion->delete();
             }
         }
-        
+
+        $topics = Topic::all();
+        foreach($topics as $topic) {
+            $topicname = 'topic' . $topic->id;
+        }
         $hiddencheckarray = explode(',', $request->hiddencheckarray);
         // dd($hiddencheckarray);
         foreach($hiddencheckarray as $question_id) {
