@@ -59,7 +59,7 @@
                                       <a href="{{ route('dashboard.exams.add.question', $exam->id) }}" class="btn btn-warning btn-sm" rel="tooltip" title="প্রশ্ন যোগ করুন">
                                           <i class="fas fa-folder-plus"></i>
                                       </a>
-                                      <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editExamModal{{ $exam->id }}">
+                                      <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#editExamModal{{ $exam->id }}">
                                           <i class="far fa-copy"></i>
                                       </button>
                                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editExamModal{{ $exam->id }}">
