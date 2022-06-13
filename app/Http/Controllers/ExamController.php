@@ -147,8 +147,8 @@ class ExamController extends Controller
         ));
 
         $oldexam = Exam::findOrFail($id);
-        $exam = Exam::find($id);
-        $exam->examcategory_id = $request->examcategory_id;
+        $exam = new Exam();
+        $exam->examcategory_id = $oldexam->examcategory_id;
         $exam->name = $request->name;
         $exam->duration = $request->duration;
         $exam->qsweight = $request->qsweight;
