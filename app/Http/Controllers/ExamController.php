@@ -210,7 +210,7 @@ class ExamController extends Controller
         foreach($topics as $topic) {
             $topicname = 'topic' . $topic->id;
             if($request[$topicname] > 0) {
-                dd($request[$topicname] > 0);
+                dd($request[$topicname]);
             }
         }
         $hiddencheckarray = explode(',', $request->hiddencheckarray);
