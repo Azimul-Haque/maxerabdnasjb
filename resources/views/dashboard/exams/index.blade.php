@@ -78,19 +78,14 @@
                                               <div class="modal-body">
                                                   @csrf
                                                   <div class="row">
-                                                      <div class="col-md-6">
-                                                          <div class="input-group mb-3">
-                                                              <select name="examcategory_id" class="form-control" required>
-                                                                  <option selected="" disabled="" value="">পরীক্ষার ক্যাটাগরি</option>
-                                                                  @foreach ($examcategories as $category)
-                                                                      <option value="{{ $category->id }}" @if($exam->examcategory_id == $category->id) selected @endif>{{ $category->name }}</option>
-                                                                  @endforeach
-                                                              </select>
-                                                              <div class="input-group-append">
-                                                                  <div class="input-group-text"><span class="fas fa-bookmark"></span></div>
-                                                              </div>
-                                                          </div>
-                                                      </div>
+                                                    <div class="col-md-6">
+                                                        <div class="input-group mb-3">
+                                                            <input type="text" name="name" class="form-control" value="{{ $exam->name }}" placeholder="পরীক্ষার নাম" required>
+                                                            <div class="input-group-append">
+                                                                <div class="input-group-text"><span class="far fa-clipboard"></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                   </div>
                                               </div>
                                               <div class="modal-footer">
