@@ -153,9 +153,9 @@ class ExamController extends Controller
         $exam->duration = $oldexam->duration;
         $exam->qsweight = $oldexam->qsweight;
         $exam->negativepercentage = $oldexam->negativepercentage;
-        $exam->price_type = $request->price_type;
-        $exam->available_from = Carbon::parse($request->available_from);
-        $exam->available_to = Carbon::parse($request->available_to);
+        $exam->price_type = $oldexam->price_type;
+        $exam->available_from = Carbon::parse($oldexam->available_from);
+        $exam->available_to = Carbon::parse($oldexam->available_to);
         $exam->save();
 
         Session::flash('success', 'Exam updated successfully!');
