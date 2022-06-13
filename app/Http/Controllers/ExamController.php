@@ -143,14 +143,7 @@ class ExamController extends Controller
         // dd($request->file('image'));
         // dd($request->file('image'));
         $this->validate($request,array(
-            'examcategory_id'    => 'required|string|max:191',
             'name'               => 'required|string|max:191',
-            'duration'           => 'required|string|max:191',
-            'qsweight'           => 'required|string|max:191',
-            'negativepercentage' => 'required|string|max:191',
-            'price_type'         => 'required|string|max:191',
-            'available_from'     => 'required|string|max:191',
-            'available_to'       => 'required|string|max:191',
         ));
 
         $exam = Exam::find($id);
