@@ -225,9 +225,9 @@
                                       {{-- Edit Exam Modal Code --}}
                                       {{-- Edit Exam Modal Code --}}
           
-                                      <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteQuestionModal{{ $exam->id }}" >
-                                          <i class="far fa-trash-alt"></i>
-                                      </button>
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteQuestionModal{{ $exam->id }}" >
+                                    <i class="far fa-trash-alt"></i>
+                                </button>
                                   </td>
                                   {{-- Delete Exam Modal Code --}}
                                   {{-- Delete Exam Modal Code --}}
