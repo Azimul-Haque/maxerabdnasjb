@@ -14,7 +14,7 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">
-                      <h3 class="card-title">প্রশ্নসমূহ</h3>
+                      <h3 class="card-title">প্রশ্নসমূহ ({{ $examquestions->count() }} টি প্রশ্ন)</h3>
           
                       <div class="card-tools">
                           <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addExamQuestionModal">
@@ -23,8 +23,8 @@
                       </div>
                     </div>
                     <!-- /.card-header -->
-                    <div class="card-body p-0">
-                      <table class="table" id="myTable">
+                    <div class="card-body">
+                      <table class="table" id="datatable">
                           <thead>
                               <tr>
                                   <th>প্রশ্ন</th>
@@ -53,24 +53,24 @@
                                   <!-- Modal -->
                                   <div class="modal fade" id="deleteCategoryModal{{ $examquestion->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteCategoryModalLabel" aria-hidden="true" data-backdrop="static">
                                       <div class="modal-dialog" role="document">
-                                      <div class="modal-content">
-                                          <div class="modal-header bg-danger">
-                                          <h5 class="modal-title" id="deleteCategoryModalLabel">প্রশ্ন অপসারণ</h5>
-                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                              <span aria-hidden="true">&times;</span>
-                                          </button>
-                                          </div>
-                                          <div class="modal-body">
-                                          আপনি কি নিশ্চিতভাবে এই প্রশ্নটি অপসারণ করতে চান?<br/>
-                                          <center>
-                                              <big><b>{{ $examquestion->question->question }}</b></big><br/>
-                                          </center>
-                                          </div>
-                                          <div class="modal-footer">
-                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-                                          <a href="{{ route('dashboard.exams.category.delete', $examquestion->id) }}" class="btn btn-danger">ডিলেট করুন</a>
-                                          </div>
-                                      </div>
+                                        <div class="modal-content">
+                                            <div class="modal-header bg-danger">
+                                                <h5 class="modal-title" id="deleteCategoryModalLabel">প্রশ্ন অপসারণ</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                আপনি কি নিশ্চিতভাবে এই প্রশ্নটি অপসারণ করতে চান?<br/>
+                                                <center>
+                                                    <big><b>{{ $examquestion->question->question }}</b></big><br/>
+                                                </center>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
+                                                <a href="{{ route('dashboard.exams.category.delete', $examquestion->id) }}" class="btn btn-danger">ডিলেট করুন</a>
+                                            </div>
+                                        </div>
                                       </div>
                                   </div>
                                   {{-- Remove Exam Question Modal Code --}}
@@ -111,19 +111,26 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header bg-success">
-                <h5 class="modal-title" id="addExamQuestionModalLabel">
-                    প্রশ্ন হালনাগাদ
-                    <span id="questionupdatingnumber"></span>
-                </h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                    <h5 class="modal-title" id="addExamQuestionModalLabel">
+                        প্রশ্ন হালনাগাদ
+                        <span id="questionupdatingnumber"></span>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
                 <form method="post" id="addquestionform" action="{{ route('dashboard.exams.question.store') }}">
                     <div class="modal-body">
                         @csrf
+                        @php
+                            $examquestionidarray = [];
+                            foreach ($examquestions as $examquestion) {
+                                $examquestionidarray[] = $examquestion->question_id;
+                            }
+                            $questionchecktext = implode(",", $examquestionidarray);
+                        @endphp
                         <input type="hidden" name="exam_id" value="{{ $exam->id }}">
-                        <input type="hidden" id="hiddencheckarray" name="hiddencheckarray">
+                        <input type="hidden" id="hiddencheckarray" name="hiddencheckarray" value="{{ $questionchecktext }}">
                         <table class="table table-condensed" id="datatablemodal">
                             <thead>
                                 <tr>
@@ -133,12 +140,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @php
-                                    $examquestionidarray = [];
-                                    foreach ($examquestions as $examquestion) {
-                                        $examquestionidarray[] = $examquestion->question_id;
-                                    }
-                                @endphp
+                                
                                 @foreach ($questions as $question)
                                 <tr>
                                     <td>
@@ -158,11 +160,10 @@
                                 @endforeach
                             </tbody>
                         </table>
-                        
                     </div>
                     <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-                    <button type="submit" class="btn btn-success">দাখিল করুন</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
+                        <button type="submit" class="btn btn-success">দাখিল করুন</button>
                     </div>
                 </form>
             </div>
@@ -170,6 +171,49 @@
     </div>
     {{-- Add Exam Question Modal Code --}}
     {{-- Add Exam Question Modal Code --}}
+    
+    {{-- Auto Question Set Modal Code --}}
+    {{-- Auto Question Set Modal Code --}}
+    <!-- Modal -->
+    <div class="modal fade" id="automaticQuestionSetModal" tabindex="-1" role="dialog" aria-labelledby="automaticQuestionSetModalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-warning">
+                <h5 class="modal-title" id="automaticQuestionSetModalLabel">
+                    স্বয়ংক্রিয় প্রশ্ন প্রণয়ন
+                    <span id="questionupdatingnumber"></span>
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <form method="post" id="addquestionform" action="{{ route('dashboard.exams.question.store') }}">
+                    <div class="modal-body p-0">
+                        @csrf
+                        <input type="hidden" name="exam_id" value="{{ $exam->id }}">
+                        <table class="table">
+                            <tbody>
+                                @foreach ($topics as $topic)
+                                    <tr>
+                                        <td>{{ $topic->name }}</td>
+                                        <td>
+                                            <input type="number" name="name" class="form-control" value="" placeholder="প্রশ্নের পরিমাণ">
+                                        </td>
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
+                        <button type="submit" class="btn btn-success">দাখিল করুন</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    {{-- Auto Question Set Modal Code --}}
+    {{-- Auto Question Set Modal Code --}}
 @endsection
 
 @section('third_party_scripts')
@@ -178,6 +222,10 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.4/underscore-umd-min.js"></script>
 <script>
+    $("#datatable").DataTable({
+        "responsive": true, "lengthChange": true, "autoWidth": false, info: false, "pageLength": 10,
+        "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+    });
     $("#datatablemodal").DataTable({
         "responsive": true, "lengthChange": true, "autoWidth": false, info: false, "pageLength": 10,
         "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]

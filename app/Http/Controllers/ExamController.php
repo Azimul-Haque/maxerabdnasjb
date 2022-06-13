@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Topic;
 use App\Exam;
 use App\Examcategory;
 use App\Examquestion;
@@ -51,7 +52,7 @@ class ExamController extends Controller
         $category->name = $request->name;
         $category->save();
 
-        Session::flash('success', 'Topic created successfully!');
+        Session::flash('success', 'Category created successfully!');
         return redirect()->route('dashboard.exams');
     }
 
@@ -153,11 +154,13 @@ class ExamController extends Controller
     {
         $exam = Exam::findOrFail($id);
         $examquestions = Examquestion::where('exam_id', $exam->id)->get();
+        $topics = Topic::all();
         $questions = Question::all();
         
         return view('dashboard.exams.addquestion')
                                     ->withExam($exam)
                                     ->withExamquestions($examquestions)
+                                    ->withTopics($topics)
                                     ->withQuestions($questions);
     }
 
@@ -169,6 +172,13 @@ class ExamController extends Controller
             'questioncheck'    => 'required',
         ));
 
+        
+        $oldexamquestions = Examquestion::where('exam_id', $request->exam_id)->get();
+        if(count($oldexamquestions) > 0) {
+            foreach($oldexamquestions as $oldexamquestion) {
+                $oldexamquestion->delete();
+            }
+        }
         $hiddencheckarray = explode(',', $request->hiddencheckarray);
         // dd($hiddencheckarray);
         foreach($hiddencheckarray as $question_id) {
