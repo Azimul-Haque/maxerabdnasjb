@@ -198,7 +198,7 @@ class ExamController extends Controller
             'exam_id'          => 'required',
         ));
 
-        dd($request->all());
+        // dd($request->all());
         $oldexamquestions = Examquestion::where('exam_id', $request->exam_id)->get();
         if(count($oldexamquestions) > 0) {
             foreach($oldexamquestions as $oldexamquestion) {
@@ -210,7 +210,7 @@ class ExamController extends Controller
         foreach($topics as $topic) {
             $topicname = 'topic' . $topic->id;
             $quantity = 'quantity' . $topic->id;
-            if($request[$topicname] == $topic->id && $quantity > 0) {
+            if($request[$topicname] == $topic->id && $request[$quantity] > 0) {
                 dd($request[$topicname]);
                 $topicquestions = Question::where('topic_id', $request[$topicname])->get();
                 dd($topicquestions);
