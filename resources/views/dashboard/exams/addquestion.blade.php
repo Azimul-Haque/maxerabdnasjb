@@ -224,9 +224,7 @@
                                             <input type="hidden" name="topic{{ $topic->id }}" value="{{ $topic->id }}">
                                             
                                             <div class="row">
-                                                <div class="col-md-6">
-                                                    <label for="quantity{{ $topic->id }}">প্রশ্নের পরিমাণঃ</label>
-                                                </div>
+                                                <div class="col-md-6">প্রশ্নের পরিমাণঃ</div>
                                                 <div class="col-md-6">
                                                     <input type="number" name="quantity{{ $topic->id }}" class="form-control" value="" placeholder="প্রশ্নের পরিমাণ">
                                                 </div>
