@@ -221,7 +221,7 @@ class ExamController extends Controller
                 }
             }
             $quantitycheck = $quantitycheck + $request[$quantity];
-            dd($quantitycheck);
+            // dd($quantitycheck);
         }
         if($quantitycheck == 0) {
             Session::flash('info', 'At leaset one topic is required!');
