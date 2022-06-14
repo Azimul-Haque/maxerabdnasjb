@@ -14,10 +14,9 @@ class APIController extends Controller
     public function addUser(Request $request)
     {
         $this->validate($request,array(
-            'uid'        => 'required|max:255',
-            'name'        => 'required|max:255',
-            'email'       => 'required|max:255',
-            'message'     => 'required|max:255'
+            'uid'      => 'required|max:255',
+            'name'     => 'required|max:255',
+            'mobile'   => 'required|max:255'
         ));
 
         $message = new Charioteermessage;
