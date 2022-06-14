@@ -25,9 +25,6 @@ class APIController extends Controller
 
 
         if($request->softtoken == 'Rifat.Admin.2022') {
-            // PURAN PAPI CHECK HOBE...
-            // PURAN PAPI CHECK HOBE...
-            // PURAN PAPI CHECK HOBE...
             $user = new User;
             $user->uid = $request->uid;
             $user->name = $request->name;
