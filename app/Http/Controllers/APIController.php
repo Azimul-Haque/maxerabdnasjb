@@ -34,10 +34,12 @@ class APIController extends Controller
             $user->mobile = $request->mobile;
             $user->password = Hash::make('12345678');
             $user->save();
+
+            return response()->json([
+                'success' => true
+            ]);
         }
 
-        return response()->json([
-            'success' => true
-        ]);
+        
     }
 }
