@@ -26,7 +26,7 @@ class APIController extends Controller
         $user->name = $request->name != null ? $request->name : 'No Name';
         $user->role = 'user';
         $user->mobile = $request->mobile;
-        $user->password = Hash::make($request->password);
+        $user->password = Hash::make('12345678');
         $user->save();
 
         return response()->json([
