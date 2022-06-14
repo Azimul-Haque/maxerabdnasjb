@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\User;
+
 class APIController extends Controller
 {
     public function test()
@@ -19,7 +21,7 @@ class APIController extends Controller
             'mobile'   => 'required|max:255'
         ));
 
-        $message = new Charioteermessage;
+        $message = new User;
         $message->name = $request->name;
         $message->email = $request->email;
         $message->message = $request->message;
