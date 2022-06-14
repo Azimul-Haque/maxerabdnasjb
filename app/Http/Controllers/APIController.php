@@ -23,7 +23,6 @@ class APIController extends Controller
             'softtoken'   => 'required|max:255'
         ));
 
-
         if($request->softtoken == 'Rifat.Admin.2022')
         {
             $user = new User;
