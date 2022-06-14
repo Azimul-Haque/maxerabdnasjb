@@ -22,9 +22,10 @@ class APIController extends Controller
         ));
 
         $user = new User;
+        $user->uid = $request->uid;
         $user->name = $request->name;
         $user->mobile = $request->mobile;
-        $user->role = $request->role;
+        $user->role = 'user';
         $user->password = Hash::make($request->password);
         $user->save();
 
