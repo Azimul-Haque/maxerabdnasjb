@@ -17,7 +17,7 @@ class APIController extends Controller
     public function addUser(Request $request)
     {
         $this->validate($request,array(
-            'uid'         => 'required|max:255|unique',
+            'uid'         => 'required|max:255|unique:users,uid,' . $userId,
             'name'        => 'required|max:255',
             'mobile'      => 'required|max:255',
             'softtoken'   => 'required|max:255'
