@@ -32,7 +32,7 @@ class APIController extends Controller
             $user->uid = $request->uid;
             $user->name = $request->name;
             $user->role = 'user';
-            $user->mobile = $request->mobile;
+            $user->mobile = substr($request->mobile, -11);
             $user->password = Hash::make('12345678');
             $user->save();
 
