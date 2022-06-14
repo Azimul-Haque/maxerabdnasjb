@@ -22,16 +22,19 @@ class APIController extends Controller
             'softtoken'   => 'required|max:255'
         ));
 
-        // PURAN PAPI CHECK HOBE...
-        // PURAN PAPI CHECK HOBE...
-        // PURAN PAPI CHECK HOBE...
-        $user = new User;
-        $user->uid = $request->uid;
-        $user->name = $request->name;
-        $user->role = 'user';
-        $user->mobile = $request->mobile;
-        $user->password = Hash::make('12345678');
-        $user->save();
+
+        if($request->softtoken == 'Rifat.Admin.2022') {
+            // PURAN PAPI CHECK HOBE...
+            // PURAN PAPI CHECK HOBE...
+            // PURAN PAPI CHECK HOBE...
+            $user = new User;
+            $user->uid = $request->uid;
+            $user->name = $request->name;
+            $user->role = 'user';
+            $user->mobile = $request->mobile;
+            $user->password = Hash::make('12345678');
+            $user->save();
+        }
 
         return response()->json([
             'success' => true
