@@ -21,11 +21,12 @@ class APIController extends Controller
             'mobile'   => 'required|max:255'
         ));
 
-        $message = new User;
-        $message->name = $request->name;
-        $message->email = $request->email;
-        $message->message = $request->message;
-        $message->save();
+        $user = new User;
+        $user->name = $request->name;
+        $user->mobile = $request->mobile;
+        $user->role = $request->role;
+        $user->password = Hash::make($request->password);
+        $user->save();
 
         return response()->json([
             'success' => true
