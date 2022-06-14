@@ -8,6 +8,6 @@ class APIController extends Controller
 {
     public function test()
     {
-        return json_encode("{name: 'Rifat', phone: '01*********'}");
+        return json_encode("Test");
     }
 }
