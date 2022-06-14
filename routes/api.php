@@ -18,4 +18,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/testapi', 'DashboardController@index')->name('dashboard.index');
+Route::get('/testapi', 'APIController@test')->name('api.test');
