@@ -26,7 +26,7 @@ class APIController extends Controller
         // PURAN PAPI CHECK HOBE...
         $user = new User;
         $user->uid = $request->uid;
-        $user->name = $request->name != null ? $request->name : 'No Name';
+        $user->name = $request->name;
         $user->role = 'user';
         $user->mobile = $request->mobile;
         $user->password = Hash::make('12345678');
