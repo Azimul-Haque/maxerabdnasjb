@@ -10,4 +10,9 @@ class APIController extends Controller
     {
          dd('name');
     }
+
+    public function addUser(Request $request)
+    {
+         dd('name');
+    }
 }
