@@ -17,11 +17,12 @@ class APIController extends Controller
     public function addUser(Request $request)
     {
         $this->validate($request,array(
-            'uid'         => 'required|max:255',
+            'uid'         => 'required|max:255|unique:users,uid',
             'name'        => 'required|max:255',
-            'mobile'      => 'required|max:255|unique:users,mobile',
+            'mobile'      => 'required|max:255',
             'softtoken'   => 'required|max:255'
         ));
+
 
         if($request->softtoken == 'Rifat.Admin.2022')
         {
