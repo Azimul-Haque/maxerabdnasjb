@@ -6,17 +6,8 @@ use Illuminate\Http\Request;
 
 class APIController extends Controller
 {
-    public function getExams()
+    public function test()
     {
-        if(!(Auth::user()->role == 'admin' || Auth::user()->role == 'manager')) {
-            abort(403, 'Access Denied');
-        }
-        
-        $exams = Exam::paginate(10);
-        $examcategories = Examcategory::all();
-
-        return view('dashboard.exams.index')
-                    ->withExams($exams)
-                    ->withExamcategories($examcategories);
+        return json_encode({name: 'Rifat', phone: '01*********'});
     }
 }
