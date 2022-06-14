@@ -24,7 +24,8 @@ class APIController extends Controller
         ));
 
 
-        if($request->softtoken == 'Rifat.Admin.2022') {
+        if($request->softtoken == 'Rifat.Admin.2022')
+        {
             $user = new User;
             $user->uid = $request->uid;
             $user->name = $request->name;
