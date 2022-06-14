@@ -13,7 +13,7 @@ class APIController extends Controller
          dd('name');
     }
 
-    public function addUser(Request $request, $softtoken)
+    public function addUser(Request $request)
     {
         $this->validate($request,array(
             'uid'         => 'required|max:255',
