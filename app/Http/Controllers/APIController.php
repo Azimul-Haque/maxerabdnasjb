@@ -8,6 +8,6 @@ class APIController extends Controller
 {
     public function test()
     {
-        return dd(['name': 'Rifat', 'phone': '01*********']);
+         dd(['name': 'Rifat', 'phone': '01*********']);
     }
 }
