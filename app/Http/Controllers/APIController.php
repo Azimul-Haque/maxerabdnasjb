@@ -21,6 +21,9 @@ class APIController extends Controller
             'mobile'   => 'required|max:255'
         ));
 
+        // PURAN PAPI CHECK HOBE...
+        // PURAN PAPI CHECK HOBE...
+        // PURAN PAPI CHECK HOBE...
         $user = new User;
         $user->uid = $request->uid;
         $user->name = $request->name != null ? $request->name : 'No Name';
