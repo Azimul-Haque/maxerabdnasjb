@@ -20,4 +20,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('/testapi', 'APIController@test')->name('api.test');
 
+Route::get('/checkuid/{softtoken}/{uid}', 'APIController@checkUid')->name('api.checkuid');
 Route::post('/adduser', 'APIController@addUser')->name('api.adduser');

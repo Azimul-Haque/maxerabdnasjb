@@ -14,6 +14,24 @@ class APIController extends Controller
          dd('name');
     }
 
+    public function checkUid($softtoken, $uid)
+    {
+        $user = User::where('uid', $uid)->first();
+
+        if($user && $softtoken == 'Rifat.Admin.2022') {
+            return response()->json([
+                'success' => true,
+                'uid' => $user->uid,
+                'name' => $user->name,
+                'mobile' => $user->mobile,
+            ]);
+        } else {
+            return response()->json([
+                'success' => false
+            ]);
+        }
+    }
+
     public function addUser(Request $request)
     {
         $this->validate($request,array(
@@ -22,7 +40,6 @@ class APIController extends Controller
             'mobile'      => 'required|max:255',
             'softtoken'   => 'required|max:255'
         ));
-
 
         if($request->softtoken == 'Rifat.Admin.2022')
         {
