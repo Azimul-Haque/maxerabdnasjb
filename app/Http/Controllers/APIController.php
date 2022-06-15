@@ -75,12 +75,11 @@ class APIController extends Controller
 
         if($user && $softtoken == 'Rifat.Admin.2022')
         {
-            $user
+            $user->name = $request->name;
+            $user->save();
+            
             return response()->json([
-                'success' => true,
-                'uid' => $user->uid,
-                'name' => $user->name,
-                'mobile' => $user->mobile,
+                'success' => true
             ]);
         } else {
             return response()->json([
