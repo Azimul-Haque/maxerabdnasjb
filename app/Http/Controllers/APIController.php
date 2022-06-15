@@ -63,7 +63,7 @@ class APIController extends Controller
         
     }
 
-    public function addUser(Request $request)
+    public function updateUser(Request $request)
     {
         $this->validate($request,array(
             'uid'         => 'required',
@@ -77,7 +77,7 @@ class APIController extends Controller
         {
             $user->name = $request->name;
             $user->save();
-            
+
             return response()->json([
                 'success' => true
             ]);
