@@ -67,7 +67,6 @@ class APIController extends Controller
         $this->validate($request,array(
             'uid'         => 'required|max:255|unique:users,uid',
             'name'        => 'required|max:255',
-            'mobile'      => 'required|max:255',
             'softtoken'   => 'required|max:255'
         ));
 
