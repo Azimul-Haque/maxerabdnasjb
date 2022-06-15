@@ -18,7 +18,8 @@ class APIController extends Controller
     {
         $user = User::where('uid', $uid)->first();
 
-        if($user && $softtoken == 'Rifat.Admin.2022') {
+        if($user && $softtoken == 'Rifat.Admin.2022')
+        {
             return response()->json([
                 'success' => true,
                 'uid' => $user->uid,
@@ -71,8 +72,10 @@ class APIController extends Controller
         ));
 
         $user = User::where('uid', $uid)->first();
-        
-        if($user && $softtoken == 'Rifat.Admin.2022') {
+
+        if($user && $softtoken == 'Rifat.Admin.2022')
+        {
+            $user
             return response()->json([
                 'success' => true,
                 'uid' => $user->uid,
