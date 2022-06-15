@@ -22,3 +22,4 @@ Route::get('/testapi', 'APIController@test')->name('api.test');
 
 Route::get('/checkuid/{softtoken}/{uid}', 'APIController@checkUid')->name('api.checkuid');
 Route::post('/adduser', 'APIController@addUser')->name('api.adduser');
+Route::post('/updateuser', 'APIController@addUser')->name('api.adduser');
