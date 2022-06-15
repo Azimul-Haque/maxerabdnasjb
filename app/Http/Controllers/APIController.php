@@ -73,7 +73,7 @@ class APIController extends Controller
 
         $user = User::where('uid', $request->uid)->first();
 
-        if($user && $softtoken == 'Rifat.Admin.2022')
+        if($user && $request->softtoken == 'Rifat.Admin.2022')
         {
             $user->name = $request->name;
             $user->save();
