@@ -94,12 +94,16 @@ class CourseController extends Controller
     public function addExamToCourse($id)
     {
         $course = Course::findOrFail($id);
-        foreach($course->courseexams as $exams) {
-            $exams->delete();
-        }
-        $course->delete();
-
-        Session::flash('success', 'Course deleted successfully!');
-        return redirect()->route('dashboard.courses');
+        $examquestions = Examquestion::where('exam_id', $exam->id)
+                                     ->orderBy('question_id', 'asc')
+                                     ->get();
+        $topics = Topic::all();
+        $questions = Question::all();
+        
+        return view('dashboard.exams.addquestion')
+                                    ->withExam($exam)
+                                    ->withExamquestions($examquestions)
+                                    ->withTopics($topics)
+                                    ->withQuestions($questions);
     }
 }
