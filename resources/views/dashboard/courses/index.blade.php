@@ -27,7 +27,6 @@
                               <tr>
                                   <th>Course</th>
                                   <th>Exams</th>
-                                  <th>Options</th>
                                   <th>Action</th>
                               </tr>
                           </thead>
@@ -37,14 +36,7 @@
                                   <td>
                                       {{ $course->name }}
                                   </td>
-                                  <td>{{ $course->answer }}</td>
-                                  <td>{{ $course->option1 }}, {{ $course->option2 }}, {{ $course->option3 }}, {{ $course->option4 }}</td>
-                                  {{-- <td>
-                                      <div class="progress progress-xs">
-                                          <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
-                                      </div>
-                                  </td> --}}
-                              
+                                  <td></td>
                                   <td>
                                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editQuestionModal{{ $course->id }}">
                                           <i class="far fa-edit"></i>
