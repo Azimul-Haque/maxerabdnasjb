@@ -105,7 +105,7 @@ class CourseController extends Controller
                                     ->withExams($exams);
     }
 
-    public function storeExamQuestion(Request $request)
+    public function storeCourseExam(Request $request)
     {
         $this->validate($request,array(
             'exam_id'          => 'required',
