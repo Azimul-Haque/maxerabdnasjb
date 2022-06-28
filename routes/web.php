@@ -52,6 +52,7 @@ Route::post('/dashboard/exams/category/{id}/update', 'ExamController@updateExamC
 Route::get('/dashboard/exams/category/{id}/delete', 'ExamController@deleteExamCategory')->name('dashboard.exams.category.delete');
 
 Route::get('/dashboard/courses', 'CourseController@getCourses')->name('dashboard.courses');
+Route::post('/dashboard/courses/store', 'CourseController@storeCourse')->name('dashboard.courses.store');
 
 // Route::get('/dashboard/balance', 'DashboardController@getBalance')->name('dashboard.balance');
 // Route::post('/dashboard/balance/store', 'DashboardController@storeBalance')->name('dashboard.balance.store');
