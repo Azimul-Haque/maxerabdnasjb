@@ -141,7 +141,7 @@
             $('#hiddencheckarray').val(updatedvalue);
             console.log(updatedvalue);
             var array = updatedvalue.split(',');
-            $('#examupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + array.length);
+            $('#examupdatingnumber').text('পরীক্ষা সংখ্যাঃ ' + array.length);
         } else {
             var hiddencheckarray = $('#hiddencheckarray').val();
             var uncheckedarray = hiddencheckarray.split(',');
@@ -153,7 +153,7 @@
             };
             $('#hiddencheckarray').val(newupdatedvalue);
             console.log(newupdatedvalue);
-            $('#examupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + updatedarray.length);
+            $('#examupdatingnumber').text('পরীক্ষা সংখ্যাঃ ' + updatedarray.length);
         }
     }
     
