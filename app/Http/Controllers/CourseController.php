@@ -116,8 +116,8 @@ class CourseController extends Controller
         
         $oldcourseexams = Courseexam::where('course_id', $request->course_id)->get();
         if(count($oldcourseexams) > 0) {
-            foreach($oldcourseexams as $oldexamquestion) {
-                $oldexamquestion->delete();
+            foreach($oldcourseexams as $oldcourseexam) {
+                $oldcourseexam->delete();
             }
         }
         $hiddencheckarray = explode(',', $request->hiddencheckarray);
