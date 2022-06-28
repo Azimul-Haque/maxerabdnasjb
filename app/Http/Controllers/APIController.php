@@ -95,11 +95,10 @@ class APIController extends Controller
             $courses = Course::select('name')
                              ->where('status', 1) // take only active courses
                              ->get();
+
             return response()->json([
                 'success' => true,
-                'uid' => $courses,
-                'name' => $user->name,
-                'mobile' => $user->mobile,
+                'courses' => $courses,
             ]);
         } else {
             return response()->json([
