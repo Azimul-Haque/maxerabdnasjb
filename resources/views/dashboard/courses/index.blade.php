@@ -41,8 +41,8 @@
                                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editQuestionModal{{ $course->id }}">
                                           <i class="far fa-edit"></i>
                                       </button>
-                                      {{-- Edit Question Modal Code --}}
-                                      {{-- Edit Question Modal Code --}}
+                                      {{-- Edit Course Modal Code --}}
+                                      {{-- Edit Course Modal Code --}}
                                       <!-- Modal -->
                                       <div class="modal fade" id="editQuestionModal{{ $course->id }}" tabindex="-1" role="dialog" aria-labelledby="editQuestionModalLabel" aria-hidden="true" data-backdrop="static">
                                           <div class="modal-dialog modal-lg" role="document">
@@ -115,15 +115,15 @@
 
     });
 </script>
-                                    {{-- Edit Question Modal Code --}}
-                                    {{-- Edit Question Modal Code --}}
+{{-- Edit Course Modal Code --}}
+{{-- Edit Course Modal Code --}}
         
                                     <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteQuestionModal{{ $course->id }}">
                                         <i class="far fa-trash-alt"></i>
                                     </button>
                                   </td>
-                                  {{-- Delete Question Modal Code --}}
-                                  {{-- Delete Question Modal Code --}}
+                                  {{-- Delete Course Modal Code --}}
+                                  {{-- Delete Course Modal Code --}}
                                   <!-- Modal -->
                                   <div class="modal fade" id="deleteQuestionModal{{ $course->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteQuestionModalLabel" aria-hidden="true" data-backdrop="static">
                                       <div class="modal-dialog" role="document">
@@ -147,8 +147,8 @@
                                       </div>
                                       </div>
                                   </div>
-                                  {{-- Delete Question Modal Code --}}
-                                  {{-- Delete Question Modal Code --}}
+                                  {{-- Delete Course Modal Code --}}
+                                  {{-- Delete Course Modal Code --}}
                               </tr>
                           @endforeach
                           </tbody>
