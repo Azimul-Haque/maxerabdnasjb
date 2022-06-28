@@ -131,6 +131,6 @@ class CourseController extends Controller
         }
 
         Session::flash('success', 'Exam updated successfully!');
-        return redirect()->route('dashboard.exams.add.question', $request->exam_id);
+        return redirect()->route('dashboard.courses.add.exam', $request->course_id);
     }
 }
