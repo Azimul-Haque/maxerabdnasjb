@@ -87,4 +87,21 @@ class APIController extends Controller
             ]);
         }
     }
+
+    public function getCourses($softtoken)
+    {
+        if($softtoken == 'Rifat.Admin.2022')
+        {
+            return response()->json([
+                'success' => true,
+                'uid' => $user->uid,
+                'name' => $user->name,
+                'mobile' => $user->mobile,
+            ]);
+        } else {
+            return response()->json([
+                'success' => false
+            ]);
+        }
+    }
 }
