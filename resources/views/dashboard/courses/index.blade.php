@@ -32,7 +32,7 @@
                               </tr>
                           </thead>
                           <tbody>
-                          @foreach($questions as $question)
+                          @foreach($courses as $question)
                               <tr>
                                   <td>
                                       {{ $question->question }}<br/>
