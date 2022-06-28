@@ -96,9 +96,11 @@
                                         </div>
                                     </td>
                                     <td>
-                                        {{ $exam->exam }}
+                                        {{ $exam->name }}
                                     </td>
-                                    <td><span class="badge bg-success">{{ $exam->topic->name }}</span></td>
+                                    <td>
+                                        {{-- <span class="badge bg-success">{{ $exam->topic->name }}</span> --}}
+                                    </td>
                                 </tr>
                                 @endforeach
                             </tbody>
