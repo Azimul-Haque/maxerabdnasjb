@@ -85,7 +85,6 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                
                                 @foreach ($questions as $question)
                                 <tr>
                                     <td>
