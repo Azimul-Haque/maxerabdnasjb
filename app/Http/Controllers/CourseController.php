@@ -124,7 +124,7 @@ class CourseController extends Controller
         // sort($hiddencheckarray);
         // dd($hiddencheckarray);
         foreach($hiddencheckarray as $exam_id) {
-            $examquestion = new Examquestion;
+            $examquestion = new Courseexam();
             $examquestion->course_id = $request->course_id;
             $examquestion->exam_id = $exam_id;
             $examquestion->save();
