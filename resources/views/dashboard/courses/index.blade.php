@@ -59,7 +59,7 @@
                                                       <div class="input-group mb-3">
                                                           <input type="text" name="name" class="form-control" value="{{ $course->name }}" placeholder="কোর্সের নাম" required>
                                                           <div class="input-group-append">
-                                                              <div class="input-group-text"><span class="far fa-question-circle"></span></div>
+                                                              <div class="input-group-text"><span class="fas fa-layer-group"></span></div>
                                                           </div>
                                                       </div>
                                                 </div>
@@ -134,7 +134,7 @@
                     <div class="input-group mb-3">
                         <input type="text" name="name" class="form-control" value="{{ old('name') }}" placeholder="কোর্সের নাম" required>
                         <div class="input-group-append">
-                            <div class="input-group-text"><span class="far fa-question-circle"></span></div>
+                            <div class="input-group-text"><span class="fas fa-layer-group"></span></div>
                         </div>
                     </div>
               </div>
