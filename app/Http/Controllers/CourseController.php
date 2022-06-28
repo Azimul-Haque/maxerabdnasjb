@@ -104,4 +104,33 @@ class CourseController extends Controller
                                     ->withCourseexams($courseexams)
                                     ->withExams($exams);
     }
+
+    public function storeExamQuestion(Request $request)
+    {
+        $this->validate($request,array(
+            'exam_id'          => 'required',
+            'hiddencheckarray' => 'required',
+            'questioncheck'    => 'required',
+        ));
+
+        
+        $oldexamquestions = Examquestion::where('exam_id', $request->exam_id)->get();
+        if(count($oldexamquestions) > 0) {
+            foreach($oldexamquestions as $oldexamquestion) {
+                $oldexamquestion->delete();
+            }
+        }
+        $hiddencheckarray = explode(',', $request->hiddencheckarray);
+        // sort($hiddencheckarray);
+        // dd($hiddencheckarray);
+        foreach($hiddencheckarray as $question_id) {
+            $examquestion = new Examquestion;
+            $examquestion->exam_id = $request->exam_id;
+            $examquestion->question_id = $question_id;
+            $examquestion->save();
+        }
+
+        Session::flash('success', 'Question updated successfully!');
+        return redirect()->route('dashboard.exams.add.question', $request->exam_id);
+    }
 }
