@@ -8,13 +8,13 @@
 @endsection
 
 @section('content')
-    @section('page-header') {{ $exam->name }} @endsection
+    @section('page-header') {{ $course->name }} @endsection
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">
-                      <h3 class="card-title">প্রশ্নসমূহ ({{ $examquestions->count() }} টি প্রশ্ন)</h3>
+                      <h3 class="card-title">পরীক্ষাসমূহ ({{ $courseexams->count() }} টি প্রশ্ন)</h3>
           
                       <div class="card-tools">
                           <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addExamQuestionModal">
