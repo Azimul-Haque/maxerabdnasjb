@@ -90,4 +90,16 @@ class CourseController extends Controller
         Session::flash('success', 'Course deleted successfully!');
         return redirect()->route('dashboard.courses');
     }
+    
+    public function addExamToCourse($id)
+    {
+        $course = Course::findOrFail($id);
+        foreach($course->courseexams as $exams) {
+            $exams->delete();
+        }
+        $course->delete();
+
+        Session::flash('success', 'Course deleted successfully!');
+        return redirect()->route('dashboard.courses');
+    }
 }
