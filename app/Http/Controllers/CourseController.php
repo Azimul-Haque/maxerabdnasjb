@@ -114,7 +114,7 @@ class CourseController extends Controller
         ));
 
         
-        $oldcourseexams = Courseexam::where('exam_id', $request->exam_id)->get();
+        $oldcourseexams = Courseexam::where('course_id', $request->course_id)->get();
         if(count($oldcourseexams) > 0) {
             foreach($oldcourseexams as $oldexamquestion) {
                 $oldexamquestion->delete();
