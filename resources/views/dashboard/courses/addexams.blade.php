@@ -48,8 +48,8 @@
                                           <i class="far fa-trash-alt"></i>
                                       </button>
                                   </td>
-                                  {{-- Remove Exam Question Modal Code --}}
-                                  {{-- Remove Exam Question Modal Code --}}
+                                  {{-- Remove Exam Modal Code --}}
+                                  {{-- Remove Exam Modal Code --}}
                                   <!-- Modal -->
                                   <div class="modal fade" id="deleteCategoryModal{{ $courseexam->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteCategoryModalLabel" aria-hidden="true" data-backdrop="static">
                                       <div class="modal-dialog" role="document">
@@ -73,8 +73,8 @@
                                         </div>
                                       </div>
                                   </div>
-                                  {{-- Remove Exam Question Modal Code --}}
-                                  {{-- Remove Exam Question Modal Code --}}
+                                  {{-- Remove Exam Modal Code --}}
+                                  {{-- Remove Exam Modal Code --}}
                               </tr>
                           @endforeach
                           </tbody>
