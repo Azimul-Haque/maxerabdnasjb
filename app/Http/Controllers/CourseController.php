@@ -49,11 +49,13 @@ class CourseController extends Controller
     {
         // dd($request->file('image'));
         $this->validate($request,array(
-            'name'               => 'required|string|max:191',
+            'name'   => 'required|string|max:191',
+            'status' => 'required',
         ));
 
         $course = new Course;
         $course->name = $request->name;
+        $course->status = $request->status;
         $course->save();
 
         Session::flash('success', 'Courses created successfully!');
