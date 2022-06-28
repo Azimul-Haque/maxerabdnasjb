@@ -24,5 +24,9 @@ use OneSignal;
 
 class CourseController extends Controller
 {
-    //
+    public function __construct()
+    {
+        $this->middleware('auth')->except('clear');
+        $this->middleware(['admin'])->only('getQuestions');
+    }
 }
