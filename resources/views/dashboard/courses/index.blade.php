@@ -37,7 +37,7 @@
                                   <td>
                                       {{ $course->name }}
                                   </td>
-                                  <td>@if($course->status == 1)  @endif</td>
+                                  <td>@if($course->status == 1) <span class=""></span> @endif</td>
                                   <td></td>
                                   <td>
                                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editCourseModal{{ $course->id }}">
