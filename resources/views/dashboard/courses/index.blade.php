@@ -15,7 +15,7 @@
                       <h3 class="card-title">কোর্সসমূহ (মোটঃ {{ $totalcourses }})</h3>
           
                       <div class="card-tools">
-                          <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addQuesitonModal">
+                          <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addCourseModal">
                               <i class="fas fa-plus-circle"></i> নতুন কোর্স যোগ
                           </button>
                       </div>
@@ -246,14 +246,14 @@
             </div>
         </div>
 
-    {{-- Add Question Modal Code --}}
-    {{-- Add Question Modal Code --}}
+    {{-- Add Course Modal Code --}}
+    {{-- Add Course Modal Code --}}
     <!-- Modal -->
-    <div class="modal fade" id="addQuesitonModal" tabindex="-1" role="dialog" aria-labelledby="addQuesitonModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal fade" id="addCourseModal" tabindex="-1" role="dialog" aria-labelledby="addCourseModalLabel" aria-hidden="true" data-backdrop="static">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header bg-success">
-            <h5 class="modal-title" id="addQuesitonModalLabel">নতুন প্রশ্ন যোগ</h5>
+            <h5 class="modal-title" id="addCourseModalLabel">নতুন প্রশ্ন যোগ</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -332,8 +332,8 @@
         </div>
       </div>
     </div>
-    {{-- Add Question Modal Code --}}
-    {{-- Add Question Modal Code --}}
+    {{-- Add Course Modal Code --}}
+    {{-- Add Course Modal Code --}}
 @endsection
 
 @section('third_party_scripts')
