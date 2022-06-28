@@ -80,7 +80,7 @@
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>প্রশ্ন</th>
+                                    <th>পরীক্ষা</th>
                                     <th>টপিক</th>
                                 </tr>
                             </thead>
