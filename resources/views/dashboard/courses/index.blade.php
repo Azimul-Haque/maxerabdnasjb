@@ -201,12 +201,12 @@
 
     });
 </script>
-                                      {{-- Edit Question Modal Code --}}
-                                      {{-- Edit Question Modal Code --}}
-          
-                                      <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteQuestionModal{{ $question->id }}">
-                                          <i class="far fa-trash-alt"></i>
-                                      </button>
+                                    {{-- Edit Question Modal Code --}}
+                                    {{-- Edit Question Modal Code --}}
+        
+                                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteQuestionModal{{ $question->id }}">
+                                        <i class="far fa-trash-alt"></i>
+                                    </button>
                                   </td>
                                   {{-- Delete Question Modal Code --}}
                                   {{-- Delete Question Modal Code --}}
