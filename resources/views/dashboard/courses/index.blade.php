@@ -139,6 +139,17 @@
                             <div class="input-group-text"><span class="fas fa-layer-group"></span></div>
                         </div>
                     </div>
+                    <div class="input-group mb-3">
+                        <select name="status" class="form-control" required>
+                            <option selected="" disabled="" value="">স্ট্যাটাস</option>
+                            <option value="1" @if($question->difficulty == 1) selected @endif>সহজ</option>
+                            <option value="2" @if($question->difficulty == 2) selected @endif>মধ্যম</option>
+                            <option value="3" @if($question->difficulty == 3) selected @endif>কঠিন</option>
+                        </select>
+                        <div class="input-group-append">
+                            <div class="input-group-text"><span class="fas fa-star-half-alt"></span></div>
+                        </div>
+                    </div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
