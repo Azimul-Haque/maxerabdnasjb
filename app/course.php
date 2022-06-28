@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Course extends Model
 {
-    public function exams(){
-        return $this->hasMany('App\Exam');
+    public function Courseexams(){
+        return $this->hasMany('App\Courseexam');
     }
 }
