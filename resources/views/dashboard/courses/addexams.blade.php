@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title') ড্যাশবোর্ড | পরীক্ষা | {{ $exam->name }}@endsection
+@section('title') ড্যাশবোর্ড | কোর্স | {{ $course->name }}@endsection
 
 @section('third_party_stylesheets')
 <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
