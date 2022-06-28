@@ -40,7 +40,7 @@
                                   <td>@if($course->status == 1) <span class="badge badge-primary">Active</span> @endif</td>
                                   <td></td>
                                   <td>
-                                    <a href="{{ route('dashboard.exams.add.question', $course->id) }}" class="btn btn-warning btn-sm" rel="tooltip" title="পরীক্ষা যোগ করুন">
+                                    <a href="{{ route('dashboard.courses.add.question', $course->id) }}" class="btn btn-warning btn-sm" rel="tooltip" title="পরীক্ষা যোগ করুন">
                                         <i class="fas fa-folder-plus"></i>
                                     </a>
                                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editCourseModal{{ $course->id }}">
