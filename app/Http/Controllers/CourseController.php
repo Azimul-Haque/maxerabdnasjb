@@ -94,7 +94,7 @@ class CourseController extends Controller
     public function addExamToCourse($id)
     {
         $course = Course::findOrFail($id);
-        $examquestions = Examquestion::where('exam_id', $exam->id)
+        $courseexam = Courseexam::where('exam_id', $exam->id)
                                      ->orderBy('question_id', 'asc')
                                      ->get();
         $topics = Topic::all();
