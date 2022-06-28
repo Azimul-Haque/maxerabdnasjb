@@ -310,19 +310,6 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="input-group mb-3">
-                                <select name="topic_id" class="form-control" required>
-                                    <option selected="" disabled="" value="">টপিক (বিষয়)</option>
-                                    @foreach ($topics as $topic)
-                                        <option value="{{ $topic->id }}">{{ $topic->name }}</option>
-                                    @endforeach
-                                </select>
-                                <div class="input-group-append">
-                                    <div class="input-group-text"><span class="fas fa-bookmark"></span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
                             <div class="form-group ">
                                 <label for="image">ছবি (প্রয়োজনে)</label>
                                 <input type="file" id="image" name="image" accept="image/*">
@@ -347,43 +334,6 @@
     </div>
     {{-- Add Question Modal Code --}}
     {{-- Add Question Modal Code --}}
-
-{{-- Add Question Modal Code --}}
-{{-- Add Question Modal Code --}}
-<!-- Modal -->
-<div class="modal fade" id="addTopicModal" tabindex="-1" role="dialog" aria-labelledby="addTopicModalLabel" aria-hidden="true" data-backdrop="static">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header bg-warning">
-          <h5 class="modal-title" id="addQuesitonModalLabel">নতুন টপিক যোগ</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <form method="post" action="{{ route('dashboard.questions.topic.store') }}">
-            <div class="modal-body">
-                  @csrf
-                  <div class="input-group mb-3">
-                      <input type="text"
-                             name="name"
-                             class="form-control"
-                             value="{{ old('name') }}"
-                             placeholder="নাম" required>
-                      <div class="input-group-append">
-                          <div class="input-group-text"><span class="far fa-bookmark"></span></div>
-                      </div>
-                  </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-              <button type="submit" class="btn btn-warning">দাখিল করুন</button>
-            </div>
-        </form>
-      </div>
-    </div>
-  </div>
-  {{-- Add Question Modal Code --}}
-  {{-- Add Question Modal Code --}}
 @endsection
 
 @section('third_party_scripts')
