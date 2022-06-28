@@ -35,8 +35,8 @@
                           @foreach($courseexams as $courseexam)
                               <tr>
                                   <td>
-                                      {{ $courseexam->question->question }}<br/>
-                                      <span class="badge bg-success">{{ $courseexam->question->topic->name }}</span>
+                                      {{ $courseexam->exam->name }}<br/>
+                                      {{-- <span class="badge bg-success">{{ $courseexam->question->topic->name }}</span> --}}
                                   </td>
                               
                                   <td align="right" width="40%">
