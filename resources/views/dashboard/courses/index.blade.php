@@ -242,7 +242,7 @@
                     </div>
                     <!-- /.card-body -->
                   </div>
-                  {{ $questions->links() }}
+                  {{ $courses->links() }}
             </div>
             <div class="col-md-3">
                 <div class="card">
