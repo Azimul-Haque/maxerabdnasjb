@@ -16,7 +16,7 @@
           
                       <div class="card-tools">
                           <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addQuesitonModal">
-                              <i class="fas fa-plus-circle"></i> নতুন প্রশ্ন যোগ
+                              <i class="fas fa-plus-circle"></i> নতুন কোর্স যোগ
                           </button>
                       </div>
                     </div>
