@@ -56,7 +56,7 @@ Route::post('/dashboard/courses/store', 'CourseController@storeCourse')->name('d
 Route::post('/dashboard/courses/{id}/update', 'CourseController@updateCourse')->name('dashboard.courses.update');
 Route::get('/dashboard/courses/{id}/delete', 'CourseController@deleteCourse')->name('dashboard.courses.delete');
 Route::get('/dashboard/courses/add/exam/{id}', 'CourseController@addExamToCourse')->name('dashboard.courses.add.exam');
-Route::post('/dashboard/exams/add/question/store', 'CourseController@storeCourseExam')->name('dashboard.exams.question.store');
+Route::post('/dashboard/exams/add/question/store', 'CourseController@storeCourseExam')->name('dashboard.courses.exam.store');
 
 // Route::get('/dashboard/balance', 'DashboardController@getBalance')->name('dashboard.balance');
 // Route::post('/dashboard/balance/store', 'DashboardController@storeBalance')->name('dashboard.balance.store');
