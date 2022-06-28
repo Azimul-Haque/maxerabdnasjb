@@ -95,7 +95,7 @@ class CourseController extends Controller
     {
         $course = Course::findOrFail($id);
         $courseexam = Courseexam::where('course_id', $course->id)
-                                     ->orderBy('question_id', 'asc')
+                                     ->orderBy('exam_id', 'desc')
                                      ->get();
         $topics = Topic::all();
         $questions = Question::all();
