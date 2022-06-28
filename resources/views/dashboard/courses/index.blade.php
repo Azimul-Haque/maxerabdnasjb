@@ -26,6 +26,7 @@
                           <thead>
                               <tr>
                                   <th>Course</th>
+                                  <th>Status</th>
                                   <th>Exams</th>
                                   <th>Action</th>
                               </tr>
@@ -36,6 +37,7 @@
                                   <td>
                                       {{ $course->name }}
                                   </td>
+                                  <td>{{ $course->status }}</td>
                                   <td></td>
                                   <td>
                                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editCourseModal{{ $course->id }}">
