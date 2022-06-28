@@ -38,12 +38,6 @@
                                       {{ $courseexam->exam->name }}<br/>
                                       {{-- <span class="badge bg-success">{{ $courseexam->question->topic->name }}</span> --}}
                                   </td>
-                              
-                                  <td align="right" width="40%">
-                                      <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editCategoryModal{{ $courseexam->id }}">
-                                          <i class="far fa-edit"></i>
-                                      </button>
-                                  </td>
                               </tr>
                           @endforeach
                           </tbody>
@@ -51,48 +45,6 @@
                     </div>
                     <!-- /.card-body -->
                   </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">
-                      <h3 class="card-title">স্বয়ংক্রিয় প্রশ্ন প্রণয়ন</h3>
-          
-                      <div class="card-tools">
-                          <button type="button" class="btn btn-warning btn-sm"  data-toggle="modal" data-target="#automaticQuestionSetModal">
-                              <i class="fas fa-plus-circle"></i> প্রশ্ন প্রণয়ন
-                          </button>
-                      </div>
-                    </div>
-                    <!-- /.card-header -->
-                    <div class="card-body">
-                      বিষয়ভিত্তিক মান বণ্টন
-                      <table class="table">
-                        <thead>
-                            <tr>
-                                <th>টপিক</th>
-                                <th>মোট প্রশ্ন সংখ্যা</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach ($topics as $topic)
-                                <tr>
-                                    <td>{{ $topic->name }}</td>
-                                    @php
-                                        $totalqs = 0;
-                                        foreach ($courseexams as $courseexam) {
-                                            if($courseexam->question->topic_id == $topic->id) {
-                                                $totalqs++;
-                                            }
-                                        }
-                                    @endphp
-                                    <td>{{ $totalqs }}</td>
-                                </tr>
-                            @endforeach
-                        </tbody>
-                      </table>
-                    </div>
-                    <!-- /.card-body -->
-                  </div>   
             </div>
         </div>
     </div>
