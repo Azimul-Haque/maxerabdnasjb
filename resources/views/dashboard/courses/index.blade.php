@@ -38,7 +38,9 @@
                                       {{ $course->name }}
                                   </td>
                                   <td>@if($course->status == 1) <span class="badge badge-primary">Active</span> @endif</td>
-                                  <td></td>
+                                  <td>
+                                    মোট পরীক্ষাঃ {{ $course->courseexam->count() }}
+                                  </td>
                                   <td>
                                     <a href="{{ route('dashboard.courses.add.exam', $course->id) }}" class="btn btn-warning btn-sm" rel="tooltip" title="পরীক্ষা যোগ করুন">
                                         <i class="fas fa-folder-plus"></i>
