@@ -70,7 +70,7 @@
                         @php
                             $courseexamidarray = [];
                             foreach ($courseexams as $courseexam) {
-                                $courseexamidarray[] = $courseexam->question_id;
+                                $courseexamidarray[] = $courseexam->exam_id;
                             }
                             $questionchecktext = implode(",", $courseexamidarray);
                         @endphp
