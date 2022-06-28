@@ -43,38 +43,7 @@
                                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editCategoryModal{{ $courseexam->id }}">
                                           <i class="far fa-edit"></i>
                                       </button>
-          
-                                      <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteCategoryModal{{ $courseexam->id }}" disabled>
-                                          <i class="far fa-trash-alt"></i>
-                                      </button>
                                   </td>
-                                  {{-- Remove Exam Modal Code --}}
-                                  {{-- Remove Exam Modal Code --}}
-                                  <!-- Modal -->
-                                  <div class="modal fade" id="deleteCategoryModal{{ $courseexam->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteCategoryModalLabel" aria-hidden="true" data-backdrop="static">
-                                      <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header bg-danger">
-                                                <h5 class="modal-title" id="deleteCategoryModalLabel">প্রশ্ন অপসারণ</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                আপনি কি নিশ্চিতভাবে এই প্রশ্নটি অপসারণ করতে চান?<br/>
-                                                <center>
-                                                    <big><b>{{ $courseexam->question->question }}</b></big><br/>
-                                                </center>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-                                                <a href="{{ route('dashboard.exams.category.delete', $courseexam->id) }}" class="btn btn-danger">ডিলেট করুন</a>
-                                            </div>
-                                        </div>
-                                      </div>
-                                  </div>
-                                  {{-- Remove Exam Modal Code --}}
-                                  {{-- Remove Exam Modal Code --}}
                               </tr>
                           @endforeach
                           </tbody>
