@@ -36,8 +36,8 @@ class CourseController extends Controller
             abort(403, 'Access Denied');
         }
         
-        $exams = Exam::orderBy('id', 'desc')->paginate(10);
-        $examcategories = Examcategory::all();
+        $courses = Course::orderBy('id', 'desc')->paginate(10);
+        // $examcategories = Examcategory::all();
 
         return view('dashboard.exams.index')
                     ->withExams($exams)
