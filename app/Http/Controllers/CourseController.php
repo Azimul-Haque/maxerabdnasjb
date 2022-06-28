@@ -70,12 +70,12 @@ class CourseController extends Controller
             'status' => 'required',
         ));
 
-        $course = new Course;
+        $course = Course::findOrFail($id);
         $course->name = $request->name;
         $course->status = $request->status;
         $course->save();
 
-        Session::flash('success', 'Courses created successfully!');
+        Session::flash('success', 'Courses updated successfully!');
         return redirect()->route('dashboard.courses');
     }
 }
