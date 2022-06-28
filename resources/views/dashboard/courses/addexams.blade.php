@@ -72,10 +72,10 @@
                             foreach ($courseexams as $courseexam) {
                                 $courseexamidarray[] = $courseexam->exam_id;
                             }
-                            $questionchecktext = implode(",", $courseexamidarray);
+                            $examchecktext = implode(",", $courseexamidarray);
                         @endphp
                         <input type="hidden" name="exam_id" value="{{ $exam->id }}">
-                        <input type="hidden" id="hiddencheckarray" name="hiddencheckarray" value="{{ $questionchecktext }}">
+                        <input type="hidden" id="hiddencheckarray" name="hiddencheckarray" value="{{ $examchecktext }}">
                         <table class="table table-condensed" id="datatablemodal">
                             <thead>
                                 <tr>
