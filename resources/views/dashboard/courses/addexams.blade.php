@@ -74,7 +74,7 @@
                             }
                             $examchecktext = implode(",", $courseexamidarray);
                         @endphp
-                        <input type="hidden" name="exam_id" value="{{ $exam->id }}">
+                        <input type="hidden" name="course_id" value="{{ $course->id }}">
                         <input type="hidden" id="hiddencheckarray" name="hiddencheckarray" value="{{ $examchecktext }}">
                         <table class="table table-condensed" id="datatablemodal">
                             <thead>
@@ -85,7 +85,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($questions as $question)
+                                @foreach ($exams as $question)
                                 <tr>
                                     <td>
                                         <div class="icheck-primary icheck-inline" style="float: left;">
