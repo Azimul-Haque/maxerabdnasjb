@@ -58,7 +58,7 @@
                 <div class="modal-header bg-success">
                     <h5 class="modal-title" id="addExamModalLabel">
                         প্রশ্ন হালনাগাদ
-                        <span id="questionupdatingnumber"></span>
+                        <span id="examupdatingnumber"></span>
                     </h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -141,7 +141,7 @@
             $('#hiddencheckarray').val(updatedvalue);
             console.log(updatedvalue);
             var array = updatedvalue.split(',');
-            $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + array.length);
+            $('#examupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + array.length);
         } else {
             var hiddencheckarray = $('#hiddencheckarray').val();
             var uncheckedarray = hiddencheckarray.split(',');
@@ -153,7 +153,7 @@
             };
             $('#hiddencheckarray').val(newupdatedvalue);
             console.log(newupdatedvalue);
-            $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + updatedarray.length);
+            $('#examupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + updatedarray.length);
         }
     }
     
