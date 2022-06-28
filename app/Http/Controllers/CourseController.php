@@ -108,9 +108,9 @@ class CourseController extends Controller
     public function storeCourseExam(Request $request)
     {
         $this->validate($request,array(
-            'exam_id'          => 'required',
+            'course_id'          => 'required',
             'hiddencheckarray' => 'required',
-            'questioncheck'    => 'required',
+            'examcheck'    => 'required',
         ));
 
         
