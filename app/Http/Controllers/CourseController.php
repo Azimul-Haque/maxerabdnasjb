@@ -44,4 +44,19 @@ class CourseController extends Controller
                     ->withCourses($courses)
                     ->withTotalcourses($totalcourses);
     }
+
+    public function storeCourse(Request $request)
+    {
+        // dd($request->file('image'));
+        $this->validate($request,array(
+            'name'               => 'required|string|max:191',
+        ));
+
+        $course = new Course;
+        $course->name = $request->name;
+        $course->save();
+
+        Session::flash('success', 'Exam created successfully!');
+        return redirect()->route('dashboard.exams');
+    }
 }
