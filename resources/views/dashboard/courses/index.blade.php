@@ -25,8 +25,8 @@
                       <table class="table">
                           <thead>
                               <tr>
-                                  <th>Question</th>
-                                  <th>Answer</th>
+                                  <th>Course</th>
+                                  <th>Exams</th>
                                   <th>Options</th>
                                   <th>Action</th>
                               </tr>
