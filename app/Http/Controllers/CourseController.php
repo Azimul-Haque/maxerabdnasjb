@@ -56,7 +56,7 @@ class CourseController extends Controller
         $course->name = $request->name;
         $course->save();
 
-        Session::flash('success', 'Exam created successfully!');
-        return redirect()->route('dashboard.exams');
+        Session::flash('success', 'Courses created successfully!');
+        return redirect()->route('dashboard.courses');
     }
 }
