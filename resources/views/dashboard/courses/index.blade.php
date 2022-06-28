@@ -91,9 +91,9 @@
                                           </button>
                                           </div>
                                           <div class="modal-body">
-                                            আপনি কি নিশ্চিতভাবে এই প্রশ্নটি ডিলেট করতে চান?<br/><br/>
+                                            আপনি কি নিশ্চিতভাবে এই কোর্সটি ডিলেট করতে চান?<br/><br/>
                                             <center>
-                                                <big><b>{{ $course->question }}</b></big>
+                                                <big><b>{{ $course->name }}</b></big>
                                             </center>
                                           </div>
                                           <div class="modal-footer">
