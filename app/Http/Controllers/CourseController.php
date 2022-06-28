@@ -39,8 +39,7 @@ class CourseController extends Controller
         $courses = Course::orderBy('id', 'desc')->paginate(10);
         // $examcategories = Examcategory::all();
 
-        return view('dashboard.exams.index')
-                    ->withExams($exams)
-                    ->withExamcategories($examcategories);
+        return view('dashboard.courses.index')
+                    ->withCourses($courses);
     }
 }
