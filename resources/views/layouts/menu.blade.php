@@ -27,8 +27,17 @@
 @if(Auth::user()->role == 'admin' || Auth::user()->role == 'manager')
 <li class="nav-item">
     <a href="{{ route('dashboard.exams') }}" class="nav-link {{ Request::is('dashboard/exams') ? 'active' : '' }} {{ Request::is('dashboard/exams/*') ? 'active' : '' }}">
-        <i class="nav-icon  fas fa-tasks"></i>
+        <i class="nav-icon fas fa-tasks"></i>
         <p>পরীক্ষাসমূহ</p>
+    </a>
+</li>
+@endif
+
+@if(Auth::user()->role == 'admin' || Auth::user()->role == 'manager')
+<li class="nav-item">
+    <a href="{{ route('dashboard.exams') }}" class="nav-link {{ Request::is('dashboard/exams') ? 'active' : '' }} {{ Request::is('dashboard/exams/*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-layer-group"></i>
+        <p>কোর্সসমূহ</p>
     </a>
 </li>
 @endif
