@@ -92,10 +92,12 @@ class APIController extends Controller
     {
         if($softtoken == 'Rifat.Admin.2022')
         {
-            $courses = Course::select('name')->get();
+            $courses = Course::select('name')
+                             ->where('status', 1) // take only active courses
+                             ->get();
             return response()->json([
                 'success' => true,
-                'uid' => $user->uid,
+                'uid' => $courses,
                 'name' => $user->name,
                 'mobile' => $user->mobile,
             ]);
