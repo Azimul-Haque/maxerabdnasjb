@@ -88,6 +88,6 @@ class CourseController extends Controller
         $course->delete();
 
         Session::flash('success', 'Course deleted successfully!');
-        return redirect()->route('dashboard.exams');
+        return redirect()->route('dashboard.courses');
     }
 }
