@@ -101,7 +101,7 @@ class CourseController extends Controller
         
         return view('dashboard.courses.addexams')
                                     ->withCourse($course)
-                                    ->withCourssexams($courseexams)
+                                    ->withCourseexams($courseexams)
                                     ->withExams($exams);
     }
 }
