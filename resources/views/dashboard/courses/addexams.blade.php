@@ -28,7 +28,7 @@
                           <thead>
                               <tr>
                                   <th>পরীক্ষা</th>
-                                  <th>Action</th>
+                                  <th>তথ্য</th>
                               </tr>
                           </thead>
                           <tbody>
