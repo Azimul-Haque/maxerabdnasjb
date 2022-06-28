@@ -66,85 +66,9 @@
                                                 <div class="modal-body">
                                                       @csrf
                                                       <div class="input-group mb-3">
-                                                          <input type="text" name="question" class="form-control" value="{{ $question->question }}" placeholder="প্রশ্ন" required>
+                                                          <input type="text" name="question" class="form-control" value="{{ $question->question }}" placeholder="কোর্স" required>
                                                           <div class="input-group-append">
                                                               <div class="input-group-text"><span class="far fa-question-circle"></span></div>
-                                                          </div>
-                                                      </div>
-                                                      <div class="row">
-                                                          <div class="col-md-6">
-                                                              <input type="text" name="option1" value="{{ $question->option1 }}" class="form-control mb-3" placeholder="অপশন ১" required>
-                                                          </div>
-                                                          <div class="col-md-6">
-                                                              <input type="text" name="option2" value="{{ $question->option2 }}" class="form-control mb-3" placeholder="অপশন ২" required>
-                                                          </div>
-                                                          <div class="col-md-6">
-                                                              <input type="text" name="option3" value="{{ $question->option3 }}" class="form-control mb-3" placeholder="অপশন ৩" required>
-                                                          </div>
-                                                          <div class="col-md-6">
-                                                              <input type="text" name="option4" value="{{ $question->option4 }}" class="form-control mb-3" placeholder="অপশন ৪" required>
-                                                          </div>
-                                                      </div>
-                                                      <div class="input-group mb-3">
-                                                        <div class="input-group mb-3">
-                                                            <select name="answer" class="form-control" required>
-                                                                <option selected="" disabled="" value="">সঠিক উত্তর</option>
-                                                                <option value="1" @if($question->answer == 1) selected @endif>অপশন ১</option>
-                                                                <option value="2" @if($question->answer == 2) selected @endif>অপশন ২</option>
-                                                                <option value="3" @if($question->answer == 3) selected @endif>অপশন ৩</option>
-                                                                <option value="4" @if($question->answer == 4) selected @endif>অপশন ৪</option>
-                                                            </select>
-                                                            <div class="input-group-append">
-                                                                <div class="input-group-text"><span class="far fa-check-circle"></span></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                      <div class="row">
-                                                          <div class="col-md-6">
-                                                              <div class="input-group mb-3">
-                                                                  <select name="difficulty" class="form-control" required>
-                                                                      <option selected="" disabled="" value="">ডিফিকাল্টি লেভেল</option>
-                                                                      <option value="1" @if($question->difficulty == 1) selected @endif>সহজ</option>
-                                                                      <option value="2" @if($question->difficulty == 2) selected @endif>মধ্যম</option>
-                                                                      <option value="3" @if($question->difficulty == 3) selected @endif>কঠিন</option>
-                                                                  </select>
-                                                                  <div class="input-group-append">
-                                                                      <div class="input-group-text"><span class="fas fa-star-half-alt"></span></div>
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                          <div class="col-md-6">
-                                                              <div class="input-group mb-3">
-                                                                  <select name="topic_id" class="form-control" required>
-                                                                      <option selected="" disabled="" value="">টপিক (বিষয়)</option>
-                                                                      @foreach ($topics as $topic)
-                                                                          <option value="{{ $topic->id }}" @if($question->topic_id == $topic->id) selected @endif>{{ $topic->name }}</option>
-                                                                      @endforeach
-                                                                  </select>
-                                                                  <div class="input-group-append">
-                                                                      <div class="input-group-text"><span class="fas fa-bookmark"></span></div>
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                          <div class="col-md-6">
-                                                              <div class="form-group ">
-                                                                  <label for="image">ছবি (প্রয়োজনে)</label>
-                                                                  <input type="file" id="image{{ $question->id }}" name="image" accept="image/*">
-                                                              </div>
-                                                              <center>
-                                                                  <?php
-                                                                    if($question->questionimage) {
-                                                                        $currentimage = asset('images/questions/' . $question->questionimage->image);
-                                                                    } else {
-                                                                        $currentimage = asset('images/placeholder.png');
-                                                                    }
-                                                                  ?>
-                                                                  <img src="{{ $currentimage }}" id='img-upload{{ $question->id }}' style="width: 250px; height: auto;" class="img-responsive" />
-                                                              </center>
-                                                          </div>
-                                                          <div class="col-md-6">
-                                                              <label for="explanation">ব্যাখ্যা (প্রয়োজনে)</label><br/>
-                                                              <textarea class="form-control summernote" name="explanation" id="explanation" placeholder="ব্যাখ্যা" style="width: 100%; height: 220px;">{{ $question->questionexplanation ? $question->questionexplanation->explanation : '' }}</textarea>
                                                           </div>
                                                       </div>
                                                 </div>
