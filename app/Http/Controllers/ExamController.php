@@ -190,7 +190,7 @@ class ExamController extends Controller
         $topics = Topic::all();
         $questions = Question::all();
         
-        return view('dashboard.exams.addexams')
+        return view('dashboard.exams.addquestion')
                                     ->withExam($exam)
                                     ->withExamquestions($examquestions)
                                     ->withTopics($topics)
