@@ -81,7 +81,7 @@
                                 <tr>
                                     <th>#</th>
                                     <th>পরীক্ষা</th>
-                                    <th>টপিক</th>
+                                    <th>তথ্য</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -99,7 +99,7 @@
                                         {{ $exam->name }}
                                     </td>
                                     <td>
-                                        {{-- <span class="badge bg-success">{{ $exam->topic->name }}</span> --}}
+                                        {{ $exam->created_at }}
                                     </td>
                                 </tr>
                                 @endforeach
