@@ -49,8 +49,8 @@
         </div>
     </div>
 
-    {{-- Add Exam Question Modal Code --}}
-    {{-- Add Exam Question Modal Code --}}
+    {{-- Add Exam Modal Code --}}
+    {{-- Add Exam Modal Code --}}
     <!-- Modal -->
     <div class="modal fade" id="addExamModal" tabindex="-1" role="dialog" aria-labelledby="addExamModalLabel" aria-hidden="true" data-backdrop="static">
         <div class="modal-dialog modal-lg" role="document">
@@ -114,52 +114,8 @@
             </div>
         </div>
     </div>
-    {{-- Add Exam Question Modal Code --}}
-    {{-- Add Exam Question Modal Code --}}
-    
-    {{-- Auto Question Set Modal Code --}}
-    {{-- Auto Question Set Modal Code --}}
-    <!-- Modal -->
-    <div class="modal fade" id="automaticQuestionSetModal" tabindex="-1" role="dialog" aria-labelledby="automaticQuestionSetModalLabel" aria-hidden="true" data-backdrop="static">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header bg-warning">
-                <h5 class="modal-title" id="automaticQuestionSetModalLabel">
-                    স্বয়ংক্রিয় প্রশ্ন প্রণয়ন
-                    <span id="questionupdatingnumber"></span>
-                </h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                </div>
-                <form method="post" id="addautoquestionform" action="{{ route('dashboard.exams.question.auto') }}">
-                    <div class="modal-body p-0">
-                        @csrf
-                        <input type="hidden" name="exam_id" value="{{ $exam->id }}">
-                        <table class="table">
-                            <tbody>
-                                @foreach ($topics as $topic)
-                                    <tr>
-                                        <td width="50%">{{ $topic->name }}</td>
-                                        <td>
-                                            <input type="hidden" name="topic{{ $topic->id }}" value="{{ $topic->id }}">
-                                            <input type="number" name="quantity{{ $topic->id }}" min="0" class="form-control" value="" placeholder="প্রশ্নের পরিমাণ">
-                                        </td>
-                                    </tr>
-                                @endforeach
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-                        <button type="submit" class="btn btn-success">দাখিল করুন</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    {{-- Auto Question Set Modal Code --}}
-    {{-- Auto Question Set Modal Code --}}
+    {{-- Add Exam Modal Code --}}
+    {{-- Add Exam Modal Code --}}
 @endsection
 
 @section('third_party_scripts')
