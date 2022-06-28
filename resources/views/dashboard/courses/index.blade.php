@@ -32,14 +32,13 @@
                               </tr>
                           </thead>
                           <tbody>
-                          @foreach($courses as $question)
+                          @foreach($courses as $course)
                               <tr>
                                   <td>
-                                      {{ $question->question }}<br/>
-                                      <span class="badge bg-info">{{ $question->difficulty == 1 ? 'সহজ' : ($question->difficulty == 2 ? 'মধ্যম' : 'কঠিন') }}</span>
+                                      {{ $course->name }}
                                   </td>
-                                  <td>{{ $question->answer }}</td>
-                                  <td>{{ $question->option1 }}, {{ $question->option2 }}, {{ $question->option3 }}, {{ $question->option4 }}</td>
+                                  <td>{{ $course->answer }}</td>
+                                  <td>{{ $course->option1 }}, {{ $course->option2 }}, {{ $course->option3 }}, {{ $course->option4 }}</td>
                                   {{-- <td>
                                       <div class="progress progress-xs">
                                           <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
@@ -47,13 +46,13 @@
                                   </td> --}}
                               
                                   <td>
-                                      <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editQuestionModal{{ $question->id }}">
+                                      <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editQuestionModal{{ $course->id }}">
                                           <i class="far fa-edit"></i>
                                       </button>
                                       {{-- Edit Question Modal Code --}}
                                       {{-- Edit Question Modal Code --}}
                                       <!-- Modal -->
-                                      <div class="modal fade" id="editQuestionModal{{ $question->id }}" tabindex="-1" role="dialog" aria-labelledby="editQuestionModalLabel" aria-hidden="true" data-backdrop="static">
+                                      <div class="modal fade" id="editQuestionModal{{ $course->id }}" tabindex="-1" role="dialog" aria-labelledby="editQuestionModalLabel" aria-hidden="true" data-backdrop="static">
                                           <div class="modal-dialog modal-lg" role="document">
                                           <div class="modal-content">
                                               <div class="modal-header bg-success">
@@ -62,11 +61,11 @@
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
                                               </div>
-                                              <form method="post" action="{{ route('dashboard.questions.update', $question->id) }}" enctype='multipart/form-data'>
+                                              <form method="post" action="{{ route('dashboard.questions.update', $course->id) }}" enctype='multipart/form-data'>
                                                 <div class="modal-body">
                                                       @csrf
                                                       <div class="input-group mb-3">
-                                                          <input type="text" name="question" class="form-control" value="{{ $question->question }}" placeholder="কোর্স" required>
+                                                          <input type="text" name="question" class="form-control" value="{{ $course->question }}" placeholder="কোর্স" required>
                                                           <div class="input-group-append">
                                                               <div class="input-group-text"><span class="far fa-question-circle"></span></div>
                                                           </div>
@@ -101,23 +100,23 @@
           if (input.files && input.files[0]) {
               var reader = new FileReader();
               reader.onload = function (e) {
-                  $('#img-upload{{ $question->id }}').attr('src', e.target.result);
+                  $('#img-upload{{ $course->id }}').attr('src', e.target.result);
               }
               reader.readAsDataURL(input.files[0]);
           }
       }
-      $("#image{{ $question->id }}").change(function(){
+      $("#image{{ $course->id }}").change(function(){
           readURL(this);
           var filesize = parseInt((this.files[0].size)/1024);
           if(filesize > 10000) {
-            $("#image{{ $question->id }}").val('');
+            $("#image{{ $course->id }}").val('');
             // toastr.warning('File size is: '+filesize+' Kb. try uploading less than 300Kb', 'WARNING').css('width', '400px;');
             Toast.fire({
                 icon: 'warning',
                 title: 'File size is: '+filesize+' Kb. try uploading less than 300Kb'
             })
             setTimeout(function() {
-            $("#img-upload{{ $question->id }}").attr('src', '{{ asset('images/placeholder.png') }}');
+            $("#img-upload{{ $course->id }}").attr('src', '{{ asset('images/placeholder.png') }}');
             }, 1000);
           }
       });
@@ -127,14 +126,14 @@
                                     {{-- Edit Question Modal Code --}}
                                     {{-- Edit Question Modal Code --}}
         
-                                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteQuestionModal{{ $question->id }}">
+                                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteQuestionModal{{ $course->id }}">
                                         <i class="far fa-trash-alt"></i>
                                     </button>
                                   </td>
                                   {{-- Delete Question Modal Code --}}
                                   {{-- Delete Question Modal Code --}}
                                   <!-- Modal -->
-                                  <div class="modal fade" id="deleteQuestionModal{{ $question->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteQuestionModalLabel" aria-hidden="true" data-backdrop="static">
+                                  <div class="modal fade" id="deleteQuestionModal{{ $course->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteQuestionModalLabel" aria-hidden="true" data-backdrop="static">
                                       <div class="modal-dialog" role="document">
                                       <div class="modal-content">
                                           <div class="modal-header bg-danger">
@@ -146,12 +145,12 @@
                                           <div class="modal-body">
                                             আপনি কি নিশ্চিতভাবে এই প্রশ্নটি ডিলেট করতে চান?<br/><br/>
                                             <center>
-                                                <big><b>{{ $question->question }}</b></big>
+                                                <big><b>{{ $course->question }}</b></big>
                                             </center>
                                           </div>
                                           <div class="modal-footer">
                                           <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-                                          <a href="{{ route('dashboard.questions.delete', $question->id) }}" class="btn btn-danger">ডিলেট করুন</a>
+                                          <a href="{{ route('dashboard.questions.delete', $course->id) }}" class="btn btn-danger">ডিলেট করুন</a>
                                           </div>
                                       </div>
                                       </div>
