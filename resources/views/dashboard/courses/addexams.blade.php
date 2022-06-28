@@ -32,26 +32,26 @@
                               </tr>
                           </thead>
                           <tbody>
-                          @foreach($courseexams as $examquestion)
+                          @foreach($courseexams as $courseexam)
                               <tr>
                                   <td>
-                                      {{ $examquestion->question->question }}<br/>
-                                      <span class="badge bg-success">{{ $examquestion->question->topic->name }}</span>
+                                      {{ $courseexam->question->question }}<br/>
+                                      <span class="badge bg-success">{{ $courseexam->question->topic->name }}</span>
                                   </td>
                               
                                   <td align="right" width="40%">
-                                      <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editCategoryModal{{ $examquestion->id }}">
+                                      <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editCategoryModal{{ $courseexam->id }}">
                                           <i class="far fa-edit"></i>
                                       </button>
           
-                                      <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteCategoryModal{{ $examquestion->id }}" disabled>
+                                      <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteCategoryModal{{ $courseexam->id }}" disabled>
                                           <i class="far fa-trash-alt"></i>
                                       </button>
                                   </td>
                                   {{-- Remove Exam Question Modal Code --}}
                                   {{-- Remove Exam Question Modal Code --}}
                                   <!-- Modal -->
-                                  <div class="modal fade" id="deleteCategoryModal{{ $examquestion->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteCategoryModalLabel" aria-hidden="true" data-backdrop="static">
+                                  <div class="modal fade" id="deleteCategoryModal{{ $courseexam->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteCategoryModalLabel" aria-hidden="true" data-backdrop="static">
                                       <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header bg-danger">
@@ -63,12 +63,12 @@
                                             <div class="modal-body">
                                                 আপনি কি নিশ্চিতভাবে এই প্রশ্নটি অপসারণ করতে চান?<br/>
                                                 <center>
-                                                    <big><b>{{ $examquestion->question->question }}</b></big><br/>
+                                                    <big><b>{{ $courseexam->question->question }}</b></big><br/>
                                                 </center>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-                                                <a href="{{ route('dashboard.exams.category.delete', $examquestion->id) }}" class="btn btn-danger">ডিলেট করুন</a>
+                                                <a href="{{ route('dashboard.exams.category.delete', $courseexam->id) }}" class="btn btn-danger">ডিলেট করুন</a>
                                             </div>
                                         </div>
                                       </div>
@@ -110,8 +110,8 @@
                                     <td>{{ $topic->name }}</td>
                                     @php
                                         $totalqs = 0;
-                                        foreach ($examquestions as $examquestion) {
-                                            if($examquestion->question->topic_id == $topic->id) {
+                                        foreach ($courseexams as $courseexam) {
+                                            if($courseexam->question->topic_id == $topic->id) {
                                                 $totalqs++;
                                             }
                                         }
@@ -147,11 +147,11 @@
                     <div class="modal-body">
                         @csrf
                         @php
-                            $examquestionidarray = [];
-                            foreach ($examquestions as $examquestion) {
-                                $examquestionidarray[] = $examquestion->question_id;
+                            $courseexamidarray = [];
+                            foreach ($courseexams as $courseexam) {
+                                $courseexamidarray[] = $courseexam->question_id;
                             }
-                            $questionchecktext = implode(",", $examquestionidarray);
+                            $questionchecktext = implode(",", $courseexamidarray);
                         @endphp
                         <input type="hidden" name="exam_id" value="{{ $exam->id }}">
                         <input type="hidden" id="hiddencheckarray" name="hiddencheckarray" value="{{ $questionchecktext }}">
@@ -170,7 +170,7 @@
                                     <td>
                                         <div class="icheck-primary icheck-inline" style="float: left;">
                                             <input type="checkbox" onchange="checkboxquestion({{ $question->id }})" id="check{{ $question->id }}" name="questioncheck[]" value="{{ $question->id }}" 
-                                            @if(in_array($question->id, $examquestionidarray)) checked="" @endif
+                                            @if(in_array($question->id, $courseexamidarray)) checked="" @endif
                                             />
                                             <label for="check{{ $question->id }}"> </label>
                                         </div>
