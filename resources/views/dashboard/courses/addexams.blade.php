@@ -38,7 +38,7 @@
                                       {{ $courseexam->exam->name }}
                                   </td>
                                   <td>
-                                    {{ date('F d, Y', strtotime($exam->created_at)) }}
+                                    {{ date('F d, Y', strtotime($courseexam->exam->created_at)) }}
                                   </td>
                               </tr>
                           @endforeach
