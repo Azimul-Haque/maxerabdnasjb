@@ -35,8 +35,10 @@
                           @foreach($courseexams as $courseexam)
                               <tr>
                                   <td>
-                                      {{ $courseexam->exam->name }}<br/>
-                                      {{-- <span class="badge bg-success">{{ $courseexam->question->topic->name }}</span> --}}
+                                      {{ $courseexam->exam->name }}
+                                  </td>
+                                  <td>
+                                    {{ date('F d, Y', strtotime($exam->created_at)) }}
                                   </td>
                               </tr>
                           @endforeach
