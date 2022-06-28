@@ -15,7 +15,7 @@ class CreateCoursesTable extends Migration
     {
         Schema::create('courses', function (Blueprint $table) {
             $table->id();
-            $table->integer('examcategory_id')->unsigned();
+            $table->integer('exam_id')->unsigned();
             $table->string('name');
             $table->string('duration');
             $table->string('qsweight', 10);
