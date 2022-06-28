@@ -27,12 +27,12 @@
                       <table class="table" id="datatable">
                           <thead>
                               <tr>
-                                  <th>প্রশ্ন</th>
+                                  <th>পরীক্ষা</th>
                                   <th>Action</th>
                               </tr>
                           </thead>
                           <tbody>
-                          @foreach($examquestions as $examquestion)
+                          @foreach($courseexams as $examquestion)
                               <tr>
                                   <td>
                                       {{ $examquestion->question->question }}<br/>
