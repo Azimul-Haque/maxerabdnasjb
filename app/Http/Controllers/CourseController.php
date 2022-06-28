@@ -125,12 +125,12 @@ class CourseController extends Controller
         // dd($hiddencheckarray);
         foreach($hiddencheckarray as $exam_id) {
             $examquestion = new Examquestion;
-            $examquestion->exam_id = $request->exam_id;
-            $examquestion->question_id = $question_id;
+            $examquestion->course_id = $request->course_id;
+            $examquestion->exam_id = $exam_id;
             $examquestion->save();
         }
 
-        Session::flash('success', 'Question updated successfully!');
+        Session::flash('success', 'Exam updated successfully!');
         return redirect()->route('dashboard.exams.add.question', $request->exam_id);
     }
 }
