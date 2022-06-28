@@ -62,7 +62,7 @@ class CourseController extends Controller
         return redirect()->route('dashboard.courses');
     }
     
-    public function updateCourse(Request $request)
+    public function updateCourse(Request $request, $id)
     {
         // dd($request->file('image'));
         $this->validate($request,array(
