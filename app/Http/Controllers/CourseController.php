@@ -9,6 +9,8 @@ use App\Exam;
 use App\Examcategory;
 use App\Examquestion;
 use App\Question;
+use App\Course;
+use App\Courseexam;
 
 use Carbon\Carbon;
 use DB;
