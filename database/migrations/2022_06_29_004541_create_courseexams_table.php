@@ -15,6 +15,8 @@ class CreateCourseexamsTable extends Migration
     {
         Schema::create('courseexams', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('course_id')->unsigned();
+            $table->foreignId('exam_id')->unsigned();
             $table->timestamps();
         });
     }
