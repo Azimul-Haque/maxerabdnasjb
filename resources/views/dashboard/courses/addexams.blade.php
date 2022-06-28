@@ -85,7 +85,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($exams as $question)
+                                @foreach ($exams as $exam)
                                 <tr>
                                     <td>
                                         <div class="icheck-primary icheck-inline" style="float: left;">
