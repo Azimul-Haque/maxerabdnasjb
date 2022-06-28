@@ -97,8 +97,7 @@ class CourseController extends Controller
         $courseexam = Courseexam::where('course_id', $course->id)
                                      ->orderBy('exam_id', 'desc')
                                      ->get();
-        $topics = Topic::all();
-        $questions = Question::all();
+        $exams = Exam::all();
         
         return view('dashboard.exams.addquestion')
                                     ->withExam($exam)
