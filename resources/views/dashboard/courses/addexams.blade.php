@@ -99,7 +99,7 @@
                                         {{ $exam->name }}
                                     </td>
                                     <td>
-                                        {{ $exam->created_at }}
+                                        {{ date('F d, Y', strtotime($exam->created_at)) }}
                                     </td>
                                 </tr>
                                 @endforeach
