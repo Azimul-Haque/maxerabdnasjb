@@ -17,8 +17,8 @@
                       <h3 class="card-title">পরীক্ষাসমূহ ({{ $courseexams->count() }} টি প্রশ্ন)</h3>
           
                       <div class="card-tools">
-                          <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addExamQuestionModal">
-                              <i class="fas fa-tasks"></i> প্রশ্ন হালনাগাদ করুন
+                          <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addExamModal">
+                              <i class="fas fa-tasks"></i> পরীক্ষা হালনাগাদ করুন
                           </button>
                       </div>
                     </div>
@@ -131,11 +131,11 @@
     {{-- Add Exam Question Modal Code --}}
     {{-- Add Exam Question Modal Code --}}
     <!-- Modal -->
-    <div class="modal fade" id="addExamQuestionModal" tabindex="-1" role="dialog" aria-labelledby="addExamQuestionModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal fade" id="addExamModal" tabindex="-1" role="dialog" aria-labelledby="addExamModalLabel" aria-hidden="true" data-backdrop="static">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header bg-success">
-                    <h5 class="modal-title" id="addExamQuestionModalLabel">
+                    <h5 class="modal-title" id="addExamModalLabel">
                         প্রশ্ন হালনাগাদ
                         <span id="questionupdatingnumber"></span>
                     </h5>
