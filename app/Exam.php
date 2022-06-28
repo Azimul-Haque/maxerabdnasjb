@@ -13,4 +13,8 @@ class Exam extends Model
     public function examquestions(){
         return $this->hasMany('App\Examquestion');
     }
+
+    public function course(){
+        return $this->belongsTo('App\Course');
+    }
 }
