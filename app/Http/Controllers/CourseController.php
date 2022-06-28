@@ -58,7 +58,7 @@ class CourseController extends Controller
         $course->status = $request->status;
         $course->save();
 
-        Session::flash('success', 'Courses created successfully!');
+        Session::flash('success', 'Course created successfully!');
         return redirect()->route('dashboard.courses');
     }
     
@@ -75,19 +75,19 @@ class CourseController extends Controller
         $course->status = $request->status;
         $course->save();
 
-        Session::flash('success', 'Courses updated successfully!');
+        Session::flash('success', 'Course updated successfully!');
         return redirect()->route('dashboard.courses');
     }
 
     public function deleteCourse($id)
     {
         $course = Course::findOrFail($id);
-        foreach($exam->examquestions as $examquestion) {
-            $examquestion->delete();
+        foreach($course->courseexams as $exams) {
+            $exams->delete();
         }
-        $exam->delete();
+        $course->delete();
 
-        Session::flash('success', 'Exam deleted successfully!');
+        Session::flash('success', 'Course deleted successfully!');
         return redirect()->route('dashboard.exams');
     }
 }
