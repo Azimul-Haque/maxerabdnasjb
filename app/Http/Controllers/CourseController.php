@@ -99,7 +99,7 @@ class CourseController extends Controller
                                      ->get();
         $exams = Exam::all();
         
-        return view('dashboard.courses.addexam')
+        return view('dashboard.courses.addexams')
                                     ->withCourse($course)
                                     ->withCourssexams($courseexams)
                                     ->withExams($exams);
