@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\User;
 use App\Course;
+use App\Courseexam;
 use Hash;
 
 class APIController extends Controller
@@ -93,13 +94,36 @@ class APIController extends Controller
     {
         if($softtoken == 'Rifat.Admin.2022')
         {
-            $courses = Course::select('name')
+            $courses = Course::select('id', 'name')
                              ->where('status', 1) // take only active courses
                              ->get();
 
             return response()->json([
                 'success' => true,
                 'courses' => $courses,
+            ]);
+        } else {
+            return response()->json([
+                'success' => false
+            ]);
+        }
+    }
+
+    public function getCourseExams($softtoken, $id)
+    {
+        if($softtoken == 'Rifat.Admin.2022')
+        {
+            $courseexams = Courseexam::select('course_id', 'exam_id')
+                                     ->where('course_id', $id)
+                                     ->get();
+
+            foreach($courseexams as $courseexam) {
+                $courseexam->name = $courseexam->exam->name;
+            }
+
+            return response()->json([
+                'success' => true,
+                'exams' => $courseexams,
             ]);
         } else {
             return response()->json([

@@ -25,3 +25,5 @@ Route::post('/adduser', 'APIController@addUser')->name('api.adduser');
 Route::post('/updateuser', 'APIController@updateUser')->name('api.updateuser');
 
 Route::get('/getcourses/{softtoken}', 'APIController@getCourses')->name('api.getcourses');
+Route::get('/getcourses/exams/{softtoken}/{id}', 'APIController@getCourseExams')->name('api.getcourses.exams');
+
