@@ -28,15 +28,15 @@
                           <thead>
                               <tr>
                                   <th>পরীক্ষা</th>
+                                  <th>মোট প্রশ্ন</th>
                                   <th>তথ্য</th>
                               </tr>
                           </thead>
                           <tbody>
                           @foreach($courseexams as $courseexam)
                               <tr>
-                                  <td>
-                                      {{ $courseexam->exam->name }}
-                                  </td>
+                                  <td>{{ $courseexam->exam->name }}</td>
+                                  <td>{{ $courseexam->exam->examquestions->count() }}</td>
                                   <td>
                                     {{ date('F d, Y', strtotime($courseexam->exam->created_at)) }}
                                   </td>

@@ -6,9 +6,6 @@ use Illuminate\Http\Request;
 
 use App\Topic;
 use App\Exam;
-use App\Examcategory;
-use App\Examquestion;
-use App\Question;
 use App\Course;
 use App\Courseexam;
 
@@ -112,7 +109,6 @@ class CourseController extends Controller
             'hiddencheckarray' => 'required',
             'examcheck'    => 'required',
         ));
-
         
         $oldcourseexams = Courseexam::where('course_id', $request->course_id)->get();
         if(count($oldcourseexams) > 0) {
@@ -124,10 +120,10 @@ class CourseController extends Controller
         // sort($hiddencheckarray);
         // dd($hiddencheckarray);
         foreach($hiddencheckarray as $exam_id) {
-            $examquestion = new Courseexam();
-            $examquestion->course_id = $request->course_id;
-            $examquestion->exam_id = $exam_id;
-            $examquestion->save();
+            $courseexam = new Courseexam();
+            $courseexam->course_id = $request->course_id;
+            $courseexam->exam_id = $exam_id;
+            $courseexam->save();
         }
 
         Session::flash('success', 'Exam updated successfully!');
