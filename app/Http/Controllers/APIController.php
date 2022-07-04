@@ -141,7 +141,7 @@ class APIController extends Controller
                                      ->where('exam_id', $id)
                                      ->get();
 
-            foreach($examquestions as $courseexam) {
+            foreach($examquestions as $examquestion) {
                 $courseexam->name = $courseexam->exam->name;
             }
 
