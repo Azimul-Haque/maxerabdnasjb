@@ -142,7 +142,7 @@ class APIController extends Controller
                                      ->get();
 
             foreach($examquestions as $examquestion) {
-                $examquestion->question = $examquestion->question;
+                $examquestion->question = $examquestion->question->exclude('created_at', 'updated_at');
             }
 
             return response()->json([
