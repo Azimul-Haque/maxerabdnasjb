@@ -142,7 +142,7 @@ class APIController extends Controller
                                      ->get();
 
             foreach($examquestions as $examquestion) {
-                $courseexam->name = $courseexam->exam->name;
+                $examquestion->question = $examquestion->question;
             }
 
             return response()->json([
