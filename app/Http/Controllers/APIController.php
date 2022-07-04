@@ -131,4 +131,27 @@ class APIController extends Controller
             ]);
         }
     }
+
+    public function getCourseExamQuestions($softtoken, $id)
+    {
+        if($softtoken == 'Rifat.Admin.2022')
+        {
+            $courseexams = Courseexam::select('course_id', 'exam_id')
+                                     ->where('course_id', $id)
+                                     ->get();
+
+            foreach($courseexams as $courseexam) {
+                $courseexam->name = $courseexam->exam->name;
+            }
+
+            return response()->json([
+                'success' => true,
+                'exams' => $courseexams,
+            ]);
+        } else {
+            return response()->json([
+                'success' => false
+            ]);
+        }
+    }
 }
