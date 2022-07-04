@@ -147,7 +147,7 @@ class APIController extends Controller
 
             return response()->json([
                 'success' => true,
-                'examquestions' => $examquestions,
+                'questions' => $examquestions,
             ]);
         } else {
             return response()->json([
