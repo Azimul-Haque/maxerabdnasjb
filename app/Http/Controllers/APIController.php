@@ -137,11 +137,11 @@ class APIController extends Controller
     {
         if($softtoken == 'Rifat.Admin.2022')
         {
-            $examquestions = Examquestion::select('course_id', 'exam_id')
-                                     ->where('course_id', $id)
+            $examquestions = Examquestion::select('exam_id', 'question_id')
+                                     ->where('exam_id', $id)
                                      ->get();
 
-            foreach($courseexams as $courseexam) {
+            foreach($examquestions as $courseexam) {
                 $courseexam->name = $courseexam->exam->name;
             }
 
