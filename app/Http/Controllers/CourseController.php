@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Topic;
 use App\Exam;
-// use App\Course;
+use App\Course;
 use App\Courseexam;
 
 use Carbon\Carbon;
