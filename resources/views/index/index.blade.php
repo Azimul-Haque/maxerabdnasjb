@@ -28,7 +28,7 @@
   <!--====== gLightBox css ======-->
   <link rel="stylesheet" href="{{ asset('vendor/frontend/css/glightbox.min.css') }}" />
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="{{ asset('vendor/frontend/css/style.css') }}" />
 </head>
 
 <body>
