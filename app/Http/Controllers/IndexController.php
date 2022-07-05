@@ -42,7 +42,7 @@ class IndexController extends Controller
      */
     public function index()
     {
-        return view('welcome');
+        return view('index.index');
     }
 
     // clear configs, routes and serve
