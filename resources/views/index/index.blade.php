@@ -40,7 +40,7 @@
       <div class="row">
         <div class="col-lg-12">
           <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="/">
               <img src="{{ asset('/') }}images/white-logo.png" alt="Logo" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNine"
@@ -90,7 +90,7 @@
     </div>
     <div class="sidebar-content">
       <div class="sidebar-logo">
-        <a href="index.html"><img src="{{ asset('/') }}images/logo.png" alt="Logo" /></a>
+        <a href="/"><img src="{{ asset('/') }}images/logo.png" alt="Logo" /></a>
       </div>
       <p class="text">BJS & Bar Council Exam</p>
       <!-- logo -->
