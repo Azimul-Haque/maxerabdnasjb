@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="{{ asset('vendor/frontend/css/lineicons.css') }}" />
 
   <!--====== Tiny Slider css ======-->
-  <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+  <link rel="stylesheet" href="{{ asset('vendor/frontend/css/tiny-slider.css') }}" />
 
   <!--====== gLightBox css ======-->
   <link rel="stylesheet" href="assets/css/glightbox.min.css" />
