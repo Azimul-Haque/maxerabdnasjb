@@ -17,10 +17,10 @@
   <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" type="image/svg" />
 
   <!--====== Bootstrap css ======-->
-  <link rel="stylesheet" href="{{ asset('vendor/frontend/css/bootstrap.min.css') }} " />
+  <link rel="stylesheet" href="{{ asset('vendor/frontend/css/bootstrap.min.css') }}" />
 
   <!--====== Line Icons css ======-->
-  <link rel="stylesheet" href="assets/css/lineicons.css" />
+  <link rel="stylesheet" href="{{ asset('vendor/frontend/css/lineicons.css') }}" />
 
   <!--====== Tiny Slider css ======-->
   <link rel="stylesheet" href="assets/css/tiny-slider.css" />
