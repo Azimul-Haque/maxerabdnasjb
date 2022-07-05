@@ -41,7 +41,7 @@
         <div class="col-lg-12">
           <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="index.html">
-              <img src="assets/images/white-logo.png" alt="Logo" />
+              <img src="{{ asset('/') }}/images/white-logo.png" alt="Logo" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNine"
               aria-controls="navbarNine" aria-expanded="false" aria-label="Toggle navigation">
@@ -90,7 +90,7 @@
     </div>
     <div class="sidebar-content">
       <div class="sidebar-logo">
-        <a href="index.html"><img src="assets/images/logo.png" alt="Logo" /></a>
+        <a href="index.html"><img src="{{ asset('/') }}/images/logo.png" alt="Logo" /></a>
       </div>
       <p class="text">BJS & Bar Council Exam</p>
       <!-- logo -->
@@ -153,7 +153,7 @@
         </div>
         <div class="col-lg-6 col-md-12 col-12">
           <div class="header-image">
-            <img src="assets/images/header/home.png" alt="#" />
+            <img src="{{ asset('/') }}/images/header/home.png" alt="#" />
           </div>
         </div>
       </div>
@@ -251,7 +251,7 @@
               <circle cx="60.333" cy="132" r="1.66667" fill="#DADADA" />
               <circle cx="104" cy="132" r="1.66667" fill="#DADADA" />
             </svg>
-            <img src="assets/images/about/about-img1.jpg" alt="about" />
+            <img src="{{ asset('/') }}/images/about/about-img1.jpg" alt="about" />
           </div>
         </div>
         <div class="col-lg-6 col-12">
@@ -676,7 +676,7 @@
               <div class="footer-widget f-about">
                 <div class="logo">
                   <a href="index.html">
-                    <img src="assets/images/logo.png" alt="#" class="img-fluid" />
+                    <img src="{{ asset('/') }}/images/logo.png" alt="#" class="img-fluid" />
                   </a>
                 </div>
                 <p>
@@ -742,7 +742,7 @@
 
   <div class="made-in-ayroui mt-4">
     <!-- <a href="https://ayroui.com" target="_blank" rel="nofollow">
-      <img style="width:220px" src="assets/images/ayroui.svg">
+      <img style="width:220px" src="{{ asset('/') }}/images/ayroui.svg">
     </a> -->
   </div>
 
