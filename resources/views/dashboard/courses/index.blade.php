@@ -35,7 +35,7 @@
                           @foreach($courses as $course)
                               <tr>
                                   <td>
-                                      {{ $course->name }}
+                                    <a href="{{ route('dashboard.courses.add.exam', $course->id) }}">{{ $course->name }}</a>
                                   </td>
                                   <td>@if($course->status == 1) <span class="badge badge-primary">Active</span> @endif</td>
                                   <td>
