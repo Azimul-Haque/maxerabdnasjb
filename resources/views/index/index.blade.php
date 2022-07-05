@@ -675,7 +675,7 @@
               <!-- Single Widget -->
               <div class="footer-widget f-about">
                 <div class="logo">
-                  <a href="index.html">
+                  <a href="/">
                     <img src="{{ asset('/') }}images/logo.png" alt="#" class="img-fluid" />
                   </a>
                 </div>
