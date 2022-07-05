@@ -14,7 +14,7 @@
   <title>BJS & Bar Exam</title>
 
   <!--====== Favicon Icon ======-->
-  <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/svg" />
+  <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" type="image/svg" />
 
   <!--====== Bootstrap css ======-->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
