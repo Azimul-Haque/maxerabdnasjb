@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="{{ asset('vendor/frontend/css/tiny-slider.css') }}" />
 
   <!--====== gLightBox css ======-->
-  <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+  <link rel="stylesheet" href="{{ asset('vendor/frontend/css/glightbox.min.css') }}" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
