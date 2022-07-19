@@ -613,7 +613,7 @@
 {{-- Add Tag Modal Code --}}
 {{-- Add Tag Modal Code --}}
 <!-- Modal -->
-<div class="modal fade" id="addTopicModal" tabindex="-1" role="dialog" aria-labelledby="addTopicModalLabel" aria-hidden="true" data-backdrop="static">
+<div class="modal fade" id="addTagModal" tabindex="-1" role="dialog" aria-labelledby="addTagModalLabel" aria-hidden="true" data-backdrop="static">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header bg-warning">
@@ -622,7 +622,7 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <form method="post" action="{{ route('dashboard.questions.topic.store') }}">
+        <form method="post" action="{{ route('dashboard.questions.tag.store') }}">
             <div class="modal-body">
                   @csrf
                   <div class="input-group mb-3">
