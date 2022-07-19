@@ -116,7 +116,7 @@ class QuestionController extends Controller
         $tag = Tag::find($id);
         $tag->delete();
 
-        Session::flash('success', 'Topic deleted successfully!');
+        Session::flash('success', 'Tag deleted successfully!');
         return redirect()->route('dashboard.questions');
     }
 
