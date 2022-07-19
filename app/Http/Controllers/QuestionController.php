@@ -89,11 +89,11 @@ class QuestionController extends Controller
             'name'        => 'required|string|max:191',
         ));
 
-        $topic = new Tag;
-        $topic->name = $request->name;
-        $topic->save();
+        $tag = new Tag;
+        $tag->name = $request->name;
+        $tag->save();
 
-        Session::flash('success', 'Topic created successfully!');
+        Session::flash('success', 'Tag created successfully!');
         return redirect()->route('dashboard.questions');
     }
 
