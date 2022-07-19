@@ -408,7 +408,7 @@
                       </div>
                       <div class="col-md-6">
                           <div class="input-group mb-3">
-                              <select name="tags_ids[]" class="form-control multiple-select" multiple="multiple" data-placeholder="Select a State" style="width: 100%;" required>
+                              <select name="tags_ids[]" class="form-control multiple-select" multiple="multiple" data-placeholder="Select a State" required>
                                   @foreach ($tags as $tag)
                                       <option value="{{ $tag->id }}">{{ $tag->name }}</option>
                                   @endforeach
