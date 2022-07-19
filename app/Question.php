@@ -21,4 +21,8 @@ class Question extends Model
     public function examquestion(){
         return $this->hasOne('App\Examquestion');
     }
+
+    public function tags() {
+        return $this->belongsToMany('App\Tag');
+    } 
 }
