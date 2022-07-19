@@ -8,7 +8,7 @@
 <script src="{{ asset('js/select2.full.min.js') }}"></script>
 <style type="text/css">
   .select2-selection__choice{
-      background-color: rgba(0, 139, 139, 0.09) !important;
+      background-color: rgba(0, 123, 255) !important;
   }
 </style>
 @endsection
