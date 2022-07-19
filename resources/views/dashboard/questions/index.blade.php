@@ -8,12 +8,6 @@
 <script src="{{ asset('js/select2.full.min.js') }}"></script>
 <style type="text/css">
   .select2-selection__choice{
-      margin-top: 0px!important;
-      padding-right: 5px!important;
-      padding-left: 5px!important;
-      background-color: transparent!important;
-      border:none!important;
-      border-radius: 4px!important;
       background-color: rgba(0, 139, 139, 0.09) !important;
   }
 </style>
