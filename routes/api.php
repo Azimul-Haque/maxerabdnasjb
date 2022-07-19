@@ -24,7 +24,7 @@ Route::get('/checkuid/{softtoken}/{uid}', 'APIController@checkUid')->name('api.c
 Route::post('/adduser', 'APIController@addUser')->name('api.adduser');
 Route::post('/updateuser', 'APIController@updateUser')->name('api.updateuser');
 
-Route::get('/getcourses/{softtoken}', 'APIController@getCourses')->name('api.getcourses');
+Route::get('/getcourses/{softtoken}/{coursetype}', 'APIController@getCourses')->name('api.getcourses');
 Route::get('/getcourses/exams/{softtoken}/{id}', 'APIController@getCourseExams')->name('api.getcourses.exams');
 Route::get('/getcourses/exam/{softtoken}/{id}/questions', 'APIController@getCourseExamQuestions')->name('api.getcourses.exam.questions');
 
