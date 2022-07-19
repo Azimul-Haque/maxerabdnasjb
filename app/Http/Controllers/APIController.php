@@ -141,8 +141,8 @@ class APIController extends Controller
             $course = Course::select('id')
                              ->where('status', 1) // take only active courses
                              ->where('type', $coursetype) // 1 = Course, 2 = BJS MT, 3 = Bar MT, 4 = Free MT
-                             ->get();
-                             
+                             ->first();
+
             $courseexams = Courseexam::select('course_id', 'exam_id')
                                      ->where('course_id', $id)
                                      ->get();
