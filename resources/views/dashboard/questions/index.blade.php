@@ -517,6 +517,7 @@
 <script>
     $('.multiple-select').select2({
       placeholder: "ট্যাগ",
+      theme: 'bootstrap4'
     });
     // ClassicEditor
     //     .create( document.querySelector( '.summernote' ) )
