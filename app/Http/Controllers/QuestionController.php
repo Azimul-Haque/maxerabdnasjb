@@ -8,6 +8,7 @@ use App\Question;
 use App\Questionimage;
 use App\Questionexplanation;
 use App\Topic;
+use App\Tag;
 
 use Carbon\Carbon;
 use DB;
@@ -36,6 +37,7 @@ class QuestionController extends Controller
         $totalquestions = Question::count();
         $questions = Question::paginate(10);
         $topics = Topic::all();
+        $tags = Tag::all();
 
         return view('dashboard.questions.index')
                     ->withQuestions($questions)
