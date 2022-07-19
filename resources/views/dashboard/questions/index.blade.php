@@ -359,7 +359,7 @@
                       <h3 class="card-title">ট্যাগসমূহ</h3>
           
                       <div class="card-tools">
-                          <button type="button" class="btn btn-warning btn-sm"  data-toggle="modal" data-target="#addTopicModal">
+                          <button type="button" class="btn btn-warning btn-sm"  data-toggle="modal" data-target="#addTagModal">
                               <i class="fas fa-plus-circle"></i> নতুন ট্যাগ
                           </button>
                       </div>
