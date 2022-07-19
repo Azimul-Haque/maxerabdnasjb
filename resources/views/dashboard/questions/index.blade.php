@@ -356,11 +356,11 @@
 
                   <div class="card">
                     <div class="card-header">
-                      <h3 class="card-title">টপিকসমূহ</h3>
+                      <h3 class="card-title">ট্যাগসমূহ</h3>
           
                       <div class="card-tools">
                           <button type="button" class="btn btn-warning btn-sm"  data-toggle="modal" data-target="#addTopicModal">
-                              <i class="fas fa-plus-circle"></i> নতুন টপিক
+                              <i class="fas fa-plus-circle"></i> নতুন ট্যাগ
                           </button>
                       </div>
                     </div>
