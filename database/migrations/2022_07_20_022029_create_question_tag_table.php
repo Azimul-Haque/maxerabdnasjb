@@ -15,7 +15,8 @@ class CreateQuestionTagTable extends Migration
     {
         Schema::create('question_tag', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->integer('question_id')->unsigned();
+            $table->integer('tag_id')->unsigned();
         });
     }
 
