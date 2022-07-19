@@ -518,7 +518,7 @@
 <script>
     $('.multiple-select').select2({
       placeholder: "Please select an skill",
-    allowClear: true,
+      allowClear: true,
       theme: 'bootstrap4',
     });
     // ClassicEditor
