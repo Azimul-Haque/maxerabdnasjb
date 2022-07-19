@@ -407,8 +407,8 @@
                           <div class="input-group mb-3">
                               <select name="topic_id" class="form-control" required>
                                   <option selected="" disabled="" value="">ট্যাগ</option>
-                                  @foreach ($topics as $topic)
-                                      <option value="{{ $topic->id }}">{{ $topic->name }}</option>
+                                  @foreach ($tags as $tag)
+                                      <option value="{{ $tag->id }}">{{ $tag->name }}</option>
                                   @endforeach
                               </select>
                               <div class="input-group-append">
