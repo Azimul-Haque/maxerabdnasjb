@@ -428,11 +428,11 @@
                                   {{-- Delete Tag Modal Code --}}
                                   {{-- Delete Tag Modal Code --}}
                                   <!-- Modal -->
-                                  <div class="modal fade" id="deleteTopicModal{{ $topic->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteTopicModalLabel" aria-hidden="true" data-backdrop="static">
+                                  <div class="modal fade" id="deleteTagModal{{ $tag->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteTagModalLabel" aria-hidden="true" data-backdrop="static">
                                       <div class="modal-dialog" role="document">
                                       <div class="modal-content">
                                           <div class="modal-header bg-danger">
-                                          <h5 class="modal-title" id="deleteTopicModalLabel">টপিক ডিলেট</h5>
+                                          <h5 class="modal-title" id="deleteTagModalLabel">টপিক ডিলেট</h5>
                                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                               <span aria-hidden="true">&times;</span>
                                           </button>
@@ -440,12 +440,12 @@
                                           <div class="modal-body">
                                           আপনি কি নিশ্চিতভাবে এই টপিকটি ডিলেট করতে চান?<br/>
                                           <center>
-                                              <big><b>{{ $topic->name }}</b></big><br/>
+                                              <big><b>{{ $tag->name }}</b></big><br/>
                                           </center>
                                           </div>
                                           <div class="modal-footer">
                                           <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-                                          <a href="{{ route('dashboard.questions.topic.delete', $topic->id) }}" class="btn btn-danger">ডিলেট করুন</a>
+                                          <a href="{{ route('dashboard.questions.tag.delete', $tag->id) }}" class="btn btn-danger">ডিলেট করুন</a>
                                           </div>
                                       </div>
                                       </div>
