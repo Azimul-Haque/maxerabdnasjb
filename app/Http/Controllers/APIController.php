@@ -91,13 +91,13 @@ class APIController extends Controller
         }
     }
 
-    public function getCourses($softtoken)
+    public function getCourses($softtoken, $coursetype)
     {
         if($softtoken == 'Rifat.Admin.2022')
         {
             $courses = Course::select('id', 'name')
                              ->where('status', 1) // take only active courses
-                             ->where('type', 1) // 1 = Course, 2 = BJS MT, 3 = Bar MT, 4 = Free MT
+                             ->where('type', $coursetype) // 1 = Course, 2 = BJS MT, 3 = Bar MT, 4 = Free MT
                              ->get();
 
             return response()->json([
