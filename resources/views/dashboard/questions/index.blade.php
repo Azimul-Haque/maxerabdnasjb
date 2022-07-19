@@ -421,12 +421,12 @@
                                       {{-- Edit Tag Modal Code --}}
                                       {{-- Edit Tag Modal Code --}}
           
-                                      <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteTagModal{{ $topic->id }}" disabled>
+                                      <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteTagModal{{ $tag->id }}" disabled>
                                           <i class="far fa-trash-alt"></i>
                                       </button>
                                   </td>
-                                  {{-- Delete Topic Modal Code --}}
-                                  {{-- Delete Topic Modal Code --}}
+                                  {{-- Delete Tag Modal Code --}}
+                                  {{-- Delete Tag Modal Code --}}
                                   <!-- Modal -->
                                   <div class="modal fade" id="deleteTopicModal{{ $topic->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteTopicModalLabel" aria-hidden="true" data-backdrop="static">
                                       <div class="modal-dialog" role="document">
@@ -450,8 +450,8 @@
                                       </div>
                                       </div>
                                   </div>
-                                  {{-- Delete Topic Modal Code --}}
-                                  {{-- Delete Topic Modal Code --}}
+                                  {{-- Delete Tag Modal Code --}}
+                                  {{-- Delete Tag Modal Code --}}
                               </tr>
                           @endforeach
                           </tbody>
