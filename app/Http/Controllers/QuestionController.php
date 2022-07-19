@@ -83,6 +83,43 @@ class QuestionController extends Controller
         return redirect()->route('dashboard.questions');
     }
 
+    public function storeQuestionsTag(Request $request)
+    {
+        $this->validate($request,array(
+            'name'        => 'required|string|max:191',
+        ));
+
+        $topic = new Tag;
+        $topic->name = $request->name;
+        $topic->save();
+
+        Session::flash('success', 'Topic created successfully!');
+        return redirect()->route('dashboard.questions');
+    }
+
+    public function updateQuestionsTag(Request $request, $id)
+    {
+        $this->validate($request,array(
+            'name' => 'required|string|max:191',
+        ));
+
+        $topic = Topic::find($id);;
+        $topic->name = $request->name;
+        $topic->save();
+
+        Session::flash('success', 'Topic updated successfully!');
+        return redirect()->route('dashboard.questions');
+    }
+
+    public function deleteQuestionsTag($id)
+    {
+        $topic = Topic::find($id);
+        $topic->delete();
+
+        Session::flash('success', 'Topic deleted successfully!');
+        return redirect()->route('dashboard.questions');
+    }
+
     public function storeQuestion(Request $request)
     {
         // dd($request->file('image'));
