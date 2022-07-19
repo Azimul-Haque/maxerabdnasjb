@@ -516,8 +516,8 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script>
     $('.multiple-select').select2({
-      placeholder: "ট্যাগ",
       theme: 'bootstrap4',
+      placeholder: "ট্যাগ",
     });
     // ClassicEditor
     //     .create( document.querySelector( '.summernote' ) )
