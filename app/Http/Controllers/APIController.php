@@ -134,7 +134,7 @@ class APIController extends Controller
         }
     }
 
-    public function getOtherCourseExams($softtoken, $id)
+    public function getOtherCourseExams($softtoken, $coursetype)
     {
         if($softtoken == 'Rifat.Admin.2022')
         {
