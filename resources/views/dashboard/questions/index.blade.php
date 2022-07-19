@@ -388,7 +388,8 @@
                             <input type="text" name="option4" value="{{ old('option4') }}" class="form-control mb-3" placeholder="অপশন ৪" required>
                         </div>
                     </div>
-                    <div class="input-group mb-3">
+                    <div class="row">
+                      <div class="col-md-6">
                         <div class="input-group mb-3">
                             <select name="answer" class="form-control" required>
                                 <option selected="" disabled="" value="">সঠিক উত্তর</option>
@@ -400,7 +401,8 @@
                             <div class="input-group-append">
                                 <div class="input-group-text"><span class="far fa-check-circle"></span></div>
                             </div>
-                        </div>
+                        </div>    
+                      </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
