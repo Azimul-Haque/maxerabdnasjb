@@ -27,6 +27,7 @@
                               <tr>
                                   <th>Course</th>
                                   <th>Status</th>
+                                  <th>Type</th>
                                   <th>Exams</th>
                                   <th>Action</th>
                               </tr>
@@ -37,7 +38,23 @@
                                   <td>
                                     <a href="{{ route('dashboard.courses.add.exam', $course->id) }}">{{ $course->name }}</a>
                                   </td>
-                                  <td>@if($course->status == 1) <span class="badge badge-primary">Active</span> @endif</td>
+                                  <td>
+                                      @if($course->status == 1)
+                                        <span class="badge badge-primary">Active</span>
+                                      @else
+                                        <span class="badge badge-default">In-active</span>
+                                      @endif
+                                  </td><td>
+                                      @if($course->type == 1)
+                                        সাধারণ কোর্স
+                                      @elseif($course->type == 2)
+                                        বিজেএস মডেল টেস্ট
+                                      @elseif($course->type == 3)
+                                        বার মডেল টেস্ট
+                                      @elseif($course->type == 3)
+                                        ফ্রি মডেল টেস্ট
+                                      @endif
+                                  </td>
                                   <td>
                                     মোট পরীক্ষাঃ {{ $course->courseexams->count() }} টি
                                   </td>
@@ -62,23 +79,35 @@
                                               </div>
                                               <form method="post" action="{{ route('dashboard.courses.update', $course->id) }}" enctype='multipart/form-data'>
                                                 <div class="modal-body">
-                                                      @csrf
-                                                      <div class="input-group mb-3">
-                                                          <input type="text" name="name" class="form-control" value="{{ $course->name }}" placeholder="কোর্সের নাম" required>
-                                                          <div class="input-group-append">
-                                                              <div class="input-group-text"><span class="fas fa-layer-group"></span></div>
-                                                          </div>
+                                                  @csrf
+                                                  <div class="input-group mb-3">
+                                                      <input type="text" name="name" class="form-control" value="{{ $course->name }}" placeholder="কোর্সের নাম" required>
+                                                      <div class="input-group-append">
+                                                          <div class="input-group-text"><span class="fas fa-layer-group"></span></div>
                                                       </div>
-                                                      <div class="input-group mb-3">
-                                                        <select name="status" class="form-control" required>
-                                                            <option selected="" disabled="" value="">স্ট্যাটাস</option>
-                                                            <option value="1" @if($course->status == 1) selected @endif>Active</option>
-                                                            <option value="0" @if($course->status == 0) selected @endif>In-active</option>
-                                                        </select>
-                                                        <div class="input-group-append">
-                                                            <div class="input-group-text"><span class="fas fa-star-half-alt"></span></div>
-                                                        </div>
+                                                  </div>
+                                                  <div class="input-group mb-3">
+                                                    <select name="status" class="form-control" required>
+                                                        <option selected="" disabled="" value="">স্ট্যাটাস</option>
+                                                        <option value="1" @if($course->status == 1) selected @endif>Active</option>
+                                                        <option value="0" @if($course->status == 0) selected @endif>In-active</option>
+                                                    </select>
+                                                    <div class="input-group-append">
+                                                        <div class="input-group-text"><span class="fas fa-star-half-alt"></span></div>
                                                     </div>
+                                                  </div>
+                                                  <div class="input-group mb-3">
+                                                    <select name="type" class="form-control" required>
+                                                        <option selected="" disabled="" value="">ধরন</option>
+                                                        <option value="1" @if($course->type == 1) selected @endif>সাধারণ কোর্স</option>
+                                                        <option value="2" @if($course->type == 2) selected @endif>বিজেএস মডেল টেস্ট</option>
+                                                        <option value="3" @if($course->type == 3) selected @endif>বার মডেল টেস্ট</option>
+                                                        <option value="4" @if($course->type == 4) selected @endif>ফ্রি মডেল টেস্ট</option>
+                                                    </select>
+                                                    <div class="input-group-append">
+                                                        <div class="input-group-text"><span class="fas fa-tag"></span></div>
+                                                    </div>
+                                                  </div>
                                                 </div>
                                                 <div class="modal-footer">
                                                   <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
@@ -163,6 +192,18 @@
                         <div class="input-group-append">
                             <div class="input-group-text"><span class="fas fa-star-half-alt"></span></div>
                         </div>
+                    </div>
+                    <div class="input-group mb-3">
+                      <select name="type" class="form-control" required>
+                          <option selected="" disabled="" value="">ধরন</option>
+                          <option value="1">সাধারণ কোর্স</option>
+                          <option value="2">বিজেএস মডেল টেস্ট</option>
+                          <option value="3">বার মডেল টেস্ট</option>
+                          <option value="4">ফ্রি মডেল টেস্ট</option>
+                      </select>
+                      <div class="input-group-append">
+                          <div class="input-group-text"><span class="fas fa-tag"></span></div>
+                      </div>
                     </div>
               </div>
               <div class="modal-footer">

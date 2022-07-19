@@ -48,11 +48,13 @@ class CourseController extends Controller
         $this->validate($request,array(
             'name'   => 'required|string|max:191',
             'status' => 'required',
+            'type' => 'required',
         ));
 
         $course = new Course;
         $course->name = $request->name;
         $course->status = $request->status;
+        $course->type = $request->type; // 1 = Course, 2 = BJS MT, 3 = Bar MT, 4 = Free MT
         $course->save();
 
         Session::flash('success', 'Course created successfully!');
@@ -65,11 +67,13 @@ class CourseController extends Controller
         $this->validate($request,array(
             'name'   => 'required|string|max:191',
             'status' => 'required',
+            'type' => 'required',
         ));
 
         $course = Course::findOrFail($id);
         $course->name = $request->name;
         $course->status = $request->status;
+        $course->type = $request->type; // 1 = Course, 2 = BJS MT, 3 = Bar MT, 4 = Free MT
         $course->save();
 
         Session::flash('success', 'Course updated successfully!');
