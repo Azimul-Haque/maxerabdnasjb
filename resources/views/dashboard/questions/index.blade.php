@@ -408,11 +408,10 @@
                       </div>
                       <div class="col-md-6">
                           <select name="tags_ids[]" class="form-control multiple-select" multiple="multiple" data-placeholder="ট্যাগ" required>
-                                  <option></option>
-                                  @foreach ($tags as $tag)
-                                      <option value="{{ $tag->id }}">{{ $tag->name }}</option>
-                                  @endforeach
-                              </select>
+                              @foreach ($tags as $tag)
+                                  <option value="{{ $tag->id }}">{{ $tag->name }}</option>
+                              @endforeach
+                          </select>
                       </div>
                     </div>
                     <div class="row">
