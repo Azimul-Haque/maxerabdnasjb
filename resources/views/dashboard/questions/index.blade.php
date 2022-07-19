@@ -369,41 +369,41 @@
                       <table class="table">
                           <thead>
                               <tr>
-                                  <th>Topic</th>
+                                  <th>Tag</th>
                                   <th>Action</th>
                               </tr>
                           </thead>
                           <tbody>
-                          @foreach($topics as $topic)
+                          @foreach($tags as $tag)
                               <tr>
                                   <td>
-                                      {{ $topic->name }}<br/>
+                                      {{ $tag->name }}<br/>
                                   </td>
                               
                                   <td align="right" width="40%">
-                                      <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editTopicModal{{ $topic->id }}">
+                                      <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editTagModal{{ $tag->id }}">
                                           <i class="far fa-edit"></i>
                                       </button>
-                                      {{-- Edit Topic Modal Code --}}
-                                      {{-- Edit Topic Modal Code --}}
+                                      {{-- Edit Tag Modal Code --}}
+                                      {{-- Edit Tag Modal Code --}}
                                       <!-- Modal -->
-                                      <div class="modal fade" id="editTopicModal{{ $topic->id }}" tabindex="-1" role="dialog" aria-labelledby="editTopicModalLabel" aria-hidden="true" data-backdrop="static">
+                                      <div class="modal fade" id="editTagModal{{ $tag->id }}" tabindex="-1" role="dialog" aria-labelledby="editTagModalLabel" aria-hidden="true" data-backdrop="static">
                                           <div class="modal-dialog" role="document">
                                           <div class="modal-content">
                                               <div class="modal-header bg-warning">
-                                              <h5 class="modal-title" id="editTopicModalLabel">টপিক হালনাগাদ</h5>
+                                              <h5 class="modal-title" id="editTagModalLabel">টপিক হালনাগাদ</h5>
                                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                   <span aria-hidden="true">&times;</span>
                                               </button>
                                               </div>
-                                              <form method="post" action="{{ route('dashboard.questions.topic.update', $topic->id) }}">
+                                              <form method="post" action="{{ route('dashboard.questions.tag.update', $tag->id) }}">
                                                   <div class="modal-body">
                                                       @csrf
                                                       <div class="input-group mb-3">
                                                           <input type="text"
                                                                   name="name"
                                                                   class="form-control"
-                                                                  value="{{ $topic->name }}"
+                                                                  value="{{ $tag->name }}"
                                                                   placeholder="নাম" required>
                                                           <div class="input-group-append">
                                                               <div class="input-group-text"><span class="far fa-bookmark"></span></div>
@@ -418,10 +418,10 @@
                                           </div>
                                           </div>
                                       </div>
-                                      {{-- Edit Topic Modal Code --}}
-                                      {{-- Edit Topic Modal Code --}}
+                                      {{-- Edit Tag Modal Code --}}
+                                      {{-- Edit Tag Modal Code --}}
           
-                                      <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteTopicModal{{ $topic->id }}" disabled>
+                                      <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteTagModal{{ $topic->id }}" disabled>
                                           <i class="far fa-trash-alt"></i>
                                       </button>
                                   </td>
