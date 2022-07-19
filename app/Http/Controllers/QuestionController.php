@@ -86,7 +86,7 @@ class QuestionController extends Controller
     public function storeQuestionsTag(Request $request)
     {
         $this->validate($request,array(
-            'name'        => 'required|string|max:191|unique:tags',
+            'name'        => 'required|string|max:191|unique:tags, name',
         ));
 
         $tag = new Tag;
