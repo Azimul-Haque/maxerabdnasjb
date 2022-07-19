@@ -432,13 +432,13 @@
                                       <div class="modal-dialog" role="document">
                                       <div class="modal-content">
                                           <div class="modal-header bg-danger">
-                                          <h5 class="modal-title" id="deleteTagModalLabel">টপিক ডিলেট</h5>
+                                          <h5 class="modal-title" id="deleteTagModalLabel">ট্যাগ ডিলেট</h5>
                                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                               <span aria-hidden="true">&times;</span>
                                           </button>
                                           </div>
                                           <div class="modal-body">
-                                          আপনি কি নিশ্চিতভাবে এই টপিকটি ডিলেট করতে চান?<br/>
+                                          আপনি কি নিশ্চিতভাবে এই ট্যাগটি ডিলেট করতে চান?<br/>
                                           <center>
                                               <big><b>{{ $tag->name }}</b></big><br/>
                                           </center>
