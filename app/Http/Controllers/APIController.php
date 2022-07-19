@@ -137,7 +137,7 @@ class APIController extends Controller
     public function getOtherCourseExams($softtoken, $coursetype)
     {
         if($softtoken == 'Rifat.Admin.2022')
-        {
+        {ss
             $course = Course::select('id')
                              ->where('status', 1) // take only active courses
                              ->where('type', $coursetype) // 1 = Course, 2 = BJS MT, 3 = Bar MT, 4 = Free MT
