@@ -515,9 +515,7 @@
 {{-- <script src="https://cdn.ckeditor.com/ckeditor5/34.1.0/classic/ckeditor.js"></script> --}}
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script>
-    $(document).ready(function() {
-        $('.multiple-select').select2();
-    });
+    $('.multiple-select').select2();
     // ClassicEditor
     //     .create( document.querySelector( '.summernote' ) )
     //     .then( editor => {
