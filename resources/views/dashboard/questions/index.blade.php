@@ -408,7 +408,7 @@
                       </div>
                       <div class="col-md-6">
                           <div class="input-group mb-3">
-                              <select name="topic_ids[]" class="form-control multiple-select" multiple required>
+                              <select name="topic_ids[]" class="form-control multiple-select" data-placeholder="ট্যাগ" multiple required>
                                   @foreach ($tags as $tag)
                                       <option value="{{ $tag->id }}">{{ $tag->name }}</option>
                                   @endforeach
