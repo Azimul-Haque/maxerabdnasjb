@@ -97,7 +97,7 @@ class APIController extends Controller
         {
             $courses = Course::select('id', 'name')
                              ->where('status', 1) // take only active courses
-                             ->where('type', 1) // // 1 = Course, 2 = BJS MT, 3 = Bar MT, 4 = Free MT
+                             ->where('type', 1) // 1 = Course, 2 = BJS MT, 3 = Bar MT, 4 = Free MT
                              ->get();
 
             return response()->json([
