@@ -42,6 +42,7 @@ class QuestionController extends Controller
         return view('dashboard.questions.index')
                     ->withQuestions($questions)
                     ->withTopics($topics)
+                    ->withTags($tags)
                     ->withTotalquestions($totalquestions);
     }
 
