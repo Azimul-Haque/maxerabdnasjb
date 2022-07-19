@@ -407,7 +407,7 @@
                         </div>    
                       </div>
                       <div class="col-md-6">
-                          <div class="input-group mb-3">
+                          <div class="input-group">
                               <select name="tags_ids[]" class="form-control multiple-select" multiple="multiple" data-placeholder="ট্যাগ" width="100%" required>
                                   <option></option>
                                   @foreach ($tags as $tag)
