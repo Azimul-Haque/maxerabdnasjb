@@ -517,8 +517,7 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script>
     $('.multiple-select').select2({
-
-      theme: 'bootstrap4',
+      // theme: 'bootstrap4',
     });
     // ClassicEditor
     //     .create( document.querySelector( '.summernote' ) )
