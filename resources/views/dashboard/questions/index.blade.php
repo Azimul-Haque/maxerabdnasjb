@@ -2,7 +2,7 @@
 @section('title') ড্যাশবোর্ড | প্রশ্নব্যাংক @endsection
 
 @section('third_party_stylesheets')
-<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<link href="{{ asset('css/select2.min.css') }}" rel="stylesheet" />
 <link href="{{ asset('css/select2-bootstrap4.min.css') }}" rel="stylesheet" />
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
