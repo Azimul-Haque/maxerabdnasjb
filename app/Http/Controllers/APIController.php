@@ -144,7 +144,7 @@ class APIController extends Controller
                              ->first();
 
             $courseexams = Courseexam::select('course_id', 'exam_id')
-                                     ->where('course_id', $id)
+                                     ->where('course_id', $course->id)
                                      ->get();
 
             foreach($courseexams as $courseexam) {
