@@ -103,18 +103,18 @@ class QuestionController extends Controller
             'name' => 'required|string|max:191',
         ));
 
-        $topic = Topic::find($id);;
-        $topic->name = $request->name;
-        $topic->save();
+        $tag = Tag::find($id);;
+        $tag->name = $request->name;
+        $tag->save();
 
-        Session::flash('success', 'Topic updated successfully!');
+        Session::flash('success', 'Tag updated successfully!');
         return redirect()->route('dashboard.questions');
     }
 
     public function deleteQuestionsTag($id)
     {
-        $topic = Topic::find($id);
-        $topic->delete();
+        $tag = Tag::find($id);
+        $tag->delete();
 
         Session::flash('success', 'Topic deleted successfully!');
         return redirect()->route('dashboard.questions');
