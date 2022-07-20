@@ -12,7 +12,6 @@
 	      <div class="col-md-12 col-12">
 			<h4>Privacy Policy</h4><br/>
 			<p>
-			<strong>Purchase Policy</strong><br/>
 			<strong>App Lab IT</strong> built the <strong>BJS Exam</strong> app as
 			a Commercial app. This SERVICE is provided by
 			<strong>App Lab IT</strong>  and is intended for use as
