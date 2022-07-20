@@ -10,7 +10,8 @@
     <div class="container">
 	    <div class="row">
 	      <div class="col-md-12 col-12">
-			<strong>Privacy Policy</strong> <p>
+			<strong>Privacy Policy</strong>
+			<p>
 			<strong>App Lab IT</strong> built the <strong>BJS Exam</strong> app as
 			a Commercial app. This SERVICE is provided by
 			<strong>App Lab IT</strong>  and is intended for use as
