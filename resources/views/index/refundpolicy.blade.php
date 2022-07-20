@@ -10,7 +10,7 @@
     <div class="container">
 	    <div class="row">
 	      <div class="col-md-12 col-12">
-			<p><strong>Purchase Policy:</strong></p>
+	      	<strong>Purchase & Return Policy</strong>
 			<p>
 			Users will be asked to pay for the respective fees for different Course, Tutorial, Exam. Any price offered for a particular course/tutorial/exam may also be different when you are logged into your account. When you make a purchase, you agree not to use an invalid or unauthorized payment method. We reserve the right to disable access to any course for which we have not received adequate payments. 
 			We may offer free trial for any number of days.
