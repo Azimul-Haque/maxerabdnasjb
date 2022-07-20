@@ -18,9 +18,7 @@
 			</p>
 
 			<p><strong>Refund Policy:</strong></p> <p>
-			A Refund Request will be deemed valid only if made through an email to codeminersbd@gmail.com specifying your email address or phone number used during registration within 3 days from the time of purchase. No refund is applicable for courses purchased with less than 12 months validity.
-
-			Refunds shall be made to the bank, mobile financial services account, or card with which the purchase was made within 10 days of the refund request being successfully processed and approved by Codeminers IT Limited.
+			A Refund Request will be considered acceptable only if filed within 5 days after purchase by email to info@bjsexam.com or via our App's contact page, mentioning your particular credential used during registration. Courses purchased with less than 6 months validity are not refundable. Within 14 days of the refund request being properly processed and accepted by App Lab IT Authority, refunds will be sent to the bank, mfs account, or card used to make the transaction.
 			</p> 
 			<p><strong>Contact Us</strong></p> <p>
 			If you have any questions, do not hesitate to contact us at <a href = "mailto: codeminersbd@gmail.com">codeminersbd@gmail.com</a>.
