@@ -14,7 +14,6 @@
         <div class="header-image">
           <img src="{{ asset('/') }}images/header/home.png" alt="#" />
         </div>
-        asd
       </div>
     </div>
   </div>
