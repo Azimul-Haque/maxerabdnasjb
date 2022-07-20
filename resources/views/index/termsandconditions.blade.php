@@ -10,7 +10,7 @@
 <section style="padding-top: 150px; padding-bottom: 50px; background-color: var(--light-3);">
   <div class="container">
     <div class="row">
-      <div class="ccol-md-12 col-12">
+      <div class="col-md-12 col-12">
         <strong>Terms &amp; Conditions</strong>
         <p>
 		  By downloading or using the app, these terms will

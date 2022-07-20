@@ -9,7 +9,7 @@
 <section style="padding-top: 150px; padding-bottom: 50px; background-color: var(--light-3);">
     <div class="container">
 	    <div class="row">
-	      <div class="ccol-md-12 col-12">
+	      <div class="col-md-12 col-12">
 			<strong>Privacy Policy</strong> <p>
 			App Lab IT built the BJS Exam app as
 			a Commercial app. This SERVICE is provided by
