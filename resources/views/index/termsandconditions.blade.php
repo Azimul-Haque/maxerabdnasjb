@@ -11,7 +11,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 col-12">
-        <strong>Terms &amp; Conditions</strong>
+        <h4>Terms &amp; Conditions</h4><br/>
         <p>
 		  By downloading or using the app, these terms will
 		  automatically apply to you – you should make sure therefore
