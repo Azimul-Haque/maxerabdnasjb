@@ -11,9 +11,7 @@
   <div class="container">
     <div class="row">
       <div class="ccol-md-12 col-12">
-        <div class="header-image">
-          <img src="{{ asset('/') }}images/header/home.png" alt="#" />
-        </div>
+        <img src="{{ asset('/') }}images/header/home.png" alt="#" />
       </div>
     </div>
   </div>
