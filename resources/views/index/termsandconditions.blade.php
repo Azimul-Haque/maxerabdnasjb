@@ -7,7 +7,7 @@
 
 @section('content')
 
-<section style="margin-top: 150px;">
+<section style="margin-top: 150px; background-color: var(--light-3);">
   <div class="container">
     <div class="row">
       <div class="ccol-md-12 col-12">
