@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.index')
 @section('title') BJS & Bar Exam @endsection
 
 @section('third_party_stylesheets')
