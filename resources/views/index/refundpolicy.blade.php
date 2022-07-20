@@ -13,9 +13,7 @@
 	      	<h4>Purchase & Return Policy</h4><br/>
 			<p><strong>Purchase Policy</strong></p>
 			<p>
-			Users will be asked to pay for the respective fees for different Course, Tutorial, Exam. Any price offered for a particular course/tutorial/exam may also be different when you are logged into your account. When you make a purchase, you agree not to use an invalid or unauthorized payment method. We reserve the right to disable access to any course for which we have not received adequate payments. 
-			We may offer free trial for any number of days.
-			At any time and without notice, We reserves the right to (i) modify Terms of Service of Free Trial offer, or (ii) cancel such Free Trial offer.
+			Users will be required to pay the appropriate fees for the various Courses. When you are signed into your account, any pricing that is provided for a specific course can change as well. You consent not to use an illegitimate or unauthorized payment method when you make a transaction. Access to any course may be disabled at our discretion. For any number of days, we may give a free trial. We retain the right to either (a) revise the Free Trial offer's Terms of Service or (b) terminate it at any time and without prior notice.
 			</p> 
 			</p>
 
