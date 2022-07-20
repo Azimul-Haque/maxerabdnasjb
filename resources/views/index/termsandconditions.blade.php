@@ -7,9 +7,9 @@
 
 @section('content')
 
-<section id="hero-area" class="header-area header-eight">
+<section id="hero-area" class="header-eight">
   <div class="container">
-    <div class="row align-items-center">
+    <div class="row">
       <div class="col-lg-6 col-md-12 col-12">
         <div class="header-content">
           <h1>Best online platform to gear up your BJS & Bar Council Exam preparation!</h1>
