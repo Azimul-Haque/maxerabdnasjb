@@ -131,7 +131,6 @@
 
 
   @yield('content')
-
   
 
   <!-- Start Footer Area -->
