@@ -21,8 +21,9 @@
 			<br/>
 			Within 14 days of the refund request being properly processed and accepted by App Lab IT Authority, refunds will be sent to the bank, mfs account, or card used to make the transaction.
 			</p><br/> 
-			<p><strong>Contact Us</strong></p> <p>
-			If you have any questions, do not hesitate to contact us at <a href = "mailto: codeminersbd@gmail.com">codeminersbd@gmail.com</a>.
+			<p><strong>Contact Us</strong></p>
+			<p>
+			If you have any questions concerning our purchase and refund policy, please contact us at: info@bjsexam.com.
 			</p>
 	      </div>
 	  	</div>
