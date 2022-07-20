@@ -1,5 +1,5 @@
 @extends('layouts.index')
-@section('title') BJS & Bar Exam | Terms & Conditions @endsection
+@section('title')  | Terms & Conditions | BJS & Bar Exam @endsection
 
 @section('third_party_stylesheets')
 
