@@ -7,12 +7,12 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="description" content="BJS & BAR EXAM is a dedicated online platform to take the best preparation for the Bangladesh Judicial Service (BJS) Exam and Bar Council Exam. Developed By A. H. M. Azimul Haque.">
     <meta name="keywords" content="BJS, Bar Council, BJS Exam, Bar Council Exam, বিজেএস পরীক্ষা, বার কাউন্সিল পরীক্ষা, জুডিশিয়াল পরীক্ষা, Judicial Exam">
-    <meta name="author" content="A. H. M. Azimul Haque">
+  <meta name="author" content="A. H. M. Azimul Haque">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
   <!--====== Title ======-->
-  <title>BJS & Bar Exam</title>
-
+  {{-- <title>BJS & Bar Exam</title> --}}
+  <title>@yield('title')</title>
   <!--====== Favicon Icon ======-->
   <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" type="image/svg" />
 
@@ -131,7 +131,7 @@
 
 
   @yield('content')
-  
+
 
   <!-- Start Footer Area -->
   <footer class="footer-area footer-eleven">
