@@ -144,7 +144,7 @@
 		</p>
 		<br/>
 		<p>
-		  These terms and conditions are effective as of July 01, 2022.
+		  These terms and conditions are effective as of <u>July 01, 2022</u>.
 		</p>
 		<br/>
 		<p><strong>Contact Us</strong></p> <p>

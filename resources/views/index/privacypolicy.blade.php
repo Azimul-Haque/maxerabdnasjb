@@ -114,7 +114,7 @@
 			this page.
 			</p><br/>
 			<p>
-				These privacy policies are effective as of July 01, 2022.
+				These privacy policies are effective as of <u>July 01, 2022</u>.
 			</p>
 			<br/>
 		    <p><strong>Contact Us</strong></p> <p>
