@@ -27,7 +27,7 @@
 			<br/>
 			<p><strong>Contact Us</strong></p>
 			<p>
-			If you have any questions concerning our Purchase & Refund Policy, please contact us at: info@bjsexam.com.
+			If you have any questions concerning our Purchase & Refund Policy, please contact us at <strong>info@bjsexam.com</strong>.
 			</p>
 	      </div>
 	  	</div>
