@@ -10,7 +10,7 @@
     <div class="container">
 	    <div class="row">
 	      <div class="col-md-12 col-12">
-	      	<h4>Purchase & Return Policy</h4><br/>
+	      	<h4>Purchase & Refund Policy</h4><br/>
 			<p><strong>Purchase Policy</strong></p>
 			<p>
 			Users will be required to pay the appropriate fees for the various Courses. When you are signed into your account, any pricing that is provided for a specific course can change as well. You consent not to use an illegitimate or unauthorized payment method when you make a transaction. Access to any course may be disabled at our discretion. For any number of days, we may give a free trial. We retain the right to either (a) revise the Free Trial offer's Terms of Service or (b) terminate it at any time and without prior notice.
