@@ -267,6 +267,8 @@
     });
 
   </script>
+
+  @yield('third_party_scripts')
 </body>
 
 </html>
