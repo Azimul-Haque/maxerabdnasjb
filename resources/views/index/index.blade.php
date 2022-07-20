@@ -24,35 +24,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <!--====== Required meta tags ======-->
-  <meta charset="utf-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <meta name="description" content="BJS & BAR EXAM is a dedicated online platform to take the best preparation for the Bangladesh Judicial Service (BJS) Exam and Bar Council Exam. Developed By A. H. M. Azimul Haque.">
-    <meta name="keywords" content="BJS, Bar Council, BJS Exam, Bar Council Exam, বিজেএস পরীক্ষা, বার কাউন্সিল পরীক্ষা, জুডিশিয়াল পরীক্ষা, Judicial Exam">
-    <meta name="author" content="A. H. M. Azimul Haque">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-  <!--====== Title ======-->
-  <title></title>
-
-  <!--====== Favicon Icon ======-->
-  <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" type="image/svg" />
-
-  <!--====== Bootstrap css ======-->
-  <link rel="stylesheet" href="{{ asset('vendor/frontend/css/bootstrap.min.css') }}" />
-
-  <!--====== Line Icons css ======-->
-  <link rel="stylesheet" href="{{ asset('vendor/frontend/css/lineicons.css') }}" />
-
-  <!--====== Tiny Slider css ======-->
-  <link rel="stylesheet" href="{{ asset('vendor/frontend/css/tiny-slider.css') }}" />
-
-  <!--====== gLightBox css ======-->
-  <link rel="stylesheet" href="{{ asset('vendor/frontend/css/glightbox.min.css') }}" />
-
-  <link rel="stylesheet" href="{{ asset('vendor/frontend/css/style.css') }}" />
-</head>
 
 <body>
 
