@@ -19,7 +19,7 @@
 			<p><strong>Refund Policy:</strong></p> <p>
 			A Refund Request will be considered acceptable only if filed within 5 days after purchase by email to info@bjsexam.com or via our App's contact page, mentioning your particular credential used during registration. Courses purchased with less than 6 months validity are not refundable.
 			<br/>
-			Within 14 days of the refund request being properly processed and accepted by App Lab IT Authority, refunds will be sent to the bank, mfs account, or card used to make the transaction.
+			Within 14 days of the refund request being properly processed and accepted by <strong>App Lab IT</strong> Authority, refunds will be sent to the bank, mfs account, or card used to make the transaction.
 			</p><br/>
 			<p>
 				These purchase & refund policies are effective as of <u>July 01, 2022</u>.
