@@ -106,7 +106,8 @@
 			and you are aware that your child has provided us with
 			personal information, please contact us so that
 			we will be able to do the necessary actions.
-			</p></div> <!----> <p><strong>Changes to This Privacy Policy</strong></p> <p>
+			</p></div>
+			<br/><p><strong>Changes to This Privacy Policy</strong></p> <p>
 			We may update our Privacy Policy from
 			time to time. Thus, you are advised to review this page
 			periodically for any changes. We will

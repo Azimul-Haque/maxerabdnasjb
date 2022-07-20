@@ -134,7 +134,6 @@
 		</p>
 		<br/>
 		<p><strong>Changes to This Terms and Conditions</strong></p>
-		<br/>
 		<p>
 		  We may update our Terms and Conditions
 		  from time to time. Thus, you are advised to review this page
