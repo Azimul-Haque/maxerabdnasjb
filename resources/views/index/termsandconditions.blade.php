@@ -150,7 +150,7 @@
 		<p><strong>Contact Us</strong></p> <p>
 		  If you have any questions or suggestions about our
 		  Terms and Conditions, do not hesitate to contact us
-		  at info@bjsexam.com.
+		  at <strong>info@bjsexam.com</strong>.
 		</p>
       </div>
     </div>
