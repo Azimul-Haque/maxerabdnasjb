@@ -7,7 +7,7 @@
 
 @section('content')
 
-<section id="hero-area" class="header-eight">
+<section id="hero-area" class="about-eight">
   <div class="container">
     <div class="row">
       <div class="ccol-md-12 col-12">
