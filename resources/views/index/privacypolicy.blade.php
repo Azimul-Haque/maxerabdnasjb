@@ -6,7 +6,13 @@
 @endsection
 
 @section('content')
-    
+    <div class="container">
+	    <div class="row">
+	      <div class="ccol-md-12 col-12">
+	      	
+	      </div>
+	  	</div>
+  	</div>
 @endsection
 
 @section('third_party_scripts')
