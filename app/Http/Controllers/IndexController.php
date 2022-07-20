@@ -45,6 +45,21 @@ class IndexController extends Controller
         return view('index.index');
     }
 
+    public function termsAndConditions()
+    {
+        return view('index.termsandconditions');
+    }
+
+    public function privacyPolicy()
+    {
+        return view('index.privacypolicy');
+    }
+
+    public function refundPolicy()
+    {
+        return view('index.refundpolicy');
+    }
+
     // clear configs, routes and serve
     public function clear()
     {

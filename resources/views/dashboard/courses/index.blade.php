@@ -51,8 +51,10 @@
                                         বিজেএস মডেল টেস্ট
                                       @elseif($course->type == 3)
                                         বার মডেল টেস্ট
-                                      @elseif($course->type == 3)
+                                      @elseif($course->type == 4)
                                         ফ্রি মডেল টেস্ট
+                                      @elseif($course->type == 5)
+                                        প্রশ্ন ব্যাংক
                                       @endif
                                   </td>
                                   <td>
@@ -103,6 +105,7 @@
                                                         <option value="2" @if($course->type == 2) selected @endif>বিজেএস মডেল টেস্ট</option>
                                                         <option value="3" @if($course->type == 3) selected @endif>বার মডেল টেস্ট</option>
                                                         <option value="4" @if($course->type == 4) selected @endif>ফ্রি মডেল টেস্ট</option>
+                                                        <option value="5" @if($course->type == 5) selected @endif>প্রশ্ন ব্যাংক</option>
                                                     </select>
                                                     <div class="input-group-append">
                                                         <div class="input-group-text"><span class="fas fa-tag"></span></div>
@@ -200,6 +203,7 @@
                           <option value="2">বিজেএস মডেল টেস্ট</option>
                           <option value="3">বার মডেল টেস্ট</option>
                           <option value="4">ফ্রি মডেল টেস্ট</option>
+                          <option value="5">প্রশ্ন ব্যাংক</option>
                       </select>
                       <div class="input-group-append">
                           <div class="input-group-text"><span class="fas fa-tag"></span></div>

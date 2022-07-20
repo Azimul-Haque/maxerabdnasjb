@@ -37,6 +37,9 @@
                                   <td>
                                       {{ $examquestion->question->question }}<br/>
                                       <span class="badge bg-success">{{ $examquestion->question->topic->name }}</span>
+                                      @foreach($examquestion->question->tags as $tag)
+                                        <span class="badge bg-primary">{{ $tag->name }}</span>
+                                      @endforeach
                                   </td>
                               
                                   <td align="right" width="40%">
@@ -161,6 +164,7 @@
                                     <th>#</th>
                                     <th>প্রশ্ন</th>
                                     <th>টপিক</th>
+                                    <th>ট্যাগ</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -179,6 +183,11 @@
                                         {{ $question->question }}
                                     </td>
                                     <td><span class="badge bg-success">{{ $question->topic->name }}</span></td>
+                                    <td>
+                                        @foreach($question->tags as $tag)
+                                          <span class="badge bg-primary">{{ $tag->name }}</span>
+                                        @endforeach
+                                    </td>
                                 </tr>
                                 @endforeach
                             </tbody>

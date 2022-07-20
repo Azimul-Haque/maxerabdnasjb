@@ -14,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'IndexController@index')->name('index.index');
+Route::get('/terms-and-conditions', 'IndexController@termsAndConditions')->name('index.terms-and-conditions');
+Route::get('/privacy-policy', 'IndexController@privacyPolicy')->name('index.privacy-policy');
+Route::get('/refund-policy', 'IndexController@refundPolicy')->name('index.refund-policy');
 
 // Clear Route
 Route::get('/clear', ['as'=>'clear','uses'=>'IndexController@clear']);

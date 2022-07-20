@@ -46,6 +46,9 @@
                                       {{ $question->question }}<br/>
                                       <span class="badge bg-success">{{ $question->topic->name }}</span>
                                       <span class="badge bg-info">{{ $question->difficulty == 1 ? 'সহজ' : ($question->difficulty == 2 ? 'মধ্যম' : 'কঠিন') }}</span>
+                                      @foreach($question->tags as $tag)
+                                        <span class="badge bg-primary">{{ $tag->name }}</span>
+                                      @endforeach
                                   </td>
                                   <td>{{ $question->answer }}</td>
                                   <td>{{ $question->option1 }}, {{ $question->option2 }}, {{ $question->option3 }}, {{ $question->option4 }}</td>
@@ -94,20 +97,35 @@
                                                               <input type="text" name="option4" value="{{ $question->option4 }}" class="form-control mb-3" placeholder="অপশন ৪" required>
                                                           </div>
                                                       </div>
-                                                      <div class="input-group mb-3">
-                                                        <div class="input-group mb-3">
-                                                            <select name="answer" class="form-control" required>
-                                                                <option selected="" disabled="" value="">সঠিক উত্তর</option>
-                                                                <option value="1" @if($question->answer == 1) selected @endif>অপশন ১</option>
-                                                                <option value="2" @if($question->answer == 2) selected @endif>অপশন ২</option>
-                                                                <option value="3" @if($question->answer == 3) selected @endif>অপশন ৩</option>
-                                                                <option value="4" @if($question->answer == 4) selected @endif>অপশন ৪</option>
-                                                            </select>
-                                                            <div class="input-group-append">
-                                                                <div class="input-group-text"><span class="far fa-check-circle"></span></div>
-                                                            </div>
+                                                      <div class="row">
+                                                        <div class="col-md-6">
+                                                          <div class="input-group mb-3">
+                                                              <select name="answer" class="form-control" required>
+                                                                  <option selected="" disabled="" value="">সঠিক উত্তর</option>
+                                                                  <option value="1" @if($question->answer == 1) selected @endif>অপশন ১</option>
+                                                                  <option value="2" @if($question->answer == 2) selected @endif>অপশন ২</option>
+                                                                  <option value="3" @if($question->answer == 3) selected @endif>অপশন ৩</option>
+                                                                  <option value="4" @if($question->answer == 4) selected @endif>অপশন ৪</option>
+                                                              </select>
+                                                              <div class="input-group-append">
+                                                                  <div class="input-group-text"><span class="far fa-check-circle"></span></div>
+                                                              </div>
+                                                          </div>
                                                         </div>
-                                                    </div>
+                                                        <div class="col-md-6">
+                                                          <select name="tags_ids[]" class="form-control multiple-select" multiple="multiple" data-placeholder="ট্যাগ">
+                                                            @php
+                                                              $tag_array = [];
+                                                              foreach($question->tags as $tag) {
+                                                                $tag_array[] = $tag->id;
+                                                              } 
+                                                            @endphp
+                                                            @foreach ($tags as $tag)
+                                                                <option value="{{ $tag->id }}" @if(in_array($tag->id, $tag_array)) selected @endif>{{ $tag->name }}</option>
+                                                            @endforeach
+                                                        </select>
+                                                        </div>
+                                                      </div>
                                                       <div class="row">
                                                           <div class="col-md-6">
                                                               <div class="input-group mb-3">
@@ -518,7 +536,7 @@
                         </div>    
                       </div>
                       <div class="col-md-6">
-                          <select name="tags_ids[]" class="form-control multiple-select" multiple="multiple" data-placeholder="ট্যাগ" required>
+                          <select name="tags_ids[]" class="form-control multiple-select" multiple="multiple" data-placeholder="ট্যাগ">
                               @foreach ($tags as $tag)
                                   <option value="{{ $tag->id }}">{{ $tag->name }}</option>
                               @endforeach

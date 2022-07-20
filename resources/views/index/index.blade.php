@@ -97,10 +97,10 @@
       <div class="sidebar-menu">
         <h5 class="menu-title">Quick Links</h5>
         <ul>
-          <li><a href="javascript:void(0)">About Us</a></li>
-          <li><a href="javascript:void(0)">Our Team</a></li>
-          <li><a href="javascript:void(0)">Latest News</a></li>
-          <li><a href="javascript:void(0)">Contact Us</a></li>
+          <li><a href="{{ route('index.terms-and-conditions') }}">Terms & Conditions</a></li>
+          <li><a href="{{ route('index.privacy-policy') }}">Privacy Policy</a></li>
+          <li><a href="{{ route('index.refund-policy') }}">Refund Policy</a></li>
+          <li><a href="#contact">Contact Us</a></li>
         </ul>
       </div>
       <!-- menu -->
@@ -426,8 +426,7 @@
               <h6>Pricing</h6>
               <h2 class="fw-bold">Pricing & Plans</h2>
               <p>
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form.
+                সব থেকে কম মূল্যে আমাদের প্যাকেজগুলো কিনে আপনি আপনার বিজেএস ও বার পরীক্ষার প্রস্তুতিকে আরও শাণিত করুন।
               </p>
             </div>
           </div>
@@ -439,86 +438,118 @@
     <!--======  End Section Title Five ======-->
     <div class="container">
       <div class="row">
-        <div class="col-lg-4 col-md-6 col-12">
+        <div class="col-lg-3 col-md-6 col-12">
           <div class="pricing-style-fourteen">
             <div class="table-head">
-              <h6 class="title">Starter</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and industry.</p>
+              <h6 class="title">মাসিক</h6>
+                <p>৩০ দিনের জন্য অ্যাপের সব ফিচার অ্যাভেইলেবল থাকবে</p>
                 <div class="price">
                   <h2 class="amount">
-                    <span class="currency">৳</span>0<span class="duration">/mo </span>
+                    <span class="currency">৳</span>২৯<span class="duration">/৩০ দিন </span>
                   </h2>
                 </div>
             </div>
 
             <div class="light-rounded-buttons">
               <a href="javascript:void(0)" class="btn primary-btn-outline">
-                Start free trial
+                শুরু করুন!
               </a>
             </div>
 
             <div class="table-content">
               <ul class="table-list">
-                <li> <i class="lni lni-checkmark-circle"></i> Cras justo odio.</li>
-                <li> <i class="lni lni-checkmark-circle"></i> Dapibus ac facilisis in.</li>
-                <li> <i class="lni lni-checkmark-circle deactive"></i> Morbi leo risus.</li>
-                <li> <i class="lni lni-checkmark-circle deactive"></i> Excepteur sint occaecat velit.</li>
+                <li> <i class="lni lni-checkmark-circle"></i> অ্যাপের ফিচারসমূহের এক্সেস</li>
+                <li> <i class="lni lni-checkmark-circle"></i> সম্পূর্ণ বিজেএস কোর্স এক্সেস</li>
+                <li> <i class="lni lni-checkmark-circle"></i> সম্পূর্ণ বার কোর্স এক্সেস</li>
+                <li> <i class="lni lni-checkmark-circle"></i> মডেল টেস্ট ও সাবজেক্টিভ প্রস্তুতি</li>
+                {{-- <li> <i class="lni lni-checkmark-circle deactive"></i> মডেল টেস্ট ও সাবজেক্টিভ প্রস্তুতি</li> --}}
               </ul>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-12">
+        <div class="col-lg-3 col-md-6 col-12">
           <div class="pricing-style-fourteen middle">
             <div class="table-head">
-              <h6 class="title">Exclusive</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and industry.</p>
+              <h6 class="title">ত্রৈমাসিক</h6>
+                <p>৯০ দিনের জন্য অ্যাপের সব ফিচার অ্যাভেইলেবল থাকবে</p>
                 <div class="price">
                   <h2 class="amount">
-                    <span class="currency">৳</span>99<span class="duration">/mo </span>
+                    <span class="currency">৳</span>৭৯<span class="duration">/৯০ দিন </span>
                   </h2>
                 </div>
             </div>
 
             <div class="light-rounded-buttons">
               <a href="javascript:void(0)" class="btn primary-btn">
-                Start free trial
+                শুরু করুন!
               </a>
             </div>
 
             <div class="table-content">
               <ul class="table-list">
-                <li> <i class="lni lni-checkmark-circle"></i> Cras justo odio.</li>
-                <li> <i class="lni lni-checkmark-circle"></i> Dapibus ac facilisis in.</li>
-                <li> <i class="lni lni-checkmark-circle"></i> Morbi leo risus.</li>
-                <li> <i class="lni lni-checkmark-circle deactive"></i> Excepteur sint occaecat velit.</li>
+                <li> <i class="lni lni-checkmark-circle"></i> অ্যাপের ফিচারসমূহের এক্সেস</li>
+                <li> <i class="lni lni-checkmark-circle"></i> সম্পূর্ণ বিজেএস কোর্স এক্সেস</li>
+                <li> <i class="lni lni-checkmark-circle"></i> সম্পূর্ণ বার কোর্স এক্সেস</li>
+                <li> <i class="lni lni-checkmark-circle"></i> মডেল টেস্ট ও সাবজেক্টিভ প্রস্তুতি</li>
+                {{-- <li> <i class="lni lni-checkmark-circle deactive"></i> মডেল টেস্ট ও সাবজেক্টিভ প্রস্তুতি</li> --}}
               </ul>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-12">
+        <div class="col-lg-3 col-md-6 col-12">
           <div class="pricing-style-fourteen">
             <div class="table-head">
-              <h6 class="title">Premium</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and industry.</p>
+              <h6 class="title">অর্ধ-বার্ষিক</h6>
+                <p>৬ মাসের জন্য অ্যাপের সব ফিচার অ্যাভেইলেবল থাকবে</p>
                 <div class="price">
                   <h2 class="amount">
-                    <span class="currency">৳</span>150<span class="duration">/mo </span>
+                    <span class="currency">৳</span>১৬৯<span class="duration">/৬ মাস </span>
                   </h2>
                 </div>
             </div>
 
             <div class="light-rounded-buttons">
               <a href="javascript:void(0)" class="btn primary-btn-outline">
-                Start free trial
+                শুরু করুন!
               </a>
             </div>
 
             <div class="table-content">
               <ul class="table-list">
-                <li> <i class="lni lni-checkmark-circle"></i> Cras justo odio.</li>
-                <li> <i class="lni lni-checkmark-circle"></i> Dapibus ac facilisis in.</li>
-                <li> <i class="lni lni-checkmark-circle"></i> Morbi leo risus.</li>
-                <li> <i class="lni lni-checkmark-circle"></i> Excepteur sint occaecat velit.</li>
+                <li> <i class="lni lni-checkmark-circle"></i> অ্যাপের ফিচারসমূহের এক্সেস</li>
+                <li> <i class="lni lni-checkmark-circle"></i> সম্পূর্ণ বিজেএস কোর্স এক্সেস</li>
+                <li> <i class="lni lni-checkmark-circle"></i> সম্পূর্ণ বার কোর্স এক্সেস</li>
+                <li> <i class="lni lni-checkmark-circle"></i> মডেল টেস্ট ও সাবজেক্টিভ প্রস্তুতি</li>
+                {{-- <li> <i class="lni lni-checkmark-circle deactive"></i> মডেল টেস্ট ও সাবজেক্টিভ প্রস্তুতি</li> --}}
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="pricing-style-fourteen">
+            <div class="table-head">
+              <h6 class="title">বার্ষিক</h6>
+                <p>১ বছরের জন্য অ্যাপের সব ফিচার অ্যাভেইলেবল থাকবে</p>
+                <div class="price">
+                  <h2 class="amount">
+                    <span class="currency">৳</span>৩২৯<span class="duration">/১ বছর </span>
+                  </h2>
+                </div>
+            </div>
+
+            <div class="light-rounded-buttons">
+              <a href="javascript:void(0)" class="btn primary-btn-outline">
+                শুরু করুন!
+              </a>
+            </div>
+
+            <div class="table-content">
+              <ul class="table-list">
+                <li> <i class="lni lni-checkmark-circle"></i> অ্যাপের ফিচারসমূহের এক্সেস</li>
+                <li> <i class="lni lni-checkmark-circle"></i> সম্পূর্ণ বিজেএস কোর্স এক্সেস</li>
+                <li> <i class="lni lni-checkmark-circle"></i> সম্পূর্ণ বার কোর্স এক্সেস</li>
+                <li> <i class="lni lni-checkmark-circle"></i> মডেল টেস্ট ও সাবজেক্টিভ প্রস্তুতি</li>
+                {{-- <li> <i class="lni lni-checkmark-circle deactive"></i> মডেল টেস্ট ও সাবজেক্টিভ প্রস্তুতি</li> --}}
               </ul>
             </div>
           </div>
@@ -538,11 +569,7 @@
           <div class="inner-content">
             <h2>We love to make perfect <br />solutions for your BJS & Bar preparation</h2>
             <p>
-              Why I say old chap that is, spiffing off his nut cor blimey
-              guvnords geeza<br />
-              bloke knees up bobby, sloshed arse William cack Richard. Bloke
-              fanny around chesed of bum bag old lost the pilot say there
-              spiffing off his nut.
+              BJS & BAR EXAM is a dedicated online platform to take the best preparation for the Bangladesh Judicial Service (BJS) Exam and Bar Council Exam.
             </p>
             <div class="light-rounded-buttons">
               <a href="javascript:void(0)" class="btn primary-btn-outline">Get Started</a>
@@ -684,7 +711,7 @@
                   hierarchies.
                 </p>
                 <p class="copyright-text">
-                  <span>© 2022 Innova Tech.</span>Designed and Developed by
+                  <span>© 2022 App Lab IT.</span>Designed and Developed by
                   <a href="https://orbachinujbuk.com" rel="nofollow"> Azimul Haque</a>
                 </p>
               </div>
@@ -693,12 +720,11 @@
             <div class="col-lg-2 col-md-6 col-12">
               <!-- Single Widget -->
               <div class="footer-widget f-link">
-                <h5>Solutions</h5>
+                <h5>Links</h5>
                 <ul>
-                  <li><a href="javascript:void(0)">Marketing</a></li>
-                  <li><a href="javascript:void(0)">Analytics</a></li>
-                  <li><a href="javascript:void(0)">Commerce</a></li>
-                  <li><a href="javascript:void(0)">Insights</a></li>
+                  <li><a href="{{ route('index.terms-and-conditions') }}">Terms & Conditions</a></li>
+                  <li><a href="{{ route('index.privacy-policy') }}">Privacy Policy</a></li>
+                  <li><a href="{{ route('index.refund-policy') }}">Refund Policy</a></li>
                 </ul>
               </div>
               <!-- End Single Widget -->
@@ -708,7 +734,7 @@
               <div class="footer-widget f-link">
                 <h5>Support</h5>
                 <ul>
-                  <li><a href="javascript:void(0)">Pricing</a></li>
+                  <li><a href="#pricing">Pricing</a></li>
                   <li><a href="javascript:void(0)">Documentation</a></li>
                   <li><a href="javascript:void(0)">Guides</a></li>
                   <li><a href="javascript:void(0)">API Status</a></li>

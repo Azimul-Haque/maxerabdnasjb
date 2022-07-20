@@ -147,6 +147,11 @@ class QuestionController extends Controller
         $question->difficulty = $request->difficulty;
         $question->save();
 
+        
+        if(isset($request->tags_ids)){
+            $question->tags()->sync($request->tags_ids, false);
+        }
+
         // image upload
         if($request->hasFile('image')) {
             $image    = $request->file('image');
@@ -186,6 +191,8 @@ class QuestionController extends Controller
             'explanation' => 'sometimes|max:2048',
         ));
 
+        // dd($request->tags_ids);
+
         $question             = Question::findOrFail($id);
         $question->topic_id   = $request->topic_id;
         $question->question   = $request->question;
@@ -196,6 +203,10 @@ class QuestionController extends Controller
         $question->answer     = $request->answer;
         $question->difficulty = $request->difficulty;
         $question->save();
+
+        if(isset($request->tags_ids)){
+            $question->tags()->sync($request->tags_ids, true);
+        }
 
         // image upload
         if($request->hasFile('image')) {
