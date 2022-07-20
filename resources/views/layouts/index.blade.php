@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="{{ asset('vendor/frontend/css/glightbox.min.css') }}" />
 
   <link rel="stylesheet" href="{{ asset('vendor/frontend/css/style.css') }}" />
+  @yield('third_party_stylesheets')
 </head>
 
 <body>
