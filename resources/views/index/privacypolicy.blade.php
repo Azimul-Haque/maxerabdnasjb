@@ -112,7 +112,12 @@
 			periodically for any changes. We will
 			notify you of any changes by posting the new Privacy Policy on
 			this page.
-			</p><br/> <p>This policy is effective as of 2022-07-01</p> <p><strong>Contact Us</strong></p> <p>
+			</p><br/>
+			<p>
+				These terms and conditions are effective as of July 01, 2022.
+			</p>
+			<br/>
+		    <p><strong>Contact Us</strong></p> <p>
 			If you have any questions or suggestions about our
 			Privacy Policy, do not hesitate to contact us at info@bjsexam.com.
 			</p>
