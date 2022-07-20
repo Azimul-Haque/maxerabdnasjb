@@ -11,7 +11,7 @@
 	    <div class="row">
 	      <div class="ccol-md-12 col-12">
 			<strong>Privacy Policy</strong> <p>
-			<strong>App Lab IT</strong> built the BJS Exam app as
+			<strong>App Lab IT</strong> built the <strong>BJS Exam</strong> app as
 			a Commercial app. This SERVICE is provided by
 			<strong>App Lab IT</strong>  and is intended for use as
 			is.
@@ -28,7 +28,7 @@
 			</p><br/> <p>
 			The terms used in this Privacy Policy have the same meanings
 			as in our Terms and Conditions, which are accessible at
-			BJS Exam unless otherwise defined in this Privacy Policy.
+			<strong>BJS Exam</strong> unless otherwise defined in this Privacy Policy.
 			</p><br/> <p><strong>Information Collection and Use</strong></p> <p>
 			For a better experience, while using our Service, we
 			may require you to provide us with certain personally
