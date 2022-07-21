@@ -8,6 +8,7 @@ use App\User;
 use App\Course;
 use App\Courseexam;
 use App\Examquestion;
+use App\Topic;
 use Hash;
 
 class APIController extends Controller
@@ -97,7 +98,7 @@ class APIController extends Controller
         {
             $courses = Course::select('id', 'name')
                              ->where('status', 1) // take only active courses
-                             ->where('type', $coursetype) // 1 = Course, 2 = BJS MT, 3 = Bar MT, 4 = Free MT
+                             ->where('type', $coursetype) // 1 = Course, 2 = BJS MT, 3 = Bar MT, 4 = Free MT, 5 = QB
                              ->get();
 
             return response()->json([
@@ -140,8 +141,8 @@ class APIController extends Controller
         {
             $course = Course::select('id')
                              ->where('status', 1) // take only active courses
-                             ->where('type', $coursetype) // 1 = Course, 2 = BJS MT, 3 = Bar MT, 4 = Free MT
-                             ->first();
+                             ->where('type', $coursetype) // 1 = Course, 2 = BJS MT, 3 = Bar MT, 4 = Free MT, 5 = QB
+                             ->first(); 
 
             $courseexams = Courseexam::select('course_id', 'exam_id')
                                      ->where('course_id', $course->id)
@@ -177,6 +178,23 @@ class APIController extends Controller
             return response()->json([
                 'success' => true,
                 'questions' => $examquestions,
+            ]);
+        } else {
+            return response()->json([
+                'success' => false
+            ]);
+        }
+    }
+
+    public function getTopics($softtoken)
+    {
+        if($softtoken == 'Rifat.Admin.2022')
+        {
+            $topics = Topic::all();
+
+            return response()->json([
+                'success' => true,
+                'topics' => $topics,
             ]);
         } else {
             return response()->json([
