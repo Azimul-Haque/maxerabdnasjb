@@ -332,7 +332,7 @@
         <div class="row">
           @foreach($packages as $package)
             <div class="col-lg-3 col-md-6 col-12">
-              <div class="pricing-style-fourteen middle">
+              <div class="pricing-style-fourteen @if($package->suggested == 1) middle @endif">
                 <div class="table-head">
                   <h6 class="title">{{ $package->name }}</h6>
                     <p>{{ $package->tagline }}</p>
