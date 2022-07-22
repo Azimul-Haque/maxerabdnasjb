@@ -14,6 +14,9 @@
   .pricing-style-fourteen .amount {
       font-size: 45px;
   }
+  .pricing-style-fourteen .duration {
+      font-size: 16px;
+  }
 </style>
 @endsection
 
