@@ -231,7 +231,7 @@
                              value="{{ old('strike-price') }}"
                              autocomplete="off"
                              class="form-control"
-                             placeholder="মূল্য" required>
+                             placeholder="মুদ্রিত মূল্য" required>
                       <div class="input-group-append">
                           <div class="input-group-text"><span class="fas fa-dollar-sign"></span></div>
                       </div>
