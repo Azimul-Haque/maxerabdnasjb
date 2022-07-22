@@ -338,7 +338,7 @@
                     <p>{{ $package->tagline }}</p>
                     <div class="price">
                       <h2 class="amount">
-                        <span class="currency"><strike>৳ ৫০</strike></span> ৳ ৩৯<span class="duration">/৩০ দিন </span>
+                        <span class="currency"><strike>৳ {{ $package->strike_price }}</strike></span> ৳ {{ $package->price }}<span class="duration">/{{ $package->duration }}</span>
                       </h2>
                     </div>
                 </div>
