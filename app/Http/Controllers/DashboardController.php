@@ -297,6 +297,15 @@ class DashboardController extends Controller
         return redirect()->route('dashboard.packages');
     }
 
+    public function deletePackage($id)
+    {
+        $package = Package::find($id);
+        $package->delete();
+
+        Session::flash('success', 'User deleted successfully!');
+        return redirect()->route('dashboard.users');
+    }
+
     public function getBalance()
     {
         if(!(Auth::user()->role == 'admin' || Auth::user()->role == 'accountant')) {
