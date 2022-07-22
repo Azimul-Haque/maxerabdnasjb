@@ -271,6 +271,32 @@ class DashboardController extends Controller
         return redirect()->route('dashboard.packages');
     }
 
+    public function updatePackage(Request $request, $id)
+    {
+        $this->validate($request,array(
+            'name'            => 'required|string|191',
+            'tagline'         => 'required|string|191',
+            'duration'        => 'required|string|191',
+            'price'           => 'required|integer',
+            'strike_price'    => 'required|integer',
+            'status'          => 'required',
+            'suggested'       => 'required',
+        ));
+
+        $package = Package::findOrFail($id);
+        $package->name = $request->name;
+        $package->tagline = $request->tagline;
+        $package->duration = $request->duration;
+        $package->price = $request->price;
+        $package->strike_price = $request->strike_price;
+        $package->status = $request->status;
+        $package->suggested = $request->suggested;
+        $package->save();
+
+        Session::flash('success', 'Package updatged successfully!');
+        return redirect()->route('dashboard.packages');
+    }
+
     public function getBalance()
     {
         if(!(Auth::user()->role == 'admin' || Auth::user()->role == 'accountant')) {
