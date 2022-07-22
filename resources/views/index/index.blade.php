@@ -344,7 +344,7 @@
                 </div>
 
                 <div class="light-rounded-buttons">
-                  <a href="javascript:void(0)" class="btn @if($package->suggested == 1) primary-btn @else primary-btn-outline @endif ">
+                  <a href="javascript:void(0)" class="btn @if($package->suggested == 1) primary-btn @else primary-btn-outline @endif">
                     শুরু করুন!
                   </a>
                 </div>
