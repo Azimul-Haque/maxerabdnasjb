@@ -332,7 +332,7 @@
                   <div class="price">
                     <h2 class="amount">
                       <center>
-                        <span ><strike>৳ ৫০</strike></span> ৳ ৩৯<span class="duration">/৩০ দিন </span>
+                        <span class="currency"><strike>৳ ৫০</strike></span> ৳ ৩৯<span class="duration">/৩০ দিন </span>
                       </center>
                     </h2>
                   </div>
