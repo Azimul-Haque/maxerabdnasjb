@@ -335,7 +335,7 @@
               <div class="pricing-style-fourteen">
                 <div class="table-head">
                   <h6 class="title">{{ $package->name }}</h6>
-                    <p>৩০ দিনের জন্য অ্যাপের সব ফিচার অ্যাভেইলেবল থাকবে</p>
+                    <p>{{ $package->tagline }}</p>
                     <div class="price">
                       <h2 class="amount">
                         <span class="currency"><strike>৳ ৫০</strike></span> ৳ ৩৯<span class="duration">/৩০ দিন </span>
