@@ -219,7 +219,7 @@
 	                           value="{{ old('price') }}"
 	                           autocomplete="off"
 	                           class="form-control"
-	                           placeholder="প্রকৃত মূল্য" required>
+	                           placeholder="মূল্য" required>
 	                    <div class="input-group-append">
 	                        <div class="input-group-text"><span class="fas fa-phone"></span></div>
 	                    </div>
