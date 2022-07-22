@@ -248,11 +248,13 @@ class DashboardController extends Controller
     public function storePackage(Request $request)
     {
         $this->validate($request,array(
-            'name'         => 'required|string|191',
+            'name'            => 'required|string|191',
             'tagline'         => 'required|string|191',
-            'duration'         => 'required|string|191',
-            'price'         => 'required|integer',
-            'strike_price'         => 'required|integer',
+            'duration'        => 'required|string|191',
+            'price'           => 'required|integer',
+            'strike_price'    => 'required|integer',
+            'status'          => 'required',
+            'status'          => 'required',
         ));
 
         $balance = new Balance;
