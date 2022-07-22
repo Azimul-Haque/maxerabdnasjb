@@ -14,7 +14,7 @@
 
             <div class="card-tools">
             	<button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addPackageModal">
-            		<i class="fas fa-clipboard-check"></i> নতুন
+            		<i class="fas fa-clipboard-check"></i> নতুন প্যাকেজ
             	</button>
             </div>
           </div>
