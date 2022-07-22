@@ -293,7 +293,7 @@ class DashboardController extends Controller
         $package->suggested = $request->suggested;
         $package->save();
 
-        Session::flash('success', 'Package updatged successfully!');
+        Session::flash('success', 'Package updated successfully!');
         return redirect()->route('dashboard.packages');
     }
 
