@@ -240,9 +240,8 @@
 	                <div class="input-group mb-3">
 	                	<select name="status" class="form-control" required>
 	                		<option selected="" disabled="" value="">ধরন</option>
-	                		<option value="0">একটিভ</option>
-							        <option value="1">ইন-একটিভ</option>
-	                		<option value="user">ব্যবহারকারী</option>
+	                		<option value="1">Active</option>
+							        <option value="0">In-active</option>
 	                	</select>
 	                    <div class="input-group-append">
 	                        <div class="input-group-text"><span class="fas fa-user-secret"></span></div>
