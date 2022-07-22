@@ -251,8 +251,8 @@ class DashboardController extends Controller
             'name'         => 'required|string|191',
             'tagline'         => 'required|string|191',
             'duration'         => 'required|string|191',
-            'medium'         => 'sometimes|max:50',
-            'description'    => 'sometimes|max:50'
+            'price'         => 'required|integer',
+            'strike_price'         => 'required|integer',
         ));
 
         $balance = new Balance;
