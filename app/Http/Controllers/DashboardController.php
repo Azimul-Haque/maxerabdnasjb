@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\User;
+use App\Package;
 
 use Carbon\Carbon;
 use DB;
@@ -238,10 +239,10 @@ class DashboardController extends Controller
 
     public function getPackages()
     {
-        $users = User::where('name', '!=', null)->paginate(10);
+        $packages = Package::where('name', '!=', null)->paginate(10);
         // $sites = Site::all();
-        return view('dashboard.users.index')
-                    ->withUsers($users);
+        return view('dashboard.packages.index')
+                    ->withUsers($packages);
     }
 
     public function getBalance()
