@@ -191,6 +191,17 @@
 	                    </div>
 	                </div>
 
+                  <div class="input-group mb-3">
+                      <input type="text"
+                             name="tagline"
+                             class="form-control"
+                             value="{{ old('tagline') }}"
+                             placeholder="প্যাকেজের নাম" required>
+                      <div class="input-group-append">
+                          <div class="input-group-text"><span class="fas fa-ticket-alt"></span></div>
+                      </div>
+                  </div>
+
 	                <div class="input-group mb-3">
 	                    <input type="text"
 	                           name="mobile"
