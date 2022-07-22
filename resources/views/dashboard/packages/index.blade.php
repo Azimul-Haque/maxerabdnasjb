@@ -94,7 +94,7 @@
                                         <input type="text"
                                                name="duration"
                                                class="form-control"
-                                               value="{{ old('duration') }}"
+                                               value="{{ $package->duration }}"
                                                placeholder="মেয়াদ" required>
                                         <div class="input-group-append">
                                             <div class="input-group-text"><span class="fas fa-calendar-check"></span></div>
@@ -104,7 +104,7 @@
                                     <div class="input-group mb-3">
                                         <input type="number"
                                                name="price"
-                                               value="{{ old('price') }}"
+                                               value="{{ $package->price }}"
                                                autocomplete="off"
                                                class="form-control"
                                                placeholder="মূল্য" required>
@@ -116,7 +116,7 @@
                                     <div class="input-group mb-3">
                                         <input type="number"
                                                name="strike_price"
-                                               value="{{ old('strike-price') }}"
+                                               value="{{ $package->strike-price }}"
                                                autocomplete="off"
                                                class="form-control"
                                                placeholder="মুদ্রিত মূল্য" required>
