@@ -240,8 +240,8 @@
 	                <div class="input-group mb-3">
 	                	<select name="status" class="form-control" required>
 	                		<option selected="" disabled="" value="">ধরন</option>
-	                		<option value="admin">এডমিন</option>
-							        <option value="manager">ম্যানেজার</option>
+	                		<option value="0">একটিভ</option>
+							        <option value="1">ইন-একটিভ</option>
 	                		<option value="user">ব্যবহারকারী</option>
 	                	</select>
 	                    <div class="input-group-append">
