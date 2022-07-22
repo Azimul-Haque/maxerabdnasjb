@@ -15,6 +15,15 @@
 </li>
 @endif
 
+@if(Auth::user()->role == 'admin')
+<li class="nav-item">
+    <a href="{{ route('dashboard.users') }}" class="nav-link {{ Request::is('dashboard/users') ? 'active' : '' }} {{ Request::is('dashboard/users/*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-users"></i>
+        <p>প্যাকেজসমূহ</p>
+    </a>
+</li>
+@endif
+
 @if(Auth::user()->role == 'admin' || Auth::user()->role == 'manager')
 <li class="nav-item">
     <a href="{{ route('dashboard.questions') }}" class="nav-link {{ Request::is('dashboard/questions') ? 'active' : '' }}">
