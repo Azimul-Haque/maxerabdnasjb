@@ -178,7 +178,7 @@
                                 আপনি কি নিশ্চিতভাবে এই প্যাকেজ্টি ডিলেট করতে চান?<br/>
                                 <center>
                                     <big><b>{{ $package->name }}</b></big><br/>
-                                    <small><i class="fas fa-phone"></i>৳ {{ $package->price }}</small>
+                                    <small>৳ {{ $package->price }}</small>
                                 </center>
                               </div>
                               <div class="modal-footer">
