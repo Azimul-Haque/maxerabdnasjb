@@ -9,10 +9,10 @@
       font-size: 22px;
       position: absolute;
       left: -40px;
-      /*top: 6px; */
+      top: 6px; 
   }
   .pricing-style-fourteen .amount {
-      font-size: 5০px;
+      font-size: 50px;
   }
 </style>
 @endsection
