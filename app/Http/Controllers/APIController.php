@@ -9,6 +9,7 @@ use App\Course;
 use App\Courseexam;
 use App\Examquestion;
 use App\Topic;
+use App\Package;
 use Hash;
 
 class APIController extends Controller
@@ -207,7 +208,7 @@ class APIController extends Controller
     {
         if($softtoken == 'Rifat.Admin.2022')
         {
-            $topics = Topic::all();
+            $packages = getPackages::all();
 
             return response()->json([
                 'success' => true,
