@@ -2,7 +2,16 @@
 @section('title') BJS & Bar Exam @endsection
 
 @section('third_party_stylesheets')
-
+<style type="text/css">
+  .pricing-style-fourteen .currency {
+      font-weight: 200;
+      color: var(--dark-3);
+      font-size: 22px;
+      position: absolute;
+      left: -40px;
+      /* top: 6px; */
+  }
+</style>
 @endsection
 
 @section('content')
