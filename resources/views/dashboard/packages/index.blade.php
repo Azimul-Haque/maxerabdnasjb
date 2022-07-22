@@ -10,7 +10,7 @@
     <div class="container-fluid">
 		<div class="card">
           <div class="card-header">
-            <h3 class="card-title">প্যাকেজ</h3>
+            <h3 class="card-title">প্যাকেজ তালিকা</h3>
 
             <div class="card-tools">
             	<button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addPackageModal">
