@@ -11,6 +11,9 @@
       left: -40px;
       /* top: 6px; */
   }
+  .pricing-style-fourteen .amount {
+      font-size: 5০px;
+  }
 </style>
 @endsection
 
@@ -389,7 +392,7 @@
                   <p>৬ মাসের জন্য অ্যাপের সব ফিচার অ্যাভেইলেবল থাকবে</p>
                   <div class="price">
                     <h2 class="amount">
-                      <span class="currency"><strike>৳ ৩০০</strike></span>৳ ১৬৯<span class="duration">/৬ মাস </span>
+                      <span class="currency"><strike>৳ ৩০০</strike></span>৳ ১৭৯<span class="duration">/৬ মাস </span>
                     </h2>
                   </div>
               </div>
@@ -418,7 +421,7 @@
                   <p>১ বছরের জন্য অ্যাপের সব ফিচার অ্যাভেইলেবল থাকবে</p>
                   <div class="price">
                     <h2 class="amount">
-                      <span class="currency"><strike>৳ ৬০০</strike></span>৳ ৩২৯<span class="duration">/১ বছর </span>
+                      <span class="currency"><strike>৳ ৬০০</strike></span>৳ ৩৪৯<span class="duration">/১ বছর </span>
                     </h2>
                   </div>
               </div>
