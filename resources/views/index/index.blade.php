@@ -362,7 +362,7 @@
             </div>
           @endforeach
           <div class="col-lg-3 col-md-6 col-12">
-            <div class="pricing-style-fourteen ">
+            <div class="pricing-style-fourteen middle">
               <div class="table-head">
                 <h6 class="title">ত্রৈমাসিক</h6>
                   <p>৯০ দিনের জন্য অ্যাপের সব ফিচার অ্যাভেইলেবল থাকবে</p>
