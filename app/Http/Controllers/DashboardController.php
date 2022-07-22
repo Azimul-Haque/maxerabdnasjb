@@ -248,7 +248,8 @@ class DashboardController extends Controller
     public function storePackage(Request $request)
     {
         $this->validate($request,array(
-            'name'         => 'required|integer',
+            'name'         => 'required|string|191',
+            'name'         => 'required|string|191',
             'medium'         => 'sometimes|max:50',
             'description'    => 'sometimes|max:50'
         ));
