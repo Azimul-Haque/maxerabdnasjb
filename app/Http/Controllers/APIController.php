@@ -208,11 +208,11 @@ class APIController extends Controller
     {
         if($softtoken == 'Rifat.Admin.2022')
         {
-            $packages = getPackages::all();
+            $packages = Package::where('status', 1)->get();
 
             return response()->json([
                 'success' => true,
-                'topics' => $topics,
+                'packages' => $packages,
             ]);
         } else {
             return response()->json([
