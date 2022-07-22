@@ -44,7 +44,9 @@ class IndexController extends Controller
      */
     public function index()
     {
-        return view('index.index');
+        $packages = Package::all();
+
+        return view('index.index')->withPackages($packages);
     }
 
     public function termsAndConditions()
