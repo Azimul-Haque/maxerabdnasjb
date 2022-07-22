@@ -17,6 +17,7 @@ class CreatePackagesTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('tagline');
+            $table->string('duration');
             $table->integer('price');
             $table->integer('strike_price');
             $table->integer('status');
