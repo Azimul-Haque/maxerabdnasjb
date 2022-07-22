@@ -244,7 +244,7 @@
 							        <option value="0">In-active</option>
 	                	</select>
 	                    <div class="input-group-append">
-	                        <div class="input-group-text"><span class="fas fa-user-secret"></span></div>
+	                        <div class="input-group-text"><span class="fas fa-tag"></span></div>
 	                    </div>
 	                </div>
 
