@@ -39,7 +39,8 @@
                 			<br/>
                             {{-- {{ $packages->balances2 }} --}}
                 			<small class="text-black-50">{{ $packages->mobile }}</small> 
-                			<span class="badge bg-success">{{ ucfirst($packages->role) }}</span>
+                			<span class="badge bg-success">৳ {{ $packages->price }}</span> 
+                      <span class="badge bg-success">৳ {{ $packages->price }}</span>
                 		</td>
                 		<td align="right" width="40%">
                 			<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editUserModal{{ $packages->id }}">
