@@ -330,36 +330,36 @@
       <!--======  End Section Title Five ======-->
       <div class="container">
         <div class="row">
-          @foreach()
-          <div class="col-lg-3 col-md-6 col-12">
-            <div class="pricing-style-fourteen">
-              <div class="table-head">
-                <h6 class="title">মাসিক</h6>
-                  <p>৩০ দিনের জন্য অ্যাপের সব ফিচার অ্যাভেইলেবল থাকবে</p>
-                  <div class="price">
-                    <h2 class="amount">
-                      <span class="currency"><strike>৳ ৫০</strike></span> ৳ ৩৯<span class="duration">/৩০ দিন </span>
-                    </h2>
-                  </div>
-              </div>
+          @foreach($packages as $package)
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="pricing-style-fourteen">
+                <div class="table-head">
+                  <h6 class="title">মাসিক</h6>
+                    <p>৩০ দিনের জন্য অ্যাপের সব ফিচার অ্যাভেইলেবল থাকবে</p>
+                    <div class="price">
+                      <h2 class="amount">
+                        <span class="currency"><strike>৳ ৫০</strike></span> ৳ ৩৯<span class="duration">/৩০ দিন </span>
+                      </h2>
+                    </div>
+                </div>
 
-              <div class="light-rounded-buttons">
-                <a href="javascript:void(0)" class="btn primary-btn-outline">
-                  শুরু করুন!
-                </a>
-              </div>
+                <div class="light-rounded-buttons">
+                  <a href="javascript:void(0)" class="btn primary-btn-outline">
+                    শুরু করুন!
+                  </a>
+                </div>
 
-              <div class="table-content">
-                <ul class="table-list">
-                  <li> <i class="lni lni-checkmark-circle"></i> অ্যাপের ফিচারসমূহের এক্সেস</li>
-                  <li> <i class="lni lni-checkmark-circle"></i> সম্পূর্ণ বিজেএস কোর্স এক্সেস</li>
-                  <li> <i class="lni lni-checkmark-circle"></i> সম্পূর্ণ বার কোর্স এক্সেস</li>
-                  <li> <i class="lni lni-checkmark-circle"></i> মডেল টেস্ট ও সাবজেক্টিভ প্রস্তুতি</li>
-                  {{-- <li> <i class="lni lni-checkmark-circle deactive"></i> মডেল টেস্ট ও সাবজেক্টিভ প্রস্তুতি</li> --}}
-                </ul>
+                <div class="table-content">
+                  <ul class="table-list">
+                    <li> <i class="lni lni-checkmark-circle"></i> অ্যাপের ফিচারসমূহের এক্সেস</li>
+                    <li> <i class="lni lni-checkmark-circle"></i> সম্পূর্ণ বিজেএস কোর্স এক্সেস</li>
+                    <li> <i class="lni lni-checkmark-circle"></i> সম্পূর্ণ বার কোর্স এক্সেস</li>
+                    <li> <i class="lni lni-checkmark-circle"></i> মডেল টেস্ট ও সাবজেক্টিভ প্রস্তুতি</li>
+                    {{-- <li> <i class="lni lni-checkmark-circle deactive"></i> মডেল টেস্ট ও সাবজেক্টিভ প্রস্তুতি</li> --}}
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
           @endforeach
           <div class="col-lg-3 col-md-6 col-12">
             <div class="pricing-style-fourteen middle">
