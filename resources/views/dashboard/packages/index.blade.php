@@ -226,7 +226,7 @@
 
                   <div class="input-group mb-3">
                       <input type="number"
-                             name="strike-price"
+                             name="strike_price"
                              value="{{ old('strike-price') }}"
                              autocomplete="off"
                              class="form-control"
@@ -239,7 +239,7 @@
 	                <div class="input-group mb-3">
 	                	<select name="status" class="form-control" required>
 	                		<option selected="" disabled="" value="">স্ট্যাটাস</option>
-	                		<option value="1">Active</option>
+	                		<option value="1" selected>Active</option>
 							        <option value="0">In-active</option>
 	                	</select>
 	                    <div class="input-group-append">
