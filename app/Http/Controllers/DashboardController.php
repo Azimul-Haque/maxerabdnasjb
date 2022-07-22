@@ -254,7 +254,7 @@ class DashboardController extends Controller
             'price'           => 'required|integer',
             'strike_price'    => 'required|integer',
             'status'          => 'required',
-            'status'          => 'required',
+            'suggested'       => 'required',
         ));
 
         $balance = new Balance;
