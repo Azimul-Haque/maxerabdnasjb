@@ -209,7 +209,7 @@
                              value="{{ old('duration') }}"
                              placeholder="মেয়াদ" required>
                       <div class="input-group-append">
-                          <div class="input-group-text"><span class="fas fa-quote-left"></span></div>
+                          <div class="input-group-text"><span class="fas fa-calendar-check"></span></div>
                       </div>
                   </div>
 
