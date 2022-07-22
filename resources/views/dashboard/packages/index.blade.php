@@ -37,7 +37,6 @@
                 		<td>
                 			{{ $packages->name }}
                 			<br/>
-                            {{-- {{ $packages->balances2 }} --}}
                 			<small class="text-black-50">{{ $packages->mobile }}</small> 
                 			<span class="badge bg-success">৳ {{ $packages->price }}</span> 
                       <span class="badge bg-success"><strike>৳ {{ $packages->price }}</strike></span>
