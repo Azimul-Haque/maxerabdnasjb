@@ -72,7 +72,7 @@
                                         <input type="text"
                                                name="name"
                                                class="form-control"
-                                               value="{{ old('name') }}"
+                                               value="{{ $package->name }}"
                                                placeholder="প্যাকেজের নাম" required>
                                         <div class="input-group-append">
                                             <div class="input-group-text"><span class="fas fa-ticket-alt"></span></div>
