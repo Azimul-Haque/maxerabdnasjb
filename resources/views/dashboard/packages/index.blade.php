@@ -63,59 +63,90 @@
             			              <span aria-hidden="true">&times;</span>
             			            </button>
             			          </div>
-            			          <form method="post" action="{{ route('dashboard.users.update', $package->id) }}">
-            				          <div class="modal-body">
-            				            
-            				                @csrf
+            			          <form method="post" action="{{ route('dashboard.packages.update', $package->id) }}">
+				                      <div class="modal-body">
+                                
+                                    @csrf
 
-            				                <div class="input-group mb-3">
-            				                    <input type="text"
-            				                           name="name"
-            				                           class="form-control"
-            				                           value="{{ $package->name }}"
-            				                           placeholder="নাম" required>
-            				                    <div class="input-group-append">
-            				                        <div class="input-group-text"><span class="fas fa-user"></span></div>
-            				                    </div>
-            				                </div>
+                                    <div class="input-group mb-3">
+                                        <input type="text"
+                                               name="name"
+                                               class="form-control"
+                                               value="{{ old('name') }}"
+                                               placeholder="প্যাকেজের নাম" required>
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><span class="fas fa-ticket-alt"></span></div>
+                                        </div>
+                                    </div>
 
-            				                <div class="input-group mb-3">
-            				                    <input type="text"
-            				                           name="mobile"
-            				                           value="{{ $package->mobile }}"
-            				                           autocomplete="off"
-            				                           class="form-control"
-            				                           placeholder="মোবাইল নম্বর (১১ ডিজিট)" required>
-            				                    <div class="input-group-append">
-            				                        <div class="input-group-text"><span class="fas fa-phone"></span></div>
-            				                    </div>
-            				                </div>
+                                    <div class="input-group mb-3">
+                                        <input type="text"
+                                               name="tagline"
+                                               class="form-control"
+                                               value="{{ old('tagline') }}"
+                                               placeholder="ট্যাগ লাইন" required>
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><span class="fas fa-quote-left"></span></div>
+                                        </div>
+                                    </div>
 
-            				                <div class="input-group mb-3">
-            				                	<select name="role" class="form-control" required>
-            				                		<option disabled="" value="">ধরন নির্ধারণ করুন</option>
-            				                		<option value="admin" @if($package->role == 'admin') selected="" @endif>এডমিন</option>
-													<option value="manager" @if($package->role == 'manager') selected="" @endif>ম্যানেজার</option>
-													<option value="user" @if($package->role == 'user') selected="" @endif>ব্যবহারকারী</option>
-													{{-- <option value="accountant" @if($package->role == 'accountant') selected="" @endif>একাউন্টেন্ট</option> --}}
-            				                	</select>
-            				                    <div class="input-group-append">
-            				                        <div class="input-group-text"><span class="fas fa-user-secret"></span></div>
-            				                    </div>
-            				                </div>
+                                    <div class="input-group mb-3">
+                                        <input type="text"
+                                               name="duration"
+                                               class="form-control"
+                                               value="{{ old('duration') }}"
+                                               placeholder="মেয়াদ" required>
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><span class="fas fa-calendar-check"></span></div>
+                                        </div>
+                                    </div>
 
-            				                <div class="input-group mb-3">
-            				                    <input type="password"
-            				                           name="password"
-            				                           class="form-control"
-            				                           autocomplete="off"
-            				                           placeholder="পাসওয়ার্ড (ঐচ্ছিক)">
-            				                    <div class="input-group-append">
-            				                        <div class="input-group-text"><span class="fas fa-lock"></span></div>
-            				                    </div>
-            				                </div>
-            				            
-            				          </div>
+                                    <div class="input-group mb-3">
+                                        <input type="number"
+                                               name="price"
+                                               value="{{ old('price') }}"
+                                               autocomplete="off"
+                                               class="form-control"
+                                               placeholder="মূল্য" required>
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><span class="fas fa-dollar-sign"></span></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="input-group mb-3">
+                                        <input type="number"
+                                               name="strike_price"
+                                               value="{{ old('strike-price') }}"
+                                               autocomplete="off"
+                                               class="form-control"
+                                               placeholder="মুদ্রিত মূল্য" required>
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><span class="fas fa-strikethrough"></span></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="input-group mb-3">
+                                      <select name="status" class="form-control" required>
+                                        <option selected="" disabled="" value="">স্ট্যাটাস</option>
+                                        <option value="1" selected>Active</option>
+                                        <option value="0">In-active</option>
+                                      </select>
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><span class="fas fa-toggle-on"></span></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="input-group mb-3">
+                                      <select name="suggested" class="form-control" required>
+                                        <option selected="" disabled="" value="">ফিচারড</option>
+                                        <option value="1">Yes</option>
+                                        <option value="0" selected>No</option>
+                                      </select>
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><span class="fas fa-bolt"></span></div>
+                                        </div>
+                                    </div>
+                              </div>
             				          <div class="modal-footer">
             				            <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
             				            <button type="submit" class="btn btn-primary">দাখিল করুন</button>
