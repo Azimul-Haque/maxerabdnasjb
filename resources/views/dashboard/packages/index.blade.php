@@ -58,7 +58,7 @@
             			      <div class="modal-dialog" role="document">
             			        <div class="modal-content">
             			          <div class="modal-header bg-primary">
-            			            <h5 class="modal-title" id="editUserModalLabel">ব্যবহারকারী তথ্য হালনাগাদ</h5>
+            			            <h5 class="modal-title" id="editUserModalLabel">প্যাকেজ তথ্য হালনাগাদ</h5>
             			            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             			              <span aria-hidden="true">&times;</span>
             			            </button>
@@ -169,13 +169,13 @@
                           <div class="modal-dialog" role="document">
                             <div class="modal-content">
                               <div class="modal-header bg-danger">
-                                <h5 class="modal-title" id="deleteUserModalLabel">ব্যবহারকারী ডিলেট</h5>
+                                <h5 class="modal-title" id="deleteUserModalLabel">প্যাকেজ ডিলেট</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
                                 </button>
                               </div>
                               <div class="modal-body">
-                                আপনি কি নিশ্চিতভাবে এই ব্যবহারকারীকে ডিলেট করতে চান?<br/>
+                                আপনি কি নিশ্চিতভাবে এই প্যাকেজ্টি ডিলেট করতে চান?<br/>
                                 <center>
                                     <big><b>{{ $package->name }}</b></big><br/>
                                     <small><i class="fas fa-phone"></i> {{ $package->mobile }}</small>
