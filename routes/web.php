@@ -26,6 +26,7 @@ Auth::routes();
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard.index');
 
 Route::get('/dashboard/packages', 'DashboardController@getPackages')->name('dashboard.packages');
+Route::post('/dashboard/users/store', 'DashboardController@storeUser')->name('dashboard.packages.store');
 
 Route::get('/dashboard/users', 'DashboardController@getUsers')->name('dashboard.users');
 Route::get('/dashboard/users/{id}/single', 'DashboardController@getUser')->name('dashboard.users.single');
