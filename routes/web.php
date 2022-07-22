@@ -25,6 +25,8 @@ Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard.index');
 
+Route::get('/dashboard/users', 'DashboardController@getUsers')->name('dashboard.packages');
+
 Route::get('/dashboard/users', 'DashboardController@getUsers')->name('dashboard.users');
 Route::get('/dashboard/users/{id}/single', 'DashboardController@getUser')->name('dashboard.users.single');
 Route::get('/dashboard/users/{id}/single/otherpage', 'DashboardController@getUserWithOtherPage')->name('dashboard.users.singleother');
