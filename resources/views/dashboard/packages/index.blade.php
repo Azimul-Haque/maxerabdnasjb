@@ -48,17 +48,17 @@
                 			<small class="text-black-50">{{ $package->tagline }}</small> 
                 		</td>
                 		<td align="right" width="40%">
-                			<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editUserModal{{ $package->id }}">
+                			<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editPackageModal{{ $package->id }}">
                 				<i class="fas fa-user-edit"></i>
                 			</button>
             			    {{-- Edit Package Modal Code --}}
             			    {{-- Edit Package Modal Code --}}
             			    <!-- Modal -->
-            			    <div class="modal fade" id="editUserModal{{ $package->id }}" tabindex="-1" role="dialog" aria-labelledby="editUserModalLabel" aria-hidden="true" data-backdrop="static">
+            			    <div class="modal fade" id="editPackageModal{{ $package->id }}" tabindex="-1" role="dialog" aria-labelledby="editPackageModalLabel" aria-hidden="true" data-backdrop="static">
             			      <div class="modal-dialog" role="document">
             			        <div class="modal-content">
             			          <div class="modal-header bg-primary">
-            			            <h5 class="modal-title" id="editUserModalLabel">প্যাকেজ তথ্য হালনাগাদ</h5>
+            			            <h5 class="modal-title" id="editPackageModalLabel">প্যাকেজ তথ্য হালনাগাদ</h5>
             			            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             			              <span aria-hidden="true">&times;</span>
             			            </button>
@@ -158,18 +158,18 @@
             			    {{-- Edit Package Modal Code --}}
             			    {{-- Edit Package Modal Code --}}
 
-                			<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteUserModal{{ $package->id }}">
+                			<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deletePackageModal{{ $package->id }}">
                 				<i class="fas fa-user-minus"></i>
                 			</button>
                 		</td>
                         {{-- Delete Package Modal Code --}}
                         {{-- Delete Package Modal Code --}}
                         <!-- Modal -->
-                        <div class="modal fade" id="deleteUserModal{{ $package->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteUserModalLabel" aria-hidden="true" data-backdrop="static">
+                        <div class="modal fade" id="deletePackageModal{{ $package->id }}" tabindex="-1" role="dialog" aria-labelledby="deletePackageModalLabel" aria-hidden="true" data-backdrop="static">
                           <div class="modal-dialog" role="document">
                             <div class="modal-content">
                               <div class="modal-header bg-danger">
-                                <h5 class="modal-title" id="deleteUserModalLabel">প্যাকেজ ডিলেট</h5>
+                                <h5 class="modal-title" id="deletePackageModalLabel">প্যাকেজ ডিলেট</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
                                 </button>
