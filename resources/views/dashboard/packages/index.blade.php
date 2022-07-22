@@ -251,7 +251,7 @@
                     <select name="suggested" class="form-control" required>
                       <option selected="" disabled="" value="">ফিচারড</option>
                       <option value="1">Yes</option>
-                      <option value="0">No</option>
+                      <option value="0" selected>No</option>
                     </select>
                       <div class="input-group-append">
                           <div class="input-group-text"><span class="fas fa-bolt"></span></div>
