@@ -159,7 +159,7 @@
             			    {{-- Edit Package Modal Code --}}
 
                 			<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deletePackageModal{{ $package->id }}">
-                				<i class="fas fa-user-minus"></i>
+                				<i class="fas fa-trash-alt"></i>
                 			</button>
                 		</td>
                         {{-- Delete Package Modal Code --}}
