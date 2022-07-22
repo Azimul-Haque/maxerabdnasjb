@@ -40,6 +40,8 @@
                       <span class="badge bg-success">৳ {{ $package->price }}</span>
                       @if($package->status == 1)
                         <span class="badge bg-primary">Active</span>
+                      @endif@if($package->suggested == 1)
+                        <span class="badge bg-primary">Active</span>
                       @endif
                 			<br/>
                 			<small class="text-black-50">{{ $package->tagline }}</small> 
