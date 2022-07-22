@@ -170,7 +170,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header bg-success">
-            <h5 class="modal-title" id="addPackageModalLabel">নতুন ব্যবহারকারী যোগ</h5>
+            <h5 class="modal-title" id="addPackageModalLabel">নতুন প্যাকেজ যোগ</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -244,12 +244,12 @@
 @section('third_party_scripts')
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript">
-        $('#adduserrole').change(function () {
-            if($('#adduserrole').val() == 'accountant') {
-                $('#ifaccountant').hide();
-            } else {
-                $('#ifaccountant').show();
-            }
-        });
+        // $('#adduserrole').change(function () {
+        //     if($('#adduserrole').val() == 'accountant') {
+        //         $('#ifaccountant').hide();
+        //     } else {
+        //         $('#ifaccountant').show();
+        //     }
+        // });
     </script>
 @endsection
