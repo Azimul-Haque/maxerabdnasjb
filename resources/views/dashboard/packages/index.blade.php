@@ -233,7 +233,7 @@
                              class="form-control"
                              placeholder="মুদ্রিত মূল্য" required>
                       <div class="input-group-append">
-                          <div class="input-group-text"><span class="fas fa-dollar-sign"></span></div>
+                          <div class="input-group-text"><span class="fas fa-strikethrough"></span></div>
                       </div>
                   </div>
 
@@ -243,7 +243,6 @@
 	                		<option value="admin">এডমিন</option>
 							<option value="manager">ম্যানেজার</option>
 	                		<option value="user">ব্যবহারকারী</option>
-							{{-- <option value="accountant">একাউন্টেন্ট</option> --}}
 	                	</select>
 	                    <div class="input-group-append">
 	                        <div class="input-group-text"><span class="fas fa-user-secret"></span></div>
