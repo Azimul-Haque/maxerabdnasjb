@@ -13,7 +13,7 @@
             <h3 class="card-title">প্যাকেজ</h3>
 
             <div class="card-tools">
-            	<button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addUserModal">
+            	<button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addPackageModal">
             		<i class="fas fa-clipboard-check"></i> নতুন
             	</button>
             </div>
@@ -163,14 +163,14 @@
         {{ $users->links() }}
     </div>
 
-    {{-- Add User Modal Code --}}
-    {{-- Add User Modal Code --}}
+    {{-- Add Package Modal Code --}}
+    {{-- Add Package Modal Code --}}
     <!-- Modal -->
-    <div class="modal fade" id="addUserModal" tabindex="-1" role="dialog" aria-labelledby="addUserModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal fade" id="addPackageModal" tabindex="-1" role="dialog" aria-labelledby="addPackageModalLabel" aria-hidden="true" data-backdrop="static">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header bg-success">
-            <h5 class="modal-title" id="addUserModalLabel">নতুন ব্যবহারকারী যোগ</h5>
+            <h5 class="modal-title" id="addPackageModalLabel">নতুন ব্যবহারকারী যোগ</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -237,8 +237,8 @@
         </div>
       </div>
     </div>
-    {{-- Add User Modal Code --}}
-    {{-- Add User Modal Code --}}
+    {{-- Add Package Modal Code --}}
+    {{-- Add Package Modal Code --}}
 @endsection
 
 @section('third_party_scripts')
