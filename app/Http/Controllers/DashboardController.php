@@ -245,6 +245,14 @@ class DashboardController extends Controller
                     ->withUsers($packages);
     }
 
+    public function storePackage()
+    {
+        $packages = Package::where('name', '!=', null)->paginate(10);
+        // $sites = Site::all();
+        return view('dashboard.packages.index')
+                    ->withUsers($packages);
+    }
+
     public function getBalance()
     {
         if(!(Auth::user()->role == 'admin' || Auth::user()->role == 'accountant')) {
