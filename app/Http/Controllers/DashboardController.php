@@ -248,9 +248,9 @@ class DashboardController extends Controller
     public function storePackage(Request $request)
     {
         $this->validate($request,array(
-            'name'            => 'required|string|191',
-            'tagline'         => 'required|string|191',
-            'duration'        => 'required|string|191',
+            'name'            => 'required|string|max:191',
+            'tagline'         => 'required|string|max:191',
+            'duration'        => 'required|string|max:191',
             'price'           => 'required|integer',
             'strike_price'    => 'required|integer',
             'status'          => 'required',
@@ -274,9 +274,9 @@ class DashboardController extends Controller
     public function updatePackage(Request $request, $id)
     {
         $this->validate($request,array(
-            'name'            => 'required|string|191',
-            'tagline'         => 'required|string|191',
-            'duration'        => 'required|string|191',
+            'name'            => 'required|string|max:191',
+            'tagline'         => 'required|string|max:191',
+            'duration'        => 'required|string|max:191',
             'price'           => 'required|integer',
             'strike_price'    => 'required|integer',
             'status'          => 'required',
