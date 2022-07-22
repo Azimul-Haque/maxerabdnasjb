@@ -257,13 +257,13 @@ class DashboardController extends Controller
             'suggested'       => 'required',
         ));
 
-        $balance = new Balance;
-        $balance->user_id = Auth::user()->id;
-        $balance->receiver_id = $request->receiver_id;
-        $balance->amount = $request->amount;
-        $balance->medium = $request->medium;
-        $balance->description = $request->description;
-        $balance->save();
+        $package = new Package;
+        $package->user_id = Auth::user()->id;
+        $package->receiver_id = $request->receiver_id;
+        $package->amount = $request->amount;
+        $package->medium = $request->medium;
+        $package->description = $request->description;
+        $package->save();
 
         Session::flash('success', 'Amount added successfully!');
         return redirect()->route('dashboard.packages');
