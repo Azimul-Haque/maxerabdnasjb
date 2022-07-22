@@ -38,6 +38,9 @@
                 			{{ $packages->name }}
                       <span class="badge bg-info"><strike>৳ {{ $packages->strike_price }}</strike></span>
                       <span class="badge bg-success">৳ {{ $packages->price }}</span>
+                      @if($package->status == 1)
+                        <span class="badge bg-success">৳ {{ $packages->price }}</span>
+                      @endif
                 			<br/>
                 			<small class="text-black-50">{{ $packages->tagline }}</small> 
                 		</td>
