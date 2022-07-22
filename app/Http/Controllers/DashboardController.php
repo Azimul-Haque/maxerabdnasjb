@@ -260,9 +260,11 @@ class DashboardController extends Controller
         $package = new Package;
         $package->name = $request->name;
         $package->tagline = $request->tagline;
-        $package->amount = $request->amount;
-        $package->medium = $request->medium;
-        $package->description = $request->description;
+        $package->duration = $request->duration;
+        $package->price = $request->price;
+        $package->strike_price = $request->strike_price;
+        $package->status = $request->status;
+        $package->suggested = $request->suggested;
         $package->save();
 
         Session::flash('success', 'Amount added successfully!');
