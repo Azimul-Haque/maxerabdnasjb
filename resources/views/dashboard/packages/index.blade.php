@@ -225,6 +225,18 @@
 	                    </div>
 	                </div>
 
+                  <div class="input-group mb-3">
+                      <input type="number"
+                             name="strike-price"
+                             value="{{ old('strike-price') }}"
+                             autocomplete="off"
+                             class="form-control"
+                             placeholder="মূল্য" required>
+                      <div class="input-group-append">
+                          <div class="input-group-text"><span class="fas fa-dollar-sign"></span></div>
+                      </div>
+                  </div>
+
 	                <div class="input-group mb-3">
 	                	<select name="role" id="adduserrole" class="form-control" required>
 	                		<option selected="" disabled="" value="">ধরন</option>
