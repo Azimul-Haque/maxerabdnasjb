@@ -334,7 +334,7 @@
             <div class="col-lg-3 col-md-6 col-12">
               <div class="pricing-style-fourteen">
                 <div class="table-head">
-                  <h6 class="title">মাসিক</h6>
+                  <h6 class="title">{{ $package->name }}</h6>
                     <p>৩০ দিনের জন্য অ্যাপের সব ফিচার অ্যাভেইলেবল থাকবে</p>
                     <div class="price">
                       <h2 class="amount">
