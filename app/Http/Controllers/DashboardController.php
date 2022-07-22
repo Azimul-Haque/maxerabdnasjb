@@ -245,12 +245,24 @@ class DashboardController extends Controller
                     ->withUsers($packages);
     }
 
-    public function storePackage()
+    public function storePackage(Request $request)
     {
-        $packages = Package::where('name', '!=', null)->paginate(10);
-        // $sites = Site::all();
-        return view('dashboard.packages.index')
-                    ->withUsers($packages);
+        $this->validate($request,array(
+            'amount'         => 'required|integer',
+            'medium'         => 'sometimes|max:50',
+            'description'    => 'sometimes|max:50'
+        ));
+
+        $balance = new Balance;
+        $balance->user_id = Auth::user()->id;
+        $balance->receiver_id = $request->receiver_id;
+        $balance->amount = $request->amount;
+        $balance->medium = $request->medium;
+        $balance->description = $request->description;
+        $balance->save();
+
+        Session::flash('success', 'Amount added successfully!');
+        return redirect()->route('dashboard.balance');
     }
 
     public function getBalance()
