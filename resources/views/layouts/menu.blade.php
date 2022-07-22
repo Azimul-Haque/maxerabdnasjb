@@ -17,7 +17,7 @@
 
 @if(Auth::user()->role == 'admin')
 <li class="nav-item">
-    <a href="{{ route('dashboard.users') }}" class="nav-link {{ Request::is('dashboard/users') ? 'active' : '' }} {{ Request::is('dashboard/users/*') ? 'active' : '' }}">
+    <a href="{{ route('dashboard.packages') }}" class="nav-link {{ Request::is('dashboard/packages') ? 'active' : '' }} {{ Request::is('dashboard/packages/*') ? 'active' : '' }}">
         <i class="nav-icon fas fa-users"></i>
         <p>প্যাকেজ</p>
     </a>
