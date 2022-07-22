@@ -19,7 +19,7 @@
 <li class="nav-item">
     <a href="{{ route('dashboard.users') }}" class="nav-link {{ Request::is('dashboard/users') ? 'active' : '' }} {{ Request::is('dashboard/users/*') ? 'active' : '' }}">
         <i class="nav-icon fas fa-users"></i>
-        <p>প্যাকেজসমূহ</p>
+        <p>প্যাকেজ</p>
     </a>
 </li>
 @endif
