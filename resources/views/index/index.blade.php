@@ -321,9 +321,9 @@
                 <h6 class="title">মাসিক</h6>
                   <p>৩০ দিনের জন্য অ্যাপের সব ফিচার অ্যাভেইলেবল থাকবে</p>
                   <div class="price">
-                    <h2 class="amount">
+                    <h3 class="amount">
                       <span class="currency">৳</span>৩৯ টাকা<span class="duration">/৩০ দিন </span>
-                    </h2>
+                    </h3>
                   </div>
               </div>
 
