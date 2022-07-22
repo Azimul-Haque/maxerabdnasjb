@@ -36,11 +36,10 @@
                 	<tr>
                 		<td>
                 			{{ $packages->name }}
+                      <span class="badge bg-info"><strike>৳ {{ $packages->strike_price }}</strike></span>
+                      <span class="badge bg-success">৳ {{ $packages->price }}</span>
                 			<br/>
-                			<small class="text-black-50">{{ $packages->mobile }}</small> 
-                			<span class="badge bg-info"><strike>৳ {{ $packages->strike_price }}</strike></span>
-                      <span class="badge bg-success">৳ {{ $packages->price }}</span> 
-                      
+                			<small class="text-black-50">{{ $packages->tagline }}</small> 
                 		</td>
                 		<td align="right" width="40%">
                 			<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editUserModal{{ $packages->id }}">
