@@ -32,26 +32,26 @@
                   </td>
                   <td><span class="badge bg-danger">55%</span></td>
                 </tr> --}}
-                @foreach($packages as $packages)
+                @foreach($packages as $package)
                 	<tr>
                 		<td>
-                			{{ $packages->name }}
-                      <span class="badge bg-info"><strike>৳ {{ $packages->strike_price }}</strike></span>
-                      <span class="badge bg-success">৳ {{ $packages->price }}</span>
+                			{{ $package->name }}
+                      <span class="badge bg-info"><strike>৳ {{ $package->strike_price }}</strike></span>
+                      <span class="badge bg-success">৳ {{ $package->price }}</span>
                       @if($package->status == 1)
                         <span class="badge bg-primary">Active</span>
                       @endif
                 			<br/>
-                			<small class="text-black-50">{{ $packages->tagline }}</small> 
+                			<small class="text-black-50">{{ $package->tagline }}</small> 
                 		</td>
                 		<td align="right" width="40%">
-                			<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editUserModal{{ $packages->id }}">
+                			<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editUserModal{{ $package->id }}">
                 				<i class="fas fa-user-edit"></i>
                 			</button>
             			    {{-- Edit User Modal Code --}}
             			    {{-- Edit User Modal Code --}}
             			    <!-- Modal -->
-            			    <div class="modal fade" id="editUserModal{{ $packages->id }}" tabindex="-1" role="dialog" aria-labelledby="editUserModalLabel" aria-hidden="true" data-backdrop="static">
+            			    <div class="modal fade" id="editUserModal{{ $package->id }}" tabindex="-1" role="dialog" aria-labelledby="editUserModalLabel" aria-hidden="true" data-backdrop="static">
             			      <div class="modal-dialog" role="document">
             			        <div class="modal-content">
             			          <div class="modal-header bg-primary">
@@ -60,7 +60,7 @@
             			              <span aria-hidden="true">&times;</span>
             			            </button>
             			          </div>
-            			          <form method="post" action="{{ route('dashboard.users.update', $packages->id) }}">
+            			          <form method="post" action="{{ route('dashboard.users.update', $package->id) }}">
             				          <div class="modal-body">
             				            
             				                @csrf
@@ -69,7 +69,7 @@
             				                    <input type="text"
             				                           name="name"
             				                           class="form-control"
-            				                           value="{{ $packages->name }}"
+            				                           value="{{ $package->name }}"
             				                           placeholder="নাম" required>
             				                    <div class="input-group-append">
             				                        <div class="input-group-text"><span class="fas fa-user"></span></div>
@@ -79,7 +79,7 @@
             				                <div class="input-group mb-3">
             				                    <input type="text"
             				                           name="mobile"
-            				                           value="{{ $packages->mobile }}"
+            				                           value="{{ $package->mobile }}"
             				                           autocomplete="off"
             				                           class="form-control"
             				                           placeholder="মোবাইল নম্বর (১১ ডিজিট)" required>
@@ -91,10 +91,10 @@
             				                <div class="input-group mb-3">
             				                	<select name="role" class="form-control" required>
             				                		<option disabled="" value="">ধরন নির্ধারণ করুন</option>
-            				                		<option value="admin" @if($packages->role == 'admin') selected="" @endif>এডমিন</option>
-													<option value="manager" @if($packages->role == 'manager') selected="" @endif>ম্যানেজার</option>
-													<option value="user" @if($packages->role == 'user') selected="" @endif>ব্যবহারকারী</option>
-													{{-- <option value="accountant" @if($packages->role == 'accountant') selected="" @endif>একাউন্টেন্ট</option> --}}
+            				                		<option value="admin" @if($package->role == 'admin') selected="" @endif>এডমিন</option>
+													<option value="manager" @if($package->role == 'manager') selected="" @endif>ম্যানেজার</option>
+													<option value="user" @if($package->role == 'user') selected="" @endif>ব্যবহারকারী</option>
+													{{-- <option value="accountant" @if($package->role == 'accountant') selected="" @endif>একাউন্টেন্ট</option> --}}
             				                	</select>
             				                    <div class="input-group-append">
             				                        <div class="input-group-text"><span class="fas fa-user-secret"></span></div>
@@ -124,14 +124,14 @@
             			    {{-- Edit User Modal Code --}}
             			    {{-- Edit User Modal Code --}}
 
-                			<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteUserModal{{ $packages->id }}">
+                			<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteUserModal{{ $package->id }}">
                 				<i class="fas fa-user-minus"></i>
                 			</button>
                 		</td>
                         {{-- Delete User Modal Code --}}
                         {{-- Delete User Modal Code --}}
                         <!-- Modal -->
-                        <div class="modal fade" id="deleteUserModal{{ $packages->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteUserModalLabel" aria-hidden="true" data-backdrop="static">
+                        <div class="modal fade" id="deleteUserModal{{ $package->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteUserModalLabel" aria-hidden="true" data-backdrop="static">
                           <div class="modal-dialog" role="document">
                             <div class="modal-content">
                               <div class="modal-header bg-danger">
@@ -143,13 +143,13 @@
                               <div class="modal-body">
                                 আপনি কি নিশ্চিতভাবে এই ব্যবহারকারীকে ডিলেট করতে চান?<br/>
                                 <center>
-                                    <big><b>{{ $packages->name }}</b></big><br/>
-                                    <small><i class="fas fa-phone"></i> {{ $packages->mobile }}</small>
+                                    <big><b>{{ $package->name }}</b></big><br/>
+                                    <small><i class="fas fa-phone"></i> {{ $package->mobile }}</small>
                                 </center>
                               </div>
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-                                <a href="{{ route('dashboard.users.delete', $packages->id) }}" class="btn btn-danger">ডিলেট করুন</a>
+                                <a href="{{ route('dashboard.users.delete', $package->id) }}" class="btn btn-danger">ডিলেট করুন</a>
                               </div>
                             </div>
                           </div>
