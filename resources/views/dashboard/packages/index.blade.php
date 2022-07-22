@@ -129,7 +129,7 @@
                                       <select name="status" class="form-control" required>
                                         <option selected="" disabled="" value="">স্ট্যাটাস</option>
                                         <option value="1" @if($package->status == 1) selected @endif>Active</option>
-                                        <option value="0">In-active</option>
+                                        <option value="0" @if($package->status == 0) selected @endif>In-active</option>
                                       </select>
                                         <div class="input-group-append">
                                             <div class="input-group-text"><span class="fas fa-toggle-on"></span></div>
@@ -139,8 +139,8 @@
                                     <div class="input-group mb-3">
                                       <select name="suggested" class="form-control" required>
                                         <option selected="" disabled="" value="">ফিচারড</option>
-                                        <option value="1">Yes</option>
-                                        <option value="0" selected>No</option>
+                                        <option value="1" @if($package->suggested == 1) selected @endif>Yes</option>
+                                        <option value="0" @if($package->suggested == 0) selected @endif>No</option>
                                       </select>
                                         <div class="input-group-append">
                                             <div class="input-group-text"><span class="fas fa-bolt"></span></div>
