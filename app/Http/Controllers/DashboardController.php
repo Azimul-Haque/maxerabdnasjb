@@ -258,8 +258,8 @@ class DashboardController extends Controller
         ));
 
         $package = new Package;
-        $package->user_id = Auth::user()->id;
-        $package->receiver_id = $request->receiver_id;
+        $package->name = $request->name;
+        $package->tagline = $request->tagline;
         $package->amount = $request->amount;
         $package->medium = $request->medium;
         $package->description = $request->description;
