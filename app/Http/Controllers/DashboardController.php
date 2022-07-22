@@ -302,8 +302,8 @@ class DashboardController extends Controller
         $package = Package::find($id);
         $package->delete();
 
-        Session::flash('success', 'User deleted successfully!');
-        return redirect()->route('dashboard.users');
+        Session::flash('success', 'Package deleted successfully!');
+        return redirect()->route('dashboard.packages');
     }
 
     public function getBalance()
