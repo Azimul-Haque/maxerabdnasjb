@@ -32,7 +32,7 @@
                   </td>
                   <td><span class="badge bg-danger">55%</span></td>
                 </tr> --}}
-                @foreach($users as $user)
+                @foreach($packages as $user)
                 	<tr>
                 		<td>
                 			<a href="{{ route('dashboard.users.single', $user->id) }}">{{ $user->name }}</a>
@@ -160,7 +160,6 @@
           </div>
           <!-- /.card-body -->
         </div>
-        {{ $users->links() }}
     </div>
 
     {{-- Add Package Modal Code --}}
