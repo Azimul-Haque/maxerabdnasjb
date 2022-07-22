@@ -262,7 +262,7 @@ class DashboardController extends Controller
         $balance->save();
 
         Session::flash('success', 'Amount added successfully!');
-        return redirect()->route('dashboard.balance');
+        return redirect()->route('dashboard.packages');
     }
 
     public function getBalance()
