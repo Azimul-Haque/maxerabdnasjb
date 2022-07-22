@@ -202,4 +202,21 @@ class APIController extends Controller
             ]);
         }
     }
+
+    public function getPackages($softtoken)
+    {
+        if($softtoken == 'Rifat.Admin.2022')
+        {
+            $topics = Topic::all();
+
+            return response()->json([
+                'success' => true,
+                'topics' => $topics,
+            ]);
+        } else {
+            return response()->json([
+                'success' => false
+            ]);
+        }
+    }
 }
