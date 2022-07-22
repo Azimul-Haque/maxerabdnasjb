@@ -198,7 +198,18 @@
                              value="{{ old('tagline') }}"
                              placeholder="ট্যাগ লাইন" required>
                       <div class="input-group-append">
-                          <div class="input-group-text"><span class="fas fa-ticket-alt"></span></div>
+                          <div class="input-group-text"><span class="fas fa-quote-left"></span></div>
+                      </div>
+                  </div>
+
+                  <div class="input-group mb-3">
+                      <input type="text"
+                             name="duration"
+                             class="form-control"
+                             value="{{ old('duration') }}"
+                             placeholder="ট্যাগ লাইন" required>
+                      <div class="input-group-append">
+                          <div class="input-group-text"><span class="fas fa-quote-left"></span></div>
                       </div>
                   </div>
 
