@@ -322,7 +322,7 @@
                   <p>৩০ দিনের জন্য অ্যাপের সব ফিচার অ্যাভেইলেবল থাকবে</p>
                   <div class="price">
                     <h2 class="amount">
-                      <span class="currency">৳</span>৳ ৩৯<span class="duration">/৩০ দিন </span>
+                      <span class="currency">৳ ৫০</span>৳ ৩৯<span class="duration">/৩০ দিন </span>
                     </h2>
                   </div>
               </div>
