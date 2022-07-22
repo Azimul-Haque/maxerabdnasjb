@@ -42,7 +42,7 @@
                         <span class="badge bg-primary">Active</span>
                       @endif
                       @if($package->suggested == 1)
-                        <span class="badge bg-primary"><i class="fas fa-bolt"></i></span>
+                        <span class="badge bg-warning"><i class="fas fa-bolt"></i></span>
                       @endif
                 			<br/>
                 			<small class="text-black-50">{{ $package->tagline }}</small> 
