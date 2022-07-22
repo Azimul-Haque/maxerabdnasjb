@@ -44,7 +44,7 @@ class IndexController extends Controller
      */
     public function index()
     {
-        $packages = Package::where('status', 1)->get()
+        $packages = Package::where('status', 1)->get();
 
         return view('index.index')->withPackages($packages);
     }
