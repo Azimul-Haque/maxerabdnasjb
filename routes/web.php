@@ -27,6 +27,7 @@ Route::get('/dashboard', 'DashboardController@index')->name('dashboard.index');
 
 Route::get('/dashboard/packages', 'DashboardController@getPackages')->name('dashboard.packages');
 Route::post('/dashboard/packages/store', 'DashboardController@storePackage')->name('dashboard.packages.store');
+Route::post('/dashboard/packages/{id}/update', 'DashboardController@updatePackage')->name('dashboard.packages.update');
 
 Route::get('/dashboard/users', 'DashboardController@getUsers')->name('dashboard.users');
 Route::get('/dashboard/users/{id}/single', 'DashboardController@getUser')->name('dashboard.users.single');
