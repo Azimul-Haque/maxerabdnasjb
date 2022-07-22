@@ -35,7 +35,7 @@
                 @foreach($packages as $packages)
                 	<tr>
                 		<td>
-                			<a href="{{ route('dashboard.users.single', $packages->id) }}">{{ $packages->name }}</a>
+                			{{ $packages->name }}
                 			<br/>
                             {{-- {{ $packages->balances2 }} --}}
                 			<small class="text-black-50">{{ $packages->mobile }}</small> 
