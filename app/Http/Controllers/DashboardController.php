@@ -239,7 +239,7 @@ class DashboardController extends Controller
 
     public function getPackages()
     {
-        $packages = Package::where('name', '!=', null)->get();
+        $packages = Package::all();
         
         return view('dashboard.packages.index')
                     ->withPackages($packages);
