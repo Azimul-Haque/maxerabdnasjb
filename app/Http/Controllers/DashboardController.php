@@ -242,7 +242,7 @@ class DashboardController extends Controller
         $packages = Package::where('name', '!=', null)->paginate(10);
         // $sites = Site::all();
         return view('dashboard.packages.index')
-                    ->withUsers($packages);
+                    ->withPackages($packages);
     }
 
     public function storePackage(Request $request)
