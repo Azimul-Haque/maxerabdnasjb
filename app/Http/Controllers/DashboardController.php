@@ -239,8 +239,8 @@ class DashboardController extends Controller
 
     public function getPackages()
     {
-        $packages = Package::where('name', '!=', null)->paginate(10);
-        // $sites = Site::all();
+        $packages = Package::where('name', '!=', null)->get();
+        
         return view('dashboard.packages.index')
                     ->withPackages($packages);
     }
