@@ -83,7 +83,7 @@
                                         <input type="text"
                                                name="tagline"
                                                class="form-control"
-                                               value="{{ old('tagline') }}"
+                                               value="{{ $package->tagline }}"
                                                placeholder="ট্যাগ লাইন" required>
                                         <div class="input-group-append">
                                             <div class="input-group-text"><span class="fas fa-quote-left"></span></div>
