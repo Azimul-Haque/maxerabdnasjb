@@ -14,7 +14,7 @@
 
             <div class="card-tools">
             	<button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addUserModal">
-            		<i class="fas fa-user-plus"></i> নতুন
+            		<i class="fas fa-clipboard-check"></i> নতুন
             	</button>
             </div>
           </div>
