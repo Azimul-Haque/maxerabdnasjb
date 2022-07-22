@@ -251,8 +251,8 @@
                   <div class="input-group mb-3">
                     <select name="status" class="form-control" required>
                       <option selected="" disabled="" value="">ফিচারড</option>
-                      <option value="1">Active</option>
-                      <option value="0">In-active</option>
+                      <option value="1">Yes</option>
+                      <option value="0">No</option>
                     </select>
                       <div class="input-group-append">
                           <div class="input-group-text"><span class="fas fa-bolt"></span></div>
