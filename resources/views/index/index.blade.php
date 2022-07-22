@@ -12,7 +12,7 @@
       top: 6px; 
   }
   .pricing-style-fourteen .amount {
-      font-size: 50px;
+      font-size: 45px;
   }
 </style>
 @endsection
