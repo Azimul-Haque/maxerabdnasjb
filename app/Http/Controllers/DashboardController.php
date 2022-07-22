@@ -238,7 +238,10 @@ class DashboardController extends Controller
 
     public function getPackages()
     {
-        
+        $users = User::where('name', '!=', null)->paginate(10);
+        // $sites = Site::all();
+        return view('dashboard.users.index')
+                    ->withUsers($users);
     }
 
     public function getBalance()
