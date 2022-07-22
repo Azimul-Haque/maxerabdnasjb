@@ -249,7 +249,8 @@ class DashboardController extends Controller
     {
         $this->validate($request,array(
             'name'         => 'required|string|191',
-            'name'         => 'required|string|191',
+            'tagline'         => 'required|string|191',
+            'duration'         => 'required|string|191',
             'medium'         => 'sometimes|max:50',
             'description'    => 'sometimes|max:50'
         ));
