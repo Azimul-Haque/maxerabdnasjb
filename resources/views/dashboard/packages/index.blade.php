@@ -207,7 +207,7 @@
                              name="duration"
                              class="form-control"
                              value="{{ old('duration') }}"
-                             placeholder="ট্যাগ লাইন" required>
+                             placeholder="মেয়াদ" required>
                       <div class="input-group-append">
                           <div class="input-group-text"><span class="fas fa-quote-left"></span></div>
                       </div>
