@@ -175,7 +175,7 @@
                                 </button>
                               </div>
                               <div class="modal-body">
-                                আপনি কি নিশ্চিতভাবে এই প্যাকেজ্টি ডিলেট করতে চান?<br/>
+                                আপনি কি নিশ্চিতভাবে এই প্যাকেজটি ডিলেট করতে চান?<br/>
                                 <center>
                                     <big><b>{{ $package->name }}</b></big><br/>
                                     <span>৳ {{ $package->price }}</span>
