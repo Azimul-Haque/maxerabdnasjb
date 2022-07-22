@@ -215,11 +215,11 @@
 
 	                <div class="input-group mb-3">
 	                    <input type="number"
-	                           name="mobile"
-	                           value="{{ old('mobile') }}"
+	                           name="price"
+	                           value="{{ old('price') }}"
 	                           autocomplete="off"
 	                           class="form-control"
-	                           placeholder="মোবাইল নম্বর (১১ ডিজিট)" required>
+	                           placeholder="প্রকৃত মূল্য" required>
 	                    <div class="input-group-append">
 	                        <div class="input-group-text"><span class="fas fa-phone"></span></div>
 	                    </div>
