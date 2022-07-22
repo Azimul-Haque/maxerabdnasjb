@@ -1,16 +1,16 @@
 @extends('layouts.app')
-@section('title') ড্যাশবোর্ড | ব্যবহারকারীগণ @endsection
+@section('title') ড্যাশবোর্ড | প্যাকেজ @endsection
 
 @section('third_party_stylesheets')
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/icheck-bootstrap@3.0.1/icheck-bootstrap.min.css">
 @endsection
 
 @section('content')
-	@section('page-header') ব্যবহারকারীগণ @endsection
+	@section('page-header') প্যাকেজ @endsection
     <div class="container-fluid">
 		<div class="card">
           <div class="card-header">
-            <h3 class="card-title">ব্যবহারকারীগণ</h3>
+            <h3 class="card-title">প্যাকেজ</h3>
 
             <div class="card-tools">
             	<button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addUserModal">
