@@ -389,7 +389,7 @@
                   <p>৬ মাসের জন্য অ্যাপের সব ফিচার অ্যাভেইলেবল থাকবে</p>
                   <div class="price">
                     <h2 class="amount">
-                      <span class="currency">৳</span>১৬৯<span class="duration">/৬ মাস </span>
+                      <span class="currency"><strike>৳ ৩০০</strike></span>১৬৯<span class="duration">/৬ মাস </span>
                     </h2>
                   </div>
               </div>
@@ -418,7 +418,7 @@
                   <p>১ বছরের জন্য অ্যাপের সব ফিচার অ্যাভেইলেবল থাকবে</p>
                   <div class="price">
                     <h2 class="amount">
-                      <span class="currency">৳</span>৩২৯<span class="duration">/১ বছর </span>
+                      <span class="currency"><strike>৳ ৬০০</strike></span>৩২৯<span class="duration">/১ বছর </span>
                     </h2>
                   </div>
               </div>
