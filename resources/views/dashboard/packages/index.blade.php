@@ -116,7 +116,7 @@
                                     <div class="input-group mb-3">
                                         <input type="number"
                                                name="strike_price"
-                                               value="{{ $package->strike-price }}"
+                                               value="{{ $package->strike_price }}"
                                                autocomplete="off"
                                                class="form-control"
                                                placeholder="মুদ্রিত মূল্য" required>
