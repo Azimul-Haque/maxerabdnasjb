@@ -360,7 +360,7 @@
                   <p>৯০ দিনের জন্য অ্যাপের সব ফিচার অ্যাভেইলেবল থাকবে</p>
                   <div class="price">
                     <h2 class="amount">
-                      <span class="currency">৳</span>৭৯<span class="duration">/৯০ দিন </span>
+                      <span class="currency"><strike>৳ ৫০</strike></span>৭৯<span class="duration">/৯০ দিন </span>
                     </h2>
                   </div>
               </div>
