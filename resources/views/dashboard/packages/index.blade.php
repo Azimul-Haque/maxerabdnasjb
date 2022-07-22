@@ -248,7 +248,7 @@
 	                </div>
 
                   <div class="input-group mb-3">
-                    <select name="status" class="form-control" required>
+                    <select name="suggested" class="form-control" required>
                       <option selected="" disabled="" value="">ফিচারড</option>
                       <option value="1">Yes</option>
                       <option value="0">No</option>
