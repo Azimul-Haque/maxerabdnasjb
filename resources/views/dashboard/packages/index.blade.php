@@ -332,8 +332,8 @@
         authDomain: "bjsexam-fdcc8.firebaseapp.com",
         // The value of `databaseURL` depends on the location of the database
         databaseURL: "https://DATABASE_NAME.firebaseio.com",
-        projectId: "PROJECT_ID",
-        storageBucket: "PROJECT_ID.appspot.com",
+        projectId: "bjsexam-fdcc8",
+        storageBucket: "bjsexam-fdcc8.appspot.com",
         messagingSenderId: "SENDER_ID",
         appId: "APP_ID",
         // For Firebase JavaScript SDK v7.20.0 and later, `measurementId` is an optional field
