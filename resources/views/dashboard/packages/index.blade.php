@@ -319,13 +319,15 @@
         // });
     </script>
 
-    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
-
     <script type="text/javascript">
-      // import firebase from "firebase/app";
-      // import "firebase/firestore";
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
 
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
       const firebaseConfig = {
         apiKey: "AIzaSyA2Xh9xV12QMH2gD6-8Oy89ofagRBxffVo",
         authDomain: "bjsexam-fdcc8.firebaseapp.com",
@@ -336,7 +338,8 @@
         measurementId: "G-X53FCGGDKM"
       };
 
-      firebase.initializeApp(firebaseConfig);
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
       const db = firebase.firestore();
 
       db.collection("packages").get().then((querySnapshot) => {
