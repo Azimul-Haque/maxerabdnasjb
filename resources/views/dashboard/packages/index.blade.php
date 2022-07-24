@@ -369,9 +369,7 @@
           if (!sfDoc.exists()) {
             throw "Document does not exist!";
           }
-
-          const newPopulation = sfDoc.data().population + 1;
-          transaction.update(sfDocRef, { population: newPopulation });
+          transaction.update(sfDocRef, { name: 'মাসিক ২' });
         });
         console.log("Transaction successfully committed!");
       } catch (e) {
