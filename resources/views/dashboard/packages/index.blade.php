@@ -322,7 +322,7 @@
     <script type="module">
       import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js';
 
-      import { auth } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-auth.js';
+      // import { auth } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-auth.js';
       import { firestore } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-firestore.js';
 
       const firebaseConfig = {
