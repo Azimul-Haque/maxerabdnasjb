@@ -340,10 +340,11 @@
 
       try {
         const docRef = await addDoc(collection(db, "packages"), {
-          duration: "Alan",
-          middle: "Mathison",
-          last: "Turing",
-          born: 1912
+          name: "Test 333",
+          tagline: "Test Tagline 2333",
+          duration: "৯০ দিন",
+          status: 1,
+          suggested: 0
         });
 
         console.log("Document written with ID: ", docRef.id);
