@@ -328,7 +328,7 @@
       require("firebase/firestore");
 
       var firebaseConfig = {
-        apiKey: "API_KEY",
+        apiKey: "AIzaSyCnHcgGe2KzK7UgF4mIgbaWEmzwbmxv1kU",
         authDomain: "PROJECT_ID.firebaseapp.com",
         // The value of `databaseURL` depends on the location of the database
         databaseURL: "https://DATABASE_NAME.firebaseio.com",
