@@ -338,10 +338,10 @@
       const app = initializeApp(firebaseConfig);
       const db = getFirestore(app);
 
-      // db.collection("packages").get().then((querySnapshot) => {
-      //     querySnapshot.forEach((doc) => {
-      //         console.log(`${doc.id} => ${doc.data()}`);
-      //     });
-      // });
+      db.collection("packages").get().then((querySnapshot) => {
+          querySnapshot.forEach((doc) => {
+              console.log(`${doc.id} => ${doc.data()}`);
+          });
+      });
     </script>
 @endsection
