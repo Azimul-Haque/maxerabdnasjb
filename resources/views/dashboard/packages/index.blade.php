@@ -344,5 +344,6 @@
         console.log(`${doc.id} => ${doc.data()}`);
         packages.push(doc.data());
       });
+      console.log(packages);
     </script>
 @endsection
