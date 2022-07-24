@@ -323,7 +323,7 @@
       import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js';
 
       // import { auth } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-auth.js';
-      import { getFirestore, collection, getDocs, addDoc, runTransaction } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-firestore.js';
+      import { doc, getFirestore, collection, getDocs, addDoc, runTransaction } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-firestore.js';
 
       const firebaseConfig = {
         apiKey: "AIzaSyA2Xh9xV12QMH2gD6-8Oy89ofagRBxffVo",
