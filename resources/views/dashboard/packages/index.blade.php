@@ -339,7 +339,7 @@
       const db = getFirestore(app);
 
       // try {
-      //   const docRef = await setDoc(collection(db, "packages"), {
+      //   const docRef = await setDoc(doc(db, "packages", "LA"), {
       //     name: "Test 333",
       //     tagline: "Test Tagline 2333",
       //     duration: "৯০ দিন",
