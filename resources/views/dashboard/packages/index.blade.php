@@ -340,7 +340,7 @@
 
       try {
         const docRef = await addDoc(collection(db, "packages"), {
-          first: "Alan",
+          duration: "Alan",
           middle: "Mathison",
           last: "Turing",
           born: 1912
