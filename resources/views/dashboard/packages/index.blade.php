@@ -338,9 +338,9 @@
       const app = initializeApp(firebaseConfig);
       const db = getFirestore(app);
 
-      const querySnapshot = await getDocs(collection(db, "packages"));
-      querySnapshot.forEach((doc) => {
-        console.log(`${doc.id} => ${doc.data()}`);
-      });
+      // const querySnapshot = await getDocs(collection(db, "packages"));
+      // querySnapshot.forEach((doc) => {
+      //   console.log(`${doc.id} => ${doc.data()}`);
+      // });
     </script>
 @endsection
