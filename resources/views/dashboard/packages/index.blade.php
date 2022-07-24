@@ -320,22 +320,11 @@
     </script>
 
     <script type="module">
-    import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js'
+      import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js'
 
-      // If you enabled Analytics in your project, add the Firebase SDK for Google Analytics
-      import { analytics } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-analytics.js'
-
-      // Add Firebase products that you want to use
       import { auth } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-auth.js'
       import { firestore } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-firestore.js'
-      
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from 'firebase/app';
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
 
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
       const firebaseConfig = {
         apiKey: "AIzaSyA2Xh9xV12QMH2gD6-8Oy89ofagRBxffVo",
         authDomain: "bjsexam-fdcc8.firebaseapp.com",
