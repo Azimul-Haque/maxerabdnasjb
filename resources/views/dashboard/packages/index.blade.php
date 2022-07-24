@@ -329,7 +329,7 @@
 
       var firebaseConfig = {
         apiKey: "AIzaSyCnHcgGe2KzK7UgF4mIgbaWEmzwbmxv1kU",
-        authDomain: "PROJECT_ID.firebaseapp.com",
+        authDomain: "bjsexam-fdcc8.firebaseapp.com",
         // The value of `databaseURL` depends on the location of the database
         databaseURL: "https://DATABASE_NAME.firebaseio.com",
         projectId: "PROJECT_ID",
