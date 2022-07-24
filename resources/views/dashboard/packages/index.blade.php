@@ -362,7 +362,7 @@
       });
       console.log(packages);
 
-      querySnapshot.doc(1).updateDoc({name: "মাসিক ২"});
+      const updateSnapshot = await updateDoc(doc(db, "cities", "DC"));
 
     </script>
 @endsection
