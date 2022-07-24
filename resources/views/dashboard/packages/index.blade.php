@@ -338,26 +338,21 @@
       const app = initializeApp(firebaseConfig);
       const db = getFirestore(app);
 
-      // try {
-      //   const docRef = await setDoc(doc(db, "packages", "LA"), {
-      //     name: "Test 333",
-      //     tagline: "Test Tagline 2333",
-      //     duration: "৯০ দিন",
-      //     price: "99",
-      //     strike_price: "150",
-      //     status: 1,
-      //     suggested: 0
-      //   });
-      // await setDoc(doc(db, "cities", "LA"), {
-      //   name: "Los Angeles",
-      //   state: "CA",
-      //   country: "USA"
-      // });
+      try {
+        const docRef = await setDoc(doc(db, "packages", "125"), {
+          name: "Test 333",
+          tagline: "Test Tagline 2333",
+          duration: "৯০ দিন",
+          price: "99",
+          strike_price: "150",
+          status: 1,
+          suggested: 0
+        });
 
-      //   console.log("Document written with ID: ", docRef.id);
-      // } catch (e) {
-      //   console.error("Error adding document: ", e);
-      // }
+        console.log("Document written with ID: ", docRef.id);
+      } catch (e) {
+        console.error("Error adding document: ", e);
+      }
 
       const querySnapshot = await getDocs(collection(db, "packages"));
       var packages = [];
