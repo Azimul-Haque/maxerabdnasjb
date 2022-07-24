@@ -330,7 +330,7 @@
         apiKey: "AIzaSyCnHcgGe2KzK7UgF4mIgbaWEmzwbmxv1kU",
         authDomain: "bjsexam-fdcc8.firebaseapp.com",
         // The value of `databaseURL` depends on the location of the database
-        databaseURL: "https://DATABASE_NAME.firebaseio.com",
+        databaseURL: "https://bjsexam-fdcc8.firebaseio.com",
         projectId: "bjsexam-fdcc8",
         storageBucket: "bjsexam-fdcc8.appspot.com",
         messagingSenderId: "708255220657",
