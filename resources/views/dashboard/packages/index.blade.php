@@ -13,7 +13,7 @@
             <h3 class="card-title">প্যাকেজ তালিকা</h3>
 
             <div class="card-tools">
-            	<button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addPackageModal" rel="tooltip" data-original-title="প্যাকেজ যোগ করুন">
+            	<button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addPackageModal" title="" rel="tooltip" data-original-title="প্যাকেজ যোগ করুন">
             		<i class="fas fa-clipboard-check"></i> নতুন প্যাকেজ
             	</button>
             </div>
