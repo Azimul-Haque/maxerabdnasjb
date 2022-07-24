@@ -323,7 +323,7 @@
       import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js';
 
       // import { auth } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-auth.js';
-      import { getFirestore, collection, getDocs } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-firestore.js';
+      import { collection, getDocs } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-firestore.js';
 
       const firebaseConfig = {
         apiKey: "AIzaSyA2Xh9xV12QMH2gD6-8Oy89ofagRBxffVo",
@@ -336,12 +336,10 @@
       };
 
       const app = initializeApp(firebaseConfig);
-      const db = getFirestore(app);
-
-      db.collection("packages").get().then((querySnapshot) => {
-          querySnapshot.forEach((doc) => {
-              console.log(`${doc.id} => ${doc.data()}`);
-          });
+      
+      const querySnapshot = await getDocs(collection(db, "users"));
+      querySnapshot.forEach((doc) => {
+        console.log(`${doc.id} => ${doc.data()}`);
       });
     </script>
 @endsection
