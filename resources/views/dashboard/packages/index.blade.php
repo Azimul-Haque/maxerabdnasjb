@@ -320,23 +320,23 @@
     </script>
 
     <script type="module">
-      // import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js';
+      import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js';
 
-      // // import { auth } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-auth.js';
-      // import { getFirestore, collection, getDocs, addDoc } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-firestore.js';
+      // import { auth } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-auth.js';
+      import { getFirestore, collection, getDocs, addDoc, updateDoc } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-firestore.js';
 
-      // const firebaseConfig = {
-      //   apiKey: "AIzaSyA2Xh9xV12QMH2gD6-8Oy89ofagRBxffVo",
-      //   authDomain: "bjsexam-fdcc8.firebaseapp.com",
-      //   projectId: "bjsexam-fdcc8",
-      //   storageBucket: "bjsexam-fdcc8.appspot.com",
-      //   messagingSenderId: "708255220657",
-      //   appId: "1:708255220657:web:4f60732f0148ed95c73390",
-      //   measurementId: "G-X53FCGGDKM"
-      // };
+      const firebaseConfig = {
+        apiKey: "AIzaSyA2Xh9xV12QMH2gD6-8Oy89ofagRBxffVo",
+        authDomain: "bjsexam-fdcc8.firebaseapp.com",
+        projectId: "bjsexam-fdcc8",
+        storageBucket: "bjsexam-fdcc8.appspot.com",
+        messagingSenderId: "708255220657",
+        appId: "1:708255220657:web:4f60732f0148ed95c73390",
+        measurementId: "G-X53FCGGDKM"
+      };
 
-      // const app = initializeApp(firebaseConfig);
-      // const db = getFirestore(app);
+      const app = initializeApp(firebaseConfig);
+      const db = getFirestore(app);
 
       // try {
       //   const docRef = await addDoc(collection(db, "packages"), {
@@ -354,12 +354,12 @@
       //   console.error("Error adding document: ", e);
       // }
 
-      // const querySnapshot = await getDocs(collection(db, "packages"));
-      // var packages = [];
-      // querySnapshot.forEach((doc) => {
-      //   console.log(`${doc.id} => ${doc.data()}`);
-      //   packages.push(doc.data());
-      // });
-      // console.log(packages);
+      const querySnapshot = await getDocs(collection(db, "packages"));
+      var packages = [];
+      querySnapshot.forEach((doc) => {
+        console.log(`${doc.id} => ${doc.data()}`);
+        packages.push(doc.data());
+      });
+      console.log(packages);
     </script>
 @endsection
