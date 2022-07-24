@@ -338,6 +338,7 @@
       const app = initializeApp(firebaseConfig);
       const db = getFirestore(app);
 
+      // WRITE
       try {
         const docRef = await setDoc(doc(db, "packages", "125"), {
           name: "Test 333",
@@ -354,6 +355,7 @@
         console.error("Error adding document: ", e);
       }
 
+      // READ
       const querySnapshot = await getDocs(collection(db, "packages"));
       var packages = [];
       querySnapshot.forEach((doc) => {
@@ -362,6 +364,8 @@
       });
       console.log(packages);
 
+
+      // UPDATE
       const sfDocRef = doc(db, "packages", "5zLI5DbkNIvmUuPZR6ZO");
       try {
         await runTransaction(db, async (transaction) => {
