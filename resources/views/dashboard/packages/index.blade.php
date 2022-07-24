@@ -340,7 +340,7 @@
 
       // WRITE
       try {
-        const docRef = await setDoc(doc(db, "packages", "1255"), {
+        const docRef = await setDoc(doc(db, "packages", "1"), {
           name: "Test 333",
           tagline: "Test Tagline 2333",
           duration: "৯০ দিন",
@@ -366,7 +366,7 @@
 
 
       // UPDATE
-      const sfDocRef = doc(db, "packages", "5zLI5DbkNIvmUuPZR6ZO");
+      const sfDocRef = doc(db, "packages", "1");
       try {
         await runTransaction(db, async (transaction) => {
           const sfDoc = await transaction.get(sfDocRef);
