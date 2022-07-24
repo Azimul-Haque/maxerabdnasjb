@@ -319,7 +319,7 @@
         // });
     </script>
 
-    <script src="https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js"></script>
 
     <script type="text/javascript">
       // Import the functions you need from the SDKs you need
