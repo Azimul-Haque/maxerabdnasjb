@@ -338,6 +338,19 @@
       const app = initializeApp(firebaseConfig);
       const db = getFirestore(app);
 
+      try {
+        const docRef = await addDoc(collection(db, "packages"), {
+          first: "Alan",
+          middle: "Mathison",
+          last: "Turing",
+          born: 1912
+        });
+
+        console.log("Document written with ID: ", docRef.id);
+      } catch (e) {
+        console.error("Error adding document: ", e);
+      }
+
       const querySnapshot = await getDocs(collection(db, "packages"));
       var packages = [];
       querySnapshot.forEach((doc) => {
