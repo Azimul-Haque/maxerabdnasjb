@@ -340,7 +340,7 @@
 
       // WRITE
       try {
-        const docRef = await setDoc(doc(db, "packages", "125"), {
+        const docRef = await setDoc(doc(db, "packages", 1255), {
           name: "Test 333",
           tagline: "Test Tagline 2333",
           duration: "৯০ দিন",
