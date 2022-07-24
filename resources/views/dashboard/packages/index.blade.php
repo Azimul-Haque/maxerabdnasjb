@@ -334,7 +334,7 @@
         databaseURL: "https://DATABASE_NAME.firebaseio.com",
         projectId: "bjsexam-fdcc8",
         storageBucket: "bjsexam-fdcc8.appspot.com",
-        messagingSenderId: "SENDER_ID",
+        messagingSenderId: "708255220657",
         appId: "APP_ID",
         // For Firebase JavaScript SDK v7.20.0 and later, `measurementId` is an optional field
         measurementId: "G-MEASUREMENT_ID",
