@@ -338,5 +338,7 @@
         // For Firebase JavaScript SDK v7.20.0 and later, `measurementId` is an optional field
         // measurementId: "G-MEASUREMENT_ID",
       };
+
+      firebase.initializeApp(firebaseConfig);
     </script>
 @endsection
