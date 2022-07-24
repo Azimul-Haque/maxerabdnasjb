@@ -339,7 +339,7 @@
       const db = getFirestore(app);
 
       // try {
-      //   const docRef = await addDoc(collection(db, "packages"), {
+      //   const docRef = await setDoc(collection(db, "packages"), {
       //     name: "Test 333",
       //     tagline: "Test Tagline 2333",
       //     duration: "৯০ দিন",
@@ -348,6 +348,11 @@
       //     status: 1,
       //     suggested: 0
       //   });
+      // await setDoc(doc(db, "cities", "LA"), {
+      //   name: "Los Angeles",
+      //   state: "CA",
+      //   country: "USA"
+      // });
 
       //   console.log("Document written with ID: ", docRef.id);
       // } catch (e) {
