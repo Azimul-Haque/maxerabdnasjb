@@ -362,7 +362,7 @@
       });
       console.log(packages);
 
-      db.collection("packages").doc(doc.id).update({foo: "bar"});
+      db.collection("packages").doc(1).updateDoc({name: "মাসিক ২"});
 
     </script>
 @endsection
