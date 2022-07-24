@@ -339,6 +339,7 @@
       const db = getFirestore(app);
 
       const querySnapshot = await getDocs(collection(db, "packages"));
+      var packages = [];
       querySnapshot.forEach((doc) => {
         console.log(`${doc.id} => ${doc.data()}`);
       });
