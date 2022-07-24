@@ -361,5 +361,8 @@
         packages.push(doc.data());
       });
       console.log(packages);
+
+      db.collection("packages").doc(doc.id).update({foo: "bar"});
+
     </script>
 @endsection
