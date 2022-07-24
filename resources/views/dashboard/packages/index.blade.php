@@ -343,6 +343,8 @@
           name: "Test 333",
           tagline: "Test Tagline 2333",
           duration: "৯০ দিন",
+          price: "99",
+          strike_price: "150",
           status: 1,
           suggested: 0
         });
