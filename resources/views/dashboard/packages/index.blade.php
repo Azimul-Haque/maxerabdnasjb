@@ -336,7 +336,7 @@
       };
 
       const app = initializeApp(firebaseConfig);
-      // const db = firebase.firestore();
+      const db = getFirestore(app);
 
       // db.collection("packages").get().then((querySnapshot) => {
       //     querySnapshot.forEach((doc) => {
