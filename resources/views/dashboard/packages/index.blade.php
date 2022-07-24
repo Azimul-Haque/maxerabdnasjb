@@ -362,7 +362,7 @@
       });
       console.log(packages);
 
-      const updateSnapshot = await updateDoc(doc(db, "cities", "DC"));
+      const updateSnapshot = await updateDoc(doc(db, "packages", "DC"));
 
     </script>
 @endsection
