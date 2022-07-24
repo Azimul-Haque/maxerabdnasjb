@@ -335,7 +335,6 @@
         measurementId: "G-X53FCGGDKM"
       };
 
-      // Initialize Firebase
       const app = initializeApp(firebaseConfig);
       // const db = firebase.firestore();
 
