@@ -323,9 +323,8 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
 
     <script type="text/javascript">
-      const firebase = require("firebase");
-      // Required for side-effects
-      require("firebase/firestore");
+      import firebase from "firebase/app";
+      import "firebase/firestore";
 
       var firebaseConfig = {
         apiKey: "AIzaSyCnHcgGe2KzK7UgF4mIgbaWEmzwbmxv1kU",
