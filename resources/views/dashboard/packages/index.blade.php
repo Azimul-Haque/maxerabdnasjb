@@ -321,4 +321,10 @@
 
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+    <script type="text/javascript">
+      const firebase = require("firebase");
+      // Required for side-effects
+      require("firebase/firestore");
+    </script>
 @endsection
