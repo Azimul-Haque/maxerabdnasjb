@@ -341,5 +341,11 @@
 
       firebase.initializeApp(firebaseConfig);
       const db = firebase.firestore();
+
+      db.collection("packages").get().then((querySnapshot) => {
+          querySnapshot.forEach((doc) => {
+              console.log(`${doc.id} => ${doc.data()}`);
+          });
+      });
     </script>
 @endsection
