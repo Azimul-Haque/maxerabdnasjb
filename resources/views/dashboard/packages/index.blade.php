@@ -326,17 +326,14 @@
       // import firebase from "firebase/app";
       // import "firebase/firestore";
 
-      var firebaseConfig = {
-        apiKey: "AIzaSyCnHcgGe2KzK7UgF4mIgbaWEmzwbmxv1kU",
+      const firebaseConfig = {
+        apiKey: "AIzaSyA2Xh9xV12QMH2gD6-8Oy89ofagRBxffVo",
         authDomain: "bjsexam-fdcc8.firebaseapp.com",
-        // The value of `databaseURL` depends on the location of the database
-        databaseURL: "https://bjsexam-fdcc8.firebaseio.com",
         projectId: "bjsexam-fdcc8",
         storageBucket: "bjsexam-fdcc8.appspot.com",
         messagingSenderId: "708255220657",
-        appId: "1:708255220657:android:5f99d733d68a1095c73390",
-        // For Firebase JavaScript SDK v7.20.0 and later, `measurementId` is an optional field
-        // measurementId: "G-MEASUREMENT_ID",
+        appId: "1:708255220657:web:4f60732f0148ed95c73390",
+        measurementId: "G-X53FCGGDKM"
       };
 
       firebase.initializeApp(firebaseConfig);
