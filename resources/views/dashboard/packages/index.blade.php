@@ -362,7 +362,7 @@
       });
       console.log(packages);
 
-      const sfDocRef = doc(db, "packages", "SF");
+      const sfDocRef = doc(db, "packages", 1);
       try {
         await runTransaction(db, async (transaction) => {
           const sfDoc = await transaction.get(sfDocRef);
