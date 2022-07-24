@@ -319,7 +319,16 @@
         // });
     </script>
 
-    <script type="module" src="https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js"></script>
+    <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js'
+
+      // If you enabled Analytics in your project, add the Firebase SDK for Google Analytics
+      import { analytics } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-analytics.js'
+
+      // Add Firebase products that you want to use
+      import { auth } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-auth.js'
+      import { firestore } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-firestore.js'
+    </script>
 
     <script type="text/javascript">
       // Import the functions you need from the SDKs you need
