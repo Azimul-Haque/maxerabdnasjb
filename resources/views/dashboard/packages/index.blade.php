@@ -335,7 +335,7 @@
         projectId: "bjsexam-fdcc8",
         storageBucket: "bjsexam-fdcc8.appspot.com",
         messagingSenderId: "708255220657",
-        appId: "APP_ID",
+        appId: "1:708255220657:android:5f99d733d68a1095c73390",
         // For Firebase JavaScript SDK v7.20.0 and later, `measurementId` is an optional field
         measurementId: "G-MEASUREMENT_ID",
       };
