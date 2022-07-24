@@ -320,7 +320,6 @@
     </script>
 
     <script src="https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.9.1/firebase-analytics.js"></script>
 
     <script type="text/javascript">
       // Import the functions you need from the SDKs you need
@@ -342,12 +341,12 @@
 
       // Initialize Firebase
       const app = initializeApp(firebaseConfig);
-      const db = firebase.firestore();
+      // const db = firebase.firestore();
 
-      db.collection("packages").get().then((querySnapshot) => {
-          querySnapshot.forEach((doc) => {
-              console.log(`${doc.id} => ${doc.data()}`);
-          });
-      });
+      // db.collection("packages").get().then((querySnapshot) => {
+      //     querySnapshot.forEach((doc) => {
+      //         console.log(`${doc.id} => ${doc.data()}`);
+      //     });
+      // });
     </script>
 @endsection
