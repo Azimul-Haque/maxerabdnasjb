@@ -101,7 +101,7 @@
           <li><a href="{{ route('index.terms-and-conditions') }}">Terms & Conditions</a></li>
           <li><a href="{{ route('index.privacy-policy') }}">Privacy Policy</a></li>
           <li><a href="{{ route('index.refund-policy') }}">Refund Policy</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="{{ route('index.index')  }}/#contact">Contact Us</a></li>
         </ul>
       </div>
       <!-- menu -->
