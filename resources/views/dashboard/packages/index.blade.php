@@ -326,13 +326,13 @@
       // import { doc, getFirestore, collection, getDocs, addDoc, setDoc, runTransaction } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-firestore.js';
 
       // const firebaseConfig = {
-      //   apiKey: "AIzaSyA2Xh9xV12QMH2gD6-8Oy89ofagRBxffVo",
-      //   authDomain: "bjsexam-fdcc8.firebaseapp.com",
-      //   projectId: "bjsexam-fdcc8",
-      //   storageBucket: "bjsexam-fdcc8.appspot.com",
-      //   messagingSenderId: "708255220657",
-      //   appId: "1:708255220657:web:4f60732f0148ed95c73390",
-      //   measurementId: "G-X53FCGGDKM"
+      //   apiKey: "AIzaSyDW9yf9W-6mYL35nPYW8rfL__-2vMIBsR8",
+      //   authDomain: "bjs-exam.firebaseapp.com",
+      //   projectId: "bjs-exam",
+      //   storageBucket: "bjs-exam.appspot.com",
+      //   messagingSenderId: "750423424153",
+      //   appId: "1:750423424153:web:ab554cd595960865a30c08",
+      //   measurementId: "G-EXSKW5L6GB"
       // };
 
       // const app = initializeApp(firebaseConfig);
@@ -340,12 +340,12 @@
 
       // // WRITE
       // try {
-      //   const docRef = await setDoc(doc(db, "packages", "1"), {
-      //     name: "Test 333",
-      //     tagline: "Test Tagline 2333",
-      //     duration: "৯০ দিন",
-      //     price: "99",
-      //     strike_price: "150",
+      //   const docRef = await setDoc(doc(db, "packages", "4"), {
+      //     name: "বাৎসরিক",
+      //     tagline: "১ বছরের জন্য অ্যাপের সব ফিচার অ্যাভেইলেবল থাকবে",
+      //     duration: "১ বছর",
+      //     price: "349",
+      //     strike_price: "600",
       //     status: 1,
       //     suggested: 0
       //   });
