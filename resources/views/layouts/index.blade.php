@@ -154,8 +154,8 @@
                   hierarchies.
                 </p>
                 <p class="copyright-text">
-                  <span>© 2022 App Lab IT.</span>Designed and Developed by
-                  <a href="https://orbachinujbuk.com" rel="nofollow"> Azimul Haque</a>
+                  <span>© {{ date('Y') }} App Lab IT.</span>Designed and Developed by
+                  <a href="https://orbachinujbuk.com" rel="nofollow"> A. H. M. Azimul Haque</a>
                 </p>
               </div>
               <!-- End Single Widget -->
@@ -202,6 +202,11 @@
               <!-- End Single Widget -->
             </div>
           </div>
+          <div class="row">
+            <div class="col-md-12">
+              <img src="{{ asset('images/Footer-Logo.png') }}">
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -209,11 +214,11 @@
   </footer>
   <!--/ End Footer Area -->
 
-  <div class="made-in-ayroui mt-4">
-    <!-- <a href="https://ayroui.com" target="_blank" rel="nofollow">
+  {{-- <div class="made-in-ayroui mt-4">
+    <a href="https://ayroui.com" target="_blank" rel="nofollow">
       <img style="width:220px" src="{{ asset('/') }}images/ayroui.svg">
-    </a> -->
-  </div>
+    </a>
+  </div> --}}
 
   <a href="#" class="scroll-top btn-hover">
     <i class="lni lni-chevron-up"></i>
