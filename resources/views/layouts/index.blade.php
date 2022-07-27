@@ -274,6 +274,7 @@
   </script>
 
   @yield('third_party_scripts')
+  @include('partials._messages')
 </body>
 
 </html>
