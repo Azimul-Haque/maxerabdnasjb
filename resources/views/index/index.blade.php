@@ -372,6 +372,7 @@
                   </div>
 
                   <form method="post" action="{{ route('index.payment.proceed') }}">
+                    @csrf
                     <!-- Modal body -->
                     <div class="modal-body">
                       <b>প্যাকেজঃ</b> {{ $package->name }} ({{ $package->tagline }})<br/>
@@ -397,7 +398,6 @@
                     <!-- Modal footer -->
                     <div class="modal-footer">
                         {{-- <button type="button" class="btn btn-danger" data-bs-dismiss="modal">ফিরে যান</button> --}}
-                        @csrf
                         <input type="hidden" name="package_id" value="{{ $package->id }}" required>
                         <button type="submit" class="btn primary-btn-outline">৳ {{ bangla($package->price) }} পরিশোধ করুন</button>
                     </div>
