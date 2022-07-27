@@ -25,6 +25,8 @@ use Session;
 use Artisan;
 // use Redirect;
 use OneSignal;
+use Shipu\Aamarpay\Facades\Aamarpay;
+
 
 class IndexController extends Controller
 {
@@ -74,6 +76,7 @@ class IndexController extends Controller
         ));
 
         $user = User::where('mobile', $request->user_number)->first();
+        $package = Package::findOrFail($request->package_id);
 
         if($user) {
             $temppayment = new Temppayment;
@@ -81,30 +84,57 @@ class IndexController extends Controller
             $temppayment->package_id = $request->package_id;
             $temppayment->uid = $user->uid;
             // generate Trx_id
-            $trx_id = 'BJS' . random_string(7);
+            $trx_id = 'BJS' . random_string(10);
             $temppayment->trx_id = $trx_id;
+            $temppayment->amount = $request->amount;
+            $temppayment->save();
+
+            Session::flash('info','পেমেন্টটি সম্পন্ন করুন!');
+            return view('index.payments.paynow')
+                            ->withUser($user)
+                            ->withAmount($request->amount)
+                            ->withPackagedesc($package->name . ' - ' . $package->duration . ' - ৳ ' . $package->price)
+                            ->withTrxid($trx_id);
         } else {
             Session::flash('warning','নাম্বারটি পাওয়া যায়নি! আগে রেজিস্ট্রেশন করুন।');
             return redirect()->route('index.index');
         }
     }
 
-    public function paymentSuccess()
+    public function paymentSuccess(Request $request)
     {
-        Session::flash('info','Payment is cancelled!');
-        return view('index.payment.success');
+        // dd($request->all());
+        $user_id = $request->get('opt_a');
+        
+        if($request->get('pay_status') == 'Failed') {
+            Session::flash('info', 'পেমেন্ট সম্পন্ন হয়নি, আবার চেষ্টা করুন!');
+            return redirect()->route('index.index');
+        }
+        
+        $amount_request = $request->get('opt_b');
+        $amount_paid = $request->get('amount');
+
+        // if($amount_paid == $amount_request) {
+           // OLD VERIFICATION METHOD... 
+        // }
+        $valid  = Aamarpay::valid($request, $amount_request);
+        if($valid) {
+            // Successfully Paid.
+        } else {
+           // Something went wrong. 
+        }
     }
 
-    public function paymentCancel()
+    public function paymentCancel(Request $request)
     {
-        Session::flash('info','Payment is cancelled!');
-        return view('index.payment.cancel');
+        Session::flash('info','পেমেন্টটি ক্যানসেল করা হয়েছে!');
+        return redirect()->route('index.index');
     }
 
-    public function paymentFailed()
+    public function paymentFailed(Request $request)
     {
-        Session::flash('info','Payment is cancelled!');
-        return view('index.payment.failed');
+        Session::flash('info','পেমেন্টটি ব্যর্থ হয়েছে! অনুগ্রহ করে যোগাযোগ করুন।');
+        return view('index.payments.failed');
     }
 
     // clear configs, routes and serve

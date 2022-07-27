@@ -18,7 +18,6 @@ class CreateTemppaymentsTable extends Migration
             $table->integer('user_id')->unsigned();
             $table->integer('package_id')->unsigned();
             $table->string('uid');
-            $table->integer('payment_method')->nullable();
             $table->string('trx_id');
             $table->string('amount');
             $table->timestamps();
