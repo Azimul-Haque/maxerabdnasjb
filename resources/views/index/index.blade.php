@@ -370,32 +370,31 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                   </div>
 
+                  <form method="post" id="" action="{{ route('index.payment.proceed') }}">
                   <!-- Modal body -->
-                  <div class="modal-body">
-                    <b>প্যাকেজঃ</b> {{ $package->name }} ({{ $package->tagline }})<br/>
-                    <b>প্যাকেজের মেয়াদঃ</b> {{ $package->duration }}<br/><br/>
-                    <big><b>প্যাকেজের মূল্যঃ</b> <small><strike>৳ {{ bangla($package->strike_price) }}</strike></small> ৳ {{ bangla($package->price) }}</big><br/><br/>
-                    <b>ফিচারসমূহঃ</b>
-                    <div class="table-content">
-                      <ul class="table-list">
-                        <li> <i class="lni lni-checkmark-circle"></i> অ্যাপের ফিচারসমূহের এক্সেস</li>
-                        <li> <i class="lni lni-checkmark-circle"></i> সম্পূর্ণ বিজেএস কোর্স এক্সেস</li>
-                        <li> <i class="lni lni-checkmark-circle"></i> সম্পূর্ণ বার কোর্স এক্সেস</li>
-                        <li> <i class="lni lni-checkmark-circle"></i> মডেল টেস্ট ও সাবজেক্টিভ প্রস্তুতি</li>
-                        {{-- <li> <i class="lni lni-checkmark-circle deactive"></i> মডেল টেস্ট ও সাবজেক্টিভ প্রস্তুতি</li> --}}
-                      </ul>
+                    <div class="modal-body">
+                      <b>প্যাকেজঃ</b> {{ $package->name }} ({{ $package->tagline }})<br/>
+                      <b>প্যাকেজের মেয়াদঃ</b> {{ $package->duration }}<br/><br/>
+                      <big><b>প্যাকেজের মূল্যঃ</b> <small><strike>৳ {{ bangla($package->strike_price) }}</strike></small> ৳ {{ bangla($package->price) }}</big><br/><br/>
+                      <b>ফিচারসমূহঃ</b>
+                      <div class="table-content">
+                        <ul class="table-list">
+                          <li> <i class="lni lni-checkmark-circle"></i> অ্যাপের ফিচারসমূহের এক্সেস</li>
+                          <li> <i class="lni lni-checkmark-circle"></i> সম্পূর্ণ বিজেএস কোর্স এক্সেস</li>
+                          <li> <i class="lni lni-checkmark-circle"></i> সম্পূর্ণ বার কোর্স এক্সেস</li>
+                          <li> <i class="lni lni-checkmark-circle"></i> মডেল টেস্ট ও সাবজেক্টিভ প্রস্তুতি</li>
+                          {{-- <li> <i class="lni lni-checkmark-circle deactive"></i> মডেল টেস্ট ও সাবজেক্টিভ প্রস্তুতি</li> --}}
+                        </ul>
+                      </div>
                     </div>
-                  </div>
 
-                  <!-- Modal footer -->
-                  <div class="modal-footer">
-                    {{-- <button type="button" class="btn btn-danger" data-bs-dismiss="modal">ফিরে যান</button> --}}
-                    <form method="post" id="" action="{{ route('index.payment.proceed') }}">
-                      @csrf
-                      <input type="hidden" name="package_id" value="{{ $package-> }}">
-                      <button type="submit" class="btn primary-btn-outline" data-bs-dismiss="modal">৳ {{ bangla($package->price) }} পরিশোধ করুন</button>
-                    
-                  </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        {{-- <button type="button" class="btn btn-danger" data-bs-dismiss="modal">ফিরে যান</button> --}}
+                        @csrf
+                        <input type="hidden" name="package_id" value="{{ $package-> }}">
+                        <button type="submit" class="btn primary-btn-outline" data-bs-dismiss="modal">৳ {{ bangla($package->price) }} পরিশোধ করুন</button>
+                    </div>
                   </form>
                 </div>
               </div>
