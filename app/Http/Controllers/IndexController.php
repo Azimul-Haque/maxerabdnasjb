@@ -76,6 +76,7 @@ class IndexController extends Controller
 
         if($user) {
             $temppayment = new Temppayment;
+            $temppayment = new Temppayment;
         } else {
             Session::flash('warning','নাম্বারটি পাওয়া যায়নি! আগে রেজিস্ট্রেশন করুন।');
             return redirect()->route('index.index');
