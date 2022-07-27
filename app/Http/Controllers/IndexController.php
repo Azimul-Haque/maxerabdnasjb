@@ -68,10 +68,10 @@ class IndexController extends Controller
     public function paymentProceed(Request $request)
     {
         $this->validate($request,array(
-            'amountoffline'      =>   'required|integer',
-            'bank'        =>   'required',
-            'branch'      =>   'required',
-            'pay_slip'    =>   'required',
+            'amountoffline'  =>   'required|integer',
+            'bank'           =>   'required',
+            'branch'         =>   'required',
+            'pay_slip'       =>   'required',
         ));
         $temppayment = new Temppayment;
     }
