@@ -72,6 +72,8 @@ class IndexController extends Controller
             'package_id'     =>   'required',
         ));
 
+        dd($request->all());
+
         $user = User::where('mobile', $request->user_number)->first();
 
         dd($user);
