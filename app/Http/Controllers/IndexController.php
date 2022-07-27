@@ -75,7 +75,7 @@ class IndexController extends Controller
         $user = User::where('mobile', $request->user_number)->first();
 
         
-        echo $user;
+        dd($user);
 
         // $temppayment = new Temppayment;
     }
