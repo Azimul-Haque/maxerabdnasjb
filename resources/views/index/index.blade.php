@@ -27,12 +27,13 @@
         <div class="row align-items-center">
           <div class="col-lg-6 col-md-12 col-12">
             <div class="header-content">
-              <h1>Best online platform to gear up your BJS & Bar Council Exam preparation!</h1>
+              <h1 style="padding-top: 7px;">বিজেএস এবং বার কাউন্সিল পরীক্ষার প্রস্তুতির জন্য সেরা অনলাইন প্ল্যাটফর্ম!</h1>
               <p>
                 BJS & BAR EXAM is a dedicated online platform to take the best preparation for the Bangladesh Judicial Service (BJS) Exam and Bar Council Exam.
               </p>
               <div class="button">
-                <a href="javascript:void(0)" class="btn primary-btn">Get Started</a>
+                {{-- <a href="javascript:void(0)" class="btn primary-btn">Get Started</a> --}}
+                <a href='https://play.google.com/store/apps/details?id=com.orbachinujbuk.bcs_constitution&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="_blank"><img alt='Get it on Google Play' class="img-responsive" style="max-width: 250px; width: auto;" src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
                 <a href="https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM"
                   class="glightbox video-button">
                   <span class="btn icon-btn rounded-full">
@@ -318,7 +319,7 @@
                 <h6>Pricing</h6>
                 <h2 class="fw-bold">Pricing & Plans</h2>
                 <p>
-                  সব থেকে কম মূল্যে আমাদের প্যাকেজগুলো কিনে আপনি আপনার বিজেএস ও বার পরীক্ষার প্রস্তুতিকে আরও শাণিত করুন।
+                  সব থেকে কম মূল্যে আমাদের প্যাকেজগুলো কিনে আপনি আপনার বিজেএস ও বার কাউন্সিল পরীক্ষার প্রস্তুতিকে আরও শাণিত করুন।
                 </p>
               </div>
             </div>
@@ -390,7 +391,7 @@
                         অ্যাপে ব্যবহৃত ১১ ডিজিটের মোবাইল নম্বরটি লিখুন<br/>
                         <span style="color: green; font-size: 10px;">রেজিস্ট্রেশন না করে থাকলে <a href="#!">ক্লিক করুন</a></span>
                       </label>
-                      <input type="number" name="user_number" length="11" max="11" class="form-control" placeholder="অ্যাপে ব্যবহৃত মোবাইল নাম্বারটি লিখুন" required>
+                      <input type="number" name="user_number" onkeypress="if(this.value.length==11) return false;" class="form-control" placeholder="অ্যাপে ব্যবহৃত মোবাইল নাম্বারটি লিখুন" @if(!Auth::guest()) value="{{ Auth::user()->mobile }}" @endif required>
                     </div>
 
                     <!-- Modal footer -->
@@ -418,12 +419,13 @@
         <div class="row justify-content-center">
           <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9">
             <div class="inner-content">
-              <h2>We love to make perfect <br />solutions for your BJS & Bar preparation</h2>
+              <h2>বাংলাদেশ জুডিসিয়াল সার্ভিস পরীক্ষা অথবা <br />বার কাউন্সিল প্রস্তুতি নিয়ে চিন্তিত?</h2>
               <p>
-                BJS & BAR EXAM is a dedicated online platform to take the best preparation for the Bangladesh Judicial Service (BJS) Exam and Bar Council Exam.
+                জ্যাম ঠেলে সময় খরচ করে কোচিং এ গিয়ে পরীক্ষার প্রস্তুতি নেওয়ার থেকে বাসায় বসে সে সময়টুকু কাজে লাগান, পাশাপাশি আমাদের অ্যাপের কোর্সগুলোতে অংশ নিয়ে পরীক্ষার প্রস্তুতিকে  শাণিত করুন! 
               </p>
               <div class="light-rounded-buttons">
-                <a href="javascript:void(0)" class="btn primary-btn-outline">Get Started</a>
+                {{-- <a href="javascript:void(0)" class="btn primary-btn-outline">Get Started</a> --}}
+                <a href='https://play.google.com/store/apps/details?id=com.orbachinujbuk.bcs_constitution&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="_blank"><img alt='Get it on Google Play' class="img-responsive" style="max-width: 300px; width: auto;" src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
               </div>
             </div>
           </div>

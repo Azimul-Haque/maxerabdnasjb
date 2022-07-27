@@ -13,6 +13,7 @@ use App\Category;
 use App\Expense;
 use App\Creditor;
 use App\Due;
+use App\Temppayment;
 
 use Carbon\Carbon;
 use DB;
@@ -64,9 +65,18 @@ class IndexController extends Controller
         return view('index.refundpolicy');
     }
 
-    public function paymentProceed()
+    public function paymentProceed(Request $request)
     {
-        
+        $this->validate($request,array(
+            'amountoffline'      =>   'required|integer',
+            'bank'        =>   'required',
+            'branch'      =>   'required',
+            'pay_slip'    =>   'required',
+            'image1'      =>   'required|image|max:500',
+            'image2'      =>   'sometimes|image|max:500',
+            'image3'      =>   'sometimes|image|max:500'
+        ));
+        $temppayment = new Temppayment;
     }
 
     public function paymentSuccess()
