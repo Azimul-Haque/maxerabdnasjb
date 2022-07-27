@@ -387,7 +387,7 @@
                         </ul>
                       </div><br/>
                       <label>অ্যাপে ব্যবহৃত ১১ ডিজিটের মোবাইল নম্বরটি লিখুন</label>
-                      <input type="number" name="user_number" class="form-control" placeholder="আপনার অ্যাপে ব্যবহৃত নাম্বারটি লিখুন" required>
+                      <input type="number" name="user_number" class="form-control" placeholder="অ্যাপে ব্যবহৃত নাম্বারটি লিখুন" required>
                     </div>
 
                     <!-- Modal footer -->
