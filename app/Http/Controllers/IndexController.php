@@ -67,7 +67,21 @@ class IndexController extends Controller
 
     public function paymentProceed(Request $request)
     {
-        
+        $this->validate($request,array(
+            'user_number'    =>   'required|integer',
+            'package_id'     =>   'required',
+        ));
+
+        $user = User::where('mobile', $request->user_number)->first();
+
+        dd($user);
+        if($user) {
+            
+        } else {
+            echo 'notfound';
+        }
+
+        // $temppayment = new Temppayment;
     }
 
     public function paymentSuccess()
