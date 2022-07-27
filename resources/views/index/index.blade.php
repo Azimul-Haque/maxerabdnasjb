@@ -375,6 +375,7 @@
                     <b>প্যাকেজঃ</b> {{ $package->name }} ({{ $package->tagline }})<br/>
                     <b>প্যাকেজের মেয়াদঃ</b> {{ $package->duration }}<br/>
                     <big><b>প্যাকেজের মূল্যঃ</b> <strike>৳ {{ bangla($package->strike_price) }}</strike> ৳ {{ bangla($package->price) }}<br/></big>
+                    <b>ফিচারসমূহঃ</b>
                     <div class="table-content">
                       <ul class="table-list">
                         <li> <i class="lni lni-checkmark-circle"></i> অ্যাপের ফিচারসমূহের এক্সেস</li>
