@@ -371,7 +371,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                   </div>
 
-                  <form method="post" id="" action="{{ route('index.payment.proceed') }}">
+                  <form method="post" action="{{ route('index.payment.proceed') }}">
                     <!-- Modal body -->
                     <div class="modal-body">
                       <b>প্যাকেজঃ</b> {{ $package->name }} ({{ $package->tagline }})<br/>
