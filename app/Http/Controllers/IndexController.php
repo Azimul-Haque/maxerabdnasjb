@@ -77,7 +77,7 @@ class IndexController extends Controller
         if($user) {
 
         } else {
-            Session::flash('error','নাম্বারটি পাওয়া যায়নি! আগে রেজিস্ট্রেশন করুন।');
+            Session::flash('warning','নাম্বারটি পাওয়া যায়নি! আগে রেজিস্ট্রেশন করুন।');
             return redirect()->route('index.index');
         }
 
