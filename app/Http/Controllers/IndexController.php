@@ -72,9 +72,6 @@ class IndexController extends Controller
             'bank'        =>   'required',
             'branch'      =>   'required',
             'pay_slip'    =>   'required',
-            'image1'      =>   'required|image|max:500',
-            'image2'      =>   'sometimes|image|max:500',
-            'image3'      =>   'sometimes|image|max:500'
         ));
         $temppayment = new Temppayment;
     }
