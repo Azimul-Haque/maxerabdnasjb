@@ -373,7 +373,8 @@
                   <!-- Modal body -->
                   <div class="modal-body">
                     <b>প্যাকেজঃ</b> {{ $package->name }} ({{ $package->tagline }})<br/>
-                    <b>প্যাকেজের মেয়াদঃ</b> {{ $package->name }} ({{ $package->tagline }})<br/>
+                    <b>প্যাকেজের মেয়াদঃ</b> {{ $package->duration }}<br/>
+                    <b>প্যাকেজের মেয়াদঃ</b> {{ $package->duration }}<br/>
                   </div>
 
                   <!-- Modal footer -->
