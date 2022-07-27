@@ -396,7 +396,7 @@
                     </div>
 
                     <!-- Modal footer -->
-                    <div class="modal-footer">
+                    <div class="">
                         {{-- <button type="button" class="btn btn-danger" data-bs-dismiss="modal">ফিরে যান</button> --}}
                         <input type="hidden" name="package_id" value="{{ $package->id }}" required>
                         <input type="submit" value="submit" class="btn primary-btn-outline">৳ {{ bangla($package->price) }} পরিশোধ করুন</input>
