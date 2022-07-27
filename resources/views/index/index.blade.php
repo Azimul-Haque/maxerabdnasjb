@@ -392,7 +392,7 @@
                         অ্যাপে ব্যবহৃত ১১ ডিজিটের মোবাইল নম্বরটি লিখুন<br/>
                         <span style="color: green; font-size: 10px;">রেজিস্ট্রেশন না করে থাকলে <a href="#!">ক্লিক করুন</a></span>
                       </label>
-                      <input type="number" name="user_number" onkeypress="if(this.value.length==11) return false;" class="form-control" placeholder="অ্যাপে ব্যবহৃত মোবাইল নাম্বারটি লিখুন" @if(!Auth::guest()) value="{{ Auth::user()->mobile }}" @endif required>
+                      <input type="number" name="user_number"  class="form-control" placeholder="অ্যাপে ব্যবহৃত মোবাইল নাম্বারটি লিখুন" @if(!Auth::guest()) value="{{ Auth::user()->mobile }}" @endif required>
                     </div>
 
                     <!-- Modal footer -->
