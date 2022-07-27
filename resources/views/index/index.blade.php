@@ -372,7 +372,7 @@
 
                   <!-- Modal body -->
                   <div class="modal-body">
-                    প্যাকেজঃ {{ $package->name }} ({{ $package->tagline }})<br/>
+                    <b>প্যাকেজঃ</b> {{ $package->name }} ({{ $package->tagline }})<br/>
                     প্যাকেজঃ {{ $package->name }}<br/>
                   </div>
 
