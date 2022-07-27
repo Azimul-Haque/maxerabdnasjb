@@ -74,7 +74,7 @@ class IndexController extends Controller
 
         $user = User::where('mobile', $request->user_number)->first();
 
-        dd($request);
+        dd($user);
         if($user) {
             
         } else {
