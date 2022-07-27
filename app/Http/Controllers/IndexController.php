@@ -76,9 +76,9 @@ class IndexController extends Controller
 
         if($user) {
             $temppayment = new Temppayment;
-            $temppayment->user_id = $user->id;
+            $temppayment->user_id = $uid->id;
             $temppayment->package_id = $request->package_id;
-            $temppayment->package_id = $request->package_id;
+            $temppayment->uid = $uid->uid;
         } else {
             Session::flash('warning','নাম্বারটি পাওয়া যায়নি! আগে রেজিস্ট্রেশন করুন।');
             return redirect()->route('index.index');
