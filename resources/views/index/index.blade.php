@@ -371,7 +371,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                   </div>
 
-                  <form method="post" action="{{ route('index.payment.proceed') }}">
+                  <form method="POST" action="{{ route('index.payment.proceed') }}">
                     @csrf
                     <!-- Modal body -->
                     <div class="modal-body">
