@@ -73,6 +73,13 @@ class IndexController extends Controller
         ));
 
         $user = User::where('mobile', $request->user_number)->first();
+
+        if($user) {
+            dd($user);
+        } else {
+            echo 'notfound';
+        }
+
         $temppayment = new Temppayment;
     }
 
