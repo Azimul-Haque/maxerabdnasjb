@@ -78,6 +78,7 @@ class IndexController extends Controller
 
         } else {
             Session::flash('info','Payment is cancelled!');
+            return redirect()->route('index.index');
         }
 
         // $temppayment = new Temppayment;
