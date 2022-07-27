@@ -70,6 +70,7 @@ class IndexController extends Controller
         $this->validate($request,array(
             'user_number'    =>   'required',
             'package_id'     =>   'required',
+            'amount'         =>   'required',
         ));
 
         $user = User::where('mobile', $request->user_number)->first();
