@@ -360,7 +360,7 @@
                 </div>
               </div>
             </div>
-            <div class="modal" id="packageModal{{ $package->id }}">
+            <div class="modal fade" id="packageModal{{ $package->id }}">
               <div class="modal-dialog">
                 <div class="modal-content">
 
