@@ -396,7 +396,7 @@
                     </div>
 
                     <!-- Modal footer -->
-                    <button type="submit" >ফিরে যান</button>
+                    <a type="submit" >ফিরে যান</a>
                     <div class="modal-footer">
                         {{-- <button type="button" class="btn btn-danger" data-bs-dismiss="modal">ফিরে যান</button> --}}
                         <input type="hidden" name="package_id" value="{{ $package->id }}" required>
