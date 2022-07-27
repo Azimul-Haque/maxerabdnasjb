@@ -22,6 +22,7 @@ class CreatePaymentsTable extends Migration
             $table->string('card_type')->nullable();
             $table->string('trx_id');
             $table->string('amount');
+            $table->string('package_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
