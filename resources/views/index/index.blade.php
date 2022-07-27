@@ -372,7 +372,7 @@
 
                   <!-- Modal body -->
                   <div class="modal-body">
-                    Modal body..
+                    প্যাকেজঃ {{ $package->name }}
                   </div>
 
                   <!-- Modal footer -->
