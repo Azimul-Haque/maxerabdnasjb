@@ -75,13 +75,11 @@ class IndexController extends Controller
         $user = User::where('mobile', $request->user_number)->first();
 
         if($user) {
-
+            $temppayment = new Temppayment;
         } else {
             Session::flash('warning','নাম্বারটি পাওয়া যায়নি! আগে রেজিস্ট্রেশন করুন।');
             return redirect()->route('index.index');
         }
-
-        // $temppayment = new Temppayment;
     }
 
     public function paymentSuccess()
