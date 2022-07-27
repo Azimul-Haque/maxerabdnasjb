@@ -22,9 +22,6 @@ class CreatePaymentsTable extends Migration
             $table->string('card_type')->nullable();
             $table->string('trx_id');
             $table->string('amount');
-            $table->string('bank');
-            $table->string('branch');
-            $table->string('pay_slip');
             $table->integer('is_archieved')->unsigned();
             $table->foreign('member_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
