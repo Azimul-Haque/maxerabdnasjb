@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '3930179629ed8e2b28f485277b2552448fd8e1f2',
+    'reference' => 'faf32f1d8a42ebe425d22cace204986505589d5e',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -472,7 +472,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '3930179629ed8e2b28f485277b2552448fd8e1f2',
+      'reference' => 'faf32f1d8a42ebe425d22cace204986505589d5e',
     ),
     'laravel/tinker' => 
     array (
@@ -936,6 +936,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '99732be0ddb3361e16ad77b68ba41efc8e979019',
+    ),
+    'shipu/php-aamarpay-payment' => 
+    array (
+      'pretty_version' => 'v2.0.0',
+      'version' => '2.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '814ae012f22b7c7c74f4a413f0a78377842a2d66',
     ),
     'swiftmailer/swiftmailer' => 
     array (

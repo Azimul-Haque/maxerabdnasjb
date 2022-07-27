@@ -1,0 +1,15 @@
+<?php
+
+return [
+    'store_id' => env('AAMARPAY_STORE_ID','bjsexam'),
+    'signature_key' => env('AAMARPAY_KEY','24b07a0a021706e13b79880bcf7c4033'),
+    'sandbox' => env('AAMARPAY_SANDBOX', true),
+    'redirect_url' => [
+        'success' => [
+            'url' => env('AAMARPAY_SUCCESS_URL','') // payment.success
+        ],
+        'cancel' => [
+            'url' => env('AAMARPAY_CANCEL_URL','') // payment/cancel or you can use route also
+        ]
+    ]
+];
