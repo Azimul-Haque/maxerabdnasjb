@@ -344,7 +344,7 @@
                 </div>
 
                 <div class="light-rounded-buttons">
-                  <button type="button" data-bs-toggle="modal" data-bs-backdrop="static"  data-bs-target="#packageModal{{ $package->id }}" class="btn @if($package->suggested == 1) primary-btn @else primary-btn-outline @endif">
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#packageModal{{ $package->id }}" class="btn @if($package->suggested == 1) primary-btn @else primary-btn-outline @endif">
                     শুরু করুন!
                   </button>
                 </div>
@@ -360,7 +360,7 @@
                 </div>
               </div>
             </div>
-            <div class="modal fade" id="packageModal{{ $package->id }}">
+            <div class="modal fade" id="packageModal{{ $package->id }}" data-bs-backdrop="static">
               <div class="modal-dialog">
                 <div class="modal-content">
 
