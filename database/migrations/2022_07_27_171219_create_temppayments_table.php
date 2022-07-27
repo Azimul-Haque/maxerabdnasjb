@@ -19,10 +19,8 @@ class CreateTemppaymentsTable extends Migration
             $table->integer('package_id')->unsigned();
             $table->string('uid');
             $table->integer('payment_method')->nullable();
-            $table->string('card_type')->nullable();
             $table->string('trx_id');
             $table->string('amount');
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }
