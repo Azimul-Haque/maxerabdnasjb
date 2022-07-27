@@ -386,6 +386,7 @@
                           {{-- <li> <i class="lni lni-checkmark-circle deactive"></i> মডেল টেস্ট ও সাবজেক্টিভ প্রস্তুতি</li> --}}
                         </ul>
                       </div>
+                      <input type="number" name="user_number">
                     </div>
 
                     <!-- Modal footer -->
