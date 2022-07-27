@@ -71,6 +71,8 @@ class IndexController extends Controller
             'user_number'    =>   'required|integer',
             'package_id'     =>   'required',
         ));
+
+        $user = User::
         $temppayment = new Temppayment;
     }
 
