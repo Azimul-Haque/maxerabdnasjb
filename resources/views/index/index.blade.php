@@ -371,7 +371,7 @@
                   </div>
 
                   <form method="post" id="" action="{{ route('index.payment.proceed') }}">
-                  <!-- Modal body -->
+                    <!-- Modal body -->
                     <div class="modal-body">
                       <b>প্যাকেজঃ</b> {{ $package->name }} ({{ $package->tagline }})<br/>
                       <b>প্যাকেজের মেয়াদঃ</b> {{ $package->duration }}<br/><br/>
