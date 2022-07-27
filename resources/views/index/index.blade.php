@@ -361,7 +361,7 @@
               </div>
             </div>
             <div class="modal fade" id="packageModal{{ $package->id }}" data-bs-backdrop="static">
-              <div class="modal-dialog modal-sm">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content">
 
                   <!-- Modal Header -->
