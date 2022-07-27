@@ -15,12 +15,16 @@ class CreateTemppaymentsTable extends Migration
     {
         Schema::create('temppayments', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('member_id');
-            $table->string('trxid');
-            $table->integer('amount');
-            $table->integer('payment_type');
-            $table->string('bulkdata')->nullable();
-            $table->integer('tried');
+            $table->integer('user_id')->unsigned();
+            $table->integer('package_id')->unsigned();
+            $table->integer('unsigned');
+            $table->string('uid');
+            $table->integer('payment_status')->unsigned();
+            $table->integer('payment_method')->nullable();
+            $table->string('card_type')->nullable();
+            $table->string('trx_id');
+            $table->string('amount');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }
