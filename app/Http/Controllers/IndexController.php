@@ -64,10 +64,22 @@ class IndexController extends Controller
         return view('index.refundpolicy');
     }
 
+    public function paymentSuccess()
+    {
+        Session::flash('info','Payment is cancelled!');
+        return view('index.payment.success');
+    }
+
     public function paymentCancel()
     {
         Session::flash('info','Payment is cancelled!');
         return view('index.payment.cancel');
+    }
+
+    public function paymentFailed()
+    {
+        Session::flash('info','Payment is cancelled!');
+        return view('index.payment.failed');
     }
 
     // clear configs, routes and serve
