@@ -390,8 +390,10 @@
                   <!-- Modal footer -->
                   <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <form>
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </form>
                   </div>
-
                 </div>
               </div>
             </div>
