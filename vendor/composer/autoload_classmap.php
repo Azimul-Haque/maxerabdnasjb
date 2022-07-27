@@ -54,6 +54,7 @@ return array(
     'App\\Questionimage' => $baseDir . '/app/Questionimage.php',
     'App\\Site' => $baseDir . '/app/Site.php',
     'App\\Tag' => $baseDir . '/app/Tag.php',
+    'App\\Temppayment' => $baseDir . '/app/Temppayment.php',
     'App\\Topic' => $baseDir . '/app/Topic.php',
     'App\\User' => $baseDir . '/app/User.php',
     'Asm89\\Stack\\Cors' => $vendorDir . '/asm89/stack-cors/src/Asm89/Stack/Cors.php',
