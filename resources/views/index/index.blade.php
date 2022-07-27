@@ -375,6 +375,15 @@
                     <b>প্যাকেজঃ</b> {{ $package->name }} ({{ $package->tagline }})<br/>
                     <b>প্যাকেজের মেয়াদঃ</b> {{ $package->duration }}<br/>
                     <big><b>প্যাকেজের মূল্যঃ</b> <strike>৳ {{ bangla($package->strike_price) }}</strike> ৳ {{ bangla($package->price) }}<br/></big>
+                    <div class="table-content">
+                      <ul class="table-list">
+                        <li> <i class="lni lni-checkmark-circle"></i> অ্যাপের ফিচারসমূহের এক্সেস</li>
+                        <li> <i class="lni lni-checkmark-circle"></i> সম্পূর্ণ বিজেএস কোর্স এক্সেস</li>
+                        <li> <i class="lni lni-checkmark-circle"></i> সম্পূর্ণ বার কোর্স এক্সেস</li>
+                        <li> <i class="lni lni-checkmark-circle"></i> মডেল টেস্ট ও সাবজেক্টিভ প্রস্তুতি</li>
+                        {{-- <li> <i class="lni lni-checkmark-circle deactive"></i> মডেল টেস্ট ও সাবজেক্টিভ প্রস্তুতি</li> --}}
+                      </ul>
+                    </div>
                   </div>
 
                   <!-- Modal footer -->
