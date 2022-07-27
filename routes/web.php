@@ -17,6 +17,8 @@ Route::get('/', 'IndexController@index')->name('index.index');
 Route::get('/terms-and-conditions', 'IndexController@termsAndConditions')->name('index.terms-and-conditions');
 Route::get('/privacy-policy', 'IndexController@privacyPolicy')->name('index.privacy-policy');
 Route::get('/refund-policy', 'IndexController@refundPolicy')->name('index.refund-policy');
+Route::get('/payment/cancel', 'IndexController@paymentCancel')->name('index.payment.cancel');
+Route::get('/payment/success', 'IndexController@paymentSuccess')->name('index.payment.success');
 
 // Clear Route
 Route::get('/clear', ['as'=>'clear','uses'=>'IndexController@clear']);
