@@ -391,7 +391,7 @@
                   <div class="modal-footer">
                     {{-- <button type="button" class="btn btn-danger" data-bs-dismiss="modal">ফিরে যান</button> --}}
                     <form>
-                      <button type="submit" class="btn btn-success" data-bs-dismiss="modal">৳ {{ bangla($package->price) }} পরিশোধ করুন</button>
+                      <button type="submit" class="btn success-btn" data-bs-dismiss="modal">৳ {{ bangla($package->price) }} পরিশোধ করুন</button>
                     </form>
                   </div>
                 </div>
