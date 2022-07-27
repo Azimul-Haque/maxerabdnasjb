@@ -373,8 +373,8 @@
                   <!-- Modal body -->
                   <div class="modal-body">
                     <b>প্যাকেজঃ</b> {{ $package->name }} ({{ $package->tagline }})<br/>
-                    <b>প্যাকেজের মেয়াদঃ</b> {{ $package->duration }}<br/>
-                    <big><b>প্যাকেজের মূল্যঃ</b> <small><strike>৳ {{ bangla($package->strike_price) }}</strike></small> ৳ {{ bangla($package->price) }}<br/></big>
+                    <b>প্যাকেজের মেয়াদঃ</b> {{ $package->duration }}<br/><br/>
+                    <big><b>প্যাকেজের মূল্যঃ</b> <small><strike>৳ {{ bangla($package->strike_price) }}</strike></small> ৳ {{ bangla($package->price) }}</big><br/><br/>
                     <b>ফিচারসমূহঃ</b>
                     <div class="table-content">
                       <ul class="table-list">
