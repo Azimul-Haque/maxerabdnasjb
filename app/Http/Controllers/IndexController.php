@@ -77,7 +77,7 @@ class IndexController extends Controller
         if($user) {
 
         } else {
-            
+            Session::flash('info','Payment is cancelled!');
         }
 
         // $temppayment = new Temppayment;
