@@ -66,8 +66,7 @@ class IndexController extends Controller
 
     public function paymentProceed()
     {
-        Session::flash('info','Payment is cancelled!');
-        return view('index.payment.success');
+        
     }
 
     public function paymentSuccess()
