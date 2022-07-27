@@ -14,7 +14,13 @@ class CreateTemppaymentsTable extends Migration
     public function up()
     {
         Schema::create('temppayments', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->integer('member_id');
+            $table->string('trxid');
+            $table->integer('amount');
+            $table->integer('payment_type');
+            $table->string('bulkdata')->nullable();
+            $table->integer('tried');
             $table->timestamps();
         });
     }
