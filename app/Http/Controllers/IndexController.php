@@ -64,6 +64,12 @@ class IndexController extends Controller
         return view('index.refundpolicy');
     }
 
+    public function paymentProceed()
+    {
+        Session::flash('info','Payment is cancelled!');
+        return view('index.payment.success');
+    }
+
     public function paymentSuccess()
     {
         Session::flash('info','Payment is cancelled!');
