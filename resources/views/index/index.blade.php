@@ -386,6 +386,7 @@
                           {{-- <li> <i class="lni lni-checkmark-circle deactive"></i> মডেল টেস্ট ও সাবজেক্টিভ প্রস্তুতি</li> --}}
                         </ul>
                       </div><br/>
+                      <label>অ্যাপে ব্যবহৃত ১১ ডিজিটের মোবাইল নম্বরটি লিখুন</label>
                       <input type="number" name="user_number" class="form-control" placeholder="আপনার অ্যাপে ব্যবহৃত নাম্বারটি লিখুন" required>
                     </div>
 
