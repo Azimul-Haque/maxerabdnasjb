@@ -394,7 +394,7 @@
                         {{-- <button type="button" class="btn btn-danger" data-bs-dismiss="modal">ফিরে যান</button> --}}
                         @csrf
                         <input type="hidden" name="package_id" value="{{ $package->id }}" required>
-                        <button type="submit" class="btn primary-btn-outline" data-bs-dismiss="modal">৳ {{ bangla($package->price) }} পরিশোধ করুন</button>
+                        <button type="submit" class="btn primary-btn-outline">৳ {{ bangla($package->price) }} পরিশোধ করুন</button>
                     </div>
                   </form>
                 </div>
