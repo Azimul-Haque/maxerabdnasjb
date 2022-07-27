@@ -389,7 +389,7 @@
 
                   <!-- Modal footer -->
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">ফিরে যান</button>
+                    {{-- <button type="button" class="btn btn-danger" data-bs-dismiss="modal">ফিরে যান</button> --}}
                     <form>
                       <button type="button" class="btn btn-danger" data-bs-dismiss="modal">৳ {{ bangla($package->price) }} পরিশোধ করুন</button>
                     </form>
