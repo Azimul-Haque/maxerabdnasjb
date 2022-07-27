@@ -68,7 +68,7 @@ class IndexController extends Controller
     public function paymentProceed(Request $request)
     {
         $this->validate($request,array(
-            'user_number'    =>   'required|integer',
+            'user_number'    =>   'required',
             'package_id'     =>   'required',
         ));
 
