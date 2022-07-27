@@ -81,7 +81,7 @@ class IndexController extends Controller
             $temppayment->package_id = $request->package_id;
             $temppayment->uid = $user->uid;
             // generate Trx_id
-            $trx_id = 
+            $trx_id = 'BJS' . random_string(7);
             $temppayment->trx_id = $trx_id;
         } else {
             Session::flash('warning','নাম্বারটি পাওয়া যায়নি! আগে রেজিস্ট্রেশন করুন।');
