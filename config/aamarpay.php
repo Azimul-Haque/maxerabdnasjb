@@ -10,6 +10,9 @@ return [
         ],
         'cancel' => [
             'url' => env('AAMARPAY_CANCEL_URL','') // payment/cancel or you can use route also
+        ],
+        'failed' => [
+            'url' => env('AAMARPAY_CANCEL_URL','') // payment/cancel or you can use route also
         ]
     ]
 ];
