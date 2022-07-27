@@ -64,7 +64,7 @@ class IndexController extends Controller
         return view('index.refundpolicy');
     }
 
-    public function paymentCancel($id)
+    public function paymentCancel()
     {
         Session::flash('info','Payment is cancelled!');
         return redirect()->route('index.application.payment', $id);
