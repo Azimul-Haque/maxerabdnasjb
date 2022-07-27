@@ -72,7 +72,7 @@ class IndexController extends Controller
             'package_id'     =>   'required',
         ));
 
-        $user = User::
+        $user = User::where('mobile', $request->user_number)->first();
         $temppayment = new Temppayment;
     }
 
