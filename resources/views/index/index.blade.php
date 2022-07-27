@@ -374,7 +374,7 @@
                   <div class="modal-body">
                     <b>প্যাকেজঃ</b> {{ $package->name }} ({{ $package->tagline }})<br/>
                     <b>প্যাকেজের মেয়াদঃ</b> {{ $package->duration }}<br/>
-                    <big><b>প্যাকেজের মূল্যঃ</b> ৳ {{ bangla($package->price) }}<br/></big>
+                    <big><b>প্যাকেজের মূল্যঃ</b> <strike>৳ {{ bangla($package->strike_price) }}<strike> ৳ {{ bangla($package->price) }}<br/></big>
                   </div>
 
                   <!-- Modal footer -->
