@@ -344,9 +344,9 @@
                 </div>
 
                 <div class="light-rounded-buttons">
-                  <a href="javascript:void(0)" class="btn @if($package->suggested == 1) primary-btn @else primary-btn-outline @endif">
+                  <button type="button" class="btn @if($package->suggested == 1) primary-btn @else primary-btn-outline @endif">
                     শুরু করুন!
-                  </a>
+                  </button>
                 </div>
 
                 <div class="table-content">
