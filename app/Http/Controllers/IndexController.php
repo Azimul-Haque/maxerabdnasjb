@@ -81,7 +81,7 @@ class IndexController extends Controller
             echo 'notfound';
         }
 
-        $temppayment = new Temppayment;
+        // $temppayment = new Temppayment;
     }
 
     public function paymentSuccess()
