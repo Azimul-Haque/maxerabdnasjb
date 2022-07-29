@@ -34,7 +34,7 @@
                         'opt_a' => $user->id,
                         'opt_b' => $amount,
                     ], $amount, '<i class="fa fa-money"></i> Pay Through AamarPay', 'btn primary-btn') !!}
-                    <br/>
+                    <br/><br/>
                     <small>
                     	<a href="{{ route('index.terms-and-conditions') }}" target="_blank">Terms & Conditions</a>, <a href="{{ route('index.privacy-policy') }}" target="_blank">Privacy Policy</a> & <a href="{{ route('index.refund-policy') }}" target="_blank">Refund Policy</a>
                   	</small>
