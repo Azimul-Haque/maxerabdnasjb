@@ -19,7 +19,7 @@
                 </p>
                 <div style="border: 2px solid #ddd; padding: 0px; width: 100%; padding: 20px;" >
                     {{-- <img src="{{ asset('images/aamarpay.png') }}" class="img-responsive margin-two"> --}}
-                    {!! 
+                    {!!
                     aamarpay_post_button([
                         'tran_id'   => $trxid,
                         'cus_name'  => $user->name,
