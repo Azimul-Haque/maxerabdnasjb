@@ -119,9 +119,10 @@ class IndexController extends Controller
         // }
         $valid  = Aamarpay::valid($request, $amount_request);
         if($valid) {
-            // Successfully Paid.
+            Session::flash('info', 'পেমেন্ট সম্পন্ন হয়নি, আবার চেষ্টা করুন!');
+            return redirect()->route('index.index');
         } else {
-           Session::flash('info', 'পেমেন্ট সম্পন্ন হয়নি, অনুগ্রহ করে Contact ফর্ম এর মাধ্যমে আমাদের জানান।');
+            Session::flash('info', 'পেমেন্ট সম্পন্ন হয়নি, অনুগ্রহ করে Contact ফর্ম এর মাধ্যমে আমাদের জানান।');
             return redirect()->route('index.index');
         }
     }
