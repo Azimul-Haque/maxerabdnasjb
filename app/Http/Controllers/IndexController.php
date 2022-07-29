@@ -103,7 +103,7 @@ class IndexController extends Controller
 
     public function paymentSuccess(Request $request)
     {
-        // dd($request->all());
+        dd($request->all());
         $user_id = $request->get('opt_a');
         
         if($request->get('pay_status') == 'Failed') {
