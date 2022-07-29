@@ -121,7 +121,8 @@ class IndexController extends Controller
         if($valid) {
             // Successfully Paid.
         } else {
-           // Something went wrong. 
+           Session::flash('info', 'পেমেন্ট সম্পন্ন হয়নি, আবার চেষ্টা করুন!');
+            return redirect()->route('index.index');
         }
     }
 
