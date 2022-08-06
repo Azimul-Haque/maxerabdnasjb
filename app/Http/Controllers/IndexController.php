@@ -120,7 +120,7 @@ class IndexController extends Controller
         // }
         $valid  = Aamarpay::valid($request, $amount_request);
         if($valid) {
-
+            $temppayment = new Temppayment;
             Session::flash('success', 'পেমেন্ট সফল হয়েছে। ধন্যবাদ!');
             return redirect()->route('index.index');
         } else {
