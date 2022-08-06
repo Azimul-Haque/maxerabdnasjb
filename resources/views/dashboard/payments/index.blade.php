@@ -49,7 +49,7 @@
           </div>
           <!-- /.card-body -->
         </div>
-        {{ $users->links() }}
+        {{ $payments->links() }}
     </div>
 @endsection
 
