@@ -135,10 +135,8 @@ class IndexController extends Controller
             $current_package_date = Carbon::parse($user->package_expiry_date);
             $package = Package::findOrFail($temppayment->package_id);
             if($current_package_date->greaterThanOrEqualTo(Carbon::now())) {
-                echo 'jodi beshi kena thake';
                 $package_expiry_date = $current_package_date->addDays($package->numeric_duration)->format('Y-m-d') . ' 23:59:59';
             } else {
-                echo 'jodi beshi kena NA thake';
                 $package_expiry_date = Carbon::now()->addDays($package->numeric_duration)->format('Y-m-d') . ' 23:59:59';
             }
             // dd($package_expiry_date);
