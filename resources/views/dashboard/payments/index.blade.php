@@ -37,7 +37,8 @@
                 @foreach($payments as $payment)
                 	<tr>
                     <td>{{ $payment->user->name }}</td>
-                    <td>{{ $payment->user->name }}</td>
+                    <td>{{ $payment->package->name }}</td>
+                    <td>{{ $payment->package->name }}</td>
                 		<td>
                 			
                       <span class="badge bg-info"><strike>৳ {{ $package->strike_price }}</strike></span>
