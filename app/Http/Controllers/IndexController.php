@@ -116,10 +116,11 @@ class IndexController extends Controller
         $amount_paid = $request->get('amount');
 
         if($amount_paid == $amount_request) {
-           OLD VERIFICATION METHOD
+           // OLD VERIFICATION METHOD
+            
         }
         $valid  = Aamarpay::valid($request, $amount_request);
-        dd($request->all());
+        
         if($valid)
         {
             dd($request->all());
