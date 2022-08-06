@@ -121,7 +121,7 @@ class IndexController extends Controller
         $valid  = Aamarpay::valid($request, $amount_request);
         if($valid)
         {
-            $temppayment = Temppayment::where('trx_id');
+            $temppayment = Temppayment::where('trx_id', );
 
             $payment = new Ppayment;
             $payment->user_id = $user_id;
