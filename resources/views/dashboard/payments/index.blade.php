@@ -13,9 +13,9 @@
             <h3 class="card-title">পেমেন্ট তালিকা</h3>
 
             <div class="card-tools">
-            	<button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addPackageModal" title="" rel="tooltip" data-original-title="পেমেন্ট যোগ করুন">
+            	{{-- <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addPackageModal" title="" rel="tooltip" data-original-title="পেমেন্ট যোগ করুন">
             		<i class="fas fa-clipboard-check"></i> নতুন পেমেন্ট
-            	</button>
+            	</button> --}}
             </div>
           </div>
           <!-- /.card-header -->
