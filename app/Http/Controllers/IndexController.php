@@ -120,7 +120,7 @@ class IndexController extends Controller
             
             $temppayment = Temppayment::where('trx_id', $request->mer_txnid)->first();
             dd($request->all());
-            $payment = new Ppayment;
+            $payment = new Payment;
             $payment->user_id = $user_id;
             $payment->package_id = $temppayment->package_id;
             $payment->uid = $temppayment->uid;
