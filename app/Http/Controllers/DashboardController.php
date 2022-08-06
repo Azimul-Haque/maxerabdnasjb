@@ -250,8 +250,7 @@ class DashboardController extends Controller
     {
         $payments = Payment::orderBy('id', 'desc')->paginate(15);
         
-        return view('dashboard.payments.index')
-                    ->withPayments($payments);
+        return view('dashboard.payments.index')->withPayments($payments);
     }
 
     public function storePackage(Request $request)
