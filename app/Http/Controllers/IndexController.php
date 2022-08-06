@@ -131,6 +131,7 @@ class IndexController extends Controller
             $payment->store_amount = $request->store_amount;
 
             $user = User::findOrFail($user_id);
+            $current_package_date = $user->package_expiry_date;
             $package_expiry_date = Carbon::now()->addDays(1)->format('Y-m-d') . ' 23:59:59';
             $user->package_expiry_date = $package_expiry_date;
 
