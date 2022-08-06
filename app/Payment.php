@@ -10,7 +10,7 @@ class Payment extends Model
       return $this->belongsTo('App\User');
     }
 
-    public function user() {
-      return $this->belongsTo('App\User');
+    public function package() {
+      return $this->belongsTo('App\Package');
     }
 }
