@@ -119,8 +119,9 @@ class IndexController extends Controller
            // OLD VERIFICATION METHOD
         // }
         $valid  = Aamarpay::valid($request, $amount_request);
-        if($valid) {
-            $temppayment = new Temppayment;
+        if($valid)
+        {
+            $payment = new Ppayment;
             Session::flash('success', 'পেমেন্ট সফল হয়েছে। ধন্যবাদ!');
             return redirect()->route('index.index');
         } else {
