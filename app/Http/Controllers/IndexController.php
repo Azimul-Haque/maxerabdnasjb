@@ -120,7 +120,7 @@ class IndexController extends Controller
            dd($request->all());
         }
         $valid  = Aamarpay::valid($request, $amount_request);
-        
+        dd($valid);
         if($valid)
         {
             dd($request->all());
