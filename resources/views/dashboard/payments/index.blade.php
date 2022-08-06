@@ -173,34 +173,7 @@
                 				<i class="fas fa-trash-alt"></i>
                 			</button>
                 		</td>
-                        {{-- Delete Package Modal Code --}}
-                        {{-- Delete Package Modal Code --}}
-                        <!-- Modal -->
-                        <div class="modal fade" id="deletePackageModal{{ $package->id }}" tabindex="-1" role="dialog" aria-labelledby="deletePackageModalLabel" aria-hidden="true" data-backdrop="static">
-                          <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header bg-danger">
-                                <h5 class="modal-title" id="deletePackageModalLabel">পেমেন্ট ডিলেট</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                              </div>
-                              <div class="modal-body">
-                                আপনি কি নিশ্চিতভাবে এই পেমেন্টটি ডিলেট করতে চান?<br/>
-                                <center>
-                                    <big><b>{{ $package->name }}</b></big><br/>
-                                    <span>৳ {{ $package->price }}</span>
-                                </center>
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-                                <a href="{{ route('dashboard.users.delete', $package->id) }}" class="btn btn-danger">ডিলেট করুন</a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        {{-- Delete Package Modal Code --}}
-                        {{-- Delete Package Modal Code --}}
+                        
                 	</tr>
                 @endforeach
               </tbody>
