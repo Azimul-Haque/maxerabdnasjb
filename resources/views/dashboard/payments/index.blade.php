@@ -41,7 +41,7 @@
                     <td>{{ $payment->card_type }}</td>
                     <td>{{ $payment->trx_id }}</td>
                     <td><b>৳ {{ $payment->store_amount }}</b> <small>(৳ {{ $payment->amount }})</small></td>
-                		<td></td>
+                		<td>{{ date('F d, Y', strtotime($payment->trx_id)) }}</td>
                 	</tr>
                 @endforeach
               </tbody>
