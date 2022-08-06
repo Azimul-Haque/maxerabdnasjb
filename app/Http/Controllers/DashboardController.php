@@ -28,7 +28,7 @@ class DashboardController extends Controller
     public function __construct()
     {
         $this->middleware('auth')->except('clear');
-        $this->middleware(['admin'])->only('getUsers', 'storeUser', 'updateUser', 'deleteUser', 'deleteBalance', 'getCreditors', 'getSingleCreditor', 'getAddDuePage', 'deleteCreditorDue', 'getSiteCategorywise', 'getPackages', 'getPackages');
+        $this->middleware(['admin'])->only('getUsers', 'storeUser', 'updateUser', 'deleteUser', 'deleteBalance', 'getCreditors', 'getSingleCreditor', 'getAddDuePage', 'deleteCreditorDue', 'getSiteCategorywise', 'getPackages', 'getPayments');
 
     }
     
@@ -239,6 +239,14 @@ class DashboardController extends Controller
     }
 
     public function getPackages()
+    {
+        $packages = Package::all();
+        
+        return view('dashboard.packages.index')
+                    ->withPackages($packages);
+    }
+
+    public function getPayments()
     {
         $packages = Package::all();
         
