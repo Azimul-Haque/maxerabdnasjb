@@ -249,13 +249,14 @@ class DashboardController extends Controller
     public function storePackage(Request $request)
     {
         $this->validate($request,array(
-            'name'            => 'required|string|max:191',
-            'tagline'         => 'required|string|max:191',
-            'duration'        => 'required|string|max:191',
-            'price'           => 'required|integer',
-            'strike_price'    => 'required|integer',
-            'status'          => 'required',
-            'suggested'       => 'required',
+            'name'                    => 'required|string|max:191',
+            'tagline'                 => 'required|string|max:191',
+            'duration'                => 'required|string|max:191',
+            'numeric_duration'        => 'required|integer|max:11',
+            'price'                   => 'required|integer',
+            'strike_price'            => 'required|integer',
+            'status'                  => 'required',
+            'suggested'               => 'required',
         ));
 
         $package = new Package;
