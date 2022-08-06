@@ -36,8 +36,10 @@
               <tbody>
                 @foreach($payments as $payment)
                 	<tr>
+                    <td>{{ $payment->user->name }}</td>
+                    <td>{{ $payment->user->name }}</td>
                 		<td>
-                			{{ $payment->user->name }}
+                			
                       <span class="badge bg-info"><strike>৳ {{ $package->strike_price }}</strike></span>
                       <span class="badge bg-success">৳ {{ $package->price }}</span>
                       @if($package->status == 1)
