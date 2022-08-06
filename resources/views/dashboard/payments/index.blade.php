@@ -29,7 +29,6 @@
                   <th>Card Type</th>
                   <th>Trx ID</th>
                   <th>Original Amount</th>
-                  <th>Original Amount</th>
                   <th>Action</th>
                 </thead>
               </thead>
