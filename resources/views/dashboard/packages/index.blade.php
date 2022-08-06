@@ -103,9 +103,9 @@
 
                                     <div class="input-group mb-3">
                                         <input type="text"
-                                               name="duration"
+                                               name="numeric_duration"
                                                class="form-control"
-                                               value="{{ $package->duration }}"
+                                               value="{{ $package->numeric_duration }}"
                                                placeholder="মেয়াদ" required>
                                         <div class="input-group-append">
                                             <div class="input-group-text"><span class="fas fa-calendar-check"></span></div>
