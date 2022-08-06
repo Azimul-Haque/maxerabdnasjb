@@ -220,8 +220,6 @@ class DashboardController extends Controller
         // if(!empty($request->sitecheck)) {
         //     $user->sites = implode(',', $request->sitecheck);
         // }
-        $package_expiry_date = Carbon::now()->addDays(1)->format('Y-m-d');
-        dd($package_expiry_date . ' 23:59:59');
         if(!empty($request->password)) {
             $user->password = Hash::make($request->password);
         }
