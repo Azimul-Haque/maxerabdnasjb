@@ -119,7 +119,7 @@ class IndexController extends Controller
            // OLD VERIFICATION METHOD
         // }
         $valid  = Aamarpay::valid($request, $amount_request);
-        dd($valid);
+        dd($request->all());
         if($valid)
         {
             dd($request->all());
