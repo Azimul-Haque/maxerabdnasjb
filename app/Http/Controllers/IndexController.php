@@ -104,7 +104,7 @@ class IndexController extends Controller
 
     public function paymentSuccess(Request $request)
     {
-        dd($request->all());
+        
         $user_id = $request->get('opt_a');
         
         if($request->get('pay_status') == 'Failed') {
@@ -121,7 +121,8 @@ class IndexController extends Controller
         $valid  = Aamarpay::valid($request, $amount_request);
         if($valid)
         {
-            $temppayment = Temppayment::where('trx_id', );
+            dd($request->all());
+            // $temppayment = Temppayment::where('trx_id', );
 
             $payment = new Ppayment;
             $payment->user_id = $user_id;
