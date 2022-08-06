@@ -48,8 +48,6 @@ class APIController extends Controller
             return response()->json([
                 'success' => true,
                 'uid' => $user->uid,
-                'name' => $user->name,
-                'mobile' => $user->mobile,
             ]);
         } else {
             return response()->json([
