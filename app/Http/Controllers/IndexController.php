@@ -145,7 +145,7 @@ class IndexController extends Controller
             // ARO KAAJ THAKTE PARE, JODI FIREBASE EO UPDATE KORA LAAGE
             // ARO KAAJ THAKTE PARE, JODI FIREBASE EO UPDATE KORA LAAGE
             // dd($payment);
-            Session::flash('success', 'পেমেন্ট সফল হয়েছে। ধন্যবাদ!');
+            Session::flash('success', 'পেমেন্ট সফল হয়েছে। ধন্যবাদ! অ্যাপ ব্যবহার করুন।');
             return redirect()->route('index.index');
         } else {
             // dd($request->all());
