@@ -51,7 +51,7 @@ class APIController extends Controller
         {
             $user = new User;
             $user->uid = $request->uid;
-            $user->uid = $request->uid;
+            $user->package_expiry_date = $request->uid;
             $user->name = $request->name;
             $user->role = 'user';
             $user->mobile = substr($request->mobile, -11);
