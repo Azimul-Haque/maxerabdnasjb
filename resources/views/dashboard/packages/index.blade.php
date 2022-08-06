@@ -260,6 +260,17 @@
                       </div>
                   </div>
 
+                  <div class="input-group mb-3">
+                      <input type="number"
+                             name="numeric_duration"
+                             class="form-control"
+                             value="{{ $package->numeric_duration }}"
+                             placeholder="নম্বরে মেয়াদ" required>
+                      <div class="input-group-append">
+                          <div class="input-group-text"><span class="fas fa-calendar-check"></span></div>
+                      </div>
+                  </div>
+
 	                <div class="input-group mb-3">
 	                    <input type="number"
 	                           name="price"
