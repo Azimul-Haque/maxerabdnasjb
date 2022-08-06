@@ -22,7 +22,10 @@
           <div class="card-body p-0">
             <table class="table">
               <thead>
-                <thead>User</thead>
+                <thead>
+                  <th>User</th>
+                  <th>Package</th>
+                </thead>
               </thead>
               <tbody>
                 @foreach($payments as $payment)
