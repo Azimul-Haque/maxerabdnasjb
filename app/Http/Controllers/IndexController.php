@@ -132,13 +132,13 @@ class IndexController extends Controller
 
             $user = User::findOrFail($user_id);
             $current_package_date = Carbon::parse($user->package_expiry_date);
-            dd($current_package_date->greaterThanOrEqualTo(Carbon::now()));
             $package = Package::findOrFail($temppayment->package_id);
             if($current_package_date->greaterThanOrEqualTo(Carbon::now())) {
                 $package_expiry_date = $current_package_date->addDays($package->numeric_duration)->format('Y-m-d') . ' 23:59:59';
             } else {
                 $package_expiry_date = Carbon::now()->addDays($package->numeric_duration)->format('Y-m-d') . ' 23:59:59';
             }
+            dd($package_expiry_date->greaterThanOrEqualTo(Carbon::now()));
             $package_expiry_date = Carbon::now()->addDays(1)->format('Y-m-d') . ' 23:59:59';
             $user->package_expiry_date = $package_expiry_date;
 
