@@ -252,7 +252,7 @@ class DashboardController extends Controller
             'name'                    => 'required|string|max:191',
             'tagline'                 => 'required|string|max:191',
             'duration'                => 'required|string|max:191',
-            'numeric_duration'        => 'required|integer|max:11',
+            'numeric_duration'        => 'required|integer',
             'price'                   => 'required|integer',
             'strike_price'            => 'required|integer',
             'status'                  => 'required',
