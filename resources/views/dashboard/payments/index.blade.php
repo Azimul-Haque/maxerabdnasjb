@@ -40,6 +40,7 @@
                     <td>{{ $payment->payment_status == 1 ? 'Successfull' : 'Failed' }}</td>
                     <td>{{ $payment->card_type }}</td>
                     <td>{{ $payment->trx_id }}</td>
+                    <td>৳ {{ $payment->store_amount }}</td>
                 		<td>
                 			
                       <span class="badge bg-info"><strike>৳ {{ $package->strike_price }}</strike></span>
