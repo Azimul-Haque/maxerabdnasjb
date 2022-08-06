@@ -32,7 +32,7 @@
                   </td>
                   <td><span class="badge bg-danger">55%</span></td>
                 </tr> --}}
-                @foreach($packages as $package)
+                @foreach($payments as $payment)
                 	<tr>
                 		<td>
                 			{{ $package->name }}
