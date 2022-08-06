@@ -144,11 +144,11 @@ class IndexController extends Controller
             $user->save();
             // ARO KAAJ THAKTE PARE, JODI FIREBASE EO UPDATE KORA LAAGE
             // ARO KAAJ THAKTE PARE, JODI FIREBASE EO UPDATE KORA LAAGE
-            dd($payment);
+            // dd($payment);
             Session::flash('success', 'পেমেন্ট সফল হয়েছে। ধন্যবাদ!');
             return redirect()->route('index.index');
         } else {
-            dd($request->all());
+            // dd($request->all());
             Session::flash('info', 'পেমেন্ট সম্পন্ন হয়নি, অনুগ্রহ করে Contact ফর্ম এর মাধ্যমে আমাদের জানান।');
             return redirect()->route('index.index');
         }
