@@ -10,10 +10,10 @@ class User extends Authenticatable
 {
     use Notifiable;
 
-    public function balances(){
+    public function payments(){
         return $this->hasMany('App\Balance');
     }
-    
+
     // public function balances(){
     //     return $this->hasMany('App\Balance');
     // }
