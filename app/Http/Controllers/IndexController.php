@@ -118,9 +118,9 @@ class IndexController extends Controller
         if($amount_paid == $amount_request) {
             // OLD VERIFICATION METHOD
             echo 'etai kaaj kore';
-            dd(number_format($amount_request, 2));
+            // dd(number_format($amount_request, 2));
         }
-        $valid  = Aamarpay::valid($request, $amount_request);
+        $valid  = Aamarpay::valid($request, number_format($amount_request, 2));
         dd($valid);
         if($valid)
         {
