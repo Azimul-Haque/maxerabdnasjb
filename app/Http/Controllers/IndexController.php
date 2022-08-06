@@ -134,7 +134,7 @@ class IndexController extends Controller
             $current_package_date = Carbon::parse($user->package_expiry_date);
             dd($current_package_date->greaterThanOrEqualTo(Carbon::now()));
             if($current_package_date->greaterThanOrEqualTo(Carbon::now())) {
-                
+                $package_expiry_date = $current_package_date->addDays(1)->format('Y-m-d') . ' 23:59:59';
             }
             $package_expiry_date = Carbon::now()->addDays(1)->format('Y-m-d') . ' 23:59:59';
             $user->package_expiry_date = $package_expiry_date;
