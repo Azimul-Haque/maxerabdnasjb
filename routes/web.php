@@ -36,6 +36,8 @@ Route::post('/dashboard/users/store', 'DashboardController@storeUser')->name('da
 Route::post('/dashboard/users/{id}/update', 'DashboardController@updateUser')->name('dashboard.users.update');
 Route::get('/dashboard/users/{id}/delete', 'DashboardController@deleteUser')->name('dashboard.users.delete');
 
+Route::get('/dashboard/payments', 'DashboardController@getPayments')->name('dashboard.packages');
+
 Route::get('/dashboard/packages', 'DashboardController@getPackages')->name('dashboard.packages');
 Route::post('/dashboard/packages/store', 'DashboardController@storePackage')->name('dashboard.packages.store');
 Route::post('/dashboard/packages/{id}/update', 'DashboardController@updatePackage')->name('dashboard.packages.update');
