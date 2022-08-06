@@ -51,6 +51,8 @@ class APIController extends Controller
         {
             $user = new User;
             $user->uid = $request->uid;
+            $package_expiry_date = Carbon::now()->addDays(1)->format('Y-m-d');
+            dd($mytime);
             $user->package_expiry_date = $request->uid;
             $user->name = $request->name;
             $user->role = 'user';
