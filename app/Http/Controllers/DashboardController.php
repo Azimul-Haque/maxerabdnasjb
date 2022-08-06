@@ -250,8 +250,8 @@ class DashboardController extends Controller
     {
         $payments = Payment::all();
         
-        return view('dashboard.packages.index')
-                    ->withPackages($packages);
+        return view('dashboard.payments.index')
+                    ->withPayments($payments);
     }
 
     public function storePackage(Request $request)
