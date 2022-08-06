@@ -277,20 +277,21 @@ class DashboardController extends Controller
     public function updatePackage(Request $request, $id)
     {
         $this->validate($request,array(
-            'name'            => 'required|string|max:191',
-            'tagline'         => 'required|string|max:191',
-            'duration'        => 'required|string|max:191',
+            'name'                    => 'required|string|max:191',
+            'tagline'                 => 'required|string|max:191',
+            'duration'                => 'required|string|max:191',
             'numeric_duration'        => 'required|integer|max:11',
-            'price'           => 'required|integer',
-            'strike_price'    => 'required|integer',
-            'status'          => 'required',
-            'suggested'       => 'required',
+            'price'                   => 'required|integer',
+            'strike_price'            => 'required|integer',
+            'status'                  => 'required',
+            'suggested'               => 'required',
         ));
 
         $package = Package::findOrFail($id);
         $package->name = $request->name;
         $package->tagline = $request->tagline;
         $package->duration = $request->duration;
+        $package->numeric_duration = $request->numeric_duration;
         $package->price = $request->price;
         $package->strike_price = $request->strike_price;
         $package->status = $request->status;
