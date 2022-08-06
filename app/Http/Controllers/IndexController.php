@@ -117,9 +117,9 @@ class IndexController extends Controller
 
         if($request->pay_status == "Successful" && $amount_paid == $amount_request) {
             // OLD VERIFICATION METHOD
-            dd($request->all());
-            $temppayment = Temppayment::where('trx_id', $request->pay_status);
-
+            
+            $temppayment = Temppayment::where('trx_id', $request->mer_txnid);
+            dd($temppayment);
             $payment = new Ppayment;
             $payment->user_id = $user_id;
             $payment->package_id = $user_id;
