@@ -128,7 +128,8 @@ class IndexController extends Controller
             $payment->card_type = $request->card_type;
             $payment->trx_id = $request->mer_txnid;
             $payment->amount = $request->amount;
-            
+            $payment->store_amount = $request->store_amount;
+
             Session::flash('success', 'পেমেন্ট সফল হয়েছে। ধন্যবাদ!');
             return redirect()->route('index.index');
         } else {
