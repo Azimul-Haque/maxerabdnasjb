@@ -129,6 +129,7 @@ class IndexController extends Controller
             $payment->trx_id = $request->mer_txnid;
             $payment->amount = $request->amount;
             $payment->store_amount = $request->store_amount;
+            $payment->save();
 
             Session::flash('success', 'পেমেন্ট সফল হয়েছে। ধন্যবাদ!');
             return redirect()->route('index.index');
