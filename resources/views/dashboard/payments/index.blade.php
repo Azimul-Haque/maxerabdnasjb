@@ -40,7 +40,7 @@
                     <td>{{ $payment->payment_status == 1 ? 'Successfull' : 'Failed' }}</td>
                     <td>{{ $payment->card_type }}</td>
                     <td>{{ $payment->trx_id }}</td>
-                    <td>৳ {{ $payment->store_amount }} <small>(৳ {{ $payment->amount }})</small></td>
+                    <td><b>৳ {{ $payment->store_amount }}</b> <small>(৳ {{ $payment->amount }})</small></td>
                 		<td align="right"></td>
                 	</tr>
                 @endforeach
