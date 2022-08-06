@@ -241,7 +241,7 @@ class DashboardController extends Controller
 
     public function getPackages()
     {
-        $packages = Package::orderBy('id', 'desc')->paginate(15);
+        $packages = Package::all()
         
         return view('dashboard.packages.index')
                     ->withPackages($packages);
@@ -249,7 +249,7 @@ class DashboardController extends Controller
 
     public function getPayments()
     {
-        $payments = Payment::all();
+        $payments = Payment::orderBy('id', 'desc')->paginate(15);
         
         return view('dashboard.payments.index')
                     ->withPayments($payments);
