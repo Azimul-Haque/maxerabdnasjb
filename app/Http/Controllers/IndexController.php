@@ -115,7 +115,7 @@ class IndexController extends Controller
         $amount_request = $request->get('opt_b');
         $amount_paid = $request->get('amount');
 
-        if($amount_paid == $amount_request) {
+        if($request->get('pay_status'); $amount_paid == $amount_request) {
             // OLD VERIFICATION METHOD
             dd($request->all());
         }
