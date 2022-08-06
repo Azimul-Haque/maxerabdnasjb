@@ -29,7 +29,7 @@
                   <th>Card Type</th>
                   <th>Trx ID</th>
                   <th>Original Amount</th>
-                  <th>Action</th>
+                  <th>সময়</th>
                 </thead>
               </thead>
               <tbody>
