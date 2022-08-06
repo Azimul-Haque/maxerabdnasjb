@@ -39,6 +39,8 @@
                     <td>{{ $payment->user->name }}</td>
                     <td>{{ $payment->package->name }}</td>
                     <td>{{ $payment->payment_status == 1 ? 'Successfull' : 'Failed' }}</td>
+                    <td>{{ $payment->card_type }}</td>
+                    <td>{{ $payment->card_type }}</td>
                 		<td>
                 			
                       <span class="badge bg-info"><strike>৳ {{ $package->strike_price }}</strike></span>
