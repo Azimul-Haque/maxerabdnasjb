@@ -43,6 +43,8 @@ class APIController extends Controller
     {
         $user = User::where('uid', $uid)->first();
 
+        dd($user->package_expiry_date);
+
         if($user && $softtoken == 'Rifat.Admin.2022')
         {
             return response()->json([
