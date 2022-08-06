@@ -41,19 +41,6 @@
                     <td>{{ $payment->card_type }}</td>
                     <td>{{ $payment->trx_id }}</td>
                     <td>৳ {{ $payment->store_amount }} <small>(৳ {{ $payment->amount }})</small></td>
-                		<td>
-                			
-                      <span class="badge bg-info"><strike>৳ {{ $package->strike_price }}</strike></span>
-                      <span class="badge bg-success">৳ {{ $package->price }}</span>
-                      @if($package->status == 1)
-                        <span class="badge bg-primary">Active</span>
-                      @endif
-                      @if($package->suggested == 1)
-                        <span class="badge bg-warning"><i class="fas fa-bolt"></i></span>
-                      @endif
-                			<br/>
-                			<small class="text-black-50">{{ $package->tagline }}</small> 
-                		</td>
                 		<td align="right"></td>
                 	</tr>
                 @endforeach
