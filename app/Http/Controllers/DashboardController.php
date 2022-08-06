@@ -263,6 +263,7 @@ class DashboardController extends Controller
         $package->name = $request->name;
         $package->tagline = $request->tagline;
         $package->duration = $request->duration;
+        $package->numeric_duration = $request->numeric_duration;
         $package->price = $request->price;
         $package->strike_price = $request->strike_price;
         $package->status = $request->status;
@@ -279,6 +280,7 @@ class DashboardController extends Controller
             'name'            => 'required|string|max:191',
             'tagline'         => 'required|string|max:191',
             'duration'        => 'required|string|max:191',
+            'numeric_duration'        => 'required|integer|max:11',
             'price'           => 'required|integer',
             'strike_price'    => 'required|integer',
             'status'          => 'required',
