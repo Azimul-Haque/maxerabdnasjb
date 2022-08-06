@@ -144,6 +144,7 @@ class IndexController extends Controller
             $package_expiry_date = Carbon::now()->addDays(1)->format('Y-m-d') . ' 23:59:59';
             $user->package_expiry_date = $package_expiry_date;
             $user->save();
+            // ARO KAAJ THAKTE PARE, JODI FIREBASE EO UPDATE KORA LAAGE
 
             $payment->save();
 
