@@ -23,9 +23,9 @@
             <table class="table">
               <thead>
                 <thead>
-                  <th>User</th>
-                  <th>Package</th>
-                  <th>Payment Status</th>
+                  <th>ব্যবহারকারী</th>
+                  <th>প্যাকেজ</th>
+                  <th>পেমেন্ট স্ট্যাটাস</th>
                   <th>Card Type</th>
                   <th>Trx ID</th>
                   <th>Original Amount</th>
