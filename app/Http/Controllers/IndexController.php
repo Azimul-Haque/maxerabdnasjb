@@ -14,7 +14,7 @@ use App\Expense;
 use App\Creditor;
 use App\Due;
 use App\Temppayment;
-use App\Ppayment;
+use App\Payment;
 
 use Carbon\Carbon;
 use DB;
