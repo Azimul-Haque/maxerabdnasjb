@@ -21,6 +21,9 @@
           <!-- /.card-header -->
           <div class="card-body p-0">
             <table class="table">
+              <thead>
+                <thead>User</thead>
+              </thead>
               <tbody>
                 @foreach($payments as $payment)
                 	<tr>
