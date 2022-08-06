@@ -25,6 +25,8 @@
                 <thead>
                   <th>User</th>
                   <th>Package</th>
+                  <th>Payment Status</th>
+                  <th>Payment Status</th>
                 </thead>
               </thead>
               <tbody>
