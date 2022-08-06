@@ -221,6 +221,7 @@ class DashboardController extends Controller
         //     $user->sites = implode(',', $request->sitecheck);
         // }
         $mytime = Carbon::now(); //->format('Y-m-d');
+        $mytime->addDays(5);
         dd($mytime->toDateTimeString());
         if(!empty($request->password)) {
             $user->password = Hash::make($request->password);
