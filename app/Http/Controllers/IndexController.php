@@ -132,7 +132,6 @@ class IndexController extends Controller
 
             $user = User::findOrFail($user_id);
             $package_expiry_date = Carbon::now()->addDays(1)->format('Y-m-d') . ' 23:59:59';
-            // dd($package_expiry_date);
             $user->package_expiry_date = $package_expiry_date;
 
             $payment->save();
