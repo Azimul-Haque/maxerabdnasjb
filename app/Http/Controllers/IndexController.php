@@ -118,11 +118,6 @@ class IndexController extends Controller
         if($request->pay_status == "Successful" && $amount_paid == $amount_request) {
             // OLD VERIFICATION METHOD
             dd($request->all());
-        }
-        // $valid  = Aamarpay::valid($request, $amount_request);
-        if($valid)
-        {
-            // dd($request->all());
             // $temppayment = Temppayment::where('trx_id', );
 
             $payment = new Ppayment;
@@ -130,10 +125,13 @@ class IndexController extends Controller
             $payment->package_id = $user_id;
             Session::flash('success', 'পেমেন্ট সফল হয়েছে। ধন্যবাদ!');
             return redirect()->route('index.index');
-        } else {
-            Session::flash('info', 'পেমেন্ট সম্পন্ন হয়নি, অনুগ্রহ করে Contact ফর্ম এর মাধ্যমে আমাদের জানান।');
-            return redirect()->route('index.index');
         }
+        // $valid  = Aamarpay::valid($request, $amount_request);
+        if($valid)
+        {
+            // dd($request->all());
+            
+        } 
     }
 
     public function paymentCancel(Request $request)
