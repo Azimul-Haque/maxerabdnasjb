@@ -30,6 +30,7 @@
                   <th>Trx ID</th>
                   <th>Original Amount</th>
                   <th>Original Amount</th>
+                  <th>Action</th>
                 </thead>
               </thead>
               <tbody>
@@ -48,10 +49,9 @@
                 			<br/>
                 			<small class="text-black-50">{{ $package->tagline }}</small> 
                 		</td>
-                		<td align="right" width="40%">
+                		<td align="right">
                 			
                 		</td>
-                        
                 	</tr>
                 @endforeach
               </tbody>
