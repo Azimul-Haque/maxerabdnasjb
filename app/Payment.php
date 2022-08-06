@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Payment extends Model
 {
-    public function receiver() {
+    public function payment() {
       return $this->belongsTo('App\User');
     }
 }
