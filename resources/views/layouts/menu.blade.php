@@ -17,7 +17,7 @@
 
 @if(Auth::user()->role == 'admin')
 <li class="nav-item">
-    <a href="{{ route('dashboard.users') }}" class="nav-link {{ Request::is('dashboard/users') ? 'active' : '' }} {{ Request::is('dashboard/users/*') ? 'active' : '' }}">
+    <a href="{{ route('dashboard.payments') }}" class="nav-link {{ Request::is('dashboard/payments') ? 'active' : '' }} {{ Request::is('dashboard/payments/*') ? 'active' : '' }}">
         <i class="nav-icon fas fa-hand-holding-usd"></i>
         <p>পেমেন্টসমূহ</p>
     </a>
