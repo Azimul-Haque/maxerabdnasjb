@@ -126,6 +126,7 @@ class IndexController extends Controller
             $payment->uid = $temppayment->uid;
             $payment->payment_status = $request->pay_status;
             $payment->card_type = $request->card_type;
+            $payment->trx_id = $request->mer_txnid;
             Session::flash('success', 'পেমেন্ট সফল হয়েছে। ধন্যবাদ!');
             return redirect()->route('index.index');
         } else {
