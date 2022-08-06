@@ -47,7 +47,7 @@ class APIController extends Controller
         {
             return response()->json([
                 'success' => true,
-                'uid' => $user->uid,
+                'package_expiry_date' => $user->package_expiry_date,
             ]);
         } else {
             return response()->json([
