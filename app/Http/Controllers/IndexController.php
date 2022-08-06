@@ -122,6 +122,7 @@ class IndexController extends Controller
         if($valid)
         {
             $payment = new Ppayment;
+            $payment->user_id = new Ppayment;
             Session::flash('success', 'পেমেন্ট সফল হয়েছে। ধন্যবাদ!');
             return redirect()->route('index.index');
         } else {
