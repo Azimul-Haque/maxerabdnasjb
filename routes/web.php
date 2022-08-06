@@ -29,16 +29,16 @@ Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard.index');
 
-Route::get('/dashboard/packages', 'DashboardController@getPackages')->name('dashboard.packages');
-Route::post('/dashboard/packages/store', 'DashboardController@storePackage')->name('dashboard.packages.store');
-Route::post('/dashboard/packages/{id}/update', 'DashboardController@updatePackage')->name('dashboard.packages.update');
-
 Route::get('/dashboard/users', 'DashboardController@getUsers')->name('dashboard.users');
 Route::get('/dashboard/users/{id}/single', 'DashboardController@getUser')->name('dashboard.users.single');
 Route::get('/dashboard/users/{id}/single/otherpage', 'DashboardController@getUserWithOtherPage')->name('dashboard.users.singleother');
 Route::post('/dashboard/users/store', 'DashboardController@storeUser')->name('dashboard.users.store');
 Route::post('/dashboard/users/{id}/update', 'DashboardController@updateUser')->name('dashboard.users.update');
 Route::get('/dashboard/users/{id}/delete', 'DashboardController@deleteUser')->name('dashboard.users.delete');
+
+Route::get('/dashboard/packages', 'DashboardController@getPackages')->name('dashboard.packages');
+Route::post('/dashboard/packages/store', 'DashboardController@storePackage')->name('dashboard.packages.store');
+Route::post('/dashboard/packages/{id}/update', 'DashboardController@updatePackage')->name('dashboard.packages.update');
 
 Route::get('/dashboard/questions', 'QuestionController@getQuestions')->name('dashboard.questions');
 Route::post('/dashboard/questions/store', 'QuestionController@storeQuestion')->name('dashboard.questions.store');
