@@ -11,7 +11,7 @@ class User extends Authenticatable
     use Notifiable;
 
     public function payments(){
-        return $this->hasMany('App\Balance');
+        return $this->hasMany('App\Payment');
     }
 
     // public function balances(){
