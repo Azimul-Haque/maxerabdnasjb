@@ -130,7 +130,7 @@ class IndexController extends Controller
             $payment->amount = $request->amount;
             $payment->store_amount = $request->store_amount;
             $payment->save();
-            
+
             $user = User::findOrFail($user_id);
             $current_package_date = Carbon::parse($user->package_expiry_date);
             $package = Package::findOrFail($temppayment->package_id);
@@ -147,7 +147,7 @@ class IndexController extends Controller
             $user->save();
             // ARO KAAJ THAKTE PARE, JODI FIREBASE EO UPDATE KORA LAAGE
             // ARO KAAJ THAKTE PARE, JODI FIREBASE EO UPDATE KORA LAAGE
-
+            dd($payment);
             Session::flash('success', 'পেমেন্ট সফল হয়েছে। ধন্যবাদ!');
             return redirect()->route('index.index');
         } else {
