@@ -28,7 +28,7 @@
                   <th>পেমেন্ট স্ট্যাটাস</th>
                   <th>কার্ডের ধরন</th>
                   <th>ট্রানজেকশন আইডি</th>
-                  <th>Original Amount</th>
+                  <th>পরিমাণ</th>
                   <th>সময়</th>
                 </thead>
               </thead>
@@ -41,7 +41,7 @@
                     <td>{{ $payment->card_type }}</td>
                     <td>{{ $payment->trx_id }}</td>
                     <td><b>৳ {{ $payment->store_amount }}</b> <small>(৳ {{ $payment->amount }})</small></td>
-                		<td align="right"></td>
+                		<td></td>
                 	</tr>
                 @endforeach
               </tbody>
