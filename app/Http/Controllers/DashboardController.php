@@ -248,7 +248,7 @@ class DashboardController extends Controller
 
     public function getPayments()
     {
-        $packages = Package::all();
+        $payments = Package::all();
         
         return view('dashboard.packages.index')
                     ->withPackages($packages);
