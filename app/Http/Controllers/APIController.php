@@ -47,7 +47,7 @@ class APIController extends Controller
         {
             return response()->json([
                 'success' => true,
-                'package_expiry_date' => $user->package_expiry_date,
+                'package_expiry_date' => date('Y-m-d H:i:s', strtotime($user->package_expiry_date)),
             ]);
         } else {
             return response()->json([
