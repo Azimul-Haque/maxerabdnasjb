@@ -123,7 +123,7 @@ class IndexController extends Controller
         {
             $payment = new Ppayment;
             $payment->user_id = $user_id;
-            $payment->user_id = $user_id;
+            $payment->package_id = $user_id;
             Session::flash('success', 'পেমেন্ট সফল হয়েছে। ধন্যবাদ!');
             return redirect()->route('index.index');
         } else {
