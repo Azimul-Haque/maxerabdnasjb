@@ -124,7 +124,7 @@ class IndexController extends Controller
             $payment->user_id = $user_id;
             $payment->package_id = $temppayment->package_id;
             $payment->uid = $temppayment->uid;
-            $payment->payment_status = $request->pay_status;
+            $payment->payment_status = 1;
             $payment->card_type = $request->card_type;
             $payment->trx_id = $request->mer_txnid;
             $payment->amount = $request->amount;
