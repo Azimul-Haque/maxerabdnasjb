@@ -119,7 +119,7 @@ class IndexController extends Controller
             // OLD VERIFICATION METHOD
             
             $temppayment = Temppayment::where('trx_id', $request->mer_txnid)->first();
-            dd($request->all());
+            // dd($request->all());
             $payment = new Payment;
             $payment->user_id = $user_id;
             $payment->package_id = $temppayment->package_id;
