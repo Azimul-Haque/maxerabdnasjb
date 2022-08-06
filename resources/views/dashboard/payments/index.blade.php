@@ -28,7 +28,7 @@
                   <th>Payment Status</th>
                   <th>Card Type</th>
                   <th>Trx ID</th>
-                  <th>Trx ID</th>
+                  <th>Original Amount</th>
                 </thead>
               </thead>
               <tbody>
