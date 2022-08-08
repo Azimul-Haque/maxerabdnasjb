@@ -1,3 +1,3 @@
 <?php
 
-print_r($encodedSku);
+print_r($paymentdata);
