@@ -154,7 +154,8 @@ class IndexController extends Controller
             return redirect()->route('index.index');
         } else {
             // dd($request->all());
-            return view('index.payments.errors')->withPayment($request->all());
+            $paymentdata = implode('|',$request->all());
+            return view('index.payments.errors')->withPayment($paymentdata);
             Session::flash('info', 'পেমেন্ট সম্পন্ন হয়নি, অনুগ্রহ করে Contact ফর্ম এর মাধ্যমে আমাদের জানান।');
             return redirect()->route('index.index');
         }
