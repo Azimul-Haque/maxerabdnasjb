@@ -174,7 +174,7 @@ class IndexController extends Controller
     public function paymentFailed(Request $request)
     {
         Session::flash('info','পেমেন্টটি ব্যর্থ হয়েছে! অনুগ্রহ করে যোগাযোগ করুন।');
-        return view('index.payments.failed');
+        return redirect()->route('index.index');
     }
 
     // clear configs, routes and serve
