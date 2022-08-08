@@ -154,7 +154,7 @@ class IndexController extends Controller
             return redirect()->route('index.index');
         } else {
             // dd($request->all());
-            Session::flash('info', $request->all());
+            Session::flash('info', implode("|",$request->all()));
             return redirect()->route('index.index');
         }
 
