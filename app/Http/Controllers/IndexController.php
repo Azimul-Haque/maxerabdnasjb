@@ -153,7 +153,7 @@ class IndexController extends Controller
             Session::flash('swalsuccess', 'পেমেন্ট সফল হয়েছে। অ্যাপটি ব্যবহার করুন। ধন্যবাদ!');
             return redirect()->route('index.index');
         } else {
-            // dd($request->all());
+            dd($request->all());
             Session::flash('info', implode("|",$request->all()));
             return redirect()->route('index.index');
         }
