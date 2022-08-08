@@ -156,7 +156,7 @@ class IndexController extends Controller
             // dd($request->all());
             $paymentdata = json_encode($request->all());
             Session::flash('swalsuccess', $paymentdata);
-            Session::flash('swalwarning', 'পেমেন্ট সম্পন্ন হয়নি, অনুগ্রহ করে Contact ফর্ম এর মাধ্যমে আমাদের জানান।');
+            Session::flash('info', 'পেমেন্ট সম্পন্ন হয়নি, অনুগ্রহ করে Contact ফর্ম এর মাধ্যমে আমাদের জানান।');
             return redirect()->route('index.index');
         }
 
