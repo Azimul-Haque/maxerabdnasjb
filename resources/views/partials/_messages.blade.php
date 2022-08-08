@@ -52,3 +52,23 @@
     })
   </script>
 @endif
+
+@if(session('swalwarning'))
+  <script type="text/javascript">
+    Swal.fire({
+      icon: 'warning',
+      title: '{{ session('swalwarning') }}',
+      showConfirmButton: false,
+      footer: '<a href="https://play.google.com/store/apps/details?id=com.orbachinujbuk.bcs_constitution&amp;pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank"><img alt="Get it on Google Play" class="img-responsive" style="max-width: 250px; width: auto;" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"></a>'
+    })
+  </script>
+@endif
+
+@if(session('swalsuccess'))
+  <script type="text/javascript">
+    Swal.fire({
+      icon: 'success',
+      title: '{{ session('swalsuccess') }}',
+    })
+  </script>
+@endif

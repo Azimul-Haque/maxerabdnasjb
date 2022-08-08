@@ -204,7 +204,7 @@
           </div>
           <div class="row">
             <div class="col-md-12">
-              <img src="{{ asset('images/Footer-Logo.png') }}">
+              <img src="{{ asset('images/Footer-Logo.png') }}" onmousedown="return false;" onselectstart="return false;">
             </div>
           </div>
         </div>
