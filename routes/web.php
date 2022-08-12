@@ -23,6 +23,7 @@ Route::get('/payment/failed', 'IndexController@paymentFailed')->name('index.paym
 Route::get('/payment/fail', 'IndexController@paymentFailed')->name('index.payment.failed');
 Route::post('/payment/success', 'IndexController@paymentSuccess')->name('index.payment.success');
 Route::post('/payment/app/confirm', 'IndexController@paymentSuccessApp')->name('index.payment.success.app');
+Route::get('/payment/app/cancel', 'IndexController@paymentCancel')->name('index.payment.cancel');
 
 // Clear Route
 Route::get('/clear', ['as'=>'clear','uses'=>'IndexController@clear']);
