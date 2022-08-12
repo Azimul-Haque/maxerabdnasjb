@@ -253,6 +253,7 @@ class APIController extends Controller
         ));
 
         $user = User::where('mobile', substr($request->user_number, -11))->first();
+        return $user->name;
         $package = Package::findOrFail($request->package_id);
         if($request->softtoken == 'Rifat.Admin.2022') {
             if($user) {
