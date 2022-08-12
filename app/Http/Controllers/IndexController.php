@@ -184,7 +184,6 @@ class IndexController extends Controller
     public function paymentSuccessApp(Request $request)
     {
         
-        $user_id = $request->get('opt_a');
         
         if($request->get('pay_status') == 'Failed') {
             Session::flash('info', 'পেমেন্ট সম্পন্ন হয়নি, আবার চেষ্টা করুন!');
@@ -200,7 +199,7 @@ class IndexController extends Controller
             $temppayment = Temppayment::where('trx_id', $request->mer_txnid)->first();
             // dd($request->all());
             $payment = new Payment;
-            $payment->user_id = $user_id;
+            $payment->user_id = $temppayment->user_id;
             $payment->package_id = $temppayment->package_id;
             $payment->uid = $temppayment->uid;
             $payment->payment_status = 1;
