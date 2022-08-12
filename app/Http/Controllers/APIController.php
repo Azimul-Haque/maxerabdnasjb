@@ -10,6 +10,7 @@ use App\Courseexam;
 use App\Examquestion;
 use App\Topic;
 use App\Package;
+use App\Temppayment;
 use Hash;
 use Carbon\Carbon;
 
