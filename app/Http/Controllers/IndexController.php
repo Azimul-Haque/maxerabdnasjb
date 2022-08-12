@@ -241,10 +241,11 @@ class IndexController extends Controller
         // } 
     }
 
-    
+
 
     public function paymentCancelApp(Request $request)
     {
+        echo 'পেমেন্টটি ক্যানসেল করা হয়েছে!';
         Session::flash('info','পেমেন্টটি ক্যানসেল করা হয়েছে!');
     }
 
