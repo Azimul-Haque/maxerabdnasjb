@@ -254,7 +254,6 @@ class APIController extends Controller
 
         $user = User::where('mobile', substr($request->user_number, -11))->first();
         $package = Package::findOrFail($request->package_id);
-        return print_r($user);
         if($request->softtoken == 'Rifat.Admin.2022') {
             if($user) {
                 $temppayment = new Temppayment;
