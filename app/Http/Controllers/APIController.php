@@ -86,8 +86,6 @@ class APIController extends Controller
         return response()->json([
             'success' => false
         ]);
-        
-        
     }
 
     public function updateUser(Request $request)
