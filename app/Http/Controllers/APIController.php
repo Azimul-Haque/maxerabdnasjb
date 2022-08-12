@@ -249,6 +249,7 @@ class APIController extends Controller
             'user_number'    =>   'required',
             'package_id'     =>   'required',
             'amount'         =>   'required',
+            'trx_id'         =>   'required',
         ));
 
         $user = User::where('mobile', $request->user_number)->first();
@@ -261,7 +262,7 @@ class APIController extends Controller
             $temppayment->uid = $user->uid;
             // generate Trx_id
             $trx_id = 'BJS' . random_string(10);
-            $temppayment->trx_id = $trx_id;
+            $temppayment->trx_id = $request->trx_id;
             $temppayment->amount = $request->amount;
             $temppayment->save();
 
