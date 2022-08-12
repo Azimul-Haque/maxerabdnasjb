@@ -241,4 +241,40 @@ class APIController extends Controller
             ]);
         }
     }
+
+    public function paymentProceed(Request $request)
+    {
+        $this->validate($request,array(
+            'user_number'    =>   'required',
+            'package_id'     =>   'required',
+            'amount'         =>   'required',
+        ));
+
+        $user = User::where('mobile', $request->user_number)->first();
+        $package = Package::findOrFail($request->package_id);
+
+        if($user) {
+            $temppayment = new Temppayment;
+            $temppayment->user_id = $user->id;
+            $temppayment->package_id = $request->package_id;
+            $temppayment->uid = $user->uid;
+            // generate Trx_id
+            $trx_id = 'BJS' . random_string(10);
+            $temppayment->trx_id = $trx_id;
+            $temppayment->amount = $request->amount;
+            $temppayment->save();
+
+            Session::flash('info','পেমেন্টটি সম্পন্ন করুন!');
+            return view('index.payments.paynow')
+                            ->withUser($user)
+                            ->withAmount($request->amount)
+                            ->withPackagedesc($package->name . ' - ' . $package->duration . ' - ৳ ' . $package->price)
+                            ->withTrxid($trx_id);
+        } else {
+            // Session::flash('warning','নাম্বারটি পাওয়া যায়নি! অ্যাপে গিয়ে রেজিস্ট্রেশন করুন।');
+            Session::flash('swalwarning','নাম্বারটি পাওয়া যায়নি! অ্যাপে গিয়ে রেজিস্ট্রেশন করুন।');
+            // Session::flash('swalwarningappling','https://play.google.com/store/apps/details?id=com.orbachinujbuk.bcs_constitution&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1');
+            return redirect()->route('index.index');
+        }
+    }
 }
