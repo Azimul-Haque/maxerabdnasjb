@@ -31,3 +31,4 @@ Route::get('/getothercourses/exams/{softtoken}/{coursetype}', 'APIController@get
 Route::get('/getcourses/exam/{softtoken}/{id}/questions', 'APIController@getCourseExamQuestions')->name('api.getcourses.exam.questions');
 Route::get('/gettopics/{softtoken}', 'APIController@getTopics')->name('api.gettopics');
 Route::get('/getpackages/{softtoken}', 'APIController@getPackages')->name('api.getpackages');
+Route::get('/payment/proceed/{softtoken}', 'APIController@getPackages')->name('api.getpackages');
