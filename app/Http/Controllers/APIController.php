@@ -252,7 +252,7 @@ class APIController extends Controller
             'trx_id'         =>   'required'
         ));
 
-        $user = User::where('mobile', $request->user_number)->first();
+        $user = User::where('mobile', substr($request->user_number, -11))->first();
         $package = Package::findOrFail($request->package_id);
 
         if($request->softtoken == 'Rifat.Admin.2022') {
