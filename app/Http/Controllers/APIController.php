@@ -261,8 +261,6 @@ class APIController extends Controller
                 $temppayment->user_id = $user->id;
                 $temppayment->package_id = $request->package_id;
                 $temppayment->uid = $user->uid;
-                // generate Trx_id
-                $trx_id = $request->trx_id;
                 $temppayment->trx_id = $request->trx_id;
                 $temppayment->amount = $request->amount;
                 $temppayment->save();
