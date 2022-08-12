@@ -183,8 +183,6 @@ class IndexController extends Controller
 
     public function paymentSuccessApp(Request $request)
     {
-        
-        
         if($request->get('pay_status') == 'Failed') {
             Session::flash('info', 'পেমেন্ট সম্পন্ন হয়নি, আবার চেষ্টা করুন!');
             return redirect()->route('index.index');
