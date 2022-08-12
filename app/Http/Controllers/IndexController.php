@@ -173,6 +173,12 @@ class IndexController extends Controller
         return redirect()->route('index.index');
     }
 
+    public function paymentCancelApp(Request $request)
+    {
+        Session::flash('info','পেমেন্টটি ক্যানসেল করা হয়েছে!');
+        return redirect()->route('index.index');
+    }
+
     public function paymentFailed(Request $request)
     {
         Session::flash('info','পেমেন্টটি ব্যর্থ হয়েছে! অনুগ্রহ করে যোগাযোগ করুন।');
