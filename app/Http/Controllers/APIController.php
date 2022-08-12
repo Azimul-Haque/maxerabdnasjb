@@ -249,7 +249,7 @@ class APIController extends Controller
             'user_number'    =>   'required',
             'package_id'     =>   'required',
             'amount'         =>   'required',
-            'trx_id'         =>   'required',
+            'trx_id'         =>   'required'
         ));
 
         $user = User::where('mobile', $request->user_number)->first();
