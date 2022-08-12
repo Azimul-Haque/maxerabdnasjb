@@ -267,12 +267,9 @@ class APIController extends Controller
                 $temppayment->amount = $request->amount;
                 $temppayment->save();
 
-                Session::flash('info','পেমেন্টটি সম্পন্ন করুন!');
-                return view('index.payments.paynow')
-                                ->withUser($user)
-                                ->withAmount($request->amount)
-                                ->withPackagedesc($package->name . ' - ' . $package->duration . ' - ৳ ' . $package->price)
-                                ->withTrxid($trx_id);
+                return response()->json([
+                    'success' => true
+                ]);
             } else {
                 return response()->json([
                     'success' => false
