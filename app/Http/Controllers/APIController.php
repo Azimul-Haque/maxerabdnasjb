@@ -274,11 +274,14 @@ class APIController extends Controller
                                 ->withPackagedesc($package->name . ' - ' . $package->duration . ' - ৳ ' . $package->price)
                                 ->withTrxid($trx_id);
             } else {
-                // Session::flash('warning','নাম্বারটি পাওয়া যায়নি! অ্যাপে গিয়ে রেজিস্ট্রেশন করুন।');
-                Session::flash('swalwarning','নাম্বারটি পাওয়া যায়নি! অ্যাপে গিয়ে রেজিস্ট্রেশন করুন।');
-                // Session::flash('swalwarningappling','https://play.google.com/store/apps/details?id=com.orbachinujbuk.bcs_constitution&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1');
-                return redirect()->route('index.index');
+                return response()->json([
+                    'success' => false
+                ]);
             }
+        } else {
+            return response()->json([
+                'success' => false
+            ]);
         }
         
     }
