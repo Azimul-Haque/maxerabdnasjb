@@ -207,7 +207,7 @@ class IndexController extends Controller
             $payment->store_amount = $request->store_amount;
             $payment->save();
 
-            $user = User::findOrFail($user_id);
+            $user = User::findOrFail($temppayment->user_id);
             $current_package_date = Carbon::parse($user->package_expiry_date);
             $package = Package::findOrFail($temppayment->package_id);
             if($current_package_date->greaterThanOrEqualTo(Carbon::now())) {
