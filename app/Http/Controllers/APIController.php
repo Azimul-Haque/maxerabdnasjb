@@ -21,9 +21,9 @@ class APIController extends Controller
          dd('name');
     }
 
-    public function checkUid($softtoken, $uid)
+    public function checkUid($softtoken, $phonenumber)
     {
-        $user = User::where('uid', $uid)->first();
+        $user = User::where('uid', $phonenumber)->first();
 
         if($user && $softtoken == 'Rifat.Admin.2022')
         {
