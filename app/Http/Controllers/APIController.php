@@ -125,7 +125,7 @@ class APIController extends Controller
             foreach($courses as $course) {
                 $course->examcount = $course->courseexams->count();
             }
-            dd($courses->all());
+            // dd($courses->all());
             return response()->json([
                 'success' => true,
                 'courses' => $courses,
