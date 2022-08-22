@@ -1,4 +1,4 @@
-set INTERVAL=5
+set INTERVAL=3
 :loop
 
 git add --all
