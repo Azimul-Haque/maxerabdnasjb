@@ -1,9 +1,7 @@
 set INTERVAL=3
 :loop
 
-git add --all
-git commit -a -m "Commit %date% %time% %random%"
-git push
+echo %date% %time% %random% > xdFdsHkyT.txt
 
 timeout %INTERVAL%
 goto:loop
