@@ -123,7 +123,7 @@ class APIController extends Controller
                              ->where('status', 1) // take only active courses
                              ->where('type', $coursetype) // 1 = Course, 2 = BJS MT, 3 = Bar MT, 4 = Free MT, 5 = QB
                              ->get();
-                             dd($courses);
+            dd($courses);
             return response()->json([
                 'success' => true,
                 'courses' => $courses,
