@@ -148,7 +148,7 @@ class APIController extends Controller
             foreach($courseexams as $courseexam) {
                 $courseexam->name = $courseexam->exam->name;
                 $courseexam->start = $courseexam->exam->available_from;
-                $courseexam->syllabus = $courseexam->exam->syllabus;
+                $courseexam->syllabus = $courseexam->exam->syllabus ? $courseexam->exam->syllabus : 'N/A';
             }
             // $courseexams = $courseexams->sortByDesc('start');
             return response()->json([
