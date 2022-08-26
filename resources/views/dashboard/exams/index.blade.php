@@ -212,7 +212,7 @@
                                                         </div>
                                                         <div class="col-md-12">
                                                             <div class="input-group mb-3">
-                                                                <textarea class="form-control" name="syllabus" style="height: 150px;" placeholder="সিলেবাস লিখুন (যদি থাকে)" required>{!! str_replace('<br />', "", $school->admit_card_texts) !!}</textarea>
+                                                                <textarea class="form-control" name="syllabus" style="height: 150px;" placeholder="সিলেবাস লিখুন (যদি থাকে)" required>{!! str_replace('<br />', "", $exam->syllabus) !!}</textarea>
                                                             </div>
                                                         </div>
                                                     </div>
