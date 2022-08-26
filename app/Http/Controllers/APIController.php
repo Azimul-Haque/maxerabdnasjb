@@ -149,7 +149,7 @@ class APIController extends Controller
                 $courseexam->name = $courseexam->exam->name;
                 $courseexam->start = $courseexam->exam->available_from;
             }
-            $courseexams = $courseexams->sortBy('start');
+            $courseexams = $courseexams->orderBy('start', 'DESC');
             return response()->json([
                 'success' => true,
                 'exams' => $courseexams,
