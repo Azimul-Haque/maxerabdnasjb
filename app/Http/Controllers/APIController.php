@@ -149,7 +149,7 @@ class APIController extends Controller
                 $courseexam->name = $courseexam->exam->name;
                 $courseexam->start = $courseexam->exam->available_from;
             }
-
+            $courseexams = $courseexams->sortBy('start');
             return response()->json([
                 'success' => true,
                 'exams' => $courseexams,
@@ -161,7 +161,7 @@ class APIController extends Controller
         }
     }
 
-    
+
 
     public function getOtherCourseExams($softtoken, $coursetype)
     {
