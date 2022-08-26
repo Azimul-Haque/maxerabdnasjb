@@ -103,6 +103,7 @@ class ExamController extends Controller
         $exam->price_type = $request->price_type;
         $exam->available_from = Carbon::parse($request->available_from);
         $exam->available_to = Carbon::parse($request->available_to);
+        $exam->syllabus = $request->syllabus;
         $exam->save();
 
         Session::flash('success', 'Exam created successfully!');
