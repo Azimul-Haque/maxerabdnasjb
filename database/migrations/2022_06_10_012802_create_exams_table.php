@@ -23,6 +23,7 @@ class CreateExamsTable extends Migration
             $table->integer('price_type');
             $table->date('available_from');
             $table->date('available_to');
+            $table->text('syllabus');
             $table->timestamps();
         });
     }
