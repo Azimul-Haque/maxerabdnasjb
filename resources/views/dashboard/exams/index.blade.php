@@ -485,10 +485,7 @@
                         </div>
                         <div class="col-md-12">
                             <div class="input-group mb-3">
-                                <input type="text" name="available_to" id="available_to" value="{{ old('available_to') }}" class="form-control" autocomplete="off" placeholder="চালু থাকবে (পর্যন্ত)" required>
-                                <div class="input-group-append">
-                                    <div class="input-group-text"><span class="fas fa-calendar-minus"></span></div>
-                                </div>
+                                <textarea class="form-control" style="height: 150px;"></textarea>
                             </div>
                         </div>
                     </div>
