@@ -203,7 +203,7 @@ class APIController extends Controller
                                      ->get();
 
             foreach($examquestions as $examquestion) {
-                $examquestion->question = $examquestion->question->makeHidden(['id', 'topic_id', 'difficulty', 'created_at', 'updated_at']);
+                $examquestion->question = $examquestion->question->makeHidden(['topic_id', 'difficulty', 'created_at', 'updated_at']);
             }
 
             return response()->json([
