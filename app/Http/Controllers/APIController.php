@@ -180,7 +180,7 @@ class APIController extends Controller
                 $courseexam->name = $courseexam->exam->name;
                 $courseexam->start = $courseexam->exam->available_from;
                 $courseexam->syllabus = $courseexam->exam->syllabus ? $courseexam->exam->syllabus : 'N/A';
-
+                $courseexam->exam->makeHidden('examcategory_id', 'created_at', 'updated_at');
             }
 
             return response()->json([
