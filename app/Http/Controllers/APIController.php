@@ -200,7 +200,7 @@ class APIController extends Controller
         {
             $examquestions = Examquestion::select('exam_id', 'question_id')
                                      ->where('exam_id', $id)
-                                     ->get();
+                                     ->get()
 
             foreach($examquestions as $examquestion) {
                 $examquestion->question = $examquestion->question->makeHidden(['id', 'topic_id', 'difficulty', 'created_at', 'updated_at']);
