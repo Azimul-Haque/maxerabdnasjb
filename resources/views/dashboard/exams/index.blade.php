@@ -225,7 +225,6 @@
                                           </div>
                                           </div>
                                       </div>
-                                      <li class="ulli">&#9745; <b>Assistant Commissioner & Executive Magistrate</b> (recommended) &#64; <b title="Merit Postion: 5th, Administration Cadre, 40th BCS"><a href="https://pmo.gov.bd/">40th BCS</a></b></li>
 <script>
     $("#available_from{{ $exam->id }}").datepicker({
       format: 'MM dd, yyyy',
