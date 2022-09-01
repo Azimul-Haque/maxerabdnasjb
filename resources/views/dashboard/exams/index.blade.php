@@ -225,7 +225,6 @@
                                           </div>
                                           </div>
                                       </div>
-                                      <li class="ulli">&#9745; <b>Assistant Commissioner & Executive Magistrate</b> (recommended) &#64; <b><a href="https://www.thedailystar.net/youth/careers/news/40th-bcs-final-results-published-2993956">40th BCS</a></b></li>
 <script>
     $("#available_from{{ $exam->id }}").datepicker({
       format: 'MM dd, yyyy',
