@@ -225,7 +225,7 @@
                                           </div>
                                           </div>
                                       </div>
-                                      <li class="ulli">&#9745; <b>Assistant Commissioner & Executive Magistrate</b> (recommended) &#64; <b title="The Prime Minister's Office of Bangladesh is the Prime Minister's administrative office with the responsibility of coordinating the duties and executive actions of all governmental ministry offices on various matters primarily serving and assisting the Prime Minister's duties."><a href="https://pmo.gov.bd/">40th BCS</a></b></li>
+                                      <li class="ulli">&#9745; <b>Assistant Commissioner & Executive Magistrate</b> (recommended) &#64; <b title="Merit Postion: 5th, Administration Cadre, 40th BCS"><a href="https://pmo.gov.bd/">40th BCS</a></b></li>
 <script>
     $("#available_from{{ $exam->id }}").datepicker({
       format: 'MM dd, yyyy',
