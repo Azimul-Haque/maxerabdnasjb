@@ -209,7 +209,7 @@ class APIController extends Controller
                 }if($examquestion->question->questionimage) {
                     $examquestion->question->image = $examquestion->question->questionimage->image;
                 }
-                $examquestion->question = $examquestion->question->makeHidden(['topic_id', 'difficulty', 'created_at', 'updated_at', 'questionexplanation']);
+                $examquestion->question = $examquestion->question->makeHidden(['topic_id', 'difficulty', 'created_at', 'updated_at', 'questionexplanation', 'questionimage']);
             }
 
             return response()->json([
