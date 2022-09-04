@@ -204,9 +204,9 @@ class APIController extends Controller
 
             foreach($examquestions as $examquestion) {
                 $examquestion = $examquestion->makeHidden(['question_id']);
-                if($examquestion->question->questionexplanation) {
-                    $examquestion->question->explanation = $examquestion->question->questionexplanation->explanation;
-                }
+                // if($examquestion->question->questionexplanation) {
+                //     $examquestion->question->explanation = $examquestion->question->questionexplanation->explanation;
+                // }
                 $examquestion->question = $examquestion->question->makeHidden(['topic_id', 'difficulty', 'created_at', 'updated_at', 'questionexplanation']);
             }
 
