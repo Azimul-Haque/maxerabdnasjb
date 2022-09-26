@@ -37,7 +37,7 @@
                 	<tr>
                 		<td>
                 			<a href="{{ route('dashboard.users.single', $user->id) }}">{{ $user->name }}</a>
-                      {{ $user->payments->count() }} বার প্যাকেজ কিনেছেন
+                      <small>({{ $user->payments->count() }} বার প্যাকেজ কিনেছেন)</small>
                 			<br/>
                             {{-- {{ $user->balances2 }} --}}
                 			<small class="text-black-50">{{ $user->mobile }}</small> 
