@@ -103,7 +103,7 @@
             				                    <input type="password"
             				                           name="password"
             				                           class="form-control"
-            				                           autocomplete="off"
+            				                           autocomplete="new-password"
             				                           placeholder="পাসওয়ার্ড (ঐচ্ছিক)">
             				                    <div class="input-group-append">
             				                        <div class="input-group-text"><span class="fas fa-lock"></span></div>
