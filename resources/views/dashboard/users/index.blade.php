@@ -101,7 +101,8 @@
 
                                     <div class="input-group mb-3">
                                         <input type="text"
-                                               name="mobile"
+                                               name="packageexpirydate"
+                                               id="packageexpirydate" 
                                                value="{{ $user->mobile }}"
                                                autocomplete="off"
                                                class="form-control"
