@@ -300,9 +300,7 @@ class APIController extends Controller
     {
         $this->validate($request,array(
             'user_id'    =>   'required',
-            'message'     =>   'required',
-            'amount'         =>   'required',
-            'trx_id'         =>   'required'
+            'message'    =>   'required',
         ));
 
         $user = User::where('mobile', substr($request->user_number, -11))->first();
