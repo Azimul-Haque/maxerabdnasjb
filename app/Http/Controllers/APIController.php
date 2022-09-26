@@ -308,22 +308,8 @@ class APIController extends Controller
         $message->message = $request->message;
         $message->save();
         
-        if($request->softtoken == 'Rifat.Admin.2022') {
-            if($user) {
-                
-
-                return response()->json([
-                    'success' => true
-                ]);
-            } else {
-                return response()->json([
-                    'success' => false
-                ]);
-            }
-        } else {
-            return response()->json([
-                'success' => false
-            ]);
-        }
+        return response()->json([
+            'success' => true
+        ]);
     }
 }
