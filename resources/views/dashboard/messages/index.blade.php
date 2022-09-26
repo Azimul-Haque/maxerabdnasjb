@@ -38,7 +38,7 @@
                     <td>{{ $message->user->payments->count() }} বার কিনেছেন</td>
                     <td>{{ $message->message }}</td>
                 		
-                		<td align="right" width="40%">
+                		<td align="right">
                 			<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal{{ $message->id }}">
                 				<i class="fas fa-trash-alt"></i>
                 			</button>
