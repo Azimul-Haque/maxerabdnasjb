@@ -64,7 +64,7 @@
 <li class="nav-item">
     <a href="{{ route('dashboard.messages') }}" class="nav-link {{ Request::is('dashboard/messages') ? 'active' : '' }} {{ Request::is('dashboard/messages/*') ? 'active' : '' }}">
         <i class="nav-icon fas fa-layer-group"></i>
-        <p>মেসেজসমূ</p>
+        <p>মেসেজসমূহ</p>
     </a>
 </li>
 @endif
