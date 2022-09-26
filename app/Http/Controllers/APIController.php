@@ -295,12 +295,12 @@ class APIController extends Controller
             ]);
         }
     }
-    
+
     public function storeMessage(Request $request)
     {
         $this->validate($request,array(
-            'user_number'    =>   'required',
-            'package_id'     =>   'required',
+            'user_id'    =>   'required',
+            'message'     =>   'required',
             'amount'         =>   'required',
             'trx_id'         =>   'required'
         ));
