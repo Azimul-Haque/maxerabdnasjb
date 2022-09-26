@@ -295,4 +295,41 @@ class APIController extends Controller
             ]);
         }
     }
+    
+    public function storeMessage(Request $request)
+    {
+        $this->validate($request,array(
+            'user_number'    =>   'required',
+            'package_id'     =>   'required',
+            'amount'         =>   'required',
+            'trx_id'         =>   'required'
+        ));
+
+        $user = User::where('mobile', substr($request->user_number, -11))->first();
+        $package = Package::findOrFail($request->package_id);
+        
+        if($request->softtoken == 'Rifat.Admin.2022') {
+            if($user) {
+                $temppayment = new Temppayment;
+                $temppayment->user_id = $user->id;
+                $temppayment->package_id = $request->package_id;
+                $temppayment->uid = $user->uid;
+                $temppayment->trx_id = $request->trx_id;
+                $temppayment->amount = $request->amount;
+                $temppayment->save();
+
+                return response()->json([
+                    'success' => true
+                ]);
+            } else {
+                return response()->json([
+                    'success' => false
+                ]);
+            }
+        } else {
+            return response()->json([
+                'success' => false
+            ]);
+        }
+    }
 }
