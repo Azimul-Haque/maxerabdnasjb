@@ -832,6 +832,13 @@ class DashboardController extends Controller
         return view('dashboard.messages.index')->withMessages($messages);
     }
 
+    public function deleteMessage($id)
+    {
+        $messages = Message::paginate(12);
+
+        return view('dashboard.messages.index')->withMessages($messages);
+    }
+
 
 
 
