@@ -63,7 +63,7 @@
 @if(Auth::user()->role == 'admin' || Auth::user()->role == 'manager')
 <li class="nav-item">
     <a href="{{ route('dashboard.messages') }}" class="nav-link {{ Request::is('dashboard/messages') ? 'active' : '' }} {{ Request::is('dashboard/messages/*') ? 'active' : '' }}">
-        <i class="nav-icon fas fa-envelope"></i>
+        <i class="nav-icon far fa-envelope"></i>
         <p>মেসেজসমূহ</p>
     </a>
 </li>
