@@ -340,6 +340,4 @@
         //     }
         // });
     </script>
-
-    
 @endsection
