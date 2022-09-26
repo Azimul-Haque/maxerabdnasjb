@@ -101,6 +101,9 @@ Route::post('/dashboard/categories/store', 'DashboardController@storeCategory')-
 Route::post('/dashboard/categories/{id}/update', 'DashboardController@updateCategory')->name('dashboard.categories.update');
 
 Route::get('/dashboard/monthly', 'DashboardController@getMonthly')->name('dashboard.monthly');
+Route::get('/dashboard/messages', 'DashboardController@getMessages')->name('dashboard.deposit.getlist');
+
+
 
 Route::get('/dashboard/creditors', 'DashboardController@getCreditors')->name('dashboard.creditors');
 Route::get('/dashboard/creditors/{id}', 'DashboardController@getSingleCreditor')->name('dashboard.creditors.single');
