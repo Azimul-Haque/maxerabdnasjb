@@ -43,8 +43,8 @@
                 				<i class="fas fa-trash-alt"></i>
                 			</button>
                 		</td>
-                        {{-- Delete Package Modal Code --}}
-                        {{-- Delete Package Modal Code --}}
+                        {{-- Delete Modal Code --}}
+                        {{-- Delete Modal Code --}}
                         <!-- Modal -->
                         <div class="modal fade" id="deleteModal{{ $message->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true" data-backdrop="static">
                           <div class="modal-dialog" role="document">
@@ -69,8 +69,8 @@
                             </div>
                           </div>
                         </div>
-                        {{-- Delete Package Modal Code --}}
-                        {{-- Delete Package Modal Code --}}
+                        {{-- Delete Modal Code --}}
+                        {{-- Delete Modal Code --}}
                 	</tr>
                 @endforeach
               </tbody>
