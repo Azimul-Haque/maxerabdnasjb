@@ -299,12 +299,14 @@ class APIController extends Controller
     public function storeMessage(Request $request)
     {
         $this->validate($request,array(
-            'user_id'    =>   'required',
+            'mobile'    =>   'required',
             'message'    =>   'required',
         ));
 
+        $user = User::where('mobile', $request->mobile)->first();
+
         $message = new Message;
-        $message->user_id = $request->user_id;
+        $message->user_id = $user->id;
         $message->message = $request->message;
         $message->save();
         
