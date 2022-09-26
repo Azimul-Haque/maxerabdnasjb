@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\User;
 use App\Package;
 use App\Payment;
+use App\Message;
 
 use Carbon\Carbon;
 use DB;
