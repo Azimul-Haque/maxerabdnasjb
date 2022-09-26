@@ -60,13 +60,9 @@
                                 <table class="table table-bordered">
                                   <tr>
                                     <td><b>{{ $message->user->name }}</b></td>
-                                    <td><b>{{ $message->message }}</td>
+                                    <td>{{ $message->message }}</td>
                                   </tr>
                                 </table>
-                                <center>
-                                    <big><b>{{ $message->user->name }}</b></big><br/>
-                                    <span>৳ {{ $message->message }}</span>
-                                </center>
                               </div>
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
