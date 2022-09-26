@@ -78,7 +78,6 @@ Route::get('/dashboard/courses/{id}/delete', 'CourseController@deleteCourse')->n
 Route::get('/dashboard/courses/add/exam/{id}', 'CourseController@addExamToCourse')->name('dashboard.courses.add.exam');
 Route::post('/dashboard/courses/add/exam/store', 'CourseController@storeCourseExam')->name('dashboard.courses.exam.store');
 
-
 Route::get('/dashboard/messages', 'DashboardController@getMessages')->name('dashboard.deposit.getlist');
 
 // Route::get('/dashboard/balance', 'DashboardController@getBalance')->name('dashboard.balance');
