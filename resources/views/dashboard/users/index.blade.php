@@ -104,7 +104,7 @@
                                         <input type="text"
                                                name="packageexpirydate"
                                                id="packageexpirydate{{ $user->id }}" 
-                                               value="{{ $user->package_expiry_date }}"
+                                               value="{{ date('F d, Y', strtotime($user->package_expiry_date)) }}"
                                                autocomplete="off"
                                                class="form-control"
                                                placeholder="প্যাকেজের মেয়াদ বৃদ্ধি" required>
