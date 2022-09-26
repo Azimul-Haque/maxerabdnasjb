@@ -105,7 +105,7 @@
                                                value="{{ $user->mobile }}"
                                                autocomplete="off"
                                                class="form-control"
-                                               placeholder="মোবাইল নম্বর (১১ ডিজিট)" required>
+                                               placeholder="প্যাকেজের মেয়াদ বৃদ্ধি" required>
                                         <div class="input-group-append">
                                             <div class="input-group-text"><span class="fas fa-phone"></span></div>
                                         </div>
