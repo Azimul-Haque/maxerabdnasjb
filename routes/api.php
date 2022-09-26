@@ -32,3 +32,5 @@ Route::get('/getcourses/exam/{softtoken}/{id}/questions', 'APIController@getCour
 Route::get('/gettopics/{softtoken}', 'APIController@getTopics')->name('api.gettopics');
 Route::get('/getpackages/{softtoken}', 'APIController@getPackages')->name('api.getpackages');
 Route::post('/payment/proceed', 'APIController@paymentProceed')->name('api.paymentproceed');
+
+Route::post('/message/store', 'APIController@storeMessage')->name('api.paymentproceed');
