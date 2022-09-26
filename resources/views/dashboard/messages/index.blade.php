@@ -35,6 +35,7 @@
                     <td>{{ $message->user->name }}</td>
                     <td>{{ $message->user->mobile }}</td>
                     <td>{{ $message->user->payments->count() }} বার কিনেছেন</td>
+                    <td>{{ $message->message }}</td>
                 		<td>
                 			{{ $message->name }}
                       <span class="badge bg-info"><strike>৳ {{ $message->strike_price }}</strike></span>
