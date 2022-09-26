@@ -57,6 +57,12 @@
                               </div>
                               <div class="modal-body">
                                 আপনি কি নিশ্চিতভাবে এই প্যাকেজটি ডিলেট করতে চান?<br/>
+                                <table class="table table-bordered">
+                                  <tr>
+                                    <td><b>{{ $message->user->name }}</b></td>
+                                    <td><b>{{ $message->message }}</td>
+                                  </tr>
+                                </table>
                                 <center>
                                     <big><b>{{ $message->user->name }}</b></big><br/>
                                     <span>৳ {{ $message->message }}</span>
