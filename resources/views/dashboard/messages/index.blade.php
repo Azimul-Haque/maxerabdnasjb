@@ -30,30 +30,30 @@
                 </tr>
               </thead>
               <tbody>
-                @foreach($packages as $package)
+                @foreach($messages as $message)
                 	<tr>
                 		<td>
-                			{{ $package->name }}
-                      <span class="badge bg-info"><strike>৳ {{ $package->strike_price }}</strike></span>
-                      <span class="badge bg-success">৳ {{ $package->price }}</span>
-                      @if($package->status == 1)
+                			{{ $message->name }}
+                      <span class="badge bg-info"><strike>৳ {{ $message->strike_price }}</strike></span>
+                      <span class="badge bg-success">৳ {{ $message->price }}</span>
+                      @if($message->status == 1)
                         <span class="badge bg-primary">Active</span>
                       @endif
-                      @if($package->suggested == 1)
+                      @if($message->suggested == 1)
                         <span class="badge bg-warning"><i class="fas fa-bolt"></i></span>
                       @endif
                 			<br/>
-                			<small class="text-black-50">{{ $package->tagline }}</small> 
+                			<small class="text-black-50">{{ $message->tagline }}</small> 
                 		</td>
                 		<td align="right" width="40%">
-                			<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deletePackageModal{{ $package->id }}">
+                			<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deletePackageModal{{ $message->id }}">
                 				<i class="fas fa-trash-alt"></i>
                 			</button>
                 		</td>
                         {{-- Delete Package Modal Code --}}
                         {{-- Delete Package Modal Code --}}
                         <!-- Modal -->
-                        <div class="modal fade" id="deletePackageModal{{ $package->id }}" tabindex="-1" role="dialog" aria-labelledby="deletePackageModalLabel" aria-hidden="true" data-backdrop="static">
+                        <div class="modal fade" id="deletePackageModal{{ $message->id }}" tabindex="-1" role="dialog" aria-labelledby="deletePackageModalLabel" aria-hidden="true" data-backdrop="static">
                           <div class="modal-dialog" role="document">
                             <div class="modal-content">
                               <div class="modal-header bg-danger">
@@ -65,13 +65,13 @@
                               <div class="modal-body">
                                 আপনি কি নিশ্চিতভাবে এই প্যাকেজটি ডিলেট করতে চান?<br/>
                                 <center>
-                                    <big><b>{{ $package->name }}</b></big><br/>
-                                    <span>৳ {{ $package->price }}</span>
+                                    <big><b>{{ $message->name }}</b></big><br/>
+                                    <span>৳ {{ $message->price }}</span>
                                 </center>
                               </div>
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-                                <a href="{{ route('dashboard.users.delete', $package->id) }}" class="btn btn-danger">ডিলেট করুন</a>
+                                <a href="{{ route('dashboard.users.delete', $message->id) }}" class="btn btn-danger">ডিলেট করুন</a>
                               </div>
                             </div>
                           </div>
