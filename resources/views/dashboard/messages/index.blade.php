@@ -48,8 +48,6 @@
                 			<small class="text-black-50">{{ $package->tagline }}</small> 
                 		</td>
                 		<td align="right" width="40%">
-                			
-
                 			<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deletePackageModal{{ $package->id }}">
                 				<i class="fas fa-trash-alt"></i>
                 			</button>
