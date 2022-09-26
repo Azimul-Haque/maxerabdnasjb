@@ -107,7 +107,7 @@
                                                class="form-control"
                                                placeholder="প্যাকেজের মেয়াদ বৃদ্ধি" required>
                                         <div class="input-group-append">
-                                            <div class="input-group-text"><span class="fas fa-phone"></span></div>
+                                            <div class="input-group-text"><span class="fas fa-calendar-check"></span></div>
                                         </div>
                                     </div>
 
