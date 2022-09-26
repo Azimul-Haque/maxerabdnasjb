@@ -25,6 +25,7 @@
                 <tr>
                   <th>নাম</th>
                   <th>যোগাযোগ</th>
+                  <th>প্যাকেজ</th>
                 </tr>
               </thead>
               <tbody>
