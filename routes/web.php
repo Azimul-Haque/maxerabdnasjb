@@ -78,6 +78,9 @@ Route::get('/dashboard/courses/{id}/delete', 'CourseController@deleteCourse')->n
 Route::get('/dashboard/courses/add/exam/{id}', 'CourseController@addExamToCourse')->name('dashboard.courses.add.exam');
 Route::post('/dashboard/courses/add/exam/store', 'CourseController@storeCourseExam')->name('dashboard.courses.exam.store');
 
+
+Route::get('/dashboard/messages', 'DashboardController@getMessages')->name('dashboard.deposit.getlist');
+
 // Route::get('/dashboard/balance', 'DashboardController@getBalance')->name('dashboard.balance');
 // Route::post('/dashboard/balance/store', 'DashboardController@storeBalance')->name('dashboard.balance.store');
 // Route::get('/dashboard/balance/{id}/delete', 'DashboardController@deleteBalance')->name('dashboard.balance.delete');
@@ -101,7 +104,6 @@ Route::post('/dashboard/categories/store', 'DashboardController@storeCategory')-
 Route::post('/dashboard/categories/{id}/update', 'DashboardController@updateCategory')->name('dashboard.categories.update');
 
 Route::get('/dashboard/monthly', 'DashboardController@getMonthly')->name('dashboard.monthly');
-Route::get('/dashboard/messages', 'DashboardController@getMessages')->name('dashboard.deposit.getlist');
 
 
 
