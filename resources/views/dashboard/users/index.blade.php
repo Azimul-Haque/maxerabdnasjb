@@ -102,7 +102,7 @@
                                     <div class="input-group mb-3">
                                         <input type="text"
                                                name="packageexpirydate"
-                                               id="packageexpirydate" 
+                                               id="packageexpirydate{{ $user->id }}" 
                                                value="{{ $user->package_expiry_date }}"
                                                autocomplete="off"
                                                class="form-control"
@@ -172,7 +172,7 @@
                   <script type="text/javascript" src="{{ asset('js/bootstrap-datepicker.min.js') }}"></script>
                   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
                   <script>
-                    $("#packageexpirydate").datepicker({
+                    $("#packageexpirydate{{ $user->id }}").datepicker({
                       format: 'MM dd, yyyy',
                       todayHighlight: true,
                       autoclose: true,
