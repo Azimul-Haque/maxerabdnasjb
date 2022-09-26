@@ -39,18 +39,18 @@
                     <td>{{ $message->message }}</td>
                 		
                 		<td align="right" width="40%">
-                			<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deletePackageModal{{ $message->id }}">
+                			<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal{{ $message->id }}">
                 				<i class="fas fa-trash-alt"></i>
                 			</button>
                 		</td>
                         {{-- Delete Package Modal Code --}}
                         {{-- Delete Package Modal Code --}}
                         <!-- Modal -->
-                        <div class="modal fade" id="deletePackageModal{{ $message->id }}" tabindex="-1" role="dialog" aria-labelledby="deletePackageModalLabel" aria-hidden="true" data-backdrop="static">
+                        <div class="modal fade" id="deleteModal{{ $message->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true" data-backdrop="static">
                           <div class="modal-dialog" role="document">
                             <div class="modal-content">
                               <div class="modal-header bg-danger">
-                                <h5 class="modal-title" id="deletePackageModalLabel">প্যাকেজ ডিলেট</h5>
+                                <h5 class="modal-title" id="deleteModalLabel">প্যাকেজ ডিলেট</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
                                 </button>
