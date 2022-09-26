@@ -824,6 +824,15 @@ class DashboardController extends Controller
         return redirect()->route('dashboard.creditors.single', $due->creditor_id);
     }
 
+    public function getMessages()
+    {
+        $due = Due::find($id);
+        $due->delete();
+
+        Session::flash('success', 'Due deleted successfully!');
+        return redirect()->route('dashboard.creditors.single', $due->creditor_id);
+    }
+
 
 
 
