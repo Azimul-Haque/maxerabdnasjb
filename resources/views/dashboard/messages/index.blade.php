@@ -56,7 +56,7 @@
                                 </button>
                               </div>
                               <div class="modal-body">
-                                আপনি কি নিশ্চিতভাবে এই প্যাকেজটি ডিলেট করতে চান?<br/>
+                                আপনি কি নিশ্চিতভাবে এই প্যাকেজটি ডিলেট করতে চান?<br/><br/>
                                 b>{{ $message->user->name }}</b>
                                 {{ $message->message }}
                                 {{-- <table class="table table-bordered">
