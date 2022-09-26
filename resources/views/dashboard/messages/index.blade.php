@@ -27,6 +27,7 @@
                   <th>যোগাযোগ</th>
                   <th>প্যাকেজ</th>
                   <th>মেসেজ</th>
+                  <th>Action</th>
                 </tr>
               </thead>
               <tbody>
@@ -36,19 +37,7 @@
                     <td>{{ $message->user->mobile }}</td>
                     <td>{{ $message->user->payments->count() }} বার কিনেছেন</td>
                     <td>{{ $message->message }}</td>
-                		<td>
-                			{{ $message->name }}
-                      <span class="badge bg-info"><strike>৳ {{ $message->strike_price }}</strike></span>
-                      <span class="badge bg-success">৳ {{ $message->price }}</span>
-                      @if($message->status == 1)
-                        <span class="badge bg-primary">Active</span>
-                      @endif
-                      @if($message->suggested == 1)
-                        <span class="badge bg-warning"><i class="fas fa-bolt"></i></span>
-                      @endif
-                			<br/>
-                			<small class="text-black-50">{{ $message->tagline }}</small> 
-                		</td>
+                		
                 		<td align="right" width="40%">
                 			<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deletePackageModal{{ $message->id }}">
                 				<i class="fas fa-trash-alt"></i>
