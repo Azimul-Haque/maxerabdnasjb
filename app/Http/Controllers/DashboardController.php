@@ -829,7 +829,7 @@ class DashboardController extends Controller
     {
         $messages = Message::paginate(12);
 
-        return view('dashboard.messages')->withMessages($messages);
+        return view('dashboard.messages.index')->withMessages($messages);
     }
 
 
