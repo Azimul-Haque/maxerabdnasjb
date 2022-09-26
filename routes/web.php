@@ -115,7 +115,7 @@ Route::get('/dashboard/creditors/due/{id}/delete', 'DashboardController@deleteCr
 Route::get('/dashboard/expenses/{transactiondate}/{user}', 'ExpenseController@getTodaysExpenseList')->name('dashboard.expenses.getlist');
 Route::get('/dashboard/deposit/{transactiondate}/{user}', 'ExpenseController@getTodaysDepositList')->name('dashboard.deposit.getlist');
 
-Route::get('/dashboard/messages', 'ExpenseController@getTodaysDepositList')->name('dashboard.deposit.getlist');
+Route::get('/dashboard/messages', 'ExpenseController@getMessages')->name('dashboard.deposit.getlist');
 
 // COMPONENTS
 Route::get('/dashboard/components', 'DashboardController@getComponents')->name('dashboard.components');
