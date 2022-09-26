@@ -21,6 +21,12 @@
           <!-- /.card-header -->
           <div class="card-body p-0">
             <table class="table">
+              <thead>
+                <tr>
+                  <th>নাম</th>
+                  <th>যোগাযোগ</th>
+                </tr>
+              </thead>
               <tbody>
                 @foreach($packages as $package)
                 	<tr>
