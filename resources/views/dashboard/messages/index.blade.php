@@ -57,12 +57,14 @@
                               </div>
                               <div class="modal-body">
                                 আপনি কি নিশ্চিতভাবে এই প্যাকেজটি ডিলেট করতে চান?<br/>
-                                <table class="table table-bordered">
+                                b>{{ $message->user->name }}</b>
+                                {{ $message->message }}
+                                {{-- <table class="table table-bordered">
                                   <tr>
-                                    <td><b>{{ $message->user->name }}</b></td>
-                                    <td>{{ $message->message }}</td>
+                                    <td><</td>
+                                    <td></td>
                                   </tr>
-                                </table>
+                                </table> --}}
                               </div>
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
