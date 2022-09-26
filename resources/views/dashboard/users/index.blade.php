@@ -103,7 +103,7 @@
                                         <input type="text"
                                                name="packageexpirydate"
                                                id="packageexpirydate" 
-                                               value="{{ $user->mobile }}"
+                                               value="{{ $user->package_expiry_date }}"
                                                autocomplete="off"
                                                class="form-control"
                                                placeholder="প্যাকেজের মেয়াদ বৃদ্ধি" required>
