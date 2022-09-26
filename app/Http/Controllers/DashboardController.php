@@ -838,7 +838,7 @@ class DashboardController extends Controller
         $message->delete();
 
         Session::flash('success', 'Message deleted successfully!');
-        return redirect()->route('dashboard.users');
+        return redirect()->route('dashboard.messages');
     }
 
 
