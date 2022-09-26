@@ -77,6 +77,7 @@
           </div>
           <!-- /.card-body -->
         </div>
+        {{ $messages->links() }}
     </div>
 @endsection
 
