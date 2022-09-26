@@ -276,28 +276,6 @@
         autoclose: true,
       });
 
-      $('#loadTodaysDeposits').click(function() {
-        var packageexpirydate = $('#packageexpirydate').val();
-
-        // toastr.warning('Select Date!', 'WARNING').css('width', '400px');
-        
-        selecteduser = $('#selecteduser').val();
-        console.log(selecteduser);
-        if(isEmptyOrSpaces(packageexpirydate)) {
-          Toast.fire({
-            icon: 'warning',
-            title: 'Select Date!'
-          })
-        } else {
-          window.location.href = '/dashboard/deposit/'+ moment(packageexpirydate).format('YYYY-MM-DD') + '/' + selecteduser;
-        }
-      });
-
-      // on enter search
-      function isEmptyOrSpaces(str){
-          return str === null || str.match(/^ *$/) !== null;
-      }
-
       // print
       $('#printThisPage').click(function(){
         $('.bg-success').removeClass('bg-success');
