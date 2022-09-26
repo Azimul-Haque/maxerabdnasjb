@@ -270,26 +270,26 @@
     <script type="text/javascript" src="{{ asset('js/bootstrap-datepicker.min.js') }}"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script>
-      $("#transactiondate").datepicker({
+      $("#packageexpirydate").datepicker({
         format: 'MM dd, yyyy',
         todayHighlight: true,
         autoclose: true,
       });
 
       $('#loadTodaysDeposits').click(function() {
-        var transactiondate = $('#transactiondate').val();
+        var packageexpirydate = $('#packageexpirydate').val();
 
         // toastr.warning('Select Date!', 'WARNING').css('width', '400px');
         
         selecteduser = $('#selecteduser').val();
         console.log(selecteduser);
-        if(isEmptyOrSpaces(transactiondate)) {
+        if(isEmptyOrSpaces(packageexpirydate)) {
           Toast.fire({
             icon: 'warning',
             title: 'Select Date!'
           })
         } else {
-          window.location.href = '/dashboard/deposit/'+ moment(transactiondate).format('YYYY-MM-DD') + '/' + selecteduser;
+          window.location.href = '/dashboard/deposit/'+ moment(packageexpirydate).format('YYYY-MM-DD') + '/' + selecteduser;
         }
       });
 
