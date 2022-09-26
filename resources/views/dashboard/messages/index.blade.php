@@ -32,6 +32,9 @@
               <tbody>
                 @foreach($messages as $message)
                 	<tr>
+                    <td>
+                      {{ $message->user->name }}
+                    </td>
                 		<td>
                 			{{ $message->name }}
                       <span class="badge bg-info"><strike>৳ {{ $message->strike_price }}</strike></span>
