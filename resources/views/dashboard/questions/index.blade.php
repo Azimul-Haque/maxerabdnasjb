@@ -548,7 +548,7 @@
                             <div class="input-group mb-3">
                                 <select name="difficulty" class="form-control" required>
                                     <option selected="" disabled="" value="">ডিফিকাল্টি লেভেল</option>
-                                    <option value="1">সহজ</option>
+                                    <option value="1" selected>সহজ</option>
                                     <option value="2">মধ্যম</option>
                                     <option value="3">কঠিন</option>
                                 </select>
