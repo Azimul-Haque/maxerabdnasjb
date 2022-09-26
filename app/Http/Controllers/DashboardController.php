@@ -829,7 +829,7 @@ class DashboardController extends Controller
     {
         $messages = Message::paginate(12);
 
-        return view('creditors.adddue')->withCreditors($creditors);
+        return view('dashboard.messages')->withCreditors($creditors);
     }
 
 
