@@ -23,10 +23,8 @@
             <table class="table">
               <thead>
                 <tr>
-                  <th>নাম</th>
-                  <th>যোগাযোগ</th>
-                  <th>প্যাকেজ</th>
-                  <th>মেসেজ</th>
+                  <th>ধরন</th>
+                  <th>নোটিফিকেশন</th>
                   <th>Action</th>
                 </tr>
               </thead>
