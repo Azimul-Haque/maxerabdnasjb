@@ -110,6 +110,7 @@
                       <div class="input-group mb-3">
                           <input type="text"
                                  name="headings"
+                                 id="headings" 
                                  class="form-control"
                                  placeholder="হেডিংস" required>
                           <div class="input-group-append">
