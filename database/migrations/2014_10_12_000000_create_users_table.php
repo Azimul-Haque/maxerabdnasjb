@@ -16,6 +16,7 @@ class CreateUsersTable extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('uid')->nullable();
+            $table->string('onesignal_id')->nullable();
             $table->string('name');
             $table->string('role')->default('user');
             $table->string('mobile')->unique();
