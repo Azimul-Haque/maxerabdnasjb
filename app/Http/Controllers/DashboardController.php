@@ -870,7 +870,7 @@ class DashboardController extends Controller
     {
         $notifications = s::paginate(12);
 
-        return view('dashboard.messages.index')->withMessages($messages);
+        return view('dashboard.notifications.index')->withNotifications($notifications);
     }
 
 
