@@ -857,7 +857,7 @@ class DashboardController extends Controller
                 $headings = $request->headings,
             );
 
-        Session::flash('success', 'Message deleted successfully!');
+        Session::flash('success', 'Notification sent successfully!');
         return redirect()->route('dashboard.messages');
     }
 
