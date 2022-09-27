@@ -881,17 +881,7 @@ class DashboardController extends Controller
             'message'      => 'required',
         ));
 
-        if($request->type == 'all')
-        {
-            OneSignal::sendNotificationToAll(
-                $request->message,
-                $url = null, 
-                $data = null, 
-                $buttons = null, 
-                $schedule = null,
-                $headings = $request->headings,
-            );
-        } elseif($request->type == 'premium') {
+        if($request->type == 'premium') {
             $tags = array();
             // dd($tags);
             OneSignal::sendNotificationUsingTags(
@@ -900,6 +890,18 @@ class DashboardController extends Controller
                 $url = null,
                 $data = null,
                 $buttons = null,
+                $schedule = null,
+                $headings = $request->headings,
+            );
+        } elseif($request->type == 'premium') {
+
+        } else
+        {
+            OneSignal::sendNotificationToAll(
+                $request->message,
+                $url = null, 
+                $data = null, 
+                $buttons = null, 
                 $schedule = null,
                 $headings = $request->headings,
             );
