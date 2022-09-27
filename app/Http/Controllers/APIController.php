@@ -116,6 +116,7 @@ class APIController extends Controller
                 'success' => true
             ]);
         } else {
+            DB::commit();
             return response()->json([
                 'success' => false
             ]);
