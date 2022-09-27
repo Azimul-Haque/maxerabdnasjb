@@ -128,7 +128,8 @@
                       </div>
                       <div style="margin: 10px; padding: 10px; border: 1px solid #9C9FA0; border-radius: 10px;">
                         <small><span class="fas fa-bell"></span> BJS & Bar Exam</small><br/>
-                        asd
+                        <span id="headingstext"></span>
+                        <span id="headingstext"></span>
                       </div>
                 </div>
                 <div class="modal-footer">
