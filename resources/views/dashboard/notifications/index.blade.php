@@ -72,15 +72,16 @@
                                       <input type="hidden" name="headings" value="{{ $notification->headings }}">
                                       <input type="hidden" name="message" value="{{ $notification->message }}">
                                       <div class="modal-body">
-                                        আপনি কি নিশ্চিতভাবে এই নোটিফিকেশনটি আবার পাঠাতে চান?<br/>
-                                        @if($notification->type == 'premium')
-                                          <i class="far fa-gem"></i> প্রিমিয়াম
-                                        @elseif($notification->type == 'free')
-                                          <i class="fas fa-receipt"></i> ফ্রি
-                                        @else
-                                          <i class="fas fa-users"></i> সবাই
-                                        @endif
-                                        <br/>
+                                        আপনি কি নিশ্চিতভাবে এই নোটিফিকেশনটি আবার পাঠাতে চান?<br/><br/>
+                                        <center>
+                                          @if($notification->type == 'premium')
+                                            <i class="far fa-gem"></i> প্রিমিয়াম
+                                          @elseif($notification->type == 'free')
+                                            <i class="fas fa-receipt"></i> ফ্রি
+                                          @else
+                                            <i class="fas fa-users"></i> সবাই
+                                          @endif
+                                        </center>
                                         <div style="margin: 30px; padding: 10px; border: 1px solid #007BFF; border-radius: 10px;">
                                           <small style="color: #7A7B7D;"><span class="fas fa-bell"></span> BJS & Bar Exam</small><br/>
                                           <b><span>{{ $notification->headings }}</span></b><br/>
