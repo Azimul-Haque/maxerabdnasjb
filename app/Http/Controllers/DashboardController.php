@@ -876,11 +876,9 @@ class DashboardController extends Controller
     public function sendNotification(Request $request)
     {
         $this->validate($request,array(
-            'mobile'               => 'required',
-            'onesignal_id'         => 'required',
+            'type'         => 'required',
             'headings'             => 'required',
             'message'              => 'required',
-            'softtoken'            => 'required|max:191'
         ));
 
         if($request->softtoken == 'Rifat.Admin.2022')

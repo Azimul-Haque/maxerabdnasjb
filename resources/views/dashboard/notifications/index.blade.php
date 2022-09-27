@@ -97,7 +97,7 @@
                 <div class="modal-body">
                       @csrf
                       <div class="input-group mb-3">
-                        <select name="role" class="form-control" required>
+                        <select name="type" class="form-control" required>
                           <option disabled="" value="" selected>ধরন নির্ধারণ করুন</option>
                           <option value="premium">প্রিমিয়াম ব্যবহারকারী</option>
                           <option value="free">ফ্রি ব্যবহারকারী</option>
