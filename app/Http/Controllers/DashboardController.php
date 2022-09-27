@@ -901,7 +901,7 @@ class DashboardController extends Controller
             // dd($tags['field']);
             OneSignal::sendNotificationUsingTags(
                 "Some Message",$request->message,
-                $tags
+                $tags,
                 $url = null,
                 $data = null,
                 $buttons = null,
