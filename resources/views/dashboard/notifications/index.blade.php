@@ -37,6 +37,7 @@
                         <tr>
                           <td>{{ $notification->type }}</td>
                           <td>{{ $notification->headings }}<br/>{{ $notification->message }}</td>
+                          <td>{{ date('F d, Y H:m a', strtotime($notification->created_at)) }}</td>
                           
                           <td align="right">
                             <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#copyModal{{ $notification->id }}" rel="tooltip" title="পুনরায় ব্যবহার করুন"><i class="fas fa-copy"></i>
