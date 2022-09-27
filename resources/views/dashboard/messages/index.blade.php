@@ -27,6 +27,7 @@
                   <th>যোগাযোগ</th>
                   <th>প্যাকেজ</th>
                   <th>মেসেজ</th>
+                  <th>সময়</th>
                   <th>Action</th>
                 </tr>
               </thead>
