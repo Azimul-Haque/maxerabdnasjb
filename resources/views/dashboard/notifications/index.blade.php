@@ -59,6 +59,7 @@
                                       </button>
                                     </div>
                                     <form method="post" action="{{ route('dashboard.notifications.sendagain') }}">
+                                      @csrf
                                       <input type="hidden" name="type" value="{{ $notification->type }}">
                                       <input type="hidden" name="headings" value="{{ $notification->headings }}">
                                       <input type="hidden" name="message" value="{{ $notification->message }}">
