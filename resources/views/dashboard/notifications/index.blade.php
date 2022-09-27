@@ -125,7 +125,7 @@
                               <div class="input-group-text"><span class="fas fa-spa"></span></div>
                           </div>
                       </div>
-                      AASd
+                      <div>asd</div>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
