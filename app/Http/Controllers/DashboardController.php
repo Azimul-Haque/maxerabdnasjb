@@ -931,7 +931,7 @@ class DashboardController extends Controller
         return redirect()->route('dashboard.notifications');
     }
 
-    public function sendAgainNotification($id)
+    public function sendAgainNotification(Request $request)
     {
         $this->validate($request,array(
             'type'         => 'required',
