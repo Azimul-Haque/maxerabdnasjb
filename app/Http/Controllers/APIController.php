@@ -111,7 +111,7 @@ class APIController extends Controller
             $user->uid = $request->uid;
             $user->onesignal_id = $request->onesignal_id;
             $user->save();
-
+            DB::commit();
             return response()->json([
                 'success' => true
             ]);
