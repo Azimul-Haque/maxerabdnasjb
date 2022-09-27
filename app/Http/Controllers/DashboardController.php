@@ -846,7 +846,16 @@ class DashboardController extends Controller
     public function sendSingleNotification(Request $request, $id)
     {
         $user = User::find($id);
-        
+
+        OneSignal::sendNotificationToUser(
+                $request->message,
+                $user->onesignal_id,
+                $url = null, 
+                $data = null,
+                $buttons = null, 
+                $schedule = null,
+                $headings = $request->headings,
+            );
 
         Session::flash('success', 'Message deleted successfully!');
         return redirect()->route('dashboard.messages');
