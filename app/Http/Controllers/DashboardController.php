@@ -8,6 +8,7 @@ use App\User;
 use App\Package;
 use App\Payment;
 use App\Message;
+use App\Notification;
 
 use Carbon\Carbon;
 use DB;
@@ -867,7 +868,7 @@ class DashboardController extends Controller
 
     public function getNotifications()
     {
-        $messages = Message::paginate(12);
+        $notifications = s::paginate(12);
 
         return view('dashboard.messages.index')->withMessages($messages);
     }
