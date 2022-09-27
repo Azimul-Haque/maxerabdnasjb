@@ -59,20 +59,20 @@
                                       </button>
                                     </div>
                                     <form method="post" action="{{ route('dashboard.notifications.send') }}">
-                                    <div class="modal-body">
-                                      আপনি কি নিশ্চিতভাবে এই নোটিফিকেশনটি আবার পাঠাতে চান?<br/><br/>
-                                      <div style="margin: 30px; padding: 10px; border: 1px solid #007BFF; border-radius: 10px;">
-                                        <small style="color: #7A7B7D;"><span class="fas fa-bell"></span> BJS & Bar Exam</small><br/>
-                                        <b><span>{{ $notification->headings }}</span></b><br/>
-                                        <span>{{ $notification->message }}</span>
+                                      <div class="modal-body">
+                                        আপনি কি নিশ্চিতভাবে এই নোটিফিকেশনটি আবার পাঠাতে চান?<br/><br/>
+                                        <div style="margin: 30px; padding: 10px; border: 1px solid #007BFF; border-radius: 10px;">
+                                          <small style="color: #7A7B7D;"><span class="fas fa-bell"></span> BJS & Bar Exam</small><br/>
+                                          <b><span>{{ $notification->headings }}</span></b><br/>
+                                          <span>{{ $notification->message }}</span>
+                                        </div>
+                                        
                                       </div>
-                                      
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-                                      <a href="{{ route('dashboard.notifications.sendagain', $notification->id) }}" class="btn btn-warning">আবার পাঠান</a>
-                                    </div>
-                                  </form>
+                                      <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
+                                        <a href="{{ route('dashboard.notifications.sendagain', $notification->id) }}" class="btn btn-warning">আবার পাঠান</a>
+                                      </div>
+                                    </form>
                                   </div>
                                 </div>
                               </div>
