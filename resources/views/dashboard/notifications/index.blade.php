@@ -59,7 +59,7 @@
                                       </button>
                                     </div>
                                     <div class="modal-body">
-                                      আপনি কি নিশ্চিতভাবে এই নোটিফিকেশনটি আবার পাঠাতে?<br/><br/>
+                                      আপনি কি নিশ্চিতভাবে এই নোটিফিকেশনটি আবার পাঠাতে চান?<br/><br/>
                                       <div style="margin: 30px; padding: 10px; border: 1px solid #007BFF; border-radius: 10px;">
                                         <small style="color: #7A7B7D;"><span class="fas fa-bell"></span> BJS & Bar Exam</small><br/>
                                         <b><span>{{ $notification->headings }}</span></b><br/>
