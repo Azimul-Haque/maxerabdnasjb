@@ -346,13 +346,8 @@ class APIController extends Controller
             $user->mobile = substr($request->mobile, -11);
             $user->password = Hash::make('12345678');
             $user->save();
-            DB::commit();
-            return response()->json([
-                'success' => true
-            ]);
-        }
-
-        OneSignal::sendNotificationToUser(
+            
+            OneSignal::sendNotificationToUser(
             "ব্যয় করেছেনঃ " . Auth::user()->name . ', খাতঃ ' . $category_data[1],
             ["a1050399-4f1b-4bd5-9304-47049552749c", "82e84884-917e-497d-b0f5-728aff4fe447"],
             $url = null, 
@@ -361,5 +356,8 @@ class APIController extends Controller
             $schedule = null,
             $headings = $site_data[1] ."-এ ৳ " . bangla($request->amount) . " ব্যয় করা হয়েছে!"
         );
+        }
+
+        
     }
 }
