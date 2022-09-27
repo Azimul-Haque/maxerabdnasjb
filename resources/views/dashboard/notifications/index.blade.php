@@ -14,7 +14,7 @@
 
             <div class="card-tools">
             	<button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#newNotifModal" title="" rel="tooltip" data-original-title="নতুন নোটিফিকেশন">
-            		<i class="fas fa-clipboard-check"></i> নতুন নোটিফিকেশন
+            		<i class="fas fa-bell"></i> নতুন নোটিফিকেশন
             	</button>
             </div>
           </div>
