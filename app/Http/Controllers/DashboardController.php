@@ -891,6 +891,7 @@ class DashboardController extends Controller
                 $schedule = null,
                 $headings = $request->headings,
             );
+        }
 
     }
 
