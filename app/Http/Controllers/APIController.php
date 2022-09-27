@@ -107,7 +107,7 @@ class APIController extends Controller
 
         if($user && $request->softtoken == 'Rifat.Admin.2022')
         {
-            
+
             $user->name = $request->name;
             $user->uid = $request->uid;
             $user->onesignal_id = $request->onesignal_id;
@@ -115,7 +115,7 @@ class APIController extends Controller
             // DB::commit();
             return response()->json([
                 'success' => true
-            ]);
+            ]); 
         } else {
             // DB::commit();
             return response()->json([
