@@ -933,10 +933,50 @@ class DashboardController extends Controller
 
     public function sendAgainNotification($id)
     {
-        $notification = Notification::find($id);
-        $notification->delete();
+        $this->validate($request,array(
+            'type'         => 'required',
+            'headings'     => 'required',
+            'message'      => 'required',
+        ));
 
-        Session::flash('success', 'Notification deleted successfully!');
+        if($request->type == 'premium') {
+            OneSignal::sendNotificationUsingTags(
+                $request->message,
+                array(['field' => 'tag', 'key' => 'user_type', 'relation' => 'equal', 'value' => 'Premium']),
+                $url = null,
+                $data = null,
+                $buttons = null,
+                $schedule = null,
+                $headings = $request->headings,
+            );
+        } elseif($request->type == 'free') {
+            OneSignal::sendNotificationUsingTags(
+                $request->message,
+                array(['field' => 'tag', 'key' => 'user_type', 'relation' => 'not_exists']),
+                $url = null,
+                $data = null,
+                $buttons = null,
+                $schedule = null,
+                $headings = $request->headings,
+            );
+        } else {
+            OneSignal::sendNotificationToAll(
+                $request->message,
+                $url = null, 
+                $data = null, 
+                $buttons = null, 
+                $schedule = null,
+                $headings = $request->headings,
+            );
+        }
+
+        $notification = new Notification;
+        $notification->type = $request->type;
+        $notification->headings = $request->headings;
+        $notification->message = $request->message;
+        $notification->save();
+
+        Session::flash('success', 'নোটিফিকেশন সফলভাবে পাঠানো হয়েছে!');
         return redirect()->route('dashboard.notifications');
     }
 
