@@ -45,7 +45,7 @@
                 		</td>
                 		<td align="right" width="40%">
                       <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#NotifModal{{ $user->id }}">
-                        <i class="fas fa-user-edit"></i>
+                        <i class="fas fa-bell"></i>
                       </button>
                       {{-- Notif Modal Code --}}
                       {{-- Notif Modal Code --}}
