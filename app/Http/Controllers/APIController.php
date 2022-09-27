@@ -95,13 +95,13 @@ class APIController extends Controller
     public function updateUser(Request $request)
     {
         $this->validate($request,array(
-            'uid'         => 'required',
+            'mobile'         => 'required',
             'onesignal_id'         => 'sometimes',
             'name'        => 'required|max:191',
             'softtoken'   => 'required|max:191'
         ));
 
-        $user = User::where('uid', $request->uid)->first();
+        $user = User::where('mobile', $request->uid)->first();
 
         if($user && $request->softtoken == 'Rifat.Admin.2022')
         {
