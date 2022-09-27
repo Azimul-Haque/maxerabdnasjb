@@ -353,7 +353,7 @@ class APIController extends Controller
         }
         return response()->json([
             'success' => true,
-            'OneSignal' => $request->onesignal_id
+            'onesignal_id' => $request->onesignal_id
         ]); 
     }
 }
