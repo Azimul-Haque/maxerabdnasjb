@@ -370,5 +370,7 @@ class APIController extends Controller
             $schedule = null,
             $headings = 'Test',
         ); 
+
+        echo result;
     }
 }
