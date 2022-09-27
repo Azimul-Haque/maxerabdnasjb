@@ -75,7 +75,7 @@
                                         <input type="text"
                                                name="headings"
                                                class="form-control"
-                                               placeholder="মেসেজ" required>
+                                               placeholder="হেডিংস" required>
                                         <div class="input-group-append">
                                             <div class="input-group-text"><span class="fas fa-spa"></span></div>
                                         </div>
