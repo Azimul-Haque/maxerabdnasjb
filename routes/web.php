@@ -85,6 +85,7 @@ Route::get('/dashboard/messages/delete/{id}', 'DashboardController@deleteMessage
 
 
 Route::get('/dashboard/notifications', 'DashboardController@getNotifications')->name('dashboard.notifications');
+Route::get('/dashboard/notifications/send', 'DashboardController@getNotifications')->name('dashboard.notifications');
 
 
 
