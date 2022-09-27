@@ -37,7 +37,7 @@
                           <td>{{ $notification->headings }}<br/>{{ $notification->message }}</td>
                           
                           <td align="right">
-                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#deleteModal{{ $notification->id }}" rel="tooltip" title="" data-original-title="পরীক্ষা হালনাগাদ করুন"><i class="fas fa-copy"></i>
+                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#deleteModal{{ $notification->id }}" rel="tooltip" title="প্রশ্ন যোগ/ হালনাগাদ করুন"><i class="fas fa-copy"></i>
                             </button>
                             <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal{{ $notification->id }}">
                               <i class="fas fa-trash-alt"></i>
