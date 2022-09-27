@@ -865,7 +865,7 @@ class DashboardController extends Controller
         }
     }
 
-    public function getNotificationPage()
+    public function getNotifications()
     {
         return view('dashboard.notifications.index');
     }
