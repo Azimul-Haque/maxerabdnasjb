@@ -360,7 +360,7 @@ class APIController extends Controller
     public function testNotification()
     {
         OneSignal::sendNotificationToUser(
-            $request->message,
+            'test',
             // ["a1050399-4f1b-4bd5-9304-47049552749c", "82e84884-917e-497d-b0f5-728aff4fe447"],
             "13cc498f-ebf7-4bb1-9ea6-2c8da09e0b31",
             // $request->onesignal_id, // user theke na, direct input theke...
