@@ -14,6 +14,7 @@ use App\Temppayment;
 use App\Message;
 use Hash;
 use Carbon\Carbon;
+use DB;
 
 class APIController extends Controller
 {
