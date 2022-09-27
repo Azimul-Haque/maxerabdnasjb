@@ -59,6 +59,7 @@
                                       </button>
                                     </div>
                                     <form method="post" action="{{ route('dashboard.notifications.sendagain') }}">
+                                      <input type="hidden" name="">
                                       <div class="modal-body">
                                         আপনি কি নিশ্চিতভাবে এই নোটিফিকেশনটি আবার পাঠাতে চান?<br/><br/>
                                         <div style="margin: 30px; padding: 10px; border: 1px solid #007BFF; border-radius: 10px;">
