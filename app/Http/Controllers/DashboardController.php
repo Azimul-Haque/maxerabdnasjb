@@ -893,6 +893,9 @@ class DashboardController extends Controller
             );
         }
 
+        Session::flash('warning', 'OneSignal ID নেই');
+        return redirect()->route('dashboard.users');
+
     }
 
 
