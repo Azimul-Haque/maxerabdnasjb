@@ -69,6 +69,15 @@
 </li>
 @endif
 
+@if(Auth::user()->role == 'admin' || Auth::user()->role == 'manager')
+<li class="nav-item">
+    <a href="{{ route('dashboard.messages') }}" class="nav-link {{ Request::is('dashboard/messages') ? 'active' : '' }} {{ Request::is('dashboard/messages/*') ? 'active' : '' }}">
+        <i class="nav-icon far fa-envelope"></i>
+        <p>মেসেজসমূহ</p>
+    </a>
+</li>
+@endif
+
 {{-- <li class="nav-item">
     <a href="{{ route('dashboard.components') }}" class="nav-link {{ Request::is('dashboard/components') ? 'active' : '' }}">
         <i class="nav-icon fas fa-laptop-code"></i>
