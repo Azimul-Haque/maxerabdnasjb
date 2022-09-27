@@ -58,7 +58,7 @@
                                       <div style="margin: 10px; padding: 10px; border: 1px solid #007BFF; border-radius: 10px;">
                                         <small style="color: #7A7B7D;"><span class="fas fa-bell"></span> BJS & Bar Exam</small><br/>
                                         <b><span id="headingstext">{{ $notification->headings }}</span></b><br/>
-                                        <span id="messagetext">$notification->messaeg</span>
+                                        <span id="messagetext">{{ $notification->message }}</span>
                                       </div>
                                       
                                     </div>
