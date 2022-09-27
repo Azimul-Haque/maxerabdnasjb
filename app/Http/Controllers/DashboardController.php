@@ -895,7 +895,7 @@ class DashboardController extends Controller
             OneSignal::sendNotificationUsingTags(
                 "Some Message",$request->message,
                 array(
-                    ["field" => "tag", "key" => "user_type", "relation" => "=", "value" => "email21@example.com"],
+                    ["field" => "tag", "key" => "user_type", "relation" => "=", "value" => "Premium"],
                     ...
                 ),
                 $url = null,
