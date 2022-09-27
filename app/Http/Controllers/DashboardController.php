@@ -856,11 +856,11 @@ class DashboardController extends Controller
                 $schedule = null,
                 $headings = $request->headings,
             );  
-            
+
             Session::flash('success', 'Notification sent successfully!');
             return redirect()->route('dashboard.users');
         } else {
-            Session::flash('success', 'Notification sent successfully!');
+            Session::flash('warning', 'OneSignal ID নেই');
             return redirect()->route('dashboard.users');
         }
     }
