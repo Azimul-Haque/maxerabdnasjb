@@ -32,9 +32,7 @@
                 @foreach($notifications as $notification)
                 	<tr>
                     <td>{{ $notification->type }}</td>
-                    <td>{{ $notification->user->mobile }}</td>
-                    <td>{{ $notification->user->payments->count() }} বার কিনেছেন</td>
-                    <td>{{ $notification->message }}</td>
+                    <td>{{ $notification->headings }}<br/>{{ $notification->message }}</td>
                 		
                 		<td align="right">
                 			<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal{{ $notification->id }}">
