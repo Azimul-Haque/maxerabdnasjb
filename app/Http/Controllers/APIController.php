@@ -101,7 +101,7 @@ class APIController extends Controller
             'softtoken'   => 'required|max:191'
         ));
 
-        $user = User::where('mobile', $request->uid)->first();
+        $user = User::where('mobile', $request->mobile)->first();
 
         if($user && $request->softtoken == 'Rifat.Admin.2022')
         {
