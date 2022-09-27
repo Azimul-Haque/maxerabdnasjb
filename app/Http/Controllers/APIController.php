@@ -61,10 +61,11 @@ class APIController extends Controller
     public function addUser(Request $request)
     {
         $this->validate($request,array(
-            'uid'         => 'required|max:255|unique:users,uid',
-            'name'        => 'required|max:255',
-            'mobile'      => 'required|max:255',
-            'softtoken'   => 'required|max:255'
+            'uid'         => 'required|max:191|unique:users,uid',
+            'name'        => 'required|max:191',
+            'mobile'      => 'required|max:191',
+            'onesignal_id'      => 'sometimes|max:191',
+            'softtoken'   => 'required|max:191'
         ));
 
         if($request->softtoken == 'Rifat.Admin.2022')
@@ -94,8 +95,8 @@ class APIController extends Controller
     {
         $this->validate($request,array(
             'uid'         => 'required',
-            'name'        => 'required|max:255',
-            'softtoken'   => 'required|max:255'
+            'name'        => 'required|max:191',
+            'softtoken'   => 'required|max:191'
         ));
 
         $user = User::where('uid', $request->uid)->first();
