@@ -327,38 +327,31 @@ class APIController extends Controller
     public function sendSingleNotification(Request $request)
     {
         $this->validate($request,array(
-            'mobile'         => 'required',
+            'mobile'               => 'required',
             'onesignal_id'         => 'required',
-            'headings'        => 'required',
-            'message'      => 'required',
-            'softtoken'   => 'required|max:191'
+            'headings'             => 'required',
+            'message'              => 'required',
+            'softtoken'            => 'required|max:191'
         ));
 
         if($request->softtoken == 'Rifat.Admin.2022')
         {
-            $user = User::where('mobile', substr($request->user_number, -11))->first();
-            $user->uid = $request->uid;
-            $user->onesignal_id = $request->onesignal_id;
-            $package_expiry_date = Carbon::now()->addDays(1)->format('Y-m-d') . ' 23:59:59';
-            // dd($package_expiry_date);
-            $user->package_expiry_date = $package_expiry_date;
-            $user->name = $request->name;
-            $user->role = 'user';
-            $user->mobile = substr($request->mobile, -11);
-            $user->password = Hash::make('12345678');
-            $user->save();
+            
+            $user = User::where('mobile', substr($request->mobile, -11))->first();
             
             OneSignal::sendNotificationToUser(
-                "ব্যয় করেছেনঃ " . Auth::user()->name . ', খাতঃ ' . $category_data[1],
-                ["a1050399-4f1b-4bd5-9304-47049552749c", "82e84884-917e-497d-b0f5-728aff4fe447"],
+                $request->message,
+                // ["a1050399-4f1b-4bd5-9304-47049552749c", "82e84884-917e-497d-b0f5-728aff4fe447"],
+                $request->onesignal_id, // user theke na, direct input theke...
                 $url = null, 
                 $data = null, // array("answer" => $charioteer->answer), // to send some variable
                 $buttons = null, 
                 $schedule = null,
-                $headings = $site_data[1] ."-এ ৳ " . bangla($request->amount) . " ব্যয় করা হয়েছে!"
+                $headings = $request->headings,
             );
         }
-
-        
+        return response()->json([
+            'success' => true
+        ]); 
     }
 }
