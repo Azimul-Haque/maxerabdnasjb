@@ -858,7 +858,7 @@ class DashboardController extends Controller
             );
 
         Session::flash('success', 'Notification sent successfully!');
-        return redirect()->route('dashboard.messages');
+        return redirect()->route('dashboard.users');
     }
 
 
