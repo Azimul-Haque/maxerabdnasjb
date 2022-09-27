@@ -74,7 +74,7 @@
                                       </div>
                                       <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-                                        <abutton href="{{ route('dashboard.notifications.sendagain') }}" class="btn btn-warning">আবার পাঠান</button>
+                                        <button type="button" class="btn btn-warning">আবার পাঠান</button>
                                       </div>
                                     </form>
                                   </div>
