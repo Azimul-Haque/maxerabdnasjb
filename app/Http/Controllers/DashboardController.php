@@ -873,7 +873,7 @@ class DashboardController extends Controller
         return view('dashboard.notifications.index')->withNotifications($notifications);
     }
 
-    public function sendNotification(Request $request)
+    public function sendNotifications(Request $request)
     {
         $this->validate($request,array(
             'type'         => 'required',
