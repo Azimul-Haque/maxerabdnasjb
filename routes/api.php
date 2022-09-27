@@ -24,7 +24,7 @@ Route::get('/checkuid/{softtoken}/{phonenumber}', 'APIController@checkUid')->nam
 Route::get('/checkpackagevalidity/{softtoken}/{phonenumber}', 'APIController@checkPackageValidity')->name('api.checkpackagevalidity');
 Route::post('/adduser', 'APIController@addUser')->name('api.adduser');
 Route::post('/updateuser', 'APIController@updateUser')->name('api.updateuser');
-Route::post('/notification/single', 'APIController@updateUser')->name('api.updateuser');
+Route::post('/notification/single', 'APIController@sendSingleNotification')->name('api.updateuser');
 
 Route::get('/getcourses/{softtoken}/{coursetype}', 'APIController@getCourses')->name('api.getcourses');
 Route::get('/getcourses/exams/{softtoken}/{id}', 'APIController@getCourseExams')->name('api.getcourses.exams');
