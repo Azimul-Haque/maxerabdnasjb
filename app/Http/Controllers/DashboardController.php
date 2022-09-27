@@ -877,8 +877,8 @@ class DashboardController extends Controller
     {
         $this->validate($request,array(
             'type'         => 'required',
-            'headings'             => 'required',
-            'message'              => 'required',
+            'headings'     => 'required',
+            'message'      => 'required',
         ));
 
         if($request->type == 'all')
