@@ -31,7 +31,7 @@
               <tbody>
                 @foreach($notifications as $notification)
                 	<tr>
-                    <td>{{ $notification->user->name }}</td>
+                    <td>{{ $notification->type }}</td>
                     <td>{{ $notification->user->mobile }}</td>
                     <td>{{ $notification->user->payments->count() }} বার কিনেছেন</td>
                     <td>{{ $notification->message }}</td>
