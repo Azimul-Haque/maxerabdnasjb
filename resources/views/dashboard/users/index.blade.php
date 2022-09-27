@@ -54,7 +54,7 @@
                         <div class="modal-dialog" role="document">
                           <div class="modal-content">
                             <div class="modal-header bg-primary">
-                              <h5 class="modal-title" id="notifModalLabel">ব্যবহারকারী তথ্য হালনাগাদ</h5>
+                              <h5 class="modal-title" id="notifModalLabel">নোটিফিকেশন পাঠান</h5>
                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                               </button>
