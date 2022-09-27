@@ -37,7 +37,7 @@
                         <tr>
                           <td>
                             @if($notification->type == 'premium')
-                              <i class="far fa-gem"></i>
+                              <i class="far fa-gem"></i> প্রিমিয়াম
                             @elseif($notification->type == 'free')
 
                             @else
