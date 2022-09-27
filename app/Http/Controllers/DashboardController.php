@@ -884,11 +884,12 @@ class DashboardController extends Controller
         if($request->type == 'all')
         {
             OneSignal::sendNotificationToAll(
-                "Some Message", 
+                $request->message,
                 $url = null, 
                 $data = null, 
                 $buttons = null, 
-                $schedule = null
+                $schedule = null,
+                $headings = $request->headings,
             );
 
     }
