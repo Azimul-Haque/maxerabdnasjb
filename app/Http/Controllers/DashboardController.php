@@ -881,7 +881,7 @@ class DashboardController extends Controller
             'message'              => 'required',
         ));
 
-        if($request->softtoken == 'Rifat.Admin.2022')
+        if($request->type == 'all')
         {
 
             // $user = User::where('mobile', substr($request->mobile, -11))->first();
