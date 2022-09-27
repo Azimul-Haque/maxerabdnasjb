@@ -69,7 +69,7 @@
                                     </div>
                                     <div class="modal-footer">
                                       <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-                                      <a href="{{ route('dashboard.notifications.delete', $notification->id) }}" class="btn btn-warning">আবার পাঠান</a>
+                                      <a href="{{ route('dashboard.notifications.sendagain', $notification->id) }}" class="btn btn-warning">আবার পাঠান</a>
                                     </div>
                                   </div>
                                 </div>
