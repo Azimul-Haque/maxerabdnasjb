@@ -55,8 +55,11 @@
                                     </div>
                                     <div class="modal-body">
                                       আপনি কি নিশ্চিতভাবে এই নোটিফিকেশনটি ডিলেট করতে চান?<br/><br/>
-                                      <b>{{ $notification->user->name }}</b><br/>
-                                      {{ $notification->message }}
+                                      <div style="margin: 10px; padding: 10px; border: 1px solid #007BFF; border-radius: 10px;">
+                                        <small style="color: #7A7B7D;"><span class="fas fa-bell"></span> BJS & Bar Exam</small><br/>
+                                        <b><span id="headingstext"></span></b><br/>
+                                        <span id="messagetext"></span>
+                                      </div>
                                       
                                     </div>
                                     <div class="modal-footer">
