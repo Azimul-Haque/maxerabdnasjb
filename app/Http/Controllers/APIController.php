@@ -82,7 +82,7 @@ class APIController extends Controller
             $user->mobile = substr($request->mobile, -11);
             $user->password = Hash::make('12345678');
             $user->save();
-            
+            DB::commit();
             return response()->json([
                 'success' => true
             ]);
