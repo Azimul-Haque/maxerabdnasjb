@@ -120,6 +120,7 @@
                       <div class="input-group mb-3">
                           <input type="text"
                                  name="message"
+                                 id="message" 
                                  class="form-control"
                                  placeholder="মেসেজ" required>
                           <div class="input-group-append">
@@ -129,7 +130,7 @@
                       <div style="margin: 10px; padding: 10px; border: 1px solid #9C9FA0; border-radius: 10px;">
                         <small><span class="fas fa-bell"></span> BJS & Bar Exam</small><br/>
                         <span id="headingstext"></span>
-                        <span id="headingstext"></span>
+                        <span id="messagetext"></span>
                       </div>
                 </div>
                 <div class="modal-footer">
