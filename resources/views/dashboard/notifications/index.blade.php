@@ -151,5 +151,8 @@
         $('#headings').keyup(function () {
           $('#headingstext').text(this.value);
         });
+        $('#message').keyup(function () {
+          $('#messagetext').text(this.value);
+        });
     </script>
 @endsection
