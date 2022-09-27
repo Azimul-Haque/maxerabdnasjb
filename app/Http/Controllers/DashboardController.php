@@ -898,7 +898,7 @@ class DashboardController extends Controller
                 'relation' => '=',
                 'value' => 'Premium'
             ];
-            dd($tags);
+            // dd($tags);
             OneSignal::sendNotificationUsingTags(
                 "Some Message",$request->message,
                 $tags,
