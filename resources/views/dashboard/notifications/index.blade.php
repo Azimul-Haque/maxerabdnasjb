@@ -127,7 +127,7 @@
                               <div class="input-group-text"><span class="fas fa-spa"></span></div>
                           </div>
                       </div>
-                      <div style="margin: 10px; padding: 10px; border: 1px solid #9C9FA0; border-radius: 10px;" id="notifdemo">
+                      <div style="margin: 10px; padding: 10px; border: 1px solid #007BFF; border-radius: 10px;" id="notifdemo">
                         <small><span class="fas fa-bell"></span> BJS & Bar Exam</small><br/>
                         <b><span id="headingstext"></span></b><br/>
                         <span id="messagetext"></span>
