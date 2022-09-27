@@ -893,6 +893,12 @@ class DashboardController extends Controller
             );
         }
 
+        $notification = new Notification;
+        $notification->type = $request->type;
+        $notification->headings = $request->headings;
+        $notification->message = $request->message;
+        $notification->save();
+
         Session::flash('warning', 'নোটিফিকেশন সফলভাবে পাঠানো হয়েছে!');
         return redirect()->route('dashboard.notifications');
 
