@@ -59,7 +59,8 @@
                                       </button>
                                     </div>
                                     <form method="post" action="{{ route('dashboard.notifications.sendagain') }}">
-                                      <input type="hidden" name="">
+                                      <input type="hidden" name="type" value="{{ $notification->type }}">
+                                      <input type="hidden" name="type" value="{{ $notification->type }}">
                                       <div class="modal-body">
                                         আপনি কি নিশ্চিতভাবে এই নোটিফিকেশনটি আবার পাঠাতে চান?<br/><br/>
                                         <div style="margin: 30px; padding: 10px; border: 1px solid #007BFF; border-radius: 10px;">
@@ -71,7 +72,7 @@
                                       </div>
                                       <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-                                        <a href="{{ route('dashboard.notifications.sendagain', $notification->id) }}" class="btn btn-warning">আবার পাঠান</a>
+                                        <a href="{{ route('dashboard.notifications.sendagain') }}" class="btn btn-warning">আবার পাঠান</a>
                                       </div>
                                     </form>
                                   </div>
