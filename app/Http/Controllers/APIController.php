@@ -364,7 +364,8 @@ class APIController extends Controller
             $url = null, 
             $data = null, 
             $buttons = null, 
-            $schedule = null
+            $schedule = null,
+            $headings = 'Test',
         );
         OneSignal::sendNotificationToUser(
             'test',
