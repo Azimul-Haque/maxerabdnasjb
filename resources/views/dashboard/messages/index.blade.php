@@ -38,7 +38,7 @@
                     <td>{{ $message->user->mobile }}</td>
                     <td>{{ $message->user->payments->count() }} বার কিনেছেন</td>
                     <td>{{ $message->message }}</td>
-                    <td>{{ date('F d, Y H:m A', strtotime($message->created_at)) }}</td>
+                    <td>{{ date('F d, Y h:m A', strtotime($message->created_at)) }}</td>
                 		
                 		<td align="right">
                 			<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal{{ $message->id }}">
