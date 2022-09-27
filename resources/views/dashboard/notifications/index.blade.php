@@ -39,7 +39,7 @@
                             @if($notification->type == 'premium')
                               <i class="far fa-gem"></i> প্রিমিয়াম
                             @elseif($notification->type == 'free')
-                              <i class="far fa-check-circle"></i> ফ্রি
+                              <i class="fas fa-receipt"></i> ফ্রি
                             @else
                               <i class="fas fa-certificate"></i> সবাই
                             @endif
