@@ -71,6 +71,36 @@
                               </div>
                               {{-- Delete Modal Code --}}
                               {{-- Delete Modal Code --}}
+                              {{-- Delete Modal Code --}}
+                              {{-- Delete Modal Code --}}
+                              <!-- Modal -->
+                              <div class="modal fade" id="deleteModal{{ $notification->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true" data-backdrop="static">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header bg-danger">
+                                      <h5 class="modal-title" id="deleteModalLabel">নোটিফিকেশন ডিলেট</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      আপনি কি নিশ্চিতভাবে এই নোটিফিকেশনটি ডিলেট করতে চান?<br/><br/>
+                                      <div style="margin: 30px; padding: 10px; border: 1px solid #007BFF; border-radius: 10px;">
+                                        <small style="color: #7A7B7D;"><span class="fas fa-bell"></span> BJS & Bar Exam</small><br/>
+                                        <b><span>{{ $notification->headings }}</span></b><br/>
+                                        <span>{{ $notification->message }}</span>
+                                      </div>
+                                      
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
+                                      <a href="{{ route('dashboard.notifications.delete', $notification->id) }}" class="btn btn-danger">ডিলেট করুন</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              {{-- Delete Modal Code --}}
+                              {{-- Delete Modal Code --}}
                         </tr>
                       @endforeach
                     </tbody>
