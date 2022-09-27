@@ -38,7 +38,7 @@ Route::get('/dashboard/users/{id}/single/otherpage', 'DashboardController@getUse
 Route::post('/dashboard/users/store', 'DashboardController@storeUser')->name('dashboard.users.store');
 Route::post('/dashboard/users/{id}/update', 'DashboardController@updateUser')->name('dashboard.users.update');
 Route::get('/dashboard/users/{id}/delete', 'DashboardController@deleteUser')->name('dashboard.users.delete');
-Route::get('/dashboard/users/{id}/single/notification', 'DashboardController@sendSingleNotification')->name('dashboard.users.singlenotification');
+Route::post('/dashboard/users/{id}/single/notification', 'DashboardController@sendSingleNotification')->name('dashboard.users.singlenotification');
 
 Route::get('/dashboard/payments', 'DashboardController@getPayments')->name('dashboard.payments');
 
