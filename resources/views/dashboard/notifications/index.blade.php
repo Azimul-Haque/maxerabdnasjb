@@ -84,11 +84,11 @@
     {{-- New Notif Modal Code --}}
     {{-- New Notif Modal Code --}}
     <!-- Modal -->
-    <div class="modal fade" id="addTopicModal" tabindex="-1" role="dialog" aria-labelledby="addTopicModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal fade" id="newNotifModal" tabindex="-1" role="dialog" aria-labelledby="newNotifModalLabel" aria-hidden="true" data-backdrop="static">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header bg-warning">
-              <h5 class="modal-title" id="addTopicModalLabel">নতুন ক্যাটাগরি যোগ</h5>
+              <h5 class="modal-title" id="newNotifModalLabel">নতুন ক্যাটাগরি যোগ</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
