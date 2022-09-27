@@ -35,7 +35,15 @@
                     <tbody>
                       @foreach($notifications as $notification)
                         <tr>
-                          <td>{{ $notification->type }}</td>
+                          <td>
+                            @if($notification->type == 'premium')
+
+                            @elseif($notification->type == 'free')
+
+                            @else
+
+                            @endif
+                          </td>
                           <td>{{ $notification->headings }}<br/>{{ $notification->message }}</td>
                           <td>{{ date('F d, Y H:m a', strtotime($notification->created_at)) }}</td>
                           
