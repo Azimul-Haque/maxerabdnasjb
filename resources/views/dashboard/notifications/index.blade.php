@@ -8,72 +8,77 @@
 @section('content')
 	@section('page-header') নোটিফিকেশন @endsection
     <div class="container-fluid">
-		<div class="card">
-          <div class="card-header">
-            <h3 class="card-title">নোটিফিকেশন তালিকা</h3>
+  		<div class="row">
+        <div class="col-md-9">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">নোটিফিকেশন তালিকা</h3>
 
-            <div class="card-tools">
-            	<button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#newNotifModal" title="" rel="tooltip" data-original-title="নতুন নোটিফিকেশন">
-            		<i class="fas fa-bell"></i> নতুন নোটিফিকেশন
-            	</button>
-            </div>
-          </div>
-          <!-- /.card-header -->
-          <div class="card-body p-0">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>ধরন</th>
-                  <th>নোটিফিকেশন</th>
-                  <th>Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                @foreach($notifications as $notification)
-                	<tr>
-                    <td>{{ $notification->type }}</td>
-                    <td>{{ $notification->headings }}<br/>{{ $notification->message }}</td>
-                		
-                		<td align="right">
-                			<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal{{ $notification->id }}">
-                				<i class="fas fa-trash-alt"></i>
-                			</button>
-                		</td>
-                        {{-- Delete Modal Code --}}
-                        {{-- Delete Modal Code --}}
-                        <!-- Modal -->
-                        <div class="modal fade" id="deleteModal{{ $notification->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true" data-backdrop="static">
-                          <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header bg-danger">
-                                <h5 class="modal-title" id="deleteModalLabel">মেসেজ ডিলেট</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#newNotifModal" title="" rel="tooltip" data-original-title="নতুন নোটিফিকেশন">
+                      <i class="fas fa-bell"></i> নতুন নোটিফিকেশন
+                    </button>
+                  </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body p-0">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>ধরন</th>
+                        <th>নোটিফিকেশন</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      @foreach($notifications as $notification)
+                        <tr>
+                          <td>{{ $notification->type }}</td>
+                          <td>{{ $notification->headings }}<br/>{{ $notification->message }}</td>
+                          
+                          <td align="right">
+                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal{{ $notification->id }}">
+                              <i class="fas fa-trash-alt"></i>
+                            </button>
+                          </td>
+                              {{-- Delete Modal Code --}}
+                              {{-- Delete Modal Code --}}
+                              <!-- Modal -->
+                              <div class="modal fade" id="deleteModal{{ $notification->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true" data-backdrop="static">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header bg-danger">
+                                      <h5 class="modal-title" id="deleteModalLabel">মেসেজ ডিলেট</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      আপনি কি নিশ্চিতভাবে এই প্যাকেজটি ডিলেট করতে চান?<br/><br/>
+                                      <b>{{ $notification->user->name }}</b><br/>
+                                      {{ $notification->message }}
+                                      
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
+                                      <a href="{{ route('dashboard.messages.delete', $notification->id) }}" class="btn btn-danger">ডিলেট করুন</a>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
-                              <div class="modal-body">
-                                আপনি কি নিশ্চিতভাবে এই প্যাকেজটি ডিলেট করতে চান?<br/><br/>
-                                <b>{{ $notification->user->name }}</b><br/>
-                                {{ $notification->message }}
-                                
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-                                <a href="{{ route('dashboard.messages.delete', $notification->id) }}" class="btn btn-danger">ডিলেট করুন</a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        {{-- Delete Modal Code --}}
-                        {{-- Delete Modal Code --}}
-                	</tr>
-                @endforeach
-              </tbody>
-            </table>
-          </div>
-          <!-- /.card-body -->
-        </div>
-        {{ $notifications->links() }}<br/><br/>
+                              {{-- Delete Modal Code --}}
+                              {{-- Delete Modal Code --}}
+                        </tr>
+                      @endforeach
+                    </tbody>
+                  </table>
+                </div>
+                <!-- /.card-body -->
+              </div>
+        </div>  
+        <div class="col-md-3"></div>  
+      </div>
+    {{ $notifications->links() }}<br/><br/>
     </div>
 @endsection
 
