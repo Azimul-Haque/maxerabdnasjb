@@ -893,7 +893,7 @@ class DashboardController extends Controller
                 $schedule = null,
                 $headings = $request->headings,
             );
-        } elseif($request->type == 'premium') {
+        } elseif($request->type == 'free') {
 
         } else {
             OneSignal::sendNotificationToAll(
