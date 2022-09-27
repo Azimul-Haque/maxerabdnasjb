@@ -359,7 +359,14 @@ class APIController extends Controller
 
     public function testNotification()
     {
-        $result = OneSignal::sendNotificationToUser(
+        OneSignal::sendNotificationToAll(
+           "Some Message", 
+           $url = null, 
+           $data = null, 
+           $buttons = null, 
+           $schedule = null
+        );
+        OneSignal::sendNotificationToUser(
             'test',
             // ["a1050399-4f1b-4bd5-9304-47049552749c", "82e84884-917e-497d-b0f5-728aff4fe447"],
             ["13cc498f-ebf7-4bb1-9ea6-2c8da09e0b31"],
@@ -371,6 +378,6 @@ class APIController extends Controller
             $headings = 'Test',
         ); 
 
-        echo $result;
+        
     }
 }
