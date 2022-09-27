@@ -873,7 +873,7 @@ class DashboardController extends Controller
         return view('dashboard.notifications.index')->withNotifications($notifications);
     }
 
-    public function sendNotification ()
+    public function sendNotification(Request $request)
     {
         $notifications = Notification::paginate(12);
 
