@@ -87,7 +87,7 @@ Route::get('/dashboard/messages/delete/{id}', 'DashboardController@deleteMessage
 Route::get('/dashboard/notifications', 'DashboardController@getNotifications')->name('dashboard.notifications');
 Route::post('/dashboard/notifications/send', 'DashboardController@sendNotification')->name('dashboard.notifications.send');
 Route::get('/dashboard/notifications/delete/{id}', 'DashboardController@deleteNotification')->name('dashboard.notifications.delete');
-Route::get('/dashboard/notifications/send/again', 'DashboardController@sendAgainNotification')->name('dashboard.notifications.sendagain');
+Route::post('/dashboard/notifications/send/again', 'DashboardController@sendAgainNotification')->name('dashboard.notifications.sendagain');
 
 
 
