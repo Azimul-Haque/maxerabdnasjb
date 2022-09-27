@@ -72,7 +72,7 @@
 @if(Auth::user()->role == 'admin' || Auth::user()->role == 'manager')
 <li class="nav-item">
     <a href="{{ route('dashboard.notifications') }}" class="nav-link {{ Request::is('dashboard/notifications') ? 'active' : '' }} {{ Request::is('dashboard/notification/*') ? 'active' : '' }}">
-        <i class="nav-icon far fa-bell"></i>
+        <i class="nav-icon fas fa-bell"></i>
         <p>নোটিফিকেশন</p>
     </a>
 </li>
