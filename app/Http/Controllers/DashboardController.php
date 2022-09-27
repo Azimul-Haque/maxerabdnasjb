@@ -846,7 +846,7 @@ class DashboardController extends Controller
     public function sendSingleNotification(Request $request, $id)
     {
         $user = User::find($id);
-
+        dd($user);
         OneSignal::sendNotificationToUser(
                 $request->message,
                 $user->onesignal_id,
