@@ -54,7 +54,7 @@
                                       </button>
                                     </div>
                                     <div class="modal-body">
-                                      আপনি কি নিশ্চিতভাবে এই প্যাকেজটি ডিলেট করতে চান?<br/><br/>
+                                      আপনি কি নিশ্চিতভাবে এই নোটিফিকেশনটি ডিলেট করতে চান?<br/><br/>
                                       <b>{{ $notification->user->name }}</b><br/>
                                       {{ $notification->message }}
                                       
