@@ -41,8 +41,8 @@
                               <i class="fas fa-trash-alt"></i>
                             </button>
                           </td>
-                              {{-- Delete Modal Code --}}
-                              {{-- Delete Modal Code --}}
+                              {{-- Duplicate Modal Code --}}
+                              {{-- Duplicate Modal Code --}}
                               <!-- Modal -->
                               <div class="modal fade" id="deleteModal{{ $notification->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true" data-backdrop="static">
                                 <div class="modal-dialog" role="document">
@@ -69,8 +69,8 @@
                                   </div>
                                 </div>
                               </div>
-                              {{-- Delete Modal Code --}}
-                              {{-- Delete Modal Code --}}
+                              {{-- Duplicate Modal Code --}}
+                              {{-- Duplicate Modal Code --}}
                               {{-- Delete Modal Code --}}
                               {{-- Delete Modal Code --}}
                               <!-- Modal -->
