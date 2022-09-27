@@ -900,7 +900,6 @@ class DashboardController extends Controller
             ),
             OneSignal::sendNotificationUsingTags(
                 "Some Message",$request->message,
-
                 $url = null,
                 $tags = $tags,
                 $data = null,
