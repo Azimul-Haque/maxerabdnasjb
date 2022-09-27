@@ -124,7 +124,7 @@
                           <div class="input-group-append">
                               <div class="input-group-text"><span class="fas fa-spa"></span></div>
                           </div>
-                      </div><br/>
+                      </div>
                       AASd
                 </div>
                 <div class="modal-footer">
