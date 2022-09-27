@@ -327,7 +327,7 @@ class APIController extends Controller
     public function sendSingleNotification(Request $request)
     {
         $this->validate($request,array(
-            'uid'         => 'required|max:191|unique:users,uid',
+            'mobile'         => 'required',
             'name'        => 'required|max:191',
             'mobile'      => 'required|max:191',
             'onesignal_id'      => 'sometimes|max:191',
