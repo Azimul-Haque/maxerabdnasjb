@@ -882,8 +882,6 @@ class DashboardController extends Controller
         ));
 
         if($request->type == 'premium') {
-            $tags = array();
-            // dd($tags);
             OneSignal::sendNotificationUsingTags(
                 $request->message,
                 array([ 'field' => 'tag', 'key' => 'user_type', 'relation' => '=', 'value' => 'Premium' ]),
@@ -894,7 +892,15 @@ class DashboardController extends Controller
                 $headings = $request->headings,
             );
         } elseif($request->type == 'free') {
-
+            OneSignal::sendNotificationUsingTags(
+                $request->message,
+                array([ 'field' => 'tag', 'key' => 'user_type', 'relation' => '=', 'value' => 'Premium' ]),
+                $url = null,
+                $data = null,
+                $buttons = null,
+                $schedule = null,
+                $headings = $request->headings,
+            );
         } else {
             OneSignal::sendNotificationToAll(
                 $request->message,
