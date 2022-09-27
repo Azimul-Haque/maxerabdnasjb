@@ -912,6 +912,15 @@ class DashboardController extends Controller
         return redirect()->route('dashboard.notifications');
     }
 
+    public function sendAgainNotification($id)
+    {
+        $notification = Notification::find($id);
+        $notification->delete();
+
+        Session::flash('success', 'Notification deleted successfully!');
+        return redirect()->route('dashboard.notifications');
+    }
+
 
 
 
