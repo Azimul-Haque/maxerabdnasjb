@@ -875,9 +875,30 @@ class DashboardController extends Controller
 
     public function sendNotification(Request $request)
     {
-        $notifications = Notification::paginate(12);
+        $this->validate($request,array(
+            'mobile'               => 'required',
+            'onesignal_id'         => 'required',
+            'headings'             => 'required',
+            'message'              => 'required',
+            'softtoken'            => 'required|max:191'
+        ));
 
-        return view('dashboard.notifications.index')->withNotifications($notifications);
+        if($request->softtoken == 'Rifat.Admin.2022')
+        {
+
+            // $user = User::where('mobile', substr($request->mobile, -11))->first();
+            
+            OneSignal::sendNotificationToUser(
+                $request->message,
+                // ["a1050399-4f1b-4bd5-9304-47049552749c", "82e84884-917e-497d-b0f5-728aff4fe447"],
+                $request->onesignal_id, // user theke na, direct input theke...
+                $url = null, 
+                $data = null, // array("answer" => $charioteer->answer), // to send some variable
+                $buttons = null, 
+                $schedule = null,
+                $headings = $request->headings,
+            );
+        }
     }
 
 
