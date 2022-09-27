@@ -892,7 +892,7 @@ class DashboardController extends Controller
                 $headings = $request->headings,
             );
         } elseif($request->type == 'premium') {
-            $tags = [
+            $tags = array[{"field": "tag", "key": "relation", "relation": "=", "value": "Premium"}],[
                 "field" => "tag",
                 "key" => "user_type",
                 "relation" => "=",
