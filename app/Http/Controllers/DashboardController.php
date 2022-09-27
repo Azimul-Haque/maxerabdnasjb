@@ -919,7 +919,7 @@ class DashboardController extends Controller
         $notification->message = $request->message;
         $notification->save();
 
-        Session::flash('warning', 'নোটিফিকেশন সফলভাবে পাঠানো হয়েছে!');
+        Session::flash('success', 'নোটিফিকেশন সফলভাবে পাঠানো হয়েছে!');
         return redirect()->route('dashboard.notifications');
     }
 
