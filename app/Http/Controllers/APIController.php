@@ -15,6 +15,7 @@ use App\Message;
 use Hash;
 use Carbon\Carbon;
 use DB;
+use OneSignal;
 
 class APIController extends Controller
 {
