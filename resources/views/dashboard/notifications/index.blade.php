@@ -125,7 +125,7 @@
                               <div class="input-group-text"><span class="fas fa-spa"></span></div>
                           </div>
                       </div>
-                      <div style="padding: 10px; border: 1px solid #000555;">asd</div>
+                      <div style="margin: 10px; padding: 10px; border: 1px solid #000555;">asd</div>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
