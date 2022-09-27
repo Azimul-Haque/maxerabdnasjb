@@ -66,7 +66,7 @@
                                         <input type="text"
                                                name="message"
                                                class="form-control"
-                                               placeholder="নাম" required>
+                                               placeholder="মেসেজ" required>
                                         <div class="input-group-append">
                                             <div class="input-group-text"><span class="fas fa-user"></span></div>
                                         </div>
