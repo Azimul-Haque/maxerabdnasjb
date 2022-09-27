@@ -41,7 +41,7 @@
                             @elseif($notification->type == 'free')
                               <i class="fas fa-receipt"></i> ফ্রি
                             @else
-                              <i class="fas fa-certificate"></i> সবাই
+                              <i class="fas fa-user-shield"></i> সবাই
                             @endif
                           </td>
                           <td>{{ $notification->headings }}<br/>{{ $notification->message }}</td>
