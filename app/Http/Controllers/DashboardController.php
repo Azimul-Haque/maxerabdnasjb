@@ -896,7 +896,6 @@ class DashboardController extends Controller
                 "Some Message",$request->message,
                 array(
                     ["field" => "tag", "key" => "user_type", "relation" => "=", "value" => "Premium"],
-                    ...
                 ),
                 $url = null,
                 $data = null,
