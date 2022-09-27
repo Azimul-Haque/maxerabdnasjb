@@ -902,6 +902,7 @@ class DashboardController extends Controller
                 "Some Message",$request->message,
 
                 $url = null,
+                $tags = $tags,
                 $data = null,
                 $buttons = null,
                 $schedule = null,
