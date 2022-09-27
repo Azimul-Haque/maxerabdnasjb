@@ -328,7 +328,7 @@ class APIController extends Controller
     {
         $this->validate($request,array(
             'mobile'         => 'required',
-            'name'        => 'required|max:191',
+            'headings'        => 'required',
             'mobile'      => 'required|max:191',
             'onesignal_id'      => 'sometimes|max:191',
             'softtoken'   => 'required|max:191'
