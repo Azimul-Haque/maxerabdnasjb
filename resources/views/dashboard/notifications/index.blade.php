@@ -55,7 +55,7 @@
                                     </div>
                                     <div class="modal-body">
                                       আপনি কি নিশ্চিতভাবে এই নোটিফিকেশনটি ডিলেট করতে চান?<br/><br/>
-                                      <div style="margin: 20px; padding: 5px; border: 1px solid #007BFF; border-radius: 10px;">
+                                      <div style="margin: 30px; padding: 5px; border: 1px solid #007BFF; border-radius: 10px;">
                                         <small style="color: #7A7B7D;"><span class="fas fa-bell"></span> BJS & Bar Exam</small><br/>
                                         <b><span id="headingstext">{{ $notification->headings }}</span></b><br/>
                                         <span id="messagetext">{{ $notification->message }}</span>
