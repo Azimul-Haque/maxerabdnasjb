@@ -933,7 +933,6 @@ class DashboardController extends Controller
 
     public function sendAgainNotification(Request $request)
     {
-        dd($request->all());
         $this->validate($request,array(
             'type'         => 'required',
             'headings'     => 'required',
