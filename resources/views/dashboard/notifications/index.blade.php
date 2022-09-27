@@ -99,8 +99,8 @@
                       <div class="input-group mb-3">
                         <select name="role" class="form-control" required>
                           <option disabled="" value="">ধরন নির্ধারণ করুন</option>
-                          <option value="প্রিমিয়াম ব্যবহারকারী">এডমিন</option>
-                          <option value="সব ব্যবহারকারী">ম্যানেজার</option>
+                          <option value="প্রিমিয়াম ব্যবহারকারী">প্রিমিয়াম ব্যবহারকারী</option>
+                          <option value="সব ব্যবহারকারী">সব ব্যবহারকারী</option>
                         </select>
                           <div class="input-group-append">
                               <div class="input-group-text"><span class="fas fa-wrench"></span></div>
