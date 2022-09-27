@@ -336,7 +336,7 @@ class APIController extends Controller
 
         if($request->softtoken == 'Rifat.Admin.2022')
         {
-            
+
             // $user = User::where('mobile', substr($request->mobile, -11))->first();
             
             OneSignal::sendNotificationToUser(
@@ -351,7 +351,8 @@ class APIController extends Controller
             );
         }
         return response()->json([
-            'success' => true
+            'success' => true,
+            'OneSignal' => $request->onesignal_id
         ]); 
     }
 }
