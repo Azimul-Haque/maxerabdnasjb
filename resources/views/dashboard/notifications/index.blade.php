@@ -40,6 +40,9 @@
                             <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal{{ $notification->id }}">
                               <i class="fas fa-trash-alt"></i>
                             </button>
+                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal{{ $notification->id }}">
+                              <i class="fas fa-trash-alt"></i>
+                            </button>
                           </td>
                               {{-- Duplicate Modal Code --}}
                               {{-- Duplicate Modal Code --}}
