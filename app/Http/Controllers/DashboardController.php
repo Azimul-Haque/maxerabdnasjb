@@ -892,7 +892,7 @@ class DashboardController extends Controller
                 $headings = $request->headings,
             );
         } elseif($request->type == 'premium') {
-
+            
         }
 
         $notification = new Notification;
