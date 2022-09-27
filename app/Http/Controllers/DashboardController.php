@@ -891,6 +891,8 @@ class DashboardController extends Controller
                 $schedule = null,
                 $headings = $request->headings,
             );
+        } elseif($request->type == 'premium') {
+
         }
 
         $notification = new Notification;
