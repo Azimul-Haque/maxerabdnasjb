@@ -831,7 +831,7 @@ class DashboardController extends Controller
     {
         $messages = Message::paginate(12);
 
-        
+        return view('dashboard.messages.index')->withMessages($messages);
     }
 
     public function deleteMessage($id)
@@ -867,7 +867,9 @@ class DashboardController extends Controller
 
     public function getNotifications()
     {
-        return view('dashboard.notifications.index');
+        $messages = Message::paginate(12);
+
+        return view('dashboard.messages.index')->withMessages($messages);
     }
 
 
