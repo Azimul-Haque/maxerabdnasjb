@@ -899,15 +899,15 @@ class DashboardController extends Controller
                 "value" => "Premium"
             ];
             // dd($tags['field']);
-            // OneSignal::sendNotificationUsingTags(
-            //     "Some Message",$request->message,
-            //     $url = null,
-            //     $tags = $tags,
-            //     $data = null,
-            //     $buttons = null,
-            //     $schedule = null,
-            //     $headings = $request->headings,
-            // );
+            OneSignal::sendNotificationUsingTags(
+                "Some Message",$request->message,
+                $url = null,
+                $tags = $tags,
+                $data = null,
+                $buttons = null,
+                $schedule = null,
+                $headings = $request->headings,
+            );
         }
 
         $notification = new Notification;
