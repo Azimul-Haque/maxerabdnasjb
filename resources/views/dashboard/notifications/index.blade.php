@@ -37,7 +37,7 @@
                           <td>{{ $notification->headings }}<br/>{{ $notification->message }}</td>
                           
                           <td align="right">
-                            <a href="{{ route('dashboard.courses.add.exam', $course->id) }}" class="btn btn-warning btn-sm" rel="tooltip" title="পরীক্ষা হালনাগাদ করুন">
+                            <a href="{{ route('dashboard.courses.add.exam', $notification->id) }}" class="btn btn-warning btn-sm" rel="tooltip" title="পরীক্ষা হালনাগাদ করুন">
                                 <i class="fas fa-folder-plus"></i>
                             </a>
                             <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#deleteModal{{ $notification->id }}" rel="tooltip" title="প্রশ্ন যোগ/ হালনাগাদ করুন"><i class="fas fa-copy"></i>
