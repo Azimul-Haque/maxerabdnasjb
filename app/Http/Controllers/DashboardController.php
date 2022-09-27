@@ -830,7 +830,7 @@ class DashboardController extends Controller
 
     public function getMessages()
     {
-        $messages = Message::paginate(12);
+        $messages = Message::orderBy('id', 'desc')->paginate(12);
 
         return view('dashboard.messages.index')->withMessages($messages);
     }
@@ -868,7 +868,7 @@ class DashboardController extends Controller
 
     public function getNotifications()
     {
-        $notifications = Notification::paginate(12);
+        $notifications = Notification::orderBy('id', 'desc')->paginate(12);
 
         return view('dashboard.notifications.index')->withNotifications($notifications);
     }
