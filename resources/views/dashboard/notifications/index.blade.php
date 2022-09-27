@@ -40,7 +40,7 @@
                           <td>{{ date('F d, Y H:m a', strtotime($notification->created_at)) }}</td>
                           
                           <td align="right">
-                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#copyModal{{ $notification->id }}" rel="tooltip" title="পুনরায় ব্যবহার করুন"><i class="fas fa-copy"></i>
+                            <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#copyModal{{ $notification->id }}" rel="tooltip" title="পুনরায় ব্যবহার করুন"><i class="fas fa-copy"></i>
                             </button>
                             <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal{{ $notification->id }}">
                               <i class="fas fa-trash-alt"></i>
@@ -52,7 +52,7 @@
                               <div class="modal fade" id="copyModal{{ $notification->id }}" tabindex="-1" role="dialog" aria-labelledby="copyModalLabel" aria-hidden="true" data-backdrop="static">
                                 <div class="modal-dialog" role="document">
                                   <div class="modal-content">
-                                    <div class="modal-header bg-primary">
+                                    <div class="modal-header bg-warning">
                                       <h5 class="modal-title" id="copyModalLabel">নোটিফিকেশন কপি</h5>
                                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
@@ -69,7 +69,7 @@
                                     </div>
                                     <div class="modal-footer">
                                       <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-                                      <a href="{{ route('dashboard.notifications.delete', $notification->id) }}" class="btn btn-primary">ডিলেট করুন</a>
+                                      <a href="{{ route('dashboard.notifications.delete', $notification->id) }}" class="btn btn-warning">ডিলেট করুন</a>
                                     </div>
                                   </div>
                                 </div>
