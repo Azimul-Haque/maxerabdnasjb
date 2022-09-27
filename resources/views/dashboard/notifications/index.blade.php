@@ -77,7 +77,7 @@
           </div>
           <!-- /.card-body -->
         </div>
-        {{ $notificationss->links() }}<br/><br/>
+        {{ $notifications->links() }}<br/><br/>
     </div>
 @endsection
 
