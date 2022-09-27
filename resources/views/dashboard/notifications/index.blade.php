@@ -150,9 +150,11 @@
     <script type="text/javascript">
         $('#notifdemo').hide();
         $('#headings').keyup(function () {
+          $('#notifdemo').show();
           $('#headingstext').text(this.value);
         });
         $('#message').keyup(function () {
+          $('#notifdemo').show();
           $('#messagetext').text(this.value);
         });
     </script>
