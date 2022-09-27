@@ -865,6 +865,28 @@ class DashboardController extends Controller
         }
     }
 
+    public function getNotificationPage()
+    {
+        $user = User::find($id);
+        if($user->onesignal_id !=null) {
+            OneSignal::sendNotificationToUser(
+                $request->message,
+                $user->onesignal_id,
+                $url = null, 
+                $data = null,
+                $buttons = null, 
+                $schedule = null,
+                $headings = $request->headings,
+            );  
+
+            Session::flash('success', 'Notification sent successfully!');
+            return redirect()->route('dashboard.users');
+        } else {
+            Session::flash('warning', 'OneSignal ID নেই');
+            return redirect()->route('dashboard.users');
+        }
+    }
+
 
 
 
