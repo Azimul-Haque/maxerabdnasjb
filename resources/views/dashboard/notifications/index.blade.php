@@ -128,7 +128,7 @@
                           </div>
                       </div>
                       <div style="margin: 10px; padding: 10px; border: 1px solid #007BFF; border-radius: 10px;" id="notifdemo">
-                        <small style="color: green;"><span class="fas fa-bell"></span> BJS & Bar Exam</small><br/>
+                        <small style="color: #7A7B7D;"><span class="fas fa-bell"></span> BJS & Bar Exam</small><br/>
                         <b><span id="headingstext"></span></b><br/>
                         <span id="messagetext"></span>
                       </div>
