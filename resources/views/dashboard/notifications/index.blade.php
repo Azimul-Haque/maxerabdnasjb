@@ -38,7 +38,7 @@
                           <td>{{ $notification->headings }}<br/>{{ $notification->message }}</td>
                           
                           <td align="right">
-                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#deleteModal{{ $notification->id }}" rel="tooltip" title="পুনরায় ব্যবহার করুন"><i class="fas fa-copy"></i>
+                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#copyModal{{ $notification->id }}" rel="tooltip" title="পুনরায় ব্যবহার করুন"><i class="fas fa-copy"></i>
                             </button>
                             <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal{{ $notification->id }}">
                               <i class="fas fa-trash-alt"></i>
@@ -47,11 +47,11 @@
                               {{-- Duplicate Modal Code --}}
                               {{-- Duplicate Modal Code --}}
                               <!-- Modal -->
-                              <div class="modal fade" id="deleteModal{{ $notification->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true" data-backdrop="static">
+                              <div class="modal fade" id="copyModal{{ $notification->id }}" tabindex="-1" role="dialog" aria-labelledby="copyModalLabel" aria-hidden="true" data-backdrop="static">
                                 <div class="modal-dialog" role="document">
                                   <div class="modal-content">
                                     <div class="modal-header bg-danger">
-                                      <h5 class="modal-title" id="deleteModalLabel">নোটিফিকেশন ডিলেট</h5>
+                                      <h5 class="modal-title" id="copyModalLabel">নোটিফিকেশন ডিলেট</h5>
                                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                       </button>
