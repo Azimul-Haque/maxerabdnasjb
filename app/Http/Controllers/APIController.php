@@ -102,7 +102,7 @@ class APIController extends Controller
             'name'        => 'required|max:191',
             'softtoken'   => 'required|max:191'
         ));
-        DB::beginTransaction();
+        // DB::beginTransaction();
         $user = User::where('mobile', $request->mobile)->first();
 
         if($user && $request->softtoken == 'Rifat.Admin.2022')
@@ -112,12 +112,12 @@ class APIController extends Controller
             $user->uid = $request->uid;
             $user->onesignal_id = $request->onesignal_id;
             $user->save();
-            DB::commit();
+            // DB::commit();
             return response()->json([
                 'success' => true
             ]);
         } else {
-            DB::commit();
+            // DB::commit();
             return response()->json([
                 'success' => false
             ]);
