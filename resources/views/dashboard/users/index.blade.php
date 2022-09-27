@@ -71,56 +71,15 @@
                                             <div class="input-group-text"><span class="fas fa-spa"></span></div>
                                         </div>
                                     </div>
-
                                     <div class="input-group mb-3">
                                         <input type="text"
-                                               name="mobile"
-                                               value="{{ $user->mobile }}"
-                                               autocomplete="off"
+                                               name="headings"
                                                class="form-control"
-                                               placeholder="মোবাইল নম্বর (১১ ডিজিট)" required>
+                                               placeholder="মেসেজ" required>
                                         <div class="input-group-append">
-                                            <div class="input-group-text"><span class="fas fa-phone"></span></div>
+                                            <div class="input-group-text"><span class="fas fa-spa"></span></div>
                                         </div>
                                     </div>
-
-                                    <div class="input-group mb-3">
-                                      <select name="role" class="form-control" required>
-                                        <option disabled="" value="">ধরন নির্ধারণ করুন</option>
-                                        <option value="admin" @if($user->role == 'admin') selected="" @endif>এডমিন</option>
-                                        <option value="manager" @if($user->role == 'manager') selected="" @endif>ম্যানেজার</option>
-                                        <option value="user" @if($user->role == 'user') selected="" @endif>ব্যবহারকারী</option>
-                                        {{-- <option value="accountant" @if($user->role == 'accountant') selected="" @endif>একাউন্টেন্ট</option> --}}
-                                      </select>
-                                        <div class="input-group-append">
-                                            <div class="input-group-text"><span class="fas fa-user-secret"></span></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="input-group mb-3">
-                                        <input type="text"
-                                               name="packageexpirydate"
-                                               id="packageexpirydate{{ $user->id }}" 
-                                               value="{{ date('F d, Y', strtotime($user->package_expiry_date)) }}"
-                                               autocomplete="off"
-                                               class="form-control"
-                                               placeholder="প্যাকেজের মেয়াদ বৃদ্ধি" required>
-                                        <div class="input-group-append">
-                                            <div class="input-group-text"><span class="fas fa-calendar-check"></span></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="input-group mb-3">
-                                        <input type="password"
-                                               name="password"
-                                               class="form-control"
-                                               autocomplete="new-password"
-                                               placeholder="পাসওয়ার্ড (ঐচ্ছিক)">
-                                        <div class="input-group-append">
-                                            <div class="input-group-text"><span class="fas fa-lock"></span></div>
-                                        </div>
-                                    </div>
-                                
                               </div>
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
