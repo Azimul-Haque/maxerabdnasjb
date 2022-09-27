@@ -37,7 +37,7 @@
                           <td>{{ $notification->headings }}<br/>{{ $notification->message }}</td>
                           
                           <td align="right">
-                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal{{ $notification->id }}">
+                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#deleteModal{{ $notification->id }}">
                               <i class="fas fa-trash-alt"></i>
                             </button>
                             <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal{{ $notification->id }}">
