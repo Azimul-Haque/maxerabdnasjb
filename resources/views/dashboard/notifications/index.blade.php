@@ -152,8 +152,8 @@
                         <select name="type" class="form-control" required>
                           <option disabled="" value="" selected>ধরন নির্ধারণ করুন</option>
                           <option value="premium"><i class="far fa-gem"></i> প্রিমিয়াম ব্যবহারকারী</option>
-                          <option value="free">ফ্রি ব্যবহারকারী</option>
-                          <option value="all">সব ব্যবহারকারী</option>
+                          <option value="free"><i class="fas fa-receipt"></i> ফ্রি ব্যবহারকারী</option>
+                          <option value="all"><i class="fas fa-users"></i> সব ব্যবহারকারী</option>
                         </select>
                           <div class="input-group-append">
                               <div class="input-group-text"><span class="fas fa-wrench"></span></div>
