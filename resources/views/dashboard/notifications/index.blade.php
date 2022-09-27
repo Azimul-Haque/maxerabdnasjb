@@ -51,13 +51,13 @@
                                 <div class="modal-dialog" role="document">
                                   <div class="modal-content">
                                     <div class="modal-header bg-primary">
-                                      <h5 class="modal-title" id="copyModalLabel">নোটিফিকেশন ডিলেট</h5>
+                                      <h5 class="modal-title" id="copyModalLabel">নোটিফিকেশন কপি</h5>
                                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                       </button>
                                     </div>
                                     <div class="modal-body">
-                                      আপনি কি নিশ্চিতভাবে এই নোটিফিকেশনটি ডিলেট করতে চান?<br/><br/>
+                                      আপনি কি নিশ্চিতভাবে এই নোটিফিকেশনটি আবার পাঠাতে?<br/><br/>
                                       <div style="margin: 30px; padding: 10px; border: 1px solid #007BFF; border-radius: 10px;">
                                         <small style="color: #7A7B7D;"><span class="fas fa-bell"></span> BJS & Bar Exam</small><br/>
                                         <b><span>{{ $notification->headings }}</span></b><br/>
