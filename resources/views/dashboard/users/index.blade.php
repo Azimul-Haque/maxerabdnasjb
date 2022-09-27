@@ -61,9 +61,7 @@
                             </div>
                             <form method="post" action="{{ route('dashboard.users.singlenotification', $user->id) }}">
                               <div class="modal-body">
-                                
                                     @csrf
-
                                     <div class="input-group mb-3">
                                         <input type="text"
                                                name="name"
