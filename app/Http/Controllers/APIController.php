@@ -369,18 +369,6 @@ class APIController extends Controller
             $buttons = null, 
             $schedule = null,
             $headings = $request->headings,
-        );
-
-        if($request->softtoken == 'Rifat.Admin.2022')
-        {
-
-            // $user = User::where('mobile', substr($request->mobile, -11))->first();
-            
-            
-        }
-        return response()->json([
-            'success' => true,
-            'onesignal_id' => $request->onesignal_id
-        ]); 
+        ); 
     }
 }
