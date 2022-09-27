@@ -330,7 +330,6 @@ class APIController extends Controller
             'mobile'         => 'required',
             'headings'        => 'required',
             'message'      => 'required',
-            'onesignal_id'      => 'sometimes|max:191',
             'softtoken'   => 'required|max:191'
         ));
 
