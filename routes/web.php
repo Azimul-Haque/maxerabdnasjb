@@ -82,9 +82,15 @@ Route::post('/dashboard/courses/add/exam/store', 'CourseController@storeCourseEx
 Route::get('/dashboard/messages', 'DashboardController@getMessages')->name('dashboard.messages');
 Route::get('/dashboard/messages/delete/{id}', 'DashboardController@deleteMessage')->name('dashboard.messages.delete');
 
+
+
+
+
+
 // Route::get('/dashboard/balance', 'DashboardController@getBalance')->name('dashboard.balance');
 // Route::post('/dashboard/balance/store', 'DashboardController@storeBalance')->name('dashboard.balance.store');
 // Route::get('/dashboard/balance/{id}/delete', 'DashboardController@deleteBalance')->name('dashboard.balance.delete');
+
 
 Route::get('/dashboard/sites', 'DashboardController@getSites')->name('dashboard.sites');
 Route::post('/dashboard/sites/store', 'DashboardController@storeSite')->name('dashboard.sites.store');
