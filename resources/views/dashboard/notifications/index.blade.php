@@ -151,7 +151,7 @@
                       <div class="input-group mb-3">
                         <select name="type" class="form-control" required>
                           <option disabled="" value="" selected>ধরন নির্ধারণ করুন</option>
-                          <option value="premium">প্রিমিয়াম ব্যবহারকারী</option>
+                          <option value="premium"><i class="far fa-gem"></i> প্রিমিয়াম ব্যবহারকারী</option>
                           <option value="free">ফ্রি ব্যবহারকারী</option>
                           <option value="all">সব ব্যবহারকারী</option>
                         </select>
