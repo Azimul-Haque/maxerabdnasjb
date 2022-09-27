@@ -892,19 +892,11 @@ class DashboardController extends Controller
                 $headings = $request->headings,
             );
         } elseif($request->type == 'premium') {
-            $tags = array([
-                'field' => 'tag',
-                'key' => 'user_type',
-                'relation' => '=',
-                'value' => 'Premium'
-            ]);
+            $tags = array();
             // dd($tags);
             OneSignal::sendNotificationUsingTags(
                 $request->message,
-                array(
-                    ["field" => "tag", "key" => "email", "relation" => "=", "value" => "email21@example.com"],
-                    ["field" => "tag", "key" => "email", "relation" => "=", "value" => "email1@example.com"],
-                ),
+                array([ 'field' => 'tag', 'key' => 'user_type', 'relation' => '=', 'value' => 'Premium' ]),
                 $url = null,
                 $data = null,
                 $buttons = null,
