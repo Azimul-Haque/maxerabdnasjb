@@ -868,7 +868,7 @@ class DashboardController extends Controller
 
     public function getNotifications()
     {
-        $notifications = s::paginate(12);
+        $notifications = Notification::paginate(12);
 
         return view('dashboard.notifications.index')->withNotifications($notifications);
     }
