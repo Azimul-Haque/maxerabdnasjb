@@ -31,22 +31,22 @@
                 </tr>
               </thead>
               <tbody>
-                @foreach($messages as $message)
+                @foreach($notifications as $notifications)
                 	<tr>
-                    <td>{{ $message->user->name }}</td>
-                    <td>{{ $message->user->mobile }}</td>
-                    <td>{{ $message->user->payments->count() }} বার কিনেছেন</td>
-                    <td>{{ $message->message }}</td>
+                    <td>{{ $notifications->user->name }}</td>
+                    <td>{{ $notifications->user->mobile }}</td>
+                    <td>{{ $notifications->user->payments->count() }} বার কিনেছেন</td>
+                    <td>{{ $notifications->message }}</td>
                 		
                 		<td align="right">
-                			<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal{{ $message->id }}">
+                			<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal{{ $notifications->id }}">
                 				<i class="fas fa-trash-alt"></i>
                 			</button>
                 		</td>
                         {{-- Delete Modal Code --}}
                         {{-- Delete Modal Code --}}
                         <!-- Modal -->
-                        <div class="modal fade" id="deleteModal{{ $message->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true" data-backdrop="static">
+                        <div class="modal fade" id="deleteModal{{ $notifications->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true" data-backdrop="static">
                           <div class="modal-dialog" role="document">
                             <div class="modal-content">
                               <div class="modal-header bg-danger">
@@ -57,13 +57,13 @@
                               </div>
                               <div class="modal-body">
                                 আপনি কি নিশ্চিতভাবে এই প্যাকেজটি ডিলেট করতে চান?<br/><br/>
-                                <b>{{ $message->user->name }}</b><br/>
-                                {{ $message->message }}
+                                <b>{{ $notifications->user->name }}</b><br/>
+                                {{ $notifications->message }}
                                 
                               </div>
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-                                <a href="{{ route('dashboard.messages.delete', $message->id) }}" class="btn btn-danger">ডিলেট করুন</a>
+                                <a href="{{ route('dashboard.messages.delete', $notifications->id) }}" class="btn btn-danger">ডিলেট করুন</a>
                               </div>
                             </div>
                           </div>
@@ -77,7 +77,7 @@
           </div>
           <!-- /.card-body -->
         </div>
-        {{ $messages->links() }}<br/><br/>
+        {{ $notificationss->links() }}<br/><br/>
     </div>
 @endsection
 
