@@ -895,8 +895,7 @@ class DashboardController extends Controller
             );
         } elseif($request->type == 'premium') {
 
-        } else
-        {
+        } else {
             OneSignal::sendNotificationToAll(
                 $request->message,
                 $url = null, 
