@@ -44,7 +44,7 @@
                 			<span class="badge @if($user->role == 'admin') bg-success @else bg-info @endif">{{ ucfirst($user->role) }}</span>
                 		</td>
                 		<td align="right" width="40%">
-                      <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#NotifModal{{ $user->id }}">
+                      <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#NotifModal{{ $user->id }}">
                         <i class="fas fa-user-edit"></i>
                       </button>
                       {{-- Notif Modal Code --}}
