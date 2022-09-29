@@ -160,6 +160,7 @@ class ExamController extends Controller
         $exam->price_type = $oldexam->price_type;
         $exam->available_from = Carbon::parse($oldexam->available_from);
         $exam->available_to = Carbon::parse($oldexam->available_to);
+        $exam->syllabus = $oldexam->syllabus;
         $exam->save();
 
         foreach($oldexam->examquestions as $oldexamquestion) {
