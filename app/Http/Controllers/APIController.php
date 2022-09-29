@@ -159,7 +159,7 @@ class APIController extends Controller
                 $courseexam->name = $courseexam->exam->name;
                 $courseexam->start = $courseexam->exam->available_from;
                 $courseexam->syllabus = $courseexam->exam->syllabus ? $courseexam->exam->syllabus : 'N/A';
-                $courseexam->totalquestions = $courseexam->exam->examquestions->count();
+                // $courseexam->totalquestions = $courseexam->exam->examquestions->count();
                 $courseexam->exam->makeHidden('id', 'name', 'examcategory_id', 'price_type', 'available_from', 'available_to', 'syllabus', 'created_at', 'updated_at', 'examquestions');
             }
             // $courseexams = $courseexams->sortByDesc('start');
