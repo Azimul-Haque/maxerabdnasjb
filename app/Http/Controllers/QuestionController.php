@@ -35,7 +35,7 @@ class QuestionController extends Controller
         }
         
         $totalquestions = Question::count();
-        $questions = Question::paginate(10);
+        $questions = Question::orderBy('id', 'desc')->paginate(10);
         $topics = Topic::all();
         $tags = Tag::all();
 
