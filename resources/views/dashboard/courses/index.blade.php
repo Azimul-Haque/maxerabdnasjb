@@ -210,7 +210,7 @@
                       </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" name="name" class="form-control" value="{{ old('name') }}" placeholder="কোর্সের নাম" required>
+                        <input type="text" name="priority" class="form-control" value="3" placeholder="কোর্সের নাম" required>
                         <div class="input-group-append">
                             <div class="input-group-text"><span class="fas fa-layer-group"></span></div>
                         </div>
