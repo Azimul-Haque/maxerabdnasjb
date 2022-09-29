@@ -37,7 +37,7 @@ class QuestionController extends Controller
         $totalquestions = Question::count();
         $questions = Question::orderBy('id', 'desc')->paginate(10);
         $topics = Topic::all();
-        $tags = Tag::all();
+        $tags = Tag::orderBy('id', 'desc')->all();
 
         return view('dashboard.questions.index')
                     ->withQuestions($questions)
