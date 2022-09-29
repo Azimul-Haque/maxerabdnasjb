@@ -490,7 +490,7 @@
                         </div>
                         <div class="col-md-12">
                             <div class="input-group mb-3">
-                                <textarea class="form-control" name="syllabus" style="height: 150px;" placeholder="সিলেবাস লিখুন (যদি থাকে)" required></textarea>
+                                <textarea class="form-control" name="syllabus" style="height: 150px;" placeholder="সিলেবাস লিখুন (যদি থাকে)" required>N/A</textarea>
                             </div>
                         </div>
                     </div>
