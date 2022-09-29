@@ -111,6 +111,12 @@
                                                         <div class="input-group-text"><span class="fas fa-tag"></span></div>
                                                     </div>
                                                   </div>
+                                                  <div class="input-group mb-3">
+                                                      <input type="number" name="priority" class="form-control" value="{{ old('priority') }}" placeholder="প্রায়োরিটি (যে সিরিয়ালে অ্যাপে দেখাবে)" required>
+                                                      <div class="input-group-append">
+                                                          <div class="input-group-text"><span class="fas fa-sort-amount-up"></span></div>
+                                                      </div>
+                                                  </div>
                                                 </div>
                                                 <div class="modal-footer">
                                                   <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
