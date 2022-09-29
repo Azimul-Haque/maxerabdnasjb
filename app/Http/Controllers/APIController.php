@@ -135,7 +135,7 @@ class APIController extends Controller
                              ->get();
             foreach($courses as $course) {
                 $course->examcount = $course->courseexams->count();
-                $course->examcount->makeHidden('courseexams');
+                $course->makeHidden('courseexams');
             }
             // dd($courses->all());
             return response()->json([
