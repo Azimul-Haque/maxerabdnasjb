@@ -212,7 +212,7 @@
                     <div class="input-group mb-3">
                         <input type="text" name="priority" class="form-control" value="3" placeholder="প্রায়োরিটি (যে সিরিয়ালে অ্যাপে দেখাবে)" required>
                         <div class="input-group-append">
-                            <div class="input-group-text"><span class="fas fa-layer-group"></span></div>
+                            <div class="input-group-text"><span class="fas fa-list-ul"></span></div>
                         </div>
                     </div>
               </div>
