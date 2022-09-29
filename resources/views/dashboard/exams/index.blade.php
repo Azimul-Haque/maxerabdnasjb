@@ -465,7 +465,7 @@
                                 <select name="price_type" class="form-control" required>
                                     <option selected="" disabled="" value="">মূল্য</option>
                                     <option value="0">ফ্রি</option>
-                                    <option value="1">পেইড</option>
+                                    <option value="1" selected>পেইড</option>
                                 </select>
                                 <div class="input-group-append">
                                     <div class="input-group-text"><span class="fas fa-hand-holding-usd"></span></div>
