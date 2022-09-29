@@ -253,7 +253,9 @@ class QuestionController extends Controller
             }
             $question->questionimage->delete();
         }
-        $question->questionexplanation->delete();
+        if($question->questionexplanation) {
+            $question->questionexplanation->delete();
+        }
         $question->delete();
 
         Session::flash('success', 'Question deleted successfully!');
