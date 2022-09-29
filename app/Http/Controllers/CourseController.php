@@ -55,6 +55,7 @@ class CourseController extends Controller
         $course->name = $request->name;
         $course->status = $request->status;
         $course->type = $request->type; // 1 = Course, 2 = BJS MT, 3 = Bar MT, 4 = Free MT, 5 = QB
+        $course->priority = $request->priority;
         $course->save();
 
         Session::flash('success', 'Course created successfully!');
@@ -74,6 +75,7 @@ class CourseController extends Controller
         $course->name = $request->name;
         $course->status = $request->status;
         $course->type = $request->type; // 1 = Course, 2 = BJS MT, 3 = Bar MT, 4 = Free MT, 5 = QB
+        $course->priority = $request->priority;
         $course->save();
 
         Session::flash('success', 'Course updated successfully!');
