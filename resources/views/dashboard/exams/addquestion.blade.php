@@ -142,7 +142,7 @@
             <div class="modal-content">
                 <div class="modal-header bg-warning">
                     <h5 class="modal-title" id="addTAGQuestionModalLabel">
-                        প্রশ্ন হালনাগাদ
+                        ট্যাগ থেকে প্রশ্ন হালনাগাদ
                         <span id="questionupdatingnumber"></span>
                     </h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
