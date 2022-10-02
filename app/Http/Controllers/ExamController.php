@@ -234,6 +234,46 @@ class ExamController extends Controller
         return redirect()->route('dashboard.exams.add.question', $request->exam_id);
     }
     
+    public function storeTagExamQuestion(Request $request)
+    {
+        $this->validate($request,array(
+            'exam_id'          => 'required',
+        ));
+
+        // dd($request->all());
+        $oldexamquestions = Examquestion::where('exam_id', $request->exam_id)->get();
+        if(count($oldexamquestions) > 0) {
+            foreach($oldexamquestions as $oldexamquestion) {
+                $oldexamquestion->delete();
+            }
+        }
+
+        $topics = Topic::all();
+        $quantitycheck = 0;
+        foreach($topics as $topic) {
+            $topicname = 'topic' . $topic->id;
+            $quantity = 'quantity' . $topic->id;
+            if($request[$topicname] == $topic->id && $request[$quantity] > 0) {
+                $topicquestions = Question::where('topic_id', $request[$topicname])->inRandomOrder()->limit($request[$quantity])->get();
+                // dd($topicquestions);
+                foreach($topicquestions as $topicquestion) {
+                    $examquestion = new Examquestion;
+                    $examquestion->exam_id = $request->exam_id;
+                    $examquestion->question_id = $topicquestion->id;
+                    $examquestion->save();
+                }
+            }
+            $quantitycheck = $quantitycheck + $request[$quantity];
+            // dd($quantitycheck);
+        }
+        if($quantitycheck == 0) {
+            Session::flash('info', 'At least one topic is required!');
+        } else {
+            Session::flash('success', 'Question updated successfully!');
+        }
+        return redirect()->route('dashboard.exams.add.question', $request->exam_id);
+    }
+    
     public function automaticeExamQuestionSet(Request $request)
     {
         $this->validate($request,array(
