@@ -185,6 +185,8 @@ class QuestionController extends Controller
             Session::flash('error', 'You have uploaded a wrong format file, please upload the right file.');
             return back();
         }
+
+        dd($collections);
         // $this->validate($request,array(
         //     'topic_id'    => 'required|string|max:191',
         //     'question'    => 'required|string|max:191',
