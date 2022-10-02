@@ -260,8 +260,8 @@ class ExamController extends Controller
         }
         $temptagquestions = array_values(array_unique($temptagquestions, SORT_REGULAR));
         
-        dd($temptagquestions);
-        // foreach($tag->questions as $question) {
+        // dd($temptagquestions);
+        // foreach($temptagquestions as $question) {
         //     $examquestion = new Examquestion;
         //     $examquestion->exam_id = $request->exam_id;
         //     $examquestion->question_id = $question->id;
