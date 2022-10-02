@@ -249,7 +249,7 @@ class ExamController extends Controller
             }
         }
 
-        $topics = Topic::all();
+        $tags = Topic::all();
         $quantitycheck = 0;
         foreach($topics as $topic) {
             $topicname = 'topic' . $topic->id;
