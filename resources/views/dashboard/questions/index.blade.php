@@ -27,7 +27,7 @@
                               <i class="fas fa-file-excel-o"></i> এক্সেল ফাইল আপলোড করুন
                           </button>
                           <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addQuesitonModal">
-                              <i class="fas fa-file-excel-o"></i> নতুন প্রশ্ন যোগ
+                              <i class="fas fa-plus-circle"></i> নতুন প্রশ্ন যোগ
                           </button>
                       </div>
                     </div>
