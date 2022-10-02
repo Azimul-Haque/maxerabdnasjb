@@ -504,7 +504,7 @@
               <div class="modal-body">
                     @csrf
                     <label for="file">Excel ফাইল</label>
-                    <input type="file" id="file" name="file" class="form-control" accept="file/*">
+                    <input type="file" id="file" name="file" class="form-control" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
