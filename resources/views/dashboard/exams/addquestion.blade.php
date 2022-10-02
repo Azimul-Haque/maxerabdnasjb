@@ -154,10 +154,10 @@
                         @csrf
                         <input type="hidden" name="exam_id" value="{{ $exam->id }}">
                         <select name="tags_ids[]" class="form-control multiple-select" multiple="multiple" data-placeholder="ট্যাগ">
-                          @foreach ($tags as $tag)
+                            @foreach ($tags as $tag)
                               <option value="{{ $tag->id }}">{{ $tag->name }}</option>
-                          @endforeach
-                      </select>
+                            @endforeach
+                        </select>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
