@@ -189,14 +189,14 @@ class QuestionController extends Controller
         dd($collections);
         foreach ($collections as $collection) {
             $question             = new Question;
-            $question->topic_id   = $request->topic_id;
-            $question->question   = $request->question;
-            $question->option1    = $request->option1;
-            $question->option2    = $request->option2;
-            $question->option3    = $request->option3;
-            $question->option4    = $request->option4;
-            $question->answer     = $request->answer;
-            $question->difficulty = $request->difficulty;
+            $question->topic_id   = $collection['topic_id'];
+            $question->question   = $collection['question'];
+            $question->option1    = $collection['name']option1;
+            $question->option2    = $collection['name']option2;
+            $question->option3    = $collection['name']option3;
+            $question->option4    = $collection['name']option4;
+            $question->answer     = $collection['name']answer;
+            $question->difficulty = $collection['name']difficulty;
             $question->save();
 
             
