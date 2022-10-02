@@ -250,7 +250,7 @@ class ExamController extends Controller
         }
 
         $selectedtags = Tag::whereIn('id', $request->tags_ids)->get();
-        dd($selectedtags);
+        // dd($selectedtags);
         $quantitycheck = 0;
         foreach($selectedtags as $tag) {
             foreach($tag->questions as $question) {
