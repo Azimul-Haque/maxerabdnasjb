@@ -177,7 +177,7 @@ class QuestionController extends Controller
 
     public function storeExcelQuestion(Request $request)
     {
-        // dd($request->file('image'));
+        dd($request->file('file'));
         // $this->validate($request,array(
         //     'topic_id'    => 'required|string|max:191',
         //     'question'    => 'required|string|max:191',
