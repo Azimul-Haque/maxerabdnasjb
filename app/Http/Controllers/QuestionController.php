@@ -187,6 +187,9 @@ class QuestionController extends Controller
         }
 
         dd($collections);
+        foreach ($collections as $collection) {
+            
+        }
 
         $question             = new Question;
         $question->topic_id   = $request->topic_id;
