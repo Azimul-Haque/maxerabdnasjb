@@ -186,7 +186,7 @@ class QuestionController extends Controller
             return back();
         }
 
-        dd($collections);
+        // dd($collections);
         foreach ($collections as $collection) {
             $question             = new Question;
             $question->topic_id   = $collection['topic_id'];
