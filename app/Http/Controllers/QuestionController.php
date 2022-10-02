@@ -178,7 +178,7 @@ class QuestionController extends Controller
 
     public function storeExcelQuestion(Request $request)
     {
-        dd($request->file('file'));
+        // dd($request->file('file'));
         try {
             $collections = (new FastExcel)->import($request->file('file'));
         } catch (\Exception $exception) {
