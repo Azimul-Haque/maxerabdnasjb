@@ -193,6 +193,7 @@ class ExamController extends Controller
                                      ->orderBy('question_id', 'asc')
                                      ->get();
         $topics = Topic::all();
+        $tags = Tag::all();
         $questions = Question::all();
         
         return view('dashboard.exams.addquestion')
