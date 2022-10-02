@@ -491,7 +491,7 @@
     {{-- Upload Excel Modal Code --}}
     {{-- Upload Excel Modal Code --}}
     <!-- Modal -->
-    <div class="modal fade" id="addQuesitonModal" tabindex="-1" role="dialog" aria-labelledby="addExcelQuesitonModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal fade" id="addExcelQuesitonModal" tabindex="-1" role="dialog" aria-labelledby="addExcelQuesitonModalLabel" aria-hidden="true" data-backdrop="static">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header bg-success">
