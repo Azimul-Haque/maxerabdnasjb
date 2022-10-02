@@ -191,12 +191,12 @@ class QuestionController extends Controller
             $question             = new Question;
             $question->topic_id   = $collection['topic_id'];
             $question->question   = $collection['question'];
-            $question->option1    = $collection['name']option1;
-            $question->option2    = $collection['name']option2;
-            $question->option3    = $collection['name']option3;
-            $question->option4    = $collection['name']option4;
-            $question->answer     = $collection['name']answer;
-            $question->difficulty = $collection['name']difficulty;
+            $question->option1    = $collection['option1'];
+            $question->option2    = $collection['option2'];
+            $question->option3    = $collection['option3'];
+            $question->option4    = $collection['option4'];
+            $question->answer     = $collection['answer'];
+            $question->difficulty = $collection['difficulty'];
             $question->save();
 
             
