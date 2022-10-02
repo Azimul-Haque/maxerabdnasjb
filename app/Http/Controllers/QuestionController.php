@@ -219,7 +219,7 @@ class QuestionController extends Controller
             if($collection['explanation'] != null) {
                 $questionexplanation              = new Questionexplanation;
                 $questionexplanation->question_id = $question->id;
-                $questionexplanation->explanation = $request->explanation;
+                $questionexplanation->explanation = $collection['explanation'];
                 $questionexplanation->save();
             }
         }
