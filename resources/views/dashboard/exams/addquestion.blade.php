@@ -140,7 +140,7 @@
     <div class="modal fade" id="addTAGQuestionModal" tabindex="-1" role="dialog" aria-labelledby="addTAGQuestionModalLabel" aria-hidden="true" data-backdrop="static">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-                <div class="modal-header bg-success">
+                <div class="modal-header bg-warning">
                     <h5 class="modal-title" id="addTAGQuestionModalLabel">
                         প্রশ্ন হালনাগাদ
                         <span id="questionupdatingnumber"></span>
@@ -198,7 +198,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-                        <button type="submit" class="btn btn-success">দাখিল করুন</button>
+                        <button type="submit" class="btn btn-warning">দাখিল করুন</button>
                     </div>
                 </form>
             </div>
