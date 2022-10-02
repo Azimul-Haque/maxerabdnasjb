@@ -249,7 +249,7 @@ class ExamController extends Controller
             }
         }
 
-        $selectedtags = Topic::all();
+        $selectedtags = Tag::whereIn('id', $request->tags_ids)
         $quantitycheck = 0;
         foreach($topics as $topic) {
             $topicname = 'topic' . $topic->id;
