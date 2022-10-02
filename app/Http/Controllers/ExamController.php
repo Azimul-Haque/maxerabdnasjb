@@ -259,6 +259,7 @@ class ExamController extends Controller
             }
         }
         array_unique($temptagquestions, SORT_REGULAR);
+        explode(",", implode(",", array_unique(explode(",", $temptagquestions))));
         dd($temptagquestions);
         // foreach($tag->questions as $question) {
         //     $examquestion = new Examquestion;
