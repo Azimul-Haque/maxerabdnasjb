@@ -182,7 +182,7 @@ class QuestionController extends Controller
         try {
             $collections = (new FastExcel)->import($request->file('file'));
         } catch (\Exception $exception) {
-            Toastr::error('You have uploaded a wrong format file, please upload the right file.');
+            Session::flash('error', 'You have uploaded a wrong format file, please upload the right file.');
             return back();
         }
         // $this->validate($request,array(
