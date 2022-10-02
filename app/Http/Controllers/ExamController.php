@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Rap2hpoutre\FastExcel\FastExcel;
 
 use App\Topic;
 use App\Tag;
