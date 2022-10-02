@@ -187,18 +187,6 @@ class QuestionController extends Controller
         }
 
         dd($collections);
-        // $this->validate($request,array(
-        //     'topic_id'    => 'required|string|max:191',
-        //     'question'    => 'required|string|max:191',
-        //     'option1'     => 'required|string|max:191',
-        //     'option2'     => 'required|string|max:191',
-        //     'option3'     => 'required|string|max:191',
-        //     'option4'     => 'required|string|max:191',
-        //     'answer'      => 'required',
-        //     'difficulty'  => 'required|string|max:191',
-        //     'image'       => 'sometimes|image|mimes:jpeg,png,jpg,gif,svg,webp|max:3000',
-        //     'explanation' => 'sometimes|max:2048',
-        // ));
 
         $question             = new Question;
         $question->topic_id   = $request->topic_id;
