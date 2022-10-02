@@ -294,7 +294,7 @@
                           @foreach($topics as $topic)
                               <tr>
                                   <td>
-                                      {{ $topic->name }}<br/>
+                                      {{ $topic->name }} <small>({{ $topic->questions->count() }} টি প্রশ্ন)</small><br/>
                                   </td>
                               
                                   <td align="right" width="40%">
