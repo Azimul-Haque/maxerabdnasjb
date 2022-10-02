@@ -237,7 +237,6 @@ return [
         'Html' => Collective\Html\HtmlFacade::class,
         'Aamarpay'   =>  Shipu\Aamarpay\Facades\Aamarpay::class,
         'Excel' => Maatwebsite\Excel\Facades\Excel::class,
-
     ],
 
 ];
