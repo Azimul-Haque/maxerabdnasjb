@@ -294,6 +294,11 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.4/underscore-umd-min.js"></script>
 <script>
+    $('.multiple-select').select2({
+      // theme: 'bootstrap4',
+    });
+</script>
+<script>
     $("#datatable").DataTable({
         "responsive": true, "lengthChange": true, "autoWidth": false, info: false, "pageLength": 10,
         "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
