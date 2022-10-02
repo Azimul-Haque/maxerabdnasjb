@@ -503,12 +503,10 @@
           <form method="post" action="{{ route('dashboard.questions.store') }}" enctype='multipart/form-data'>
               <div class="modal-body">
                     @csrf
-                    <div class="col-md-6">
-                        <div class="form-group ">
+                    <div class="form-group ">
                             <label for="file">Excel ফাইল</label>
                             <input type="file" id="file" name="file" accept="file/*">
                         </div>
-                    </div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
