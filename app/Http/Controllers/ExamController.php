@@ -254,6 +254,9 @@ class ExamController extends Controller
         $temptagquestions = [];
         $quantitycheck = 0;
         foreach($selectedtags as $tag) {
+            foreach($tag->questions as $question) {
+                $temptagquestions[] = $question->id;
+            }
             
         }
         // foreach($tag->questions as $question) {
