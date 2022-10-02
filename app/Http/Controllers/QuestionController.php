@@ -178,6 +178,12 @@ class QuestionController extends Controller
     public function storeExcelQuestion(Request $request)
     {
         dd($request->file('file'));
+        try {
+            $collections = (new FastExcel)->import($request->file('file'));
+        } catch (\Exception $exception) {
+            Toastr::error('You have uploaded a wrong format file, please upload the right file.');
+            return back();
+        }
         // $this->validate($request,array(
         //     'topic_id'    => 'required|string|max:191',
         //     'question'    => 'required|string|max:191',
