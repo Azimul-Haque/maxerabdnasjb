@@ -259,7 +259,7 @@ class ExamController extends Controller
             }
         }
         $temptagquestions2 = array_unique($temptagquestions, SORT_REGULAR);
-        array_diff_key($temptagquestions);
+        array_diff_key($temptagquestions, $temptagquestions2);
         // explode(",", implode(",", array_unique(explode(",", $temptagquestions))));
         dd($temptagquestions, $temptagquestions2);
         // foreach($tag->questions as $question) {
