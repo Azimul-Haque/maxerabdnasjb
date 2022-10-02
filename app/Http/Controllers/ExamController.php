@@ -256,7 +256,7 @@ class ExamController extends Controller
             foreach($tag->questions as $question) {
                 $examquestion = new Examquestion;
                 $examquestion->exam_id = $request->exam_id;
-                $examquestion->question_id = $topicquestion->id;
+                $examquestion->question_id = $question->id;
                 $examquestion->save();
             }
 
