@@ -253,7 +253,7 @@ class ExamController extends Controller
         dd($selectedtags);
         $quantitycheck = 0;
         foreach($selectedtags as $tag) {
-            foreach($tag->questions as $topicquestion) {
+            foreach($tag->questions as $question) {
                 $examquestion = new Examquestion;
                 $examquestion->exam_id = $request->exam_id;
                 $examquestion->question_id = $topicquestion->id;
