@@ -5,6 +5,15 @@
 <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap4.min.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/icheck-bootstrap@3.0.1/icheck-bootstrap.min.css">
+<link href="{{ asset('css/select2.min.css') }}" rel="stylesheet" />
+<link href="{{ asset('css/select2-bootstrap4.min.css') }}" rel="stylesheet" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="{{ asset('js/select2.full.min.js') }}"></script>
+<style type="text/css">
+  .select2-selection__choice{
+      background-color: rgba(0, 123, 255) !important;
+  }
+</style>
 @endsection
 
 @section('content')
