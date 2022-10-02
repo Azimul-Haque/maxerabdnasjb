@@ -257,7 +257,6 @@ class ExamController extends Controller
             foreach($tag->questions as $question) {
                 $temptagquestions[] = $question->id;
             }
-            
         }
         // foreach($tag->questions as $question) {
         //     $examquestion = new Examquestion;
