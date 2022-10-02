@@ -223,7 +223,6 @@ class QuestionController extends Controller
                 $questionexplanation->save();
             }
         }
-
         
         Session::flash('success', 'Question uploaded successfully!');
         return redirect()->route('dashboard.questions');
