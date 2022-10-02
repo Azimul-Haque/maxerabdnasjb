@@ -162,7 +162,7 @@
                     <div class="modal-body">
                         @csrf
                         <input type="hidden" name="exam_id" value="{{ $exam->id }}">
-                        <select name="tags_ids[]" class="form-control multiple-select" multiple="multiple" data-placeholder="ট্যাগ">
+                        <select name="tags_ids[]" class="form-control multiple-select" multiple="multiple" data-placeholder="ট্যাগ" required>
                             @foreach ($tags as $tag)
                               <option value="{{ $tag->id }}">{{ $tag->name }}</option>
                             @endforeach
