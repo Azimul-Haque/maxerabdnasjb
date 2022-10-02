@@ -36,7 +36,7 @@
                                   <th>Question</th>
                                   <th>Answer</th>
                                   <th>Options</th>
-                                  <th width="12%">Action</th>
+                                  <th width="10%">Action</th>
                               </tr>
                           </thead>
                           <tbody>
