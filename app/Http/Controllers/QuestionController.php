@@ -215,7 +215,7 @@ class QuestionController extends Controller
             //     $questionimage->image       = $filename;
             //     $questionimage->save();
             // }
-            
+
             if($collection['explanation'] != null) {
                 $questionexplanation              = new Questionexplanation;
                 $questionexplanation->question_id = $question->id;
@@ -225,8 +225,7 @@ class QuestionController extends Controller
         }
 
         
-
-        Session::flash('success', 'Question created successfully!');
+        Session::flash('success', 'Question uploaded successfully!');
         return redirect()->route('dashboard.questions');
     }
 
