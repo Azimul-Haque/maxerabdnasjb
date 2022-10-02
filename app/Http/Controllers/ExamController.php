@@ -237,7 +237,8 @@ class ExamController extends Controller
     public function storeTagExamQuestion(Request $request)
     {
         $this->validate($request,array(
-            'exam_id'          => 'required',
+            'exam_id'           => 'required',
+            'tags_ids'          => 'required',
         ));
 
         dd($request->all());
