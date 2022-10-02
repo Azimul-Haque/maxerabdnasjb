@@ -158,7 +158,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <form method="post" action="{{ route('dashboard.exams.question.store') }}">
+                <form method="post" action="{{ route('dashboard.exams.question.tags') }}">
                     <div class="modal-body">
                         @csrf
                         <input type="hidden" name="exam_id" value="{{ $exam->id }}">
