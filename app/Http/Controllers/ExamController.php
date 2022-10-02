@@ -258,8 +258,9 @@ class ExamController extends Controller
                 $temptagquestions[] = $question->id;
             }
         }
-        // array_unique($temptagquestions, SORT_REGULAR);
-        explode(",", implode(",", array_unique(explode(",", $temptagquestions))));
+        array_unique($temptagquestions, SORT_REGULAR);
+        array_diff_key($temptagquestions);
+        // explode(",", implode(",", array_unique(explode(",", $temptagquestions))));
         dd($temptagquestions);
         // foreach($tag->questions as $question) {
         //     $examquestion = new Examquestion;
