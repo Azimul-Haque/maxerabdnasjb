@@ -259,9 +259,9 @@ class ExamController extends Controller
             }
         }
         $temptagquestions2 = array_unique($temptagquestions, SORT_REGULAR);
-        array_diff_key($temptagquestions, $temptagquestions2);
+        $temptagquestions3 = array_diff_key($temptagquestions, $temptagquestions2);
         // explode(",", implode(",", array_unique(explode(",", $temptagquestions))));
-        dd($temptagquestions, $temptagquestions2);
+        dd($temptagquestions3);
         // foreach($tag->questions as $question) {
         //     $examquestion = new Examquestion;
         //     $examquestion->exam_id = $request->exam_id;
