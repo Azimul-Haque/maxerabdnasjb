@@ -253,13 +253,14 @@ class ExamController extends Controller
         // dd($selectedtags);
         $quantitycheck = 0;
         foreach($selectedtags as $tag) {
-            foreach($tag->questions as $question) {
-                $examquestion = new Examquestion;
-                $examquestion->exam_id = $request->exam_id;
-                $examquestion->question_id = $question->id;
-                $examquestion->save();
-            }
+            
         }
+        // foreach($tag->questions as $question) {
+        //     $examquestion = new Examquestion;
+        //     $examquestion->exam_id = $request->exam_id;
+        //     $examquestion->question_id = $question->id;
+        //     $examquestion->save();
+        // }
         Session::flash('success', 'Question updated successfully!');
         return redirect()->route('dashboard.exams.add.question', $request->exam_id);
     }
