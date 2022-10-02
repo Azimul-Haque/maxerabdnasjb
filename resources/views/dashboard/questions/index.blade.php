@@ -508,9 +508,6 @@
                             <label for="file">Excel ফাইল</label>
                             <input type="file" id="file" name="file" accept="file/*">
                         </div>
-                        <center>
-                            <img src="{{ asset('images/placeholder.png')}}" id='img-upload' style="width: 250px; height: auto;" class="img-responsive" />
-                        </center>
                     </div>
               </div>
               <div class="modal-footer">
