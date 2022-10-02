@@ -505,7 +505,7 @@
                     @csrf
                     <div class="col-md-6">
                         <div class="form-group ">
-                            <label for="file">ছবি (প্রয়োজনে)</label>
+                            <label for="file">Excel ফাইল</label>
                             <input type="file" id="file" name="file" accept="file/*">
                         </div>
                         <center>
