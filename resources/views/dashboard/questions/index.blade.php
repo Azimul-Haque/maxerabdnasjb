@@ -23,7 +23,7 @@
                       <h3 class="card-title">প্রশ্নব্যাংক (মোটঃ {{ $totalquestions }})</h3>
           
                       <div class="card-tools">
-                          <button type="button" class="btn btn-warning btn-sm"  data-toggle="modal" data-target="#addQuesitonModal">
+                          <button type="button" class="btn btn-warning btn-sm"  data-toggle="modal" data-target="#addExcelQuesitonModalLabel">
                               <i class="fas fa-file-excel"></i> এক্সেল ফাইল আপলোড করুন
                           </button>
                           <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addQuesitonModal">
