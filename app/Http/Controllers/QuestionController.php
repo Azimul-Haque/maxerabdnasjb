@@ -199,10 +199,10 @@ class QuestionController extends Controller
             $question->difficulty = $collection['difficulty'];
             $question->save();
 
-            
-            if(isset($request->tags_ids)){
-                $question->tags()->sync($request->tags_ids, false);
-            }
+            // APATOT KORA HOCCHE NA...
+            // if(isset($request->tags_ids)){
+            //     $question->tags()->sync($request->tags_ids, false);
+            // }
 
             // image upload
             if($request->hasFile('image')) {
