@@ -260,11 +260,7 @@ class ExamController extends Controller
                 $examquestion->save();
             }
         }
-        if($quantitycheck == 0) {
-            Session::flash('info', 'At least one topic is required!');
-        } else {
-            Session::flash('success', 'Question updated successfully!');
-        }
+        Session::flash('success', 'Question updated successfully!');
         return redirect()->route('dashboard.exams.add.question', $request->exam_id);
     }
     
