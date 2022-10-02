@@ -18,7 +18,7 @@
           
                       <div class="card-tools">
                           <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addExamQuestionModal">
-                              <i class="fas fa-tasks"></i> প্রশ্ন হালনাগাদ করুন
+                              <i class="fas fa-tasks"></i> ট্যাগ ধরে প্রশ্ন সেট
                           </button>
                           <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addExamQuestionModal">
                               <i class="fas fa-tasks"></i> প্রশ্ন হালনাগাদ করুন
