@@ -263,7 +263,7 @@ class ExamController extends Controller
         foreach($temptagquestions as $questionid) { 
             $examquestion = new Examquestion;
             $examquestion->exam_id = $request->exam_id;
-            $examquestion->question_id = $question[];
+            $examquestion->question_id = $questionid;
             $examquestion->save();
         }
         Session::flash('success', 'Question updated successfully!');
