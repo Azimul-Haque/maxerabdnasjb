@@ -152,13 +152,6 @@
                 <form method="post" action="{{ route('dashboard.exams.question.store') }}">
                     <div class="modal-body">
                         @csrf
-                        @php
-                            $examquestionidarray = [];
-                            foreach ($examquestions as $examquestion) {
-                                $examquestionidarray[] = $examquestion->question_id;
-                            }
-                            $questionchecktext = implode(",", $examquestionidarray);
-                        @endphp
                         <input type="hidden" name="exam_id" value="{{ $exam->id }}">
                         <input type="hidden" id="hiddencheckarray" name="hiddencheckarray" value="{{ $questionchecktext }}">
                         <table class="table table-condensed" id="datatablemodal">
