@@ -26,6 +26,9 @@
                           <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addQuesitonModal">
                               <i class="fas fa-plus-circle"></i> নতুন প্রশ্ন যোগ
                           </button>
+                          <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addQuesitonModal">
+                              <i class="fas fa-plus-circle"></i> নতুন প্রশ্ন যোগ
+                          </button>
                       </div>
                     </div>
                     <!-- /.card-header -->
