@@ -503,22 +503,15 @@
           <form method="post" action="{{ route('dashboard.questions.store') }}" enctype='multipart/form-data'>
               <div class="modal-body">
                     @csrf
-                    <div class="input-group mb-3">
-                        <input type="text" name="question" class="form-control" value="{{ old('question') }}" placeholder="প্রশ্ন" required>
-                        <div class="input-group-append">
-                            <div class="input-group-text"><span class="far fa-question-circle"></span></div>
-                        </div>
-                    </div>
-                    
                     <div class="col-md-6">
-                            <div class="form-group ">
-                                <label for="image">ছবি (প্রয়োজনে)</label>
-                                <input type="file" id="image" name="image" accept="image/*">
-                            </div>
-                            <center>
-                                <img src="{{ asset('images/placeholder.png')}}" id='img-upload' style="width: 250px; height: auto;" class="img-responsive" />
-                            </center>
+                        <div class="form-group ">
+                            <label for="image">ছবি (প্রয়োজনে)</label>
+                            <input type="file" id="image" name="image" accept="image/*">
                         </div>
+                        <center>
+                            <img src="{{ asset('images/placeholder.png')}}" id='img-upload' style="width: 250px; height: auto;" class="img-responsive" />
+                        </center>
+                    </div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
