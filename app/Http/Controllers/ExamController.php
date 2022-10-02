@@ -260,13 +260,12 @@ class ExamController extends Controller
         }
         $temptagquestions = array_values(array_unique($temptagquestions, SORT_REGULAR));
         
-        // dd($temptagquestions);
-        // foreach($temptagquestions as $question) {
-        //     $examquestion = new Examquestion;
-        //     $examquestion->exam_id = $request->exam_id;
-        //     $examquestion->question_id = $question->id;
-        //     $examquestion->save();
-        // }
+        foreach($temptagquestions as $question) {
+            $examquestion = new Examquestion;
+            $examquestion->exam_id = $request->exam_id;
+            $examquestion->question_id = $question->id;
+            $examquestion->save();
+        }
         Session::flash('success', 'Question updated successfully!');
         return redirect()->route('dashboard.exams.add.question', $request->exam_id);
     }
