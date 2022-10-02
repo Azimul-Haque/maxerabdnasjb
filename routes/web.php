@@ -48,7 +48,7 @@ Route::post('/dashboard/packages/{id}/update', 'DashboardController@updatePackag
 
 Route::get('/dashboard/questions', 'QuestionController@getQuestions')->name('dashboard.questions');
 Route::post('/dashboard/questions/store', 'QuestionController@storeQuestion')->name('dashboard.questions.store');
-Route::post('/dashboard/questions/store', 'QuestionController@storeQuestion')->name('dashboard.questions.excel.store');
+Route::post('/dashboard/questions/store', 'QuestionController@storeExcelQuestion')->name('dashboard.questions.excel.store');
 Route::post('/dashboard/questions/{id}/update', 'QuestionController@updateQuestion')->name('dashboard.questions.update');
 Route::get('/dashboard/questions/{id}/delete', 'QuestionController@deleteQuestion')->name('dashboard.questions.delete');
 
