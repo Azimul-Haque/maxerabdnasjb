@@ -17,8 +17,8 @@
                       <h3 class="card-title">প্রশ্নসমূহ ({{ $examquestions->count() }} টি প্রশ্ন)</h3>
           
                       <div class="card-tools">
-                          <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addExamQuestionModal">
-                              <i class="fas fa-tasks"></i> ট্যাগ ধরে প্রশ্ন সেট
+                          <button type="button" class="btn btn-warning btn-sm"  data-toggle="modal" data-target="#addExamQuestionModal">
+                              <i class="fas fa-tasks"></i> ট্যাগ থেকে প্রশ্ন
                           </button>
                           <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addExamQuestionModal">
                               <i class="fas fa-tasks"></i> প্রশ্ন হালনাগাদ করুন
