@@ -241,7 +241,7 @@ class ExamController extends Controller
             'tags_ids'          => 'required',
         ));
 
-        dd($request->all());
+        // dd($request->all());
         $oldexamquestions = Examquestion::where('exam_id', $request->exam_id)->get();
         if(count($oldexamquestions) > 0) {
             foreach($oldexamquestions as $oldexamquestion) {
