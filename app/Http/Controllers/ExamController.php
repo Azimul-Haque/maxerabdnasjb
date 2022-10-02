@@ -259,21 +259,6 @@ class ExamController extends Controller
                 $examquestion->question_id = $question->id;
                 $examquestion->save();
             }
-
-            $topicname = 'topic' . $topic->id;
-            $quantity = 'quantity' . $topic->id;
-            if($request[$topicname] == $topic->id && $request[$quantity] > 0) {
-                $topicquestions = Question::where('topic_id', $request[$topicname])->inRandomOrder()->limit($request[$quantity])->get();
-                // dd($topicquestions);
-                foreach($topicquestions as $topicquestion) {
-                    $examquestion = new Examquestion;
-                    $examquestion->exam_id = $request->exam_id;
-                    $examquestion->question_id = $topicquestion->id;
-                    $examquestion->save();
-                }
-            }
-            $quantitycheck = $quantitycheck + $request[$quantity];
-            // dd($quantitycheck);
         }
         if($quantitycheck == 0) {
             Session::flash('info', 'At least one topic is required!');
