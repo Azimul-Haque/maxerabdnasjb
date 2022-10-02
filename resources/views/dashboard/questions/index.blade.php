@@ -400,7 +400,7 @@
                           @foreach($tags as $tag)
                               <tr>
                                   <td>
-                                      {{ $tag->name }}<br/>
+                                      {{ $tag->name }} <small>({{ $tag->questions->count() }} টি প্রশ্ন)</small><br/>
                                   </td>
                               
                                   <td align="right" width="40%">
