@@ -215,8 +215,8 @@ class QuestionController extends Controller
             //     $questionimage->image       = $filename;
             //     $questionimage->save();
             // }
-
-            if($request->explanation) {
+            
+            if($collection['explanation'] != null) {
                 $questionexplanation              = new Questionexplanation;
                 $questionexplanation->question_id = $question->id;
                 $questionexplanation->explanation = $request->explanation;
