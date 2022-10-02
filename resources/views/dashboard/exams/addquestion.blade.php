@@ -20,6 +20,9 @@
                           <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addExamQuestionModal">
                               <i class="fas fa-tasks"></i> প্রশ্ন হালনাগাদ করুন
                           </button>
+                          <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addExamQuestionModal">
+                              <i class="fas fa-tasks"></i> প্রশ্ন হালনাগাদ করুন
+                          </button>
                       </div>
                     </div>
                     <!-- /.card-header -->
