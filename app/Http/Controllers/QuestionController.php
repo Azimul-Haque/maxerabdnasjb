@@ -187,43 +187,46 @@ class QuestionController extends Controller
         }
 
         // dd($collections);
+        DB::beginTransaction();
         foreach ($collections as $collection) {
-            $question             = new Question;
-            $question->topic_id   = $collection['topic_id'];
-            $question->question   = $collection['question'];
-            $question->option1    = $collection['option1'];
-            $question->option2    = $collection['option2'];
-            $question->option3    = $collection['option3'];
-            $question->option4    = $collection['option4'];
-            $question->answer     = $collection['answer'];
-            $question->difficulty = $collection['difficulty'];
-            $question->save();
+            try {
+                $question             = new Question;
+                $question->topic_id   = $collection['topic_id'];
+                $question->question   = $collection['question'];
+                $question->option1    = $collection['option1'];
+                $question->option2    = $collection['option2'];
+                $question->option3    = $collection['option3'];
+                $question->option4    = $collection['option4'];
+                $question->answer     = $collection['answer'];
+                $question->difficulty = $collection['difficulty'];
+                $question->save();
 
-            // APATOT KORA HOCCHE NA...
-            // if(isset($request->tags_ids)){
-            //     $question->tags()->sync($request->tags_ids, false);
-            // }
+                // APATOT KORA HOCCHE NA...
+                // if(isset($request->tags_ids)){
+                //     $question->tags()->sync($request->tags_ids, false);
+                // }
 
-            // APATOT KORA HOCCHE NA...
-            // if($request->hasFile('image')) {
-            //     $image    = $request->file('image');
-            //     $filename = random_string(5) . time() .'.' . "webp";
-            //     $location = public_path('images/questions/'. $filename);
-            //     Image::make($image)->resize(350, null, function ($constraint) { $constraint->aspectRatio(); })->save($location);
-            //     $questionimage              = new Questionimage;
-            //     $questionimage->question_id = $question->id;
-            //     $questionimage->image       = $filename;
-            //     $questionimage->save();
-            // }
+                // APATOT KORA HOCCHE NA...
+                // if($request->hasFile('image')) {
+                //     $image    = $request->file('image');
+                //     $filename = random_string(5) . time() .'.' . "webp";
+                //     $location = public_path('images/questions/'. $filename);
+                //     Image::make($image)->resize(350, null, function ($constraint) { $constraint->aspectRatio(); })->save($location);
+                //     $questionimage              = new Questionimage;
+                //     $questionimage->question_id = $question->id;
+                //     $questionimage->image       = $filename;
+                //     $questionimage->save();
+                // }
 
-
-            
-
-            if($collection['explanation'] != null) {
-                $questionexplanation              = new Questionexplanation;
-                $questionexplanation->question_id = $question->id;
-                $questionexplanation->explanation = $collection['explanation'];
-                $questionexplanation->save();
+                if($collection['explanation'] != null) {
+                    $questionexplanation              = new Questionexplanation;
+                    $questionexplanation->question_id = $question->id;
+                    $questionexplanation->explanation = $collection['explanation'];
+                    $questionexplanation->save();
+                }
+                DB::commit();
+            } catch (Exception $e) {
+                DB::rollback();
             }
         }
         
