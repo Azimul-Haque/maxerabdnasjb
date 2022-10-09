@@ -16,6 +16,7 @@ use Hash;
 use Carbon\Carbon;
 use DB;
 use OneSignal;
+use Cache;
 
 class APIController extends Controller
 {
