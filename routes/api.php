@@ -27,7 +27,7 @@ Route::post('/updateuser', 'APIController@updateUser')->name('api.updateuser');
 Route::post('/notification/single', 'APIController@sendSingleNotification')->name('api.sendsinglenotification');
 Route::get('/notification/test', 'APIController@testNotification')->name('api.testnotification');
 
-Route::get('/testcache', 'APIController@getCourses')->name('api.getcourses');
+Route::get('/testcache', 'APIController@testCache')->name('api.testcache');
 Route::get('/getcourses/{softtoken}/{coursetype}', 'APIController@getCourses')->name('api.getcourses');
 Route::get('/getcourses/exams/{softtoken}/{id}', 'APIController@getCourseExams')->name('api.getcourses.exams');
 Route::get('/getothercourses/exams/{softtoken}/{coursetype}', 'APIController@getOtherCourseExams')->name('api.getothercourses.exams');
