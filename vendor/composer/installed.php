@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '55013b76a41fdd010769f4ec2f63488b81bf6a9c',
+    'reference' => '9ce8b3bbbe4c734b8bbf504a6883b4ef0e44af6c',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -19,6 +19,15 @@
       array (
       ),
       'reference' => 'b9c31def6a83f84b4d4a40d35996d375755f0e08',
+    ),
+    'barryvdh/laravel-debugbar' => 
+    array (
+      'pretty_version' => 'v3.7.0',
+      'version' => '3.7.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '3372ed65e6d2039d663ed19aa699956f9d346271',
     ),
     'berkayk/onesignal-laravel' => 
     array (
@@ -449,7 +458,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '55013b76a41fdd010769f4ec2f63488b81bf6a9c',
+      'reference' => '9ce8b3bbbe4c734b8bbf504a6883b4ef0e44af6c',
     ),
     'laravel/tinker' => 
     array (
@@ -504,6 +513,15 @@
       array (
       ),
       'reference' => 'b38b25d7b372e9fddb00335400467b223349fd7e',
+    ),
+    'maximebf/debugbar' => 
+    array (
+      'pretty_version' => 'v1.18.1',
+      'version' => '1.18.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'ba0af68dd4316834701ecb30a00ce9604ced3ee9',
     ),
     'mockery/mockery' => 
     array (
