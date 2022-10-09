@@ -91,8 +91,8 @@ class CourseController extends Controller
         foreach($course->courseexams as $exams) {
             $exams->delete();
         }
+        Cache::forget('courses' . $course->type);
         $course->delete();
-
         Session::flash('success', 'Course deleted successfully!');
         return redirect()->route('dashboard.courses');
     }
