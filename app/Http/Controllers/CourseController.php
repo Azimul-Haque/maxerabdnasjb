@@ -18,6 +18,7 @@ use File;
 use Session;
 use Artisan;
 use OneSignal;
+use Cache;
 
 class CourseController extends Controller
 {
