@@ -93,6 +93,7 @@ class CourseController extends Controller
         }
         Cache::forget('courses' . $course->type);
         $course->delete();
+        
         Session::flash('success', 'Course deleted successfully!');
         return redirect()->route('dashboard.courses');
     }
