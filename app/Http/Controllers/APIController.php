@@ -161,7 +161,7 @@ class APIController extends Controller
 
     public function testCache()
     {
-        $values = Cache::get('courses123');
+        Cache::forget('courses');
         echo $values;
     }
 
