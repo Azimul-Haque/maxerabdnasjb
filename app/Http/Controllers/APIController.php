@@ -141,11 +141,7 @@ class APIController extends Controller
                  }
                  return $courses;
             });
-            // $courses = Course::select('id', 'name')
-            //                  ->where('status', 1) // take only active courses
-            //                  ->where('type', $coursetype) // 1 = Course, 2 = BJS MT, 3 = Bar MT, 4 = Free MT, 5 = QB
-            //                  ->orderBy('priority', 'asc')
-            //                  ->get();
+                            ->get();
             
             // dd($courses->all());
             echo response()->json([
