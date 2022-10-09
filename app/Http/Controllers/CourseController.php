@@ -59,7 +59,7 @@ class CourseController extends Controller
         $course->priority = $request->priority;
         $course->save();
 
-        Cache::forget('courses1');
+        Cache::forget('courses' . $request->type);
         Session::flash('success', 'Course created successfully!');
         return redirect()->route('dashboard.courses');
     }
