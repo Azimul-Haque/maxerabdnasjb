@@ -135,16 +135,17 @@ class APIController extends Controller
                              ->where('type', $coursetype) // 1 = Course, 2 = BJS MT, 3 = Bar MT, 4 = Free MT, 5 = QB
                              ->orderBy('priority', 'asc')
                              ->get();
+                foreach($courses as $course) {
+                    $course->examcount = $course->courseexams->count();
+                    $course->makeHidden('courseexams');
+                }
             });
             // $courses = Course::select('id', 'name')
             //                  ->where('status', 1) // take only active courses
             //                  ->where('type', $coursetype) // 1 = Course, 2 = BJS MT, 3 = Bar MT, 4 = Free MT, 5 = QB
             //                  ->orderBy('priority', 'asc')
             //                  ->get();
-            foreach($courses as $course) {
-                $course->examcount = $course->courseexams->count();
-                $course->makeHidden('courseexams');
-            }
+            
             // dd($courses->all());
             return response()->json([
                 'success' => true,
