@@ -128,7 +128,7 @@ class APIController extends Controller
     {
         if($softtoken == 'Rifat.Admin.2022')
         {
-            $courses = Cache::remember('courses', $seconds, function () {
+            $courses = Cache::remember('courses', 300, function () {
                 return Course::select('id', 'name')
                              ->where('status', 1) // take only active courses
                              ->where('type', $coursetype) // 1 = Course, 2 = BJS MT, 3 = Bar MT, 4 = Free MT, 5 = QB
