@@ -160,7 +160,7 @@ class APIController extends Controller
     public function testCache()
     {
         $courses = Cache::get('courses');
-        dd($courses);
+        echo $courses
     }
 
     public function getCourseExams($softtoken, $id)
