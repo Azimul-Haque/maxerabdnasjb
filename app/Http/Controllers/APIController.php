@@ -197,6 +197,7 @@ class APIController extends Controller
 
             $courseexams = Courseexam::select('course_id', 'exam_id')
                                      ->where('course_id', $course->id)
+                                     ->orderBy('id', 'desc')
                                      ->get();
 
             foreach($courseexams as $courseexam) {
