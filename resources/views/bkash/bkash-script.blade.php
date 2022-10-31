@@ -13,7 +13,7 @@
                 }
             },
             error: function (err) {
-                // hideLoading();
+                hideLoading();
                 showErrorMessage(err);
             }
         });
@@ -77,7 +77,7 @@
             type: 'POST',
             contentType: 'application/json',
             success: function (data) {
-                // hideLoading();
+                hideLoading();
                 if (data && data.paymentID != null) {
                     paymentID = data.paymentID;
                     bKash.create().onSuccess(data);
@@ -86,7 +86,7 @@
                 }
             },
             error: function (err) {
-                // hideLoading();
+                hideLoading();
                 showErrorMessage(err.responseJSON);
                 bKash.create().onError();
             }
