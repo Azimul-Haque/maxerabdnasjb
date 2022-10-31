@@ -68,6 +68,7 @@ class BkashController extends Controller
         }
 
         session()->put('bkash_token', $response['id_token']);
+        
         return response()->json(['success', true]);
     }
 
