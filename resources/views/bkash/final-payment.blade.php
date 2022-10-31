@@ -46,10 +46,6 @@
     <div class="card p-3">
         <div class="d-flex justify-content-between align-items-center mt-2 mb-2">
             <big>৳ ২.০০</big>
-            <div class="colors">
-                
-            </div>
-            
         </div>
         
         <button class="btn btn-danger" id="bKash_button" onclick="BkashPayment()" style="background: url({{ asset('images/bkash_payment_logo.png') }}); background-size: 100%; background-size: 250px auto; background-repeat: no-repeat;">
