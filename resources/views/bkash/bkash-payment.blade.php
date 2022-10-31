@@ -86,10 +86,10 @@
     
         <div class="d-flex justify-content-between align-items-center ">
             <div class="mt-2">
-                <h4 class="text-uppercase">টেস্ট প্রোডাক্ট ২</h4>
+                <h4 class="text-uppercase">টেস্ট প্রোডাক্ট ৩</h4>
                 <div class="mt-5">
-                    <h5 class="text-uppercase mb-0">বিবরণ ২</h5>
-                    <h1 class="main-heading mt-0">বিবরণ ২</h1>
+                    <h5 class="text-uppercase mb-0">বিবরণ ৩</h5>
+                    <h1 class="main-heading mt-0">বিবরণ ৩</h1>
                     <div class="d-flex flex-row user-ratings">
                         <div class="ratings">
                             <i class="fa fa-star"></i>
