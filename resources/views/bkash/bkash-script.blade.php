@@ -96,10 +96,10 @@
     function BkashSuccess(data) {
         // console.log('পেমেন্ট সাকসেসফুল!');
         console.log(data);
+        Swal.fire("Successful", 'পেমেন্ট সাকসেসফুল!', "success");
         $.post('{{ route('bkash-success') }}', {
             payment_info: data
         }, function (res) {
-            Swal.fire("Successful", 'পেমেন্ট সাকসেসফুল!', "success");
             // location.reload();
             window.location.replace('{{ route('bkash-prod-test') }}');
         });
