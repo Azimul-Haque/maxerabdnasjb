@@ -99,7 +99,8 @@
             payment_info: data
         }, function (res) {
             alert('পেমেন্ট সাকসেসফুল!\n' + data.toString);
-            location.reload();
+            // location.reload();
+            window.location.replace(...)
         });
     }
     function showErrorMessage(response) {
