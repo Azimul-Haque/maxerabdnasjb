@@ -1,7 +1,6 @@
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script type="text/javascript">
     function BkashPayment() {
-        Swal.fire("TEST", 'Test Message', "success");
         showLoading();
         // get token
         $.ajax({
