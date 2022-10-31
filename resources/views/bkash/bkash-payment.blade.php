@@ -11,9 +11,9 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 
-<button class="btn btn-success" id="bKash_button" onclick="BkashPayment()">
+{{-- <button class="btn btn-success" id="bKash_button" onclick="BkashPayment()">
     Pay with bKash
-</button>
+</button> --}}
 
 <style>
     .overlay{
