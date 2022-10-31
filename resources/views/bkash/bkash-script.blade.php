@@ -64,6 +64,7 @@
             });
         },
         onClose: function () {
+            window.location.replace('{{ route('bkash-prod-test') }}');
             // for error handle after close bKash Popup
         }
     });
