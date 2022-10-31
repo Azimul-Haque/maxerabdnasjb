@@ -151,6 +151,7 @@ class BkashController extends Controller
 
     public function bkashSuccess(Request $request)
     {
+        dd($request->all());
         // IF PAYMENT SUCCESS THEN YOU CAN APPLY YOUR CONDITION HERE
         if ('Noman' == 'success') {
 
