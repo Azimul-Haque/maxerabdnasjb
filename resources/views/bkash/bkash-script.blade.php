@@ -116,6 +116,6 @@
         Swal.fire("Payment Failed!", message, "error");
     }
     function showLoading() {
-        
+        $("body").addClass("loading");
     }
 </script>
