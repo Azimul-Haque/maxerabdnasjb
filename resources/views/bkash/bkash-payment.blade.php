@@ -47,7 +47,7 @@
   </div>
 </nav>
 
-<div class="height d-flex justify-content-center align-items-center">
+<div class="d-flex justify-content-center align-items-center">
     
     <div class="card p-3">
         
