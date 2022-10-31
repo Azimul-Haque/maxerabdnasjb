@@ -22,7 +22,7 @@ class BkashController extends Controller
         $bkash_app_key = 'uEbrkv2oiuqVDC6OPqkMfEfych'; // bKash Merchant API APP KEY
         $bkash_app_secret = 'qJ8leWi1kHilxHfRdIbhTKZFbSOWxUes4jMAruKwyJ4KnC3mOckh'; // bKash Merchant API APP SECRET
         $bkash_username = '01837409842'; // bKash Merchant API USERNAME
-        $bkash_password = 'hWD@8vtzw0'; // bKash Merchant API PASSWORD
+        $bkash_password = '7^[vtwVLHRS'; // bKash Merchant API PASSWORD
         $bkash_base_url = 'https://checkout.pay.bka.sh/v1.2.0-beta'; // For Live Production URL: https://checkout.pay.bka.sh/v1.2.0-beta
 
         $this->app_key = $bkash_app_key;
