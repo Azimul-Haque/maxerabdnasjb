@@ -66,7 +66,7 @@
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
           <ul class="dropdown-menu">
             <li>
-                <a href="#" class="btn btn-default btn-flat float-right"
+                <a href="#" class="dropdown-item"
                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                     লগআউট
                 </a>
