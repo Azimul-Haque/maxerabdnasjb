@@ -74,7 +74,7 @@
             
         </div>
         
-        <button class="btn btn-danger" id="bKash_button" onclick="BkashPayment()" style="background: url({{ asset('images/bkash_payment_logo.png') }}); background-size: 100%; background-size: 280px auto; background-repeat: no-repeat;">
+        <button class="btn btn-danger" id="bKash_button" onclick="BkashPayment()" style="background: url({{ asset('images/bkash_payment_logo.png') }}); background-size: 100%; background-size: 260px auto; background-repeat: no-repeat;">
         </button>
     </div>
 
