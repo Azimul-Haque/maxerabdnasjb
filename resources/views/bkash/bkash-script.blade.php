@@ -95,11 +95,11 @@
     function BkashSuccess(data) {
         console.log('পেমেন্ট সাকসেসফুল!');
         console.log(data);
-        // $.post('{{ route('bkash-success') }}', {
-        //     payment_info: data
-        // }, function (res) {
-        //     location.reload()
-        // });
+        $.post('{{ route('bkash-success') }}', {
+            payment_info: data
+        }, function (res) {
+            location.reload()
+        });
     }
     function showErrorMessage(response) {
         let message = 'Unknown Error';
