@@ -69,7 +69,7 @@
         .card{
             
             width:300px;
-            height:320px;
+            height:150px;
         }
 
         .image{
