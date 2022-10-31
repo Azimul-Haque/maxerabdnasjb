@@ -14,4 +14,4 @@
 </button>
 
 
-@include('bkash-script')
+@include('bkash.bkash-script')
