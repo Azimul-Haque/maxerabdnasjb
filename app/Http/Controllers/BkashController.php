@@ -68,7 +68,7 @@ class BkashController extends Controller
         }
 
         session()->put('bkash_token', $response['id_token']);
-        
+
         return response()->json(['success', true]);
     }
 
@@ -78,7 +78,7 @@ class BkashController extends Controller
             return response()->json([
                 'errorMessage' => 'Amount Mismatch',
                 'errorCode' => 2006
-            ],422);
+            ], 422);
         }
 
         $token = session()->get('bkash_token');
