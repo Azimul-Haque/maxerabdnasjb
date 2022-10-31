@@ -119,6 +119,6 @@
         $("body").addClass("loading");
     }
     function hideLoading() {
-        $("body").addClass("loading");
+        $("body").removeClass("loading"); 
     }
 </script>
