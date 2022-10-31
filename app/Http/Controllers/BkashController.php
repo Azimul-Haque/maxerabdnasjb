@@ -16,6 +16,7 @@ class BkashController extends Controller
 
     public function __construct()
     {
+        $this->middleware('auth');
         // bKash Merchant API Information
 
         // You can import it from your Database
