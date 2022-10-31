@@ -17,7 +17,7 @@
 </button> --}}
 
 <style>
-    .swal-container {
+    .swal-container, .swal2-container {
         z-index: 2000;
     };
     .overlay{
