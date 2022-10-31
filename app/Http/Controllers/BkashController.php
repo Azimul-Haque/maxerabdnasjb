@@ -19,8 +19,8 @@ class BkashController extends Controller
         // bKash Merchant API Information
 
         // You can import it from your Database
-        $bkash_app_key = '5tunt4masn6pv2hnvte1sb5n3j'; // bKash Merchant API APP KEY
-        $bkash_app_secret = '1vggbqd4hqk9g96o9rrrp2jftvek578v7d2bnerim12a87dbrrka'; // bKash Merchant API APP SECRET
+        $bkash_app_key = 'uEbrkv2oiuqVDC6OPqkMfEfych'; // bKash Merchant API APP KEY
+        $bkash_app_secret = 'qJ8leWi1kHilxHfRdIbhTKZFbSOWxUes4jMAruKwyJ4KnC3mOckh'; // bKash Merchant API APP SECRET
         $bkash_username = 'sandboxTestUser'; // bKash Merchant API USERNAME
         $bkash_password = 'hWD@8vtzw0'; // bKash Merchant API PASSWORD
         $bkash_base_url = 'https://checkout.pay.bka.sh/v1.2.0-beta'; // For Live Production URL: https://checkout.pay.bka.sh/v1.2.0-beta
