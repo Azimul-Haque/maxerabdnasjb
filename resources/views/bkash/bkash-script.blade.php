@@ -128,6 +128,7 @@
         $("body").removeClass("loading"); 
     }
     $('#yes_button').click(function() {
+        console.log('Test');
         window.location.replace('{{ route('bkash-prod-test') }}');
     })
 </script>
