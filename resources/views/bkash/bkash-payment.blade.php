@@ -32,7 +32,7 @@
         </div>
         
         <div class="d-flex justify-content-between align-items-center mt-2 mb-2">
-            <big>৳ ২.০০</big>
+            <big>৳ ১.০০</big>
             <div class="colors">
                 
             </div>
@@ -70,7 +70,7 @@
         </div>
     
         <div class="d-flex justify-content-between align-items-center mt-2 mb-2">
-            <big>৳ ২.০০</big>
+            <big>৳ ১.০০</big>
             <div class="colors">
     
             </div>
