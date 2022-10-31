@@ -113,7 +113,7 @@
         </div>
     
         <button class="btn btn-danger" id="bKash_button" onclick="BkashPayment()">
-                <img src="{{ asset('images/bkash.gif') }}">
+                <img src="{{ asset('images/bkash.gif') }}" style="height: 40px; width: auto;">
         </button>
     </div>
 </div>
