@@ -18,7 +18,7 @@
             }
         });
     }
-    function BkashPayment() {
+    function BkashPayment2() {
         showLoading();
         // get token
         $.ajax({
