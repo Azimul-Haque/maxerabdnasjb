@@ -78,44 +78,6 @@
         <button class="btn btn-danger" id="bKash_button" onclick="BkashPayment()" style="background: url({{ asset('images/bkash_payment_logo.png') }}); background-size: 100%; background-size: 250px auto; background-repeat: no-repeat;">
         </button>
     </div>
-
-    <div style="width:20px"></div>
-
-    <div class="card p-3">
-    
-        <div class="d-flex justify-content-between align-items-center ">
-            <div class="mt-2">
-                <h4 class="text-uppercase">টেস্ট প্রোডাক্ট ২</h4>
-                <div class="mt-5">
-                    <h5 class="text-uppercase mb-0">বিবরণ ২</h5>
-                    <h1 class="main-heading mt-0">বিবরণ ২</h1>
-                    <div class="d-flex flex-row user-ratings">
-                        <div class="ratings">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                        <h6 class="text-muted ml-1">4/5</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="image">
-                <img src="https://i.imgur.com/MGorDUi.png" width="130">
-            </div>
-        </div>
-    
-        <div class="d-flex justify-content-between align-items-center mt-2 mb-2">
-            <big>৳ ২.০০</big>
-            <div class="colors">
-    
-            </div>
-    
-        </div>
-    
-        <button class="btn btn-danger" id="bKash_button" onclick="BkashPayment()" style="background: url({{ asset('images/bkash_payment_logo.png') }}); background-size: 100%; background-size: 250px auto; background-repeat: no-repeat;">
-        </button>
-    </div>
 </div>
 
 
