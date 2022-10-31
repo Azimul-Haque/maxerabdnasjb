@@ -63,7 +63,7 @@
         </ul>
       <ul class="navbar-nav">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            <a class="nav-link dropdown-toggle navbar-brand" href="#" role="button" data-bs-toggle="dropdown">
               <img src="{{ asset('images/user.png') }}"
                    class="rounded-pill elevation-1" alt="User Image">
               <span class="d-none d-md-inline">{{ Auth::user()->name }}</span>
