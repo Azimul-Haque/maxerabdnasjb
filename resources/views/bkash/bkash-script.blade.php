@@ -97,13 +97,13 @@
         // console.log('পেমেন্ট সাকসেসফুল!');
         console.log(data);
         Swal.fire("Successful", 'পেমেন্ট সাকসেসফুল!', "success");
-        $.post('{{ route('bkash-success') }}', {
-            payment_info: data
-        }, function (res) {
-            // alert('পেমেন্ট সাকসেসফুল!');
-            // location.reload();
-            window.location.replace('{{ route('bkash-prod-test') }}');
-        });
+        // $.post('{{ route('bkash-success') }}', {
+        //     payment_info: data
+        // }, function (res) {
+        //     // alert('পেমেন্ট সাকসেসফুল!');
+        //     // location.reload();
+        //     window.location.replace('{{ route('bkash-prod-test') }}');
+        // });
     }
     function showErrorMessage(response) {
         let message = 'Unknown Error';
