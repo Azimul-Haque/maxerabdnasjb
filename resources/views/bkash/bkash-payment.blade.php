@@ -35,6 +35,7 @@
         display: block;
     }
 </style>
+<div class="overlay"></div>
 
 
 @include('bkash.bkash-script')
