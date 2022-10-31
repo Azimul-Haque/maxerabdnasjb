@@ -65,7 +65,16 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="{{  }}">লগ আউট</a></li>
+            <li>
+                <a class="dropdown-item" href="{{  }}">লগ আউট</a>
+                <a href="#" class="btn btn-default btn-flat float-right"
+                   onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                    লগআউট
+                </a>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                    @csrf
+                </form>
+            </li>
           </ul>
         </li>
       </ul>
