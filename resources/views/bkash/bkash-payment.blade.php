@@ -21,7 +21,7 @@
         top: 0;
         left: 0;
         z-index: 999;
-        background: rgba(30,187,163,0.3) url("/images/Spinner-1s-200px.gif") center no-repeat;
+        background: rgba(224,34,95,0.3) url("/images/Spinner-1s-200px.gif") center no-repeat;
     }
     body{
         text-align: center;
