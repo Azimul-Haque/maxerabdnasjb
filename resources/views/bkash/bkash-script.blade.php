@@ -11,7 +11,7 @@
                 if (data.hasOwnProperty('msg')) {
                     showErrorMessage(data) // unknown error
                 }
-                console.log(data);
+                console.log({{ Session::get('error') }});
             },
             error: function (err) {
                 hideLoading();
