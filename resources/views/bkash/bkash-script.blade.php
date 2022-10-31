@@ -115,4 +115,7 @@
         }
         Swal.fire("Payment Failed!", message, "error");
     }
+    function showLoading() {
+        
+    }
 </script>
