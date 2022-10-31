@@ -74,12 +74,12 @@ class BkashController extends Controller
 
     public function createPayment(Request $request)
     {
-        if (((string) $request->amount != (string) session()->get('bkash')['invoice_amount'])) {
-            return response()->json([
-                'errorMessage' => 'Amount Mismatch',
-                'errorCode' => 2006
-            ], 422);
-        }
+        // if (((string) $request->amount != (string) session()->get('bkash')['invoice_amount'])) {
+        //     return response()->json([
+        //         'errorMessage' => 'Amount Mismatch',
+        //         'errorCode' => 2006
+        //     ], 422);
+        // }
 
         $token = session()->get('bkash_token');
 
