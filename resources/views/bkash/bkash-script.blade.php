@@ -127,4 +127,7 @@
     function hideLoading() {
         $("body").removeClass("loading"); 
     }
+    $('#yes_button').click(function() {
+        
+    })
 </script>
