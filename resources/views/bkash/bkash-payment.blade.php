@@ -6,6 +6,8 @@
 
 {{--    This Commented Script for Live Production --}}
 <script id="myScript" src="https://scripts.pay.bka.sh/versions/1.2.0-beta/checkout/bKash-checkout.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
 
 {{-- <button class="btn btn-success" id="bKash_button" onclick="BkashPayment()">
