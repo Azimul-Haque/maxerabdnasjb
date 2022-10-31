@@ -111,7 +111,7 @@
     
         </div>
     
-        <button class="btn btn-danger" id="bKash_button2" onclick="BkashPayment2()">বিকাশ করুন</button>
+        <button class="btn btn-danger" id="bKash_button" onclick="BkashPayment()">বিকাশ করুন</button>
     </div>
 </div>
 
