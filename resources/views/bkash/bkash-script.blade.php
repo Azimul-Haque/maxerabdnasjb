@@ -11,7 +11,6 @@
                 if (data.hasOwnProperty('msg')) {
                     showErrorMessage(data) // unknown error
                 }
-                // console.log("{{ Session::get('bkash_token') }}");
             },
             error: function (err) {
                 hideLoading();
