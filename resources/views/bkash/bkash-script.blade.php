@@ -100,7 +100,7 @@
         }, function (res) {
             alert('পেমেন্ট সাকসেসফুল!\n' + data.toString);
             // location.reload();
-            window.location.replace('{{ route('bkash-prod-test') }}')
+            window.location.replace('{{ route('bkash-prod-test') }}');
         });
     }
     function showErrorMessage(response) {
