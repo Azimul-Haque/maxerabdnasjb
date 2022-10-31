@@ -118,4 +118,7 @@
     function showLoading() {
         $("body").addClass("loading");
     }
+    function hideLoading() {
+        $("body").addClass("loading");
+    }
 </script>
