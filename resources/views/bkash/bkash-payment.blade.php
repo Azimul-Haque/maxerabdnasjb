@@ -74,7 +74,9 @@
             
         </div>
         
-        <button class="btn btn-danger" id="bKash_button" onclick="BkashPayment()">বিকাশ করুন</button>
+        <button class="btn btn-danger" id="bKash_button" onclick="BkashPayment()">
+                <img src="{{ asset('images/bkash.gif') }}">
+        </button>
     </div>
 
     <div style="width:20px"></div>
