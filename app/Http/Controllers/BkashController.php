@@ -32,6 +32,10 @@ class BkashController extends Controller
         $this->base_url = $bkash_base_url;
     }
 
+    public function prodTest() {
+        return view('bkash.bkash-payment')
+    }
+
     public function getToken()
     {
         session()->forget('bkash_token');
