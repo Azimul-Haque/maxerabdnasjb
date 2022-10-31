@@ -100,6 +100,7 @@
         $.post('{{ route('bkash-success') }}', {
             payment_info: data
         }, function (res) {
+            // alert('পেমেন্ট সাকসেসফুল!');
             // location.reload();
             window.location.replace('{{ route('bkash-prod-test') }}');
         });
