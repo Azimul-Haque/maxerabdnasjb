@@ -18,25 +18,6 @@
             }
         });
     }
-    function BkashPayment2() {
-        showLoading();
-        // get token
-        $.ajax({
-            url: "{{ route('bkash-get-token') }}",
-            type: 'POST',
-            contentType: 'application/json',
-            success: function (data) {
-                $('pay-with-bkash-button').trigger('click');
-                if (data.hasOwnProperty('msg')) {
-                    showErrorMessage(data) // unknown error
-                }
-            },
-            error: function (err) {
-                hideLoading();
-                showErrorMessage(err);
-            }
-        });
-    }
     let paymentID = '';
     bKash.init({
         paymentMode: 'checkout',
