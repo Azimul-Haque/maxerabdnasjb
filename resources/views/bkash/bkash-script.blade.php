@@ -1,6 +1,6 @@
 <script type="text/javascript">
     function BkashPayment() {
-        // showLoading();
+        showLoading();
         // get token
         $.ajax({
             url: "{{ route('bkash-get-token') }}",
