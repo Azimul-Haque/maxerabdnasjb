@@ -61,7 +61,7 @@
 
           </li>
         </ul>
-      <ul class="navbar-nav"> 
+      <ul class="navbar-nav">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
           <ul class="dropdown-menu">
