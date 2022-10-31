@@ -33,7 +33,7 @@ class BkashController extends Controller
     }
 
     public function prodTest() {
-        return view('bkash.bkash-payment')
+        return view('bkash.bkash-payment');
     }
 
     public function getToken()
