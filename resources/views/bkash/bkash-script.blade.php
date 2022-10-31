@@ -70,7 +70,7 @@
         // Amount already checked and verified by the controller
         // because of createRequest function finds amount from this request
         {{--request['amount'] = "{{ Session::get('bkash')['invoice_amount'] }}";--}} 
-        request['amount'] = {{ $amount }}; // max two decimal points allowed
+        request['amount'] = {{ $amount ? $amount : 0 }}; // max two decimal points allowed
         $.ajax({
             url: '{{ route('bkash-create-payment') }}',
             data: JSON.stringify(request),
