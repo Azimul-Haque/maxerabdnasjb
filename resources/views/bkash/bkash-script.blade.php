@@ -98,7 +98,7 @@
         $.post('{{ route('bkash-success') }}', {
             payment_info: data
         }, function (res) {
-            location.reload()
+            // location.reload();
         });
     }
     function showErrorMessage(response) {
