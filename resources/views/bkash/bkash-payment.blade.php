@@ -107,7 +107,7 @@
         </div>
     
         <div class="d-flex justify-content-between align-items-center mt-2 mb-2">
-            <big>৳ ২.০০</big>
+            <big>৳ ৫.০০</big>
             <div class="colors">
     
             </div>
