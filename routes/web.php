@@ -29,6 +29,7 @@ Route::get('/payment/app/cancel', 'IndexController@paymentCancelApp')->name('ind
 Route::get('/clear', ['as'=>'clear','uses'=>'IndexController@clear']);
 
 // Payment Routes for bKash
+Route::get('bkash/production/test', 'BkashController@prodTest')->name('bkash-prod-test');
 Route::post('bkash/get-token', 'BkashController@getToken')->name('bkash-get-token');
 Route::post('bkash/create-payment', 'BkashController@createPayment')->name('bkash-create-payment');
 Route::post('bkash/execute-payment', 'BkashController@executePayment')->name('bkash-execute-payment');
