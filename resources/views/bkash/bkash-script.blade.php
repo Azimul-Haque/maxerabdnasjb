@@ -11,6 +11,7 @@
                 if (data.hasOwnProperty('msg')) {
                     showErrorMessage(data) // unknown error
                 }
+                console.log(data);
             },
             error: function (err) {
                 hideLoading();
