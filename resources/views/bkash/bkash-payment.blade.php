@@ -157,7 +157,7 @@
     
         </div>
     
-        <a href="{{ route('bkash-prod-test-payment', '5.00') }}" class="btn btn-danger" id="bKash_button" style="background: url({{ asset('images/bkash_payment_logo.png') }}); background-size: 100%; background-size: 250px auto; background-repeat: no-repeat;">
+        <a href="{{ route('bkash-prod-test-payment', '200.00') }}" class="btn btn-danger" id="bKash_button" style="background: url({{ asset('images/bkash_payment_logo.png') }}); background-size: 100%; background-size: 250px auto; background-repeat: no-repeat;">
         </a>
     </div>
 </div>
