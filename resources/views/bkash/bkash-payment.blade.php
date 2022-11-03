@@ -131,7 +131,7 @@
         <form method="post" action="{{ route('bkash-prod-test-payment') }}">
             @csrf
             <input type="hidden" name="amount" value="1.00">
-            <button class="btn btn-danger" id="bKash_button" style="background:  #000000;">
+            <button class="btn btn-danger" id="bKash_button" style="background:  #FFFFFF;">
                 <img style="width: 210px; heigh: auto;" src="{{ asset('images/bkash_payment_logo.png') }}">
             </button>
         </form>
