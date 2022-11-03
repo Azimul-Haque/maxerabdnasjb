@@ -37,8 +37,8 @@ class BkashController extends Controller
         return view('bkash.bkash-payment');
     }
 
-    public function prodPayment($amount) {
-        return view('bkash.final-payment')->withAmount($amount);
+    public function prodPayment(Request $request) {
+        return view('bkash.final-payment')->withAmount($request->amount);
     }
 
     public function getToken()
