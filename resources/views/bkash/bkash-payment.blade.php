@@ -157,10 +157,10 @@
     
         </div>
         
-        <form>
+        <form action="{{ route('bkash-prod-test-payment') }}">
             @csrf
             <input type="hidden" name="amount" value="200.00">
-            <button href="{{ route('bkash-prod-test-payment') }}" class="btn btn-danger" id="bKash_button" style="background: url({{ asset('images/bkash_payment_logo.png') }}); background-size: 100%; background-size: 250px auto; background-repeat: no-repeat;">
+            <button href="" class="btn btn-danger" id="bKash_button" style="background: url({{ asset('images/bkash_payment_logo.png') }}); background-size: 100%; background-size: 250px auto; background-repeat: no-repeat;">
             </button>
         </form>
     </div>
