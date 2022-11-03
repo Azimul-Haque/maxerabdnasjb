@@ -87,7 +87,7 @@
         <form method="post" action="{{ route('bkash-prod-test-payment') }}">
             @csrf
             <input type="hidden" name="amount" value="1.00">
-            <button href="" class="btn btn-danger" id="bKash_button" style="background: url({{ asset('images/bkash_payment_logo.png') }}); background-size: 100%; background-size: 250px auto; background-repeat: no-repeat;">
+            <button class="btn btn-danger" id="bKash_button" style="background: url({{ asset('images/bkash_payment_logo.png') }}); background-size: 100%; background-size: 250px auto; background-repeat: no-repeat;">
             </button>
         </form>
     </div>
@@ -131,7 +131,7 @@
         <form method="post" action="{{ route('bkash-prod-test-payment') }}">
             @csrf
             <input type="hidden" name="amount" value="1.00">
-            <button href="" class="btn btn-danger" id="bKash_button" style="background: url({{ asset('images/bkash_payment_logo.png') }}); background-size: 100%; background-size: 250px auto; background-repeat: no-repeat;">
+            <button class="btn btn-danger" id="bKash_button" style="background: url({{ asset('images/bkash_payment_logo.png') }}); background-size: 100%; background-size: 250px auto; background-repeat: no-repeat;">
             </button>
         </form>
     </div>
@@ -172,7 +172,7 @@
         <form method="post" action="{{ route('bkash-prod-test-payment') }}">
             @csrf
             <input type="hidden" name="amount" value="200.00">
-            <button href="" class="btn btn-danger" id="bKash_button" style="background: url({{ asset('images/bkash_payment_logo.png') }}); background-size: 100%; background-size: 250px auto; background-repeat: no-repeat;">
+            <button class="btn btn-danger" id="bKash_button" style="background: url({{ asset('images/bkash_payment_logo.png') }}); background-size: 100%; background-size: 250px auto; background-repeat: no-repeat;">
             </button>
         </form>
     </div>
