@@ -21,7 +21,7 @@ class BkashController extends Controller
 
         // You can import it from your Database
         $bkash_app_key = end('BKASH_APP_KEY');
-        $bkash_app_secret = end('BKASH_APP_KEY');
+        $bkash_app_secret = end('BKASH_APP_SECRET');
         $bkash_username = end('BKASH_APP_KEY');
         $bkash_password = end('BKASH_APP_KEY');
         $bkash_base_url = end('BKASH_APP_KEY');
