@@ -20,6 +20,7 @@
         });
     }
     let paymentID = '';
+    
     window.addEventListener(
         "flutterInAppWebViewPlatformReady",
         function (event) {
@@ -31,7 +32,6 @@
                 );
             }
         }
-
         
         bKash.init({
             paymentMode: 'checkout',
