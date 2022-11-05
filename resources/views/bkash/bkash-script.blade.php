@@ -128,4 +128,8 @@
     function hideLoading() {
         $("body").removeClass("loading"); 
     }
+
+    window.addEventListener(function (event) {
+        
+    })
 </script>
