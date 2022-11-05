@@ -1,6 +1,24 @@
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script type="text/javascript">
-    
+    function BkashPayment() {
+        showLoading();
+        // get token
+        $.ajax({
+            url: "{{ route('bkash-get-token') }}",
+            type: 'POST',
+            contentType: 'application/json',
+            success: function (data) {
+                $('pay-with-bkash-button').trigger('click');
+                if (data.hasOwnProperty('msg')) {
+                    showErrorMessage(data) // unknown error
+                }
+            },
+            error: function (err) {
+                hideLoading();
+                showErrorMessage(err);
+            }
+        });
+    }
     let paymentID = '';
     window.addEventListener(
         "flutterInAppWebViewPlatformReady",
@@ -14,25 +32,7 @@
             }
         }
 
-        function BkashPayment() {
-            showLoading();
-            // get token
-            $.ajax({
-                url: "{{ route('bkash-get-token') }}",
-                type: 'POST',
-                contentType: 'application/json',
-                success: function (data) {
-                    $('pay-with-bkash-button').trigger('click');
-                    if (data.hasOwnProperty('msg')) {
-                        showErrorMessage(data) // unknown error
-                    }
-                },
-                error: function (err) {
-                    hideLoading();
-                    showErrorMessage(err);
-                }
-            });
-        }
+        
         bKash.init({
             paymentMode: 'checkout',
             paymentRequest: {},
