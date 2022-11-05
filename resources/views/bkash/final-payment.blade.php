@@ -11,9 +11,11 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <script type="text/javascript">
-    setTimeout(
-        console.log('ttt'),
-    1000);
+    window.onload = function() {
+      setTimeout(
+      1000);
+    };
+    
 </script>
 
 
