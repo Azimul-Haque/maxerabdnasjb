@@ -3,6 +3,7 @@
     
 
     window.addEventListener(
+        "flutterInAppWebViewPlatformReady",
         function (event) {
             function paymentStatus(status, data) {
                 //js to dart message passing
