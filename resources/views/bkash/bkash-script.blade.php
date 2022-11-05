@@ -129,7 +129,15 @@
         $("body").removeClass("loading"); 
     }
 
-    window.addEventListener(function (event) {
-        
-    })
+    window.addEventListener(
+        function (event) {
+            function paymentStatus(status, data) {
+                //js to dart message passing
+                window.flutter_inappwebview.callHandler(
+                    status,
+                    data
+                );
+            }
+        }
+    );
 </script>
