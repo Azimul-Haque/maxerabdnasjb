@@ -51,7 +51,6 @@
 </style>
 
 <div class="overlay"></div>
-<br/><br/>
 <div class="height d-flex justify-content-center align-items-center">
     
     <div class="card p-3">
