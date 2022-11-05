@@ -24,7 +24,7 @@ class BkashController extends Controller
         $bkash_app_secret = end('BKASH_APP_SECRET');
         $bkash_username = end('BKASH_USERNAME');
         $bkash_password = end('BKASH_PASSWORD');
-        $bkash_base_url = end('BKASH_APP_KEY');
+        $bkash_base_url = end('BKASH_BASE_URL');
 
         $this->app_key = $bkash_app_key;
         $this->app_secret = $bkash_app_secret;
