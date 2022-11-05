@@ -14,7 +14,7 @@
     $(function(){
         setTimeout(
             BkashPayment(),
-        2500);
+        3000);
     });
 </script>
 
