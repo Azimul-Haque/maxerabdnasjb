@@ -20,11 +20,11 @@ class BkashController extends Controller
         // bKash Merchant API Information
 
         // You can import it from your Database
-        $bkash_app_key = end('BKASH_APP_KEY');
-        $bkash_app_secret = end('BKASH_APP_SECRET');
-        $bkash_username = end('BKASH_USERNAME');
-        $bkash_password = end('BKASH_PASSWORD');
-        $bkash_base_url = end('BKASH_BASE_URL');
+        $bkash_app_key = env('BKASH_APP_KEY');
+        $bkash_app_secret = env('BKASH_APP_SECRET');
+        $bkash_username = env('BKASH_USERNAME');
+        $bkash_password = env('BKASH_PASSWORD');
+        $bkash_base_url = env('BKASH_BASE_URL');
 
         $this->app_key = $bkash_app_key;
         $this->app_secret = $bkash_app_secret;
