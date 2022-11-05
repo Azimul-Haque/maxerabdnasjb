@@ -60,8 +60,8 @@
             <big>পেমেন্ট ৳ {{ bangla($amount) }}</big>
         </div>
         
-        <button class="btn btn-danger" id="bKash_button" onclick="BkashPayment()" style="background: url({{ asset('images/bkash_payment_logo.png') }}); background-size: 100%; background-size: 250px auto; background-repeat: no-repeat;">
-        </button>
+        {{-- <button class="btn btn-danger" id="bKash_button" onclick="BkashPayment()" style="background: url({{ asset('images/bkash_payment_logo.png') }}); background-size: 100%; background-size: 250px auto; background-repeat: no-repeat;">
+        </button> --}}
     </div>
 </div>
 
