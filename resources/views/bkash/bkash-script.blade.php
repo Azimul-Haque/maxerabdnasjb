@@ -1,7 +1,7 @@
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script type="text/javascript">
     
-
+    let paymentID = '';
     window.addEventListener(
         "flutterInAppWebViewPlatformReady",
         function (event) {
@@ -33,7 +33,6 @@
                 }
             });
         }
-        let paymentID = '';
         bKash.init({
             paymentMode: 'checkout',
             paymentRequest: {},
