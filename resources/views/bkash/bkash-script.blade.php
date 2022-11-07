@@ -36,7 +36,7 @@
                     data: JSON.stringify({
                         "paymentID": paymentID
                     }),
-                    success: function (data) {
+                    success: function (data) { 
                         if (data) {
                             if (data.paymentID != null) {
                                 BkashSuccess(data);
