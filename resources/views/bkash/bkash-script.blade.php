@@ -2,7 +2,7 @@
 <script type="text/javascript">
     window.onload = function() {
         setTimeout(function () {
-            BkashPayment();
+            // BkashPayment();
             $.ajax({
                 url: "{{ route('bkash-get-token') }}",
                 type: 'POST',
@@ -18,7 +18,7 @@
                     showErrorMessage(err);
                 }
             });
-        }, 1000);
+        }, 2000);
 
     };
     function BkashPayment() {
