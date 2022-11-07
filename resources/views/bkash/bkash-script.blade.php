@@ -3,9 +3,7 @@
     window.onload = window.onload = BkashPayment;
     function BkashPayment() {
         showLoading();
-        setTimeout(function () {
-            
-        }, 1000);
+        setTimeout(function () {}, 1000);
         // get token
         $.ajax({
             url: "{{ route('bkash-get-token') }}",
