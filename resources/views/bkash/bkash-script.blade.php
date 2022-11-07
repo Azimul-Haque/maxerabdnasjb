@@ -4,7 +4,6 @@
     function BkashPayment() {
         showLoading();
         // get token
-        console.log('e porjonto');
         $.ajax({
             url: "{{ route('bkash-get-token') }}",
             type: 'POST',
