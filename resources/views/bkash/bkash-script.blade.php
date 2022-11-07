@@ -1,6 +1,6 @@
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script type="text/javascript">
-    $("#bKash_button").trigger("click");
+    // $("#bKash_button").trigger("click");
     function BkashPayment() {
         showLoading();
         // get token
