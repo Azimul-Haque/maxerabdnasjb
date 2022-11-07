@@ -1,5 +1,25 @@
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script type="text/javascript">
+    window.onload = function() {
+        // setTimeout(function () {
+        //     BkashPayment();
+        // }, 1000);
+        $.ajax({
+            url: "{{ route('bkash-get-token') }}",
+            type: 'POST',
+            contentType: 'application/json',
+            success: function (data) {
+                $('pay-with-bkash-button').trigger('click');
+                if (data.hasOwnProperty('msg')) {
+                    showErrorMessage(data) // unknown error
+                }
+            },
+            error: function (err) {
+                hideLoading();
+                showErrorMessage(err);
+            }
+        });
+    };
     function BkashPayment() {
         showLoading();
         // get token
