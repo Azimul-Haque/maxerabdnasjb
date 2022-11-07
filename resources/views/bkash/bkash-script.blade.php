@@ -108,7 +108,7 @@
                 // console.log(JSON.parse(res));
                 alert('Payment is successful');
                 // location.reload();
-                {{-- window.location.replace('{{ route('bkash-prod-test') }}'); --}}
+                window.location.replace('{{ route('bkash-prod-test') }}');
             });
         }
         function showErrorMessage(response) {
