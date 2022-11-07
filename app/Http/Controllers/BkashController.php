@@ -45,7 +45,7 @@ class BkashController extends Controller
         return view('bkash.final-payment')
                             ->withAmount($amount)
                             ->withMobile($mobile)
-                            ->withPackageId($package_id);
+                            ->withPackageid($package_id);
     }
 
     public function getToken(Request $request)
