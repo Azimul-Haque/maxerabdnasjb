@@ -101,7 +101,7 @@
             // Swal.fire("Successful", 'পেমেন্ট সাকসেসফুল!', "success");
             $.post('{{ route('bkash-success') }}', {
                 payment_info: data,
-                mobile: {{ $mobile }},
+                mobile: '{{ $mobile }}',
                 package_id: {{ $packageid }}
             }, function (res) {
                 console.log(res);
