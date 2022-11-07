@@ -29,6 +29,7 @@
                     createPayment(request);
                 }, 2000)
             },
+            
             executeRequestOnAuthorization: function (request) {
                 $.ajax({
                     url: '{{ route('bkash-execute-payment') }}',
