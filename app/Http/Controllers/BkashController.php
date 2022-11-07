@@ -45,7 +45,7 @@ class BkashController extends Controller
         return view('bkash.final-payment')->withAmount($amount);
     }
 
-    public function getToken()
+    public function getToken(Request $request)
     {
         session()->forget('bkash_token');
 
