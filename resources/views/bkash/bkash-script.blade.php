@@ -104,10 +104,10 @@
                 mobile: {{ $mobile }},
                 package_id: {{ $packageid }}
             }, function (res) {
-                console.log(res.);
+                console.log(res);
                 alert('Payment is successful' + res);
                 // location.reload();
-                {{-- window.location.replace('{{ route('bkash-prod-test') }}'); --}}
+                {{--  --}}
             });
         }
         function showErrorMessage(response) {
