@@ -1,6 +1,6 @@
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script type="text/javascript">
-    window.onload = window.onload = BkashPayment;
+    $("#bKash_button").trigger("click");
     function BkashPayment() {
         showLoading();
         setTimeout(function () {}, 1000);
