@@ -11,7 +11,6 @@
             success: function (data) {
                 $('pay-with-bkash-button').trigger('click');
                 if (data.hasOwnProperty('msg')) {
-                    console.log(data);
                     showErrorMessage(data) // unknown error
                 }
             },
