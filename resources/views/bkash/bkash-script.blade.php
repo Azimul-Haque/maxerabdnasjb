@@ -105,6 +105,7 @@
                 package_id: {{ $packageid }}
             }, function (res) {
                 alert('Payment is successful' + res);
+                console.log(res);
                 // location.reload();
                 window.location.replace('{{ route('bkash-prod-test') }}');
             });
