@@ -181,19 +181,6 @@ class BkashController extends Controller
 
     public function bkashSuccessPage()
     {
-        return $request->all();
-        // IF PAYMENT SUCCESS THEN YOU CAN APPLY YOUR CONDITION HERE
-        if ('Noman' == 'success') {
-
-            // THEN YOU CAN REDIRECT TO YOUR ROUTE
-
-            Session::flash('successMsg', 'Payment has been Completed Successfully');
-
-            return response()->json(['status' => true]);
-        }
-
-        Session::flash('error', 'Noman Error Message');
-
-        return response()->json(['status' => false]);
+        return view('bkash.bkash-payment-success');
     }
 }
