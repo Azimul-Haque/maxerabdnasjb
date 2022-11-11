@@ -456,7 +456,7 @@
                     <div class="contact-content">
                       <h4>Contact</h4>
                       <p>+8801837409842</p>
-                      <p>bjsexam@gmail.com</p>
+                      <p>bjsbarexam@gmail.com</p>
                     </div>
                   </div>
                 </div>
