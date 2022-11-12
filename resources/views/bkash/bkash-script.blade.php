@@ -104,11 +104,16 @@
                 mobile: '{{ $mobile }}',
                 package_id: '{{ $packageid }}'
             }, function (res) {
-                console.log(res.status);
+                // console.log(res.status);
                 // console.log(JSON.parse(res));
                 // alert('Payment is successful');
                 // location.reload();
-                // window.location.replace('{{ route('bkash-success-page') }}');
+                if(res.status == true) {
+                    window.location.replace('{{ route('bkash-success-page') }}');
+                } else {
+                    
+                }
+                
             });
         }
         function showErrorMessage(response) {
