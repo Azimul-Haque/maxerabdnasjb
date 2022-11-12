@@ -37,7 +37,7 @@ Route::post('bkash/create-payment', 'BkashController@createPayment')->name('bkas
 Route::post('bkash/execute-payment', 'BkashController@executePayment')->name('bkash-execute-payment');
 Route::get('bkash/query-payment', 'BkashController@queryPayment')->name('bkash-query-payment');
 Route::post('bkash/success', 'BkashController@bkashSuccess')->name('bkash-success');
-Route::get('bkash/cancel/page', 'BkashController@bkashSuccessPage')->name('bkash-success-page');
+Route::get('bkash/cancel/page', 'BkashController@bkashSuccessPage')->name('bkash-cancel-page');
 Route::get('bkash/success/page', 'BkashController@bkashSuccessPage')->name('bkash-success-page');
 // Payment Routes for bKash
 
