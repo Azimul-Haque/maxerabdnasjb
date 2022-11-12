@@ -179,7 +179,7 @@ class BkashController extends Controller
         $payment->uid = $user->uid;
         $payment->payment_status = 1;
         $payment->card_type = 'bKash';
-        $payment->trx_id = $request->payment_info;
+        $payment->trx_id = $request->payment_info[''];
         $payment->amount = $request->amount;
         $payment->store_amount = $request->store_amount;
         $payment->save();
