@@ -163,20 +163,31 @@ class BkashController extends Controller
 
     public function bkashSuccess(Request $request)
     {
-        return $request->all();
-        // IF PAYMENT SUCCESS THEN YOU CAN APPLY YOUR CONDITION HERE
-        if ('Noman' == 'success') {
+        
+        $payment = new Payment;
+        $payment->user_id = $user_id;
+        $payment->package_id = $temppayment->package_id;
+        $payment->uid = $temppayment->uid;
+        $payment->payment_status = 1;
+        $payment->card_type = $request->card_type;
+        $payment->trx_id = $request->mer_txnid;
+        $payment->amount = $request->amount;
+        $payment->store_amount = $request->store_amount;
+        $payment->save();
 
-            // THEN YOU CAN REDIRECT TO YOUR ROUTE
-
-            Session::flash('successMsg', 'Payment has been Completed Successfully');
-
-            return response()->json(['status' => true]);
+        $user = User::findOrFail($user_id);
+        $current_package_date = Carbon::parse($user->package_expiry_date);
+        $package = Package::findOrFail($temppayment->package_id);
+        if($current_package_date->greaterThanOrEqualTo(Carbon::now())) {
+            $package_expiry_date = $current_package_date->addDays($package->numeric_duration)->format('Y-m-d') . ' 23:59:59';
+        } else {
+            $package_expiry_date = Carbon::now()->addDays($package->numeric_duration)->format('Y-m-d') . ' 23:59:59';
         }
-
-        Session::flash('error', 'Noman Error Message');
-
-        return response()->json(['status' => false]);
+        // dd($package_expiry_date);
+        $user->package_expiry_date = $package_expiry_date;
+        $user->save();
+        return response()->json(['status' => true]);
+        
     }
 
     public function bkashCancelPage()
