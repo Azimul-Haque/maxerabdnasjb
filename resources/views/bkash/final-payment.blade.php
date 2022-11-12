@@ -58,7 +58,6 @@
     <div class="card p-3">
         <center><big>পেমেন্ট ৳ {{ bangla($amount) }}</big></center>
         <div class="d-flex justify-content-between align-items-center mt-2 mb-2">
-            
             {{-- <big>{{ $mobile }}</big>
             <big>{{ $packageid }}</big> --}}
         </div>
