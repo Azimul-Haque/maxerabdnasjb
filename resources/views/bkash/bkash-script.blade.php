@@ -111,7 +111,7 @@
                 if(res.status == true) {
                     window.location.replace('{{ route('bkash-success-page') }}');
                 } else {
-                    
+                    window.location.replace('{{ route('bkash-failed-page') }}');
                 }
                 
             });
