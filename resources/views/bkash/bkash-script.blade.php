@@ -104,7 +104,7 @@
                 mobile: '{{ $mobile }}',
                 package_id: '{{ $packageid }}'
             }, function (res) {
-                // console.log(res);
+                console.log(res);
                 // console.log(JSON.parse(res));
                 // alert('Payment is successful');
                 // location.reload();
