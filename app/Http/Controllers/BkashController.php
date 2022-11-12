@@ -172,8 +172,10 @@ class BkashController extends Controller
     public function bkashSuccess(Request $request)
     {
         
+        $temppayment = Temppayment::where('trx_id', $request->mer_txnid)->first();
+        // dd($request->all());
         $payment = new Payment;
-        $payment->user_id = $user_id;
+        $payment->user_id = $temppayment->user_id;
         $payment->package_id = $temppayment->package_id;
         $payment->uid = $temppayment->uid;
         $payment->payment_status = 1;
@@ -183,7 +185,7 @@ class BkashController extends Controller
         $payment->store_amount = $request->store_amount;
         $payment->save();
 
-        $user = User::findOrFail($user_id);
+        $user = User::findOrFail($temppayment->user_id);
         $current_package_date = Carbon::parse($user->package_expiry_date);
         $package = Package::findOrFail($temppayment->package_id);
         if($current_package_date->greaterThanOrEqualTo(Carbon::now())) {
