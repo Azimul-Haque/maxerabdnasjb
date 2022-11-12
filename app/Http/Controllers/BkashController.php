@@ -186,7 +186,7 @@ class BkashController extends Controller
 
         
         $current_package_date = Carbon::parse($user->package_expiry_date);
-        $package = Package::findOrFail($temppayment->package_id);
+        $package = Package::findOrFail($request->packageid);
         if($current_package_date->greaterThanOrEqualTo(Carbon::now())) {
             $package_expiry_date = $current_package_date->addDays($package->numeric_duration)->format('Y-m-d') . ' 23:59:59';
         } else {
