@@ -173,7 +173,7 @@ class BkashController extends Controller
     {
         
         $temppayment = Temppayment::where('trx_id', $request->mer_txnid)->first();
-        // dd($request->all());
+        
         $payment = new Payment;
         $payment->user_id = $temppayment->user_id;
         $payment->package_id = $temppayment->package_id;
