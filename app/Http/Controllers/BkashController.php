@@ -208,4 +208,9 @@ class BkashController extends Controller
     {
         return view('bkash.bkash-payment-success');
     }
+
+    public function bkashFailedPage()
+    {
+        return view('bkash.bkash-payment-success');
+    }
 }
