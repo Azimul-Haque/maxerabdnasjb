@@ -65,7 +65,7 @@
                 });
             },
             onClose: function () {
-                window.location.replace('{{ route('bkash-success-page') }}');
+                window.location.replace('{{ route('bkash-cancel-page') }}');
                 // for error handle after close bKash Popup
             }
         });
