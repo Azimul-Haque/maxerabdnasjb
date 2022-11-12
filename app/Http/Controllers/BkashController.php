@@ -184,17 +184,17 @@ class BkashController extends Controller
         $payment->store_amount = $request->payment_info['amount'] - ($request->payment_info['amount'] * 0.02);
         $payment->save();
 
-        // $user = User::findOrFail($temppayment->user_id);
-        // $current_package_date = Carbon::parse($user->package_expiry_date);
-        // $package = Package::findOrFail($temppayment->package_id);
-        // if($current_package_date->greaterThanOrEqualTo(Carbon::now())) {
-        //     $package_expiry_date = $current_package_date->addDays($package->numeric_duration)->format('Y-m-d') . ' 23:59:59';
-        // } else {
-        //     $package_expiry_date = Carbon::now()->addDays($package->numeric_duration)->format('Y-m-d') . ' 23:59:59';
-        // }
-        // // dd($package_expiry_date);
-        // $user->package_expiry_date = $package_expiry_date;
-        // $user->save();
+        
+        $current_package_date = Carbon::parse($user->package_expiry_date);
+        $package = Package::findOrFail($temppayment->package_id);
+        if($current_package_date->greaterThanOrEqualTo(Carbon::now())) {
+            $package_expiry_date = $current_package_date->addDays($package->numeric_duration)->format('Y-m-d') . ' 23:59:59';
+        } else {
+            $package_expiry_date = Carbon::now()->addDays($package->numeric_duration)->format('Y-m-d') . ' 23:59:59';
+        }
+        // dd($package_expiry_date);
+        $user->package_expiry_date = $package_expiry_date;
+        $user->save();
         return response()->json(['status' => true]);
         
     }
