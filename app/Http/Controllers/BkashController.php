@@ -12,7 +12,6 @@ use App\Payment;
 
 use Carbon\Carbon;
 use DB;
-use Session;
 
 class BkashController extends Controller
 {
