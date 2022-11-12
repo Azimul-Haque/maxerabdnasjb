@@ -179,6 +179,11 @@ class BkashController extends Controller
         return response()->json(['status' => false]);
     }
 
+    public function bkashCancelPage()
+    {
+        return view('bkash.bkash-cance-success');
+    }
+
     public function bkashSuccessPage()
     {
         return view('bkash.bkash-payment-success');
