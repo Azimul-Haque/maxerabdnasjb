@@ -181,7 +181,7 @@ class BkashController extends Controller
         $payment->card_type = 'bKash';
         $payment->trx_id = $request->payment_info['trxID'];
         $payment->amount = $request->payment_info['amount'];
-        $payment->store_amount = $request->store_amount;
+        $payment->store_amount = $request->payment_info['amount'] - ($request->payment_info['amount'] * 0.02);
         $payment->save();
 
         // $user = User::findOrFail($temppayment->user_id);
