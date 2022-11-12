@@ -172,7 +172,7 @@ class BkashController extends Controller
     public function bkashSuccess(Request $request)
     {
         
-        $temppayment = Temppayment::where('trx_id', $request->mer_txnid)->first();
+        $user = User::where('trx_id', $request->mer_txnid)->first();
         
         $payment = new Payment;
         $payment->user_id = $temppayment->user_id;
