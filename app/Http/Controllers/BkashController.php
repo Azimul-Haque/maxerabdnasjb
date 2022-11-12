@@ -175,7 +175,7 @@ class BkashController extends Controller
         
         $payment = new Payment;
         $payment->user_id = $user->id;
-        $payment->package_id = $request->packageid;
+        $payment->package_id = $request->package_id;
         $payment->uid = $user->uid;
         $payment->payment_status = 1;
         $payment->card_type = 'bKash';
@@ -186,7 +186,7 @@ class BkashController extends Controller
 
         
         $current_package_date = Carbon::parse($user->package_expiry_date);
-        $package = Package::findOrFail($request->packageid);
+        $package = Package::findOrFail($request->package_id);
         if($current_package_date->greaterThanOrEqualTo(Carbon::now())) {
             $package_expiry_date = $current_package_date->addDays($package->numeric_duration)->format('Y-m-d') . ' 23:59:59';
         } else {
