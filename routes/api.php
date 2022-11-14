@@ -37,3 +37,5 @@ Route::get('/getpackages/{softtoken}', 'APIController@getPackages')->name('api.g
 Route::post('/payment/proceed', 'APIController@paymentProceed')->name('api.paymentproceed');
 
 Route::post('/message/store', 'APIController@storeMessage')->name('api.storemessage');
+
+Route::get('/getpaymenthistory/{softtoken}/{phonenumber}', 'APIController@getPaymentHistory')->name('api.getpaymenthistory');

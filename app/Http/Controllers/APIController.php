@@ -339,6 +339,25 @@ class APIController extends Controller
         ]);
     }
 
+    public function getPaymentHistory($softtoken, $phonenumber)
+    {
+        $user = User::where('mobile', substr($phonenumber, -11))->first();
+
+        if($user && $softtoken == 'Rifat.Admin.2022')
+        {
+            // dd($user->payments);
+            return response()->json([
+                'success' => true,
+                'uid' => $user->uid,
+                'paymenthistory' => $user->payments,
+            ]);
+        } else {
+            return response()->json([
+                'success' => false
+            ]);
+        }
+    }
+
     public function sendSingleNotification(Request $request)
     {
         $this->validate($request,array(
