@@ -346,7 +346,7 @@ class APIController extends Controller
         if($user && $softtoken == 'Rifat.Admin.2022')
         {
             foreach($user->payments as $payment) {
-                $payment->makeHidden(['id', 'user_id', '']);
+                $payment->makeHidden(['id', 'user_id', 'package_id', '']);
             }
             dd($user->payments);
             return response()->json([
