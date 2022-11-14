@@ -21,10 +21,6 @@
 </script>
 
 
-{{-- <button class="btn btn-success" id="bKash_button" onclick="BkashPayment()">
-    Pay with bKash
-</button> --}}
-
 <style>
     .swal-container, .swal2-container {
         z-index: 2000;
@@ -58,8 +54,6 @@
     <div class="card p-3">
         <center><big>পেমেন্ট ৳ {{ bangla($amount) }}</big></center>
         <div class="d-flex justify-content-between align-items-center mt-2 mb-2">
-            {{-- <big>{{ $mobile }}</big>
-            <big>{{ $packageid }}</big> --}}
         </div>
         
         <button class="btn btn-danger" id="bKash_button" onclick="BkashPayment()" style="background: url({{ asset('images/bkash_payment_logo.png') }}); background-size: 100%; background-size: 250px auto; background-repeat: no-repeat;">
