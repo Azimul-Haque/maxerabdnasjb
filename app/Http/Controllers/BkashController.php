@@ -219,4 +219,10 @@ class BkashController extends Controller
         Session::flash('info','পেমেন্টটি ক্যানসেল করা হয়েছে!');
         return redirect()->route('index.index');
     }
+
+    public function bkashFailedPageWeb()
+    {
+        Session::flash('info','পেমেন্টটি ক্যানসেল করা হয়েছে!');
+        return redirect()->route('index.index');
+    }
 }
