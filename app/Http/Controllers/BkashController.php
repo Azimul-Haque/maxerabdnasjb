@@ -220,6 +220,11 @@ class BkashController extends Controller
         return redirect()->route('index.index');
     }
 
+    public function bkashSuccessPage()
+    {
+        return view('bkash.bkash-payment-success');
+    }
+
     public function bkashFailedPageWeb()
     {
         Session::flash('info','পেমেন্টটি ব্যর্থ হয়েছে! অনুগ্রহ করে যোগাযোগ করুন।');
