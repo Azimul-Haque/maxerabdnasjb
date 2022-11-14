@@ -345,7 +345,7 @@ class APIController extends Controller
 
         if($user && $softtoken == 'Rifat.Admin.2022')
         {
-            // dd($user->payments);
+            dd($user->payments);
             return response()->json([
                 'success' => true,
                 'uid' => $user->uid,
