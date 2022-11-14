@@ -216,6 +216,7 @@ class BkashController extends Controller
 
     public function bkashCancelPageWeb()
     {
-        return view('bkash.bkash-payment-cancel');
+        Session::flash('info','পেমেন্টটি ক্যানসেল করা হয়েছে!');
+        return redirect()->route('index.index');
     }
 }
