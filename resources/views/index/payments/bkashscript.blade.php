@@ -65,7 +65,7 @@
                 });
             },
             onClose: function () {
-                window.location.replace('{{ route('bkash-cancel-page') }}');
+                window.location.replace('{{ route('bkash-cancel-page-web') }}');
                 // for error handle after close bKash Popup
             }
         });
@@ -109,9 +109,9 @@
                 // alert('Payment is successful');
                 // location.reload();
                 if(res.status == true) {
-                    window.location.replace('{{ route('bkash-success-page') }}');
+                    window.location.replace('{{ route('bkash-success-page-web') }}');
                 } else {
-                    window.location.replace('{{ route('bkash-failed-page') }}');
+                    window.location.replace('{{ route('bkash-failed-page-web') }}');
                 }
                 
             });
