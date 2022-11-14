@@ -348,7 +348,7 @@ class APIController extends Controller
             foreach($user->payments as $payment) {
                 $payment->makeHidden(['id', 'user_id', 'package_id', 'uid', 'payment_status', 'card_type', 'store_amount', 'updated_at']);
             }
-            dd($user->payments);
+            // dd($user->payments);
             return response()->json([
                 'success' => true,
                 'uid' => $user->uid,
