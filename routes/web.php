@@ -41,9 +41,9 @@ Route::get('bkash/cancel/page', 'BkashController@bkashCancelPage')->name('bkash-
 Route::get('bkash/success/page', 'BkashController@bkashSuccessPage')->name('bkash-success-page');
 Route::get('bkash/failed/page', 'BkashController@bkashFailedPage')->name('bkash-failed-page');
 
-Route::get('bkash/cancel/page/web', 'BkashController@bkashCancelPage')->name('bkash-cancel-page-web');
-Route::get('bkash/success/page/web', 'BkashController@bkashSuccessPage')->name('bkash-success-page-web');
-Route::get('bkash/failed/page/web', 'BkashController@bkashFailedPage')->name('bkash-failed-page-web');
+Route::get('bkash/cancel/page/web', 'BkashController@bkashCancelPageWeb')->name('bkash-cancel-page-web');
+Route::get('bkash/success/page/web', 'BkashController@bkashSuccessPageWeb')->name('bkash-success-page-web');
+Route::get('bkash/failed/page/web', 'BkashController@bkashFailedPageWeb')->name('bkash-failed-page-web');
 // Payment Routes for bKash
 
 Auth::routes();
