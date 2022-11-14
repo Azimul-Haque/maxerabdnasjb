@@ -68,7 +68,7 @@
 </div>
 
 
-@include('bkash.bkash-script')
+@include('index.payment.bkashscript')
 
 <style type="text/css">
         body{
