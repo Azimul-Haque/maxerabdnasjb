@@ -49,7 +49,7 @@
 </div>
 
 
-@include('index.payment.bkashscript')
+@include('index.payments.bkashscript')
 
 <style type="text/css">
         body{
