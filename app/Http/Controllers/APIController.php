@@ -351,7 +351,6 @@ class APIController extends Controller
             // dd($user->payments);
             return response()->json([
                 'success' => true,
-                'uid' => $user->uid,
                 'paymenthistory' => $user->payments,
             ]);
         } else {
