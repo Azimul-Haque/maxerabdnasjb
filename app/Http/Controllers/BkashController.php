@@ -214,7 +214,7 @@ class BkashController extends Controller
         return view('bkash.bkash-payment-failed');
     }
 
-    public function bkashCancelPage()
+    public function bkashCancelPageWeb()
     {
         return view('bkash.bkash-payment-cancel');
     }
