@@ -138,19 +138,4 @@
         function hideLoading() {
             $("body").removeClass("loading"); 
         }
-
-        window.addEventListener(
-            "flutterInAppWebViewPlatformReady",
-            function (event) {
-                function paymentStatus(status, data) {
-                    //js to dart message passing
-                    window.flutter_inappwebview.callHandler(
-                        status,
-                        data
-                    );
-                }
-            }
-            
-            
-        );
 </script>
