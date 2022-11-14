@@ -80,22 +80,22 @@ class IndexController extends Controller
         $package = Package::findOrFail($request->package_id);
 
         if($user) {
-            $temppayment = new Temppayment;
-            $temppayment->user_id = $user->id;
-            $temppayment->package_id = $request->package_id;
-            $temppayment->uid = $user->uid;
-            // generate Trx_id
-            $trx_id = 'BJS' . random_string(10);
-            $temppayment->trx_id = $trx_id;
-            $temppayment->amount = $request->amount;
-            $temppayment->save();
+            // $temppayment = new Temppayment;
+            // $temppayment->user_id = $user->id;
+            // $temppayment->package_id = $request->package_id;
+            // $temppayment->uid = $user->uid;
+            // // generate Trx_id
+            // $trx_id = 'BJS' . random_string(10);
+            // $temppayment->trx_id = $trx_id;
+            // $temppayment->amount = $request->amount;
+            // $temppayment->save();
 
             Session::flash('info','পেমেন্টটি সম্পন্ন করুন!');
-            return view('index.payments.paynow')
+            return view('index.payments.bkashpay')
                             ->withUser($user)
                             ->withAmount($request->amount)
-                            ->withPackagedesc($package->name . ' - ' . $package->duration . ' - ৳ ' . $package->price)
-                            ->withTrxid($trx_id);
+                            ->withPackageid($package->id)
+                            ->withPackagedesc($package->name . ' - ' . $package->duration . ' - ৳ ' . $package->price);
         } else {
             // Session::flash('warning','নাম্বারটি পাওয়া যায়নি! অ্যাপে গিয়ে রেজিস্ট্রেশন করুন।');
             Session::flash('swalwarning','নাম্বারটি পাওয়া যায়নি! অ্যাপে গিয়ে রেজিস্ট্রেশন করুন।');

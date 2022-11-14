@@ -27,6 +27,7 @@ class QuestionController extends Controller
     {
         $this->middleware('auth');
         $this->middleware(['admin'])->only('storeQuestionsTopic', 'storeQuestionsTag', 'deleteQuestion');
+        $this->middleware(['manager'])->only('storeQuestionsTopic', 'storeQuestionsTag');
     }
 
     public function getQuestions()

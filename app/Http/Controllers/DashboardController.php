@@ -32,7 +32,7 @@ class DashboardController extends Controller
     {
         $this->middleware('auth')->except('clear');
         $this->middleware(['admin'])->only('getUsers', 'storeUser', 'updateUser', 'deleteUser', 'deleteBalance', 'getCreditors', 'getSingleCreditor', 'getAddDuePage', 'deleteCreditorDue', 'getSiteCategorywise', 'getPackages', 'getPayments');
-
+        
     }
     
 
@@ -45,11 +45,9 @@ class DashboardController extends Controller
     {
         // if user is a manager, redirect him to his profile
         // if user is a manager, redirect him to his profile
-        // if(Auth::user()->role != 'admin' && Auth::user()->role != 'accountant') {
-        //     return redirect()->route('dashboard.users.single', Auth::user()->id);
-        // } elseif (Auth::user()->role == 'accountant') {
-        //     return redirect()->route('dashboard.balance');
-        // }
+        if(Auth::user()->role == 'user') {
+            abort(403, 'Access Denied');
+        }
 
         // $totalsites = Site::count();
         $totalusers = User::count();

@@ -1,5 +1,5 @@
 @extends('layouts.index')
-@section('title') Privacy Policy | BJS & Bar Exam @endsection
+@section('title') Pay Now | BJS & Bar Exam @endsection
 
 @section('third_party_stylesheets')
 
