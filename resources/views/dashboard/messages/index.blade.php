@@ -76,7 +76,7 @@
                               </div>
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-                                <a href="{{ route('dashboard.messages.update', $message->id) }}" class="btn btn-warning">দাখিল করুন</a>
+                                <button href="{{ route('dashboard.messages.update', $message->id) }}" class="btn btn-warning">দাখিল করুন</button>
                               </div>
                             </div>
                           </div>
