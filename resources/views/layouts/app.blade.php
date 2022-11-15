@@ -45,7 +45,7 @@
               <span class="badge badge-warning navbar-badge">@if($unresolvedmessagecount > 0) {{ $unresolvedmessagecount }} @endif</span>
             </a>
             <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-              <span class="dropdown-header">@if($unresolvedmessagecount > 0) {{ $unresolvedmessagecount }} @endif Notifications</span>
+              <span class="dropdown-header">{{ $unresolvedmessagecount }} Notifications</span>
               <div class="dropdown-divider"></div>
               <a href="{{ route('dashboard.messages') }}" class="dropdown-item">
                 <i class="fas fa-envelope mr-2"></i> 
