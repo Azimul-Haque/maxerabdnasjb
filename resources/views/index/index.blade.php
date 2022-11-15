@@ -169,9 +169,7 @@
                   </div>
                   <div class="tab-pane fade" id="nav-vision" role="tabpanel" aria-labelledby="nav-vision-tab">
                     <p>গতানুগতিক অন্যান্য চাকুরির (যেমন বিসিএস) প্রস্তুতির জন্য প্রচুর রিসোর্স অনলাইনেই পাওয়া যায়। এছাড়া দেশের বেশিরভাগ জায়গায় সেসব চাকুরির কোচিং-এর সুবিধা আছে। যেটা বিজেএস বা বার কাউন্সিরল প্রার্থীদের জন্য নেই!</p>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have in some
-                      form,
-                      by injected humour.</p>
+                    <p>কর্ম্ব্যস্ত আইনি পেশায় নিয়োজিত বা আগ্রহী প্রার্থীরা দেশের যেকোন প্রান্তে বসেই যেন জুডিশিয়াল সার্ভিস পরীক্ষা বা বার কাউন্সিল পরীক্ষার প্রস্তুতি নিতে পারেন, তাদের দোর গোড়ায় এ সেবাটি পৌঁছে দেওয়াই আমাদের লক্ষ্য।</p>
                   </div>
                   {{-- <div class="tab-pane fade" id="nav-history" role="tabpanel" aria-labelledby="nav-history-tab">
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page
