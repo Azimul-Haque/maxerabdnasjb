@@ -47,7 +47,7 @@
                 		
                 		<td align="right">
                       @if($message->status == 0)
-                        <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#deleteModal{{ $message->id }}">
+                        <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#updateModal{{ $message->id }}">
                         <i class="fas fa-trash-alt"></i>
                       </button>
                       @endif
@@ -59,7 +59,7 @@
                         {{-- Delete Modal Code --}}
                         {{-- Delete Modal Code --}}
                         <!-- Modal -->
-                        <div class="modal fade" id="deleteModal{{ $message->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true" data-backdrop="static">
+                        <div class="modal fade" id="updateModal{{ $message->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true" data-backdrop="static">
                           <div class="modal-dialog" role="document">
                             <div class="modal-content">
                               <div class="modal-header bg-danger">
