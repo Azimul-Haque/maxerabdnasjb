@@ -202,7 +202,7 @@
                 <h6>সেবাসমূহ</h6>
                 <h2 class="fw-bold">আমাদের অ্যাপের সেবাসমূহ</h2>
                 <p>
-                  Get the full access from BJS & Bar Council Exam System and be confident before the recruitment exam.
+                  বিজেএস এবং বার কাউন্সিল পরীক্ষার প্রস্তুতি নিতে অ্যাপ্টির এবং নিয়োগ পরীক্ষার আগে আত্মবিশ্বাসী হন।
                 </p>
               </div>
             </div>
