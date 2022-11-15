@@ -235,7 +235,7 @@
               <div class="service-content">
                 <h4>Bar Council Exam</h4>
                 <p>
-                  Smooth Bar MCQ Exam System to gear up your Bar Council preparation.
+                  আপনার বার কাউন্সিল পরীক্ষার প্রস্তুতির জন্য সেরা MCQ পরীক্ষার ব্যবস্থা!
                 </p>
               </div>
             </div>
