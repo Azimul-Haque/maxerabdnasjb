@@ -179,7 +179,7 @@ class APIController extends Controller
             });
             // dd($courseexams);
             // $courseexams = $courseexams->sortByDesc('start');
-            return view('index.refundpolicy');
+            return 'Test';
             return response()->json([
                 'success' => true,
                 'exams' => $courseexams,
