@@ -157,7 +157,7 @@
                     <button class="nav-link active" id="nav-who-tab" data-bs-toggle="tab" data-bs-target="#nav-who"
                       type="button" role="tab" aria-controls="nav-who" aria-selected="true">আমরা কারা?</button>
                     <button class="nav-link" id="nav-vision-tab" data-bs-toggle="tab" data-bs-target="#nav-vision"
-                      type="button" role="tab" aria-controls="nav-vision" aria-selected="false">our Vision</button>
+                      type="button" role="tab" aria-controls="nav-vision" aria-selected="false">আমাদের লক্ষ্য</button>
                     {{-- <button class="nav-link" id="nav-history-tab" data-bs-toggle="tab" data-bs-target="#nav-history"
                       type="button" role="tab" aria-controls="nav-history" aria-selected="false">our History</button> --}}
                   </div>
