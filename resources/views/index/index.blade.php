@@ -274,7 +274,7 @@
               <div class="service-content">
                 <h4>Fully Access</h4>
                 <p>
-                  Get full access to our modern exam system built with passion.
+                  অত্যাধুনিক প্রযুক্তি ব্যবহার করে সর্বোত্তম পরীক্ষা ব্যবস্থা।
                 </p>
               </div>
             </div>
