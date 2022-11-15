@@ -266,7 +266,7 @@ class APIController extends Controller
                 $topics = Topic::all();
                 return $topics;
             });
-
+            return 'Test';
             return response()->json([
                 'success' => true,
                 'topics' => $topics,
