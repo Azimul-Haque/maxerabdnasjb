@@ -836,9 +836,10 @@ class DashboardController extends Controller
     public function updateMessage(Request $request, $id)
     {
         $message = Message::find($id);
-        $message->delete();
+        $message->status = 1;
+        $message->save();
 
-        Session::flash('success', 'Message deleted successfully!');
+        Session::flash('success', 'Message updated successfully!');
         return redirect()->route('dashboard.messages');
     }
 
