@@ -259,7 +259,7 @@
                 <i class="lni lni-dashboard"></i>
               </div>
               <div class="service-content">
-                <h4>Target Based</h4>
+                <h4>Target Based Courses</h4>
                 <p>
                   লক্ষ্য অর্জন করতে নির্দিষ্ট সময়ভিত্তিক কোর্সের মাধ্যমে পরীক্ষা পদ্ধতি।
                 </p>
