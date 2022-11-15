@@ -49,9 +49,8 @@
               <div class="dropdown-divider"></div>
               <a href="#" class="dropdown-item">
                 <i class="fas fa-envelope mr-2"></i> 
-                মেসেজসমূহ
                 @if($unresolvedmessagecount > 0)
-                ({{ $unresolvedmessagecount }})
+                    {{ $unresolvedmessagecount }}
                 @endif
                  new messages
                 <span class="float-right text-muted text-sm">3 mins</span>
