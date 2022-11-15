@@ -73,6 +73,7 @@ class QuestionController extends Controller
         $topic->name = $request->name;
         $topic->save();
 
+        Cache::forget('topics');
         Session::flash('success', 'Topic updated successfully!');
         return redirect()->route('dashboard.questions');
     }
