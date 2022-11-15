@@ -34,7 +34,12 @@
               <tbody>
                 @foreach($messages as $message)
                 	<tr>
-                    <td>{{ $message->user->name }}</td>
+                    <td>
+                      @if($message->status == 1)
+                        <i class="far fa-check"></i>
+                      @endif
+                      {{ $message->user->name }}
+                    </td>
                     <td>{{ $message->user->mobile }}</td>
                     <td>{{ $message->user->payments->count() }} বার কিনেছেন</td>
                     <td>{{ $message->message }}</td>
