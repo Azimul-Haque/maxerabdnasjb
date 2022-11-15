@@ -76,7 +76,7 @@
                               </div>
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-                                <form action="{{ route('dashboard.messages.update', $message->id) }}">
+                                <form method="PUT" action="{{ route('dashboard.messages.update', $message->id) }}">
                                   @csrf
                                   <button type="button" class="btn btn-warning">দাখিল করুন</button>
                                 </form>
