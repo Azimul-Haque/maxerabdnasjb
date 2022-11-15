@@ -107,7 +107,7 @@ class ExamController extends Controller
         $exam->available_to = Carbon::parse($request->available_to);
         $exam->syllabus = nl2br($request->syllabus);
         $exam->save();
-
+        
         Session::flash('success', 'Exam created successfully!');
         return redirect()->route('dashboard.exams');
     }

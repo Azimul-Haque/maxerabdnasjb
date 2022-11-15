@@ -142,7 +142,7 @@ class APIController extends Controller
                  return $courses;
             });
             
-            // dd($courses->all());
+            // dd($courses);
             return response()->json([
                 'success' => true,
                 'courses' => $courses,
@@ -163,17 +163,21 @@ class APIController extends Controller
     {
         if($softtoken == 'Rifat.Admin.2022')
         {
-            $courseexams = Courseexam::select('course_id', 'exam_id')
+            $courseexams = Cache::remember('courseexams'.$id, 7 * 24 * 60 * 60, function () use ($id) {
+                $courseexams = Courseexam::select('course_id', 'exam_id')
                                      ->where('course_id', $id)
                                      ->get();
 
-            foreach($courseexams as $courseexam) {
-                $courseexam->name = $courseexam->exam->name;
-                $courseexam->start = $courseexam->exam->available_from;
-                $courseexam->questioncount = $courseexam->exam->examquestions->count();
-                $courseexam->syllabus = $courseexam->exam->syllabus ? $courseexam->exam->syllabus : 'N/A';
-                $courseexam->exam->makeHidden('id', 'name', 'examcategory_id', 'price_type', 'available_from', 'available_to', 'syllabus', 'created_at', 'updated_at', 'examquestions');
-            }
+                foreach($courseexams as $courseexam) {
+                    $courseexam->name = $courseexam->exam->name;
+                    $courseexam->start = $courseexam->exam->available_from;
+                    $courseexam->questioncount = $courseexam->exam->examquestions->count();
+                    $courseexam->syllabus = $courseexam->exam->syllabus ? $courseexam->exam->syllabus : 'N/A';
+                    $courseexam->exam->makeHidden('id', 'name', 'examcategory_id', 'price_type', 'available_from', 'available_to', 'syllabus', 'created_at', 'updated_at', 'examquestions');
+                }
+                return $courseexams;
+            });
+            // dd($courseexams);
             // $courseexams = $courseexams->sortByDesc('start');
             return response()->json([
                 'success' => true,
@@ -195,19 +199,23 @@ class APIController extends Controller
                              ->where('type', $coursetype) // 1 = Course, 2 = BJS MT, 3 = Bar MT, 4 = Free MT, 5 = QB
                              ->first(); 
 
-            $courseexams = Courseexam::select('course_id', 'exam_id')
-                                     ->where('course_id', $course->id)
-                                     ->orderBy('id', 'desc')
-                                     ->get();
 
-            foreach($courseexams as $courseexam) {
-                $courseexam->name = $courseexam->exam->name;
-                $courseexam->start = $courseexam->exam->available_from;
-                $courseexam->questioncount = $courseexam->exam->examquestions->count();
-                $courseexam->syllabus = $courseexam->exam->syllabus ? $courseexam->exam->syllabus : 'N/A';
-                $courseexam->exam->makeHidden('id', 'name', 'examcategory_id', 'price_type', 'available_from', 'available_to', 'syllabus', 'created_at', 'updated_at', 'examquestions');
-            }
+            $courseexams = Cache::remember('courseexams'.$course->id, 7 * 24 * 60 * 60, function () use ($course) {
+                $courseexams = Courseexam::select('course_id', 'exam_id')
+                                         ->where('course_id', $course->id)
+                                         ->orderBy('id', 'desc')
+                                         ->get();
 
+                foreach($courseexams as $courseexam) {
+                    $courseexam->name = $courseexam->exam->name;
+                    $courseexam->start = $courseexam->exam->available_from;
+                    $courseexam->questioncount = $courseexam->exam->examquestions->count();
+                    $courseexam->syllabus = $courseexam->exam->syllabus ? $courseexam->exam->syllabus : 'N/A';
+                    $courseexam->exam->makeHidden('id', 'name', 'examcategory_id', 'price_type', 'available_from', 'available_to', 'syllabus', 'created_at', 'updated_at', 'examquestions');
+                }
+                return $courseexams;
+            });
+            // dd($courseexams);
             return response()->json([
                 'success' => true,
                 'exams' => $courseexams,

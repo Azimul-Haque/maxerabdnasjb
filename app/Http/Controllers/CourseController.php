@@ -105,7 +105,6 @@ class CourseController extends Controller
                                      ->orderBy('exam_id', 'desc')
                                      ->get();
         $exams = Exam::all();
-        
         return view('dashboard.courses.addexams')
                                     ->withCourse($course)
                                     ->withCourseexams($courseexams)
@@ -137,7 +136,8 @@ class CourseController extends Controller
             $courseexam->save();
         }
 
-        Session::flash('success', 'Exam updated successfully!');
+        Cache::forget('courseexams' . $request->course_id);
+        Session::flash('success', 'Exams updated successfully!');
         return redirect()->route('dashboard.courses.add.exam', $request->course_id);
     }
 }
