@@ -222,7 +222,7 @@
               <div class="service-content">
                 <h4>BJS MCQ Exam</h4>
                 <p>
-                  Smooth BJS MCQ Exam System to gear up your BJS preparation.
+                  আপনার জুডিশিয়াল পরীক্ষার প্রস্তুতির জন্য মসৃণ BJS MCQ পরীক্ষার সিস্টেম।
                 </p>
               </div>
             </div>
