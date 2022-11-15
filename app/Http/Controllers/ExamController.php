@@ -77,7 +77,7 @@ class ExamController extends Controller
         $category = Examcategory::find($id);
         $category->delete();
 
-        Cache::forget('topics');
+        
         Session::flash('success', 'Category deleted successfully!');
         return redirect()->route('dashboard.exams');
     }
