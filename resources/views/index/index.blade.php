@@ -168,10 +168,7 @@
                     <p>আমাদের এন্ড্রয়েড অ্যাপটি ব্যবহার করে দেশের যেকোন প্রান্তে বসে প্রতিযোগিতামূলক বিজেএস ও বার কাউন্সিল পরীক্ষার প্রস্তুতি নিতে পারবেন খুব সহজেই! </p>
                   </div>
                   <div class="tab-pane fade" id="nav-vision" role="tabpanel" aria-labelledby="nav-vision-tab">
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                      when
-                      looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                      distribution of letters, look like readable English.</p>
+                    <p>গতানুগতিক অন্যান্য চাকুরির (যেমন বিসিএস) প্রস্তুতির জন্য প্রচুর রিসোর্স অনলাইনেই পাওয়া যায়। এছাড়া দেশের বেশিরভাগ জায়গায় সেসব চাকুরির কোচিং-এর সুবিধা আছে। যেটা বিজেএস বা বার কাউন্সিরল প্রার্থীদের জন্য নেই!</p>
                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have in some
                       form,
                       by injected humour.</p>
