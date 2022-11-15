@@ -216,6 +216,7 @@ class APIController extends Controller
                 return $courseexams;
             });
             // dd($courseexams);
+            
             return response()->json([
                 'success' => true,
                 'exams' => $courseexams,
