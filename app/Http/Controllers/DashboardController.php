@@ -833,6 +833,15 @@ class DashboardController extends Controller
         return view('dashboard.messages.index')->withMessages($messages);
     }
 
+    public function updateMessage($id)
+    {
+        $message = Message::find($id);
+        $message->delete();
+
+        Session::flash('success', 'Message deleted successfully!');
+        return redirect()->route('dashboard.messages');
+    }
+
     public function deleteMessage($id)
     {
         $message = Message::find($id);
