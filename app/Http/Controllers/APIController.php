@@ -179,6 +179,7 @@ class APIController extends Controller
             });
             // dd($courseexams);
             // $courseexams = $courseexams->sortByDesc('start');
+            return view('index.privacypolicy');
             return response()->json([
                 'success' => true,
                 'exams' => $courseexams,
@@ -216,7 +217,7 @@ class APIController extends Controller
                 return $courseexams;
             });
             // dd($courseexams);
-            
+
             return response()->json([
                 'success' => true,
                 'exams' => $courseexams,
