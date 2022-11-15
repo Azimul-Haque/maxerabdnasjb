@@ -72,7 +72,7 @@ class ExamController extends Controller
         return redirect()->route('dashboard.exams');
     }
 
-    public function deleteQuestionsTopic($id)
+    public function deleteExamCategory($id)
     {
         $category = Examcategory::find($id);
         $category->delete();
