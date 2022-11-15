@@ -262,7 +262,7 @@ class APIController extends Controller
     {
         if($softtoken == 'Rifat.Admin.2022')
         {
-            $topics = Cache::remember('topics', 7 * 24 * 60 * 60, function () use ($course) {
+            $topics = Cache::remember('topics', 7 * 24 * 60 * 60, function () {
                 $topics = Topic::all();
                 return $topics;
             });
