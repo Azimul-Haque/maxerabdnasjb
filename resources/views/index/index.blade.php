@@ -248,7 +248,7 @@
               <div class="service-content">
                 <h4>Topic Based</h4>
                 <p>
-                  Topic Based exam system to help you improve on specific topics.
+                  বিষয় ভিত্তিক পরীক্ষা পদ্ধতি আপনাকে নির্দিষ্ট বিষয়ে উন্নতি করতে সহায়তা করে।
                 </p>
               </div>
             </div>
