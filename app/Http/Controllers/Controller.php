@@ -15,7 +15,7 @@ class Controller extends BaseController
 
     public function __construct() 
     {
-      $sharedbasicinfo = Basicinfo::find(1);
+      $unresolvedmessagecount = Message::find(1);
 
         
 
