@@ -47,7 +47,7 @@
             <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
               <span class="dropdown-header">@if($unresolvedmessagecount > 0) {{ $unresolvedmessagecount }} @endif Notifications</span>
               <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item">
+              <a href="{{ route('dashboard.messages') }}" class="dropdown-item">
                 <i class="fas fa-envelope mr-2"></i> 
                 @if($unresolvedmessagecount > 0) {{ $unresolvedmessagecount }} @endif new messages
                 <span class="float-right text-muted text-sm">3 mins</span>
