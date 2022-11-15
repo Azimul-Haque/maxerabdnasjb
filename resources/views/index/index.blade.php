@@ -158,8 +158,8 @@
                       type="button" role="tab" aria-controls="nav-who" aria-selected="true">Who We Are</button>
                     <button class="nav-link" id="nav-vision-tab" data-bs-toggle="tab" data-bs-target="#nav-vision"
                       type="button" role="tab" aria-controls="nav-vision" aria-selected="false">our Vision</button>
-                    <button class="nav-link" id="nav-history-tab" data-bs-toggle="tab" data-bs-target="#nav-history"
-                      type="button" role="tab" aria-controls="nav-history" aria-selected="false">our History</button>
+                    {{-- <button class="nav-link" id="nav-history-tab" data-bs-toggle="tab" data-bs-target="#nav-history"
+                      type="button" role="tab" aria-controls="nav-history" aria-selected="false">our History</button> --}}
                   </div>
                 </nav>
                 <div class="tab-content" id="nav-tabContent">
