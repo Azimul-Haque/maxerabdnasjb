@@ -78,7 +78,7 @@
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
                                 <form method="PUT" action="{{ route('dashboard.messages.update', $message->id) }}">
                                   @csrf
-                                  <button type="button" class="btn btn-warning">দাখিল করুন</button>
+                                  <button type="submit" class="btn btn-warning">দাখিল করুন</button>
                                 </form>
                               </div>
                             </div>
