@@ -199,7 +199,7 @@
           <div class="row">
             <div class="col-12">
               <div class="content">
-                <h6>Services</h6>
+                <h6>সেবাসমূহ</h6>
                 <h2 class="fw-bold">Our Best Services</h2>
                 <p>
                   Get the full access from BJS & Bar Council Exam System and be confident before the recruitment exam.
