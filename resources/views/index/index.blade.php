@@ -181,7 +181,7 @@
                       form,
                       by injected humour.</p>
                   </div>
-                  <div class="tab-pane fade" id="nav-history" role="tabpanel" aria-labelledby="nav-history-tab">
+                  {{-- <div class="tab-pane fade" id="nav-history" role="tabpanel" aria-labelledby="nav-history-tab">
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page
                       when
                       looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
@@ -189,7 +189,7 @@
                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have in some
                       form,
                       by injected humour.</p>
-                  </div>
+                  </div> --}}
                 </div>
               </div>
             </div>
