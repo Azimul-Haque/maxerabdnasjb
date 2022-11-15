@@ -56,8 +56,8 @@
                         <i class="fas fa-trash-alt"></i>
                       </button>
                 		</td>
-                        {{-- Delete Modal Code --}}
-                        {{-- Delete Modal Code --}}
+                        {{-- Update Modal Code --}}
+                        {{-- Update Modal Code --}}
                         <!-- Modal -->
                         <div class="modal fade" id="updateModal{{ $message->id }}" tabindex="-1" role="dialog" aria-labelledby="updateModalLabel" aria-hidden="true" data-backdrop="static">
                           <div class="modal-dialog" role="document">
@@ -76,13 +76,13 @@
                               </div>
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-                                <a href="{{ route('dashboard.messages.delete', $message->id) }}" class="btn btn-danger">দাখিল করুন</a>
+                                <a href="{{ route('dashboard.messages.delete', $message->id) }}" class="btn btn-warning">দাখিল করুন</a>
                               </div>
                             </div>
                           </div>
                         </div>
-                        {{-- Delete Modal Code --}}
-                        {{-- Delete Modal Code --}}
+                        {{-- Update Modal Code --}}
+                        {{-- Update Modal Code --}}
                         {{-- Delete Modal Code --}}
                         {{-- Delete Modal Code --}}
                         <!-- Modal -->
