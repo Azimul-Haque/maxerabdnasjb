@@ -69,14 +69,14 @@
                                 </button>
                               </div>
                               <div class="modal-body">
-                                আপনি কি নিশ্চিতভাবে এই প্যাকেজটি ডিলেট করতে চান?<br/><br/>
+                                আপনি কি নিশ্চিতভাবে এই সমস্যাটি সমাধান করতে চান?<br/><br/>
                                 <b>{{ $message->user->name }}</b><br/>
                                 {{ $message->message }}
                                 
                               </div>
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-                                <a href="{{ route('dashboard.messages.delete', $message->id) }}" class="btn btn-danger">ডিলেট করুন</a>
+                                <a href="{{ route('dashboard.messages.delete', $message->id) }}" class="btn btn-danger">দাখিল করুন</a>
                               </div>
                             </div>
                           </div>
