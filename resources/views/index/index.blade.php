@@ -164,10 +164,7 @@
                 </nav>
                 <div class="tab-content" id="nav-tabContent">
                   <div class="tab-pane fade show active" id="nav-who" role="tabpanel" aria-labelledby="nav-who-tab">
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                      when
-                      looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                      distribution of letters, look like readable English.</p>
+                    <p>বিগত বছরগুলোর প্রশ্ন বিশ্লেষণ, প্রশ্নের প্যাটার্ন অনুসন্ধান  ও সর্বোচ্চ স্ট্র্যাটেজি অনুধাবন করে আমরা বিজেএস ও বার কাউন্সিল পরীক্ষার্থীদের জন্য সর্বোত্তম সমাধানটি নিয়ে এসেছি।</p>
                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have in some
                       form,
                       by injected humour.</p>
