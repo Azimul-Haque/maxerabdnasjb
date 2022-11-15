@@ -261,7 +261,7 @@
               <div class="service-content">
                 <h4>Target Based</h4>
                 <p>
-                  Target Based exam system to help you improve on specific target.
+                  সুনির্দিষ্টভাবে প্রতি বিষয়ে ভালো করার জন্য বিষয়ভিত্তিক পরীক্ষা পদ্ধতি।
                 </p>
               </div>
             </div>
