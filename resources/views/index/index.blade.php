@@ -155,7 +155,7 @@
                 <nav>
                   <div class="nav nav-tabs" id="nav-tab" role="tablist">
                     <button class="nav-link active" id="nav-who-tab" data-bs-toggle="tab" data-bs-target="#nav-who"
-                      type="button" role="tab" aria-controls="nav-who" aria-selected="true">Who We Are</button>
+                      type="button" role="tab" aria-controls="nav-who" aria-selected="true">আমরা কারা?</button>
                     <button class="nav-link" id="nav-vision-tab" data-bs-toggle="tab" data-bs-target="#nav-vision"
                       type="button" role="tab" aria-controls="nav-vision" aria-selected="false">our Vision</button>
                     {{-- <button class="nav-link" id="nav-history-tab" data-bs-toggle="tab" data-bs-target="#nav-history"
