@@ -83,6 +83,7 @@ class QuestionController extends Controller
         $topic = Topic::find($id);
         $topic->delete();
 
+        Cache::forget('topics');
         Session::flash('success', 'Topic deleted successfully!');
         return redirect()->route('dashboard.questions');
     }
