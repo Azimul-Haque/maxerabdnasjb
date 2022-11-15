@@ -287,7 +287,7 @@
               <div class="service-content">
                 <h4>Regular Updates</h4>
                 <p>
-                  Based on syllabus and curriculum, updates will be available.
+                  বিজেএস ও বার কাউন্সিল পরীক্ষার সিলেবাস ও পাঠ্যক্রমের উপর ভিত্তি নিয়মিত আপডেট।
                 </p>
               </div>
             </div>
