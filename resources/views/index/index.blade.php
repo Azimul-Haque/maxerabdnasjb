@@ -149,7 +149,7 @@
           </div>
           <div class="col-lg-6 col-12">
             <div class="about-five-content">
-              <h6 class="small-title text-lg">OUR STORY</h6>
+              <h6 class="small-title text-lg">আমাদের সম্পর্কে</h6>
               <h2 class="main-title fw-bold">Our team comes with the experience and knowledge</h2>
               <div class="about-five-tab">
                 <nav>
