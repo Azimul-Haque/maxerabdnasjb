@@ -262,22 +262,11 @@ class APIController extends Controller
     {
         if($softtoken == 'Rifat.Admin.2022')
         {
-            $courseexams = Cache::remember('courseexams'.$course->id, 7 * 24 * 60 * 60, function () use ($course) {
-                $courseexams = Courseexam::select('course_id', 'exam_id')
-                                         ->where('course_id', $course->id)
-                                         ->orderBy('id', 'desc')
-                                         ->get();
-
-                foreach($courseexams as $courseexam) {
-                    $courseexam->name = $courseexam->exam->name;
-                    $courseexam->start = $courseexam->exam->available_from;
-                    $courseexam->questioncount = $courseexam->exam->examquestions->count();
-                    $courseexam->syllabus = $courseexam->exam->syllabus ? $courseexam->exam->syllabus : 'N/A';
-                    $courseexam->exam->makeHidden('id', 'name', 'examcategory_id', 'price_type', 'available_from', 'available_to', 'syllabus', 'created_at', 'updated_at', 'examquestions');
-                }
-                return $courseexams;
+            $topics = Cache::remember('topics', 7 * 24 * 60 * 60, function () use ($course) {
+                $topics = Topic::all();
+                return $topics;
             });
-            $topics = Topic::all();
+            
 
             return response()->json([
                 'success' => true,
