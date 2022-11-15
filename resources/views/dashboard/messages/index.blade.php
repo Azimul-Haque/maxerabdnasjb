@@ -96,7 +96,7 @@
                                 </button>
                               </div>
                               <div class="modal-body">
-                                আপনি কি নিশ্চিতভাবে এই প্যাকেজটি ডিলেট করতে চান?<br/><br/>
+                                আপনি কি নিশ্চিতভাবে এই মেসেজটি ডিলেট করতে চান?<br/><br/>
                                 <b>{{ $message->user->name }}</b><br/>
                                 {{ $message->message }}
                                 
