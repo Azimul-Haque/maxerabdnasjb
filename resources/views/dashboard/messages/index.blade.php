@@ -83,6 +83,33 @@
                         </div>
                         {{-- Delete Modal Code --}}
                         {{-- Delete Modal Code --}}
+                        {{-- Delete Modal Code --}}
+                        {{-- Delete Modal Code --}}
+                        <!-- Modal -->
+                        <div class="modal fade" id="deleteModal{{ $message->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true" data-backdrop="static">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header bg-danger">
+                                <h5 class="modal-title" id="deleteModalLabel">মেসেজ ডিলেট</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                আপনি কি নিশ্চিতভাবে এই প্যাকেজটি ডিলেট করতে চান?<br/><br/>
+                                <b>{{ $message->user->name }}</b><br/>
+                                {{ $message->message }}
+                                
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
+                                <a href="{{ route('dashboard.messages.delete', $message->id) }}" class="btn btn-danger">ডিলেট করুন</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        {{-- Delete Modal Code --}}
+                        {{-- Delete Modal Code --}}
                 	</tr>
                 @endforeach
               </tbody>
