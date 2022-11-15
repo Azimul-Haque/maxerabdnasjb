@@ -150,7 +150,7 @@
           <div class="col-lg-6 col-12">
             <div class="about-five-content">
               <h6 class="small-title text-lg">আমাদের সম্পর্কে</h6>
-              <h2 class="main-title fw-bold">অভিজ্ঞতা ও প্রয়োজনীয়তা বিশ্লেষণ করে সমাধান প্রণয়ন</h2>
+              <h2 class="main-title fw-bold">অভিজ্ঞতা ও প্রয়োজনীয়তা বিশ্লেষণ করে সমাধান প্রণয়নকারী</h2>
               <div class="about-five-tab">
                 <nav>
                   <div class="nav nav-tabs" id="nav-tab" role="tablist">
