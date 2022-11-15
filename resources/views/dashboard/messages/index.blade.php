@@ -36,7 +36,7 @@
                 	<tr>
                     <td>
                       @if($message->status == 1)
-                        <i class="fas fa-check-double"></i>
+                        <i class="fas fa-calendar-check"></i>
                       @endif
                       {{ $message->user->name }}
                     </td>
