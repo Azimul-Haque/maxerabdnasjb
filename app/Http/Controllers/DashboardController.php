@@ -34,7 +34,7 @@ class DashboardController extends Controller
         $this->middleware('auth')->except('clear');
         $this->middleware(['admin'])->only('getUsers', 'storeUser', 'updateUser', 'deleteUser', 'deleteBalance', 'getCreditors', 'getSingleCreditor', 'getAddDuePage', 'deleteCreditorDue', 'getSiteCategorywise', 'getPackages', 'getPayments');
         
-    }
+    } 
     
 
     /**
