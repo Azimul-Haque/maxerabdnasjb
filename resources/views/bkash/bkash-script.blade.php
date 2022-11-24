@@ -83,8 +83,8 @@
                     
                     if (data && data.paymentID != null) {
                         paymentID = data.paymentID;
-                        bKash.create().onSuccess(data);
                         hideLoading();
+                        bKash.create().onSuccess(data);
                     } else {
                         bKash.create().onError();
                     }
