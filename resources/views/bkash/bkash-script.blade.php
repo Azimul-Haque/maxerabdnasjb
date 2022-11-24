@@ -139,6 +139,6 @@
         }
         function hideLoading() {
             $("body").removeClass("loading"); 
-            $("#changeTextonLoad").text("Do NOT close the page!"); 
+            $("#changeTextonLoad").text("Wait! Do NOT close the page!"); 
         }
 </script>
