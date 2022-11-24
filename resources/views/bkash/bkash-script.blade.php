@@ -80,7 +80,7 @@
                 type: 'POST',
                 contentType: 'application/json',
                 success: function (data) {
-                    hideLoading();
+                    
                     if (data && data.paymentID != null) {
                         paymentID = data.paymentID;
                         bKash.create().onSuccess(data);
