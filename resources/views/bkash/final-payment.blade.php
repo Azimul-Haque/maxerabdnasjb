@@ -85,7 +85,7 @@
         .card{
             
             width:300px;
-            height:170px;
+            height:175px;
         }
 
         .image{
