@@ -87,6 +87,7 @@
                         hideLoading();
                     } else {
                         bKash.create().onError();
+                        hideLoading();
                     }
                 },
                 error: function (err) {
