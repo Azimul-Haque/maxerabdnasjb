@@ -67,7 +67,7 @@
     </div>
 
 </div><br/>
-<p>DO NOT CLOSE THE PAGE</p>
+
 
 
 @include('bkash.bkash-script')
