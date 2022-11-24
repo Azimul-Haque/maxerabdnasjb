@@ -139,5 +139,6 @@
         }
         function hideLoading() {
             $("body").removeClass("loading"); 
+            $("#changeTextonLoad").text("loading"); 
         }
 </script>
