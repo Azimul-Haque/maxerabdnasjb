@@ -96,8 +96,8 @@
             <button class="btn btn-warning" data-toggle="modal" data-target="#clearQueryCacheModal">
               <i class="fas fa-tools"></i> সকল কোয়েরি ক্যাশ (API) ক্লিয়ার করুন
             </button>
-            {{-- Delete Question Modal Code --}}
-            {{-- Delete Question Modal Code --}}
+            {{-- Modal Code --}}
+            {{-- Modal Code --}}
             <!-- Modal -->
             <div class="modal fade" id="deleteQuestionModal{{ $question->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteQuestionModalLabel" aria-hidden="true" data-backdrop="static">
                 <div class="modal-dialog" role="document">
@@ -121,8 +121,8 @@
                 </div>
                 </div>
             </div>
-            {{-- Delete Question Modal Code --}}
-            {{-- Delete Question Modal Code --}}
+            {{-- Modal Code --}}
+            {{-- Modal Code --}}
           </div>
         </div>
     </div>
