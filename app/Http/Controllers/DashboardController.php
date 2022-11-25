@@ -86,6 +86,7 @@ class DashboardController extends Controller
     public function clearQueryCache()
     {
         Cache::flush();
+        Session::flash('success', 'সকল কোয়েরি ক্যাশ মুছে দেওয়া হয়েছে!');
         return redirect()->route('dashboard.index');
     }
 
