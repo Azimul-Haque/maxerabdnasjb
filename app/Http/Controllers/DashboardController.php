@@ -82,6 +82,14 @@ class DashboardController extends Controller
                                     // ->withTodaystotaldeposit($todaystotaldeposit);
     }
 
+    public function clearQueryCache()
+    {
+        $users = User::where('name', '!=', null)->paginate(10);
+        // $sites = Site::all();
+        return view('dashboard.users.index')
+                    ->withUsers($users);
+    }
+
     public function getUsers()
     {
         $users = User::where('name', '!=', null)->paginate(10);
