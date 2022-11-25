@@ -20,6 +20,7 @@ use Session;
 use Artisan;
 // use Redirect;
 use OneSignal;
+use Cache;
 
 class DashboardController extends Controller
 {
