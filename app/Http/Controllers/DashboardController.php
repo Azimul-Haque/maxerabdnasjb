@@ -59,7 +59,7 @@ class DashboardController extends Controller
 
         $totalmonthlypayment = DB::table('payments')
                                 ->select(DB::raw("DATE_FORMAT(created_at, '%Y-%m') as created_at"), DB::raw('SUM(amount) as totalamount'))
-                                ->where(DB::raw("DATE_FORMAT(created_at, '%Y-%m-%d')"), "=", Carbon::now()->format('Y-m-d'))
+                                ->where(DB::raw("DATE_FORMAT(created_at, '%Y-%m')"), "=", Carbon::now()->format('Y-m'))
                                 ->groupBy(DB::raw("DATE_FORMAT(created_at, '%Y-%m-%d')"))
                                 ->first();
         // $todaystotalexpense = DB::table('expenses')
