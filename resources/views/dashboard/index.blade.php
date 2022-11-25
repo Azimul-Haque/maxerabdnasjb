@@ -109,10 +109,7 @@
                     </button>
                     </div>
                     <div class="modal-body">
-                      আপনি কি নিশ্চিতভাবে সকল কোয়েরি ক্যাশ ডিলেট করতে চান?<br/><br/>
-                      <center>
-                          <big><b>{{ $question->question }}</b></big>
-                      </center>
+                      আপনি কি নিশ্চিতভাবে সকল কোয়েরি ক্যাশ ডিলেট করতে চান?<br/>
                     </div>
                     <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
