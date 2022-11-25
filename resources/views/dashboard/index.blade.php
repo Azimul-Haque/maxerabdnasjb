@@ -93,7 +93,7 @@
         </div>
         <div class="row">
           <div class="col-md-6">
-            <button class="btn btn-warning">
+            <button class="btn btn-warning" data-toggle="modal" data-target="#editQuestionModal{{ $question->id }}">
               <i class="fas fa-tools"></i> সকল কোয়েরি ক্যাশ (API) ক্লিয়ার করুন
             </button>
           </div>
