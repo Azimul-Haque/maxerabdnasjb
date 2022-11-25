@@ -93,7 +93,9 @@
         </div>
         <div class="row">
           <div class="col-md-6">
-            <button class="btn btn-warning">SADASd</button>
+            <button class="btn btn-warning">
+              <i></i> সকল কোয়েরি ক্যাশ (API) ক্লিয়ার করুন
+            </button>
           </div>
         </div>
     </div>
