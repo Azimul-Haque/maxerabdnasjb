@@ -103,17 +103,17 @@
                 <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header bg-danger">
-                    <h5 class="modal-title" id="clearQueryCacheModalLabel">কোয়েরি ক্যাশ ডিলেট</h5>
+                    <h5 class="modal-title" id="clearQueryCacheModalLabel">কোয়েরি ক্যাশ ক্লিয়ার</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                     </div>
                     <div class="modal-body">
-                      আপনি কি নিশ্চিতভাবে সকল কোয়েরি ক্যাশ ডিলেট করতে চান?<br/>
+                      আপনি কি নিশ্চিতভাবে সকল কোয়েরি ক্যাশ ক্লিয়ার করতে চান?<br/>
                     </div>
                     <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-                    <a href="{{ route('dashboard.clearquerycache') }}" class="btn btn-danger">ডিলেট করুন</a>
+                    <a href="{{ route('dashboard.clearquerycache') }}" class="btn btn-danger">ক্যাশ ক্লিয়ার করুন</a>
                     </div>
                 </div>
                 </div>
