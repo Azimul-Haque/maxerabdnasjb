@@ -49,6 +49,7 @@ Route::get('bkash/failed/page/web', 'BkashController@bkashFailedPageWeb')->name(
 Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard.index');
+Route::get('/dashboard', 'DashboardController@clearQueryCache')->name('dashboard.index');
 
 Route::get('/dashboard/users', 'DashboardController@getUsers')->name('dashboard.users');
 Route::get('/dashboard/users/{id}/single', 'DashboardController@getUser')->name('dashboard.users.single');
