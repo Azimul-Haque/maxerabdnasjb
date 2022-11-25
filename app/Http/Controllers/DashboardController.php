@@ -86,7 +86,7 @@ class DashboardController extends Controller
     public function clearQueryCache()
     {
         Cache::flush();
-        return redirect()->route('dashboard.users');
+        return redirect()->route('dashboard.index');
     }
 
     public function getUsers()
