@@ -152,7 +152,7 @@
                 <div class="modal-header bg-warning">
                     <h5 class="modal-title" id="addTAGQuestionModalLabel">
                         ট্যাগ থেকে প্রশ্ন হালনাগাদ (N.B: প্রশ্ন রিসেট হবে!)
-                        <span id="questionupdatingnumber"></span>
+                        <span id="questionupdatingnumbertag"></span>
                     </h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -261,7 +261,7 @@
                 <div class="modal-header bg-warning">
                 <h5 class="modal-title" id="automaticQuestionSetModalLabel">
                     স্বয়ংক্রিয় প্রশ্ন প্রণয়ন
-                    <span id="questionupdatingnumber"></span>
+                    <span id="questionupdatingnumberauto"></span>
                 </h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -326,7 +326,10 @@
             $('#hiddencheckarray').val(updatedvalue);
             console.log(updatedvalue);
             var array = updatedvalue.split(',');
-            $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + array.length);
+            $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + array.length.toString());
+            $('#questionupdatingnumbertag').text('প্রশ্ন সংখ্যাঃ ' + array.length.toString());
+            $('#questionupdatingnumberauto').text('প্রশ্ন সংখ্যাঃ ' + array.length.toString());
+            // console.log(array.length);
         } else {
             var hiddencheckarray = $('#hiddencheckarray').val();
             var uncheckedarray = hiddencheckarray.split(',');
@@ -339,6 +342,8 @@
             $('#hiddencheckarray').val(newupdatedvalue);
             console.log(newupdatedvalue);
             $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + updatedarray.length);
+            $('#questionupdatingnumbertag').text('প্রশ্ন সংখ্যাঃ ' + updatedarray.length);
+            $('#questionupdatingnumberauto').text('প্রশ্ন সংখ্যাঃ ' + updatedarray.length);
         }
     }
     
