@@ -38,7 +38,7 @@
                                   <td>{{ $courseexam->exam->name }}</td>
                                   <td>{{ $courseexam->exam->examquestions->count() }}</td>
                                   <td>
-                                    {{ date('F d, Y', strtotime($courseexam->exam->created_at)) }}
+                                    {{ date('F d, Y', strtotime($courseexam->exam->available_from)) }}
                                   </td>
                               </tr>
                           @endforeach
