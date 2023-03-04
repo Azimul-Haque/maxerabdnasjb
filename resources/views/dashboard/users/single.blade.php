@@ -28,7 +28,7 @@
         </div>
         <div class="col-md-4">
           <div class="info-box mb-3">
-            <span class="info-box-icon bg-info elevation-1"><i class="fas fa-receipt"></i></span>
+            <span class="info-box-icon bg-info elevation-1"><i class="fas fa-list-ul"></i></span>
 
             <div class="info-box-content">
               <small>
