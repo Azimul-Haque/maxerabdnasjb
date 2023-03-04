@@ -33,9 +33,8 @@
 
             <div class="info-box-content">
               <small>
-                <span class="info-box-text">আজকের ব্যয়ঃ <b>৳ </b></span>
-                <span class="info-box-text">{{ bangla(date('F Y')) }} মাসে মোট অর্থ ব্যয়ঃ <b>৳ </b></span>
-                <span class="info-box-text">সর্বমোট অর্থ ব্যয়ঃ <b>৳ </b></span>
+                <big><b>{{ $user->name }}</b></big>
+                <span class="info-box-text"></span>
                 </small>
               {{-- <span class="info-box-number"></span> --}}
             </div>
