@@ -72,7 +72,6 @@
         </div>
         <!-- /.card -->
       </div>
-      <small>{{ $balances->onEachSide(1)->links() }}</small>
     </div>
 @endsection
 
