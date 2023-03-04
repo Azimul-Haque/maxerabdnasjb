@@ -20,11 +20,8 @@
             <span class="info-box-icon bg-success elevation-1"><i class="fas fa-user"></i></span>
 
             <div class="info-box-content">
-              <small>
                 <span class="info-box-text">আজকের অর্থ গ্রহণঃ <b>৳ </b></span>
                 <span class="info-box-text">{{ bangla(date('F Y')) }} মাসে মোট অর্থ গ্রহণঃ <b>৳ </b></span>
-                <span class="info-box-text">সর্বমোট অর্থ গ্রহণঃ <b>৳ </b></span>
-              </small>
             </div>
           </div>
         </div>
