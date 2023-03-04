@@ -38,7 +38,6 @@
               {{-- <span class="info-box-number"></span> --}}
             </div>
           </div>
-          T
         </div>
       </div>
     </div>
