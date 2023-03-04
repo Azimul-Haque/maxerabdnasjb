@@ -21,7 +21,7 @@
 
             <div class="info-box-content">
                 <big>{{ $user->name }}</big>
-                <span class="info-box-text">যোগদান - {{ bangla(date('F Y')) }}</span>
+                <span class="info-box-text">যোগদান - {{ bangla(date('d, F Y', strtotime($user->created_at))) }}</span>
             </div>
           </div>
         </div>
