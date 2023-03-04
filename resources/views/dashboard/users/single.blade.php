@@ -68,58 +68,7 @@
           </ul>
         </div>
         <div class="card-body p-0">
-          <table class="table">
-            <tbody>
-              
-              @foreach($balances as $balance)
-                <tr>
-                  <td style="line-height: 1;">
-                    <span class="badge bg-success"><big>জমাঃ ৳ </big></span><br/>
-                    <small>
-                        
-                        </span> {{ date('F d, Y h:i A', strtotime($balance->created_at)) }}
-                    </small> 
-                  </td>
-                  <td align="right" width="40%">
-                    @if(Auth::user()->role == 'admin')
-                      <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteBalanceModal{{ $balance->id }}">
-                          <i class="fas fa-trash-alt"></i>
-                      </button>
-                    @endif
-                  </td>
-                    @if(Auth::user()->role == 'admin')
-                      {{-- Delete Balance Modal Code --}}
-                      {{-- Delete Balance Modal Code --}}
-                      <!-- Modal -->
-                      <div class="modal fade" id="deleteBalanceModal{{ $balance->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteBalanceModalLabel" aria-hidden="true" data-backdrop="static">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header bg-danger">
-                              <h5 class="modal-title" id="deleteBalanceModalLabel">অর্থ ডিলেট</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body">
-                              আপনি কি নিশ্চিতভাবে এই অর্থ ডিলেট করতে চান?<br/>
-                              <center><big><b>৳ {{ $balance->amount }}</b></big><br/>
-                                  <small><i class="fas fa-user"></i> {{ $balance->user->name }}, <i class="fas fa-calendar-alt"></i> {{ date('F d, Y', strtotime($balance->created_at)) }}</small>
-                              </center>
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-                              <a href="{{ route('dashboard.balance.delete', $balance->id) }}" class="btn btn-danger">ডিলেট করুন</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      {{-- Delete Balance Modal Code --}}
-                      {{-- Delete Balance Modal Code --}}
-                    @endif
-                </tr>
-              @endforeach
-            </tbody>
-          </table>
+    
         </div>
         <!-- /.card -->
       </div>
