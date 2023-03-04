@@ -30,7 +30,6 @@
         <div class="col-md-4">
           <div class="info-box mb-3">
             <span class="info-box-icon bg-info elevation-1"><i class="fas fa-list-ul"></i></span>
-
             <div class="info-box-content">
               <small>
                 <big><b>পরীক্ষা তথ্য</b></big>
@@ -39,6 +38,7 @@
               {{-- <span class="info-box-number"></span> --}}
             </div>
           </div>
+          T
         </div>
       </div>
     </div>
