@@ -21,9 +21,9 @@
 
             <div class="info-box-content">
               <small>
-                <span class="info-box-text">আজকের অর্থ গ্রহণঃ <b>৳ {{ $todaystotaldeposit ? $todaystotaldeposit->totalamount : 0 }}</b></span>
-                <span class="info-box-text">{{ bangla(date('F Y')) }} মাসে মোট অর্থ গ্রহণঃ <b>৳ {{ $monthlytotaldeposit ? $monthlytotaldeposit->totalamount : 0 }}</b></span>
-                <span class="info-box-text">সর্বমোট অর্থ গ্রহণঃ <b>৳ {{ $totaldeposit ? $totaldeposit : 0 }}</b></span>
+                <span class="info-box-text">আজকের অর্থ গ্রহণঃ <b>৳ </b></span>
+                <span class="info-box-text">{{ bangla(date('F Y')) }} মাসে মোট অর্থ গ্রহণঃ <b>৳ </b></span>
+                <span class="info-box-text">সর্বমোট অর্থ গ্রহণঃ <b>৳ </b></span>
               </small>
             </div>
           </div>
@@ -34,9 +34,9 @@
 
             <div class="info-box-content">
               <small>
-                <span class="info-box-text">আজকের ব্যয়ঃ <b>৳ {{ $todaystotalexpense ? $todaystotalexpense->totalamount : 0 }}</b></span>
-                <span class="info-box-text">{{ bangla(date('F Y')) }} মাসে মোট অর্থ ব্যয়ঃ <b>৳ {{ $monthlytotalexpense ? $monthlytotalexpense->totalamount : 0 }}</b></span>
-                <span class="info-box-text">সর্বমোট অর্থ ব্যয়ঃ <b>৳ {{ $totalexpense ? $totalexpense : 0 }}</b></span>
+                <span class="info-box-text">আজকের ব্যয়ঃ <b>৳ </b></span>
+                <span class="info-box-text">{{ bangla(date('F Y')) }} মাসে মোট অর্থ ব্যয়ঃ <b>৳ </b></span>
+                <span class="info-box-text">সর্বমোট অর্থ ব্যয়ঃ <b>৳ </b></span>
                 </small>
               {{-- <span class="info-box-number"></span> --}}
             </div>
