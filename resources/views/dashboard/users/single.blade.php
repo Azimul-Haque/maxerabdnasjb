@@ -33,7 +33,7 @@
 
             <div class="info-box-content">
               <small>
-                <big><b>{{ $user->name }}</b></big>
+                <big><b>পরীক্ষা তথ্য</b></big>
                 <span class="info-box-text"></span>
                 </small>
               {{-- <span class="info-box-number"></span> --}}
