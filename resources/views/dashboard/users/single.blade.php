@@ -52,23 +52,6 @@
           </div>
         </div>
       </div>
-
-      <div class="card card-primary card-outline card-outline-tabs">
-        <div class="card-header p-0 border-bottom-0">
-          <ul class="nav nav-tabs" id="custom-tabs-four-tab" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active">প্রদানকৃত অর্থের তালিকা</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ route('dashboard.users.singleother', $user->id) }}">ব্যয়ের তালিকা</a>
-            </li>
-          </ul>
-        </div>
-        <div class="card-body p-0">
-    
-        </div>
-        <!-- /.card -->
-      </div>
     </div>
 @endsection
 
