@@ -50,7 +50,7 @@
 
             <div class="info-box-content">
               <span class="info-box-text">সর্বমোট ব্যালেন্স</span>
-              <span class="info-box-number">৳ {{ $totaldeposit - $totalexpense }}</span>
+              <span class="info-box-number">৳ </span>
             </div>
           </div>
         </div>
