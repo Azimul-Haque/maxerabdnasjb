@@ -21,7 +21,7 @@
 
             <div class="info-box-content">
                 <big>{{ $user->name }}</big>
-                <span class="info-box-text">{{ bangla(date('F Y')) }} মাসে মোট অর্থ গ্রহণঃ <b>৳ </b></span>
+                <span class="info-box-text">{{ bangla(date('F Y')) }}</span>
             </div>
           </div>
         </div>
