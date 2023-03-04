@@ -104,7 +104,7 @@ class DashboardController extends Controller
         
         // dd($totaldeposit);
 
-        return view('dashboard.dashboard.users.single')
+        return view('dashboard.users.single')
                     ->withUser($user);
     }
 
