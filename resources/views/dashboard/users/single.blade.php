@@ -23,6 +23,7 @@
                 <big><b>{{ $user->name }}</b></big>
                 <span class="info-box-text">যোগদান: {{ bangla(date('d, F Y', strtotime($user->created_at))) }}</span>
                 <span class="info-box-text">মোবাইল: {{ $user->mobile }}</span>
+                <span class="info-box-text">মোট ক্রয় সংখ্যা: {{ $user->payments->count() }}</span>
             </div>
           </div>
         </div>
