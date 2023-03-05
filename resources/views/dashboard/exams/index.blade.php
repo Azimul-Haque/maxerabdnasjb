@@ -57,7 +57,7 @@
                                     <br/>
                                     <span class="badge bg-success">{{ $exam->examcategory->name }}</span>
                                     <span class="badge bg-info">{{ $exam->price_type == 0 ? 'ফ্রি' : 'পেইড' }}</span>
-                                    <span class="badge bg-info">{{ $exam->participation }}</span>
+                                    <span class="badge bg-primary">{{ $exam->participation }}</span>
                                   </td>
                                   <td><span class="fas fa-stopwatch"></span> {{ $exam->duration }} মিনিট</td>
                                   <td>
