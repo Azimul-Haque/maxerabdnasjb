@@ -49,6 +49,27 @@ class QuestionController extends Controller
                     ->withTotalquestions($totalquestions);
     }
 
+    public function getQuestionsTopicBased($id)
+    {
+        if(!(Auth::user()->role == 'admin' || Auth::user()->role == 'manager')) {
+            abort(403, 'Access Denied');
+        }
+        
+        $totalquestions = Question::where('topic_id', $id)->count();
+        $questions = Question::where('topic_id', $id)
+                             ->orderBy('id', 'desc')
+                             ->paginate(10);
+
+        $topics = Topic::orderBy('id', 'asc')->get();
+        $tags = Tag::orderBy('id', 'asc')->get();
+
+        return view('dashboard.questions.index')
+                    ->withQuestions($questions)
+                    ->withTopics($topics)
+                    ->withTags($tags)
+                    ->withTotalquestions($totalquestions);
+    }
+
     public function storeQuestionsTopic(Request $request)
     {
         $this->validate($request,array(
@@ -178,7 +199,13 @@ class QuestionController extends Controller
         }
 
         Session::flash('success', 'Question created successfully!');
-        return redirect()->route('dashboard.questions');
+        return redirect()->back();
+        // if(request()->routeIs('dashboard.questionstopicbased')) {
+        //     return redirect()->route('dashboard.questionstopicbased', $request->topic_id);
+        // } else {
+        //     return redirect()->route('dashboard.questions');
+        // }
+        
     }
 
     public function storeExcelQuestion(Request $request)
@@ -304,7 +331,14 @@ class QuestionController extends Controller
         }
 
         Session::flash('success', 'Question updated successfully!');
-        return redirect()->route('dashboard.questions');
+        // return redirect()->route('dashboard.questions');
+        return redirect()->back();
+        // dd(url()->previous());
+        // if(request()->routeIs('dashboard.questionstopicbased')) {
+        //     return redirect()->route('dashboard.questionstopicbased', $request->topic_id);
+        // } else {
+        //     return redirect()->route('dashboard.questions');
+        // }
     }
 
     public function deleteQuestion($id)

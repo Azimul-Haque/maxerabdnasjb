@@ -233,7 +233,7 @@
                                       {{-- Edit Question Modal Code --}}
                                       {{-- Edit Question Modal Code --}}
           
-                                      <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteQuestionModal{{ $question->id }}">
+                                      <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteQuestionModal{{ $question->id }}" disabled>
                                           <i class="far fa-trash-alt"></i>
                                       </button>
                                   </td>
@@ -297,7 +297,9 @@
                           @foreach($topics as $topic)
                               <tr>
                                   <td>
-                                      {{ $topic->name }} <small>({{ $topic->questions->count() }} টি প্রশ্ন)</small><br/>
+                                    <a href="{{ route('dashboard.questionstopicbased', $topic->id) }}">
+                                      {{ $topic->name }} <small>({{ $topic->questions->count() }} টি প্রশ্ন)</small>
+                                    </a>
                                   </td>
                               
                                   <td align="right" width="40%">
