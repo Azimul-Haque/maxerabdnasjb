@@ -246,6 +246,9 @@ class APIController extends Controller
                 }
                 $examquestion->question = $examquestion->question->makeHidden(['topic_id', 'difficulty', 'created_at', 'updated_at', 'questionexplanation', 'questionimage']);
             }
+            $exam = Exam::findOrFail($id);
+            $exam->participation++;
+            $exam->save();
 
             return response()->json([
                 'success' => true,
