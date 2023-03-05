@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\User;
 use App\Course;
 use App\Courseexam;
+use App\Exam;
 use App\Examquestion;
 use App\Topic;
 use App\Package;
