@@ -21,6 +21,7 @@ use File;
 use Session;
 use Artisan;
 use OneSignal;
+use Cache;
 
 class ExamController extends Controller
 {
