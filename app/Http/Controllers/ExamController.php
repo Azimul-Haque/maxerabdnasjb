@@ -234,7 +234,6 @@ class ExamController extends Controller
             $examquestion->save();
         }
 
-        Cache::forget('courseexams');
         Session::flash('success', 'Question updated successfully!');
         return redirect()->route('dashboard.exams.add.question', $request->exam_id);
     }
