@@ -27,7 +27,7 @@ class MaterialController extends Controller
         // $this->middleware(['manager'])->only();
     }
 
-    public function getQuestions()
+    public function getMaterials()
     {
         if(!(Auth::user()->role == 'admin' || Auth::user()->role == 'manager')) {
             abort(403, 'Access Denied');
