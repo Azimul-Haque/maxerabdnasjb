@@ -309,6 +309,22 @@
                       </div>
                     </div>
                     <div class="row">
+                      <div class="col-md-6">
+                        <div class="input-group mb-3">
+                            <select name="type" class="form-control" required>
+                                <option selected="" disabled="" value="">ধরন বাছাই করুন</option>
+                                <option value="1">শুধু আর্টিকেল</option>
+                                <option value="2">ভিডিও</option>
+                                <option value="3">অডিও</option>
+                                <option value="4">পিডিএফ</option>
+                            </select>
+                            <div class="input-group-append">
+                                <div class="input-group-text"><span class="fas fa-file-alt"></span></div>
+                            </div>
+                        </div>    
+                      </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-6">
                             <div class="input-group mb-3">
                                 <select name="difficulty" class="form-control" required>
