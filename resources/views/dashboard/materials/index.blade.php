@@ -322,8 +322,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                          {{-- <div class="ckeditor"></div> --}}
-                          <textarea id="ckeditor" placeholder="Type the content here!"></textarea>
+                          <div class="ckeditor"></div>
                         </div>
                     </div>
               </div>
