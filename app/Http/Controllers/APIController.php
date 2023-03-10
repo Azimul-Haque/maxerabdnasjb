@@ -269,7 +269,7 @@ class APIController extends Controller
         {
             $topicquestions = Question::select('question', 'option1', 'option2', 'option2', 'option3', 'option4', 'answer')
                                       ->where('topic_id', $id)->orderBy(DB::raw('RAND()'))
-                                      ->take(20)
+                                      // ->take(20)
                                       ->get();
                                       
             foreach($topicquestions as $topicquestion) {
