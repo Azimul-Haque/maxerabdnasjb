@@ -130,16 +130,6 @@
                                                               </div>
                                                           </div>
                                                           <div class="col-md-6">
-                                                              <div class="input-group mb-3">
-                                                                  <select name="topic_id" class="form-control" required>
-                                                                      <option value="" @if($material->topic_id == 1) selected @endif>Test</option>
-                                                                  </select>
-                                                                  <div class="input-group-append">
-                                                                      <div class="input-group-text"><span class="fas fa-bookmark"></span></div>
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                          <div class="col-md-6">
                                                               <div class="form-group ">
                                                                   <label for="image">ছবি (প্রয়োজনে)</label>
                                                                   <input type="file" id="image{{ $material->id }}" name="image" accept="image/*">
