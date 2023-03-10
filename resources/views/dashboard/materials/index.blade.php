@@ -322,7 +322,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                          <div class="summernote"></div>
+                          <div class="ckeditor"></div>
                         </div>
                     </div>
               </div>
@@ -351,7 +351,7 @@
     //   // theme: 'bootstrap4',
     // });
     ClassicEditor
-        .create( document.querySelector( '.summernote' ) )
+        .create( document.querySelector( '.ckeditor' ) )
         .then( editor => {
                 console.log( editor );
         } )
