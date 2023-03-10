@@ -377,7 +377,11 @@
   $(document).ready(function() {
     $('#summernote').summernote();
   });
-  
+
+  $('#myModal').on('shown.bs.modal', function() {
+    $('#summernote').summernote();
+  })
+
     $(document).ready( function() {
       $(document).on('change', '.btn-file :file', function() {
         var input = $(this),
