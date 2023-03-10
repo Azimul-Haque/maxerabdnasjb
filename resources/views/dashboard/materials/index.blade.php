@@ -72,8 +72,8 @@
                                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editQuestionModal{{ $material->id }}">
                                           <i class="far fa-edit"></i>
                                       </button>
-                                      {{-- Edit Question Modal Code --}}
-                                      {{-- Edit Question Modal Code --}}
+                                      {{-- Edit Material Modal Code --}}
+                                      {{-- Edit Material Modal Code --}}
                                       <!-- Modal -->
                                       <div class="modal fade" id="editQuestionModal{{ $material->id }}" tabindex="-1" role="dialog" aria-labelledby="editQuestionModalLabel" aria-hidden="true" data-backdrop="static">
                                           <div class="modal-dialog modal-lg" role="document">
@@ -196,8 +196,8 @@
 
     });
 </script>
-                                      {{-- Edit Question Modal Code --}}
-                                      {{-- Edit Question Modal Code --}}
+                                      {{-- Edit Material Modal Code --}}
+                                      {{-- Edit Material Modal Code --}}
           
                                       <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteQuestionModal{{ $material->id }}" disabled>
                                           <i class="far fa-trash-alt"></i>
