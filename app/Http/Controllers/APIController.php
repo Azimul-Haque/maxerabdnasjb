@@ -277,7 +277,7 @@ class APIController extends Controller
                 }if($topicquestion->questionimage) {
                     $topicquestion->image = $topicquestion->questionimage->image;
                 }
-                // $topicquestion->question = $topicquestion->question->makeHidden(['topic_id', 'difficulty', 'created_at', 'updated_at', 'questionexplanation', 'questionimage']);
+                $topicquestion->question = $topicquestion->makeHidden(['topic_id', 'difficulty', 'created_at', 'updated_at', 'questionexplanation', 'questionimage']);
             }
             // dd($topicquestions);
 
