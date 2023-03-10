@@ -323,7 +323,7 @@
                     <div class="row">
                         <div class="col-md-12">
                           {{-- <div class="ckeditor"></div> --}}
-                          <textarea class="ckeditor" name="article"></textarea>
+                          <textarea class="ckeditor" name="content"></textarea>
                         </div>
                     </div>
               </div>
