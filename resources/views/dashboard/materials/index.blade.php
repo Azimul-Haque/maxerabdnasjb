@@ -20,7 +20,7 @@
             <div class="col-md-9">
                 <div class="card">
                     <div class="card-header">
-                      <h3 class="card-title">লেকচার ম্যাটেরিয়ালস (মোটঃ {{ $totalquestions }})</h3>
+                      <h3 class="card-title">লেকচার ম্যাটেরিয়ালস (মোটঃ {{ $totalmaterials }})</h3>
           
                       <div class="card-tools">
                           <button type="button" class="btn btn-warning btn-sm"  data-toggle="modal" data-target="#addExcelQuesitonModal">
