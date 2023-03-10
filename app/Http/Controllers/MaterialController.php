@@ -64,31 +64,8 @@ class MaterialController extends Controller
         $material->status     = $request->status;
         $material->save();
 
-        
-        if(isset($request->tags_ids)){
-            $question->tags()->sync($request->tags_ids, false);
-        }
 
-        // image upload
-        if($request->hasFile('image')) {
-            $image    = $request->file('image');
-            $filename = random_string(5) . time() .'.' . "webp";
-            $location = public_path('images/questions/'. $filename);
-            Image::make($image)->resize(350, null, function ($constraint) { $constraint->aspectRatio(); })->save($location);
-            $questionimage              = new Questionimage;
-            $questionimage->question_id = $question->id;
-            $questionimage->image       = $filename;
-            $questionimage->save();
-        }
-
-        if($request->explanation) {
-            $questionexplanation              = new Questionexplanation;
-            $questionexplanation->question_id = $question->id;
-            $questionexplanation->explanation = $request->explanation;
-            $questionexplanation->save();
-        }
-
-        Session::flash('success', 'Question created successfully!');
+        Session::flash('success', 'Material added successfully!');
         return redirect()->back();
         // if(request()->routeIs('dashboard.questionstopicbased')) {
         //     return redirect()->route('dashboard.questionstopicbased', $request->topic_id);
