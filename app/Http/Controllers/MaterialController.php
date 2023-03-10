@@ -56,8 +56,8 @@ class MaterialController extends Controller
 
         $material             = new Material;
         $question->type   = $request->type;
-        $question->question   = $request->question;
-        $question->option1    = $request->option1;
+        $question->title   = $request->title;
+        $question->author    = $request->author;
         $question->option2    = $request->option2;
         $question->option3    = $request->option3;
         $question->option4    = $request->option4;
