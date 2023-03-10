@@ -37,9 +37,7 @@ class MaterialController extends Controller
         $materials = Material::orderBy('id', 'desc')->paginate(10);
 
         return view('dashboard.materials.index')
-                    ->withQuestions($questions)
-                    ->withTopics($topics)
-                    ->withTags($tags)
+                    ->withMaterials($materials)
                     ->withTotalmaterials($totalmaterials);
     }
 
