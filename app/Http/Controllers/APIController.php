@@ -271,7 +271,7 @@ class APIController extends Controller
                                       ->where('topic_id', $id)->orderBy(DB::raw('RAND()'))->take(20)->get();
             foreach($topicquestions as $topicquestion) {
                 if($topicquestion->question->questionexplanation) {
-                    $topicquestion->question->explanation = $topicquestion->question->questionexplanation->explanation;
+                    $topicquestion->explanation = $topicquestion->questionexplanation->explanation;
                 }if($topicquestion->question->questionimage) {
                     $topicquestion->question->image = $topicquestion->question->questionimage->image;
                 }
