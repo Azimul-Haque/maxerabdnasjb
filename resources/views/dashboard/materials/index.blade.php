@@ -261,7 +261,7 @@
               <div class="modal-body">
                     @csrf
                     <div class="input-group mb-3">
-                        <input type="text" name="question" class="form-control" value="{{ old('question') }}" placeholder="ম্যাটেরিয়াল টাইটেল" required>
+                        <input type="text" name="title" class="form-control" value="{{ old('question') }}" placeholder="ম্যাটেরিয়াল টাইটেল" required>
                         <div class="input-group-append">
                             <div class="input-group-text"><span class="far fa-question-circle"></span></div>
                         </div>
@@ -269,15 +269,9 @@
                     <div class="row">
                       <div class="col-md-6">
                         <div class="input-group mb-3">
-                            <select name="type" class="form-control" required>
-                                <option selected="" disabled="" value="">ধরন বাছাই করুন</option>
-                                <option value="1">শুধু আর্টিকেল</option>
-                                <option value="2">ভিডিও</option>
-                                <option value="3">অডিও</option>
-                                <option value="4">পিডিএফ</option>
-                            </select>
+                            <input type="text" name="question" class="form-control" value="{{ old('question') }}" placeholder="ম্যাটেরিয়াল টাইটেল" required>
                             <div class="input-group-append">
-                                <div class="input-group-text"><span class="far fa-file-alt"></span></div>
+                                <div class="input-group-text"><span class="far fa-question-circle"></span></div>
                             </div>
                         </div>    
                       </div>
