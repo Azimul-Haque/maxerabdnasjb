@@ -27,7 +27,7 @@
                               <i class="fas fa-file-excel"></i> এক্সেল ফাইল আপলোড করুন
                           </button>
                           <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addQuesitonModal">
-                              <i class="fas fa-plus-circle"></i> নতুন প্রশ্ন যোগ
+                              <i class="fas fa-plus-circle"></i> নতুন ম্যাটেরিয়াল যোগ
                           </button>
                       </div>
                     </div>
@@ -72,7 +72,7 @@
                                           <div class="modal-dialog modal-lg" role="document">
                                           <div class="modal-content">
                                               <div class="modal-header bg-success">
-                                                <h5 class="modal-title" id="editQuestionModalLabel">প্রশ্ন হালনাগাদ</h5>
+                                                <h5 class="modal-title" id="editQuestionModalLabel">ম্যাটেরিয়াল হালনাগাদ</h5>
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
@@ -81,7 +81,7 @@
                                                 <div class="modal-body">
                                                       @csrf
                                                       <div class="input-group mb-3">
-                                                          <input type="text" name="question" class="form-control" value="{{ $question->question }}" placeholder="প্রশ্ন" required>
+                                                          <input type="text" name="question" class="form-control" value="{{ $question->question }}" placeholder="ম্যাটেরিয়াল" required>
                                                           <div class="input-group-append">
                                                               <div class="input-group-text"><span class="far fa-question-circle"></span></div>
                                                           </div>
@@ -244,13 +244,13 @@
                                       <div class="modal-dialog" role="document">
                                       <div class="modal-content">
                                           <div class="modal-header bg-danger">
-                                          <h5 class="modal-title" id="deleteQuestionModalLabel">প্রশ্ন ডিলেট</h5>
+                                          <h5 class="modal-title" id="deleteQuestionModalLabel">ম্যাটেরিয়াল ডিলেট</h5>
                                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                               <span aria-hidden="true">&times;</span>
                                           </button>
                                           </div>
                                           <div class="modal-body">
-                                            আপনি কি নিশ্চিতভাবে এই প্রশ্নটি ডিলেট করতে চান?<br/><br/>
+                                            আপনি কি নিশ্চিতভাবে এই ম্যাটেরিয়ালটি ডিলেট করতে চান?<br/><br/>
                                             <center>
                                                 <big><b>{{ $question->question }}</b></big>
                                             </center>
@@ -298,7 +298,7 @@
                               <tr>
                                   <td>
                                     <a href="{{ route('dashboard.questionstopicbased', $topic->id) }}">
-                                      {{ $topic->name }} <small>({{ $topic->questions->count() }} টি প্রশ্ন)</small>
+                                      {{ $topic->name }} <small>({{ $topic->questions->count() }} টি ম্যাটেরিয়াল)</small>
                                       <span class="badge bg-primary"><i class="fas fa-bolt"></i> {{ $topic->participation }}</span>
                                     </a>
                                   </td>
@@ -406,7 +406,7 @@
                           @foreach($tags as $tag)
                               <tr>
                                   <td>
-                                      {{ $tag->name }} <small>({{ $tag->questions->count() }} টি প্রশ্ন)</small><br/>
+                                      {{ $tag->name }} <small>({{ $tag->questions->count() }} টি ম্যাটেরিয়াল)</small><br/>
                                   </td>
                               
                                   <td align="right" width="40%">
@@ -527,7 +527,7 @@
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header bg-success">
-            <h5 class="modal-title" id="addQuesitonModalLabel">নতুন প্রশ্ন যোগ</h5>
+            <h5 class="modal-title" id="addQuesitonModalLabel">নতুন ম্যাটেরিয়াল যোগ</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -536,7 +536,7 @@
               <div class="modal-body">
                     @csrf
                     <div class="input-group mb-3">
-                        <input type="text" name="question" class="form-control" value="{{ old('question') }}" placeholder="প্রশ্ন" required>
+                        <input type="text" name="question" class="form-control" value="{{ old('question') }}" placeholder="ম্যাটেরিয়াল" required>
                         <div class="input-group-append">
                             <div class="input-group-text"><span class="far fa-question-circle"></span></div>
                         </div>
