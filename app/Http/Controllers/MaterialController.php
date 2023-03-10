@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\User;
+use App\Material;
 
 use Carbon\Carbon;
 use DB;
@@ -13,7 +13,7 @@ use DB;
 // use File;
 // use Session;
 // use Artisan;
-// use Redirect;
+use Redirect;
 // use OneSignal;
 // use Cache;
 
