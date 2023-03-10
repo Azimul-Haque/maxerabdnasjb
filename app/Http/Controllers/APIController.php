@@ -168,7 +168,6 @@ class APIController extends Controller
             $courseexams = Cache::remember('courseexams'.$id, 7 * 24 * 60 * 60, function () use ($id) {
                 $courseexams = Courseexam::select('course_id', 'exam_id')
                                      ->where('course_id', $id)
-                                     ->orderBy('created_at', 'desc')
                                      ->get();
 
                 foreach($courseexams as $courseexam) {
