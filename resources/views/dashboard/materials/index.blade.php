@@ -23,7 +23,7 @@
                       <h3 class="card-title">লেকচার ম্যাটেরিয়ালস (মোটঃ {{ $totalmaterials }})</h3>
           
                       <div class="card-tools">
-                          <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addQuesitonModal">
+                          <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addMaterialModal">
                               <i class="fas fa-plus-circle"></i> নতুন ম্যাটেরিয়াল যোগ
                           </button>
                       </div>
@@ -248,11 +248,11 @@
     {{-- Add Question Modal Code --}}
     {{-- Add Question Modal Code --}}
     <!-- Modal -->
-    <div class="modal fade" id="addQuesitonModal" tabindex="-1" role="dialog" aria-labelledby="addQuesitonModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal fade" id="addMaterialModal" tabindex="-1" role="dialog" aria-labelledby="addMaterialModalLabel" aria-hidden="true" data-backdrop="static">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header bg-success">
-            <h5 class="modal-title" id="addQuesitonModalLabel">নতুন ম্যাটেরিয়াল যোগ</h5>
+            <h5 class="modal-title" id="addMaterialModalLabel">নতুন ম্যাটেরিয়াল যোগ</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
