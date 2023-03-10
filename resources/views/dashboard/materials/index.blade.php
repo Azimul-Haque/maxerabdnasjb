@@ -179,7 +179,7 @@
                                           </div>
                                           <div class="modal-footer">
                                           <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-                                          <a href="{{ route('dashboard.questions.delete', $material->id) }}" class="btn btn-danger">ডিলেট করুন</a>
+                                          <a href="{{ route('dashboard.materials.delete', $material->id) }}" class="btn btn-danger">ডিলেট করুন</a>
                                           </div>
                                       </div>
                                       </div>
