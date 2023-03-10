@@ -269,7 +269,7 @@
                     <div class="row">
                       <div class="col-md-6">
                         <div class="input-group mb-3">
-                            <select name="answer" class="form-control" required>
+                            <select name="type" class="form-control" required>
                                 <option selected="" disabled="" value="">সঠিক উত্তর</option>
                                 <option value="1">অপশন ১</option>
                                 <option value="2">অপশন ২</option>
