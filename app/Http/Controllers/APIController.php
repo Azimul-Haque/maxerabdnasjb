@@ -271,7 +271,7 @@ class APIController extends Controller
 
             foreach($topicquestions as $topicquestion) {
                 $topicquestion->question = $topicquestion->question->makeHidden(['topic_id', 'difficulty', 'created_at', 'updated_at', 'questionexplanation', 'questionimage']);
-            }
+            }   
             $exam = Exam::findOrFail($id);
             $exam->participation++;
             $exam->save();
