@@ -271,7 +271,7 @@ class APIController extends Controller
                                       ->where('topic_id', $id)->orderBy(DB::raw('RAND()'))
                                       ->take(20)
                                       ->get();
-                                      
+
             foreach($topicquestions as $topicquestion) {
                 dd($topicquestion);
                 if($topicquestion->questionexplanation) {
@@ -279,7 +279,7 @@ class APIController extends Controller
                 }if($topicquestion->questionimage) {
                     $topicquestion->image = $topicquestion->questionimage->image;
                 }
-                $topicquestion->question = $topicquestion->makeHidden(['topic_id', 'difficulty', 'created_at', 'updated_at', 'questionexplanation', 'questionimage']);
+                $topicquestion = $topicquestion->makeHidden(['topic_id', 'difficulty', 'created_at', 'updated_at', 'questionexplanation', 'questionimage']);
             }
             // dd($topicquestions);
 
