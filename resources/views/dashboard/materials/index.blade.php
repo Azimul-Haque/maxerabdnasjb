@@ -134,7 +134,7 @@
                                                           <div class="col-md-6">
                                                               <div class="form-group ">
                                                                   <label for="image">ছবি (প্রয়োজনে)</label>
-                                                                  <input type="file" id="image{{ $material->id }}" name="image" accept="image/*">
+                                                                  {{-- <input type="file" id="image{{ $material->id }}" name="image" accept="image/*"> --}}
                                                               </div>
                                                               <center>
                                                                   <?php
