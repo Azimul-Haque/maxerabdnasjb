@@ -8,7 +8,7 @@ use App\Material;
 use Carbon\Carbon;
 use DB;
 // use Hash;
-// use Auth;
+use Auth;
 // use Image;
 // use File;
 // use Session;
