@@ -43,7 +43,7 @@
                               </tr>
                           </thead>
                           <tbody>
-                          @foreach($questions as $question)
+                          @foreach($materials as $question)
                               <tr>
                                   <td>
                                       {{ $question->question }}<br/>
@@ -271,7 +271,7 @@
                     </div>
                     <!-- /.card-body -->
                   </div>
-                  {{ $questions->links() }}
+                  {{ $materials->links() }}
             </div>
             <div class="col-md-3">
                 <div class="card">
