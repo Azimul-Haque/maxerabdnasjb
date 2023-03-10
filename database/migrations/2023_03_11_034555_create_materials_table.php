@@ -16,8 +16,8 @@ class CreateMaterialsTable extends Migration
         Schema::create('materials', function (Blueprint $table) {
             $table->id();
             $table->string('type');
-            $table->string('headings');
-            $table->string('message');
+            $table->string('title');
+            $table->string('author');
             $table->timestamps();
         });
     }
