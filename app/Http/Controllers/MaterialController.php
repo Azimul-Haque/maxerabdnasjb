@@ -33,8 +33,8 @@ class MaterialController extends Controller
             abort(403, 'Access Denied');
         }
         
-        $totalquestions = Question::count();
-        $questions = Question::orderBy('id', 'desc')->paginate(10);
+        $materials = Material::count();
+        $questions = Material::orderBy('id', 'desc')->paginate(10);
         $topics = Topic::orderBy('id', 'asc')->get();
         $tags = Tag::orderBy('id', 'asc')->get();
 
