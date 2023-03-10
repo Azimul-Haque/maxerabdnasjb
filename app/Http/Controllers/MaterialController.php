@@ -55,15 +55,14 @@ class MaterialController extends Controller
         ));
 
         $material             = new Material;
-        $question->type   = $request->type;
-        $question->title   = $request->title;
-        $question->author    = $request->author;
-        $question->author_desc    = $request->author_desc;
-        $question->content    = $request->content;
-        $question->option4    = $request->option4;
-        $question->answer     = $request->answer;
-        $question->difficulty = $request->difficulty;
-        $question->save();
+        $material->type   = $request->type;
+        $material->title   = $request->title;
+        $material->author    = $request->author;
+        $material->author_desc    = $request->author_desc;
+        $material->content    = $request->content;
+        $material->url    = $request->url;
+        $material->status     = $request->status;
+        $material->save();
 
         
         if(isset($request->tags_ids)){
