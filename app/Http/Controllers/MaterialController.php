@@ -49,7 +49,7 @@ class MaterialController extends Controller
             'title'    => 'required|string|max:255',
             'author'    => 'required|string|max:255',
             'author_desc'    => 'required|string|max:255',
-            'content'    => 'required',
+            'author_desc'    => 'required',
             'option1'     => 'required|string|max:191',
             'option2'     => 'required|string|max:191',
             'option3'     => 'required|string|max:191',
