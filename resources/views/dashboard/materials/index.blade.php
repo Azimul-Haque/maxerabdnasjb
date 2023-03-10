@@ -134,18 +134,8 @@
                                                           <div class="col-md-6">
                                                               <div class="form-group ">
                                                                   <label for="image">ছবি (প্রয়োজনে)</label>
-                                                                  {{-- <input type="file" id="image{{ $material->id }}" name="image" accept="image/*"> --}}
+                                                                  <input type="file" id="image{{ $material->id }}" name="image" accept="image/*">
                                                               </div>
-                                                              <center>
-                                                                  <?php
-                                                                    if($material->questionimage) {
-                                                                        $currentimage = asset('images/questions/' . $material->questionimage->image);
-                                                                    } else {
-                                                                        $currentimage = asset('images/placeholder.png');
-                                                                    }
-                                                                  ?>
-                                                                  <img src="{{ $currentimage }}" id='img-upload{{ $material->id }}' style="width: 250px; height: auto;" class="img-responsive" />
-                                                              </center>
                                                           </div>
                                                           <div class="col-md-6">
                                                               <label for="explanation">ব্যাখ্যা (প্রয়োজনে)</label><br/>
@@ -333,7 +323,6 @@
                                 <label for="image">ছবি (প্রয়োজনে)</label>
                                 <input type="file" id="image" name="image" accept="image/*">
                             </div>
-                            
                         </div>
                     </div>
                     <div class="row">
