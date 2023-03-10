@@ -272,8 +272,8 @@ class APIController extends Controller
             foreach($topicquestions as $topicquestion) {
                 if($topicquestion->question->questionexplanation) {
                     $topicquestion->explanation = $topicquestion->questionexplanation->explanation;
-                }if($topicquestion->question->questionimage) {
-                    $topicquestion->question->image = $topicquestion->question->questionimage->image;
+                }if($topicquestion->questionimage) {
+                    $topicquestion->image = $topicquestion->questionimage->image;
                 }
                 // $topicquestion->question = $topicquestion->question->makeHidden(['topic_id', 'difficulty', 'created_at', 'updated_at', 'questionexplanation', 'questionimage']);
             }
