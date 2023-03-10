@@ -35,10 +35,8 @@ class MaterialController extends Controller
         
         $materials = Material::count();
         $materials = Material::orderBy('id', 'desc')->paginate(10);
-        $topics = Topic::orderBy('id', 'asc')->get();
-        $tags = Tag::orderBy('id', 'asc')->get();
 
-        return view('dashboard.questions.index')
+        return view('dashboard.materials.index')
                     ->withQuestions($questions)
                     ->withTopics($topics)
                     ->withTags($tags)
