@@ -24,6 +24,7 @@ class CreateExamsTable extends Migration
             $table->date('available_from');
             $table->date('available_to');
             $table->text('syllabus');
+            $table->integer('participation')->default(0);
             $table->timestamps();
         });
     }

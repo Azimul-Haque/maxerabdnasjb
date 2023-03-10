@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\User;
+use App\Topic;
 use App\Question;
 use App\Course;
 use App\Courseexam;
@@ -282,9 +283,9 @@ class APIController extends Controller
             }
             // dd($topicquestions);
 
-            // $exam = Exam::findOrFail($id);
-            // $exam->participation++;
-            // $exam->save();
+            $topic = Topic::findOrFail($id);
+            $topic->participation++;
+            $topic->save();
 
             return response()->json([
                 'success' => true,
