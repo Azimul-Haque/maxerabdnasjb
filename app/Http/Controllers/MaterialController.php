@@ -34,7 +34,7 @@ class MaterialController extends Controller
         }
         
         $materials = Material::count();
-        $questions = Material::orderBy('id', 'desc')->paginate(10);
+        $materials = Material::orderBy('id', 'desc')->paginate(10);
         $topics = Topic::orderBy('id', 'asc')->get();
         $tags = Tag::orderBy('id', 'asc')->get();
 
