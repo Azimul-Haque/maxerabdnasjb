@@ -33,14 +33,14 @@ class MaterialController extends Controller
             abort(403, 'Access Denied');
         }
         
-        $materials = Material::count();
+        $totalmaterials = Material::count();
         $materials = Material::orderBy('id', 'desc')->paginate(10);
 
         return view('dashboard.materials.index')
                     ->withQuestions($questions)
                     ->withTopics($topics)
                     ->withTags($tags)
-                    ->withTotalquestions($totalquestions);
+                    ->withTotalmaterials($totalmaterials);
     }
 
     public function storeMaterial(Request $request)
