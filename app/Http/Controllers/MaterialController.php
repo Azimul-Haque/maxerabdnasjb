@@ -45,7 +45,7 @@ class MaterialController extends Controller
                     ->withTotalquestions($totalquestions);
     }
 
-    public function storeQuestion(Request $request)
+    public function storeMaterial(Request $request)
     {
         // dd($request->file('image'));
         $this->validate($request,array(
@@ -106,7 +106,7 @@ class MaterialController extends Controller
         
     }
 
-    public function updateQuestion(Request $request, $id)
+    public function updateMaterial(Request $request, $id)
     {
         // dd($request->file('image'));
         $this->validate($request,array(
@@ -181,7 +181,7 @@ class MaterialController extends Controller
         // }
     }
 
-    public function deleteQuestion($id)
+    public function deleteMaterial($id)
     {
         $question = Question::find($id);
         if($question->questionimage) {
