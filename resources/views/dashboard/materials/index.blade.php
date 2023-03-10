@@ -351,7 +351,9 @@
     //   // theme: 'bootstrap4',
     // });
     ClassicEditor
-        .create( document.querySelector( '.ckeditor' ) )
+        .create( document.querySelector( '.ckeditor' ), {
+          placeholder: 'Type the content here!',
+        } )
         .then( editor => {
                 console.log( editor );
         } )
