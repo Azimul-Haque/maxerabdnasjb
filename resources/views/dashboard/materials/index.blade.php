@@ -374,6 +374,9 @@
     //     } );
 </script>
 <script type="text/javascript">
+  $(document).ready(function() {
+    $('#summernote').summernote();
+  });
     $(document).ready( function() {
       $(document).on('change', '.btn-file :file', function() {
         var input = $(this),
