@@ -106,7 +106,7 @@ class MaterialController extends Controller
 
     public function deleteMaterial($id)
     {
-        $question = Question::find($id);
+        $material = Material::find($id);
         if($question->questionimage) {
             $image_path = public_path('images/questions/'. $question->questionimage->image);
             if(File::exists($image_path)) {
