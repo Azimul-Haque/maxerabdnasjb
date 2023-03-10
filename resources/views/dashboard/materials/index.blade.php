@@ -132,10 +132,7 @@
                                                           <div class="col-md-6">
                                                               <div class="input-group mb-3">
                                                                   <select name="topic_id" class="form-control" required>
-                                                                      <option selected="" disabled="" value="">টপিক (বিষয়)</option>
-                                                                      @foreach ($topics as $topic)
-                                                                          <option value="{{ $topic->id }}" @if($material->topic_id == $topic->id) selected @endif>{{ $topic->name }}</option>
-                                                                      @endforeach
+                                                                      <option value="" @if($material->topic_id == 1) selected @endif>Test</option>
                                                                   </select>
                                                                   <div class="input-group-append">
                                                                       <div class="input-group-text"><span class="fas fa-bookmark"></span></div>
@@ -324,19 +321,6 @@
                                 </select>
                                 <div class="input-group-append">
                                     <div class="input-group-text"><span class="fas fa-star-half-alt"></span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="input-group mb-3">
-                                <select name="topic_id" class="form-control" required>
-                                    <option selected="" disabled="" value="">টপিক (বিষয়)</option>
-                                    @foreach ($topics as $topic)
-                                        <option value="{{ $topic->id }}">{{ $topic->name }}</option>
-                                    @endforeach
-                                </select>
-                                <div class="input-group-append">
-                                    <div class="input-group-text"><span class="fas fa-bookmark"></span></div>
                                 </div>
                             </div>
                         </div>
