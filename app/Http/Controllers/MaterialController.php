@@ -23,7 +23,7 @@ class MaterialController extends Controller
     {
         parent::__construct();
         $this->middleware('auth');
-        $this->middleware(['admin'])->only('storeMaterial', 'storeQuestionsTag', 'deleteQuestion');
+        $this->middleware(['admin'])->only('storeMaterial', 'updateMaterial', 'deleteMaterial');
         // $this->middleware(['manager'])->only();
     }
 
