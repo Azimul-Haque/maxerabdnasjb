@@ -10,6 +10,10 @@
   .select2-selection__choice{
       background-color: rgba(0, 123, 255) !important;
   }
+  .cke_dialog
+  {
+      z-index: 10055 !important;
+  }
   .ck-editor__editable_inline {
       min-height: 400px;
   }
