@@ -337,12 +337,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <div id="summernote" class="summernote
-summernote
-summernote
-summernote
-summernote
-summernote"></div>
+                            <div id="summernote" class="summernote"></div>
                         </div>
                     </div>
               </div>
