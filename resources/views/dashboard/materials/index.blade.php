@@ -10,6 +10,9 @@
   .select2-selection__choice{
       background-color: rgba(0, 123, 255) !important;
   }
+  .ck-editor__editable_inline {
+      min-height: 400px;
+  }
 </style>
 
 {{-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" /> --}}
