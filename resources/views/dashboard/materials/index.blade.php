@@ -36,8 +36,8 @@
                       <table class="table">
                           <thead>
                               <tr>
-                                  <th>Question</th>
-                                  <th>Answer</th>
+                                  <th>Title</th>
+                                  <th>Author</th>
                                   <th>Options</th>
                                   <th width="10%">Action</th>
                               </tr>
