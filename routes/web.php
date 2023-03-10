@@ -104,6 +104,7 @@ Route::post('/dashboard/courses/add/exam/store', 'CourseController@storeCourseEx
 Route::get('/dashboard/materials', 'MaterialController@getMaterials')->name('dashboard.materials');
 Route::post('/dashboard/materials/store', 'MaterialController@storeMaterial')->name('dashboard.materials.store');
 Route::post('/dashboard/materials/{id}/update', 'MaterialController@updateMaterial')->name('dashboard.materials.update');
+Route::get('/dashboard/materials/{id}/delete', 'MaterialController@deleteMaterial')->name('dashboard.materials.delete');
 
 Route::get('/dashboard/messages', 'DashboardController@getMessages')->name('dashboard.messages');
 Route::post('/dashboard/messages/{id}/update', 'DashboardController@updateMessage')->name('dashboard.messages.update');
