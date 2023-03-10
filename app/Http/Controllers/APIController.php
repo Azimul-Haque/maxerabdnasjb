@@ -269,11 +269,8 @@ class APIController extends Controller
         {
             $topicquestions = Question::where('topic_id', $id)->orderBy(DB::raw('RAND()'))->take(20)->get();
 
-            // dd($topicquestions);
-            foreach($topicquestions as $topicquestion) {
-                $topicquestion = $topicquestion->makeHidden(['topic_id', 'difficulty', 'created_at', 'updated_at']);
-                dd($topicquestion);
-            }
+            dd($topicquestions);
+            
             $exam = Exam::findOrFail($id);
             $exam->participation++;
             $exam->save();
