@@ -14,6 +14,9 @@
   {
       z-index: 10055 !important;
   }
+  .ck.ck-balloon-panel {
+          z-index: 1050 !important;
+      }
   .ck-editor__editable_inline {
       min-height: 400px;
   }
