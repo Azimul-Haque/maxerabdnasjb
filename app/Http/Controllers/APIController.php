@@ -269,7 +269,15 @@ class APIController extends Controller
         {
             $topicquestions = Question::select('question', 'option1', 'option2', 'option2', 'option3', 'option4', 'answer')
                                       ->where('topic_id', $id)->orderBy(DB::raw('RAND()'))->take(20)->get();
-
+            foreach($examquestions as $examquestion) {
+                $examquestion = $examquestion->makeHidden(['question_id']);
+                if($examquestion->question->questionexplanation) {
+                    $examquestion->question->explanation = $examquestion->question->questionexplanation->explanation;
+                }if($examquestion->question->questionimage) {
+                    $examquestion->question->image = $examquestion->question->questionimage->image;
+                }
+                $examquestion->question = $examquestion->question->makeHidden(['topic_id', 'difficulty', 'created_at', 'updated_at', 'questionexplanation', 'questionimage']);
+            }
             dd($topicquestions);
 
             $exam = Exam::findOrFail($id);
