@@ -270,11 +270,6 @@ class APIController extends Controller
             $topicquestions = Question::where('topic_id', $id)->orderBy(DB::raw('RAND()'))->take(20)->get();
 
             foreach($topicquestions as $topicquestion) {
-                if($topicquestion->question->questionexplanation) {
-                    $topicquestion->question->explanation = $topicquestion->question->questionexplanation->explanation;
-                }if($topicquestion->question->questionimage) {
-                    $topicquestion->question->image = $topicquestion->question->questionimage->image;
-                }
                 $topicquestion->question = $topicquestion->question->makeHidden(['topic_id', 'difficulty', 'created_at', 'updated_at', 'questionexplanation', 'questionimage']);
             }
             $exam = Exam::findOrFail($id);
