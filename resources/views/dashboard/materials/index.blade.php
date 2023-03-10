@@ -311,8 +311,8 @@
                     <div class="row">
                       <div class="col-md-6">
                         <div class="input-group mb-3">
-                            <select name="type" class="form-control" required>
-                                <option selected="" disabled="" value="">ধরন বাছাই করুন</option>
+                            <select name="status" class="form-control" required>
+                                <option selected="" disabled="" value="">স্ট্যাটাস</option>
                                 <option value="1">শুধু আর্টিকেল</option>
                                 <option value="2">ভিডিও</option>
                                 <option value="3">অডিও</option>
