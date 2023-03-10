@@ -38,7 +38,7 @@
                               <tr>
                                   <th>Title</th>
                                   <th>Author</th>
-                                  <th>Options</th>
+                                  <th>Type</th>
                                   <th width="10%">Action</th>
                               </tr>
                           </thead>
