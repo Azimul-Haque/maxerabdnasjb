@@ -267,7 +267,7 @@ class APIController extends Controller
     {
         if($softtoken == 'Rifat.Admin.2022')
         {
-            $topicquestions = Question::select('')
+            $topicquestions = Question::select('question', 'option1', 'option2', 'option2')
                                       ->where('topic_id', $id)->orderBy(DB::raw('RAND()'))->take(20)->get();
 
             dd($topicquestions);
