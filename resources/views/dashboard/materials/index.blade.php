@@ -256,6 +256,23 @@
           <form method="post" action="{{ route('dashboard.questions.store') }}" enctype='multipart/form-data'>
               <div class="modal-body">
                     @csrf
+                    <div class="row">
+                      <div class="col-md-6">
+                        
+                      </div>
+                      <div class="col-md-6">
+                        <div class="input-group mb-3">
+                            <select name="status" class="form-control" required>
+                                <option selected="" disabled="" value="">স্ট্যাটাস</option>
+                                <option value="0">ইন-একটিভ</option>
+                                <option value="1" selected>একটিভ</option>
+                            </select>
+                            <div class="input-group-append">
+                                <div class="input-group-text"><span class="fas fa-file-alt"></span></div>
+                            </div>
+                        </div>    
+                      </div>
+                    </div>
                     <div class="input-group mb-3">
                         <input type="text" name="title" class="form-control" value="{{ old('title') }}" placeholder="ম্যাটেরিয়াল টাইটেল" required>
                         <div class="input-group-append">
@@ -303,28 +320,6 @@
                             </div>
                         </div>    
                       </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="input-group mb-3">
-                            <select name="status" class="form-control" required>
-                                <option selected="" disabled="" value="">স্ট্যাটাস</option>
-                                <option value="0">ইন-একটিভ</option>
-                                <option value="1" selected>একটিভ</option>
-                            </select>
-                            <div class="input-group-append">
-                                <div class="input-group-text"><span class="fas fa-file-alt"></span></div>
-                            </div>
-                        </div>    
-                      </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group ">
-                                <label for="image">ছবি (প্রয়োজনে)</label>
-                                <input type="file" id="image" name="image" accept="image/*">
-                            </div>
-                        </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
