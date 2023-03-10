@@ -267,7 +267,7 @@ class APIController extends Controller
     {
         if($softtoken == 'Rifat.Admin.2022')
         {
-            $topicquestions = Question::where('topic_id', $id)->get();
+            $topicquestions = Question::where('topic_id', $id)orderBy(DB::raw('RAND()'))->take(3)->get();
 
             foreach($examquestions as $examquestion) {
                 $examquestion = $examquestion->makeHidden(['question_id']);
