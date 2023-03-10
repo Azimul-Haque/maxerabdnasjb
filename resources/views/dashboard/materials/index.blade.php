@@ -152,50 +152,6 @@
                                           </div>
                                           </div>
                                       </div>
-<script type="text/javascript">
-    $(document).ready( function() {
-      $(document).on('change', '.btn-file :file', function() {
-        var input = $(this),
-            label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
-        input.trigger('fileselect', [label]);
-      });
-
-      $('.btn-file :file').on('fileselect', function(event, label) {
-          var input = $(this).parents('.input-group').find(':text'),
-              log = label;
-          if( input.length ) {
-              input.val(log);
-          } else {
-              if( log ) alert(log);
-          }
-      });
-      function readURL(input) {
-          if (input.files && input.files[0]) {
-              var reader = new FileReader();
-              reader.onload = function (e) {
-                  $('#img-upload{{ $material->id }}').attr('src', e.target.result);
-              }
-              reader.readAsDataURL(input.files[0]);
-          }
-      }
-      $("#image{{ $material->id }}").change(function(){
-          readURL(this);
-          var filesize = parseInt((this.files[0].size)/1024);
-          if(filesize > 10000) {
-            $("#image{{ $material->id }}").val('');
-            // toastr.warning('File size is: '+filesize+' Kb. try uploading less than 300Kb', 'WARNING').css('width', '400px;');
-            Toast.fire({
-                icon: 'warning',
-                title: 'File size is: '+filesize+' Kb. try uploading less than 300Kb'
-            })
-            setTimeout(function() {
-            $("#img-upload{{ $material->id }}").attr('src', '{{ asset('images/placeholder.png') }}');
-            }, 1000);
-          }
-      });
-
-    });
-</script>
                                       {{-- Edit Material Modal Code --}}
                                       {{-- Edit Material Modal Code --}}
           
@@ -203,8 +159,8 @@
                                           <i class="far fa-trash-alt"></i>
                                       </button>
                                   </td>
-                                  {{-- Delete Question Modal Code --}}
-                                  {{-- Delete Question Modal Code --}}
+                                  {{-- Delete Material Modal Code --}}
+                                  {{-- Delete Material Modal Code --}}
                                   <!-- Modal -->
                                   <div class="modal fade" id="deleteQuestionModal{{ $material->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteQuestionModalLabel" aria-hidden="true" data-backdrop="static">
                                       <div class="modal-dialog" role="document">
@@ -228,8 +184,8 @@
                                       </div>
                                       </div>
                                   </div>
-                                  {{-- Delete Question Modal Code --}}
-                                  {{-- Delete Question Modal Code --}}
+                                  {{-- Delete Material Modal Code --}}
+                                  {{-- Delete Material Modal Code --}}
                               </tr>
                           @endforeach
                           </tbody>
