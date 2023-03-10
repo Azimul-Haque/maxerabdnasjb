@@ -102,6 +102,7 @@ Route::get('/dashboard/courses/add/exam/{id}', 'CourseController@addExamToCourse
 Route::post('/dashboard/courses/add/exam/store', 'CourseController@storeCourseExam')->name('dashboard.courses.exam.store');
 
 Route::get('/dashboard/materials', 'MaterialController@getMaterials')->name('dashboard.materials');
+Route::post('/dashboard/materials/store', 'MaterialController@storeMaterials')->name('dashboard.materials.store');
 
 Route::get('/dashboard/messages', 'DashboardController@getMessages')->name('dashboard.messages');
 Route::post('/dashboard/messages/{id}/update', 'DashboardController@updateMessage')->name('dashboard.messages.update');
