@@ -267,10 +267,11 @@ class APIController extends Controller
     {
         if($softtoken == 'Rifat.Admin.2022')
         {
-            $topicquestions = Question::where('topic_id', $id)->orderBy(DB::raw('RAND()'))->take(20)->get();
+            $topicquestions = Question::select('')
+                                      ->where('topic_id', $id)->orderBy(DB::raw('RAND()'))->take(20)->get();
 
             dd($topicquestions);
-            
+
             $exam = Exam::findOrFail($id);
             $exam->participation++;
             $exam->save();
