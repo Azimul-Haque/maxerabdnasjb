@@ -46,7 +46,8 @@ class MaterialController extends Controller
         // dd($request->file('image'));
         $this->validate($request,array(
             'title'    => 'required|string|max:255',
-            'question'    => 'required|string|max:255',
+            'author'    => 'required|string|max:255',
+            'author_desc'    => 'required|string|max:255',
             'option1'     => 'required|string|max:191',
             'option2'     => 'required|string|max:191',
             'option3'     => 'required|string|max:191',
