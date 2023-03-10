@@ -271,6 +271,7 @@ class APIController extends Controller
                                       ->where('topic_id', $id)->orderBy(DB::raw('RAND()'))
                                       ->take(20)
                                       ->get();
+                                      
             foreach($topicquestions as $topicquestion) {
                 dd($topicquestion->questionexplanation);
                 if($topicquestion->questionexplanation) {
