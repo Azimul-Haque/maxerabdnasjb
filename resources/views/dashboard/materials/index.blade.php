@@ -23,9 +23,6 @@
                       <h3 class="card-title">লেকচার ম্যাটেরিয়ালস (মোটঃ {{ $totalmaterials }})</h3>
           
                       <div class="card-tools">
-                          <button type="button" class="btn btn-warning btn-sm"  data-toggle="modal" data-target="#addExcelMaterialModal">
-                              <i class="fas fa-file-excel"></i> এক্সেল ফাইল আপলোড করুন
-                          </button>
                           <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addQuesitonModal">
                               <i class="fas fa-plus-circle"></i> নতুন ম্যাটেরিয়াল যোগ
                           </button>
