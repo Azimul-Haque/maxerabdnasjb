@@ -11,6 +11,8 @@
       background-color: rgba(0, 123, 255) !important;
   }
 </style>
+<link rel="stylesheet" type="text/css" href="{{ asset('vendor/summernote/summernote.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('vendor/summernote/summernote-bs3.css') }}">
 @endsection
 
 @section('content')
