@@ -262,6 +262,37 @@ class APIController extends Controller
         }
     }
 
+    public function getTopicExamQuestions($softtoken, $id)
+    {
+        if($softtoken == 'Rifat.Admin.2022')
+        {
+            $examquestions = Examquestion::where('topic_id', $id)
+                                     ->get();
+
+            foreach($examquestions as $examquestion) {
+                $examquestion = $examquestion->makeHidden(['question_id']);
+                if($examquestion->question->questionexplanation) {
+                    $examquestion->question->explanation = $examquestion->question->questionexplanation->explanation;
+                }if($examquestion->question->questionimage) {
+                    $examquestion->question->image = $examquestion->question->questionimage->image;
+                }
+                $examquestion->question = $examquestion->question->makeHidden(['topic_id', 'difficulty', 'created_at', 'updated_at', 'questionexplanation', 'questionimage']);
+            }
+            $exam = Exam::findOrFail($id);
+            $exam->participation++;
+            $exam->save();
+
+            return response()->json([
+                'success' => true,
+                'questions' => $examquestions,
+            ]);
+        } else {
+            return response()->json([
+                'success' => false
+            ]);
+        }
+    }
+
     public function getTopics($softtoken)
     {
         if($softtoken == 'Rifat.Admin.2022')
