@@ -20,7 +20,7 @@ class CreateMaterialsTable extends Migration
             $table->string('author');
             $table->string('author_desc');
             $table->text('textdata');
-            $table->text('textdata');
+            $table->string('url');
             $table->timestamps();
         });
     }
