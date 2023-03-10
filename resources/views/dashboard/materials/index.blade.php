@@ -49,9 +49,7 @@
                                       {{ $material->question }}<br/>
                                       <span class="badge bg-success">{{ $material->topic->name }}</span>
                                       <span class="badge bg-info">{{ $material->difficulty == 1 ? 'সহজ' : ($material->difficulty == 2 ? 'মধ্যম' : 'কঠিন') }}</span>
-                                      @foreach($material->tags as $tag)
-                                        <span class="badge bg-primary">{{ $tag->name }}</span>
-                                      @endforeach
+                                      
                                   </td>
                                   <td>{{ $material->answer }}</td>
                                   <td>{{ $material->option1 }}, {{ $material->option2 }}, {{ $material->option3 }}, {{ $material->option4 }}</td>
