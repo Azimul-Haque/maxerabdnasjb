@@ -253,7 +253,7 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <form method="post" action="{{ route('dashboard.questions.store') }}" enctype='multipart/form-data'>
+          <form method="post" action="{{ route('dashboard.materials.store') }}" enctype='multipart/form-data'>
               <div class="modal-body">
                     @csrf
                     <div class="row">
