@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\User;
-use App\Topic;
 use App\Question;
 use App\Course;
 use App\Courseexam;
