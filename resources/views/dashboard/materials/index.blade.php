@@ -295,7 +295,7 @@
                                 <option value="4">পিডিএফ</option>
                             </select>
                             <div class="input-group-append">
-                                <div class="input-group-text"><span class="far fa-file-alt"></span></div>
+                                <div class="input-group-text"><span class="fas fa-file-alt"></span></div>
                             </div>
                         </div>    
                       </div>
