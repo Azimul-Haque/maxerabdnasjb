@@ -352,7 +352,7 @@
     // });
     ClassicEditor
         .create( document.querySelector( '.ckeditor' ), {
-          placeholder: 'Type the content here!',
+          placeholder: 'কন্টেন্ট লিখুন...',
         } )
         .then( editor => {
                 console.log( editor );
