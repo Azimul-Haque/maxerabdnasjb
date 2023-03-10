@@ -50,7 +50,8 @@ class MaterialController extends Controller
             'author'    => 'required|string|max:255',
             'author_desc'    => 'required|string|max:255',
             'content'    => 'required',
-            'url'     => 'required|integer',
+            'url'     => 'required|string|max:255',
+            'status'     => 'required|integer',
         ));
 
         $question             = new Question;
