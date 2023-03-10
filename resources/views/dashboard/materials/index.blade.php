@@ -271,7 +271,7 @@
                         <div class="input-group mb-3">
                             <input type="text" name="author" class="form-control" value="{{ old('author') }}" placeholder="লেখক" required>
                             <div class="input-group-append">
-                                <div class="input-group-text"><span class="far fa-question-circle"></span></div>
+                                <div class="input-group-text"><span class="far fa-user"></span></div>
                             </div>
                         </div>    
                       </div>
