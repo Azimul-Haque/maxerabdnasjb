@@ -272,6 +272,7 @@ class APIController extends Controller
                                       ->take(20)
                                       ->get();
             foreach($topicquestions as $topicquestion) {
+                dd($topicquestion->questionexplanation);
                 if($topicquestion->questionexplanation) {
                     $topicquestion->explanation = $topicquestion->questionexplanation->explanation;
                 }if($topicquestion->questionimage) {
