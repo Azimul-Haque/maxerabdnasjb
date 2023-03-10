@@ -362,9 +362,9 @@
 <script type="text/javascript" src="cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script>
-    $('.multiple-select').select2({
-      // theme: 'bootstrap4',
-    });
+    // $('.multiple-select').select2({
+    //   // theme: 'bootstrap4',
+    // });
     ClassicEditor
         .create( document.querySelector( '.summernote' ) )
         .then( editor => {
