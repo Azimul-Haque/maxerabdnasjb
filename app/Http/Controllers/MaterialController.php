@@ -54,8 +54,8 @@ class MaterialController extends Controller
             'status'     => 'required|integer',
         ));
 
-        $question             = new Question;
-        $question->topic_id   = $request->topic_id;
+        $material             = new Material;
+        $question->type   = $request->type;
         $question->question   = $request->question;
         $question->option1    = $request->option1;
         $question->option2    = $request->option2;
