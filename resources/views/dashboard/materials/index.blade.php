@@ -301,7 +301,7 @@
                       </div>
                       <div class="col-md-6">
                         <div class="input-group mb-3">
-                            <input type="text" name="url" class="form-control" value="{{ old('url') }}" placeholder="লেখকের ডেসিগনেশন" required>
+                            <input type="text" name="url" class="form-control" value="{{ old('url') }}" placeholder="ইউআরএর (যদি থাকে)">
                             <div class="input-group-append">
                                 <div class="input-group-text"><span class="far fa-user"></span></div>
                             </div>
