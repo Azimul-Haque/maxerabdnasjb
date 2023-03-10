@@ -19,6 +19,8 @@ class CreateMaterialsTable extends Migration
             $table->string('title');
             $table->string('author');
             $table->string('author_desc');
+            $table->text('textdata');
+            $table->text('textdata');
             $table->timestamps();
         });
     }
