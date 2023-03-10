@@ -247,7 +247,7 @@
     {{-- Add Question Modal Code --}}
     {{-- Add Question Modal Code --}}
     <!-- Modal -->
-    <div class="modal fade" id="addMaterialModal" role="dialog" data-focus="false" aria-labelledby="addMaterialModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal fade" id="addMaterialModal" role="dialog" data-focus="false" aria-labelledby="addMaterialModalLabel" data-backdrop="static">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header bg-success">
