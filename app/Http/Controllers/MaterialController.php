@@ -50,14 +50,7 @@ class MaterialController extends Controller
             'author'    => 'required|string|max:255',
             'author_desc'    => 'required|string|max:255',
             'content'    => 'required',
-            'url'     => 'required|string|max:255',
-            'option2'     => 'required|string|max:191',
-            'option3'     => 'required|string|max:191',
-            'option4'     => 'required|string|max:191',
-            'answer'      => 'required',
-            'difficulty'  => 'required|string|max:191',
-            'image'       => 'sometimes|image|mimes:jpeg,png,jpg,gif,svg,webp|max:3000',
-            'explanation' => 'sometimes|max:2048',
+            'url'     => 'required|integer',
         ));
 
         $question             = new Question;
