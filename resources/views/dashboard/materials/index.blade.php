@@ -271,10 +271,10 @@
                         <div class="input-group mb-3">
                             <select name="type" class="form-control" required>
                                 <option selected="" disabled="" value="">সঠিক উত্তর</option>
-                                <option value="1">অপশন ১</option>
-                                <option value="2">অপশন ২</option>
-                                <option value="3">অপশন ৩</option>
-                                <option value="4">অপশন ৪</option>
+                                <option value="1">শুধু আর্টিকেল</option>
+                                <option value="2">ভিডিও</option>
+                                <option value="3">অডিও</option>
+                                <option value="4">পিডিএফ</option>
                             </select>
                             <div class="input-group-append">
                                 <div class="input-group-text"><span class="far fa-check-circle"></span></div>
