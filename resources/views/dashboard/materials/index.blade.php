@@ -113,19 +113,7 @@
                                                               </div>
                                                           </div>
                                                         </div>
-                                                        <div class="col-md-6">
-                                                          <select name="tags_ids[]" class="form-control multiple-select" multiple="multiple" data-placeholder="ট্যাগ">
-                                                            @php
-                                                              $tag_array = [];
-                                                              foreach($material->tags as $tag) {
-                                                                $tag_array[] = $tag->id;
-                                                              } 
-                                                            @endphp
-                                                            @foreach ($tags as $tag)
-                                                                <option value="{{ $tag->id }}" @if(in_array($tag->id, $tag_array)) selected @endif>{{ $tag->name }}</option>
-                                                            @endforeach
-                                                        </select>
-                                                        </div>
+                                                        
                                                       </div>
                                                       <div class="row">
                                                           <div class="col-md-6">
