@@ -269,7 +269,7 @@ class APIController extends Controller
         {
             $topicquestions = Question::where('topic_id', $id)->orderBy(DB::raw('RAND()'))->take(20)->get();
 
-            foreach($examquestions as $examquestion) {
+            foreach($topicquestions as $examquestion) {
                 $examquestion = $examquestion->makeHidden(['question_id']);
                 if($examquestion->question->questionexplanation) {
                     $examquestion->question->explanation = $examquestion->question->questionexplanation->explanation;
@@ -284,7 +284,7 @@ class APIController extends Controller
 
             return response()->json([
                 'success' => true,
-                'questions' => $examquestions,
+                'questions' => $topicquestions,
             ]);
         } else {
             return response()->json([
