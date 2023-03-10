@@ -107,19 +107,10 @@ class MaterialController extends Controller
     public function deleteMaterial($id)
     {
         $material = Material::find($id);
-        if($question->questionimage) {
-            $image_path = public_path('images/questions/'. $question->questionimage->image);
-            if(File::exists($image_path)) {
-                File::delete($image_path);
-            }
-            $question->questionimage->delete();
-        }
-        if($question->questionexplanation) {
-            $question->questionexplanation->delete();
-        }
-        $question->delete();
+        
+        $material->delete();
 
-        Session::flash('success', 'Question deleted successfully!');
-        return redirect()->route('dashboard.questions');
+        Session::flash('success', 'Material deleted successfully!');
+        return redirect()->route('dashboard.materials');
     }
 }
