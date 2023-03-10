@@ -282,9 +282,9 @@ class APIController extends Controller
             }
             // dd($topicquestions);
 
-            $exam = Exam::findOrFail($id);
-            $exam->participation++;
-            $exam->save();
+            // $exam = Exam::findOrFail($id);
+            // $exam->participation++;
+            // $exam->save();
 
             return response()->json([
                 'success' => true,
