@@ -64,7 +64,7 @@
 <li class="nav-item">
     <a href="{{ route('dashboard.courses') }}" class="nav-link {{ Request::is('dashboard/courses') ? 'active' : '' }} {{ Request::is('dashboard/courses/*') ? 'active' : '' }}">
         <i class="nav-icon fas fa-layer-group"></i>
-        <p>কোর্সসমূহ</p>
+        <p>ম্যাটেরিয়ালসমূহ</p>
     </a>
 </li>
 @endif
