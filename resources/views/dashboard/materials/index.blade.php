@@ -66,7 +66,7 @@
                                     @if($material->status == 1)
                                       <span class="badge badge-success">একটিভ</span>
                                     @else
-                                      <span class="badge badge-default">ইন-একটিভ</span>
+                                      <span class="badge badge-info">ইন-একটিভ</span>
                                     @endif
                                   </td>
                                   <td>
