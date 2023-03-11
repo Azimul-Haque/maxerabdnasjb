@@ -301,7 +301,7 @@
                     <div class="row">
                         <div class="col-md-12">
                           {{-- <div class="ckeditor"></div> --}}
-                          <textarea class="ckeditor" name="content"></textarea>
+                          <textarea id="ckeditor" name="content"></textarea>
                         </div>
                     </div>
               </div>
@@ -330,7 +330,7 @@
     //   // theme: 'bootstrap4',
     // });
     ClassicEditor
-        .create( document.querySelector( '.ckeditor' ), {
+        .create( document.querySelector( '#ckeditor' ), {
           placeholder: 'কন্টেন্ট লিখুন...',
         } )
         .then( editor => {
