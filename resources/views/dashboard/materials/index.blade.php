@@ -62,6 +62,13 @@
                                       <span class="badge bg-info">{{ $material->difficulty == 1 ? 'সহজ' : ($material->difficulty == 2 ? 'মধ্যম' : 'কঠিন') }}</span> --}}
                                   </td>
                                   <td>
+                                    @if($material->status = 0)
+                                      <span class="badge badge-default">ইন-একটিভ</span>
+                                    @else
+
+                                    @endif
+                                  </td>
+                                  <td>
                                     {{ $material->author }}<br/>
                                     {{ $material->author_desc }}
                                   </td>
