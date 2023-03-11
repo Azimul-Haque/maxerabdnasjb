@@ -69,17 +69,17 @@
                                   </td> --}}
                               
                                   <td>
-                                      <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editQuestionModal{{ $material->id }}">
+                                      <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editMaterialModal{{ $material->id }}">
                                           <i class="far fa-edit"></i>
                                       </button>
                                       {{-- Edit Material Modal Code --}}
                                       {{-- Edit Material Modal Code --}}
                                       <!-- Modal -->
-                                      <div class="modal fade" id="editQuestionModal{{ $material->id }}" tabindex="-1" role="dialog" aria-labelledby="editQuestionModalLabel" aria-hidden="true" data-backdrop="static">
+                                      <div class="modal fade" id="editMaterialModal{{ $material->id }}" tabindex="-1" role="dialog" aria-labelledby="editMaterialModalLabel" aria-hidden="true" data-backdrop="static">
                                           <div class="modal-dialog modal-lg" role="document">
                                           <div class="modal-content">
                                               <div class="modal-header bg-success">
-                                                <h5 class="modal-title" id="editQuestionModalLabel">ম্যাটেরিয়াল হালনাগাদ</h5>
+                                                <h5 class="modal-title" id="editMaterialModalLabel">ম্যাটেরিয়াল হালনাগাদ</h5>
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
@@ -155,18 +155,18 @@
                                       {{-- Edit Material Modal Code --}}
                                       {{-- Edit Material Modal Code --}}
           
-                                      <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteQuestionModal{{ $material->id }}" disabled>
+                                      <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteMaterialModal{{ $material->id }}" disabled>
                                           <i class="far fa-trash-alt"></i>
                                       </button>
                                   </td>
                                   {{-- Delete Material Modal Code --}}
                                   {{-- Delete Material Modal Code --}}
                                   <!-- Modal -->
-                                  <div class="modal fade" id="deleteQuestionModal{{ $material->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteQuestionModalLabel" aria-hidden="true" data-backdrop="static">
+                                  <div class="modal fade" id="deleteMaterialModal{{ $material->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteMaterialModalLabel" aria-hidden="true" data-backdrop="static">
                                       <div class="modal-dialog" role="document">
                                       <div class="modal-content">
                                           <div class="modal-header bg-danger">
-                                          <h5 class="modal-title" id="deleteQuestionModalLabel">ম্যাটেরিয়াল ডিলেট</h5>
+                                          <h5 class="modal-title" id="deleteMaterialModalLabel">ম্যাটেরিয়াল ডিলেট</h5>
                                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                               <span aria-hidden="true">&times;</span>
                                           </button>
