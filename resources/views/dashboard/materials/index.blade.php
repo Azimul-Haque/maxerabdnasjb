@@ -64,7 +64,7 @@
                                     {{ $material->author }}<br/>
                                     {{ $material->author_desc }}
                                   </td>
-                                  <td>{{ $material->aut }}</td>
+                                  <td>{{ $material->type }}</td>
                                   <td>{{ $material->option1 }}, {{ $material->option2 }}, {{ $material->option3 }}, {{ $material->option4 }}</td>
                                   {{-- <td>
                                       <div class="progress progress-xs">
