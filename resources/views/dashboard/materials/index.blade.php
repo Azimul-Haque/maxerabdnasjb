@@ -87,7 +87,76 @@
                                               <form method="post" action="{{ route('dashboard.materials.update', $material->id) }}" enctype='multipart/form-data'>
                                                 <div class="modal-body">
                                                       @csrf
-                                                      
+                                                      <div class="row">
+                                                        <div class="col-md-6">
+                                                          <div class="input-group mb-3">
+                                                              <input type="text" name="title" class="form-control" value="{{ old('title') }}" placeholder="ম্যাটেরিয়াল টাইটেল" required>
+                                                              <div class="input-group-append">
+                                                                  <div class="input-group-text"><span class="fas fa-question-circle"></span></div>
+                                                              </div>
+                                                          </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                          <div class="input-group mb-3">
+                                                              <select name="status" class="form-control" required>
+                                                                  <option selected="" disabled="" value="">স্ট্যাটাস</option>
+                                                                  <option value="0">ইন-একটিভ</option>
+                                                                  <option value="1" selected>একটিভ</option>
+                                                              </select>
+                                                              <div class="input-group-append">
+                                                                  <div class="input-group-text"><span class="fas fa-file-alt"></span></div>
+                                                              </div>
+                                                          </div>    
+                                                        </div>
+                                                      </div>
+                                                      <div class="row">
+                                                        <div class="col-md-6">
+                                                          <div class="input-group mb-3">
+                                                              <input type="text" name="author" class="form-control" value="{{ old('author') }}" placeholder="লেখক" required>
+                                                              <div class="input-group-append">
+                                                                  <div class="input-group-text"><span class="fas fa-user"></span></div>
+                                                              </div>
+                                                          </div>    
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                          <div class="input-group mb-3">
+                                                              <input type="text" name="author_desc" class="form-control" value="{{ old('author_desc') }}" placeholder="লেখকের ডেসিগনেশন" required>
+                                                              <div class="input-group-append">
+                                                                  <div class="input-group-text"><span class="fas fa-user-tie"></span></div>
+                                                              </div>
+                                                          </div>    
+                                                        </div>
+                                                      </div>
+                                                      <div class="row">
+                                                        <div class="col-md-6">
+                                                          <div class="input-group mb-3">
+                                                              <select name="type" class="form-control" required>
+                                                                  <option selected="" disabled="" value="">ধরন বাছাই করুন</option>
+                                                                  <option value="1">শুধু আর্টিকেল</option>
+                                                                  <option value="2">ভিডিও</option>
+                                                                  <option value="3">অডিও</option>
+                                                                  <option value="4">পিডিএফ</option>
+                                                              </select>
+                                                              <div class="input-group-append">
+                                                                  <div class="input-group-text"><span class="fas fa-file-alt"></span></div>
+                                                              </div>
+                                                          </div>    
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                          <div class="input-group mb-3">
+                                                              <input type="text" name="url" class="form-control" value="{{ old('url') }}" placeholder="ইউআরএর (যদি থাকে)">
+                                                              <div class="input-group-append">
+                                                                  <div class="input-group-text"><span class="fas fa-link"></span></div>
+                                                              </div>
+                                                          </div>    
+                                                        </div>
+                                                      </div>
+                                                      <div class="row">
+                                                          <div class="col-md-12">
+                                                            {{-- <div class="ckeditor"></div> --}}
+                                                            <textarea class="ckeditor" name="content"></textarea>
+                                                          </div>
+                                                      </div>
                                                 </div>
                                                 <div class="modal-footer">
                                                   <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
