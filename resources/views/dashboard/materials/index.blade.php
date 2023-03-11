@@ -76,7 +76,11 @@
                                   <td>
                                     @if($material->type == 1)
                                       <span class="badge badge-success">একটিভ</span>
-                                    @elseif($material->type == 1)
+                                    @elseif($material->type == 2)
+                                      <span class="badge badge-success">ইন-একটিভ</span>
+                                    @elseif($material->type == 3)
+                                      <span class="badge badge-success">ইন-একটিভ</span>
+                                    @elseif($material->type == 4)
                                       <span class="badge badge-success">ইন-একটিভ</span>
                                     @endif
                                   </td>
