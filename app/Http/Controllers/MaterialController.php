@@ -11,7 +11,7 @@ use DB;
 use Auth;
 // use Image;
 // use File;
-// use Session;
+use Session;
 // use Artisan;
 use Redirect;
 // use OneSignal;
