@@ -189,7 +189,7 @@
               <!-- Single Widget -->
               <div class="footer-widget newsletter">
                 <h5>Subscribe</h5>
-                <a href='https://play.google.com/store/apps/details?id=com.orbachinujbuk.bcs_constitution&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="_blank"><img alt='Get it on Google Play' class="img-responsive" style="max-width: 200px; width: auto;" src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+                <a href='https://play.google.com/store/apps/details?id=com.orbachinujbuk.bjsandbarexam&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="_blank"><img alt='Get it on Google Play' class="img-responsive" style="max-width: 200px; width: auto;" src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
                 <form action="#" method="get" target="_blank" class="newsletter-form">
                   <input name="EMAIL" placeholder="Email address" required="required" type="email" />
                   <div class="button">

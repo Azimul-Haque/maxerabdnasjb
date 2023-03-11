@@ -15,7 +15,7 @@ use Session;
 // use Artisan;
 use Redirect;
 // use OneSignal;
-// use Cache;
+use Cache;
 
 class MaterialController extends Controller
 {
@@ -64,7 +64,7 @@ class MaterialController extends Controller
         $material->status     = $request->status;
         $material->save();
 
-
+        Cache::forget('lecturematerials');
         Session::flash('success', 'Material added successfully!');
         return redirect()->back();
         // if(request()->routeIs('dashboard.questionstopicbased')) {
@@ -100,6 +100,7 @@ class MaterialController extends Controller
         $material->status     = $request->status;
         $material->save();
 
+        Cache::forget('lecturematerials');
         Session::flash('success', 'Material updated successfully!');
         return redirect()->back();
     }
