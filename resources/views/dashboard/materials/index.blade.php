@@ -144,7 +144,7 @@
                                                         </div>
                                                         <div class="col-md-6">
                                                           <div class="input-group mb-3">
-                                                              <input type="text" name="url" class="form-control" value="{{ old('url') }}" placeholder="ইউআরএর (যদি থাকে)">
+                                                              <input type="text" name="url" class="form-control" value="{{ old('url') }}" placeholder="ইউআরএল (যদি থাকে, ভিডিও বা অডিও)">
                                                               <div class="input-group-append">
                                                                   <div class="input-group-text"><span class="fas fa-link"></span></div>
                                                               </div>
@@ -283,7 +283,7 @@
                       </div>
                       <div class="col-md-6">
                         <div class="input-group mb-3">
-                            <input type="text" name="url" class="form-control" value="{{ old('url') }}" placeholder="ইউআরএর (যদি থাকে, ভিডিও বা অডিও)">
+                            <input type="text" name="url" class="form-control" value="{{ old('url') }}" placeholder="ইউআরএল (যদি থাকে, ভিডিও বা অডিও)">
                             <div class="input-group-append">
                                 <div class="input-group-text"><span class="fas fa-link"></span></div>
                             </div>
