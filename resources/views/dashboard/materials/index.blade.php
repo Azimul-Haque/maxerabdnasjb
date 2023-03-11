@@ -162,7 +162,7 @@
                                                       <div class="row">
                                                           <div class="col-md-12">
                                                             {{-- <div class="ckeditor"></div> --}}
-                                                            <textarea class="ckeditor" name="content">{!! $material->content !!}</textarea>
+                                                            <textarea id="ckeditor" name="content">{!! $material->content !!}</textarea>
                                                           </div>
                                                       </div>
                                                 </div>
