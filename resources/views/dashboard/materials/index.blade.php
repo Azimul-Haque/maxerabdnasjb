@@ -73,7 +73,13 @@
                                     {{ $material->author }}<br/>
                                     {{ $material->author_desc }}
                                   </td>
-                                  <td>{{ $material->type }}</td>
+                                  <td>
+                                    @if($material->status == 1)
+                                      <span class="badge badge-success">একটিভ</span>
+                                    @else
+                                      <span class="badge badge-info">ইন-একটিভ</span>
+                                    @endif
+                                  </td>
                                   
                               
                                   <td>
