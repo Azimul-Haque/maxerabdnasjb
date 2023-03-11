@@ -46,6 +46,7 @@
                           <thead>
                               <tr>
                                   <th>Title</th>
+                                  <th>Status</th>
                                   <th>Author</th>
                                   <th>Type</th>
                                   <th width="10%">Action</th>
