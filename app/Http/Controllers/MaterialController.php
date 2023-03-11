@@ -84,7 +84,7 @@ class MaterialController extends Controller
             'author'    => 'required|string|max:255',
             'author_desc'    => 'required|string|max:255',
             'content'    => 'required',
-            'url'     => 'sometimes|string|max:255',
+            'url'     => 'sometimes',
             'status'     => 'required|integer',
         ));
 
