@@ -176,6 +176,21 @@
                                       </div>
                                       {{-- Edit Material Modal Code --}}
                                       {{-- Edit Material Modal Code --}}
+                                      <script>
+                                          // $('.multiple-select').select2({
+                                          //   // theme: 'bootstrap4',
+                                          // });
+                                          ClassicEditor
+                                              .create( document.querySelector( '#ckeditor' ), {
+                                                placeholder: 'কন্টেন্ট লিখুন...',
+                                              } )
+                                              .then( editor => {
+                                                      console.log( editor );
+                                              } )
+                                              .catch( error => {
+                                                      console.error( error );
+                                              } );
+                                      </script>
           
                                       <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteMaterialModal{{ $material->id }}" disabled>
                                           <i class="far fa-trash-alt"></i>
