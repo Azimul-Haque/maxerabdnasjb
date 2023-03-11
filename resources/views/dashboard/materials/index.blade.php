@@ -181,7 +181,7 @@
                                           //   // theme: 'bootstrap4',
                                           // });
                                           ClassicEditor
-                                              .create( document.querySelector( '#ckeditor' ), {
+                                              .create( document.querySelector( '#ckeditor{{ $material->id }}' ), {
                                                 placeholder: 'কন্টেন্ট লিখুন...',
                                               } )
                                               .then( editor => {
