@@ -62,10 +62,10 @@
                                       <span class="badge bg-info">{{ $material->difficulty == 1 ? 'সহজ' : ($material->difficulty == 2 ? 'মধ্যম' : 'কঠিন') }}</span> --}}
                                   </td>
                                   <td>
-                                    @if($material->status = 0)
-                                      <span class="badge badge-default">ইন-একটিভ</span>
+                                    @if($material->status = 1)
+                                      <span class="badge badge-success">একটিভ</span>
                                     @else
-
+                                      <span class="badge badge-default">ইন-একটিভ</span>
                                     @endif
                                   </td>
                                   <td>
