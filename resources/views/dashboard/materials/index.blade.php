@@ -174,7 +174,7 @@
                                           <div class="modal-body">
                                             আপনি কি নিশ্চিতভাবে এই ম্যাটেরিয়ালটি ডিলেট করতে চান?<br/><br/>
                                             <center>
-                                                <big><b>{{ $material->question }}</b></big>
+                                                <big><b>{{ $material->title }}</b></big>
                                             </center>
                                           </div>
                                           <div class="modal-footer">
