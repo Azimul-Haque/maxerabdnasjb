@@ -139,10 +139,10 @@
                                                           <div class="input-group mb-3">
                                                               <select name="type" class="form-control" required>
                                                                   <option selected="" disabled="" value="">ধরন বাছাই করুন</option>
-                                                                  <option value="1" @if($material->status == 0) selected @endif>শুধু আর্টিকেল</option>
-                                                                  <option value="2" @if($material->status == 0) selected @endif>ভিডিও</option>
-                                                                  <option value="3" @if($material->status == 0) selected @endif>অডিও</option>
-                                                                  <option value="4" @if($material->status == 0) selected @endif>পিডিএফ</option>
+                                                                  <option value="1" @if($material->type == 1) selected @endif>শুধু আর্টিকেল</option>
+                                                                  <option value="2" @if($material->type == 2) selected @endif>ভিডিও</option>
+                                                                  <option value="3" @if($material->type == 3) selected @endif>অডিও</option>
+                                                                  <option value="4" @if($material->type == 4) selected @endif>পিডিএফ</option>
                                                               </select>
                                                               <div class="input-group-append">
                                                                   <div class="input-group-text"><span class="fas fa-file-alt"></span></div>
