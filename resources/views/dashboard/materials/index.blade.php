@@ -119,7 +119,7 @@
                                                       <div class="row">
                                                         <div class="col-md-6">
                                                           <div class="input-group mb-3">
-                                                              <input type="text" name="author" class="form-control" value="{{ old('author') }}" placeholder="লেখক" required>
+                                                              <input type="text" name="author" class="form-control" value="{{ $material->author }}" placeholder="লেখক" required>
                                                               <div class="input-group-append">
                                                                   <div class="input-group-text"><span class="fas fa-user"></span></div>
                                                               </div>
@@ -127,7 +127,7 @@
                                                         </div>
                                                         <div class="col-md-6">
                                                           <div class="input-group mb-3">
-                                                              <input type="text" name="author_desc" class="form-control" value="{{ old('author_desc') }}" placeholder="লেখকের ডেসিগনেশন" required>
+                                                              <input type="text" name="author_desc" class="form-control" value="{{ $material->author_desc }}" placeholder="লেখকের ডেসিগনেশন" required>
                                                               <div class="input-group-append">
                                                                   <div class="input-group-text"><span class="fas fa-user-tie"></span></div>
                                                               </div>
