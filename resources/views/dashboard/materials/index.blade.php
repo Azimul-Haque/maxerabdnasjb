@@ -55,10 +55,10 @@
                           @foreach($materials as $material)
                               <tr>
                                   <td>
-                                      {{ $material->question }}<br/>
+                                      {{ $material->title }}
+                                      {{-- <br/>
                                       <span class="badge bg-success">{{ $material->topic->name }}</span>
-                                      <span class="badge bg-info">{{ $material->difficulty == 1 ? 'সহজ' : ($material->difficulty == 2 ? 'মধ্যম' : 'কঠিন') }}</span>
-                                      
+                                      <span class="badge bg-info">{{ $material->difficulty == 1 ? 'সহজ' : ($material->difficulty == 2 ? 'মধ্যম' : 'কঠিন') }}</span> --}}
                                   </td>
                                   <td>{{ $material->answer }}</td>
                                   <td>{{ $material->option1 }}, {{ $material->option2 }}, {{ $material->option3 }}, {{ $material->option4 }}</td>
