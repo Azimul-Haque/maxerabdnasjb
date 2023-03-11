@@ -107,7 +107,7 @@
                                                           <div class="input-group mb-3">
                                                               <select name="status" class="form-control" required>
                                                                   <option selected="" disabled="" value="">স্ট্যাটাস</option>
-                                                                  <option value="0">ইন-একটিভ</option>
+                                                                  <option value="0" @if($material->status == 1) selected @endif>ইন-একটিভ</option>
                                                                   <option value="1" selected>একটিভ</option>
                                                               </select>
                                                               <div class="input-group-append">
