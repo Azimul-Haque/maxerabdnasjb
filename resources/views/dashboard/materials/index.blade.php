@@ -75,13 +75,13 @@
                                   </td>
                                   <td>
                                     @if($material->type == 1)
-                                      <span class="badge badge-success">একটিভ</span>
+                                      <span class="badge badge-success">আর্টিকেল</span>
                                     @elseif($material->type == 2)
-                                      <span class="badge badge-success">ইন-একটিভ</span>
+                                      <span class="badge badge-success">ভিডিও</span>
                                     @elseif($material->type == 3)
-                                      <span class="badge badge-success">ইন-একটিভ</span>
+                                      <span class="badge badge-success">অডিও</span>
                                     @elseif($material->type == 4)
-                                      <span class="badge badge-success">ইন-একটিভ</span>
+                                      <span class="badge badge-success">পিডিএফ</span>
                                     @endif
                                   </td>
                                   
