@@ -329,10 +329,10 @@
     // $('.multiple-select').select2({
     //   // theme: 'bootstrap4',
     // });
-    $(".editor").each(function () {
-           let id = $(this).attr('id');
-           CKEDITOR.replace(id, options);
-       });
+    $(".ckeditor").each(function () {
+         let id = $(this).attr('id');
+         CKEDITOR.replace(id, options);
+     });
     ClassicEditor
         .create( document.querySelector( '.ckeditor' ), {
           placeholder: 'কন্টেন্ট লিখুন...',
