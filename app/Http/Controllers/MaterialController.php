@@ -90,7 +90,7 @@ class MaterialController extends Controller
 
         // dd($request->tags_ids);
 
-        $material             = new Material;
+        $material =  Material::findOrFail($id);
         $material->type   = $request->type;
         $material->title   = $request->title;
         $material->author    = $request->author;
