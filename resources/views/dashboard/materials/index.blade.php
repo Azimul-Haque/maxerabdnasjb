@@ -357,13 +357,15 @@
     ClassicEditor
         .create( document.querySelector( '#ckeditor' ), {
           placeholder: 'কন্টেন্ট লিখুন...',
-        } )
+        })
         .then( editor => {
                 console.log( editor );
-        } )
+        })
         .catch( error => {
                 console.error( error );
-        } );
+        });
+
+
 </script>
 <script type="text/javascript">
   // $(document).ready(function() {
