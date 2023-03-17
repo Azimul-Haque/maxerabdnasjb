@@ -230,7 +230,7 @@ class QuestionController extends Controller
                 $question->option3    = $collection['option3'];
                 $question->option4    = $collection['option4'];
                 $question->answer     = $collection['answer'];
-                $question->difficulty = $collection['difficulty'];
+                $question->difficulty = 1;
                 $question->save();
 
                 // APATOT KORA HOCCHE NA...
@@ -256,6 +256,28 @@ class QuestionController extends Controller
                     $questionexplanation->explanation = $collection['explanation'];
                     $questionexplanation->save();
                 }
+
+                if($collection['tag'] != null) {
+                    $tagarray = explode(',', $collection['tag']);
+
+                    // dd($tagarray);
+                    $newquestiontags = [];
+                    for ($i=0; $i < count($tagarray); $i++) { 
+                        $checktag = Tag::where('name', $tagarray[$i])->first();
+                        if($checktag) {
+                            $newquestiontags[] = $checktag->id;
+                        } else {
+                            $tag = new Tag;
+                            $tag->name = $tagarray[$i];
+                            $tag->save();
+                            $newquestiontags[] = $tag->id;
+                            // dd($newquestiontags);
+                        }
+                    }
+
+                    $question->tags()->sync($newquestiontags, false);
+                }
+
                 DB::commit();
             } catch (Exception $e) {
                 DB::rollback();
