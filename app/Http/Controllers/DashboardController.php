@@ -105,7 +105,7 @@ class DashboardController extends Controller
         $totalquestions = Question::where('question', 'LIKE', "%$search%")->count();
         $users = User::where('name', 'LIKE', "%$search%")
                      ->orWhere('email', 'LIKE', "%$search%")
-                     ->orWhere('option2', 'LIKE', "%$search%")
+                     ->orWhere('mobile', 'LIKE', "%$search%")
                      ->orWhere('option3', 'LIKE', "%$search%")
                      ->orWhere('option4', 'LIKE', "%$search%")
                      ->orderBy('id', 'desc')
