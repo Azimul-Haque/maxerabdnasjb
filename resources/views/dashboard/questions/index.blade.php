@@ -23,12 +23,21 @@
                       <h3 class="card-title">প্রশ্নব্যাংক (মোটঃ {{ $totalquestions }})</h3>
           
                       <div class="card-tools">
-                          <button type="button" class="btn btn-warning btn-sm"  data-toggle="modal" data-target="#addExcelQuesitonModal">
-                              <i class="fas fa-file-excel"></i> এক্সেল ফাইল আপলোড করুন
-                          </button>
-                          <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addQuesitonModal">
-                              <i class="fas fa-plus-circle"></i> নতুন প্রশ্ন যোগ
-                          </button>
+                          <form class="form-inline form-group-lg" action="">
+                            <div class="form-group">
+                              <input type="search-param" class="form-control form-control-sm" placeholder="প্রশ্ন খুঁজুন" id="search-param" required>
+                            </div>
+                            <button type="button" id="search-button" class="btn btn-default btn-sm" style="margin-left: 5px;">
+                              <i class="fas fa-search"></i> খুঁজুন
+                            </button>
+                            <button type="button" class="btn btn-warning btn-sm"  data-toggle="modal" data-target="#addExcelQuesitonModal" style="margin-left: 5px;">
+                                <i class="fas fa-file-excel"></i> এক্সেল ফাইল আপলোড করুন
+                            </button>
+                            <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addQuesitonModal" style="margin-left: 5px;">
+                                <i class="fas fa-plus-circle"></i> নতুন প্রশ্ন যোগ
+                            </button>
+                          </form>
+                          
                       </div>
                     </div>
                     <!-- /.card-header -->
@@ -725,6 +734,34 @@
 </script>
 <script type="text/javascript">
     $(document).ready( function() {
+      $(document).on('click', '#search-button', function() {
+        if($('#search-param').val() != '') {
+          var urltocall = '{{ route('dashboard.questions') }}' +  '/' + $('#search-param').val();
+          location.href= urltocall;
+        } else {
+          $('#search-param').css({ "border": '#FF0000 2px solid'});
+          Toast.fire({
+              icon: 'warning',
+              title: 'কিছু লিখে খুঁজুন!'
+          })
+        }
+      });
+      $("#search-param").keyup(function(e) {
+        if(e.which == 13) {
+          if($('#search-param').val() != '') {
+            var urltocall = '{{ route('dashboard.questions') }}' +  '/' + $('#search-param').val();
+            location.href= urltocall;
+          } else {
+            $('#search-param').css({ "border": '#FF0000 2px solid'});
+            Toast.fire({
+                icon: 'warning',
+                title: 'কিছু লিখে খুঁজুন!'
+            })
+          }
+        }
+        
+      });
+
       $(document).on('change', '.btn-file :file', function() {
         var input = $(this),
             label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
