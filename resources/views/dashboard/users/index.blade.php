@@ -14,6 +14,20 @@
             <h3 class="card-title">ব্যবহারকারীগণ</h3>
 
             <div class="card-tools">
+              <form class="form-inline form-group-lg" action="">
+                <div class="form-group">
+                  <input type="search-param" class="form-control form-control-sm" placeholder="প্রশ্ন খুঁজুন" id="search-param" required>
+                </div>
+                <button type="button" id="search-button" class="btn btn-default btn-sm" style="margin-left: 5px;">
+                  <i class="fas fa-search"></i> খুঁজুন
+                </button>
+                <button type="button" class="btn btn-warning btn-sm"  data-toggle="modal" data-target="#addExcelQuesitonModal" style="margin-left: 5px;">
+                    <i class="fas fa-file-excel"></i> এক্সেল ফাইল আপলোড করুন
+                </button>
+                <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addQuesitonModal" style="margin-left: 5px;">
+                    <i class="fas fa-plus-circle"></i> নতুন প্রশ্ন যোগ
+                </button>
+              </form>
             	<button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addUserModal">
             		<i class="fas fa-user-plus"></i> নতুন
             	</button>
