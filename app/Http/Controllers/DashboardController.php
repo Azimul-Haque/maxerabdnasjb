@@ -100,7 +100,6 @@ class DashboardController extends Controller
 
     public function getUsersSearch($search)
     {
-
         $users = User::where('name', 'LIKE', "%$search%")
                      ->orWhere('email', 'LIKE', "%$search%")
                      ->orWhere('mobile', 'LIKE', "%$search%")
