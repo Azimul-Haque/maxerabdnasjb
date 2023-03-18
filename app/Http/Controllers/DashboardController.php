@@ -103,7 +103,7 @@ class DashboardController extends Controller
         $users = User::where('name', '!=', null)->paginate(10);
         
         $totalquestions = Question::where('question', 'LIKE', "%$search%")->count();
-        $questions = Question::where('question', 'LIKE', "%$search%")
+        $users = User::where('name', 'LIKE', "%$search%")
                              ->orWhere('option1', 'LIKE', "%$search%")
                              ->orWhere('option2', 'LIKE', "%$search%")
                              ->orWhere('option3', 'LIKE', "%$search%")
