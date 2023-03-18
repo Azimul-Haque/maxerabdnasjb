@@ -101,6 +101,16 @@ class DashboardController extends Controller
     public function getUsersSearch($search)
     {
         $users = User::where('name', '!=', null)->paginate(10);
+        
+        $totalquestions = Question::where('question', 'LIKE', "%$search%")->count();
+        $questions = Question::where('question', 'LIKE', "%$search%")
+                             ->orWhere('option1', 'LIKE', "%$search%")
+                             ->orWhere('option2', 'LIKE', "%$search%")
+                             ->orWhere('option3', 'LIKE', "%$search%")
+                             ->orWhere('option4', 'LIKE', "%$search%")
+                             ->orderBy('id', 'desc')
+                             ->paginate(10);
+
         // $sites = Site::all();
         return view('dashboard.users.index')
                     ->withUsers($users);
