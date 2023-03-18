@@ -98,6 +98,14 @@ class DashboardController extends Controller
                     ->withUsers($users);
     }
 
+    public function getUsersSearch()
+    {
+        $users = User::where('name', '!=', null)->paginate(10);
+        // $sites = Site::all();
+        return view('dashboard.users.index')
+                    ->withUsers($users);
+    }
+
     public function getUser($id)
     {
         $user = User::find($id);
