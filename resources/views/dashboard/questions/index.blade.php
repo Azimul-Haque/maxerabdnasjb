@@ -37,7 +37,6 @@
                                 <i class="fas fa-plus-circle"></i> নতুন প্রশ্ন যোগ
                             </button>
                           </form>
-                          
                       </div>
                     </div>
                     <!-- /.card-header -->
