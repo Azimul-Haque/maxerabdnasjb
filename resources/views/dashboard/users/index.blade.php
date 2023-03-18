@@ -333,5 +333,33 @@
                 $('#ifaccountant').show();
             }
         });
+
+        $(document).ready( function() {
+          $(document).on('click', '#search-button', function() {
+            if($('#search-param').val() != '') {
+              var urltocall = '{{ route('dashboard.questions') }}' +  '/' + $('#search-param').val();
+              location.href= urltocall;
+            } else {
+              $('#search-param').css({ "border": '#FF0000 2px solid'});
+              Toast.fire({
+                  icon: 'warning',
+                  title: 'কিছু লিখে খুঁজুন!'
+              })
+            }
+          });
+          $("#search-param").keyup(function(e) {
+            if(e.which == 13) {
+              if($('#search-param').val() != '') {
+                var urltocall = '{{ route('dashboard.questions') }}' +  '/' + $('#search-param').val();
+                location.href= urltocall;
+              } else {
+                $('#search-param').css({ "border": '#FF0000 2px solid'});
+                Toast.fire({
+                    icon: 'warning',
+                    title: 'কিছু লিখে খুঁজুন!'
+                })
+              }
+            }
+          });
     </script>
 @endsection
