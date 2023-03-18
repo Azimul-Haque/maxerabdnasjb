@@ -98,7 +98,7 @@ class DashboardController extends Controller
                     ->withUsers($users);
     }
 
-    public function getUsersSearch()
+    public function getUsersSearch($search)
     {
         $users = User::where('name', '!=', null)->paginate(10);
         // $sites = Site::all();
