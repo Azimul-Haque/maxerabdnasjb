@@ -187,7 +187,7 @@
             <div class="modal-content">
                 <div class="modal-header bg-success">
                     <h5 class="modal-title" id="addExamQuestionModalLabel">
-                        প্রশ্নপত্রপ হালনাগাদ
+                        প্রশ্নপত্র হালনাগাদ
                         <span id="questionupdatingnumber"></span>
                     </h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
