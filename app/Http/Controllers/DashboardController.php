@@ -106,8 +106,6 @@ class DashboardController extends Controller
         $users = User::where('name', 'LIKE', "%$search%")
                      ->orWhere('email', 'LIKE', "%$search%")
                      ->orWhere('mobile', 'LIKE', "%$search%")
-                     ->orWhere('option3', 'LIKE', "%$search%")
-                     ->orWhere('option4', 'LIKE', "%$search%")
                      ->orderBy('id', 'desc')
                      ->paginate(10);
 
