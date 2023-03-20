@@ -303,7 +303,7 @@ class ExamController extends Controller
         ));
 
         if($request->hiddencheckarray == '') {
-            Session::flash('success', 'Question updated successfully!');
+            Session::flash('success', 'সব ফাঁকা');
         }
         
         // $oldexamquestions = Examquestion::where('exam_id', $request->exam_id)->get();
