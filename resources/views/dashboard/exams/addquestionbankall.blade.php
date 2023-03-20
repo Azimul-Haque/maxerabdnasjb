@@ -183,7 +183,7 @@
             $('#questionupdatingnumberauto').text('প্রশ্ন সংখ্যাঃ ' + array.length.toString());
             Toast.fire({
                 icon: 'warning',
-                title: 'কিছু লিখে খুঁজুন!'
+                title: 'প্রশ্ন সংখ্যাঃ ' + array.length.toString()
             })
             // console.log(array.length);
         } else {
