@@ -258,21 +258,13 @@ class ExamController extends Controller
 
     public function removeExamQuestion($exam_id, $question_id)
     {
-        $oldexamquestions = Examquestion::where('exam_id', $request->exam_id)->get();
-        if(count($oldexamquestions) > 0) {
-            foreach($oldexamquestions as $oldexamquestion) {
-                $oldexamquestion->delete();
-            }
-        }
-        $hiddencheckarray = explode(',', $request->hiddencheckarray);
-        // sort($hiddencheckarray);
-        // dd($hiddencheckarray);
-        foreach($hiddencheckarray as $question_id) {
-            $examquestion = new Examquestion;
-            $examquestion->exam_id = $request->exam_id;
-            $examquestion->question_id = $question_id;
-            $examquestion->save();
-        }
+        $examquestion = Examquestion::where('exam_id', $exam_id)
+                                    ->where('question_id', $question_id)
+                                    ->first();
+                                    
+        $examquestion->exam_id = $exam->id;
+        $examquestion->question_id = $oldexamquestion->question_id;
+        $examquestion->save();
 
         Session::flash('success', 'Question updated successfully!');
         return redirect()->route('dashboard.exams.add.question', $request->exam_id);
