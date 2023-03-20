@@ -19,10 +19,10 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-9">
-              <form method="post" id="addquestionform" action="{{ route('dashboard.exams.question.store') }}">
                 <div class="card">
                     <div class="card-header">
                       <h3 class="card-title"><a href="{{ route('dashboard.exams.add.question.all', $exam->id) }}">প্রশ্নব্যাংক (মোটঃ {{ $totalquestions }})</a></h3>
+          
                       <div class="card-tools">
                           <form class="form-inline form-group-lg" action="">
                             <div class="form-group">
@@ -31,59 +31,59 @@
                             <button type="button" id="search-button" class="btn btn-default btn-sm" style="margin-left: 5px;">
                               <i class="fas fa-search"></i> খুঁজুন
                             </button>
-                            
                           </form>
                       </div>
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body p-0">
-                      <table class="table">
-                          <thead>
-                              <tr>
-                                  <th>#</th>
-                                  <th>Question</th>
-                              </tr>
-                          </thead>
-                          <tbody>
-                            
-                              @csrf
-                              @php
-                                  $examquestionidarray = [];
-                                  foreach ($examquestions as $examquestion) {
-                                      $examquestionidarray[] = $examquestion->question_id;
-                                  }
-                                  $questionchecktext = implode(",", $examquestionidarray);
-                              @endphp
-                              <input type="hidden" name="exam_id" value="{{ $exam->id }}">
-                              <input type="hidden" id="hiddencheckarray" name="hiddencheckarray" value="">
-                              {{-- <input type="hidden" id="hiddencheckarray" name="hiddencheckarray" value="{{ $questionchecktext }}"> --}}
-                              @foreach($questions as $question)
+                      <form method="post" id="addquestionform" action="{{ route('dashboard.exams.question.store') }}">
+                        <table class="table">
+                            <thead>
                                 <tr>
-                                  <td>
-                                      <div class="icheck-primary icheck-inline" style="float: left;">
-                                          <input type="checkbox" onchange="checkboxquestion({{ $question->id }})" id="check{{ $question->id }}" name="questioncheck[]" value="{{ $question->id }}" 
-                                          @if(in_array($question->id, $examquestionidarray)) checked="" @endif
-                                          />
-                                          <label for="check{{ $question->id }}"> </label>
-                                      </div>
-                                  </td>
-                                  <td>
-                                      {{ $question->question }}<br/>
-                                      <span class="badge bg-success">{{ $question->topic->name }}</span>
-                                      <span class="badge bg-info">{{ $question->difficulty == 1 ? 'সহজ' : ($question->difficulty == 2 ? 'মধ্যম' : 'কঠিন') }}</span>
-                                      @foreach($question->tags as $tag)
-                                        <span class="badge bg-primary">{{ $tag->name }}</span>
-                                      @endforeach
-                                  </td>
+                                    <th>#</th>
+                                    <th>Question</th>
                                 </tr>
-                              @endforeach
-                          </tbody>
-                      </table>
+                            </thead>
+                            <tbody>
+                              
+                                @csrf
+                                @php
+                                    $examquestionidarray = [];
+                                    foreach ($examquestions as $examquestion) {
+                                        $examquestionidarray[] = $examquestion->question_id;
+                                    }
+                                    $questionchecktext = implode(",", $examquestionidarray);
+                                @endphp
+                                <input type="hidden" name="exam_id" value="{{ $exam->id }}">
+                                <input type="hidden" id="hiddencheckarray" name="hiddencheckarray" value="">
+                                {{-- <input type="hidden" id="hiddencheckarray" name="hiddencheckarray" value="{{ $questionchecktext }}"> --}}
+                                @foreach($questions as $question)
+                                  <tr>
+                                    <td>
+                                        <div class="icheck-primary icheck-inline" style="float: left;">
+                                            <input type="checkbox" onchange="checkboxquestion({{ $question->id }})" id="check{{ $question->id }}" name="questioncheck[]" value="{{ $question->id }}" 
+                                            @if(in_array($question->id, $examquestionidarray)) checked="" @endif
+                                            />
+                                            <label for="check{{ $question->id }}"> </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        {{ $question->question }}<br/>
+                                        <span class="badge bg-success">{{ $question->topic->name }}</span>
+                                        <span class="badge bg-info">{{ $question->difficulty == 1 ? 'সহজ' : ($question->difficulty == 2 ? 'মধ্যম' : 'কঠিন') }}</span>
+                                        @foreach($question->tags as $tag)
+                                          <span class="badge bg-primary">{{ $tag->name }}</span>
+                                        @endforeach
+                                    </td>
+                                  </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                      </form>
                     </div>
                     <!-- /.card-body -->
                   </div>
                   {{ $questions->links() }}
-                </form>
             </div>
             <div class="col-md-3">
                 <div class="card">
