@@ -307,6 +307,7 @@ class ExamController extends Controller
             if($request->currentchecktext != '') {
                 $oldexamquestionsids = explode(',', $request->currentchecktext);
                 $oldexamquestions = Examquestion::whereIn('exam_id', $oldexamquestionsids)->get();
+                dd($oldexamquestions);
                 if(count($oldexamquestions) > 0) {
                     foreach($oldexamquestions as $oldexamquestion) {
                         $oldexamquestion->delete();
