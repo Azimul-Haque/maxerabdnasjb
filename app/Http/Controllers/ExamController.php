@@ -263,7 +263,7 @@ class ExamController extends Controller
                                     ->first();
         $examquestion->delete();
 
-        Session::flash('success', 'Question updated successfully!');
+        Session::flash('success', 'Question removed successfully!');
         return redirect()->route('dashboard.exams.add.question', $request->exam_id);
     }
     
