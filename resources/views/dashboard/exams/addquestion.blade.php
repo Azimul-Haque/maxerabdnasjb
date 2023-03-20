@@ -28,7 +28,7 @@
                       <div class="card-tools">
                           <form method="post" action="{{ route('dashboard.exams.question.clear') }}" enctype='multipart/form-data'>
                               <button type="submit" class="btn btn-warning btn-sm"  data-toggle="modal" data-target="#addTAGQuestionModal">
-                                  <i class="fas fa-tags"></i> ট্যাগ থেকে প্রশ্ন
+                                  <i class="fas fa-tags"></i> ক্লিয়ার করুন
                               </button>
                           </form>
                           <button type="button" class="btn btn-warning btn-sm"  data-toggle="modal" data-target="#addTAGQuestionModal">
