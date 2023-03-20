@@ -306,6 +306,13 @@ class ExamController extends Controller
         if($request->hiddencheckarray == '') {
             if($request->currentchecktext != '') {
                 Session::flash('success', 'সব ফাঁকা করে পাঠানো');
+                $oldexamquestionsids = explode(',', $request->hiddencheckarray);
+                $oldexamquestions = Examquestion::where('exam_id', $request->exam_id)->get();
+                if(count($oldexamquestions) > 0) {
+                    foreach($oldexamquestions as $oldexamquestion) {
+                        $oldexamquestion->delete();
+                    }
+                }
             } else {
                 Session::flash('warning', 'কিছুতো সিলেক্ট করুন');
             }
