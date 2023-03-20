@@ -230,7 +230,7 @@ class ExamController extends Controller
                                     ->withTotalquestions($totalquestions);
     }
 
-    public function addQuestionToExamTopic($id, $topic_id)
+    public function addQuestionToExamTopic($topic_id, $_id)
     {
         $exam = Exam::findOrFail($id);
         $examquestions = Examquestion::where('exam_id', $exam->id)
