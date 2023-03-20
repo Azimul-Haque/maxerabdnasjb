@@ -259,8 +259,12 @@ class ExamController extends Controller
                                      ->orderBy('question_id', 'asc')
                                      ->get();
 
-        $totalquestions = Question::where('topic_id', $topic_id)->count();
-        $questions = Question::where('topic_id', $topic_id)
+        $totalquestions = Question::where('question', 'LIKE', "%$search%")->count();
+        $questions = Question::where('question', 'LIKE', "%$search%")
+                             ->orWhere('option1', 'LIKE', "%$search%")
+                             ->orWhere('option2', 'LIKE', "%$search%")
+                             ->orWhere('option3', 'LIKE', "%$search%")
+                             ->orWhere('option4', 'LIKE', "%$search%")
                              ->orderBy('id', 'desc')
                              ->paginate(15);
         $topics = Topic::orderBy('id', 'asc')->get();
