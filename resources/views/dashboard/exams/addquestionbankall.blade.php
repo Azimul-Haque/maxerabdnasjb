@@ -158,7 +158,7 @@
       $("#search-param").keyup(function(e) {
         if(e.which == 13) {
           if($('#search-param').val() != '') {
-            var urltocall = '{{ route('dashboard.questions') }}' +  '/' + $('#search-param').val();
+            var urltocall = '{{ route('dashboard.index') }}' +  '/dashboard/exams/add/question/bank/search/{{ $exam->id }}/' + $('#search-param').val();
             location.href= urltocall;
           } else {
             $('#search-param').css({ "border": '#FF0000 2px solid'});
