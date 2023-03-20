@@ -45,6 +45,7 @@
                           </thead>
                           <tbody>
                           @foreach($questions as $question)
+                            <form method="post" id="addquestionform" action="{{ route('dashboard.exams.question.store') }}">
                               <tr>
                                   <td>
                                       {{ $question->question }}<br/>
@@ -57,6 +58,7 @@
                                   <td>{{ $question->answer }}</td>
                                   <td>{{ $question->option1 }}, {{ $question->option2 }}, {{ $question->option3 }}, {{ $question->option4 }}</td>
                               </tr>
+                            </form>
                           @endforeach
                           </tbody>
                       </table>
