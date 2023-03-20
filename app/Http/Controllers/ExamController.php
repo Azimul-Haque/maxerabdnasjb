@@ -261,6 +261,7 @@ class ExamController extends Controller
         $examquestion = Examquestion::where('exam_id', $exam_id)
                                     ->where('question_id', $question_id)
                                     ->first();
+        dd($examquestion);
         $examquestion->delete();
 
         Session::flash('success', 'Question removed successfully!');
