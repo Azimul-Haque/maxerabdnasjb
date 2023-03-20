@@ -318,6 +318,7 @@ class ExamController extends Controller
             }
         } else {
             Session::flash('success', $request->hiddencheckarray);
+            
         }
         
         // $oldexamquestions = Examquestion::where('exam_id', $request->exam_id)->get();
