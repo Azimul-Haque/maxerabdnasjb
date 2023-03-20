@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title') ড্যাশবোর্ড | {{ $exam->name }} @endsection
+@section('title') ড্যাশবোর্ড | পরীক্ষা | {{ $exam->name }} @endsection
 
 @section('third_party_stylesheets')
 <link href="{{ asset('css/select2.min.css') }}" rel="stylesheet" />
