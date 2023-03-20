@@ -40,8 +40,7 @@
                               <tr>
                                   <th>Question</th>
                                   <th>Answer</th>
-                                  <th>Options</th>
-                                  <th width="10%">Action</th>
+                                  <th width="25%">Options</th>
                               </tr>
                           </thead>
                           <tbody>
