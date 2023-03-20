@@ -84,7 +84,7 @@
                                   @endif
                                 @endforeach
                                 @php
-                                    $currentchecktext = implode(",", $examquestionidarray);
+                                    $currentchecktext = implode(",", $currentcheck);
                                 @endphp
                             </tbody>
                         </table>
