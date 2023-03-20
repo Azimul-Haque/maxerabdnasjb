@@ -79,7 +79,6 @@
                           <thead>
                               <tr>
                                   <th>Topic</th>
-                                  <th>Action</th>
                               </tr>
                           </thead>
                           <tbody>
