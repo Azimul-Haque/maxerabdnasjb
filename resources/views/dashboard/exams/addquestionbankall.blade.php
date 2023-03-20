@@ -37,7 +37,7 @@
                     <!-- /.card-header -->
                     <div class="card-body p-0">
                       <form method="post" id="addquestionform" action="{{ route('dashboard.exams.question.store') }}">
-                        <button type="button" class="btn btn-primary btn-sm" style="float: left;">
+                        <button type="button" class="btn btn-primary btn-sm" style="float: right;">
                           <i class="fas fa-search"></i> খুঁজুন
                         </button>
                         <table class="table">
