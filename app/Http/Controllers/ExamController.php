@@ -307,7 +307,7 @@ class ExamController extends Controller
             if($request->currentchecktext != '') {
                 Session::flash('success', 'সব ফাঁকা করে পাঠানো');
             } else {
-                Session::flash('success', 'প্রথম থেকেই ফাঁকা!');
+                Session::flash('warning', 'কিছুতো সিলেক্ট করুন');
             }
         } else {
             Session::flash('success', $request->hiddencheckarray);
