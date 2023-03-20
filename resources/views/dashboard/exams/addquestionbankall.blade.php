@@ -46,6 +46,15 @@
                           <tbody>
                           @foreach($questions as $question)
                             <form method="post" id="addquestionform" action="{{ route('dashboard.exams.question.store') }}">
+                              @csrf
+                              @php
+                                  $examquestionidarray = [];
+                                  foreach ($examquestions as $examquestion) {
+                                      $examquestionidarray[] = $examquestion->question_id;
+                                  }
+                                  $questionchecktext = implode(",", $examquestionidarray);
+                              @endphp
+                              
                               <tr>
                                   <td>
                                       {{ $question->question }}<br/>
