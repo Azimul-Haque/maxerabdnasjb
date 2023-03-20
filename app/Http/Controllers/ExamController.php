@@ -309,7 +309,7 @@ class ExamController extends Controller
                 $oldexamquestions = Examquestion::where('exam_id', $request->exam_id)
                                                 ->whereIn('question_id', $oldexamquestionsids)
                                                 ->get();
-                dd($oldexamquestions);
+                // dd($oldexamquestions);
                 if(count($oldexamquestions) > 0) {
                     foreach($oldexamquestions as $oldexamquestion) {
                         $oldexamquestion->delete();
