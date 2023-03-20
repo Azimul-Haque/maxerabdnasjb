@@ -336,7 +336,7 @@ class ExamController extends Controller
         //     $examquestion->save();
         // }
 
-        // Session::flash('success', 'Question updated successfully!');
+        Session::flash('success', 'Question updated successfully!');
         return redirect()->back();
     }
 
