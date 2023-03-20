@@ -318,7 +318,15 @@ class ExamController extends Controller
             }
         } else {
             $oldexamquestionsids = explode(',', $request->currentchecktext);
-            
+            $hiddencheckarray = explode(',', $request->hiddencheckarray);
+            // sort($hiddencheckarray);
+            // dd($hiddencheckarray);
+            foreach($hiddencheckarray as $question_id) {
+                $examquestion = new Examquestion;
+                $examquestion->exam_id = $request->exam_id;
+                $examquestion->question_id = $question_id;
+                $examquestion->save();
+            }
         }
         
         // $oldexamquestions = Examquestion::where('exam_id', $request->exam_id)->get();
