@@ -223,7 +223,7 @@ class ExamController extends Controller
             }
         }
 
-        Session::flash('success', 'Question updated successfully!');
+        Session::flash('success', 'Questions have been cleared!');
         return redirect()->route('dashboard.exams.add.question', $request->exam_id);
     }
 
