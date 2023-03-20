@@ -30,10 +30,10 @@
                               <button type="submit" class="btn btn-danger btn-sm"  data-toggle="modal" data-target="#addTAGQuestionModal">
                                   <i class="fas fa-tags"></i> ক্লিয়ার করুন
                               </button>
-                              <button type="button" class="btn btn-warning btn-sm"  data-toggle="modal" data-target="#addTAGQuestionModal">
+                              <button type="button" class="btn btn-warning btn-sm"  data-toggle="modal" data-target="#addTAGQuestionModal" style="margin-left: 5px;">
                                   <i class="fas fa-tags"></i> ট্যাগ থেকে প্রশ্ন
                               </button>
-                              <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addExamQuestionModal">
+                              <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addExamQuestionModal" style="margin-left: 5px;">
                                   <i class="fas fa-tasks"></i> প্রশ্ন হালনাগাদ করুন
                               </button>
                           </form>
