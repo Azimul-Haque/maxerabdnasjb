@@ -26,7 +26,7 @@
                       <h3 class="card-title">প্রশ্নসমূহ ({{ $examquestions->count() }} টি প্রশ্ন)</h3>
           
                       <div class="card-tools">
-                        <button type="submit" class="btn btn-danger btn-sm"  data-toggle="modal" data-target="#addTAGQuestionModal">
+                        <button type="submit" class="btn btn-danger btn-sm"  data-toggle="modal" data-target="#clearQuestionsModal">
                             <i class="fas fa-tags"></i> ক্লিয়ার করুন
                         </button>
                         <button type="button" class="btn btn-warning btn-sm"  data-toggle="modal" data-target="#addTAGQuestionModal">
