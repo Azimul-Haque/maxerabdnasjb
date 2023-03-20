@@ -32,7 +32,7 @@
                               <i class="fas fa-search"></i> খুঁজুন
                             </button>
                             <button type="submit" class="btn btn-primary btn-sm" style="margin-left: 5px;">
-                              <i class="fas fa-folder-plus"></i> খুঁজুন
+                              <i class="fas fa-folder-plus"></i> সংরক্ষণ করুন
                             </button>
                           </form>
                       </div>
