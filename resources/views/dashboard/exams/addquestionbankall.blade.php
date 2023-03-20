@@ -31,6 +31,9 @@
                             <button type="button" id="search-button" class="btn btn-default btn-sm" style="margin-left: 5px;">
                               <i class="fas fa-search"></i> খুঁজুন
                             </button>
+                            <button type="button" id="search-button" class="btn btn-primary btn-sm" style="margin-left: 5px;">
+                              <i class="fas fa-search"></i> খুঁজুন
+                            </button>
                           </form>
                       </div>
                     </div>
