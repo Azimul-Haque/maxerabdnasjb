@@ -302,6 +302,7 @@ class ExamController extends Controller
             'hiddencheckarray' => 'sometimes',
         ));
 
+        if($request->hiddencheckarray == '')
         
         // $oldexamquestions = Examquestion::where('exam_id', $request->exam_id)->get();
         // if(count($oldexamquestions) > 0) {
