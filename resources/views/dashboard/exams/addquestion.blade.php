@@ -35,9 +35,6 @@
                         <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addExamQuestionModal">
                             <i class="fas fa-tasks"></i> প্রশ্ন হালনাগাদ করুন
                         </button>
-                          <form method="post" action="{{ route('dashboard.exams.question.clear') }}" enctype='multipart/form-data' class="form-inline">
-                              
-                          </form>
                       </div>
                     </div>
                     <!-- /.card-header -->
