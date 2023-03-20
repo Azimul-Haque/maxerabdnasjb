@@ -307,7 +307,7 @@ class ExamController extends Controller
             if($request->currentchecktext != '') {
                 Session::flash('success', 'সব ফাঁকা করে পাঠানো');
                 $oldexamquestionsids = explode(',', $request->currentchecktext);
-                $oldexamquestions = Examquestion::where('exam_id', $request->exam_id)->get();
+                $oldexamquestions = Examquestion::whereIn('exam_id', $oldexamquestionsids)->get();
                 if(count($oldexamquestions) > 0) {
                     foreach($oldexamquestions as $oldexamquestion) {
                         $oldexamquestion->delete();
