@@ -23,7 +23,6 @@
                 <div class="card">
                     <div class="card-header">
                       <h3 class="card-title"><a href="{{ route('dashboard.exams.add.question.all', $exam->id) }}">প্রশ্নব্যাংক (মোটঃ {{ $totalquestions }})</a></h3>
-          
                       <div class="card-tools">
                           <form class="form-inline form-group-lg" action="">
                             <div class="form-group">
