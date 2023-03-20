@@ -63,8 +63,7 @@
                                       </div>
                                   </td> --}}
                               
-                                  <td>
-          
+                                  <td>          
                                       <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteQuestionModal{{ $question->id }}" disabled>
                                           <i class="far fa-trash-alt"></i>
                                       </button>
