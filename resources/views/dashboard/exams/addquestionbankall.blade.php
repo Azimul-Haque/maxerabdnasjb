@@ -179,6 +179,7 @@
     });
 
     $('hiddencheckarray').val('{{ $currentchecktext }}');
+    console.log(newupdatedvalue);
 
     function checkboxquestion(id) {
         if($('#check' + id)[0].checked){
