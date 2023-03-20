@@ -237,7 +237,7 @@ class ExamController extends Controller
                                      ->orderBy('question_id', 'asc')
                                      ->get();
 
-        $totalquestions = Question::where('topic_id', $id)->count();
+        $totalquestions = Question::where('topic_id', $topic_id)->count();
         $questions = Question::where('topic_id', $topic_id)
                              ->orderBy('id', 'desc')
                              ->paginate(10);
