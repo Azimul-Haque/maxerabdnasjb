@@ -264,7 +264,7 @@ class ExamController extends Controller
         $examquestion->delete();
 
         Session::flash('success', 'Question removed successfully!');
-        return redirect()->route('dashboard.exams.add.question', $request->exam_id);
+        return redirect()->route('dashboard.exams.add.question', $exam_id);
     }
     
     public function storeTagExamQuestion(Request $request)
