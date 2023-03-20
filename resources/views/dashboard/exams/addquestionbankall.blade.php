@@ -37,7 +37,7 @@
                     <!-- /.card-header -->
                     <div class="card-body p-0">
                       <form method="post" id="addquestionform" action="{{ route('dashboard.exams.question.store') }}">
-                        <button type="submit" class="btn btn-primary btn-sm" style="float: right; margin-right: 5px;">
+                        <button type="submit" class="btn btn-primary btn-sm" style="float: right; margin: 5px 5px 10px 10px;">
                           <i class="fas fa-folder-plus"></i> সংরক্ষণ করুন
                         </button>
                         <table class="table">
