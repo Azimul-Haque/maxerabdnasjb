@@ -213,7 +213,7 @@ class ExamController extends Controller
     public function clearExamQuestions(Request $request)
     {
         $this->validate($request,array(
-            'exam_id'          => 'required',
+            'exam_id'          => 'required'
         ));
 
         $oldexamquestions = Examquestion::where('exam_id', $request->exam_id)->get();
