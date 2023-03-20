@@ -56,24 +56,24 @@
                               @endphp
                               @foreach($questions as $question)
                                 <tr>
-                                    <td>
-                                        <div class="icheck-primary icheck-inline" style="float: left;">
-                                            <input type="checkbox" onchange="checkboxquestion({{ $question->id }})" id="check{{ $question->id }}" name="questioncheck[]" value="{{ $question->id }}" 
-                                            @if(in_array($question->id, $examquestionidarray)) checked="" @endif
-                                            />
-                                            <label for="check{{ $question->id }}"> </label>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        {{ $question->question }}<br/>
-                                        <span class="badge bg-success">{{ $question->topic->name }}</span>
-                                        <span class="badge bg-info">{{ $question->difficulty == 1 ? 'সহজ' : ($question->difficulty == 2 ? 'মধ্যম' : 'কঠিন') }}</span>
-                                        @foreach($question->tags as $tag)
-                                          <span class="badge bg-primary">{{ $tag->name }}</span>
-                                        @endforeach
-                                    </td>
-                                    <td>{{ $question->answer }}</td>
-                                    <td>{{ $question->option1 }}, {{ $question->option2 }}, {{ $question->option3 }}, {{ $question->option4 }}</td>
+                                  <td>
+                                      <div class="icheck-primary icheck-inline" style="float: left;">
+                                          <input type="checkbox" onchange="checkboxquestion({{ $question->id }})" id="check{{ $question->id }}" name="questioncheck[]" value="{{ $question->id }}" 
+                                          @if(in_array($question->id, $examquestionidarray)) checked="" @endif
+                                          />
+                                          <label for="check{{ $question->id }}"> </label>
+                                      </div>
+                                  </td>
+                                  <td>
+                                      {{ $question->question }}<br/>
+                                      <span class="badge bg-success">{{ $question->topic->name }}</span>
+                                      <span class="badge bg-info">{{ $question->difficulty == 1 ? 'সহজ' : ($question->difficulty == 2 ? 'মধ্যম' : 'কঠিন') }}</span>
+                                      @foreach($question->tags as $tag)
+                                        <span class="badge bg-primary">{{ $tag->name }}</span>
+                                      @endforeach
+                                  </td>
+                                  <td>{{ $question->answer }}</td>
+                                  <td>{{ $question->option1 }}, {{ $question->option2 }}, {{ $question->option3 }}, {{ $question->option4 }}</td>
                                 </tr>
                               @endforeach
                             </form>
