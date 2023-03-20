@@ -44,8 +44,7 @@
                               </tr>
                           </thead>
                           <tbody>
-                          @foreach($questions as $question)
-                            <form method="post" id="addquestionform" action="{{ route('dashboard.exams.question.store') }}">
+                          <form method="post" id="addquestionform" action="{{ route('dashboard.exams.question.store') }}">
                               @csrf
                               @php
                                   $examquestionidarray = [];
@@ -54,7 +53,9 @@
                                   }
                                   $questionchecktext = implode(",", $examquestionidarray);
                               @endphp
-                              
+                          @foreach($questions as $question)
+                            
+
                               <tr>
                                   <td>
                                       {{ $question->question }}<br/>
