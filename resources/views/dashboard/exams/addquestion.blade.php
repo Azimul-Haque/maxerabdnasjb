@@ -164,6 +164,7 @@
                 <form method="post" action="{{ route('dashboard.exams.question.clear') }}">
                     <div class="modal-body">
                         @csrf
+                        আপনি কি নিশ্চিতভাবে প্রশ্নপত্রটি ক্লিয়ার করতে চান?
                         <input type="hidden" name="exam_id" value="{{ $exam->id }}">
                     </div>
                     <div class="modal-footer">
