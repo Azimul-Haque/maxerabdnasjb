@@ -88,6 +88,7 @@
                                 @php
                                     $currentchecktext = implode(",", $currentcheck);
                                 @endphp
+                                <input type="hidden" id="hiddencheckarray" name="hiddencheckarray" value="">
                             </tbody>
                         </table>
                       </form>
