@@ -55,6 +55,8 @@
                                   }
                                   $questionchecktext = implode(",", $examquestionidarray);
                               @endphp
+                              <input type="hidden" name="exam_id" value="{{ $exam->id }}">
+                              <input type="hidden" id="hiddencheckarray" name="hiddencheckarray" value="{{ $questionchecktext }}">
                               @foreach($questions as $question)
                                 <tr>
                                   <td>
