@@ -26,7 +26,7 @@
                       <h3 class="card-title">প্রশ্নসমূহ ({{ $examquestions->count() }} টি প্রশ্ন)</h3>
           
                       <div class="card-tools">
-                          <form method="post" action="{{ route('dashboard.questions.update', $question->id) }}" enctype='multipart/form-data'>
+                          <form method="post" action="{{ route('dashboard.exams.question.clear') }}" enctype='multipart/form-data'>
                               <button type="button" class="btn btn-warning btn-sm"  data-toggle="modal" data-target="#addTAGQuestionModal">
                                   <i class="fas fa-tags"></i> ট্যাগ থেকে প্রশ্ন
                               </button>
