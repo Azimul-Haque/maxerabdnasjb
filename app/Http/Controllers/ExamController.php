@@ -261,10 +261,7 @@ class ExamController extends Controller
         $examquestion = Examquestion::where('exam_id', $exam_id)
                                     ->where('question_id', $question_id)
                                     ->first();
-                                    
-        $examquestion->exam_id = $exam->id;
-        $examquestion->question_id = $oldexamquestion->question_id;
-        $examquestion->save();
+        $examquestion->delete();
 
         Session::flash('success', 'Question updated successfully!');
         return redirect()->route('dashboard.exams.add.question', $request->exam_id);
