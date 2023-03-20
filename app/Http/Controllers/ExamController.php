@@ -309,7 +309,6 @@ class ExamController extends Controller
             } else {
                 Session::flash('success', 'প্রথম থেকেই ফাঁকা!');
             }
-            
         } else {
             Session::flash('success', $request->hiddencheckarray);
         }
