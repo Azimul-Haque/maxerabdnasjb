@@ -214,8 +214,6 @@ class ExamController extends Controller
     {
         $this->validate($request,array(
             'exam_id'          => 'required',
-            'hiddencheckarray' => 'required',
-            'questioncheck'    => 'required',
         ));
 
         $oldexamquestions = Examquestion::where('exam_id', $request->exam_id)->get();
