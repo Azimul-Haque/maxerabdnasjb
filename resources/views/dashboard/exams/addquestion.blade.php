@@ -27,7 +27,7 @@
           
                       <div class="card-tools">
                         <button type="submit" class="btn btn-danger btn-sm"  data-toggle="modal" data-target="#clearQuestionsModal">
-                            <i class="fas fa-tags"></i> ক্লিয়ার করুন
+                            <i class="fas fa-trash"></i> ক্লিয়ার করুন
                         </button>
                         <button type="button" class="btn btn-warning btn-sm"  data-toggle="modal" data-target="#addTAGQuestionModal">
                             <i class="fas fa-tags"></i> ট্যাগ থেকে প্রশ্ন
