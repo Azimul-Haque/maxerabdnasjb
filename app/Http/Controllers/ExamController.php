@@ -225,7 +225,6 @@ class ExamController extends Controller
                                     ->withExam($exam)
                                     ->withExamquestions($examquestions)
                                     ->withTopics($topics)
-                                    ->withTags($tags)
                                     ->withQuestions($questions);
     }
 
