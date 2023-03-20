@@ -221,7 +221,7 @@ class ExamController extends Controller
         $topics = Topic::orderBy('id', 'asc')->get();
         // $questions = Question::all();
         
-        return view('dashboard.exams.addquestionfrombank')
+        return view('dashboard.exams.addquestionbankall')
                                     ->withExam($exam)
                                     ->withExamquestions($examquestions)
                                     ->withTopics($topics)
