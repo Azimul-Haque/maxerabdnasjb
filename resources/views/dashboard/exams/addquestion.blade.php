@@ -154,7 +154,7 @@
             <div class="modal-content">
                 <div class="modal-header bg-danger">
                     <h5 class="modal-title" id="addTAGQuestionModalLabel">
-                        ট্যাগ থেকে প্রশ্ন হালনাগাদ (N.B: প্রশ্ন রিসেট হবে!)
+                        প্রশ্ন ক্লিয়ার করুন (N.B: প্রশ্ন রিসেট হবে!)
                         <span id="questionupdatingnumbertag"></span>
                     </h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
