@@ -41,8 +41,6 @@
                               <tr>
                                   <th>#</th>
                                   <th>Question</th>
-                                  <th>Answer</th>
-                                  <th width="25%">Options</th>
                               </tr>
                           </thead>
                           <tbody>
@@ -76,8 +74,6 @@
                                         <span class="badge bg-primary">{{ $tag->name }}</span>
                                       @endforeach
                                   </td>
-                                  <td>{{ $question->answer }}</td>
-                                  <td>{{ $question->option1 }}, {{ $question->option2 }}, {{ $question->option3 }}, {{ $question->option4 }}</td>
                                 </tr>
                               @endforeach
                             </form>
