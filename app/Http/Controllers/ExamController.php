@@ -300,7 +300,7 @@ class ExamController extends Controller
         $this->validate($request,array(
             'exam_id'          => 'required',
             'hiddencheckarray' => 'sometimes',
-            'hiddencheckarray' => 'sometimes',
+            'currentchecktext' => 'sometimes',
         ));
 
         if($request->hiddencheckarray == '') {
