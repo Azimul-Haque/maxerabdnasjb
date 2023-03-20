@@ -306,7 +306,9 @@ class ExamController extends Controller
         if($request->hiddencheckarray == '') {
             if($request->currentchecktext != '') {
                 $oldexamquestionsids = explode(',', $request->currentchecktext);
-                $oldexamquestions = Examquestion::whereIn('question_id', $oldexamquestionsids)->get();
+                $oldexamquestions = Examquestion::where('exam_id', $request->exam_id)
+                                                ->whereIn('question_id', $oldexamquestionsids)
+                                                ->get();
                 dd($oldexamquestions);
                 if(count($oldexamquestions) > 0) {
                     foreach($oldexamquestions as $oldexamquestion) {
@@ -319,7 +321,9 @@ class ExamController extends Controller
             }
         } else {
             $oldexamquestionsids = explode(',', $request->currentchecktext);
-            $oldexamquestions = Examquestion::whereIn('question_id', $oldexamquestionsids)->get();
+            $oldexamquestions = Examquestion::where('exam_id', $request->exam_id)
+                                                ->whereIn('question_id', $oldexamquestionsids)
+                                                ->get();
             if(count($oldexamquestions) > 0) {
                 foreach($oldexamquestions as $oldexamquestion) {
                     $oldexamquestion->delete();
