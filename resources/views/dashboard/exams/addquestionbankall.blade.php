@@ -197,6 +197,10 @@
             };
             $('#hiddencheckarray').val(newupdatedvalue);
             console.log(newupdatedvalue);
+            Toast.fire({
+                icon: 'warning',
+                title: 'প্রশ্ন সংখ্যাঃ ' + array.length.toString()
+            })
             // $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + updatedarray.length);
             // $('#questionupdatingnumbertag').text('প্রশ্ন সংখ্যাঃ ' + updatedarray.length);
             // $('#questionupdatingnumberauto').text('প্রশ্ন সংখ্যাঃ ' + updatedarray.length);
