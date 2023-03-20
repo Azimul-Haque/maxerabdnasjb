@@ -181,7 +181,7 @@
       });
     });
 
-    $('#hiddencheckarray').val('{{ $currentchecktext }}');
+    // $('#hiddencheckarray').val('{{ $currentchecktext }}');
     console.log($('#hiddencheckarray').val());
 
     function checkboxquestion(id) {
