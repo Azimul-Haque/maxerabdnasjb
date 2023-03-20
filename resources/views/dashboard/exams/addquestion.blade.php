@@ -26,16 +26,17 @@
                       <h3 class="card-title">প্রশ্নসমূহ ({{ $examquestions->count() }} টি প্রশ্ন)</h3>
           
                       <div class="card-tools">
+                        <button type="submit" class="btn btn-danger btn-sm"  data-toggle="modal" data-target="#addTAGQuestionModal">
+                            <i class="fas fa-tags"></i> ক্লিয়ার করুন
+                        </button>
+                        <button type="button" class="btn btn-warning btn-sm"  data-toggle="modal" data-target="#addTAGQuestionModal" style="margin-left: 5px;">
+                            <i class="fas fa-tags"></i> ট্যাগ থেকে প্রশ্ন
+                        </button>
+                        <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addExamQuestionModal" style="margin-left: 5px;">
+                            <i class="fas fa-tasks"></i> প্রশ্ন হালনাগাদ করুন
+                        </button>
                           <form method="post" action="{{ route('dashboard.exams.question.clear') }}" enctype='multipart/form-data' class="form-inline">
-                              <button type="submit" class="btn btn-danger btn-sm"  data-toggle="modal" data-target="#addTAGQuestionModal">
-                                  <i class="fas fa-tags"></i> ক্লিয়ার করুন
-                              </button>
-                              <button type="button" class="btn btn-warning btn-sm"  data-toggle="modal" data-target="#addTAGQuestionModal" style="margin-left: 5px;">
-                                  <i class="fas fa-tags"></i> ট্যাগ থেকে প্রশ্ন
-                              </button>
-                              <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addExamQuestionModal" style="margin-left: 5px;">
-                                  <i class="fas fa-tasks"></i> প্রশ্ন হালনাগাদ করুন
-                              </button>
+                              
                           </form>
                       </div>
                     </div>
