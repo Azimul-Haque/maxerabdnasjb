@@ -236,12 +236,12 @@ class ExamController extends Controller
         ));
 
         
-        // $oldexamquestions = Examquestion::where('exam_id', $request->exam_id)->get();
-        // if(count($oldexamquestions) > 0) {
-        //     foreach($oldexamquestions as $oldexamquestion) {
-        //         $oldexamquestion->delete();
-        //     }
-        // }
+        $oldexamquestions = Examquestion::where('exam_id', $request->exam_id)->get();
+        if(count($oldexamquestions) > 0) {
+            foreach($oldexamquestions as $oldexamquestion) {
+                $oldexamquestion->delete();
+            }
+        }
         $hiddencheckarray = explode(',', $request->hiddencheckarray);
         // sort($hiddencheckarray);
         // dd($hiddencheckarray);
