@@ -305,7 +305,6 @@ class ExamController extends Controller
 
         if($request->hiddencheckarray == '') {
             if($request->currentchecktext != '') {
-                Session::flash('success', 'সব ফাঁকা করে পাঠানো');
                 $oldexamquestionsids = explode(',', $request->currentchecktext);
                 $oldexamquestions = Examquestion::whereIn('exam_id', $oldexamquestionsids)->get();
                 if(count($oldexamquestions) > 0) {
