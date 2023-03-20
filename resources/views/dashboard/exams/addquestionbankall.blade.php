@@ -19,6 +19,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-9">
+              <form method="post" id="addquestionform" action="{{ route('dashboard.exams.question.store') }}">
                 <div class="card">
                     <div class="card-header">
                       <h3 class="card-title"><a href="{{ route('dashboard.exams.add.question.all', $exam->id) }}">প্রশ্নব্যাংক (মোটঃ {{ $totalquestions }})</a></h3>
