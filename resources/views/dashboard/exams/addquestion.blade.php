@@ -86,7 +86,7 @@
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
-                                                <a href="{{ route('dashboard.exams.question.remove', [$exam->id, $examquestion->id]) }}" class="btn btn-danger">ডিলেট করুন</a>
+                                                <a href="{{ route('dashboard.exams.question.remove', [$exam->id, $examquestion->question->id]) }}" class="btn btn-danger">ডিলেট করুন</a>
                                             </div>
                                         </div>
                                       </div>
