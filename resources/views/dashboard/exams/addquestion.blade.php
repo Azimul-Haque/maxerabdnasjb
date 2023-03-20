@@ -149,11 +149,11 @@
     {{-- Clear Questions Modal Code --}}
     {{-- Clear Questions Modal Code --}}
     <!-- Modal -->
-    <div class="modal fade" id="clearQuestionsModal" tabindex="-1" role="dialog" aria-labelledby="addTAGQuestionModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal fade" id="clearQuestionsModal" tabindex="-1" role="dialog" aria-labelledby="clearQuestionsModalLabel" aria-hidden="true" data-backdrop="static">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header bg-danger">
-                    <h5 class="modal-title" id="addTAGQuestionModalLabel">
+                    <h5 class="modal-title" id="clearQuestionsModalLabel">
                         প্রশ্ন ক্লিয়ার করুন (N.B: প্রশ্ন রিসেট হবে!)
                         <span id="questionupdatingnumbertag"></span>
                     </h5>
