@@ -32,9 +32,9 @@
                         <button type="button" class="btn btn-warning btn-sm"  data-toggle="modal" data-target="#addTAGQuestionModal">
                             <i class="fas fa-tags"></i> ট্যাগ থেকে প্রশ্ন
                         </button>
-                        <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addExamQuestionModal">
+                        <a href="{{ route(dashboard.exams.add.question.all, $exam->id) }}" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addExamQuestionModal">
                             <i class="fas fa-tasks"></i> প্রশ্ন হালনাগাদ করুন
-                        </button>
+                        </a>
                       </div>
                     </div>
                     <!-- /.card-header -->
