@@ -322,11 +322,12 @@ class ExamController extends Controller
             // sort($hiddencheckarray);
             // dd($hiddencheckarray);
             foreach($hiddencheckarray as $question_id) {
-                if(in_array($question_id, haystack))
-                $examquestion = new Examquestion;
-                $examquestion->exam_id = $request->exam_id;
-                $examquestion->question_id = $question_id;
-                $examquestion->save();
+                if(!in_array($question_id, $oldexamquestionsids)) {
+                    $examquestion = new Examquestion;
+                    $examquestion->exam_id = $request->exam_id;
+                    $examquestion->question_id = $question_id;
+                    $examquestion->save();
+                }
             }
         }
         
