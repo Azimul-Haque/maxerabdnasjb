@@ -230,6 +230,26 @@ class ExamController extends Controller
                                     ->withTotalquestions($totalquestions);
     }
 
+    public function addQuestionToExamTopic($id, $topic_id)
+    {
+        $exam = Exam::findOrFail($id);
+        $examquestions = Examquestion::where('exam_id', $exam->id)
+                                     ->orderBy('question_id', 'asc')
+                                     ->get();
+
+        $totalquestions = Question::count();
+        $questions = Question::orderBy('id', 'desc')->paginate(10);
+        $topics = Topic::orderBy('id', 'asc')->get();
+        // $questions = Question::all();
+        
+        return view('dashboard.exams.addquestionbankall')
+                                    ->withExam($exam)
+                                    ->withExamquestions($examquestions)
+                                    ->withTopics($topics)
+                                    ->withQuestions($questions)
+                                    ->withTotalquestions($totalquestions);
+    }
+
     public function clearExamQuestions(Request $request)
     {
         $this->validate($request,array(
