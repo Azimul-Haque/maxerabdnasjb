@@ -197,9 +197,9 @@
             };
             $('#hiddencheckarray').val(newupdatedvalue);
             console.log(newupdatedvalue);
-            $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + updatedarray.length);
-            $('#questionupdatingnumbertag').text('প্রশ্ন সংখ্যাঃ ' + updatedarray.length);
-            $('#questionupdatingnumberauto').text('প্রশ্ন সংখ্যাঃ ' + updatedarray.length);
+            // $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + updatedarray.length);
+            // $('#questionupdatingnumbertag').text('প্রশ্ন সংখ্যাঃ ' + updatedarray.length);
+            // $('#questionupdatingnumberauto').text('প্রশ্ন সংখ্যাঃ ' + updatedarray.length);
         }
     }
 </script>
