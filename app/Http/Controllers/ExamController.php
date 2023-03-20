@@ -256,7 +256,7 @@ class ExamController extends Controller
         return redirect()->route('dashboard.exams.add.question', $request->exam_id);
     }
 
-    public function removeExamQuestion(Request $request)
+    public function removeExamQuestion($request)
     {
         $this->validate($request,array(
             'exam_id'          => 'required',
