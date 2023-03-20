@@ -317,7 +317,7 @@ class ExamController extends Controller
                 Session::flash('warning', 'কিছুতো সিলেক্ট করুন');
             }
         } else {
-            $oldexamquestionsids = explode(',', $request->hiddencheckarray);
+            $oldexamquestionsids = explode(',', $request->currentchecktext);
             
         }
         
