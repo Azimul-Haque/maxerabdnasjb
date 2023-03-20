@@ -181,6 +181,10 @@
             $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + array.length.toString());
             $('#questionupdatingnumbertag').text('প্রশ্ন সংখ্যাঃ ' + array.length.toString());
             $('#questionupdatingnumberauto').text('প্রশ্ন সংখ্যাঃ ' + array.length.toString());
+            Toast.fire({
+                icon: 'warning',
+                title: 'কিছু লিখে খুঁজুন!'
+            })
             // console.log(array.length);
         } else {
             var hiddencheckarray = $('#hiddencheckarray').val();
