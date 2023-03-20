@@ -80,7 +80,7 @@
                                     </td>
                                   </tr>
                                   @if(in_array($question->id, $examquestionidarray))
-                                    $currentcheck[] = $examquestion->question_id;
+                                    $currentcheck[] = $question->id;
                                   @endif
                                 @endforeach
                             </tbody>
