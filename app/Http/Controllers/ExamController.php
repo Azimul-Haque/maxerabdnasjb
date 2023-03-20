@@ -313,6 +313,7 @@ class ExamController extends Controller
                         $oldexamquestion->delete();
                     }
                 }
+                Session::flash('success', 'Question updated successfully!');
             } else {
                 Session::flash('warning', 'কিছুতো সিলেক্ট করুন');
             }
@@ -336,7 +337,7 @@ class ExamController extends Controller
         //     $examquestion->save();
         // }
 
-        Session::flash('success', 'Question updated successfully!');
+        
         return redirect()->back();
     }
 
