@@ -167,5 +167,34 @@
         }
       });
     });
+
+    function checkboxquestion(id) {
+        if($('#check' + id)[0].checked){
+            var hiddencheckarray = $('#hiddencheckarray').val();
+            // console.log(hiddencheckarray);
+            var updatedvalue = hiddencheckarray + (!hiddencheckarray ? '' : ',') + id;
+            $('#hiddencheckarray').val(updatedvalue);
+            console.log(updatedvalue);
+            var array = updatedvalue.split(',');
+            $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + array.length.toString());
+            $('#questionupdatingnumbertag').text('প্রশ্ন সংখ্যাঃ ' + array.length.toString());
+            $('#questionupdatingnumberauto').text('প্রশ্ন সংখ্যাঃ ' + array.length.toString());
+            // console.log(array.length);
+        } else {
+            var hiddencheckarray = $('#hiddencheckarray').val();
+            var uncheckedarray = hiddencheckarray.split(',');
+            var updatedarray = _.without(uncheckedarray, id.toString());
+            // console.log(updatedarray);
+            var newupdatedvalue = '';
+            for(var i=0; i<updatedarray.length; i++) {
+                newupdatedvalue = newupdatedvalue + (!newupdatedvalue ? '' : ',') + updatedarray[i];
+            };
+            $('#hiddencheckarray').val(newupdatedvalue);
+            console.log(newupdatedvalue);
+            $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + updatedarray.length);
+            $('#questionupdatingnumbertag').text('প্রশ্ন সংখ্যাঃ ' + updatedarray.length);
+            $('#questionupdatingnumberauto').text('প্রশ্ন সংখ্যাঃ ' + updatedarray.length);
+        }
+    }
 </script>
 @endsection
