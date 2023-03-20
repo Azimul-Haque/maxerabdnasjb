@@ -329,6 +329,7 @@ class ExamController extends Controller
                     $examquestion->save();
                 }
             }
+            Session::flash('success', 'Question updated successfully!');
         }
         
         // $oldexamquestions = Examquestion::where('exam_id', $request->exam_id)->get();
