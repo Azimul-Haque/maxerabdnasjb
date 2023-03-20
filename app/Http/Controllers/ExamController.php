@@ -304,6 +304,8 @@ class ExamController extends Controller
 
         if($request->hiddencheckarray == '') {
             Session::flash('success', 'সব ফাঁকা');
+        } else {
+            Session::flash('success', $request->hiddencheckarray);
         }
         
         // $oldexamquestions = Examquestion::where('exam_id', $request->exam_id)->get();
