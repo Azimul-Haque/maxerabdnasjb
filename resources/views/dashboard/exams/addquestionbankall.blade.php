@@ -59,6 +59,7 @@
                                 <input type="hidden" name="exam_id" value="{{ $exam->id }}">
                                 <input type="hidden" id="hiddencheckarray" name="hiddencheckarray" value="">
                                 {{-- <input type="hidden" id="hiddencheckarray" name="hiddencheckarray" value="{{ $questionchecktext }}"> --}}
+                                $currentcheck = []
                                 @foreach($questions as $question)
                                   <tr>
                                     <td>
