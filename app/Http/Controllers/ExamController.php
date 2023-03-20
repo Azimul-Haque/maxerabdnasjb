@@ -252,7 +252,7 @@ class ExamController extends Controller
                                     ->withTotalquestions($totalquestions);
     }
 
-    public function addQuestionToExamSearch($search, $id)
+    public function addQuestionToExamSearch($id, $search)
     {
         $exam = Exam::findOrFail($id);
         $examquestions = Examquestion::where('exam_id', $exam->id)
