@@ -79,9 +79,11 @@
                                         @endforeach
                                     </td>
                                   </tr>
-                                  @if(in_array($question->id, $examquestionidarray))
-                                    $currentcheck[] = $question->id;
-                                  @endif
+                                  @php
+                                    if(in_array($question->id, $examquestionidarray)) {
+                                      $currentcheck[] = $question->id;
+                                    }
+                                  @endphp
                                 @endforeach
                                 @php
                                     $currentchecktext = implode(",", $currentcheck);
