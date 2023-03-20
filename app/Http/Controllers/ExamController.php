@@ -252,6 +252,28 @@ class ExamController extends Controller
                                     ->withTotalquestions($totalquestions);
     }
 
+    public function addQuestionToExamSearch($search, $id)
+    {
+        $exam = Exam::findOrFail($id);
+        $examquestions = Examquestion::where('exam_id', $exam->id)
+                                     ->orderBy('question_id', 'asc')
+                                     ->get();
+
+        $totalquestions = Question::where('topic_id', $topic_id)->count();
+        $questions = Question::where('topic_id', $topic_id)
+                             ->orderBy('id', 'desc')
+                             ->paginate(15);
+        $topics = Topic::orderBy('id', 'asc')->get();
+        // $questions = Question::all();
+        
+        return view('dashboard.exams.addquestionbankall')
+                                    ->withExam($exam)
+                                    ->withExamquestions($examquestions)
+                                    ->withTopics($topics)
+                                    ->withQuestions($questions)
+                                    ->withTotalquestions($totalquestions);
+    }
+
     public function clearExamQuestions(Request $request)
     {
         $this->validate($request,array(
