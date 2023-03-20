@@ -178,7 +178,7 @@
       });
     });
 
-    $('hiddencheckarray').val('')
+    $('hiddencheckarray').val('{{ $currentchecktext }}');
 
     function checkboxquestion(id) {
         if($('#check' + id)[0].checked){
