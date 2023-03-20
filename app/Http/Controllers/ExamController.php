@@ -327,8 +327,6 @@ class ExamController extends Controller
                     $examquestion->exam_id = $request->exam_id;
                     $examquestion->question_id = $question_id;
                     $examquestion->save();
-                } else {
-                    
                 }
             }
             Session::flash('success', 'Question updated successfully!');
