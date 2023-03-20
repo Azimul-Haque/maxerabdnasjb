@@ -14,7 +14,7 @@
 @endsection
 
 @section('content')
-    @section('page-header') প্রশ্নব্যাংক @endsection
+    @section('page-header') {{ $exam->name }} / প্রশ্নব্যাংক থেকে বাছাই করুন @endsection
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-9">
