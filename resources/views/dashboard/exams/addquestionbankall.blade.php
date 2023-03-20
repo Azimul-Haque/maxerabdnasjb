@@ -44,7 +44,7 @@
                               </tr>
                           </thead>
                           <tbody>
-                            <form method="post" id="addquestionform" action="{{ route('dashboard.exams.question.store') }}">
+                            
                               @csrf
                               @php
                                   $examquestionidarray = [];
