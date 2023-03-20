@@ -178,9 +178,9 @@
             $('#hiddencheckarray').val(updatedvalue);
             console.log(updatedvalue);
             var array = updatedvalue.split(',');
-            $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + array.length.toString());
-            $('#questionupdatingnumbertag').text('প্রশ্ন সংখ্যাঃ ' + array.length.toString());
-            $('#questionupdatingnumberauto').text('প্রশ্ন সংখ্যাঃ ' + array.length.toString());
+            // $('#questionupdatingnumber').text('প্রশ্ন সংখ্যাঃ ' + array.length.toString());
+            // $('#questionupdatingnumbertag').text('প্রশ্ন সংখ্যাঃ ' + array.length.toString());
+            // $('#questionupdatingnumberauto').text('প্রশ্ন সংখ্যাঃ ' + array.length.toString());
             Toast.fire({
                 icon: 'warning',
                 title: 'প্রশ্ন সংখ্যাঃ ' + array.length.toString()
