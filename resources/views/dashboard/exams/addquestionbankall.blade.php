@@ -83,6 +83,13 @@
                                     $currentcheck[] = $question->id;
                                   @endif
                                 @endforeach
+                                @php
+                                    $examquestionidarray = [];
+                                    foreach ($examquestions as $examquestion) {
+                                        $examquestionidarray[] = $examquestion->question_id;
+                                    }
+                                    $questionchecktext = implode(",", $examquestionidarray);
+                                @endphp
                             </tbody>
                         </table>
                       </form>
@@ -174,6 +181,8 @@
         }
       });
     });
+
+    $('hiddencheckarray').val('')
 
     function checkboxquestion(id) {
         if($('#check' + id)[0].checked){
