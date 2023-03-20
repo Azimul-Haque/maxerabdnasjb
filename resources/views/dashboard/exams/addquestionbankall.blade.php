@@ -19,7 +19,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-9">
-              
+              <form method="post" id="addquestionform" action="{{ route('dashboard.exams.question.store') }}">
                 <div class="card">
                     <div class="card-header">
                       <h3 class="card-title"><a href="{{ route('dashboard.exams.add.question.all', $exam->id) }}">প্রশ্নব্যাংক (মোটঃ {{ $totalquestions }})</a></h3>
@@ -31,9 +31,7 @@
                             <button type="button" id="search-button" class="btn btn-default btn-sm" style="margin-left: 5px;">
                               <i class="fas fa-search"></i> খুঁজুন
                             </button>
-                            <button type="submit" class="btn btn-primary btn-sm" style="margin-left: 5px;">
-                              <i class="fas fa-folder-plus"></i> সংরক্ষণ করুন
-                            </button>
+                            
                           </form>
                       </div>
                     </div>
