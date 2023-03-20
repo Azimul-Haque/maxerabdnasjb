@@ -216,12 +216,12 @@ class ExamController extends Controller
         $examquestions = Examquestion::where('exam_id', $exam->id)
                                      ->orderBy('question_id', 'asc')
                                      ->get();
-                                     
+
         $questions = Question::orderBy('id', 'desc')->paginate(10);
         $topics = Topic::orderBy('id', 'asc')->get();
         // $questions = Question::all();
         
-        return view('dashboard.exams.addquestion')
+        return view('dashboard.exams.addquestion.all')
                                     ->withExam($exam)
                                     ->withExamquestions($examquestions)
                                     ->withTopics($topics)
