@@ -84,11 +84,7 @@
                                   @endif
                                 @endforeach
                                 @php
-                                    $examquestionidarray = [];
-                                    foreach ($examquestions as $examquestion) {
-                                        $examquestionidarray[] = $examquestion->question_id;
-                                    }
-                                    $questionchecktext = implode(",", $examquestionidarray);
+                                    $currentchecktext = implode(",", $examquestionidarray);
                                 @endphp
                             </tbody>
                         </table>
