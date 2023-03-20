@@ -199,7 +199,7 @@ class ExamController extends Controller
                                      ->get();
         $topics = Topic::all();
         $tags = Tag::all();
-        $questions = Question::all();
+        $questions = Question::select('id', 'question', 'topic_id')->get();
         
         return view('dashboard.exams.addquestion')
                                     ->withExam($exam)
