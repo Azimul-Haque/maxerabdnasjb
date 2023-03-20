@@ -45,31 +45,29 @@
                           </thead>
                           <tbody>
                           <form method="post" id="addquestionform" action="{{ route('dashboard.exams.question.store') }}">
-                              @csrf
-                              @php
-                                  $examquestionidarray = [];
-                                  foreach ($examquestions as $examquestion) {
-                                      $examquestionidarray[] = $examquestion->question_id;
-                                  }
-                                  $questionchecktext = implode(",", $examquestionidarray);
-                              @endphp
-                          @foreach($questions as $question)
-                            
-
-                              <tr>
-                                  <td>
-                                      {{ $question->question }}<br/>
-                                      <span class="badge bg-success">{{ $question->topic->name }}</span>
-                                      <span class="badge bg-info">{{ $question->difficulty == 1 ? 'সহজ' : ($question->difficulty == 2 ? 'মধ্যম' : 'কঠিন') }}</span>
-                                      @foreach($question->tags as $tag)
-                                        <span class="badge bg-primary">{{ $tag->name }}</span>
-                                      @endforeach
-                                  </td>
-                                  <td>{{ $question->answer }}</td>
-                                  <td>{{ $question->option1 }}, {{ $question->option2 }}, {{ $question->option3 }}, {{ $question->option4 }}</td>
-                              </tr>
+                            @csrf
+                            @php
+                                $examquestionidarray = [];
+                                foreach ($examquestions as $examquestion) {
+                                    $examquestionidarray[] = $examquestion->question_id;
+                                }
+                                $questionchecktext = implode(",", $examquestionidarray);
+                            @endphp
+                            @foreach($questions as $question)
+                                <tr>
+                                    <td>
+                                        {{ $question->question }}<br/>
+                                        <span class="badge bg-success">{{ $question->topic->name }}</span>
+                                        <span class="badge bg-info">{{ $question->difficulty == 1 ? 'সহজ' : ($question->difficulty == 2 ? 'মধ্যম' : 'কঠিন') }}</span>
+                                        @foreach($question->tags as $tag)
+                                          <span class="badge bg-primary">{{ $tag->name }}</span>
+                                        @endforeach
+                                    </td>
+                                    <td>{{ $question->answer }}</td>
+                                    <td>{{ $question->option1 }}, {{ $question->option2 }}, {{ $question->option3 }}, {{ $question->option4 }}</td>
+                                </tr>
+                              @endforeach
                             </form>
-                          @endforeach
                           </tbody>
                       </table>
                     </div>
