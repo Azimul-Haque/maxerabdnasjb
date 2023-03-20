@@ -318,6 +318,12 @@ class ExamController extends Controller
             }
         } else {
             $oldexamquestionsids = explode(',', $request->currentchecktext);
+            $oldexamquestions = Examquestion::whereIn('exam_id', $oldexamquestionsids)->get();
+            if(count($oldexamquestions) > 0) {
+                foreach($oldexamquestions as $oldexamquestion) {
+                    $oldexamquestion->delete();
+                }
+            }
             $hiddencheckarray = explode(',', $request->hiddencheckarray);
             // sort($hiddencheckarray);
             // dd($hiddencheckarray);
