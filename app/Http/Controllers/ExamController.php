@@ -216,7 +216,7 @@ class ExamController extends Controller
         $examquestions = Examquestion::where('exam_id', $exam->id)
                                      ->orderBy('question_id', 'asc')
                                      ->get();
-                                     
+
         $totalquestions = Question::count();
         $questions = Question::orderBy('id', 'desc')->paginate(10);
         $topics = Topic::orderBy('id', 'asc')->get();
@@ -226,7 +226,8 @@ class ExamController extends Controller
                                     ->withExam($exam)
                                     ->withExamquestions($examquestions)
                                     ->withTopics($topics)
-                                    ->withQuestions($questions);
+                                    ->withQuestions($questions)
+                                    ->withTotalquestions($totalquestions);
     }
 
     public function clearExamQuestions(Request $request)
