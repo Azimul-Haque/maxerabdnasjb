@@ -151,7 +151,7 @@
                                                class="form-control"
                                                placeholder="Firebase UID" required>
                                         <div class="input-group-append">
-                                            <div class="input-group-text"><span class="fas fa-phone"></span></div>
+                                            <div class="input-group-text"><span class="fas fa-money-check-alt"></span></div>
                                         </div>
                                     </div>
 
