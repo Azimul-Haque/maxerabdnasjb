@@ -163,7 +163,7 @@
                                                class="form-control"
                                                placeholder="Onesignal Player ID" required>
                                         <div class="input-group-append">
-                                            <div class="input-group-text"><span class="fas fa-server"></span></div>
+                                            <div class="input-group-text"><span class="fas fa-bell"></span></div>
                                         </div>
                                     </div>
 
