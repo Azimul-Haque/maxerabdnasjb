@@ -149,7 +149,7 @@
                                                value="{{ $user->uid }}"
                                                autocomplete="off"
                                                class="form-control"
-                                               placeholder="Firebase UID" required>
+                                               placeholder="Firebase UID">
                                         <div class="input-group-append">
                                             <div class="input-group-text"><span class="fas fa-server"></span></div>
                                         </div>
@@ -161,7 +161,7 @@
                                                value="{{ $user->onesignal_id }}"
                                                autocomplete="off"
                                                class="form-control"
-                                               placeholder="Onesignal Player ID" required>
+                                               placeholder="Onesignal Player ID">
                                         <div class="input-group-append">
                                             <div class="input-group-text"><span class="fas fa-bell"></span></div>
                                         </div>
