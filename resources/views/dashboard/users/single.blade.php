@@ -27,7 +27,7 @@
             </div>
           </div>
           <div class="info-box mb-3">
-            <span class="info-box-icon bg-primary elevation-1"><i class="fas fa-cog"></i></span>
+            <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-cog"></i></span>
 
             <div class="info-box-content">
                 <big><b>{{ $user->name }}</b></big>
