@@ -32,7 +32,7 @@
             <div class="info-box-content">
                 <big><b>{{ $user->name }}</b></big>
                 <span class="info-box-text">Firebase UID: <u><i>{{ $user->uid }}</i></u></span>
-                <span class="info-box-text">Onesignal Player ID: <u>{{ $user->onesignal_id }}</u></span>
+                <span class="info-box-text">Onesignal Player ID: <u><i>{{ $user->onesignal_id }}</i></u></span>
             </div>
           </div>
         </div>
