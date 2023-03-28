@@ -37,7 +37,7 @@
                 	<tr>
                     <td>
                       {{ $payment->user->name }} <small>({{ $payment->user->payments->count() }} বার)</small><br/>
-                      <small>{{ $payment->mobile }}</small>
+                      <small>{{ $payment->user->mobile }}</small>
                     </td>
                     <td>{{ $payment->package->name }}</td>
                     <td>{{ $payment->payment_status == 1 ? 'Successfull' : 'Failed' }}</td>
