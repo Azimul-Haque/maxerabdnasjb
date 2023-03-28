@@ -163,6 +163,7 @@ class DashboardController extends Controller
             'mobile'      => 'required|string|max:191|unique:users,mobile,'.$id,
             'role'        => 'required',
             'packageexpirydate'        => 'required',
+            'uid'        => 'sometimes',
             // 'sitecheck'   => 'sometimes',
             'password'    => 'nullable|string|min:8|max:191',
         ));
