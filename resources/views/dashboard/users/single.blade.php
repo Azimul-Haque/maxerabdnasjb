@@ -30,7 +30,6 @@
             <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-cog"></i></span>
 
             <div class="info-box-content">
-                <big><b>{{ $user->name }}</b></big>
                 <span class="info-box-text">Firebase UID: <u><i>{{ $user->uid }}</i></u></span>
                 <span class="info-box-text">Onesignal Player ID: <u><i>{{ $user->onesignal_id }}</i></u></span>
             </div>
