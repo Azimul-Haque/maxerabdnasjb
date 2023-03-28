@@ -142,11 +142,11 @@
             				                        <div class="input-group-text"><span class="fas fa-phone"></span></div>
             				                    </div>
             				                </div>
-                                    
+
                                     <div class="input-group mb-3">
                                         <input type="text"
-                                               name="mobile"
-                                               value="{{ $user->mobile }}"
+                                               name="uid"
+                                               value="{{ $user->uid }}"
                                                autocomplete="off"
                                                class="form-control"
                                                placeholder="মোবাইল নম্বর (১১ ডিজিট)" required>
