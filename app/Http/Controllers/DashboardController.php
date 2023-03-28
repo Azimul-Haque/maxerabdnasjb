@@ -177,6 +177,8 @@ class DashboardController extends Controller
         // if(!empty($request->sitecheck)) {
         //     $user->sites = implode(',', $request->sitecheck);
         // }
+        $user->uid = $request->uid;
+        $user->onesignal_id = $request->onesignal_id;
         if(!empty($request->password)) {
             $user->password = Hash::make($request->password);
         }
