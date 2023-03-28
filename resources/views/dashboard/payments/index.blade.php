@@ -35,7 +35,10 @@
               <tbody>
                 @foreach($payments as $payment)
                 	<tr>
-                    <td>{{ $payment->user->name }} <small>({{ $payment->user->payments->count() }} বার)</small></td>
+                    <td>
+                      {{ $payment->user->name }} <small>({{ $payment->user->payments->count() }} বার)</small><br/>
+                      <small>({{ $payment->user->payments->count() }} বার)</small>
+                    </td>
                     <td>{{ $payment->package->name }}</td>
                     <td>{{ $payment->payment_status == 1 ? 'Successfull' : 'Failed' }}</td>
                     <td>{{ $payment->card_type }}</td>
