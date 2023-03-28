@@ -158,7 +158,7 @@
                                     <div class="input-group mb-3">
                                         <input type="text"
                                                name="onesignal_id"
-                                               value="{{ $user->uid }}"
+                                               value="{{ $user->onesignal_id }}"
                                                autocomplete="off"
                                                class="form-control"
                                                placeholder="Firebase UID" required>
