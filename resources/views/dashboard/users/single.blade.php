@@ -26,6 +26,16 @@
                 <span class="info-box-text">মোট ক্রয় সংখ্যা: {{ $user->payments->count() }}</span>
             </div>
           </div>
+          <div class="info-box mb-3">
+            <span class="info-box-icon bg-success elevation-1"><i class="fas fa-user"></i></span>
+
+            <div class="info-box-content">
+                <big><b>{{ $user->name }}</b></big>
+                <span class="info-box-text">যোগদান: {{ bangla(date('d, F Y', strtotime($user->created_at))) }}</span>
+                <span class="info-box-text">মোবাইল: {{ $user->mobile }}</span>
+                <span class="info-box-text">মোট ক্রয় সংখ্যা: {{ $user->payments->count() }}</span>
+            </div>
+          </div>
         </div>
         <div class="col-md-4">
           <div class="info-box mb-3">
