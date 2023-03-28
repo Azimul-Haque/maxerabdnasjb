@@ -164,6 +164,7 @@ class DashboardController extends Controller
             'role'        => 'required',
             'packageexpirydate'        => 'required',
             'uid'        => 'sometimes',
+            'onesignal_id'        => 'sometimes',
             // 'sitecheck'   => 'sometimes',
             'password'    => 'nullable|string|min:8|max:191',
         ));
