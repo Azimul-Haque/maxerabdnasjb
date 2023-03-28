@@ -161,7 +161,7 @@
                                                value="{{ $user->onesignal_id }}"
                                                autocomplete="off"
                                                class="form-control"
-                                               placeholder="Firebase UID" required>
+                                               placeholder="Onesignal Player ID" required>
                                         <div class="input-group-append">
                                             <div class="input-group-text"><span class="fas fa-server"></span></div>
                                         </div>
