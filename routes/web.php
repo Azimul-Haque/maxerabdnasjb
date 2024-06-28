@@ -24,7 +24,7 @@ Route::get('/payment/fail', 'IndexController@paymentFailed')->name('index.paymen
 Route::post('/payment/success', 'IndexController@paymentSuccess')->name('index.payment.success');
 Route::post('/payment/app/confirm', 'IndexController@paymentSuccessApp')->name('index.payment.success.app');
 Route::get('/payment/app/cancel', 'IndexController@paymentCancelApp')->name('index.payment.cancel.app');
-Route::get('/account/deletion/request', 'IndexController@requestACDelete')->name('index.account.deletion.request');
+Route::post('/account/deletion/request', 'IndexController@requestACDelete')->name('index.account.deletion.request');
 
 // Clear Route
 Route::get('/clear', ['as'=>'clear','uses'=>'IndexController@clear']);
