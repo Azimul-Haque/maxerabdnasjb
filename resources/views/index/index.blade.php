@@ -493,6 +493,7 @@
                 </div>
               </div>
               <form method="post" action="{{ route('index.account.deletion.request') }}" class="contact-form">
+                @csrf
                 <div class="row">
                   <div class="col-md-6">
                     <input type="text" name="name" id="name" placeholder="Name" required />
