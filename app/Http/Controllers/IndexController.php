@@ -243,7 +243,7 @@ class IndexController extends Controller
 
     public function requestACDelete(Request $request)
     {
-        Session::flash('success', 'Thank you for the deletion request. We will update you soon!');
+        Session::flash('swalsuccess', 'Thank you for the deletion request. We will update you soon!');
         return redirect()->route('index.index');
     }
 
