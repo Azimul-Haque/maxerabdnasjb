@@ -484,7 +484,7 @@
                   <div class="section-title text-center">
                     <span> Get in Touch </span>
                     <h2>
-                      Ready to Get Started
+                      Account/Info Delete Request
                     </h2>
                     <p>
                       Send us messages.
@@ -506,12 +506,12 @@
                     <input type="text" name="phone" id="phone" placeholder="Phone" required />
                   </div>
                   <div class="col-md-6">
-                    <input type="text" name="subject" id="email" placeholder="Subject" required />
+                    <input type="text" name="subject" id="email" placeholder="Specify the types of data" required />
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-12">
-                    <textarea name="message" id="message" placeholder="Type Message" rows="5"></textarea>
+                    <textarea name="message" id="message" placeholder="Type Message (The reason you would like to delete your data. We are happy to help)" rows="5"></textarea>
                   </div>
                 </div>
                 <div class="row">
