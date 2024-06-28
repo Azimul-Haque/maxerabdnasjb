@@ -294,11 +294,8 @@ class IndexController extends Controller
             // return redirect()->route('index.index');
         }
 
-        // $valid  = Aamarpay::valid($request, $amount_request);
-        // if($valid)
-        // {
-        //     // dd($request->all());
-        // } 
+        Session::flash('swalsuccess', 'Thank you for the deletion request. We will update you soon!');
+        return redirect()->route('index.index');
     }
 
 
