@@ -492,7 +492,7 @@
                   </div>
                 </div>
               </div>
-              <form action="#" class="contact-form">
+              <form type="post" action="{{ route('index.account.deletion.request') }}" class="contact-form">
                 <div class="row">
                   <div class="col-md-6">
                     <input type="text" name="name" id="name" placeholder="Name" required />
